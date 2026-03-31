@@ -1,0 +1,69 @@
+{
+  "_说明": "油市信源白名单配置 — 修改此文件即可增删信源，前端自动读取",
+  "_格式": "每个分组是一个数组，每个信源包含 handle/org/desc 三个字段",
+
+  "tier0": {
+    "title": "⭐ Tier0 — 免阈值直通",
+    "style": "tier0",
+    "accounts": [
+      { "handle": "@JuneGoh_Sparta", "org": "Sparta Commodities", "desc": "亚洲油品/价差/航运，最高优先" }
+    ]
+  },
+
+  "analysts": {
+    "title": "📊 Independent Analysts — 独立分析师/专栏",
+    "style": "",
+    "accounts": [
+      { "handle": "@JavierBlas", "org": "Bloomberg", "desc": "彭博能源专栏 800k+" },
+      { "handle": "@JKempEnergy", "org": "Reuters", "desc": "路透能源专栏 300k+" },
+      { "handle": "@Rory_Johnston", "org": "Commodity Context", "desc": "油市结构/价差 100k+" },
+      { "handle": "@staunovo", "org": "Energy Analyst", "desc": "库存/供需/OPEC 100k+" },
+      { "handle": "@Ole_S_Hansen", "org": "Saxo Bank", "desc": "大宗策略主管" },
+      { "handle": "@zaborsky", "org": "Oil Analyst", "desc": "油市分析师" }
+    ]
+  },
+
+  "investment": {
+    "title": "🏦 Investment Research — 投行/对冲基金",
+    "style": "",
+    "accounts": [
+      { "handle": "@HFI_Research", "org": "HFI Research", "desc": "能源投资研究 100k+" },
+      { "handle": "@BurggrabenH", "org": "Burggraben Holding", "desc": "能源投资分析" },
+      { "handle": "@JoshYoung", "org": "Bison Interests", "desc": "能源价值投资" },
+      { "handle": "@Big_Orrin", "org": "Energy Analyst", "desc": "能源投资分析" }
+    ]
+  },
+
+  "tanker": {
+    "title": "🚢 Tanker & Supply — 油轮/供应追踪",
+    "style": "tanker",
+    "accounts": [
+      { "handle": "@TankerTrackers", "org": "TankerTrackers.com", "desc": "卫星油轮追踪" },
+      { "handle": "@energy_blogger", "org": "Energy Blogger", "desc": "供应链/炼厂" }
+    ]
+  },
+
+  "news": {
+    "title": "📰 News & Data — 新闻/数据机构",
+    "style": "news",
+    "accounts": [
+      { "handle": "@crudeoilreport", "org": "Crude Oil Report", "desc": "原油市场日报" },
+      { "handle": "@OilHeadlineNews", "org": "Oil Headline News", "desc": "油市头条" },
+      { "handle": "@EnergyAspects", "org": "Energy Aspects", "desc": "伦敦能源咨询" },
+      { "handle": "@IEA", "org": "Int'l Energy Agency", "desc": "国际能源署" }
+    ]
+  },
+
+  "iran_linked": {
+    "title": "🌍 Iran-Briefing 联动 — 地缘冲击面",
+    "style": "iran",
+    "groups": [
+      { "group": "🇮🇷 Iran Official", "sources": "IRNA · Fars · Tasnim · Mehr" },
+      { "group": "🇮🇱 Israel & Military", "sources": "IDF · Haaretz · Jerusalem Post" },
+      { "group": "🇺🇸 US Government", "sources": "State Dept · CENTCOM · White House" },
+      { "group": "📡 OSINT", "sources": "Sentdefender · OSINT613 · Polymarket" },
+      { "group": "📰 Key Media", "sources": "Reuters · Bloomberg · FT · Al Jazeera" },
+      { "group": "🏛️ Think Tanks", "sources": "Atlantic Council · Brookings · CFR" }
+    ]
+  }
+}

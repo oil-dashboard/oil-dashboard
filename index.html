@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🛢️ Oil Dashboard — 油市情报看板</title>
+<meta name="description" content="实时油市情报看板 — Brent/WTI价格、OOTT热门推文、伊朗局势、Polymarket预测">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛢️</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top Bar -->
+  <header id="topBar">
+    <div class="top-left">
+      <h1>🛢️ Oil Dashboard</h1>
+      <span class="sub">油市情报看板</span>
+    </div>
+    <div class="top-right">
+      <div class="status-row">
+        <span class="live-dot"></span>
+        <span id="updateTime" class="update-time">Loading...</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Situation Banner -->
+  <section id="situationBanner" class="situation-banner">
+    <div class="tension-box">
+      <div class="tension-label">🇮🇷 Tension</div>
+      <div class="tension-value" id="tensionValue">—</div>
+      <div class="tension-desc" id="tensionDesc">Loading...</div>
+    </div>
+    <div class="price-boxes">
+      <div class="price-box" id="brentBox">
+        <div class="price-label">Brent</div>
+        <div class="price-value" id="brentPrice">—</div>
+        <div class="price-change" id="brentChange">—</div>
+      </div>
+      <div class="price-box" id="wtiBox">
+        <div class="price-label">WTI</div>
+        <div class="price-value" id="wtiPrice">—</div>
+        <div class="price-change" id="wtiChange">—</div>
+      </div>
+      <div class="price-box spread-box">
+        <div class="price-label">Spread</div>
+        <div class="price-value" id="spreadValue">—</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tab Navigation -->
+  <nav class="tabs">
+    <button class="tab active" data-tab="feed">📡 信息流</button>
+    <button class="tab" data-tab="iran">🇮🇷 伊朗</button>
+    <button class="tab" data-tab="polymarket">📊 预测市场</button>
+    <button class="tab" data-tab="sources">👤 信源</button>
+  </nav>
+
+  <!-- Main Feed -->
+  <main id="feedPanel" class="panel active">
+    <div id="feedList" class="feed-list">
+      <div class="loading-spinner">
+        <div class="spinner"></div>
+        <span>正在加载情报流...</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- Iran Panel -->
+  <main id="iranPanel" class="panel">
+    <div id="iranContent" class="iran-content">
+      <div class="loading-spinner">
+        <div class="spinner"></div>
+        <span>正在拉取伊朗局势...</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- Polymarket Panel -->
+  <main id="polymarketPanel" class="panel">
+    <div id="polyContent" class="poly-content">
+      <div class="loading-spinner">
+        <div class="spinner"></div>
+        <span>正在加载预测市场...</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- Sources Panel -->
+  <main id="sourcesPanel" class="panel">
+    <div id="sourcesContent" class="sources-content"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <span>喆思｜油市冲浪 · 数据每5分钟自动刷新</span>
+    <a href="https://skill.capduck.com/iran" target="_blank">🇮🇷 Iran Monitor</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
