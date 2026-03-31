@@ -1,13 +1,10 @@
-// ========== Oil Dashboard — 前端实时数据引擎 ==========
-// 所有数据从公开 API 直接拉取，5 分钟自动刷新
-// 白名单配置在 sources.json，修改该文件即可增删信源
+// ========== Oil Dashboard — 前端实时引擎 v2 ==========
+// 修复 API 解析 + 加入 posts 信息流 + Polymarket 正确解析
 
 const API_BASE = 'https://skill.capduck.com/iran';
 const CORS_PROXY = 'https://api.allorigins.win/raw?url=';
 const REFRESH_MS = 5 * 60 * 1000;
-
-let SOURCES = null; // 从 sources.json 加载
-let lastFetchOk = true;
+let SOURCES = null;
 
 // ========== Tab switching ==========
 document.querySelectorAll('.tab').forEach(tab => {
@@ -20,262 +17,333 @@ document.querySelectorAll('.tab').forEach(tab => {
 });
 
 // ========== Utilities ==========
-function timeAgo(dateStr) {
-  if (!dateStr) return '';
-  const diff = Math.floor((Date.now() - new Date(dateStr).getTime()) / 1000);
-  if (diff < 60) return `${diff}s ago`;
-  if (diff < 3600) return `${Math.floor(diff / 60)}m ago`;
-  if (diff < 86400) return `${Math.floor(diff / 3600)}h ago`;
-  return `${Math.floor(diff / 86400)}d ago`;
+function escapeHtml(t) {
+  if (!t) return '';
+  return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 }
-
-function impactClass(impact) {
-  if (impact >= 8) return 'impact-high';
-  if (impact >= 5) return 'impact-mid';
+function sgtTime(isoStr) {
+  if (!isoStr) return '';
+  try {
+    return new Date(isoStr).toLocaleString('zh-CN', { timeZone: 'Asia/Singapore', hour12: false });
+  } catch { return isoStr; }
+}
+function impactClass(n) {
+  if (n >= 8) return 'impact-high';
+  if (n >= 5) return 'impact-mid';
   return 'impact-low';
 }
-
-function escapeHtml(text) {
-  if (!text) return '';
-  return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-}
-
 async function safeFetch(url, retries = 2) {
   for (let i = 0; i <= retries; i++) {
     try {
-      const r = await fetch(url, { signal: AbortSignal.timeout(15000) });
+      const r = await fetch(url, { signal: AbortSignal.timeout(20000) });
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
       const text = await r.text();
       try { return JSON.parse(text); } catch { return text; }
     } catch (e) {
-      if (i === retries) { console.warn('Fetch failed after retries:', url, e); return null; }
+      if (i === retries) { console.warn('Fetch fail:', url, e); return null; }
       await new Promise(r => setTimeout(r, 1000 * (i + 1)));
     }
   }
-  return null;
 }
 
 // ========== Load sources.json ==========
 async function loadSources() {
-  const data = await safeFetch('sources.json', 0);
-  if (data && typeof data === 'object') {
-    SOURCES = data;
-    renderSources();
-  }
+  const d = await safeFetch('sources.json', 0);
+  if (d && typeof d === 'object') { SOURCES = d; renderSources(); }
 }
 
-// ========== Price fetching ==========
-function parseYahooPrice(data) {
+// ========== Prices ==========
+function parseYahoo(data) {
   try {
-    const result = data.chart.result[0];
-    const quotes = result.indicators.quote[0];
-    const closes = quotes.close.filter(c => c != null);
-    const cur = closes[closes.length - 1];
-    const prev = closes[closes.length - 2] || cur;
-    const change = cur - prev;
-    const pct = (change / prev) * 100;
-    return { price: cur.toFixed(2), change: change.toFixed(2), pct: pct.toFixed(1), history: closes };
+    const q = data.chart.result[0].indicators.quote[0];
+    const c = q.close.filter(v => v != null);
+    const cur = c[c.length - 1], prev = c[c.length - 2] || cur;
+    const chg = cur - prev, pct = (chg / prev) * 100;
+    return { price: cur.toFixed(2), change: chg.toFixed(2), pct: pct.toFixed(1) };
   } catch { return null; }
 }
 
 async function fetchPrices() {
-  const brentUrl = CORS_PROXY + encodeURIComponent('https://query1.finance.yahoo.com/v8/finance/chart/BZ=F?range=7d&interval=1d');
-  const wtiUrl = CORS_PROXY + encodeURIComponent('https://query1.finance.yahoo.com/v8/finance/chart/CL=F?range=7d&interval=1d');
-
-  const [brentData, wtiData] = await Promise.all([safeFetch(brentUrl), safeFetch(wtiUrl)]);
-  const brent = brentData ? parseYahooPrice(brentData) : null;
-  const wti = wtiData ? parseYahooPrice(wtiData) : null;
-
-  if (brent) {
-    document.getElementById('brentPrice').textContent = `$${brent.price}`;
+  const [bd, wd] = await Promise.all([
+    safeFetch(CORS_PROXY + encodeURIComponent('https://query1.finance.yahoo.com/v8/finance/chart/BZ=F?range=7d&interval=1d')),
+    safeFetch(CORS_PROXY + encodeURIComponent('https://query1.finance.yahoo.com/v8/finance/chart/CL=F?range=7d&interval=1d')),
+  ]);
+  const b = bd ? parseYahoo(bd) : null;
+  const w = wd ? parseYahoo(wd) : null;
+  if (b) {
+    document.getElementById('brentPrice').textContent = `$${b.price}`;
     const el = document.getElementById('brentChange');
-    const up = parseFloat(brent.change) >= 0;
-    el.textContent = `${up ? '▲' : '▼'} ${brent.change} (${brent.pct}%)`;
-    el.className = 'price-change ' + (up ? 'price-up' : 'price-down');
+    const up = parseFloat(b.change) >= 0;
+    el.textContent = `${up?'▲':'▼'} ${b.change} (${b.pct}%)`;
+    el.className = 'price-change ' + (up?'price-up':'price-down');
   }
-  if (wti) {
-    document.getElementById('wtiPrice').textContent = `$${wti.price}`;
+  if (w) {
+    document.getElementById('wtiPrice').textContent = `$${w.price}`;
     const el = document.getElementById('wtiChange');
-    const up = parseFloat(wti.change) >= 0;
-    el.textContent = `${up ? '▲' : '▼'} ${wti.change} (${wti.pct}%)`;
-    el.className = 'price-change ' + (up ? 'price-up' : 'price-down');
+    const up = parseFloat(w.change) >= 0;
+    el.textContent = `${up?'▲':'▼'} ${w.change} (${w.pct}%)`;
+    el.className = 'price-change ' + (up?'price-up':'price-down');
   }
-  if (brent && wti) {
-    document.getElementById('spreadValue').textContent = `$${(parseFloat(brent.price) - parseFloat(wti.price)).toFixed(2)}`;
-  }
+  if (b && w) document.getElementById('spreadValue').textContent = `$${(parseFloat(b.price)-parseFloat(w.price)).toFixed(2)}`;
 }
 
-// ========== Iran briefing ==========
+// ========== Iran Briefing ==========
 async function fetchIranBriefing() {
   const text = await safeFetch(API_BASE);
   if (!text || typeof text !== 'string') return;
-
-  // Parse tension
   const tm = text.match(/Tension:\s*(\d+)\/10\s*(.+?)(?:\n|$)/);
   if (tm) {
-    document.getElementById('tensionValue').textContent = tm[1] + '/10';
-    document.getElementById('tensionDesc').textContent = tm[2].trim().substring(0, 50);
+    document.getElementById('tensionValue').textContent = tm[1]+'/10';
+    document.getElementById('tensionDesc').textContent = tm[2].trim().substring(0,50);
   }
-
   // Render in iran panel
   const el = document.getElementById('iranContent');
-  const sections = text.split(/^##\s+/m).filter(s => s.trim());
+  const sections = text.split(/^## /m).filter(s => s.trim());
   let html = '';
   for (const s of sections) {
     const lines = s.split('\n');
     const title = lines[0].trim();
     const body = lines.slice(1).join('\n').trim();
     if (!title) continue;
-    html += `<div class="iran-section">
-      <h3>${escapeHtml(title)}</h3>
-      <div style="white-space:pre-wrap;font-size:13px;color:var(--text-dim);line-height:1.7">${escapeHtml(body)}</div>
-    </div>`;
+    html += `<div class="iran-section"><h3>${escapeHtml(title)}</h3>
+      <div style="white-space:pre-wrap;font-size:13px;color:var(--text-dim);line-height:1.7">${escapeHtml(body)}</div></div>`;
   }
   el.innerHTML = html || '<p style="color:var(--text-dim)">暂无数据</p>';
 }
 
-// ========== Events → Feed ==========
-async function fetchEvents() {
-  const text = await safeFetch(`${API_BASE}/events?impact=6&hours=24&limit=20`);
+// ========== Events parsing (real format: ## 🔴 [7] CONFLICT: title) ==========
+function parseEvents(text) {
   if (!text || typeof text !== 'string') return [];
-
   const events = [];
-  let cur = null;
-  for (const line of text.split('\n')) {
-    const m = line.match(/^\-\s+\*\*\[(\d+)\]\s+(\w+)\*\*:\s+(.+)/);
-    if (m) {
-      if (cur) events.push(cur);
-      cur = { type: 'event', impact: parseInt(m[1]), category: m[2], title: m[3], body: '', time: '', sources: 0 };
-      const tm = line.match(/(\d+)h?\s*ago/);
-      if (tm) cur.time = tm[0];
-      const sm = line.match(/(\d+)\s*sources?/);
-      if (sm) cur.sources = parseInt(sm[1]);
-    } else if (cur && line.trim() && !line.startsWith('-') && !line.startsWith('>') && !line.startsWith('#')) {
-      cur.body += line.trim() + ' ';
+  const blocks = text.split(/^## /m).filter(s => s.trim());
+  for (const block of blocks) {
+    const lines = block.split('\n');
+    const header = lines[0];
+    // Match: 🔴 [7] CONFLICT: title  or  🟡 [6] DIPLOMACY: title
+    const m = header.match(/[🔴🟡🟢⚪]\s*\[(\d+)\]\s*(\w+):\s*(.+)/);
+    if (!m) continue;
+    const body = [];
+    let time = '', sources = 0, sentiment = '', link = '';
+    for (let i = 1; i < lines.length; i++) {
+      const l = lines[i];
+      const timeM = l.match(/Time:\s*(.+?)(?:\s*\||$)/);
+      if (timeM) time = timeM[1].trim();
+      const srcM = l.match(/Sources\s*\((\d+)\)/);
+      if (srcM) sources = parseInt(srcM[1]);
+      const sentM = l.match(/Sentiment:\s*(\w+)/);
+      if (sentM) sentiment = sentM[1];
+      if (l.startsWith('>') && l.includes('Drill down')) continue;
+      if (l.startsWith('>') && !l.includes('Drill down')) {
+        body.push(l.replace(/^>\s*/, ''));
+      } else if (!l.startsWith('-') && !l.startsWith('#') && !l.startsWith('>') && l.trim() && !l.match(/^(ID|Time|Sources|Sentiment|Confidence):/)) {
+        body.push(l.trim());
+      }
     }
+    events.push({
+      type: 'event', impact: parseInt(m[1]), category: m[2],
+      title: m[3].trim(), body: body.join(' ').substring(0, 300),
+      time, sources, sentiment
+    });
   }
-  if (cur) events.push(cur);
   return events;
 }
 
-async function buildFeed() {
-  const events = await fetchEvents();
-  const items = events.sort((a, b) => b.impact - a.impact);
-  const el = document.getElementById('feedList');
+// ========== Posts parsing (real format: ## 𝕏 **Author** [Cat] @handle) ==========
+function parsePosts(text) {
+  if (!text || typeof text !== 'string') return [];
+  const posts = [];
+  const blocks = text.split(/^## /m).filter(s => s.trim());
+  for (const block of blocks) {
+    const lines = block.split('\n');
+    const header = lines[0];
+    // Match: 𝕏 **Author Name** [Category] @handle  or  📢 **Name** [Cat] 
+    const m = header.match(/\*\*(.+?)\*\*\s*\[(.+?)\]\s*@?(\S+)?/);
+    if (!m) continue;
+    let time = '', platform = '', link = '', engagement = '';
+    const bodyLines = [];
+    let inBody = false;
+    for (let i = 1; i < lines.length; i++) {
+      const l = lines[i];
+      const timeM = l.match(/Time:\s*(.+)/);
+      if (timeM) { time = timeM[1].trim(); continue; }
+      const platM = l.match(/Platform:\s*(\w+)/);
+      if (platM) { platform = platM[1]; continue; }
+      const linkM = l.match(/Link:\s*(https?\S+)/);
+      if (linkM) { link = linkM[1]; continue; }
+      const engM = l.match(/Engagement:\s*(.+)/);
+      if (engM) { engagement = engM[1].trim(); continue; }
+      if (l.startsWith('- ') || l.startsWith('---') || !l.trim()) continue;
+      // Chinese translation (lines starting with >)
+      if (l.startsWith('>')) {
+        bodyLines.push(l.replace(/^>\s*/, ''));
+      } else if (l.trim()) {
+        bodyLines.push(l.trim());
+      }
+    }
+    posts.push({
+      type: 'post', author: m[1], category: m[2], handle: m[3] || '',
+      time, platform, link, engagement,
+      body: bodyLines.join('\n').substring(0, 400)
+    });
+  }
+  return posts;
+}
 
-  if (!items.length) {
-    el.innerHTML = '<div class="loading-spinner"><span style="color:var(--text-dim)">暂无新事件 — 数据每5分钟刷新</span></div>';
+// ========== Build combined feed ==========
+async function buildFeed() {
+  const [evtText, postText] = await Promise.all([
+    safeFetch(`${API_BASE}/events?impact=5&hours=24&limit=15`),
+    safeFetch(`${API_BASE}/posts?limit=15`),
+  ]);
+
+  const events = parseEvents(evtText);
+  const posts = parsePosts(postText);
+
+  // Merge & sort: posts first (more recent), then events
+  const items = [...posts.map((p,i) => ({...p, order: i})), ...events.map((e,i) => ({...e, order: i + 100}))];
+  // Interleave: alternate posts and events for variety
+  const merged = [];
+  let pi = 0, ei = 0;
+  const postArr = posts, evtArr = events;
+  while (pi < postArr.length || ei < evtArr.length) {
+    if (pi < postArr.length) merged.push(postArr[pi++]);
+    if (pi < postArr.length) merged.push(postArr[pi++]);
+    if (ei < evtArr.length) merged.push(evtArr[ei++]);
+  }
+
+  const el = document.getElementById('feedList');
+  if (!merged.length) {
+    el.innerHTML = '<div class="loading-spinner"><span style="color:var(--text-dim)">暂无新事件 — 5分钟后刷新</span></div>';
     return;
   }
 
   let html = '';
-  for (let i = 0; i < items.length; i++) {
-    const item = items[i];
-    html += `<div class="feed-card" style="animation-delay:${i * 0.06}s">
-      <div class="card-header">
-        <span class="card-type event">${escapeHtml(item.category)}</span>
-        <span class="card-time">${item.time}</span>
-      </div>
-      <div class="card-title">${escapeHtml(item.title)}</div>
-      ${item.body ? `<div class="card-body">${escapeHtml(item.body.trim().substring(0, 220))}</div>` : ''}
-      <div class="card-meta">
-        <span class="impact ${impactClass(item.impact)}">Impact ${item.impact}</span>
-        ${item.sources ? `<span class="sources-count">📡 ${item.sources} sources</span>` : ''}
-      </div>
-    </div>`;
+  for (let i = 0; i < merged.length; i++) {
+    const item = merged[i];
+    const delay = Math.min(i * 0.05, 1);
+
+    if (item.type === 'event') {
+      html += `<a class="feed-card" style="animation-delay:${delay}s" href="https://skill.capduck.com/iran/events" target="_blank">
+        <div class="card-header">
+          <span class="card-type event">${escapeHtml(item.category)}</span>
+          <span class="card-time">${escapeHtml(item.time)}</span>
+        </div>
+        <div class="card-title">${escapeHtml(item.title)}</div>
+        ${item.body ? `<div class="card-body">${escapeHtml(item.body)}</div>` : ''}
+        <div class="card-meta">
+          <span class="impact ${impactClass(item.impact)}">Impact ${item.impact}</span>
+          ${item.sources ? `<span class="sources-count">📡 ${item.sources} sources</span>` : ''}
+          ${item.sentiment ? `<span style="color:var(--text-muted)">${item.sentiment}</span>` : ''}
+        </div>
+      </a>`;
+    } else {
+      // Post card
+      html += `<a class="feed-card" style="animation-delay:${delay}s" href="${escapeHtml(item.link)}" target="_blank">
+        <div class="card-header">
+          <span class="card-type tweet">${escapeHtml(item.platform || 'post')}</span>
+          <span class="card-time">${escapeHtml(item.time)}</span>
+        </div>
+        <div class="card-title">
+          <span style="color:var(--accent-blue)">@${escapeHtml(item.handle)}</span>
+          <span style="color:var(--text-muted);font-size:12px;margin-left:6px">${escapeHtml(item.author)}</span>
+          <span style="color:var(--text-muted);font-size:11px;margin-left:6px">[${escapeHtml(item.category)}]</span>
+        </div>
+        <div class="card-body" style="white-space:pre-wrap">${escapeHtml(item.body)}</div>
+        ${item.engagement ? `<div class="card-meta"><span class="engagement">📊 ${escapeHtml(item.engagement)}</span></div>` : ''}
+      </a>`;
+    }
   }
   el.innerHTML = html;
 }
 
-// ========== Polymarket ==========
+// ========== Polymarket (real format: ## 标题 + - Conditions: + items) ==========
 async function fetchPolymarket() {
   const text = await safeFetch(`${API_BASE}/polymarket`);
   const el = document.getElementById('polyContent');
-  if (!text) { el.innerHTML = '<p style="color:var(--text-dim)">暂无数据</p>'; return; }
+  if (!text || typeof text !== 'string') {
+    el.innerHTML = '<p style="color:var(--text-dim)">暂无数据</p>';
+    return;
+  }
 
-  if (typeof text === 'string') {
-    const contracts = [];
-    let cur = null;
-    for (const line of text.split('\n')) {
-      const qm = line.match(/^\*\*(.+?)\*\*/);
-      if (qm && !line.startsWith('>')) {
-        if (cur) contracts.push(cur);
-        cur = { question: qm[1], prob: '', trend: '' };
-        const pm = line.match(/(\d+\.?\d*)%/);
-        if (pm) cur.prob = pm[1] + '%';
-      } else if (cur && line.trim()) {
-        if (/[↑↓→]/.test(line)) cur.trend += line.trim() + ' ';
+  const contracts = [];
+  const blocks = text.split(/^## /m).filter(s => s.trim());
+  for (const block of blocks) {
+    const lines = block.split('\n');
+    const question = lines[0].trim();
+    if (!question || question.startsWith('#')) continue;
+    const conditions = [];
+    let link = '';
+    for (const l of lines.slice(1)) {
+      const linkM = l.match(/Link:\s*(https?\S+)/);
+      if (linkM) { link = linkM[1]; continue; }
+      // Match: "  - 年底: **66%** Yes ↓9% (range: 34%-80%)"
+      const condM = l.match(/^\s+-\s+(.+?):\s+\*\*(\d+%)\*\*\s*(Yes|No)?\s*(.*)/);
+      if (condM) {
+        conditions.push({
+          label: condM[1],
+          prob: condM[2],
+          dir: condM[4] || ''
+        });
       }
     }
-    if (cur) contracts.push(cur);
+    if (conditions.length) contracts.push({ question, link, conditions });
+  }
 
-    let html = '';
-    for (const c of contracts.slice(0, 10)) {
-      html += `<div class="poly-card">
-        <div class="poly-question">${escapeHtml(c.question)}</div>
-        ${c.prob ? `<div class="poly-prob">${c.prob}</div>` : ''}
-        ${c.trend ? `<div class="poly-trend" style="color:var(--text-dim)">${escapeHtml(c.trend.trim())}</div>` : ''}
+  let html = '';
+  for (const c of contracts) {
+    html += `<a class="poly-card" href="${escapeHtml(c.link)}" target="_blank" style="text-decoration:none;color:inherit;display:block">
+      <div class="poly-question">${escapeHtml(c.question)}</div>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:8px">`;
+    for (const cond of c.conditions) {
+      const probNum = parseInt(cond.prob);
+      const color = probNum >= 50 ? 'var(--up)' : probNum >= 20 ? 'var(--accent-gold)' : 'var(--text-muted)';
+      html += `<div style="background:var(--bg);padding:8px 12px;border-radius:8px;border:1px solid var(--border)">
+        <div style="font-size:11px;color:var(--text-dim)">${escapeHtml(cond.label)}</div>
+        <div style="font-size:20px;font-weight:800;color:${color}">${cond.prob}</div>
+        <div style="font-size:10px;color:var(--text-muted)">${escapeHtml(cond.dir)}</div>
       </div>`;
     }
-    el.innerHTML = html || '<p style="color:var(--text-dim)">暂无 Polymarket 数据</p>';
+    html += '</div></a>';
   }
+  el.innerHTML = html || '<p style="color:var(--text-dim)">暂无 Polymarket 数据</p>';
 }
 
-// ========== Sources panel (from sources.json) ==========
+// ========== Sources panel ==========
 function renderSources() {
   if (!SOURCES) return;
   const el = document.getElementById('sourcesContent');
-  const groupOrder = ['tier0', 'analysts', 'investment', 'tanker', 'news'];
+  const groups = ['tier0','analysts','investment','tanker','news'];
   let html = '';
-
-  for (const key of groupOrder) {
-    const group = SOURCES[key];
-    if (!group || !group.accounts) continue;
-    html += `<div class="source-group">
-      <div class="source-group-title ${group.style || ''}">${escapeHtml(group.title)}</div>
-      <div>`;
-    for (const s of group.accounts) {
-      const user = s.handle.replace('@', '');
+  for (const key of groups) {
+    const g = SOURCES[key];
+    if (!g || !g.accounts) continue;
+    html += `<div class="source-group"><div class="source-group-title ${g.style||''}">${escapeHtml(g.title)}</div><div>`;
+    for (const s of g.accounts) {
+      const user = s.handle.replace('@','');
       html += `<a class="source-item" href="https://x.com/${user}" target="_blank">
-        ${escapeHtml(s.handle)} <span style="color:var(--text-muted);font-size:11px">${escapeHtml(s.org)}</span>
-      </a>`;
+        ${escapeHtml(s.handle)} <span style="color:var(--text-muted);font-size:11px">${escapeHtml(s.org)}</span></a>`;
     }
     html += '</div></div>';
   }
-
-  // Iran linked sources
   const iran = SOURCES.iran_linked;
   if (iran && iran.groups) {
-    html += `<div class="source-group">
-      <div class="source-group-title ${iran.style || ''}">${escapeHtml(iran.title)}</div>
-      <div>`;
+    html += `<div class="source-group"><div class="source-group-title ${iran.style||''}">${escapeHtml(iran.title)}</div><div>`;
     for (const g of iran.groups) {
-      html += `<a class="source-item" href="https://skill.capduck.com/iran/notable" target="_blank"
-        style="border-color:rgba(220,38,38,0.2)">
-        ${escapeHtml(g.group)} <span style="color:var(--text-muted);font-size:11px">${escapeHtml(g.sources)}</span>
-      </a>`;
+      html += `<a class="source-item" href="https://skill.capduck.com/iran/notable" target="_blank" style="border-color:rgba(220,38,38,0.2)">
+        ${escapeHtml(g.group)} <span style="color:var(--text-muted);font-size:11px">${escapeHtml(g.sources)}</span></a>`;
     }
     html += '</div></div>';
   }
-
   el.innerHTML = html;
 }
 
-// ========== Main loop ==========
+// ========== Main ==========
 async function refresh() {
   document.getElementById('updateTime').textContent =
-    new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Singapore' }) + ' SGT';
-
-  try {
-    await Promise.all([fetchPrices(), fetchIranBriefing(), buildFeed(), fetchPolymarket()]);
-    lastFetchOk = true;
-  } catch (e) {
-    console.error('Refresh error:', e);
-    lastFetchOk = false;
-  }
+    new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Singapore', hour12: false }) + ' SGT';
+  await Promise.allSettled([fetchPrices(), fetchIranBriefing(), buildFeed(), fetchPolymarket()]);
 }
 
-// ========== Init ==========
 (async () => {
   await loadSources();
   await refresh();
