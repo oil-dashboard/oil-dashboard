@@ -2,7 +2,12 @@
 // 修复 API 解析 + 加入 posts 信息流 + Polymarket 正确解析
 
 const API_BASE = 'https://skill.capduck.com/iran';
-const CORS_PROXY = 'https://api.allorigins.win/raw?url=';
+const CORS_PROXIES = [
+  'https://corsproxy.io/?',
+  'https://api.allorigins.win/raw?url=',
+  'https://thingproxy.freeboard.io/fetch/',
+];
+let corsProxy = CORS_PROXIES[0];
 const REFRESH_MS = 5 * 60 * 1000;
 let SOURCES = null;
 
@@ -64,10 +69,18 @@ function parseYahoo(data) {
 }
 
 async function fetchPrices() {
-  const [bd, wd] = await Promise.all([
-    safeFetch(CORS_PROXY + encodeURIComponent('https://query1.finance.yahoo.com/v8/finance/chart/BZ=F?range=7d&interval=1d')),
-    safeFetch(CORS_PROXY + encodeURIComponent('https://query1.finance.yahoo.com/v8/finance/chart/CL=F?range=7d&interval=1d')),
-  ]);
+  const brentUrl = 'https://query1.finance.yahoo.com/v8/finance/chart/BZ=F?range=7d&interval=1d';
+  const wtiUrl = 'https://query1.finance.yahoo.com/v8/finance/chart/CL=F?range=7d&interval=1d';
+
+  // Try each proxy until one works
+  let bd = null, wd = null;
+  for (const proxy of CORS_PROXIES) {
+    [bd, wd] = await Promise.all([
+      safeFetch(proxy + encodeURIComponent(brentUrl), 0),
+      safeFetch(proxy + encodeURIComponent(wtiUrl), 0),
+    ]);
+    if (bd || wd) { corsProxy = proxy; break; }
+  }
   const b = bd ? parseYahoo(bd) : null;
   const w = wd ? parseYahoo(wd) : null;
   if (b) {
