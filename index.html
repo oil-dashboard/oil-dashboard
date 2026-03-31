@@ -53,7 +53,7 @@
     <button class="tab active" data-tab="feed">📡 信息流</button>
     <button class="tab" data-tab="iran">🇮🇷 伊朗</button>
     <button class="tab" data-tab="polymarket">📊 预测市场</button>
-    <button class="tab" data-tab="sources">👤 信源</button>
+    <button class="tab" data-tab="sources">🛢️ 油市</button>
   </nav>
 
   <!-- Main Feed -->
@@ -88,7 +88,12 @@
 
   <!-- Sources Panel -->
   <main id="sourcesPanel" class="panel">
-    <div id="sourcesContent" class="sources-content"></div>
+    <div id="oottFeed" class="feed-list">
+      <div class="loading-spinner">
+        <div class="spinner"></div>
+        <span>正在加载油市推文...</span>
+      </div>
+    </div>
   </main>
 
   <!-- Footer -->

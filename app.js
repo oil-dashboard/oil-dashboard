@@ -321,31 +321,48 @@ async function fetchPolymarket() {
   el.innerHTML = html || '<p style="color:var(--text-dim)">暂无 Polymarket 数据</p>';
 }
 
-// ========== Sources panel ==========
-function renderSources() {
-  if (!SOURCES) return;
-  const el = document.getElementById('sourcesContent');
-  const groups = ['tier0','analysts','investment','tanker','news'];
-  let html = '';
-  for (const key of groups) {
-    const g = SOURCES[key];
-    if (!g || !g.accounts) continue;
-    html += `<div class="source-group"><div class="source-group-title ${g.style||''}">${escapeHtml(g.title)}</div><div>`;
-    for (const s of g.accounts) {
-      const user = s.handle.replace('@','');
-      html += `<a class="source-item" href="https://x.com/${user}" target="_blank">
-        ${escapeHtml(s.handle)} <span style="color:var(--text-muted);font-size:11px">${escapeHtml(s.org)}</span></a>`;
-    }
-    html += '</div></div>';
+// ========== OOTT 油市推文 (from data/oott.json) ==========
+async function fetchOOTT() {
+  const data = await safeFetch('data/oott.json', 0);
+  const el = document.getElementById('oottFeed');
+
+  if (!data || !Array.isArray(data) || data.length === 0) {
+    el.innerHTML = `<div class="loading-spinner">
+      <span style="color:var(--text-dim)">暂无推文数据 — 等待下次抓取</span>
+      <a href="https://x.com/JavierBlas" target="_blank" style="color:var(--accent-blue);font-size:12px;margin-top:8px">查看 @JavierBlas →</a>
+    </div>`;
+    return;
   }
-  const iran = SOURCES.iran_linked;
-  if (iran && iran.groups) {
-    html += `<div class="source-group"><div class="source-group-title ${iran.style||''}">${escapeHtml(iran.title)}</div><div>`;
-    for (const g of iran.groups) {
-      html += `<a class="source-item" href="https://skill.capduck.com/iran/notable" target="_blank" style="border-color:rgba(220,38,38,0.2)">
-        ${escapeHtml(g.group)} <span style="color:var(--text-muted);font-size:11px">${escapeHtml(g.sources)}</span></a>`;
-    }
-    html += '</div></div>';
+
+  // Sort by time descending
+  const sorted = [...data].sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+
+  let html = `<div style="font-size:12px;color:var(--text-muted);margin-bottom:12px;padding:4px 8px">
+    📊 共 ${sorted.length} 条推文 · 来自 ${new Set(sorted.map(t=>t.username)).size} 个白名单信源
+  </div>`;
+
+  for (let i = 0; i < sorted.length; i++) {
+    const t = sorted[i];
+    const delay = Math.min(i * 0.04, 0.8);
+    const timeStr = t.createdAt ? new Date(t.createdAt).toLocaleString('zh-CN', {
+      timeZone: 'Asia/Singapore', hour12: false,
+      month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric'
+    }) + ' SGT' : '';
+
+    const hasMedia = (t.photos && t.photos.length > 0) || (t.videos && t.videos.length > 0);
+    const mediaTag = hasMedia ? '<span style="color:var(--accent-cyan);font-size:11px;margin-left:6px">📷 含图</span>' : '';
+
+    html += `<a class="feed-card" style="animation-delay:${delay}s" href="${escapeHtml(t.url || '#')}" target="_blank">
+      <div class="card-header">
+        <span class="card-type tweet">OOTT</span>
+        <span class="card-time">${escapeHtml(timeStr)}</span>
+      </div>
+      <div class="card-title">
+        <span style="color:var(--accent-blue)">@${escapeHtml(t.username || '')}</span>
+        ${mediaTag}
+      </div>
+      <div class="card-body" style="white-space:pre-wrap">${escapeHtml((t.text || '').substring(0, 500))}</div>
+    </a>`;
   }
   el.innerHTML = html;
 }
@@ -354,7 +371,7 @@ function renderSources() {
 async function refresh() {
   document.getElementById('updateTime').textContent =
     new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Singapore', hour12: false }) + ' SGT';
-  await Promise.allSettled([fetchPrices(), fetchIranBriefing(), buildFeed(), fetchPolymarket()]);
+  await Promise.allSettled([fetchPrices(), fetchIranBriefing(), buildFeed(), fetchPolymarket(), fetchOOTT()]);
 }
 
 (async () => {
