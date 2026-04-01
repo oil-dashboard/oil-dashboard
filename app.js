@@ -57,40 +57,32 @@ async function loadSources() {
   if (d && typeof d === 'object') { SOURCES = d; }
 }
 
-// ========== Prices ==========
-function parseYahoo(data) {
-  try {
-    const result = data.chart.result[0];
-    const q = result.indicators.quote[0];
-    const timestamps = result.timestamp;
-    const c = q.close.filter(v => v != null);
-    const cur = c[c.length - 1], prev = c[c.length - 2] || cur;
-    const chg = cur - prev, pct = (chg / prev) * 100;
-    // Get the last valid timestamp
-    const lastTs = timestamps ? timestamps[timestamps.length - 1] : null;
-    const dataTime = lastTs ? new Date(lastTs * 1000).toLocaleString('zh-CN', {
+// ========== Prices (Twelve Data free API — native CORS, no proxy needed) ==========
+async function fetchPrices() {
+  const ts = Date.now(); // cache bust
+  const brentUrl = `https://api.twelvedata.com/quote?symbol=BZ1!&apikey=demo&source=docs&_=${ts}`;
+  const wtiUrl = `https://api.twelvedata.com/quote?symbol=CL1!&apikey=demo&source=docs&_=${ts}`;
+
+  const [bd, wd] = await Promise.all([
+    safeFetch(brentUrl, 1),
+    safeFetch(wtiUrl, 1),
+  ]);
+
+  function parseTwelve(d) {
+    if (!d || d.code || !d.close) return null;
+    const cur = parseFloat(d.close);
+    const prev = parseFloat(d.previous_close) || cur;
+    const chg = cur - prev;
+    const pct = prev ? (chg / prev) * 100 : 0;
+    const dataTime = d.datetime ? new Date(d.datetime + ' UTC').toLocaleString('zh-CN', {
       timeZone: 'Asia/Singapore', hour12: false,
       month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric'
     }) + ' SGT' : '';
     return { price: cur.toFixed(2), change: chg.toFixed(2), pct: pct.toFixed(1), dataTime };
-  } catch { return null; }
-}
-
-async function fetchPrices() {
-  const brentUrl = 'https://query1.finance.yahoo.com/v8/finance/chart/BZ=F?range=1d&interval=5m';
-  const wtiUrl = 'https://query1.finance.yahoo.com/v8/finance/chart/CL=F?range=1d&interval=5m';
-
-  // Try each proxy until one works
-  let bd = null, wd = null;
-  for (const proxy of CORS_PROXIES) {
-    [bd, wd] = await Promise.all([
-      safeFetch(proxy + encodeURIComponent(brentUrl), 0),
-      safeFetch(proxy + encodeURIComponent(wtiUrl), 0),
-    ]);
-    if (bd || wd) { corsProxy = proxy; break; }
   }
-  const b = bd ? parseYahoo(bd) : null;
-  const w = wd ? parseYahoo(wd) : null;
+
+  const b = parseTwelve(bd);
+  const w = parseTwelve(wd);
   if (b) {
     document.getElementById('brentPrice').textContent = `$${b.price}`;
     const el = document.getElementById('brentChange');
