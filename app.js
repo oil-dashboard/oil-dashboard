@@ -57,21 +57,26 @@ async function loadSources() {
   if (d && typeof d === 'object') { SOURCES = d; }
 }
 
-// ========== Prices (Yahoo Finance via allorigins JSON wrapper) ==========
+// ========== Prices (Yahoo Finance, multi-proxy + localStorage cache) ==========
 async function fetchPriceViaProxy(symbol) {
   const url = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=5d&interval=1h`;
   const proxies = [
     `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`,
     `https://corsproxy.io/?${encodeURIComponent(url)}`,
     `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`,
+    `https://proxy.cors.sh/${url}`,
   ];
   for (const proxyUrl of proxies) {
     try {
-      const r = await fetch(proxyUrl, { signal: AbortSignal.timeout(12000) });
+      const r = await fetch(proxyUrl, { signal: AbortSignal.timeout(10000) });
       if (!r.ok) continue;
-      let data = await r.json();
+      const text = await r.text();
+      let data;
+      try { data = JSON.parse(text); } catch { continue; }
       // allorigins wraps in { contents: "..." }
-      if (data.contents) data = JSON.parse(data.contents);
+      if (data.contents) {
+        try { data = JSON.parse(data.contents); } catch { continue; }
+      }
       const result = data?.chart?.result?.[0];
       if (!result) continue;
       const q = result.indicators.quote[0];
@@ -86,10 +91,32 @@ async function fetchPriceViaProxy(symbol) {
         timeZone: 'Asia/Singapore', hour12: false,
         month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric'
       }) + ' SGT' : '';
-      return { price: cur.toFixed(2), change: chg.toFixed(2), pct: pct.toFixed(1), dataTime };
+      const priceData = { price: cur.toFixed(2), change: chg.toFixed(2), pct: pct.toFixed(1), dataTime, cached: false };
+      // Save to localStorage
+      try { localStorage.setItem('oil_' + symbol, JSON.stringify(priceData)); } catch {}
+      return priceData;
     } catch (e) { continue; }
   }
+  // All proxies failed — return cached data
+  try {
+    const cached = JSON.parse(localStorage.getItem('oil_' + symbol));
+    if (cached) { cached.cached = true; return cached; }
+  } catch {}
   return null;
+}
+
+function renderPrice(id, data) {
+  if (!data) return;
+  document.getElementById(id + 'Price').textContent = `$${data.price}`;
+  const el = document.getElementById(id + 'Change');
+  const up = parseFloat(data.change) >= 0;
+  el.textContent = `${up?'▲':'▼'} ${data.change} (${data.pct}%)`;
+  el.className = 'price-change ' + (up ? 'price-up' : 'price-down');
+  const timeEl = document.getElementById(id + 'Time');
+  if (data.dataTime) {
+    timeEl.textContent = data.cached ? `⏳ 缓存 ${data.dataTime}` : `📅 ${data.dataTime}`;
+    timeEl.style.color = data.cached ? 'var(--accent-gold)' : '';
+  }
 }
 
 async function fetchPrices() {
@@ -97,22 +124,8 @@ async function fetchPrices() {
     fetchPriceViaProxy('BZ=F'),
     fetchPriceViaProxy('CL=F'),
   ]);
-  if (b) {
-    document.getElementById('brentPrice').textContent = `$${b.price}`;
-    const el = document.getElementById('brentChange');
-    const up = parseFloat(b.change) >= 0;
-    el.textContent = `${up?'▲':'▼'} ${b.change} (${b.pct}%)`;
-    el.className = 'price-change ' + (up?'price-up':'price-down');
-    if (b.dataTime) document.getElementById('brentTime').textContent = `📅 ${b.dataTime}`;
-  }
-  if (w) {
-    document.getElementById('wtiPrice').textContent = `$${w.price}`;
-    const el = document.getElementById('wtiChange');
-    const up = parseFloat(w.change) >= 0;
-    el.textContent = `${up?'▲':'▼'} ${w.change} (${w.pct}%)`;
-    el.className = 'price-change ' + (up?'price-up':'price-down');
-    if (w.dataTime) document.getElementById('wtiTime').textContent = `📅 ${w.dataTime}`;
-  }
+  renderPrice('brent', b);
+  renderPrice('wti', w);
   if (b && w) document.getElementById('spreadValue').textContent = `$${(parseFloat(b.price)-parseFloat(w.price)).toFixed(2)}`;
 }
 
