@@ -57,32 +57,46 @@ async function loadSources() {
   if (d && typeof d === 'object') { SOURCES = d; }
 }
 
-// ========== Prices (Twelve Data free API — native CORS, no proxy needed) ==========
-async function fetchPrices() {
-  const ts = Date.now(); // cache bust
-  const brentUrl = `https://api.twelvedata.com/quote?symbol=BZ1!&apikey=demo&source=docs&_=${ts}`;
-  const wtiUrl = `https://api.twelvedata.com/quote?symbol=CL1!&apikey=demo&source=docs&_=${ts}`;
-
-  const [bd, wd] = await Promise.all([
-    safeFetch(brentUrl, 1),
-    safeFetch(wtiUrl, 1),
-  ]);
-
-  function parseTwelve(d) {
-    if (!d || d.code || !d.close) return null;
-    const cur = parseFloat(d.close);
-    const prev = parseFloat(d.previous_close) || cur;
-    const chg = cur - prev;
-    const pct = prev ? (chg / prev) * 100 : 0;
-    const dataTime = d.datetime ? new Date(d.datetime + ' UTC').toLocaleString('zh-CN', {
-      timeZone: 'Asia/Singapore', hour12: false,
-      month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric'
-    }) + ' SGT' : '';
-    return { price: cur.toFixed(2), change: chg.toFixed(2), pct: pct.toFixed(1), dataTime };
+// ========== Prices (Yahoo Finance via allorigins JSON wrapper) ==========
+async function fetchPriceViaProxy(symbol) {
+  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=5d&interval=1h`;
+  const proxies = [
+    `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`,
+    `https://corsproxy.io/?${encodeURIComponent(url)}`,
+    `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`,
+  ];
+  for (const proxyUrl of proxies) {
+    try {
+      const r = await fetch(proxyUrl, { signal: AbortSignal.timeout(12000) });
+      if (!r.ok) continue;
+      let data = await r.json();
+      // allorigins wraps in { contents: "..." }
+      if (data.contents) data = JSON.parse(data.contents);
+      const result = data?.chart?.result?.[0];
+      if (!result) continue;
+      const q = result.indicators.quote[0];
+      const ts = result.timestamp;
+      const closes = q.close.filter(v => v != null);
+      if (closes.length < 2) continue;
+      const cur = closes[closes.length - 1];
+      const prev = closes[closes.length - 2];
+      const chg = cur - prev, pct = (chg / prev) * 100;
+      const lastTs = ts?.[ts.length - 1];
+      const dataTime = lastTs ? new Date(lastTs * 1000).toLocaleString('zh-CN', {
+        timeZone: 'Asia/Singapore', hour12: false,
+        month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric'
+      }) + ' SGT' : '';
+      return { price: cur.toFixed(2), change: chg.toFixed(2), pct: pct.toFixed(1), dataTime };
+    } catch (e) { continue; }
   }
+  return null;
+}
 
-  const b = parseTwelve(bd);
-  const w = parseTwelve(wd);
+async function fetchPrices() {
+  const [b, w] = await Promise.all([
+    fetchPriceViaProxy('BZ=F'),
+    fetchPriceViaProxy('CL=F'),
+  ]);
   if (b) {
     document.getElementById('brentPrice').textContent = `$${b.price}`;
     const el = document.getElementById('brentChange');
