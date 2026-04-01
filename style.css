@@ -5,16 +5,16 @@
   --bg-card: #111827;
   --bg-card-hover: #1a2332;
   --border: #1e293b;
-  --text: #e2e8f0;
-  --text-dim: #64748b;
-  --text-muted: #475569;
-  --accent-blue: #3b82f6;
-  --accent-gold: #d4a853;
+  --text: #f1f5f9;
+  --text-dim: #94a3b8;
+  --text-muted: #6b7f99;
+  --accent-blue: #60a5fa;
+  --accent-gold: #e0b96a;
   --accent-cyan: #22d3ee;
-  --up: #10b981;
-  --down: #ef4444;
-  --iran-red: #dc2626;
-  --polymarket-purple: #8b5cf6;
+  --up: #34d399;
+  --down: #f87171;
+  --iran-red: #ef4444;
+  --polymarket-purple: #a78bfa;
 }
 
 body {
@@ -65,6 +65,20 @@ body {
 }
 .update-time { font-size: 12px; color: var(--text-dim); }
 
+/* Price timestamp & delay notice */
+.price-timestamp {
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-top: 4px;
+  line-height: 1.3;
+}
+.delay-notice {
+  font-size: 10px;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: 2px;
+}
+
 /* ========== Situation Banner ========== */
 .situation-banner {
   display: flex;
@@ -83,9 +97,9 @@ body {
   padding: 14px 16px;
   flex-shrink: 0;
 }
-.tension-label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; }
+.tension-label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; }
 .tension-value { font-size: 28px; font-weight: 800; color: var(--iran-red); margin: 4px 0; }
-.tension-desc { font-size: 11px; color: var(--text-muted); line-height: 1.4; }
+.tension-desc { font-size: 11px; color: var(--text-dim); line-height: 1.4; }
 
 .price-boxes { display: flex; gap: 12px; flex: 1; }
 .price-box {
@@ -98,8 +112,8 @@ body {
   transition: border-color 0.2s;
 }
 .price-box:hover { border-color: var(--accent-blue); }
-.price-label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; }
-.price-value { font-size: 22px; font-weight: 700; margin: 4px 0; }
+.price-label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; }
+.price-value { font-size: 22px; font-weight: 700; margin: 4px 0; color: var(--text); }
 .price-change { font-size: 13px; font-weight: 600; }
 .price-up { color: var(--up); }
 .price-down { color: var(--down); }
@@ -184,17 +198,18 @@ body {
 
 .feed-card .card-time {
   font-size: 11px;
-  color: var(--text-muted);
+  color: var(--text-dim);
 }
 .feed-card .card-title {
   font-size: 14px;
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 6px;
+  color: var(--text);
 }
 .feed-card .card-body {
   font-size: 13px;
-  color: var(--text-dim);
+  color: #b8c5d6;
   line-height: 1.6;
 }
 .feed-card .card-meta {
@@ -232,7 +247,7 @@ body {
 }
 .iran-section p, .iran-section li {
   font-size: 13px;
-  color: var(--text-dim);
+  color: #b8c5d6;
   line-height: 1.7;
 }
 
@@ -260,7 +275,7 @@ body {
 }
 
 /* ========== Sources ========== */
-.sources-content { }
+/* Sources / Oil tab uses .feed-list styles */
 .source-group {
   margin-bottom: 20px;
 }

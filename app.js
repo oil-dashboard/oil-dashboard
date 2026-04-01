@@ -60,11 +60,19 @@ async function loadSources() {
 // ========== Prices ==========
 function parseYahoo(data) {
   try {
-    const q = data.chart.result[0].indicators.quote[0];
+    const result = data.chart.result[0];
+    const q = result.indicators.quote[0];
+    const timestamps = result.timestamp;
     const c = q.close.filter(v => v != null);
     const cur = c[c.length - 1], prev = c[c.length - 2] || cur;
     const chg = cur - prev, pct = (chg / prev) * 100;
-    return { price: cur.toFixed(2), change: chg.toFixed(2), pct: pct.toFixed(1) };
+    // Get the last valid timestamp
+    const lastTs = timestamps ? timestamps[timestamps.length - 1] : null;
+    const dataTime = lastTs ? new Date(lastTs * 1000).toLocaleString('zh-CN', {
+      timeZone: 'Asia/Singapore', hour12: false,
+      month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric'
+    }) + ' SGT' : '';
+    return { price: cur.toFixed(2), change: chg.toFixed(2), pct: pct.toFixed(1), dataTime };
   } catch { return null; }
 }
 
@@ -89,6 +97,7 @@ async function fetchPrices() {
     const up = parseFloat(b.change) >= 0;
     el.textContent = `${up?'▲':'▼'} ${b.change} (${b.pct}%)`;
     el.className = 'price-change ' + (up?'price-up':'price-down');
+    if (b.dataTime) document.getElementById('brentTime').textContent = `📅 ${b.dataTime}`;
   }
   if (w) {
     document.getElementById('wtiPrice').textContent = `$${w.price}`;
@@ -96,6 +105,7 @@ async function fetchPrices() {
     const up = parseFloat(w.change) >= 0;
     el.textContent = `${up?'▲':'▼'} ${w.change} (${w.pct}%)`;
     el.className = 'price-change ' + (up?'price-up':'price-down');
+    if (w.dataTime) document.getElementById('wtiTime').textContent = `📅 ${w.dataTime}`;
   }
   if (b && w) document.getElementById('spreadValue').textContent = `$${(parseFloat(b.price)-parseFloat(w.price)).toFixed(2)}`;
 }
