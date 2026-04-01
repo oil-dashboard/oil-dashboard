@@ -54,7 +54,7 @@ async function safeFetch(url, retries = 2) {
 // ========== Load sources.json ==========
 async function loadSources() {
   const d = await safeFetch('sources.json', 0);
-  if (d && typeof d === 'object') { SOURCES = d; renderSources(); }
+  if (d && typeof d === 'object') { SOURCES = d; }
 }
 
 // ========== Prices ==========
