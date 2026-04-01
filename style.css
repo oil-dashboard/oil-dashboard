@@ -5,16 +5,16 @@
   --bg-card: #111827;
   --bg-card-hover: #1a2332;
   --border: #1e293b;
-  --text: #f1f5f9;
-  --text-dim: #94a3b8;
-  --text-muted: #6b7f99;
-  --accent-blue: #60a5fa;
-  --accent-gold: #e0b96a;
-  --accent-cyan: #22d3ee;
-  --up: #34d399;
-  --down: #f87171;
-  --iran-red: #ef4444;
-  --polymarket-purple: #a78bfa;
+  --text: #f8fafc;
+  --text-dim: #b0bec5;
+  --text-muted: #8899aa;
+  --accent-blue: #7cb3f4;
+  --accent-gold: #f0cb7a;
+  --accent-cyan: #4ee8f7;
+  --up: #4ade80;
+  --down: #ff6b6b;
+  --iran-red: #ff5555;
+  --polymarket-purple: #b89cfa;
 }
 
 body {
@@ -209,7 +209,7 @@ body {
 }
 .feed-card .card-body {
   font-size: 13px;
-  color: #b8c5d6;
+  color: #cdd8e4;
   line-height: 1.6;
 }
 .feed-card .card-meta {
@@ -247,7 +247,7 @@ body {
 }
 .iran-section p, .iran-section li {
   font-size: 13px;
-  color: #b8c5d6;
+  color: #cdd8e4;
   line-height: 1.7;
 }
 

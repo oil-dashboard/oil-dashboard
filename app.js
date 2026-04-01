@@ -77,8 +77,8 @@ function parseYahoo(data) {
 }
 
 async function fetchPrices() {
-  const brentUrl = 'https://query1.finance.yahoo.com/v8/finance/chart/BZ=F?range=7d&interval=1d';
-  const wtiUrl = 'https://query1.finance.yahoo.com/v8/finance/chart/CL=F?range=7d&interval=1d';
+  const brentUrl = 'https://query1.finance.yahoo.com/v8/finance/chart/BZ=F?range=1d&interval=5m';
+  const wtiUrl = 'https://query1.finance.yahoo.com/v8/finance/chart/CL=F?range=1d&interval=5m';
 
   // Try each proxy until one works
   let bd = null, wd = null;
@@ -171,7 +171,7 @@ function parseEvents(text) {
   return events;
 }
 
-// ========== Posts parsing (real format: ## 𝕏 **Author** [Cat] @handle) ==========
+// ========== Posts parsing — separate Chinese translation from original ==========
 function parsePosts(text) {
   if (!text || typeof text !== 'string') return [];
   const posts = [];
@@ -179,12 +179,10 @@ function parsePosts(text) {
   for (const block of blocks) {
     const lines = block.split('\n');
     const header = lines[0];
-    // Match: 𝕏 **Author Name** [Category] @handle  or  📢 **Name** [Cat] 
     const m = header.match(/\*\*(.+?)\*\*\s*\[(.+?)\]\s*@?(\S+)?/);
     if (!m) continue;
     let time = '', platform = '', link = '', engagement = '';
-    const bodyLines = [];
-    let inBody = false;
+    const zhLines = [], origLines = [];
     for (let i = 1; i < lines.length; i++) {
       const l = lines[i];
       const timeM = l.match(/Time:\s*(.+)/);
@@ -196,17 +194,18 @@ function parsePosts(text) {
       const engM = l.match(/Engagement:\s*(.+)/);
       if (engM) { engagement = engM[1].trim(); continue; }
       if (l.startsWith('- ') || l.startsWith('---') || !l.trim()) continue;
-      // Chinese translation (lines starting with >)
       if (l.startsWith('>')) {
-        bodyLines.push(l.replace(/^>\s*/, ''));
+        zhLines.push(l.replace(/^>\s*/, ''));
       } else if (l.trim()) {
-        bodyLines.push(l.trim());
+        origLines.push(l.trim());
       }
     }
     posts.push({
       type: 'post', author: m[1], category: m[2], handle: m[3] || '',
       time, platform, link, engagement,
-      body: bodyLines.join('\n').substring(0, 400)
+      zhBody: zhLines.join('\n').substring(0, 500),
+      origBody: origLines.join('\n').substring(0, 500),
+      body: (zhLines.length ? zhLines : origLines).join('\n').substring(0, 500)
     });
   }
   return posts;
@@ -260,7 +259,12 @@ async function buildFeed() {
         </div>
       </a>`;
     } else {
-      // Post card
+      // Post card — Chinese translation first, original smaller
+      const zhPart = item.zhBody ? `<div class="card-body" style="white-space:pre-wrap">${escapeHtml(item.zhBody)}</div>` : '';
+      const origPart = item.origBody ? `<div class="card-body" style="white-space:pre-wrap;font-size:11px;color:var(--text-muted);margin-top:6px;border-top:1px solid var(--border);padding-top:6px">${escapeHtml(item.origBody)}</div>` : '';
+      // If no zhBody, show origBody as main
+      const mainBody = zhPart || `<div class="card-body" style="white-space:pre-wrap">${escapeHtml(item.origBody || '')}</div>`;
+
       html += `<a class="feed-card" style="animation-delay:${delay}s" href="${escapeHtml(item.link)}" target="_blank">
         <div class="card-header">
           <span class="card-type tweet">${escapeHtml(item.platform || 'post')}</span>
@@ -271,7 +275,8 @@ async function buildFeed() {
           <span style="color:var(--text-muted);font-size:12px;margin-left:6px">${escapeHtml(item.author)}</span>
           <span style="color:var(--text-muted);font-size:11px;margin-left:6px">[${escapeHtml(item.category)}]</span>
         </div>
-        <div class="card-body" style="white-space:pre-wrap">${escapeHtml(item.body)}</div>
+        ${mainBody}
+        ${zhPart ? origPart : ''}
         ${item.engagement ? `<div class="card-meta"><span class="engagement">📊 ${escapeHtml(item.engagement)}</span></div>` : ''}
       </a>`;
     }
