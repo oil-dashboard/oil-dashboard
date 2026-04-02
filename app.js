@@ -402,24 +402,51 @@ async function fetchPolymarket() {
   el.innerHTML = html || '<p style="color:var(--text-dim)">暂无 Polymarket 数据</p>';
 }
 
-// ========== 油市推文 (从 capduck API 实时拉取，跟信息流同步刷新) ==========
-async function fetchOOTT() {
-  const text = await safeFetch(`${API_BASE}/posts?limit=30`);
-  const el = document.getElementById('oottFeed');
-  const posts = parsePosts(text);
+// ========== 油市推文 (capduck API + 白名单过滤) ==========
+function getWhitelistHandles() {
+  if (!state.sources) return new Set();
+  const handles = new Set();
+  for (const key of Object.keys(state.sources)) {
+    if (key.startsWith('_')) continue;
+    const group = state.sources[key];
+    if (group.accounts) {
+      for (const a of group.accounts) {
+        // handle 格式: "@JavierBlas" → 存 "javierblas" (小写去@)
+        handles.add(a.handle.replace(/^@/, '').toLowerCase());
+      }
+    }
+  }
+  return handles;
+}
 
-  if (!posts.length) {
-    el.innerHTML = `<div class="loading-spinner"><span style="color:var(--text-dim)">暂无推文数据 — 5分钟后刷新</span>
-      <a href="https://skill.capduck.com/iran/posts" target="_blank" style="color:var(--accent-blue);font-size:12px;margin-top:8px">查看 Capduck →</a></div>`;
+async function fetchOOTT() {
+  const text = await safeFetch(`${API_BASE}/posts?limit=50`);
+  const el = document.getElementById('oottFeed');
+  const allPosts = parsePosts(text);
+  const whitelist = getWhitelistHandles();
+
+  // 按白名单过滤: handle 匹配（大小写不敏感）
+  const filtered = whitelist.size > 0
+    ? allPosts.filter(p => whitelist.has((p.handle || '').toLowerCase()))
+    : allPosts;
+
+  if (!filtered.length) {
+    // 没匹配到白名单推文时显示白名单列表 + 全量链接
+    const names = whitelist.size ? [...whitelist].map(h => `@${h}`).join(' · ') : '白名单为空';
+    el.innerHTML = `<div class="loading-spinner">
+      <span style="color:var(--text-dim)">白名单信源暂无新推文 — 5分钟后刷新</span>
+      <span style="font-size:11px;color:var(--text-muted);margin-top:6px;word-break:break-all">${escapeHtml(names)}</span>
+      <a href="https://skill.capduck.com/iran/posts" target="_blank" style="color:var(--accent-blue);font-size:12px;margin-top:8px">查看全量信息流 →</a>
+    </div>`;
     return;
   }
 
   let html = `<div style="font-size:12px;color:var(--text-muted);margin-bottom:12px;padding:4px 8px">
-    📊 共 ${posts.length} 条实时推文 · 来源 Twitter + Telegram · 每5分钟刷新
+    🎯 白名单命中 ${filtered.length}/${allPosts.length} 条 · 每5分钟刷新
   </div>`;
 
-  for (let i = 0; i < posts.length; i++) {
-    const p = posts[i], delay = Math.min(i * 0.04, 0.8);
+  for (let i = 0; i < filtered.length; i++) {
+    const p = filtered[i], delay = Math.min(i * 0.04, 0.8);
     const zh = p.zhBody ? `<div class="card-body" style="white-space:pre-wrap">${escapeHtml(p.zhBody)}</div>` : '';
     const orig = p.origBody ? `<div class="card-body" style="white-space:pre-wrap;font-size:11px;color:var(--text-muted);margin-top:6px;border-top:1px solid var(--border);padding-top:6px">${escapeHtml(p.origBody)}</div>` : '';
     const main = zh || `<div class="card-body" style="white-space:pre-wrap">${escapeHtml(p.origBody || '')}</div>`;
