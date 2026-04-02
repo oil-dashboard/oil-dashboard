@@ -402,26 +402,43 @@ async function fetchPolymarket() {
   el.innerHTML = html || '<p style="color:var(--text-dim)">暂无 Polymarket 数据</p>';
 }
 
-// ========== OOTT ==========
+// ========== 油市推文 (从 capduck API 实时拉取，跟信息流同步刷新) ==========
 async function fetchOOTT() {
-  const data = await safeFetch('data/oott.json', 0);
+  const text = await safeFetch(`${API_BASE}/posts?limit=30`);
   const el = document.getElementById('oottFeed');
-  if (!data || !Array.isArray(data) || !data.length) {
-    el.innerHTML = `<div class="loading-spinner"><span style="color:var(--text-dim)">暂无推文数据</span>
-      <a href="https://x.com/JavierBlas" target="_blank" style="color:var(--accent-blue);font-size:12px;margin-top:8px">查看 @JavierBlas →</a></div>`;
+  const posts = parsePosts(text);
+
+  if (!posts.length) {
+    el.innerHTML = `<div class="loading-spinner"><span style="color:var(--text-dim)">暂无推文数据 — 5分钟后刷新</span>
+      <a href="https://skill.capduck.com/iran/posts" target="_blank" style="color:var(--accent-blue);font-size:12px;margin-top:8px">查看 Capduck →</a></div>`;
     return;
   }
-  const sorted = [...data].sort((a,b) => new Date(b.createdAt) - new Date(a.createdAt));
+
   let html = `<div style="font-size:12px;color:var(--text-muted);margin-bottom:12px;padding:4px 8px">
-    📊 共 ${sorted.length} 条推文 · 来自 ${new Set(sorted.map(t=>t.username)).size} 个信源</div>`;
-  for (let i = 0; i < sorted.length; i++) {
-    const t = sorted[i], delay = Math.min(i*0.04, 0.8);
-    const timeStr = t.createdAt ? formatSGT(new Date(t.createdAt)) : '';
-    const media = (t.photos?.length||t.videos?.length) ? '<span style="color:var(--accent-cyan);font-size:11px;margin-left:6px">📷</span>' : '';
-    html += `<a class="feed-card" style="animation-delay:${delay}s" href="${escapeHtml(t.url||'#')}" target="_blank">
-      <div class="card-header"><span class="card-type tweet">OOTT</span><span class="card-time">${escapeHtml(timeStr)}</span></div>
-      <div class="card-title"><span style="color:var(--accent-blue)">@${escapeHtml(t.username||'')}</span>${media}</div>
-      <div class="card-body" style="white-space:pre-wrap">${escapeHtml((t.text||'').substring(0,500))}</div></a>`;
+    📊 共 ${posts.length} 条实时推文 · 来源 Twitter + Telegram · 每5分钟刷新
+  </div>`;
+
+  for (let i = 0; i < posts.length; i++) {
+    const p = posts[i], delay = Math.min(i * 0.04, 0.8);
+    const zh = p.zhBody ? `<div class="card-body" style="white-space:pre-wrap">${escapeHtml(p.zhBody)}</div>` : '';
+    const orig = p.origBody ? `<div class="card-body" style="white-space:pre-wrap;font-size:11px;color:var(--text-muted);margin-top:6px;border-top:1px solid var(--border);padding-top:6px">${escapeHtml(p.origBody)}</div>` : '';
+    const main = zh || `<div class="card-body" style="white-space:pre-wrap">${escapeHtml(p.origBody || '')}</div>`;
+    const platformTag = p.platform === 'telegram' ? '📨 TG' : '𝕏';
+
+    html += `<a class="feed-card" style="animation-delay:${delay}s" href="${escapeHtml(p.link)}" target="_blank">
+      <div class="card-header">
+        <span class="card-type tweet">${escapeHtml(platformTag)}</span>
+        <span class="card-time">${escapeHtml(p.time)}</span>
+      </div>
+      <div class="card-title">
+        <span style="color:var(--accent-blue)">@${escapeHtml(p.handle)}</span>
+        <span style="color:var(--text-muted);font-size:12px;margin-left:6px">${escapeHtml(p.author)}</span>
+        <span style="color:var(--text-muted);font-size:11px;margin-left:6px">[${escapeHtml(p.category)}]</span>
+      </div>
+      ${main}
+      ${zh ? orig : ''}
+      ${p.engagement ? `<div class="card-meta"><span class="engagement">📊 ${escapeHtml(p.engagement)}</span></div>` : ''}
+    </a>`;
   }
   el.innerHTML = html;
 }
