@@ -210,13 +210,6 @@ async function fetchPrices() {
   if (brentData && wtiData)
     document.getElementById('spreadValue').textContent = `$${(parseFloat(brentData.price) - parseFloat(wtiData.price)).toFixed(2)}`;
 
-  // 对齐状态 + 数据源状态
-  const alignEl = document.getElementById('priceAlignStatus');
-  if (alignEl) {
-    alignEl.textContent = aligned ? `✅ 同时点 · ${brentData?.dataTime||''}` :
-      (brentData||wtiData) ? '⚠️ 时点未对齐' : '❌ 数据获取失败';
-    alignEl.style.color = aligned ? 'var(--up)' : (brentData||wtiData) ? 'var(--accent-gold)' : 'var(--down)';
-  }
   updateSourceStatus();
 }
 
