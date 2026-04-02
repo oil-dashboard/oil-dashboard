@@ -5,18 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Oil Dashboard — 油市情报看板</title>
 <meta name="description" content="实时油市情报看板 — Brent/WTI价格、OOTT热门推文、伊朗局势、Polymarket预测">
+<meta name="theme-color" content="#111827">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛢️</text></svg>">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛢️</text></svg>">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Top Bar -->
   <header id="topBar">
     <div class="top-left">
       <h1>🛢️ Oil Dashboard</h1>
-      <span class="sub">喆思｜油市冲浪 · 数据每5分钟自动刷新</span>
+      <span class="sub">喆思｜油市冲浪</span>
     </div>
     <div class="top-right">
       <div class="status-row">
+        <span id="sourceStatus" class="source-status">⏳</span>
         <span class="live-dot" id="liveDot"></span>
         <span id="updateTime" class="update-time">Loading...</span>
         <span id="refreshStatus" class="refresh-status"></span>
@@ -25,7 +28,6 @@
     </div>
   </header>
 
-  <!-- Situation Banner -->
   <section id="situationBanner" class="situation-banner">
     <div class="tension-box">
       <div class="tension-label">🇮🇷 Tension</div>
@@ -37,12 +39,14 @@
         <div class="price-label">Brent</div>
         <div class="price-value" id="brentPrice">—</div>
         <div class="price-change" id="brentChange">—</div>
+        <div class="sparkline" id="brentSpark"></div>
         <div class="price-timestamp" id="brentTime"></div>
       </div>
       <div class="price-box" id="wtiBox">
         <div class="price-label">WTI</div>
         <div class="price-value" id="wtiPrice">—</div>
         <div class="price-change" id="wtiChange">—</div>
+        <div class="sparkline" id="wtiSpark"></div>
         <div class="price-timestamp" id="wtiTime"></div>
       </div>
       <div class="price-box spread-box">
@@ -53,60 +57,51 @@
     </div>
   </section>
 
-  <!-- Tab Navigation -->
   <nav class="tabs">
-    <button class="tab active" data-tab="feed">📡 信息流</button>
-    <button class="tab" data-tab="iran">🇮🇷 伊朗</button>
-    <button class="tab" data-tab="polymarket">📊 预测市场</button>
-    <button class="tab" data-tab="sources">📰 油市</button>
+    <button class="tab active" data-tab="feed" title="快捷键 1">📡 信息流</button>
+    <button class="tab" data-tab="iran" title="快捷键 2">🇮🇷 伊朗</button>
+    <button class="tab" data-tab="polymarket" title="快捷键 3">📊 预测市场</button>
+    <button class="tab" data-tab="sources" title="快捷键 4">📰 油市</button>
   </nav>
 
-  <!-- Main Feed -->
   <main id="feedPanel" class="panel active">
+    <div class="feed-filters">
+      <button class="filter-btn active" data-filter="all" onclick="filterFeed('all')">全部</button>
+      <button class="filter-btn" data-filter="event" onclick="filterFeed('event')">🔴 事件</button>
+      <button class="filter-btn" data-filter="post" onclick="filterFeed('post')">💬 推文</button>
+      <button class="filter-btn" data-filter="high" onclick="filterFeed('high')">⚡ 高影响</button>
+    </div>
     <div id="feedList" class="feed-list">
-      <div class="loading-spinner">
-        <div class="spinner"></div>
-        <span>正在加载情报流...</span>
-      </div>
+      <div class="skeleton-card"><div class="skeleton-line"></div><div class="skeleton-line short"></div><div class="skeleton-line"></div></div>
+      <div class="skeleton-card"><div class="skeleton-line"></div><div class="skeleton-line short"></div><div class="skeleton-line"></div></div>
+      <div class="skeleton-card"><div class="skeleton-line"></div><div class="skeleton-line short"></div></div>
     </div>
   </main>
 
-  <!-- Iran Panel -->
   <main id="iranPanel" class="panel">
     <div id="iranContent" class="iran-content">
-      <div class="loading-spinner">
-        <div class="spinner"></div>
-        <span>正在拉取伊朗局势...</span>
-      </div>
+      <div class="skeleton-card"><div class="skeleton-line"></div><div class="skeleton-line short"></div><div class="skeleton-line"></div></div>
     </div>
   </main>
 
-  <!-- Polymarket Panel -->
   <main id="polymarketPanel" class="panel">
     <div id="polyContent" class="poly-content">
-      <div class="loading-spinner">
-        <div class="spinner"></div>
-        <span>正在加载预测市场...</span>
-      </div>
+      <div class="skeleton-card"><div class="skeleton-line"></div><div class="skeleton-line short"></div></div>
     </div>
   </main>
 
-  <!-- Sources Panel -->
   <main id="sourcesPanel" class="panel">
     <div id="oottFeed" class="feed-list">
-      <div class="loading-spinner">
-        <div class="spinner"></div>
-        <span>正在加载油市推文...</span>
-      </div>
+      <div class="skeleton-card"><div class="skeleton-line"></div><div class="skeleton-line short"></div><div class="skeleton-line"></div></div>
     </div>
   </main>
 
-  <!-- Footer -->
   <footer>
     <a href="https://skill.capduck.com/iran" target="_blank">🇮🇷 Iran Monitor</a>
+    <span>R 刷新 · 1-4 切Tab</span>
     <span>Powered by Yahoo Finance · Capduck · OOTT</span>
   </footer>
 
-  <script src="app.js?v=20260403a"></script>
+  <script src="app.js?v=20260403b"></script>
 </body>
 </html>
