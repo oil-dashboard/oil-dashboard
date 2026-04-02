@@ -17,8 +17,10 @@
     </div>
     <div class="top-right">
       <div class="status-row">
-        <span class="live-dot"></span>
+        <span class="live-dot" id="liveDot"></span>
         <span id="updateTime" class="update-time">Loading...</span>
+        <span id="refreshStatus" class="refresh-status"></span>
+        <span id="countdownTimer" class="countdown-timer">5:00</span>
       </div>
     </div>
   </header>
@@ -46,7 +48,7 @@
       <div class="price-box spread-box">
         <div class="price-label">Spread</div>
         <div class="price-value" id="spreadValue">—</div>
-        <div class="delay-notice">⏱ 延迟15~20min</div>
+        <div class="price-align-status" id="priceAlignStatus">⏱ 同步中...</div>
       </div>
     </div>
   </section>
@@ -105,6 +107,6 @@
     <span>Powered by Yahoo Finance · Capduck · OOTT</span>
   </footer>
 
-  <script src="app.js?v=20260401c"></script>
+  <script src="app.js?v=20260403a"></script>
 </body>
 </html>

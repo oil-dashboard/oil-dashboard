@@ -1,15 +1,10 @@
-// ========== Oil Dashboard — 前端实时引擎 v2 ==========
-// 修复 API 解析 + 加入 posts 信息流 + Polymarket 正确解析
+// ========== Oil Dashboard — 前端实时引擎 v3 ==========
+// v3: 价格对齐同一时点 + 5分钟K线 + 日涨跌幅 + 刷新倒计时
 
 const API_BASE = 'https://skill.capduck.com/iran';
-const CORS_PROXIES = [
-  'https://corsproxy.io/?',
-  'https://api.allorigins.win/raw?url=',
-  'https://thingproxy.freeboard.io/fetch/',
-];
-let corsProxy = CORS_PROXIES[0];
 const REFRESH_MS = 5 * 60 * 1000;
 let SOURCES = null;
+let countdownInterval = null;
 
 // ========== Tab switching ==========
 document.querySelectorAll('.tab').forEach(tab => {
@@ -26,11 +21,18 @@ function escapeHtml(t) {
   if (!t) return '';
   return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 }
+function formatSGT(date) {
+  if (!date) return '';
+  try {
+    return date.toLocaleString('zh-CN', {
+      timeZone: 'Asia/Singapore', hour12: false,
+      month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric'
+    }) + ' SGT';
+  } catch { return ''; }
+}
 function sgtTime(isoStr) {
   if (!isoStr) return '';
-  try {
-    return new Date(isoStr).toLocaleString('zh-CN', { timeZone: 'Asia/Singapore', hour12: false });
-  } catch { return isoStr; }
+  try { return formatSGT(new Date(isoStr)); } catch { return isoStr; }
 }
 function impactClass(n) {
   if (n >= 8) return 'impact-high';
@@ -57,9 +59,10 @@ async function loadSources() {
   if (d && typeof d === 'object') { SOURCES = d; }
 }
 
-// ========== Prices (Yahoo Finance, multi-proxy + localStorage cache) ==========
-async function fetchPriceViaProxy(symbol) {
-  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=5d&interval=1h`;
+// ========== Prices: 对齐 Brent/WTI 到同一时间点 ==========
+async function fetchRawChartData(symbol) {
+  // 用 5分钟K线，匹配5分钟刷新周期
+  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=2d&interval=5m`;
   const proxies = [
     `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`,
     `https://corsproxy.io/?${encodeURIComponent(url)}`,
@@ -68,41 +71,41 @@ async function fetchPriceViaProxy(symbol) {
   ];
   for (const proxyUrl of proxies) {
     try {
-      const r = await fetch(proxyUrl, { signal: AbortSignal.timeout(10000) });
+      const r = await fetch(proxyUrl, { signal: AbortSignal.timeout(12000) });
       if (!r.ok) continue;
       const text = await r.text();
       let data;
       try { data = JSON.parse(text); } catch { continue; }
-      // allorigins wraps in { contents: "..." }
       if (data.contents) {
         try { data = JSON.parse(data.contents); } catch { continue; }
       }
       const result = data?.chart?.result?.[0];
       if (!result) continue;
-      const q = result.indicators.quote[0];
-      const ts = result.timestamp;
-      const closes = q.close.filter(v => v != null);
-      if (closes.length < 2) continue;
-      const cur = closes[closes.length - 1];
-      const prev = closes[closes.length - 2];
-      const chg = cur - prev, pct = (chg / prev) * 100;
-      const lastTs = ts?.[ts.length - 1];
-      const dataTime = lastTs ? new Date(lastTs * 1000).toLocaleString('zh-CN', {
-        timeZone: 'Asia/Singapore', hour12: false,
-        month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric'
-      }) + ' SGT' : '';
-      const priceData = { price: cur.toFixed(2), change: chg.toFixed(2), pct: pct.toFixed(1), dataTime, cached: false };
-      // Save to localStorage
-      try { localStorage.setItem('oil_' + symbol, JSON.stringify(priceData)); } catch {}
-      return priceData;
+      const timestamps = result.timestamp || [];
+      const closes = result.indicators?.quote?.[0]?.close || [];
+      const meta = result.meta || {};
+      if (timestamps.length < 2) continue;
+      return { timestamps, closes, meta };
     } catch (e) { continue; }
   }
-  // All proxies failed — return cached data
-  try {
-    const cached = JSON.parse(localStorage.getItem('oil_' + symbol));
-    if (cached) { cached.cached = true; return cached; }
-  } catch {}
   return null;
+}
+
+function extractSinglePrice(raw) {
+  const pairs = [];
+  for (let i = 0; i < raw.timestamps.length; i++) {
+    if (raw.closes[i] != null) pairs.push({ ts: raw.timestamps[i], close: raw.closes[i] });
+  }
+  if (pairs.length < 1) return null;
+  const latest = pairs[pairs.length - 1];
+  const prevClose = raw.meta?.chartPreviousClose || raw.meta?.previousClose
+    || (pairs.length >= 2 ? pairs[pairs.length - 2].close : latest.close);
+  const chg = latest.close - prevClose;
+  return {
+    price: latest.close.toFixed(2), change: chg.toFixed(2),
+    pct: ((chg / prevClose) * 100).toFixed(1),
+    dataTime: formatSGT(new Date(latest.ts * 1000)), cached: false
+  };
 }
 
 function renderPrice(id, data) {
@@ -120,13 +123,104 @@ function renderPrice(id, data) {
 }
 
 async function fetchPrices() {
-  const [b, w] = await Promise.all([
-    fetchPriceViaProxy('BZ=F'),
-    fetchPriceViaProxy('CL=F'),
+  // 并行拉取两个品种的原始K线数据
+  const [brentRaw, wtiRaw] = await Promise.all([
+    fetchRawChartData('BZ=F'),
+    fetchRawChartData('CL=F'),
   ]);
-  renderPrice('brent', b);
-  renderPrice('wti', w);
-  if (b && w) document.getElementById('spreadValue').textContent = `$${(parseFloat(b.price)-parseFloat(w.price)).toFixed(2)}`;
+
+  let brentData = null, wtiData = null, aligned = false;
+
+  if (brentRaw && wtiRaw) {
+    // 构建 timestamp → close 映射（仅非null值）
+    const bMap = new Map(), wMap = new Map();
+    for (let i = 0; i < brentRaw.timestamps.length; i++) {
+      if (brentRaw.closes[i] != null) bMap.set(brentRaw.timestamps[i], brentRaw.closes[i]);
+    }
+    for (let i = 0; i < wtiRaw.timestamps.length; i++) {
+      if (wtiRaw.closes[i] != null) wMap.set(wtiRaw.timestamps[i], wtiRaw.closes[i]);
+    }
+
+    // 找到共同时间戳（两个品种都有数据），按时间倒序
+    const commonTs = [...bMap.keys()].filter(ts => wMap.has(ts)).sort((a, b) => b - a);
+
+    if (commonTs.length >= 1) {
+      const latestTs = commonTs[0];
+      const bCur = bMap.get(latestTs), wCur = wMap.get(latestTs);
+      const dataTime = formatSGT(new Date(latestTs * 1000));
+
+      // 用 chartPreviousClose 计算日涨跌（更有意义）
+      const bPrev = brentRaw.meta?.chartPreviousClose || brentRaw.meta?.previousClose
+        || (commonTs.length >= 2 ? bMap.get(commonTs[1]) : bCur);
+      const wPrev = wtiRaw.meta?.chartPreviousClose || wtiRaw.meta?.previousClose
+        || (commonTs.length >= 2 ? wMap.get(commonTs[1]) : wCur);
+
+      const bChg = bCur - bPrev, wChg = wCur - wPrev;
+      brentData = {
+        price: bCur.toFixed(2), change: bChg.toFixed(2),
+        pct: ((bChg / bPrev) * 100).toFixed(1), dataTime, cached: false
+      };
+      wtiData = {
+        price: wCur.toFixed(2), change: wChg.toFixed(2),
+        pct: ((wChg / wPrev) * 100).toFixed(1), dataTime, cached: false
+      };
+      aligned = true;
+
+      // 缓存对齐结果
+      try { localStorage.setItem('oil_aligned', JSON.stringify({ brent: brentData, wti: wtiData, ts: Date.now() })); } catch {}
+    }
+  }
+
+  // 对齐失败时，回退到单独提取
+  if (!brentData && brentRaw) brentData = extractSinglePrice(brentRaw);
+  if (!wtiData && wtiRaw) wtiData = extractSinglePrice(wtiRaw);
+
+  // 都失败时，读 localStorage 缓存（30分钟有效）
+  if (!brentData || !wtiData) {
+    try {
+      const cached = JSON.parse(localStorage.getItem('oil_aligned'));
+      if (cached && Date.now() - cached.ts < 30 * 60 * 1000) {
+        if (!brentData && cached.brent) brentData = { ...cached.brent, cached: true };
+        if (!wtiData && cached.wti) wtiData = { ...cached.wti, cached: true };
+      }
+    } catch {}
+  }
+
+  renderPrice('brent', brentData);
+  renderPrice('wti', wtiData);
+
+  // Spread + 对齐状态
+  if (brentData && wtiData) {
+    document.getElementById('spreadValue').textContent = `$${(parseFloat(brentData.price) - parseFloat(wtiData.price)).toFixed(2)}`;
+  }
+  const alignEl = document.getElementById('priceAlignStatus');
+  if (alignEl) {
+    if (aligned) {
+      alignEl.textContent = `✅ 同时点 · ${brentData?.dataTime || ''}`;
+      alignEl.style.color = 'var(--up)';
+    } else if (brentData || wtiData) {
+      alignEl.textContent = '⚠️ 时点未对齐';
+      alignEl.style.color = 'var(--accent-gold)';
+    } else {
+      alignEl.textContent = '❌ 数据获取失败';
+      alignEl.style.color = 'var(--down)';
+    }
+  }
+}
+
+// ========== Countdown 倒计时 ==========
+function startCountdown() {
+  const el = document.getElementById('countdownTimer');
+  if (!el) return;
+  let remaining = REFRESH_MS;
+  if (countdownInterval) clearInterval(countdownInterval);
+  countdownInterval = setInterval(() => {
+    remaining -= 1000;
+    if (remaining <= 0) { remaining = REFRESH_MS; }
+    const m = Math.floor(remaining / 60000);
+    const s = Math.floor((remaining % 60000) / 1000);
+    el.textContent = `${m}:${s.toString().padStart(2, '0')}`;
+  }, 1000);
 }
 
 // ========== Iran Briefing ==========
@@ -138,7 +232,6 @@ async function fetchIranBriefing() {
     document.getElementById('tensionValue').textContent = tm[1]+'/10';
     document.getElementById('tensionDesc').textContent = tm[2].trim().substring(0,50);
   }
-  // Render in iran panel
   const el = document.getElementById('iranContent');
   const sections = text.split(/^## /m).filter(s => s.trim());
   let html = '';
@@ -153,7 +246,7 @@ async function fetchIranBriefing() {
   el.innerHTML = html || '<p style="color:var(--text-dim)">暂无数据</p>';
 }
 
-// ========== Events parsing (real format: ## 🔴 [7] CONFLICT: title) ==========
+// ========== Events ==========
 function parseEvents(text) {
   if (!text || typeof text !== 'string') return [];
   const events = [];
@@ -161,11 +254,10 @@ function parseEvents(text) {
   for (const block of blocks) {
     const lines = block.split('\n');
     const header = lines[0];
-    // Match: 🔴 [7] CONFLICT: title  or  🟡 [6] DIPLOMACY: title
     const m = header.match(/[🔴🟡🟢⚪]\s*\[(\d+)\]\s*(\w+):\s*(.+)/);
     if (!m) continue;
     const body = [];
-    let time = '', sources = 0, sentiment = '', link = '';
+    let time = '', sources = 0, sentiment = '';
     for (let i = 1; i < lines.length; i++) {
       const l = lines[i];
       const timeM = l.match(/Time:\s*(.+?)(?:\s*\||$)/);
@@ -190,7 +282,7 @@ function parseEvents(text) {
   return events;
 }
 
-// ========== Posts parsing — separate Chinese translation from original ==========
+// ========== Posts ==========
 function parsePosts(text) {
   if (!text || typeof text !== 'string') return [];
   const posts = [];
@@ -213,11 +305,8 @@ function parsePosts(text) {
       const engM = l.match(/Engagement:\s*(.+)/);
       if (engM) { engagement = engM[1].trim(); continue; }
       if (l.startsWith('- ') || l.startsWith('---') || !l.trim()) continue;
-      if (l.startsWith('>')) {
-        zhLines.push(l.replace(/^>\s*/, ''));
-      } else if (l.trim()) {
-        origLines.push(l.trim());
-      }
+      if (l.startsWith('>')) { zhLines.push(l.replace(/^>\s*/, '')); }
+      else if (l.trim()) { origLines.push(l.trim()); }
     }
     posts.push({
       type: 'post', author: m[1], category: m[2], handle: m[3] || '',
@@ -236,33 +325,24 @@ async function buildFeed() {
     safeFetch(`${API_BASE}/events?impact=5&hours=24&limit=15`),
     safeFetch(`${API_BASE}/posts?limit=15`),
   ]);
-
   const events = parseEvents(evtText);
   const posts = parsePosts(postText);
-
-  // Merge & sort: posts first (more recent), then events
-  const items = [...posts.map((p,i) => ({...p, order: i})), ...events.map((e,i) => ({...e, order: i + 100}))];
-  // Interleave: alternate posts and events for variety
   const merged = [];
   let pi = 0, ei = 0;
-  const postArr = posts, evtArr = events;
-  while (pi < postArr.length || ei < evtArr.length) {
-    if (pi < postArr.length) merged.push(postArr[pi++]);
-    if (pi < postArr.length) merged.push(postArr[pi++]);
-    if (ei < evtArr.length) merged.push(evtArr[ei++]);
+  while (pi < posts.length || ei < events.length) {
+    if (pi < posts.length) merged.push(posts[pi++]);
+    if (pi < posts.length) merged.push(posts[pi++]);
+    if (ei < events.length) merged.push(events[ei++]);
   }
-
   const el = document.getElementById('feedList');
   if (!merged.length) {
     el.innerHTML = '<div class="loading-spinner"><span style="color:var(--text-dim)">暂无新事件 — 5分钟后刷新</span></div>';
     return;
   }
-
   let html = '';
   for (let i = 0; i < merged.length; i++) {
     const item = merged[i];
     const delay = Math.min(i * 0.05, 1);
-
     if (item.type === 'event') {
       html += `<a class="feed-card" style="animation-delay:${delay}s" href="https://skill.capduck.com/iran/events" target="_blank">
         <div class="card-header">
@@ -278,12 +358,9 @@ async function buildFeed() {
         </div>
       </a>`;
     } else {
-      // Post card — Chinese translation first, original smaller
       const zhPart = item.zhBody ? `<div class="card-body" style="white-space:pre-wrap">${escapeHtml(item.zhBody)}</div>` : '';
       const origPart = item.origBody ? `<div class="card-body" style="white-space:pre-wrap;font-size:11px;color:var(--text-muted);margin-top:6px;border-top:1px solid var(--border);padding-top:6px">${escapeHtml(item.origBody)}</div>` : '';
-      // If no zhBody, show origBody as main
       const mainBody = zhPart || `<div class="card-body" style="white-space:pre-wrap">${escapeHtml(item.origBody || '')}</div>`;
-
       html += `<a class="feed-card" style="animation-delay:${delay}s" href="${escapeHtml(item.link)}" target="_blank">
         <div class="card-header">
           <span class="card-type tweet">${escapeHtml(item.platform || 'post')}</span>
@@ -303,7 +380,7 @@ async function buildFeed() {
   el.innerHTML = html;
 }
 
-// ========== Polymarket (real format: ## 标题 + - Conditions: + items) ==========
+// ========== Polymarket ==========
 async function fetchPolymarket() {
   const text = await safeFetch(`${API_BASE}/polymarket`);
   const el = document.getElementById('polyContent');
@@ -311,7 +388,6 @@ async function fetchPolymarket() {
     el.innerHTML = '<p style="color:var(--text-dim)">暂无数据</p>';
     return;
   }
-
   const contracts = [];
   const blocks = text.split(/^## /m).filter(s => s.trim());
   for (const block of blocks) {
@@ -323,19 +399,11 @@ async function fetchPolymarket() {
     for (const l of lines.slice(1)) {
       const linkM = l.match(/Link:\s*(https?\S+)/);
       if (linkM) { link = linkM[1]; continue; }
-      // Match: "  - 年底: **66%** Yes ↓9% (range: 34%-80%)"
       const condM = l.match(/^\s+-\s+(.+?):\s+\*\*(\d+%)\*\*\s*(Yes|No)?\s*(.*)/);
-      if (condM) {
-        conditions.push({
-          label: condM[1],
-          prob: condM[2],
-          dir: condM[4] || ''
-        });
-      }
+      if (condM) conditions.push({ label: condM[1], prob: condM[2], dir: condM[4] || '' });
     }
     if (conditions.length) contracts.push({ question, link, conditions });
   }
-
   let html = '';
   for (const c of contracts) {
     html += `<a class="poly-card" href="${escapeHtml(c.link)}" target="_blank" style="text-decoration:none;color:inherit;display:block">
@@ -355,11 +423,10 @@ async function fetchPolymarket() {
   el.innerHTML = html || '<p style="color:var(--text-dim)">暂无 Polymarket 数据</p>';
 }
 
-// ========== OOTT 油市推文 (from data/oott.json) ==========
+// ========== OOTT ==========
 async function fetchOOTT() {
   const data = await safeFetch('data/oott.json', 0);
   const el = document.getElementById('oottFeed');
-
   if (!data || !Array.isArray(data) || data.length === 0) {
     el.innerHTML = `<div class="loading-spinner">
       <span style="color:var(--text-dim)">暂无推文数据 — 等待下次抓取</span>
@@ -367,25 +434,16 @@ async function fetchOOTT() {
     </div>`;
     return;
   }
-
-  // Sort by time descending
   const sorted = [...data].sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
-
   let html = `<div style="font-size:12px;color:var(--text-muted);margin-bottom:12px;padding:4px 8px">
     📊 共 ${sorted.length} 条推文 · 来自 ${new Set(sorted.map(t=>t.username)).size} 个白名单信源
   </div>`;
-
   for (let i = 0; i < sorted.length; i++) {
     const t = sorted[i];
     const delay = Math.min(i * 0.04, 0.8);
-    const timeStr = t.createdAt ? new Date(t.createdAt).toLocaleString('zh-CN', {
-      timeZone: 'Asia/Singapore', hour12: false,
-      month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric'
-    }) + ' SGT' : '';
-
+    const timeStr = t.createdAt ? formatSGT(new Date(t.createdAt)) : '';
     const hasMedia = (t.photos && t.photos.length > 0) || (t.videos && t.videos.length > 0);
     const mediaTag = hasMedia ? '<span style="color:var(--accent-cyan);font-size:11px;margin-left:6px">📷 含图</span>' : '';
-
     html += `<a class="feed-card" style="animation-delay:${delay}s" href="${escapeHtml(t.url || '#')}" target="_blank">
       <div class="card-header">
         <span class="card-type tweet">OOTT</span>
@@ -403,9 +461,18 @@ async function fetchOOTT() {
 
 // ========== Main ==========
 async function refresh() {
-  document.getElementById('updateTime').textContent =
-    new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Singapore', hour12: false }) + ' SGT';
+  // 显示刷新状态
+  const statusEl = document.getElementById('refreshStatus');
+  if (statusEl) { statusEl.textContent = '刷新中...'; statusEl.style.opacity = '1'; }
+
+  document.getElementById('updateTime').textContent = formatSGT(new Date());
   await Promise.allSettled([fetchPrices(), fetchIranBriefing(), buildFeed(), fetchPolymarket(), fetchOOTT()]);
+
+  if (statusEl) {
+    statusEl.textContent = '✓ 已刷新';
+    setTimeout(() => { statusEl.style.opacity = '0'; }, 2000);
+  }
+  startCountdown();
 }
 
 (async () => {
