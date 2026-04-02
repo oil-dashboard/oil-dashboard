@@ -24,16 +24,16 @@ function formatSGT(date) {
 
 function impactClass(n) { return n >= 8 ? 'impact-high' : n >= 5 ? 'impact-mid' : 'impact-low'; }
 
-async function safeFetch(url, retries = 2) {
+async function safeFetch(url, retries = 1) {
   for (let i = 0; i <= retries; i++) {
     try {
-      const r = await fetch(url, { signal: AbortSignal.timeout(20000) });
+      const r = await fetch(url, { signal: AbortSignal.timeout(10000) });
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
       const text = await r.text();
       try { return JSON.parse(text); } catch { return text; }
     } catch (e) {
       if (i === retries) { console.warn('Fetch fail:', url, e); return null; }
-      await new Promise(r => setTimeout(r, 1000 * (i + 1)));
+      await new Promise(r => setTimeout(r, 800));
     }
   }
 }
@@ -99,7 +99,7 @@ async function fetchRawChartData(symbol) {
   );
   for (const proxyUrl of proxies) {
     try {
-      const r = await fetch(proxyUrl, { signal: AbortSignal.timeout(12000) });
+      const r = await fetch(proxyUrl, { signal: AbortSignal.timeout(8000) });
       if (!r.ok) continue;
       let data; try { data = JSON.parse(await r.text()); } catch { continue; }
       if (data.contents) { try { data = JSON.parse(data.contents); } catch { continue; } }
@@ -402,70 +402,27 @@ async function fetchPolymarket() {
   el.innerHTML = html || '<p style="color:var(--text-dim)">暂无 Polymarket 数据</p>';
 }
 
-// ========== 油市推文 (capduck API + 白名单过滤) ==========
-function getWhitelistHandles() {
-  if (!state.sources) return new Set();
-  const handles = new Set();
-  for (const key of Object.keys(state.sources)) {
-    if (key.startsWith('_')) continue;
-    const group = state.sources[key];
-    if (group.accounts) {
-      for (const a of group.accounts) {
-        // handle 格式: "@JavierBlas" → 存 "javierblas" (小写去@)
-        handles.add(a.handle.replace(/^@/, '').toLowerCase());
-      }
-    }
-  }
-  return handles;
-}
-
+// ========== 油市推文 (读取 data/oott.json，由 OOTT skill 定时更新) ==========
 async function fetchOOTT() {
-  const text = await safeFetch(`${API_BASE}/posts?limit=50`);
+  const data = await safeFetch('data/oott.json', 0);
   const el = document.getElementById('oottFeed');
-  const allPosts = parsePosts(text);
-  const whitelist = getWhitelistHandles();
-
-  // 按白名单过滤: handle 匹配（大小写不敏感）
-  const filtered = whitelist.size > 0
-    ? allPosts.filter(p => whitelist.has((p.handle || '').toLowerCase()))
-    : allPosts;
-
-  if (!filtered.length) {
-    // 没匹配到白名单推文时显示白名单列表 + 全量链接
-    const names = whitelist.size ? [...whitelist].map(h => `@${h}`).join(' · ') : '白名单为空';
-    el.innerHTML = `<div class="loading-spinner">
-      <span style="color:var(--text-dim)">白名单信源暂无新推文 — 5分钟后刷新</span>
-      <span style="font-size:11px;color:var(--text-muted);margin-top:6px;word-break:break-all">${escapeHtml(names)}</span>
-      <a href="https://skill.capduck.com/iran/posts" target="_blank" style="color:var(--accent-blue);font-size:12px;margin-top:8px">查看全量信息流 →</a>
-    </div>`;
+  if (!data || !Array.isArray(data) || !data.length) {
+    el.innerHTML = `<div class="loading-spinner"><span style="color:var(--text-dim)">暂无油市推文数据</span>
+      <a href="https://x.com/JavierBlas" target="_blank" style="color:var(--accent-blue);font-size:12px;margin-top:8px">查看 @JavierBlas →</a></div>`;
     return;
   }
-
+  const sorted = [...data].sort((a,b) => new Date(b.createdAt) - new Date(a.createdAt));
+  const handles = new Set(sorted.map(t => t.username));
   let html = `<div style="font-size:12px;color:var(--text-muted);margin-bottom:12px;padding:4px 8px">
-    🎯 白名单命中 ${filtered.length}/${allPosts.length} 条 · 每5分钟刷新
-  </div>`;
-
-  for (let i = 0; i < filtered.length; i++) {
-    const p = filtered[i], delay = Math.min(i * 0.04, 0.8);
-    const zh = p.zhBody ? `<div class="card-body" style="white-space:pre-wrap">${escapeHtml(p.zhBody)}</div>` : '';
-    const orig = p.origBody ? `<div class="card-body" style="white-space:pre-wrap;font-size:11px;color:var(--text-muted);margin-top:6px;border-top:1px solid var(--border);padding-top:6px">${escapeHtml(p.origBody)}</div>` : '';
-    const main = zh || `<div class="card-body" style="white-space:pre-wrap">${escapeHtml(p.origBody || '')}</div>`;
-    const platformTag = p.platform === 'telegram' ? '📨 TG' : '𝕏';
-
-    html += `<a class="feed-card" style="animation-delay:${delay}s" href="${escapeHtml(p.link)}" target="_blank">
-      <div class="card-header">
-        <span class="card-type tweet">${escapeHtml(platformTag)}</span>
-        <span class="card-time">${escapeHtml(p.time)}</span>
-      </div>
-      <div class="card-title">
-        <span style="color:var(--accent-blue)">@${escapeHtml(p.handle)}</span>
-        <span style="color:var(--text-muted);font-size:12px;margin-left:6px">${escapeHtml(p.author)}</span>
-        <span style="color:var(--text-muted);font-size:11px;margin-left:6px">[${escapeHtml(p.category)}]</span>
-      </div>
-      ${main}
-      ${zh ? orig : ''}
-      ${p.engagement ? `<div class="card-meta"><span class="engagement">📊 ${escapeHtml(p.engagement)}</span></div>` : ''}
-    </a>`;
+    🛢️ 共 ${sorted.length} 条 · 来自 ${handles.size} 个白名单信源</div>`;
+  for (let i = 0; i < sorted.length; i++) {
+    const t = sorted[i], delay = Math.min(i * 0.04, 0.8);
+    const timeStr = t.createdAt ? formatSGT(new Date(t.createdAt)) : '';
+    const media = (t.photos?.length || t.videos?.length) ? '<span style="color:var(--accent-cyan);font-size:11px;margin-left:6px">📷</span>' : '';
+    html += `<a class="feed-card" style="animation-delay:${delay}s" href="${escapeHtml(t.url || '#')}" target="_blank">
+      <div class="card-header"><span class="card-type tweet">OOTT</span><span class="card-time">${escapeHtml(timeStr)}</span></div>
+      <div class="card-title"><span style="color:var(--accent-blue)">@${escapeHtml(t.username || '')}</span>${media}</div>
+      <div class="card-body" style="white-space:pre-wrap">${escapeHtml((t.text || '').substring(0, 500))}</div></a>`;
   }
   el.innerHTML = html;
 }
@@ -481,8 +438,18 @@ async function refresh() {
 }
 
 (async () => {
+  // 先显示缓存价格（瞬间），后台刷新
+  try {
+    const c = JSON.parse(localStorage.getItem(CACHE_KEY));
+    if (c) {
+      if (c.brent) renderPrice('brent', { ...c.brent, cached: true });
+      if (c.wti) renderPrice('wti', { ...c.wti, cached: true });
+      if (c.brent && c.wti)
+        document.getElementById('spreadValue').textContent = `$${(parseFloat(c.brent.price) - parseFloat(c.wti.price)).toFixed(2)}`;
+    }
+  } catch {}
   await loadSources();
-  await refresh();
+  refresh(); // 不 await，让页面先响应
   setInterval(refresh, REFRESH_MS);
   // PWA
   if ('serviceWorker' in navigator) {
