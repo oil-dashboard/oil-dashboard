@@ -402,27 +402,80 @@ async function fetchPolymarket() {
   el.innerHTML = html || '<p style="color:var(--text-dim)">暂无 Polymarket 数据</p>';
 }
 
-// ========== 油市推文 (读取 data/oott.json，由 OOTT skill 定时更新) ==========
+// ========== 油市推文 (前端并发请求 CF Worker -> Twitter Syndication 实时爬取) ==========
+function getWhitelistHandles() {
+  if (!state.sources) return new Set();
+  const handles = new Set();
+  for (const key of Object.keys(state.sources)) {
+    if (key.startsWith('_')) continue;
+    const group = state.sources[key];
+    if (group.accounts) {
+      for (const a of group.accounts) {
+        handles.add(a.handle.replace(/^@/, '').toLowerCase());
+      }
+    }
+  }
+  return [...handles];
+}
+
 async function fetchOOTT() {
-  const data = await safeFetch('data/oott.json', 0);
+  const handles = getWhitelistHandles();
   const el = document.getElementById('oottFeed');
-  if (!data || !Array.isArray(data) || !data.length) {
-    el.innerHTML = `<div class="loading-spinner"><span style="color:var(--text-dim)">暂无油市推文数据</span>
-      <a href="https://x.com/JavierBlas" target="_blank" style="color:var(--accent-blue);font-size:12px;margin-top:8px">查看 @JavierBlas →</a></div>`;
+  if (!handles.length) {
+    el.innerHTML = '<div class="loading-spinner"><span style="color:var(--text-dim)">暂无白名单配置</span></div>';
     return;
   }
-  const sorted = [...data].sort((a,b) => new Date(b.createdAt) - new Date(a.createdAt));
-  const handles = new Set(sorted.map(t => t.username));
+
+  // 并发请求 Cloudflare Worker API，每个 handle 独立请求 (限期 10 秒)
+  const fetchTasks = handles.map(handle =>
+    fetch(`${CF_WORKER_URL}?twitter=${handle}`, { signal: AbortSignal.timeout(10000) })
+      .then(r => r.json())
+      .catch(() => [])
+  );
+
+  const results = await Promise.allSettled(fetchTasks);
+  const allPosts = [];
+  for (const res of results) {
+    if (res.status === 'fulfilled' && Array.isArray(res.value)) {
+      allPosts.push(...res.value);
+    }
+  }
+
+  // 按时间降序，最多取 60 条
+  const sorted = allPosts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).slice(0, 60);
+
+  if (!sorted.length) {
+    el.innerHTML = `<div class="loading-spinner"><span style="color:var(--text-dim)">暂无最新油市推文数据</span></div>`;
+    return;
+  }
+
+  const successCount = results.filter(r => r.status === 'fulfilled' && r.value.length > 0).length;
   let html = `<div style="font-size:12px;color:var(--text-muted);margin-bottom:12px;padding:4px 8px">
-    🛢️ 共 ${sorted.length} 条 · 来自 ${handles.size} 个白名单信源</div>`;
+    🛢️ 从 ${successCount}/${handles.length} 个白名单信源实时抓取了 ${sorted.length} 条推文 · 每5分钟同步刷新
+  </div>`;
+
   for (let i = 0; i < sorted.length; i++) {
-    const t = sorted[i], delay = Math.min(i * 0.04, 0.8);
-    const timeStr = t.createdAt ? formatSGT(new Date(t.createdAt)) : '';
-    const media = (t.photos?.length || t.videos?.length) ? '<span style="color:var(--accent-cyan);font-size:11px;margin-left:6px">📷</span>' : '';
-    html += `<a class="feed-card" style="animation-delay:${delay}s" href="${escapeHtml(t.url || '#')}" target="_blank">
-      <div class="card-header"><span class="card-type tweet">OOTT</span><span class="card-time">${escapeHtml(timeStr)}</span></div>
-      <div class="card-title"><span style="color:var(--accent-blue)">@${escapeHtml(t.username || '')}</span>${media}</div>
-      <div class="card-body" style="white-space:pre-wrap">${escapeHtml((t.text || '').substring(0, 500))}</div></a>`;
+    const p = sorted[i], delay = Math.min(i * 0.04, 0.8);
+    const timeStr = p.createdAt ? formatSGT(new Date(p.createdAt)) : '';
+    
+    // 生成媒体预览
+    let mediasHtml = '';
+    if (p.photos && p.photos.length) mediasHtml += ' <span style="color:var(--accent-cyan);font-size:11px">📷</span>';
+    if (p.videos && p.videos.length) mediasHtml += ' <span style="color:var(--accent-blue);font-size:11px">🎥</span>';
+
+    html += `<a class="feed-card" style="animation-delay:${delay}s" href="${escapeHtml(p.url)}" target="_blank">
+      <div class="card-header">
+        <span class="card-type tweet">🕮 推特</span>
+        <span class="card-time">${escapeHtml(timeStr)}</span>
+      </div>
+      <div class="card-title">
+        <span style="color:var(--accent-blue)">@${escapeHtml(p.handle)}</span>
+        <span style="color:var(--text-muted);font-size:12px;margin-left:6px">${escapeHtml(p.author)}</span>
+        ${mediasHtml}
+      </div>
+      <div class="card-body" style="white-space:pre-wrap">${escapeHtml(p.text || '')}</div>
+      ${p.engagement ? `<div class="card-meta"><span class="engagement">📊 ${escapeHtml(p.engagement)} 互动</span></div>` : ''}
+    </a>`;
   }
   el.innerHTML = html;
 }

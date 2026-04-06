@@ -1,4 +1,4 @@
-const CACHE = 'oil-dash-v6';
+const CACHE = 'oil-dash-v7';
 const STATIC = ['./', './index.html', './style.css', './app.js', './manifest.json', './sources.json'];
 
 self.addEventListener('install', e => {
