@@ -5,7 +5,7 @@ const API_BASE = 'https://skill.capduck.com/iran';
 const REFRESH_MS = 5 * 60 * 1000;
 const CACHE_KEY = 'oil_v4_aligned';
 // 部署 workers/proxy.js 到 Cloudflare 后填入 URL，留空则用公共代理
-const CF_WORKER_URL = '';
+const CF_WORKER_URL = 'https://oil-proxy.xzregproxy.workers.dev';
 
 const state = { sources: null, feedItems: [], countdownId: null, priceSource: 'unknown' };
 
