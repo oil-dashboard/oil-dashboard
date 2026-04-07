@@ -25,13 +25,13 @@
     "url": "https://x.com/JavierBlas/status/2041220018029887941",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 211,
+    "likes": 212,
     "retweets": 31,
     "replies": 20,
-    "engagement": 333,
+    "engagement": 334,
     "relevance": 10,
-    "rawScore": 10333,
-    "score": 6716
+    "rawScore": 10334,
+    "score": 6717
   },
   {
     "id": "2041219010050629848",
@@ -42,13 +42,13 @@
     "url": "https://x.com/JavierBlas/status/2041219010050629848",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 209,
+    "likes": 210,
     "retweets": 17,
     "replies": 12,
-    "engagement": 279,
+    "engagement": 280,
     "relevance": 10,
-    "rawScore": 10279,
-    "score": 6681
+    "rawScore": 10280,
+    "score": 6682
   },
   {
     "id": "2041089079136174494",
@@ -127,13 +127,13 @@
     "url": "https://x.com/HFI_Research/status/2041210202519957728",
     "photoUrl": "https://pbs.twimg.com/media/HFPV2zEaUAAQspu.jpg",
     "hasPhoto": true,
-    "likes": 124,
+    "likes": 125,
     "retweets": 19,
     "replies": 2,
-    "engagement": 168,
+    "engagement": 169,
     "relevance": 54,
-    "rawScore": 54468,
-    "score": 35404
+    "rawScore": 54469,
+    "score": 35405
   },
   {
     "id": "2041202353181962307",
@@ -161,12 +161,12 @@
     "url": "https://x.com/HFI_Research/status/2041180362135818360",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 463,
+    "likes": 464,
     "retweets": 25,
     "replies": 13,
-    "engagement": 552,
+    "engagement": 553,
     "relevance": 10,
-    "rawScore": 10552,
+    "rawScore": 10553,
     "score": 6859
   },
   {
@@ -178,13 +178,13 @@
     "url": "https://x.com/HFI_Research/status/2041177608386474467",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 283,
+    "likes": 286,
     "retweets": 11,
     "replies": 2,
-    "engagement": 311,
+    "engagement": 314,
     "relevance": 10,
-    "rawScore": 10311,
-    "score": 6702
+    "rawScore": 10314,
+    "score": 6704
   },
   {
     "id": "2041065666791506226",
@@ -213,12 +213,12 @@
     "photoUrl": null,
     "hasPhoto": false,
     "likes": 0,
-    "retweets": 23,
+    "retweets": 24,
     "replies": 0,
-    "engagement": 46,
+    "engagement": 48,
     "relevance": 20,
-    "rawScore": 20046,
-    "score": 17039
+    "rawScore": 20048,
+    "score": 17041
   },
   {
     "id": "2041236309046444512",
@@ -314,13 +314,13 @@
     "url": "https://x.com/Rory_Johnston/status/2041293186912391393",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 430,
+    "likes": 433,
     "retweets": 11,
     "replies": 26,
-    "engagement": 530,
+    "engagement": 533,
     "relevance": 10,
-    "rawScore": 10530,
-    "score": 10530
+    "rawScore": 10533,
+    "score": 10533
   },
   {
     "id": "2041170899232035200",
@@ -337,7 +337,7 @@
     "engagement": 333,
     "relevance": 10,
     "rawScore": 10333,
-    "score": 6716
+    "score": 4650
   },
   {
     "id": "2041169857039802597",
@@ -349,12 +349,12 @@
     "photoUrl": null,
     "hasPhoto": false,
     "likes": 249,
-    "retweets": 24,
+    "retweets": 25,
     "replies": 9,
-    "engagement": 324,
+    "engagement": 326,
     "relevance": 18,
-    "rawScore": 18324,
-    "score": 8246
+    "rawScore": 18326,
+    "score": 8247
   },
   {
     "id": "2041223077598531953",
@@ -484,12 +484,12 @@
     "url": "https://x.com/TankerTrackers/status/2041212032263901666",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 355,
+    "likes": 356,
     "retweets": 50,
     "replies": 17,
-    "engagement": 506,
+    "engagement": 507,
     "relevance": 58,
-    "rawScore": 58506,
-    "score": 38029
+    "rawScore": 58507,
+    "score": 38030
   }
 ]
