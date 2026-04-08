@@ -38,7 +38,7 @@
 
 项目通过 GitHub Pages 自动部署，访问：
 
-**https://huxingzhehxz.github.io/oil-dashboard/**
+**https://oil-dashboard.github.io/oil-dashboard/**
 
 ## 本地开发
 
