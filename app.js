@@ -404,7 +404,7 @@ async function fetchPolymarket() {
 
 // ========== 油市推文 (读 data/oott.json，由 OOTT cron 自动同步) ==========
 async function fetchOOTT() {
-  const data = await safeFetch('data/oott.json', 0);
+  const data = await safeFetch('data/oott.json?t=' + Date.now(), 0);
   const el = document.getElementById('oottFeed');
   if (!data || !Array.isArray(data) || !data.length) {
     el.innerHTML = `<div class="loading-spinner"><span style="color:var(--text-dim)">暂无油市推文</span>

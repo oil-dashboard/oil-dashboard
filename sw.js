@@ -1,4 +1,4 @@
-const CACHE = 'oil-dash-v8';
+const CACHE = 'oil-dash-v9';
 const STATIC = ['./', './index.html', './style.css', './app.js', './manifest.json', './sources.json'];
 
 self.addEventListener('install', e => {
@@ -17,7 +17,8 @@ self.addEventListener('fetch', e => {
   const url = e.request.url;
   // 不缓存 API 请求
   if (url.includes('yahoo') || url.includes('capduck') || url.includes('allorigins')
-    || url.includes('corsproxy') || url.includes('codetabs') || url.includes('cors.sh')) return;
+    || url.includes('corsproxy') || url.includes('codetabs') || url.includes('cors.sh')
+    || url.includes('.json')) return;
   e.respondWith(
     caches.match(e.request).then(r => r || fetch(e.request).then(resp => {
       const clone = resp.clone();
