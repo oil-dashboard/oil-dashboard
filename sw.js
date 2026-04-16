@@ -1,5 +1,13 @@
-const CACHE = 'oil-dash-v9';
+const CACHE = 'oil-dash-v10';
 const STATIC = ['./', './index.html', './style.css', './app.js', './manifest.json', './sources.json'];
+
+function shouldBypassCache(url) {
+  const parsed = new URL(url);
+  if (parsed.origin !== self.location.origin) return true;
+  if (parsed.searchParams.has('url') || parsed.searchParams.has('twitter')) return true;
+  if (parsed.pathname.endsWith('.json')) return true;
+  return false;
+}
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(STATIC)));
@@ -14,11 +22,7 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
-  const url = e.request.url;
-  // 不缓存 API 请求
-  if (url.includes('yahoo') || url.includes('capduck') || url.includes('allorigins')
-    || url.includes('corsproxy') || url.includes('codetabs') || url.includes('cors.sh')
-    || url.includes('.json')) return;
+  if (e.request.method !== 'GET' || shouldBypassCache(e.request.url)) return;
   e.respondWith(
     caches.match(e.request).then(r => r || fetch(e.request).then(resp => {
       const clone = resp.clone();

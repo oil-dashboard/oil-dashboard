@@ -4,6 +4,13 @@
 const API_BASE = 'https://skill.capduck.com/iran';
 const REFRESH_MS = 5 * 60 * 1000;
 const CACHE_KEY = 'oil_v4_aligned';
+const OOTT_LIVE_CACHE_KEY = 'oil_oott_live_v1';
+const OOTT_LIVE_CACHE_TTL_MS = 10 * 60 * 1000;
+const OOTT_LIVE_LOOKBACK_MS = 72 * 60 * 60 * 1000;
+const OOTT_FALLBACK_HANDLES = [
+  'JuneGoh_Sparta', 'JavierBlas', 'JKempEnergy', 'HFI_Research', 'Rory_Johnston',
+  'staunovo', 'TankerTrackers', 'OilHeadlineNews', 'Ole_S_Hansen',
+];
 // 部署 workers/proxy.js 到 Cloudflare 后填入 URL，留空则用公共代理
 const CF_WORKER_URL = 'https://oil-proxy.xzregproxy.workers.dev';
 
@@ -22,7 +29,126 @@ function formatSGT(date) {
   } catch { return ''; }
 }
 
+function formatSGTCompact(date) {
+  if (!date) return '';
+  try {
+    return date.toLocaleString('zh-CN', {
+      timeZone: 'Asia/Singapore', hour12: false,
+      month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric'
+    });
+  } catch { return ''; }
+}
+
+function parseDateMs(value) {
+  const ms = Date.parse(value);
+  return Number.isFinite(ms) ? ms : null;
+}
+
+function getSGTDayKey(dateLike) {
+  const date = dateLike instanceof Date ? dateLike : new Date(dateLike);
+  if (Number.isNaN(date.getTime())) return '';
+  try {
+    const parts = Object.fromEntries(
+      new Intl.DateTimeFormat('en-CA', {
+        timeZone: 'Asia/Singapore', year: 'numeric', month: '2-digit', day: '2-digit'
+      }).formatToParts(date).filter(p => p.type !== 'literal').map(p => [p.type, p.value])
+    );
+    return `${parts.year}-${parts.month}-${parts.day}`;
+  } catch { return ''; }
+}
+
+function flattenTradingPeriods(periods) {
+  if (!Array.isArray(periods)) return [];
+  return periods.flat(Infinity).filter(p => p && typeof p.start === 'number' && typeof p.end === 'number');
+}
+
+function getReferenceCloseInfo(raw) {
+  const prevClose = raw?.meta?.chartPreviousClose ?? raw?.meta?.previousClose ?? null;
+  const periods = flattenTradingPeriods(raw?.meta?.tradingPeriods);
+  const prevPeriod = periods.length >= 2 ? periods[periods.length - 2] : null;
+  const referenceTime = prevPeriod?.end ? formatSGTCompact(new Date(prevPeriod.end * 1000)) : '';
+  return {
+    prevClose,
+    referenceLabel: referenceTime ? `对比 ${referenceTime} 收盘` : '对比上一交易时段收盘',
+  };
+}
+
 function impactClass(n) { return n >= 8 ? 'impact-high' : n >= 5 ? 'impact-mid' : 'impact-low'; }
+
+function normalizeOottPost(item, fallbackUsername = '') {
+  if (!item || typeof item !== 'object') return null;
+  const createdMs = parseDateMs(item.createdAt || item.created_at);
+  if (!createdMs) return null;
+  return {
+    text: item.text || '',
+    createdAt: new Date(createdMs).toISOString(),
+    username: item.username || item.handle || fallbackUsername,
+    url: item.url || '',
+    photos: Array.isArray(item.photos) ? item.photos : [],
+    videos: Array.isArray(item.videos) ? item.videos : [],
+    engagement: item.engagement || '',
+  };
+}
+
+function getLatestCreatedMs(posts) {
+  let latest = 0;
+  for (const post of posts || []) {
+    const ms = parseDateMs(post?.createdAt);
+    if (ms && ms > latest) latest = ms;
+  }
+  return latest;
+}
+
+function needsLiveOottRefresh(posts, now = new Date()) {
+  const latestMs = getLatestCreatedMs(posts);
+  if (!latestMs) return true;
+  return getSGTDayKey(latestMs) !== getSGTDayKey(now);
+}
+
+function mergeOottPosts(staticPosts, livePosts) {
+  const deduped = new Map();
+  for (const post of [...(staticPosts || []), ...(livePosts || [])]) {
+    const normalized = normalizeOottPost(post, post?.username || post?.handle || '');
+    if (!normalized) continue;
+    const key = normalized.url || `${normalized.username}|${normalized.createdAt}|${normalized.text}`;
+    const existing = deduped.get(key);
+    if (!existing || parseDateMs(normalized.createdAt) > parseDateMs(existing.createdAt)) deduped.set(key, normalized);
+  }
+  return [...deduped.values()].sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+}
+
+function getOottHandles(staticPosts = []) {
+  const fromStatic = [...new Set((staticPosts || []).map(post => post?.username).filter(Boolean))];
+  if (fromStatic.length >= 4) return fromStatic;
+
+  const fromSources = [];
+  if (state.sources && typeof state.sources === 'object') {
+    for (const group of Object.values(state.sources)) {
+      if (!Array.isArray(group?.accounts)) continue;
+      for (const account of group.accounts) {
+        const handle = account?.handle?.replace(/^@/, '');
+        if (handle) fromSources.push(handle);
+      }
+    }
+  }
+  return [...new Set((fromSources.length ? fromSources : OOTT_FALLBACK_HANDLES))];
+}
+
+function readCachedLiveOott(handles) {
+  try {
+    const cached = JSON.parse(localStorage.getItem(OOTT_LIVE_CACHE_KEY));
+    if (!cached || Date.now() - cached.ts > OOTT_LIVE_CACHE_TTL_MS) return null;
+    const cachedHandles = Array.isArray(cached.handles) ? cached.handles.join(',') : '';
+    if (cachedHandles !== handles.join(',')) return null;
+    return Array.isArray(cached.posts) ? cached.posts : null;
+  } catch { return null; }
+}
+
+function writeCachedLiveOott(handles, posts) {
+  try {
+    localStorage.setItem(OOTT_LIVE_CACHE_KEY, JSON.stringify({ handles, posts, ts: Date.now() }));
+  } catch {}
+}
 
 async function safeFetch(url, retries = 1) {
   for (let i = 0; i <= retries; i++) {
@@ -36,6 +162,26 @@ async function safeFetch(url, retries = 1) {
       await new Promise(r => setTimeout(r, 800));
     }
   }
+}
+
+async function fetchLiveOottPosts(handles, staticLatestMs = 0) {
+  if (!CF_WORKER_URL || !handles.length) return [];
+  const cacheKeyHandles = [...handles].sort();
+  const cached = readCachedLiveOott(cacheKeyHandles);
+  if (cached) return cached;
+
+  const responses = await Promise.all(handles.map(async handle => {
+    const data = await safeFetch(`${CF_WORKER_URL}?twitter=${encodeURIComponent(handle)}`, 0);
+    if (!Array.isArray(data)) return [];
+    return data.map(post => normalizeOottPost(post, handle)).filter(Boolean);
+  }));
+
+  const cutoff = staticLatestMs
+    ? Math.max(staticLatestMs - 12 * 60 * 60 * 1000, Date.now() - OOTT_LIVE_LOOKBACK_MS)
+    : Date.now() - OOTT_LIVE_LOOKBACK_MS;
+  const posts = mergeOottPosts([], responses.flat().filter(post => parseDateMs(post.createdAt) >= cutoff));
+  writeCachedLiveOott(cacheKeyHandles, posts);
+  return posts;
 }
 
 // ========== Tab switching ==========
@@ -99,7 +245,7 @@ async function fetchRawChartData(symbol) {
   );
   for (const proxyUrl of proxies) {
     try {
-      const r = await fetch(proxyUrl, { signal: AbortSignal.timeout(8000) });
+      const r = await fetch(proxyUrl, { signal: AbortSignal.timeout(8000), cache: 'no-store' });
       if (!r.ok) continue;
       let data; try { data = JSON.parse(await r.text()); } catch { continue; }
       if (data.contents) { try { data = JSON.parse(data.contents); } catch { continue; } }
@@ -134,7 +280,8 @@ function renderPrice(id, data) {
   el.className = 'price-change ' + (up ? 'price-up' : 'price-down');
   const timeEl = document.getElementById(id + 'Time');
   if (data.dataTime) {
-    timeEl.textContent = data.cached ? `⏳ 缓存 ${data.dataTime}` : `📅 ${data.dataTime}`;
+    const prefix = data.cached ? `⏳ 缓存 ${data.dataTime}` : `📅 ${data.dataTime}`;
+    timeEl.textContent = data.referenceLabel ? `${prefix} · ${data.referenceLabel}` : prefix;
     timeEl.style.color = data.cached ? 'var(--accent-gold)' : '';
   }
 }
@@ -146,11 +293,12 @@ function extractSinglePrice(raw) {
   }
   if (!pairs.length) return null;
   const latest = pairs[pairs.length - 1];
-  const prev = raw.meta?.chartPreviousClose || raw.meta?.previousClose
-    || (pairs.length >= 2 ? pairs[pairs.length - 2].close : latest.close);
+  const ref = getReferenceCloseInfo(raw);
+  const prev = ref.prevClose ?? (pairs.length >= 2 ? pairs[pairs.length - 2].close : latest.close);
   const chg = latest.close - prev;
   return { price: latest.close.toFixed(2), change: chg.toFixed(2),
-    pct: ((chg / prev) * 100).toFixed(1), dataTime: formatSGT(new Date(latest.ts * 1000)), cached: false };
+    pct: ((chg / prev) * 100).toFixed(1), dataTime: formatSGT(new Date(latest.ts * 1000)),
+    referenceLabel: ref.referenceLabel, cached: false };
 }
 
 async function fetchPrices() {
@@ -168,15 +316,15 @@ async function fetchPrices() {
     if (commonTs.length >= 1) {
       const lt = commonTs[0], bCur = bMap.get(lt), wCur = wMap.get(lt);
       const dataTime = formatSGT(new Date(lt * 1000));
-      const bPrev = brentRaw.meta?.chartPreviousClose || brentRaw.meta?.previousClose
-        || (commonTs.length >= 2 ? bMap.get(commonTs[1]) : bCur);
-      const wPrev = wtiRaw.meta?.chartPreviousClose || wtiRaw.meta?.previousClose
-        || (commonTs.length >= 2 ? wMap.get(commonTs[1]) : wCur);
+      const bRef = getReferenceCloseInfo(brentRaw);
+      const wRef = getReferenceCloseInfo(wtiRaw);
+      const bPrev = bRef.prevClose ?? (commonTs.length >= 2 ? bMap.get(commonTs[1]) : bCur);
+      const wPrev = wRef.prevClose ?? (commonTs.length >= 2 ? wMap.get(commonTs[1]) : wCur);
       const bChg = bCur - bPrev, wChg = wCur - wPrev;
       brentData = { price: bCur.toFixed(2), change: bChg.toFixed(2),
-        pct: ((bChg/bPrev)*100).toFixed(1), dataTime, cached: false };
+        pct: ((bChg/bPrev)*100).toFixed(1), dataTime, referenceLabel: bRef.referenceLabel, cached: false };
       wtiData = { price: wCur.toFixed(2), change: wChg.toFixed(2),
-        pct: ((wChg/wPrev)*100).toFixed(1), dataTime, cached: false };
+        pct: ((wChg/wPrev)*100).toFixed(1), dataTime, referenceLabel: wRef.referenceLabel, cached: false };
       aligned = true;
       state.priceSource = 'live';
 
@@ -404,17 +552,30 @@ async function fetchPolymarket() {
 
 // ========== 油市推文 (读 data/oott.json，由 OOTT cron 自动同步) ==========
 async function fetchOOTT() {
-  const data = await safeFetch('data/oott.json?t=' + Date.now(), 0);
+  const staticData = await safeFetch('data/oott.json?t=' + Date.now(), 0);
   const el = document.getElementById('oottFeed');
-  if (!data || !Array.isArray(data) || !data.length) {
+  const staticPosts = Array.isArray(staticData) ? staticData.map(post => normalizeOottPost(post)).filter(Boolean) : [];
+  let posts = staticPosts;
+  let usingLiveSupplement = false;
+
+  if (needsLiveOottRefresh(staticPosts)) {
+    const livePosts = await fetchLiveOottPosts(getOottHandles(staticPosts), getLatestCreatedMs(staticPosts));
+    if (livePosts.length) {
+      posts = mergeOottPosts(staticPosts, livePosts);
+      usingLiveSupplement = getLatestCreatedMs(posts) > getLatestCreatedMs(staticPosts);
+    }
+  }
+
+  if (!posts.length) {
     el.innerHTML = `<div class="loading-spinner"><span style="color:var(--text-dim)">暂无油市推文</span>
       <a href="https://x.com/JavierBlas" target="_blank" style="color:var(--accent-blue);font-size:12px;margin-top:8px">查看 @JavierBlas →</a></div>`;
     return;
   }
-  const sorted = [...data].sort((a,b) => new Date(b.createdAt) - new Date(a.createdAt));
+  const sorted = [...posts].sort((a,b) => new Date(b.createdAt) - new Date(a.createdAt));
   const handles = new Set(sorted.map(t => t.username));
+  const sourceLabel = usingLiveSupplement ? '静态 + Live 补拉' : 'OOTT 自动同步';
   let html = `<div style="font-size:12px;color:var(--text-muted);margin-bottom:12px;padding:4px 8px">
-    🛢️ ${sorted.length} 条 · ${handles.size} 个白名单信源 · OOTT 自动同步</div>`;
+    🛢️ ${sorted.length} 条 · ${handles.size} 个白名单信源 · ${sourceLabel}</div>`;
   for (let i = 0; i < sorted.length; i++) {
     const t = sorted[i], delay = Math.min(i * 0.04, 0.8);
     const timeStr = t.createdAt ? formatSGT(new Date(t.createdAt)) : '';
@@ -459,3 +620,15 @@ async function refresh() {
     navigator.serviceWorker.register('sw.js').catch(e => console.warn('SW register failed:', e));
   }
 })();
+
+if (typeof globalThis !== 'undefined') {
+  globalThis.__oilDashboardTestHooks = {
+    flattenTradingPeriods,
+    getReferenceCloseInfo,
+    formatSGTCompact,
+    normalizeOottPost,
+    mergeOottPosts,
+    needsLiveOottRefresh,
+    getSGTDayKey,
+  };
+}

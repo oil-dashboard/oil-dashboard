@@ -54,7 +54,7 @@ export default {
           headers: {
             'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': '*',
-            'Cache-Control': 'public, max-age=120',
+            'Cache-Control': 'no-store, max-age=0',
           },
         });
       } catch (e) {
@@ -77,9 +77,8 @@ export default {
       headers: {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*',
-        'Cache-Control': 'public, max-age=60',
+        'Cache-Control': 'no-store, max-age=0',
       },
     });
   },
 };
-
