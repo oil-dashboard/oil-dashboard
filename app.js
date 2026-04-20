@@ -4,6 +4,8 @@
 const API_BASE = 'https://skill.capduck.com/iran';
 const REFRESH_MS = 5 * 60 * 1000;
 const CACHE_KEY = 'oil_v4_aligned';
+const PRICE_CHART_RANGE = '5d';
+const PRICE_CHART_INTERVAL = '5m';
 const OOTT_LIVE_CACHE_KEY = 'oil_oott_live_v1';
 const OOTT_LIVE_CACHE_TTL_MS = 10 * 60 * 1000;
 const OOTT_LIVE_LOOKBACK_MS = 72 * 60 * 60 * 1000;
@@ -235,7 +237,7 @@ async function loadSources() {
 
 // ========== Prices: 对齐 + Sparkline + 闪动 ==========
 async function fetchRawChartData(symbol) {
-  const yahooUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=2d&interval=5m`;
+  const yahooUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=${PRICE_CHART_RANGE}&interval=${PRICE_CHART_INTERVAL}`;
   const proxies = [];
   if (CF_WORKER_URL) proxies.push(`${CF_WORKER_URL}?url=${encodeURIComponent(yahooUrl)}`);
   proxies.push(
@@ -630,5 +632,7 @@ if (typeof globalThis !== 'undefined') {
     mergeOottPosts,
     needsLiveOottRefresh,
     getSGTDayKey,
+    PRICE_CHART_RANGE,
+    PRICE_CHART_INTERVAL,
   };
 }

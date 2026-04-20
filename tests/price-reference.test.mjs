@@ -73,3 +73,10 @@ test('reference close label falls back gracefully when trading periods are missi
   assert.equal(info.prevClose, 72.31);
   assert.equal(info.referenceLabel, '对比上一交易时段收盘');
 });
+
+test('price chart fetch uses the stable Yahoo intraday range', () => {
+  const hooks = loadAppHooks();
+
+  assert.equal(hooks.PRICE_CHART_RANGE, '5d');
+  assert.equal(hooks.PRICE_CHART_INTERVAL, '5m');
+});
