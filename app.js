@@ -344,6 +344,10 @@ function renderSparkline(containerId, closes, up) {
   </svg>`;
 }
 
+function isPositiveChange(data) {
+  return Number.parseFloat(data?.change) >= 0;
+}
+
 // ========== Sources ==========
 async function loadSources() {
   const d = await safeFetch('sources.json', 0);
@@ -392,7 +396,7 @@ function renderPrice(id, data) {
     setTimeout(() => box.classList.remove(cls), 1200);
   }
   const el = document.getElementById(id + 'Change');
-  const up = parseFloat(data.change) >= 0;
+  const up = isPositiveChange(data);
   el.textContent = `${up?'▲':'▼'} ${data.change} (${data.pct}%)`;
   el.className = 'price-change ' + (up ? 'price-up' : 'price-down');
   const timeEl = document.getElementById(id + 'Time');
@@ -441,6 +445,7 @@ async function fetchPrices() {
     fetchTradingViewQuote('wti'),
   ]);
   let brentData = null, wtiData = null, aligned = false;
+  let brentSparkline = null, wtiSparkline = null;
 
   if (brentRaw && wtiRaw) {
     const bMap = new Map(), wMap = new Map();
@@ -467,8 +472,8 @@ async function fetchPrices() {
 
       // Sparkline: 最近 48 个共同时点
       const sparkTs = commonTs.slice(0, 48).reverse();
-      renderSparkline('brentSpark', sparkTs.map(ts => bMap.get(ts)), bChg >= 0);
-      renderSparkline('wtiSpark', sparkTs.map(ts => wMap.get(ts)), wChg >= 0);
+      brentSparkline = sparkTs.map(ts => bMap.get(ts));
+      wtiSparkline = sparkTs.map(ts => wMap.get(ts));
 
       try { localStorage.setItem(CACHE_KEY, JSON.stringify({ brent: brentData, wti: wtiData, ts: Date.now() })); } catch {}
     }
@@ -496,6 +501,9 @@ async function fetchPrices() {
 
   if (!brentData && !wtiData) state.priceSource = 'offline';
   else if (brentTv || wtiTv) state.priceSource = 'live';
+
+  renderSparkline('brentSpark', brentSparkline, isPositiveChange(brentData));
+  renderSparkline('wtiSpark', wtiSparkline, isPositiveChange(wtiData));
   renderPrice('brent', brentData);
   renderPrice('wti', wtiData);
 
