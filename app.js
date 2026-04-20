@@ -6,6 +6,7 @@ const REFRESH_MS = 5 * 60 * 1000;
 const CACHE_KEY = 'oil_v4_aligned';
 const PRICE_CHART_RANGE = '5d';
 const PRICE_CHART_INTERVAL = '5m';
+const TV_FALLBACK_LOOKAHEAD_SEC = 15 * 60;
 const OOTT_LIVE_CACHE_KEY = 'oil_oott_live_v1';
 const OOTT_LIVE_CACHE_TTL_MS = 10 * 60 * 1000;
 const OOTT_LIVE_LOOKBACK_MS = 72 * 60 * 60 * 1000;
@@ -76,6 +77,28 @@ function getReferenceCloseInfo(raw) {
 }
 
 function impactClass(n) { return n >= 8 ? 'impact-high' : n >= 5 ? 'impact-mid' : 'impact-low'; }
+
+function extractClosePairs(raw) {
+  const pairs = [];
+  const timestamps = raw?.timestamps || [];
+  const closes = raw?.closes || [];
+  for (let i = 0; i < timestamps.length; i++) {
+    if (closes[i] != null) pairs.push({ ts: timestamps[i], close: closes[i] });
+  }
+  return pairs;
+}
+
+function shouldUseTradingViewFallback(raw, nowSec = Date.now() / 1000) {
+  if (!raw) return true;
+  const pairs = extractClosePairs(raw);
+  if (!pairs.length) return true;
+  const latestTs = pairs[pairs.length - 1].ts;
+  const currentStart = raw.meta?.currentTradingPeriod?.regular?.start;
+  if (typeof currentStart === 'number' && nowSec >= currentStart + TV_FALLBACK_LOOKAHEAD_SEC) {
+    return latestTs < currentStart;
+  }
+  return false;
+}
 
 function normalizeOottPost(item, fallbackUsername = '') {
   if (!item || typeof item !== 'object') return null;
@@ -186,6 +209,13 @@ async function fetchLiveOottPosts(handles, staticLatestMs = 0) {
   return posts;
 }
 
+async function fetchTradingViewQuote(kind) {
+  if (!CF_WORKER_URL) return null;
+  const data = await safeFetch(`${CF_WORKER_URL}?tvsymbol=${encodeURIComponent(kind)}`, 0);
+  if (!data || typeof data !== 'object' || data.price == null) return null;
+  return data;
+}
+
 // ========== Tab switching ==========
 document.querySelectorAll('.tab').forEach(tab => {
   tab.addEventListener('click', () => {
@@ -282,17 +312,18 @@ function renderPrice(id, data) {
   el.className = 'price-change ' + (up ? 'price-up' : 'price-down');
   const timeEl = document.getElementById(id + 'Time');
   if (data.dataTime) {
-    const prefix = data.cached ? `⏳ 缓存 ${data.dataTime}` : `📅 ${data.dataTime}`;
+    const prefix = data.cached
+      ? `⏳ 缓存 ${data.dataTime}`
+      : data.sourceNote
+        ? `🌐 ${data.sourceNote} ${data.dataTime}`
+        : `📅 ${data.dataTime}`;
     timeEl.textContent = data.referenceLabel ? `${prefix} · ${data.referenceLabel}` : prefix;
     timeEl.style.color = data.cached ? 'var(--accent-gold)' : '';
   }
 }
 
 function extractSinglePrice(raw) {
-  const pairs = [];
-  for (let i = 0; i < raw.timestamps.length; i++) {
-    if (raw.closes[i] != null) pairs.push({ ts: raw.timestamps[i], close: raw.closes[i] });
-  }
+  const pairs = extractClosePairs(raw);
   if (!pairs.length) return null;
   const latest = pairs[pairs.length - 1];
   const ref = getReferenceCloseInfo(raw);
@@ -301,6 +332,23 @@ function extractSinglePrice(raw) {
   return { price: latest.close.toFixed(2), change: chg.toFixed(2),
     pct: ((chg / prev) * 100).toFixed(1), dataTime: formatSGT(new Date(latest.ts * 1000)),
     referenceLabel: ref.referenceLabel, cached: false };
+}
+
+function buildQuoteFallbackData(raw, quote) {
+  if (!quote || quote.price == null) return null;
+  const ref = getReferenceCloseInfo(raw);
+  const prev = ref.prevClose ?? Number(quote.price);
+  const price = Number(quote.price);
+  const chg = price - prev;
+  return {
+    price: price.toFixed(2),
+    change: chg.toFixed(2),
+    pct: prev ? ((chg / prev) * 100).toFixed(1) : '0.0',
+    dataTime: formatSGT(new Date((quote.fetchedAt || Date.now() / 1000) * 1000)),
+    referenceLabel: ref.referenceLabel,
+    sourceNote: 'TradingView 补源',
+    cached: false,
+  };
 }
 
 async function fetchPrices() {
@@ -342,6 +390,17 @@ async function fetchPrices() {
   if (!brentData && brentRaw) brentData = extractSinglePrice(brentRaw);
   if (!wtiData && wtiRaw) wtiData = extractSinglePrice(wtiRaw);
 
+  const needTvBrent = shouldUseTradingViewFallback(brentRaw);
+  const needTvWti = shouldUseTradingViewFallback(wtiRaw);
+  if (needTvBrent || needTvWti) {
+    const [brentTv, wtiTv] = await Promise.all([
+      needTvBrent ? fetchTradingViewQuote('brent') : Promise.resolve(null),
+      needTvWti ? fetchTradingViewQuote('wti') : Promise.resolve(null),
+    ]);
+    if (brentTv) brentData = buildQuoteFallbackData(brentRaw, brentTv) || brentData;
+    if (wtiTv) wtiData = buildQuoteFallbackData(wtiRaw, wtiTv) || wtiData;
+  }
+
   if (!brentData || !wtiData) {
     try {
       const c = JSON.parse(localStorage.getItem(CACHE_KEY));
@@ -354,6 +413,7 @@ async function fetchPrices() {
   }
 
   if (!brentData && !wtiData) state.priceSource = 'offline';
+  else if (brentData?.sourceNote || wtiData?.sourceNote) state.priceSource = 'live';
   renderPrice('brent', brentData);
   renderPrice('wti', wtiData);
 
@@ -634,5 +694,6 @@ if (typeof globalThis !== 'undefined') {
     getSGTDayKey,
     PRICE_CHART_RANGE,
     PRICE_CHART_INTERVAL,
+    shouldUseTradingViewFallback,
   };
 }

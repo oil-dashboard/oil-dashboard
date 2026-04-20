@@ -4,6 +4,11 @@
 export default {
   async fetch(request) {
     const url = new URL(request.url);
+    const jsonHeaders = {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      'Cache-Control': 'no-store, max-age=0',
+    };
 
     // 1. CORS Preflight
     if (request.method === 'OPTIONS') {
@@ -62,7 +67,44 @@ export default {
       }
     }
 
-    // 3. Yahoo Finance Proxy
+    // 3. TradingView Symbol Page Price Fallback
+    const tvSymbol = url.searchParams.get('tvsymbol');
+    if (tvSymbol) {
+      const tvTargets = {
+        brent: 'https://www.tradingview.com/symbols/TVC-UKOIL/',
+        wti: 'https://www.tradingview.com/symbols/NYMEX-CL1!/',
+      };
+      const pageUrl = tvTargets[tvSymbol];
+      if (!pageUrl) return new Response('Invalid tvsymbol', { status: 400 });
+      try {
+        const resp = await fetch(pageUrl, {
+          headers: { 'User-Agent': 'Mozilla/5.0 (compatible)' },
+        });
+        if (!resp.ok) return new Response('TradingView non-200', { status: 502, headers: jsonHeaders });
+        const html = await resp.text();
+        const matches = html.matchAll(/<script type="application\/prs\.init-data\+json">([\s\S]*?)<\/script>/g);
+        for (const match of matches) {
+          const root = JSON.parse(match[1]);
+          for (const entry of Object.values(root || {})) {
+            const symbol = entry?.data?.symbol;
+            const price = symbol?.trade?.price ?? symbol?.daily_bar?.close;
+            if (price == null) continue;
+            return new Response(JSON.stringify({
+              kind: tvSymbol,
+              price: Number(price),
+              fetchedAt: Date.now() / 1000,
+              source: 'tradingview',
+              symbol: symbol?.pro_symbol || symbol?.resolved_symbol || null,
+            }), { headers: jsonHeaders });
+          }
+        }
+        return new Response(JSON.stringify({ error: 'No TradingView symbol data found' }), { status: 502, headers: jsonHeaders });
+      } catch (e) {
+        return new Response(JSON.stringify({ error: e.message }), { status: 500, headers: jsonHeaders });
+      }
+    }
+
+    // 4. Yahoo Finance Proxy
     const target = url.searchParams.get('url');
     if (!target) return new Response('Missing ?url= or ?twitter= param', { status: 400 });
 
@@ -74,11 +116,7 @@ export default {
     const resp = await fetch(target, { headers: { 'User-Agent': 'Mozilla/5.0 (compatible)' } });
     return new Response(await resp.text(), {
       status: resp.status,
-      headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
-        'Cache-Control': 'no-store, max-age=0',
-      },
+      headers: jsonHeaders,
     });
   },
 };

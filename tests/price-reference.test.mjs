@@ -80,3 +80,19 @@ test('price chart fetch uses the stable Yahoo intraday range', () => {
   assert.equal(hooks.PRICE_CHART_RANGE, '5d');
   assert.equal(hooks.PRICE_CHART_INTERVAL, '5m');
 });
+
+test('tradingview fallback turns on when yahoo has not entered the current session', () => {
+  const hooks = loadAppHooks();
+  const raw = {
+    timestamps: [1776459300, 1776459599],
+    closes: [91.19, 90.38],
+    meta: {
+      currentTradingPeriod: {
+        regular: { start: 1776657600 },
+      },
+    },
+  };
+
+  assert.equal(hooks.shouldUseTradingViewFallback(raw, 1776660000), true);
+  assert.equal(hooks.shouldUseTradingViewFallback(raw, 1776658000), false);
+});
