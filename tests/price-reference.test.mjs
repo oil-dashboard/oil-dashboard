@@ -126,3 +126,18 @@ test('tradingview daily reference rolls when the daily bar timestamp advances', 
   assert.equal(second.referenceLabel, '对比 4/20 收盘');
   assert.equal(second.change, '1.50');
 });
+
+test('polymarket view hides expired dated windows but keeps future and price buckets', () => {
+  const hooks = loadAppHooks();
+  const filtered = hooks.filterActivePolymarketConditions(
+    [
+      { label: '4月7日', prob: '89%' },
+      { label: '4月15日', prob: '83%' },
+      { label: '4月底', prob: '85%' },
+      { label: '↑$120', prob: '9%' },
+    ],
+    new Date('2026-04-20T12:00:00+08:00')
+  );
+
+  assert.deepEqual(filtered.map(item => item.label), ['4月底', '↑$120']);
+});

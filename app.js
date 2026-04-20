@@ -61,6 +61,23 @@ function parseDateMs(value) {
   return Number.isFinite(ms) ? ms : null;
 }
 
+function getSgtDateParts(dateLike = new Date()) {
+  const date = dateLike instanceof Date ? dateLike : new Date(dateLike);
+  if (Number.isNaN(date.getTime())) return null;
+  try {
+    const parts = Object.fromEntries(
+      new Intl.DateTimeFormat('en-CA', {
+        timeZone: 'Asia/Singapore', year: 'numeric', month: '2-digit', day: '2-digit'
+      }).formatToParts(date).filter(p => p.type !== 'literal').map(p => [p.type, p.value])
+    );
+    return {
+      year: Number(parts.year),
+      month: Number(parts.month),
+      day: Number(parts.day),
+    };
+  } catch { return null; }
+}
+
 function getSGTDayKey(dateLike) {
   const date = dateLike instanceof Date ? dateLike : new Date(dateLike);
   if (Number.isNaN(date.getTime())) return '';
@@ -118,6 +135,32 @@ function shouldUseTradingViewFallback(raw, nowSec = Date.now() / 1000) {
     return latestTs < currentStart;
   }
   return false;
+}
+
+function getPolymarketConditionExpiryMs(label, now = new Date()) {
+  const parts = getSgtDateParts(now);
+  if (!parts) return null;
+
+  let match = String(label || '').match(/^(\d{1,2})月(\d{1,2})日$/);
+  if (match) {
+    const [, month, day] = match.map(Number);
+    return Date.UTC(parts.year, month - 1, day, 15, 59, 59, 999);
+  }
+
+  match = String(label || '').match(/^(\d{1,2})月底$/);
+  if (match) {
+    const month = Number(match[1]);
+    return Date.UTC(parts.year, month, 0, 15, 59, 59, 999);
+  }
+
+  return null;
+}
+
+function filterActivePolymarketConditions(conditions, now = new Date()) {
+  return (conditions || []).filter(condition => {
+    const expiryMs = getPolymarketConditionExpiryMs(condition?.label, now);
+    return expiryMs == null || expiryMs >= now.getTime();
+  });
 }
 
 function normalizeOottPost(item, fallbackUsername = '') {
@@ -680,6 +723,7 @@ async function fetchPolymarket() {
   const el = document.getElementById('polyContent');
   if (!text || typeof text !== 'string') { el.innerHTML = '<p style="color:var(--text-dim)">暂无数据</p>'; return; }
   const contracts = [], blocks = text.split(/^## /m).filter(s => s.trim());
+  let hiddenExpiredCount = 0;
   for (const block of blocks) {
     const lines = block.split('\n'), question = lines[0].trim();
     if (!question || question.startsWith('#')) continue;
@@ -689,7 +733,9 @@ async function fetchPolymarket() {
       const cm = l.match(/^\s+-\s+(.+?):\s+\*\*(\d+%)\*\*\s*(Yes|No)?\s*(.*)/);
       if (cm) conditions.push({ label:cm[1], prob:cm[2], dir:cm[4]||'' });
     }
-    if (conditions.length) contracts.push({ question, link, conditions });
+    const activeConditions = filterActivePolymarketConditions(conditions);
+    hiddenExpiredCount += conditions.length - activeConditions.length;
+    if (activeConditions.length) contracts.push({ question, link, conditions: activeConditions });
   }
   let html = '';
   for (const c of contracts) {
@@ -708,8 +754,9 @@ async function fetchPolymarket() {
     el.innerHTML = '<p style="color:var(--text-dim)">暂无 Polymarket 数据</p>';
     return;
   }
+  const extraNote = hiddenExpiredCount ? ` · 已隐藏 ${hiddenExpiredCount} 个过期窗口` : '';
   el.innerHTML = `<div style="font-size:12px;color:var(--text-muted);margin-bottom:12px;padding:4px 8px">
-    📊 已刷新 ${formatSGT(new Date())} · 卡片里的日期是合约到期/结算窗口，不代表数据停更</div>` + html;
+    📊 已刷新 ${formatSGT(new Date())} · 卡片里的日期是合约到期/结算窗口${extraNote}</div>` + html;
 }
 
 // ========== 油市推文 (读 data/oott.json，由 OOTT cron 自动同步) ==========
@@ -788,6 +835,7 @@ if (typeof globalThis !== 'undefined') {
     flattenTradingPeriods,
     getReferenceCloseInfo,
     formatSGTCompact,
+    getSgtDateParts,
     normalizeOottPost,
     mergeOottPosts,
     needsLiveOottRefresh,
@@ -795,6 +843,8 @@ if (typeof globalThis !== 'undefined') {
     formatTradingDayLabel,
     inferPreviousCloseFromRaw,
     applyTradingViewDailyReference,
+    getPolymarketConditionExpiryMs,
+    filterActivePolymarketConditions,
     PRICE_CHART_RANGE,
     PRICE_CHART_INTERVAL,
     shouldUseTradingViewFallback,
