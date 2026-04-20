@@ -658,6 +658,11 @@ async function buildFeed() {
   }
   state.feedItems = merged;
   renderFeedItems(merged);
+  const el = document.getElementById('feedList');
+  if (el && merged.length) {
+    el.innerHTML = `<div style="font-size:12px;color:var(--text-muted);margin-bottom:12px;padding:4px 8px">
+      📡 已刷新 ${formatSGT(new Date())} · 卡片时间是原消息发布时间，不是面板更新时间</div>` + el.innerHTML;
+  }
 }
 
 // 全局供 HTML onclick 调用
@@ -699,7 +704,12 @@ async function fetchPolymarket() {
     }
     html += '</div></a>';
   }
-  el.innerHTML = html || '<p style="color:var(--text-dim)">暂无 Polymarket 数据</p>';
+  if (!html) {
+    el.innerHTML = '<p style="color:var(--text-dim)">暂无 Polymarket 数据</p>';
+    return;
+  }
+  el.innerHTML = `<div style="font-size:12px;color:var(--text-muted);margin-bottom:12px;padding:4px 8px">
+    📊 已刷新 ${formatSGT(new Date())} · 卡片里的日期是合约到期/结算窗口，不代表数据停更</div>` + html;
 }
 
 // ========== 油市推文 (读 data/oott.json，由 OOTT cron 自动同步) ==========
