@@ -4,7 +4,7 @@
 const API_BASE = 'https://skill.capduck.com/iran';
 const REFRESH_MS = 5 * 60 * 1000;
 const CACHE_KEY = 'oil_v4_aligned';
-const SGT_DAILY_REF_KEY = 'oil_sgt_daily_ref_v1';
+const TV_DAILY_REF_KEY = 'oil_tv_daily_ref_v1';
 const PRICE_CHART_RANGE = '5d';
 const PRICE_CHART_INTERVAL = '5m';
 const TV_FALLBACK_LOOKAHEAD_SEC = 15 * 60;
@@ -74,18 +74,10 @@ function getSGTDayKey(dateLike) {
   } catch { return ''; }
 }
 
-function formatSGTDayKey(dayKey) {
-  if (!dayKey) return '';
-  const match = String(dayKey).match(/^(\d{4})-(\d{2})-(\d{2})$/);
-  return match ? `${Number(match[2])}/${Number(match[3])}` : dayKey;
-}
-
-function parseDisplayedSGTTime(value) {
-  const match = String(value || '').match(/(\d+)\/(\d+)\s+(\d+):(\d+)/);
-  if (!match) return null;
-  const [, month, day, hour, minute] = match.map(Number);
-  const year = Number(new Date().toLocaleString('en-CA', { timeZone: 'Asia/Singapore', year: 'numeric' }));
-  return new Date(Date.UTC(year, month - 1, day, hour - 8, minute));
+function formatTradingDayLabel(barTime) {
+  if (!Number.isFinite(barTime)) return '前一交易日';
+  const date = new Date(barTime * 1000);
+  return `${date.getUTCMonth() + 1}/${date.getUTCDate()}`;
 }
 
 function flattenTradingPeriods(periods) {
@@ -143,69 +135,68 @@ function normalizeOottPost(item, fallbackUsername = '') {
   };
 }
 
-function seedDailyReferenceFromCache(symbol, currentDayKey) {
-  const cache = readStorageJson(CACHE_KEY);
-  const entry = cache?.[symbol];
-  const price = Number(entry?.price);
-  if (!Number.isFinite(price)) return null;
-
-  let dataDate = null;
-  if (typeof entry?.dataTs === 'number') dataDate = new Date(entry.dataTs * 1000);
-  if (!dataDate && entry?.dataTime) dataDate = parseDisplayedSGTTime(entry.dataTime);
-  if (!dataDate || Number.isNaN(dataDate.getTime())) return null;
-
-  const dayKey = getSGTDayKey(dataDate);
-  if (!dayKey || dayKey === currentDayKey) return null;
-  return { prevDayKey: dayKey, prevDayClosePrice: price };
-}
-
-function updateSgtDailyReference(symbol, currentPrice, now = new Date()) {
-  const dayKey = getSGTDayKey(now);
-  const state = readStorageJson(SGT_DAILY_REF_KEY) || {};
-  const record = state[symbol] || {};
-
-  if (!record.currentDay) {
-    record.currentDay = dayKey;
-    record.currentDayLastPrice = currentPrice;
-    const seeded = seedDailyReferenceFromCache(symbol, dayKey);
-    if (seeded) {
-      record.prevDayKey = seeded.prevDayKey;
-      record.prevDayClosePrice = seeded.prevDayClosePrice;
-    }
-  } else if (record.currentDay !== dayKey) {
-    if (Number.isFinite(record.currentDayLastPrice)) {
-      record.prevDayKey = record.currentDay;
-      record.prevDayClosePrice = record.currentDayLastPrice;
-    }
-    record.currentDay = dayKey;
-    record.currentDayLastPrice = currentPrice;
-  } else {
-    record.currentDayLastPrice = currentPrice;
-  }
-
-  record.updatedAt = now.toISOString();
-  state[symbol] = record;
-  writeStorageJson(SGT_DAILY_REF_KEY, state);
-
-  if (!Number.isFinite(record.prevDayClosePrice)) return null;
+function inferPreviousCloseFromRaw(raw, currentBarTime) {
+  const pairs = extractClosePairs(raw);
+  if (!pairs.length) return null;
+  const previousPair = [...pairs].reverse().find(pair => pair.ts < currentBarTime);
+  if (!previousPair) return null;
+  const previousDate = new Date(previousPair.ts * 1000);
   return {
-    referencePrice: record.prevDayClosePrice,
-    referenceLabel: `对比 ${formatSGTDayKey(record.prevDayKey)} SGT 日收盘`,
+    price: previousPair.close,
+    barTime: Date.UTC(
+      previousDate.getUTCFullYear(),
+      previousDate.getUTCMonth(),
+      previousDate.getUTCDate()
+    ) / 1000,
   };
 }
 
-function applySgtDailyReference(symbol, data, now = new Date()) {
-  if (!data) return data;
+function applyTradingViewDailyReference(symbol, data, quote, raw) {
+  if (!data || !quote || !Number.isFinite(Number(data.price)) || !Number.isFinite(quote.barTime)) return data;
   const price = Number(data.price);
-  if (!Number.isFinite(price)) return data;
-  const ref = updateSgtDailyReference(symbol, price, now);
-  if (!ref || !Number.isFinite(ref.referencePrice)) return data;
-  const chg = price - ref.referencePrice;
+  const state = readStorageJson(TV_DAILY_REF_KEY) || {};
+  const record = state[symbol] || {};
+  const currentBarTime = Number(quote.barTime);
+
+  if (!Number.isFinite(record.currentBarTime)) {
+    record.currentBarTime = currentBarTime;
+    record.currentBarLastPrice = price;
+    const seeded = inferPreviousCloseFromRaw(raw, currentBarTime);
+    if (seeded) {
+      record.prevBarClosePrice = seeded.price;
+      record.prevBarTime = seeded.barTime;
+    }
+  } else if (currentBarTime > record.currentBarTime) {
+    if (Number.isFinite(record.currentBarLastPrice)) {
+      record.prevBarClosePrice = record.currentBarLastPrice;
+      record.prevBarTime = record.currentBarTime;
+    }
+    record.currentBarTime = currentBarTime;
+    record.currentBarLastPrice = price;
+  } else {
+    record.currentBarLastPrice = price;
+    if (!Number.isFinite(record.prevBarClosePrice)) {
+      const seeded = inferPreviousCloseFromRaw(raw, currentBarTime);
+      if (seeded) {
+        record.prevBarClosePrice = seeded.price;
+        record.prevBarTime = seeded.barTime;
+      }
+    }
+  }
+
+  record.updatedAt = new Date().toISOString();
+  state[symbol] = record;
+  writeStorageJson(TV_DAILY_REF_KEY, state);
+
+  if (!Number.isFinite(record.prevBarClosePrice)) {
+    return { ...data, referenceLabel: '对比前一交易日收盘' };
+  }
+  const chg = price - record.prevBarClosePrice;
   return {
     ...data,
     change: chg.toFixed(2),
-    pct: ref.referencePrice ? ((chg / ref.referencePrice) * 100).toFixed(1) : '0.0',
-    referenceLabel: ref.referenceLabel,
+    pct: record.prevBarClosePrice ? ((chg / record.prevBarClosePrice) * 100).toFixed(1) : '0.0',
+    referenceLabel: `对比 ${formatTradingDayLabel(record.prevBarTime)} 收盘`,
   };
 }
 
@@ -406,11 +397,7 @@ function renderPrice(id, data) {
   el.className = 'price-change ' + (up ? 'price-up' : 'price-down');
   const timeEl = document.getElementById(id + 'Time');
   if (data.dataTime) {
-    const prefix = data.cached
-      ? `⏳ 缓存 ${data.dataTime}`
-      : data.sourceNote
-        ? `🌐 ${data.sourceNote} ${data.dataTime}`
-        : `📅 ${data.dataTime}`;
+    const prefix = data.cached ? `⏳ 缓存 ${data.dataTime}` : `📅 ${data.dataTime}`;
     timeEl.textContent = data.referenceLabel ? `${prefix} · ${data.referenceLabel}` : prefix;
     timeEl.style.color = data.cached ? 'var(--accent-gold)' : '';
   }
@@ -440,8 +427,8 @@ function buildQuoteFallbackData(raw, quote) {
     pct: prev ? ((chg / prev) * 100).toFixed(1) : '0.0',
     dataTime: formatSGT(new Date((quote.fetchedAt || Date.now() / 1000) * 1000)),
     dataTs: quote.fetchedAt || Date.now() / 1000,
+    barTime: quote.barTime,
     referenceLabel: ref.referenceLabel,
-    sourceNote: 'TradingView 补源',
     cached: false,
   };
 }
@@ -493,8 +480,8 @@ async function fetchPrices() {
   if (brentTv) brentData = buildQuoteFallbackData(brentRaw, brentTv) || brentData;
   if (wtiTv) wtiData = buildQuoteFallbackData(wtiRaw, wtiTv) || wtiData;
 
-  brentData = applySgtDailyReference('brent', brentData);
-  wtiData = applySgtDailyReference('wti', wtiData);
+  brentData = applyTradingViewDailyReference('brent', brentData, brentTv, brentRaw);
+  wtiData = applyTradingViewDailyReference('wti', wtiData, wtiTv, wtiRaw);
 
   if (!brentData || !wtiData) {
     try {
@@ -508,7 +495,7 @@ async function fetchPrices() {
   }
 
   if (!brentData && !wtiData) state.priceSource = 'offline';
-  else if (brentData?.sourceNote || wtiData?.sourceNote) state.priceSource = 'live';
+  else if (brentTv || wtiTv) state.priceSource = 'live';
   renderPrice('brent', brentData);
   renderPrice('wti', wtiData);
 
@@ -787,10 +774,9 @@ if (typeof globalThis !== 'undefined') {
     mergeOottPosts,
     needsLiveOottRefresh,
     getSGTDayKey,
-    formatSGTDayKey,
-    parseDisplayedSGTTime,
-    updateSgtDailyReference,
-    applySgtDailyReference,
+    formatTradingDayLabel,
+    inferPreviousCloseFromRaw,
+    applyTradingViewDailyReference,
     PRICE_CHART_RANGE,
     PRICE_CHART_INTERVAL,
     shouldUseTradingViewFallback,

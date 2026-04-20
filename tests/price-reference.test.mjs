@@ -106,21 +106,23 @@ test('tradingview fallback turns on when yahoo has not entered the current sessi
   assert.equal(hooks.shouldUseTradingViewFallback(raw, 1776658000), false);
 });
 
-test('singapore daily reference rolls at local midnight instead of exchange close', () => {
+test('tradingview daily reference rolls when the daily bar timestamp advances', () => {
   const { hooks } = loadAppContext();
 
-  const first = hooks.applySgtDailyReference(
+  const first = hooks.applyTradingViewDailyReference(
     'brent',
     { price: '92.00', change: '0.00', pct: '0.0', referenceLabel: '对比上一交易时段收盘' },
-    new Date('2026-04-20T23:55:00+08:00')
+    { price: 92.00, barTime: 1776643200, fetchedAt: 1776674400 },
+    { timestamps: [1776459599], closes: [90.38], meta: {} }
   );
-  const second = hooks.applySgtDailyReference(
+  const second = hooks.applyTradingViewDailyReference(
     'brent',
     { price: '93.50', change: '0.00', pct: '0.0', referenceLabel: '对比上一交易时段收盘' },
-    new Date('2026-04-21T00:05:00+08:00')
+    { price: 93.50, barTime: 1776729600, fetchedAt: 1776762300 },
+    { timestamps: [1776729300], closes: [93.25], meta: {} }
   );
 
-  assert.equal(first.referenceLabel, '对比上一交易时段收盘');
-  assert.equal(second.referenceLabel, '对比 4/20 SGT 日收盘');
+  assert.equal(first.referenceLabel, '对比 4/17 收盘');
+  assert.equal(second.referenceLabel, '对比 4/20 收盘');
   assert.equal(second.change, '1.50');
 });

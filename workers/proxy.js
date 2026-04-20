@@ -71,34 +71,50 @@ export default {
     const tvSymbol = url.searchParams.get('tvsymbol');
     if (tvSymbol) {
       const tvTargets = {
-        brent: 'https://www.tradingview.com/symbols/TVC-UKOIL/',
-        wti: 'https://www.tradingview.com/symbols/NYMEX-CL1!/',
+        brent: ['https://www.tradingview.com/symbols/TVC-UKOIL/'],
+        wti: [
+          'https://www.tradingview.com/symbols/NYMEX-CL1!/',
+          'https://www.tradingview.com/symbols/TVC-USOIL/',
+        ],
       };
-      const pageUrl = tvTargets[tvSymbol];
-      if (!pageUrl) return new Response('Invalid tvsymbol', { status: 400 });
+      const pageUrls = tvTargets[tvSymbol];
+      if (!pageUrls) return new Response('Invalid tvsymbol', { status: 400 });
       try {
-        const resp = await fetch(pageUrl, {
-          headers: { 'User-Agent': 'Mozilla/5.0 (compatible)' },
-        });
-        if (!resp.ok) return new Response('TradingView non-200', { status: 502, headers: jsonHeaders });
-        const html = await resp.text();
-        const matches = html.matchAll(/<script type="application\/prs\.init-data\+json">([\s\S]*?)<\/script>/g);
-        for (const match of matches) {
-          const root = JSON.parse(match[1]);
-          for (const entry of Object.values(root || {})) {
-            const symbol = entry?.data?.symbol;
-            const price = symbol?.trade?.price ?? symbol?.daily_bar?.close;
-            if (price == null) continue;
-            return new Response(JSON.stringify({
-              kind: tvSymbol,
-              price: Number(price),
-              fetchedAt: Date.now() / 1000,
-              source: 'tradingview',
-              symbol: symbol?.pro_symbol || symbol?.resolved_symbol || null,
-            }), { headers: jsonHeaders });
+        const candidates = [];
+        for (const pageUrl of pageUrls) {
+          const resp = await fetch(pageUrl, {
+            headers: { 'User-Agent': 'Mozilla/5.0 (compatible)' },
+          });
+          if (!resp.ok) continue;
+          const html = await resp.text();
+          const matches = html.matchAll(/<script type="application\/prs\.init-data\+json">([\s\S]*?)<\/script>/g);
+          for (const match of matches) {
+            const root = JSON.parse(match[1]);
+            for (const entry of Object.values(root || {})) {
+              const symbol = entry?.data?.symbol;
+              const price = symbol?.trade?.price ?? symbol?.daily_bar?.close;
+              if (price == null) continue;
+              candidates.push({
+                price: Number(price),
+                barTime: Number(symbol?.daily_bar?.time) || null,
+                symbol: symbol?.pro_symbol || symbol?.resolved_symbol || null,
+              });
+            }
           }
         }
-        return new Response(JSON.stringify({ error: 'No TradingView symbol data found' }), { status: 502, headers: jsonHeaders });
+        if (!candidates.length) {
+          return new Response(JSON.stringify({ error: 'No TradingView symbol data found' }), { status: 502, headers: jsonHeaders });
+        }
+        const preferred = candidates[0];
+        const freshest = [...candidates].filter(item => Number.isFinite(item.barTime)).sort((a, b) => b.barTime - a.barTime)[0] || preferred;
+        return new Response(JSON.stringify({
+          kind: tvSymbol,
+          price: preferred.price,
+          barTime: freshest.barTime,
+          fetchedAt: Date.now() / 1000,
+          source: 'tradingview',
+          symbol: preferred.symbol,
+        }), { headers: jsonHeaders });
       } catch (e) {
         return new Response(JSON.stringify({ error: e.message }), { status: 500, headers: jsonHeaders });
       }
