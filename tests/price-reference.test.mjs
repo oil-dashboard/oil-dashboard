@@ -17,21 +17,26 @@ function makeElement() {
   };
 }
 
-function loadAppHooks() {
+function loadAppContext() {
   const elements = new Map();
+  const store = new Map();
   const sandbox = {
     console,
     URL,
     Date,
     Math,
     JSON,
+    Intl,
     AbortSignal: { timeout() { return {}; } },
     setTimeout() {},
     clearTimeout() {},
     setInterval() { return 1; },
     clearInterval() {},
     fetch: async () => ({ ok: true, status: 200, text: async () => '[]' }),
-    localStorage: { getItem() { return null; }, setItem() {} },
+    localStorage: {
+      getItem(key) { return store.has(key) ? store.get(key) : null; },
+      setItem(key, value) { store.set(key, String(value)); },
+    },
     navigator: {},
     window: {},
     document: {
@@ -45,7 +50,11 @@ function loadAppHooks() {
   };
 
   vm.runInNewContext(appSource, sandbox, { filename: 'app.js' });
-  return sandbox.__oilDashboardTestHooks;
+  return { hooks: sandbox.__oilDashboardTestHooks, store };
+}
+
+function loadAppHooks() {
+  return loadAppContext().hooks;
 }
 
 test('reference close label uses previous session end in Singapore time', () => {
@@ -95,4 +104,23 @@ test('tradingview fallback turns on when yahoo has not entered the current sessi
 
   assert.equal(hooks.shouldUseTradingViewFallback(raw, 1776660000), true);
   assert.equal(hooks.shouldUseTradingViewFallback(raw, 1776658000), false);
+});
+
+test('singapore daily reference rolls at local midnight instead of exchange close', () => {
+  const { hooks } = loadAppContext();
+
+  const first = hooks.applySgtDailyReference(
+    'brent',
+    { price: '92.00', change: '0.00', pct: '0.0', referenceLabel: '对比上一交易时段收盘' },
+    new Date('2026-04-20T23:55:00+08:00')
+  );
+  const second = hooks.applySgtDailyReference(
+    'brent',
+    { price: '93.50', change: '0.00', pct: '0.0', referenceLabel: '对比上一交易时段收盘' },
+    new Date('2026-04-21T00:05:00+08:00')
+  );
+
+  assert.equal(first.referenceLabel, '对比上一交易时段收盘');
+  assert.equal(second.referenceLabel, '对比 4/20 SGT 日收盘');
+  assert.equal(second.change, '1.50');
 });

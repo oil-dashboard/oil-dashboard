@@ -4,6 +4,7 @@
 const API_BASE = 'https://skill.capduck.com/iran';
 const REFRESH_MS = 5 * 60 * 1000;
 const CACHE_KEY = 'oil_v4_aligned';
+const SGT_DAILY_REF_KEY = 'oil_sgt_daily_ref_v1';
 const PRICE_CHART_RANGE = '5d';
 const PRICE_CHART_INTERVAL = '5m';
 const TV_FALLBACK_LOOKAHEAD_SEC = 15 * 60;
@@ -42,6 +43,19 @@ function formatSGTCompact(date) {
   } catch { return ''; }
 }
 
+function readStorageJson(key) {
+  try {
+    const value = localStorage.getItem(key);
+    return value ? JSON.parse(value) : null;
+  } catch { return null; }
+}
+
+function writeStorageJson(key, value) {
+  try {
+    localStorage.setItem(key, JSON.stringify(value));
+  } catch {}
+}
+
 function parseDateMs(value) {
   const ms = Date.parse(value);
   return Number.isFinite(ms) ? ms : null;
@@ -58,6 +72,20 @@ function getSGTDayKey(dateLike) {
     );
     return `${parts.year}-${parts.month}-${parts.day}`;
   } catch { return ''; }
+}
+
+function formatSGTDayKey(dayKey) {
+  if (!dayKey) return '';
+  const match = String(dayKey).match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  return match ? `${Number(match[2])}/${Number(match[3])}` : dayKey;
+}
+
+function parseDisplayedSGTTime(value) {
+  const match = String(value || '').match(/(\d+)\/(\d+)\s+(\d+):(\d+)/);
+  if (!match) return null;
+  const [, month, day, hour, minute] = match.map(Number);
+  const year = Number(new Date().toLocaleString('en-CA', { timeZone: 'Asia/Singapore', year: 'numeric' }));
+  return new Date(Date.UTC(year, month - 1, day, hour - 8, minute));
 }
 
 function flattenTradingPeriods(periods) {
@@ -112,6 +140,72 @@ function normalizeOottPost(item, fallbackUsername = '') {
     photos: Array.isArray(item.photos) ? item.photos : [],
     videos: Array.isArray(item.videos) ? item.videos : [],
     engagement: item.engagement || '',
+  };
+}
+
+function seedDailyReferenceFromCache(symbol, currentDayKey) {
+  const cache = readStorageJson(CACHE_KEY);
+  const entry = cache?.[symbol];
+  const price = Number(entry?.price);
+  if (!Number.isFinite(price)) return null;
+
+  let dataDate = null;
+  if (typeof entry?.dataTs === 'number') dataDate = new Date(entry.dataTs * 1000);
+  if (!dataDate && entry?.dataTime) dataDate = parseDisplayedSGTTime(entry.dataTime);
+  if (!dataDate || Number.isNaN(dataDate.getTime())) return null;
+
+  const dayKey = getSGTDayKey(dataDate);
+  if (!dayKey || dayKey === currentDayKey) return null;
+  return { prevDayKey: dayKey, prevDayClosePrice: price };
+}
+
+function updateSgtDailyReference(symbol, currentPrice, now = new Date()) {
+  const dayKey = getSGTDayKey(now);
+  const state = readStorageJson(SGT_DAILY_REF_KEY) || {};
+  const record = state[symbol] || {};
+
+  if (!record.currentDay) {
+    record.currentDay = dayKey;
+    record.currentDayLastPrice = currentPrice;
+    const seeded = seedDailyReferenceFromCache(symbol, dayKey);
+    if (seeded) {
+      record.prevDayKey = seeded.prevDayKey;
+      record.prevDayClosePrice = seeded.prevDayClosePrice;
+    }
+  } else if (record.currentDay !== dayKey) {
+    if (Number.isFinite(record.currentDayLastPrice)) {
+      record.prevDayKey = record.currentDay;
+      record.prevDayClosePrice = record.currentDayLastPrice;
+    }
+    record.currentDay = dayKey;
+    record.currentDayLastPrice = currentPrice;
+  } else {
+    record.currentDayLastPrice = currentPrice;
+  }
+
+  record.updatedAt = now.toISOString();
+  state[symbol] = record;
+  writeStorageJson(SGT_DAILY_REF_KEY, state);
+
+  if (!Number.isFinite(record.prevDayClosePrice)) return null;
+  return {
+    referencePrice: record.prevDayClosePrice,
+    referenceLabel: `对比 ${formatSGTDayKey(record.prevDayKey)} SGT 日收盘`,
+  };
+}
+
+function applySgtDailyReference(symbol, data, now = new Date()) {
+  if (!data) return data;
+  const price = Number(data.price);
+  if (!Number.isFinite(price)) return data;
+  const ref = updateSgtDailyReference(symbol, price, now);
+  if (!ref || !Number.isFinite(ref.referencePrice)) return data;
+  const chg = price - ref.referencePrice;
+  return {
+    ...data,
+    change: chg.toFixed(2),
+    pct: ref.referencePrice ? ((chg / ref.referencePrice) * 100).toFixed(1) : '0.0',
+    referenceLabel: ref.referenceLabel,
   };
 }
 
@@ -330,7 +424,7 @@ function extractSinglePrice(raw) {
   const prev = ref.prevClose ?? (pairs.length >= 2 ? pairs[pairs.length - 2].close : latest.close);
   const chg = latest.close - prev;
   return { price: latest.close.toFixed(2), change: chg.toFixed(2),
-    pct: ((chg / prev) * 100).toFixed(1), dataTime: formatSGT(new Date(latest.ts * 1000)),
+    pct: ((chg / prev) * 100).toFixed(1), dataTime: formatSGT(new Date(latest.ts * 1000)), dataTs: latest.ts,
     referenceLabel: ref.referenceLabel, cached: false };
 }
 
@@ -345,6 +439,7 @@ function buildQuoteFallbackData(raw, quote) {
     change: chg.toFixed(2),
     pct: prev ? ((chg / prev) * 100).toFixed(1) : '0.0',
     dataTime: formatSGT(new Date((quote.fetchedAt || Date.now() / 1000) * 1000)),
+    dataTs: quote.fetchedAt || Date.now() / 1000,
     referenceLabel: ref.referenceLabel,
     sourceNote: 'TradingView 补源',
     cached: false,
@@ -352,7 +447,12 @@ function buildQuoteFallbackData(raw, quote) {
 }
 
 async function fetchPrices() {
-  const [brentRaw, wtiRaw] = await Promise.all([fetchRawChartData('BZ=F'), fetchRawChartData('CL=F')]);
+  const [brentRaw, wtiRaw, brentTv, wtiTv] = await Promise.all([
+    fetchRawChartData('BZ=F'),
+    fetchRawChartData('CL=F'),
+    fetchTradingViewQuote('brent'),
+    fetchTradingViewQuote('wti'),
+  ]);
   let brentData = null, wtiData = null, aligned = false;
 
   if (brentRaw && wtiRaw) {
@@ -372,9 +472,9 @@ async function fetchPrices() {
       const wPrev = wRef.prevClose ?? (commonTs.length >= 2 ? wMap.get(commonTs[1]) : wCur);
       const bChg = bCur - bPrev, wChg = wCur - wPrev;
       brentData = { price: bCur.toFixed(2), change: bChg.toFixed(2),
-        pct: ((bChg/bPrev)*100).toFixed(1), dataTime, referenceLabel: bRef.referenceLabel, cached: false };
+        pct: ((bChg/bPrev)*100).toFixed(1), dataTime, dataTs: lt, referenceLabel: bRef.referenceLabel, cached: false };
       wtiData = { price: wCur.toFixed(2), change: wChg.toFixed(2),
-        pct: ((wChg/wPrev)*100).toFixed(1), dataTime, referenceLabel: wRef.referenceLabel, cached: false };
+        pct: ((wChg/wPrev)*100).toFixed(1), dataTime, dataTs: lt, referenceLabel: wRef.referenceLabel, cached: false };
       aligned = true;
       state.priceSource = 'live';
 
@@ -390,16 +490,11 @@ async function fetchPrices() {
   if (!brentData && brentRaw) brentData = extractSinglePrice(brentRaw);
   if (!wtiData && wtiRaw) wtiData = extractSinglePrice(wtiRaw);
 
-  const needTvBrent = shouldUseTradingViewFallback(brentRaw);
-  const needTvWti = shouldUseTradingViewFallback(wtiRaw);
-  if (needTvBrent || needTvWti) {
-    const [brentTv, wtiTv] = await Promise.all([
-      needTvBrent ? fetchTradingViewQuote('brent') : Promise.resolve(null),
-      needTvWti ? fetchTradingViewQuote('wti') : Promise.resolve(null),
-    ]);
-    if (brentTv) brentData = buildQuoteFallbackData(brentRaw, brentTv) || brentData;
-    if (wtiTv) wtiData = buildQuoteFallbackData(wtiRaw, wtiTv) || wtiData;
-  }
+  if (brentTv) brentData = buildQuoteFallbackData(brentRaw, brentTv) || brentData;
+  if (wtiTv) wtiData = buildQuoteFallbackData(wtiRaw, wtiTv) || wtiData;
+
+  brentData = applySgtDailyReference('brent', brentData);
+  wtiData = applySgtDailyReference('wti', wtiData);
 
   if (!brentData || !wtiData) {
     try {
@@ -692,6 +787,10 @@ if (typeof globalThis !== 'undefined') {
     mergeOottPosts,
     needsLiveOottRefresh,
     getSGTDayKey,
+    formatSGTDayKey,
+    parseDisplayedSGTTime,
+    updateSgtDailyReference,
+    applySgtDailyReference,
     PRICE_CHART_RANGE,
     PRICE_CHART_INTERVAL,
     shouldUseTradingViewFallback,
