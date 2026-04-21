@@ -33,6 +33,16 @@ function formatSGT(date) {
   } catch { return ''; }
 }
 
+function formatSGTPrecise(date) {
+  if (!date) return '';
+  try {
+    return date.toLocaleString('zh-CN', {
+      timeZone: 'Asia/Singapore', hour12: false,
+      month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric'
+    }) + ' SGT';
+  } catch { return ''; }
+}
+
 function formatSGTCompact(date) {
   if (!date) return '';
   try {
@@ -458,7 +468,7 @@ function extractSinglePrice(raw) {
   const prev = ref.prevClose ?? (pairs.length >= 2 ? pairs[pairs.length - 2].close : latest.close);
   const chg = latest.close - prev;
   return { price: latest.close.toFixed(2), change: chg.toFixed(2),
-    pct: ((chg / prev) * 100).toFixed(1), dataTime: formatSGT(new Date(latest.ts * 1000)), dataTs: latest.ts,
+    pct: ((chg / prev) * 100).toFixed(1), dataTime: formatSGTPrecise(new Date(latest.ts * 1000)), dataTs: latest.ts,
     referenceLabel: ref.referenceLabel, cached: false };
 }
 
@@ -472,7 +482,7 @@ function buildQuoteFallbackData(raw, quote) {
     price: price.toFixed(2),
     change: chg.toFixed(2),
     pct: prev ? ((chg / prev) * 100).toFixed(1) : '0.0',
-    dataTime: formatSGT(new Date((quote.fetchedAt || Date.now() / 1000) * 1000)),
+    dataTime: formatSGTPrecise(new Date((quote.fetchedAt || Date.now() / 1000) * 1000)),
     dataTs: quote.fetchedAt || Date.now() / 1000,
     barTime: quote.barTime,
     referenceLabel: ref.referenceLabel,
@@ -500,7 +510,7 @@ async function fetchPrices() {
     const commonTs = [...bMap.keys()].filter(ts => wMap.has(ts)).sort((a, b) => b - a);
     if (commonTs.length >= 1) {
       const lt = commonTs[0], bCur = bMap.get(lt), wCur = wMap.get(lt);
-      const dataTime = formatSGT(new Date(lt * 1000));
+      const dataTime = formatSGTPrecise(new Date(lt * 1000));
       const bRef = getReferenceCloseInfo(brentRaw);
       const wRef = getReferenceCloseInfo(wtiRaw);
       const bPrev = bRef.prevClose ?? (commonTs.length >= 2 ? bMap.get(commonTs[1]) : bCur);
@@ -804,7 +814,7 @@ async function fetchOOTT() {
 async function refresh() {
   const statusEl = document.getElementById('refreshStatus');
   if (statusEl) { statusEl.textContent = '刷新中...'; statusEl.style.opacity = '1'; }
-  document.getElementById('updateTime').textContent = formatSGT(new Date());
+  document.getElementById('updateTime').textContent = formatSGTPrecise(new Date());
   await Promise.allSettled([fetchPrices(), fetchIranBriefing(), buildFeed(), fetchPolymarket(), fetchOOTT()]);
   if (statusEl) { statusEl.textContent = '✓'; setTimeout(() => { statusEl.style.opacity = '0'; }, 2000); }
   startCountdown();
