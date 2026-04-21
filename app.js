@@ -109,6 +109,29 @@ function formatTradingDayLabel(barTime) {
   return `${date.getUTCMonth() + 1}/${date.getUTCDate()}`;
 }
 
+function formatMonthDayInTimeZone(tsSec, timeZone = 'UTC') {
+  if (!Number.isFinite(tsSec)) return '前一交易日';
+  try {
+    const parts = Object.fromEntries(
+      new Intl.DateTimeFormat('en-CA', {
+        timeZone,
+        month: '2-digit',
+        day: '2-digit',
+      }).formatToParts(new Date(tsSec * 1000)).filter(p => p.type !== 'literal').map(p => [p.type, p.value])
+    );
+    return `${Number(parts.month)}/${Number(parts.day)}`;
+  } catch {
+    return formatTradingDayLabel(tsSec);
+  }
+}
+
+function getPreviousTradingDayLabelFromMeta(meta) {
+  const sessionStart = meta?.currentTradingPeriod?.regular?.start;
+  if (!Number.isFinite(sessionStart)) return null;
+  const exchangeTimeZone = meta?.exchangeTimezoneName || 'America/New_York';
+  return formatMonthDayInTimeZone(sessionStart - 1, exchangeTimeZone);
+}
+
 function flattenTradingPeriods(periods) {
   if (!Array.isArray(periods)) return [];
   return periods.flat(Infinity).filter(p => p && typeof p.start === 'number' && typeof p.end === 'number');
@@ -503,6 +526,7 @@ function buildYahooQuoteData(raw, quoteRaw) {
   const currentTs = Number(quoteRaw.meta.regularMarketTime);
   const inferred = inferPreviousCloseFromRaw(raw, quoteRaw.meta?.currentTradingPeriod?.regular?.start || currentTs);
   const prev = quoteRaw.meta?.chartPreviousClose ?? quoteRaw.meta?.previousClose ?? inferred?.price ?? price;
+  const previousTradingDayLabel = getPreviousTradingDayLabelFromMeta(quoteRaw.meta);
   const chg = price - prev;
   return {
     price: price.toFixed(2),
@@ -510,7 +534,11 @@ function buildYahooQuoteData(raw, quoteRaw) {
     pct: prev ? ((chg / prev) * 100).toFixed(1) : '0.0',
     dataTime: formatSGTPrecise(new Date(currentTs * 1000)),
     dataTs: currentTs,
-    referenceLabel: inferred?.barTime ? `对比 ${formatTradingDayLabel(inferred.barTime)} 收盘` : '对比前一交易日收盘',
+    referenceLabel: previousTradingDayLabel
+      ? `对比 ${previousTradingDayLabel} 收盘`
+      : inferred?.barTime
+        ? `对比 ${formatTradingDayLabel(inferred.barTime)} 收盘`
+        : '对比前一交易日收盘',
     cached: false,
   };
 }
@@ -901,6 +929,8 @@ if (typeof globalThis !== 'undefined') {
     getPolymarketConditionExpiryMs,
     filterActivePolymarketConditions,
     buildYahooQuoteData,
+    getPreviousTradingDayLabelFromMeta,
+    formatMonthDayInTimeZone,
     YAHOO_QUOTE_RANGE,
     YAHOO_QUOTE_INTERVAL,
     PRICE_CHART_RANGE,

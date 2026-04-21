@@ -162,3 +162,15 @@ test('yahoo quote data uses regular market price and previous close', () => {
   assert.equal(data.change, '-0.93');
   assert.equal(data.referenceLabel, '对比 4/20 收盘');
 });
+
+test('yahoo previous trading day label follows exchange session boundary', () => {
+  const hooks = loadAppHooks();
+  const label = hooks.getPreviousTradingDayLabelFromMeta({
+    exchangeTimezoneName: 'America/New_York',
+    currentTradingPeriod: {
+      regular: { start: 1776744000 },
+    },
+  });
+
+  assert.equal(label, '4/20');
+});
