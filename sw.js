@@ -1,4 +1,4 @@
-const CACHE = 'oil-dash-v16';
+const CACHE = 'oil-dash-v17';
 const STATIC = ['./', './index.html', './style.css', './app.js', './manifest.json', './sources.json'];
 
 function shouldBypassCache(url) {
