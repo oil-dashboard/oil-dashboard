@@ -71,7 +71,12 @@ export default {
     const tvSymbol = url.searchParams.get('tvsymbol');
     if (tvSymbol) {
       const tvTargets = {
-        brent: ['https://www.tradingview.com/symbols/TVC-UKOIL/'],
+        brent: [
+          'https://www.tradingview.com/symbols/TVC-UKOIL/',
+          'https://www.tradingview.com/symbols/CAPITALCOM-OIL_BRENT/',
+          'https://www.tradingview.com/symbols/BLACKBULL-BRENT/',
+          'https://www.tradingview.com/symbols/PEPPERSTONE-SPOTBRENT/',
+        ],
         wti: [
           'https://www.tradingview.com/symbols/NYMEX-CL1!/',
           'https://www.tradingview.com/symbols/TVC-USOIL/',
@@ -97,6 +102,7 @@ export default {
               candidates.push({
                 price: Number(price),
                 barTime: Number(symbol?.daily_bar?.time) || null,
+                updateTime: Number(symbol?.daily_bar?.update_time || symbol?.daily_bar?.data_update_time) || null,
                 symbol: symbol?.pro_symbol || symbol?.resolved_symbol || null,
               });
             }
@@ -105,15 +111,19 @@ export default {
         if (!candidates.length) {
           return new Response(JSON.stringify({ error: 'No TradingView symbol data found' }), { status: 502, headers: jsonHeaders });
         }
-        const preferred = candidates[0];
-        const freshest = [...candidates].filter(item => Number.isFinite(item.barTime)).sort((a, b) => b.barTime - a.barTime)[0] || preferred;
+        const preferredPrice = candidates[0];
+        const freshest = [...candidates].sort((a, b) => {
+          const barDiff = (Number.isFinite(b.barTime) ? b.barTime : -Infinity) - (Number.isFinite(a.barTime) ? a.barTime : -Infinity);
+          if (barDiff !== 0) return barDiff;
+          return (Number.isFinite(b.updateTime) ? b.updateTime : -Infinity) - (Number.isFinite(a.updateTime) ? a.updateTime : -Infinity);
+        })[0];
         return new Response(JSON.stringify({
           kind: tvSymbol,
-          price: preferred.price,
+          price: (tvSymbol === 'brent' ? preferredPrice : freshest).price,
           barTime: freshest.barTime,
           fetchedAt: Date.now() / 1000,
           source: 'tradingview',
-          symbol: preferred.symbol,
+          symbol: (tvSymbol === 'brent' ? preferredPrice : freshest).symbol,
         }), { headers: jsonHeaders });
       } catch (e) {
         return new Response(JSON.stringify({ error: e.message }), { status: 500, headers: jsonHeaders });
