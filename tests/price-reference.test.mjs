@@ -86,6 +86,8 @@ test('reference close label falls back gracefully when trading periods are missi
 test('price chart fetch uses the stable Yahoo intraday range', () => {
   const hooks = loadAppHooks();
 
+  assert.equal(hooks.YAHOO_QUOTE_RANGE, '1d');
+  assert.equal(hooks.YAHOO_QUOTE_INTERVAL, '1m');
   assert.equal(hooks.PRICE_CHART_RANGE, '5d');
   assert.equal(hooks.PRICE_CHART_INTERVAL, '5m');
 });
@@ -140,4 +142,23 @@ test('polymarket view hides expired dated windows but keeps future and price buc
   );
 
   assert.deepEqual(filtered.map(item => item.label), ['4月底', '↑$120']);
+});
+
+test('yahoo quote data uses regular market price and previous close', () => {
+  const hooks = loadAppHooks();
+  const data = hooks.buildYahooQuoteData(
+    { timestamps: [1776660000], closes: [95.48], meta: {} },
+    {
+      meta: {
+        regularMarketPrice: 94.55,
+        regularMarketTime: 1776752803,
+        chartPreviousClose: 95.48,
+        currentTradingPeriod: { regular: { start: 1776744000 } },
+      },
+    }
+  );
+
+  assert.equal(data.price, '94.55');
+  assert.equal(data.change, '-0.93');
+  assert.equal(data.referenceLabel, '对比 4/20 收盘');
 });

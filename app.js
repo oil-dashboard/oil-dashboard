@@ -5,6 +5,8 @@ const API_BASE = 'https://skill.capduck.com/iran';
 const REFRESH_MS = 5 * 60 * 1000;
 const CACHE_KEY = 'oil_v4_aligned';
 const TV_DAILY_REF_KEY = 'oil_tv_daily_ref_v1';
+const YAHOO_QUOTE_RANGE = '1d';
+const YAHOO_QUOTE_INTERVAL = '1m';
 const PRICE_CHART_RANGE = '5d';
 const PRICE_CHART_INTERVAL = '5m';
 const TV_FALLBACK_LOOKAHEAD_SEC = 15 * 60;
@@ -354,6 +356,29 @@ async function fetchTradingViewQuote(kind) {
   return data;
 }
 
+async function fetchYahooQuote(symbol) {
+  const yahooUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=${YAHOO_QUOTE_RANGE}&interval=${YAHOO_QUOTE_INTERVAL}`;
+  const proxies = [];
+  if (CF_WORKER_URL) proxies.push(`${CF_WORKER_URL}?url=${encodeURIComponent(yahooUrl)}`);
+  proxies.push(
+    `https://api.allorigins.win/get?url=${encodeURIComponent(yahooUrl)}`,
+    `https://corsproxy.io/?${encodeURIComponent(yahooUrl)}`,
+    `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(yahooUrl)}`,
+  );
+  for (const proxyUrl of proxies) {
+    try {
+      const r = await fetch(proxyUrl, { signal: AbortSignal.timeout(8000), cache: 'no-store' });
+      if (!r.ok) continue;
+      let data; try { data = JSON.parse(await r.text()); } catch { continue; }
+      if (data.contents) { try { data = JSON.parse(data.contents); } catch { continue; } }
+      const result = data?.chart?.result?.[0];
+      if (!result?.meta?.regularMarketTime || result?.meta?.regularMarketPrice == null) continue;
+      return { timestamps: result.timestamp || [], closes: result.indicators?.quote?.[0]?.close || [], meta: result.meta || {} };
+    } catch { continue; }
+  }
+  return null;
+}
+
 // ========== Tab switching ==========
 document.querySelectorAll('.tab').forEach(tab => {
   tab.addEventListener('click', () => {
@@ -472,6 +497,24 @@ function extractSinglePrice(raw) {
     referenceLabel: ref.referenceLabel, cached: false };
 }
 
+function buildYahooQuoteData(raw, quoteRaw) {
+  if (!quoteRaw?.meta?.regularMarketTime || quoteRaw?.meta?.regularMarketPrice == null) return null;
+  const price = Number(quoteRaw.meta.regularMarketPrice);
+  const currentTs = Number(quoteRaw.meta.regularMarketTime);
+  const inferred = inferPreviousCloseFromRaw(raw, quoteRaw.meta?.currentTradingPeriod?.regular?.start || currentTs);
+  const prev = quoteRaw.meta?.chartPreviousClose ?? quoteRaw.meta?.previousClose ?? inferred?.price ?? price;
+  const chg = price - prev;
+  return {
+    price: price.toFixed(2),
+    change: chg.toFixed(2),
+    pct: prev ? ((chg / prev) * 100).toFixed(1) : '0.0',
+    dataTime: formatSGTPrecise(new Date(currentTs * 1000)),
+    dataTs: currentTs,
+    referenceLabel: inferred?.barTime ? `对比 ${formatTradingDayLabel(inferred.barTime)} 收盘` : '对比前一交易日收盘',
+    cached: false,
+  };
+}
+
 function buildQuoteFallbackData(raw, quote) {
   if (!quote || quote.price == null) return null;
   const ref = getReferenceCloseInfo(raw);
@@ -491,9 +534,11 @@ function buildQuoteFallbackData(raw, quote) {
 }
 
 async function fetchPrices() {
-  const [brentRaw, wtiRaw, brentTv, wtiTv] = await Promise.all([
+  const [brentRaw, wtiRaw, brentQuoteRaw, wtiQuoteRaw, brentTv, wtiTv] = await Promise.all([
     fetchRawChartData('BZ=F'),
     fetchRawChartData('CL=F'),
+    fetchYahooQuote('BZ=F'),
+    fetchYahooQuote('CL=F'),
     fetchTradingViewQuote('brent'),
     fetchTradingViewQuote('wti'),
   ]);
@@ -532,14 +577,14 @@ async function fetchPrices() {
     }
   }
 
-  if (!brentData && brentRaw) brentData = extractSinglePrice(brentRaw);
-  if (!wtiData && wtiRaw) wtiData = extractSinglePrice(wtiRaw);
+  if (brentQuoteRaw) brentData = buildYahooQuoteData(brentRaw, brentQuoteRaw) || brentData;
+  else if (!brentData && brentRaw) brentData = extractSinglePrice(brentRaw);
 
-  if (brentTv) brentData = buildQuoteFallbackData(brentRaw, brentTv) || brentData;
-  if (wtiTv) wtiData = buildQuoteFallbackData(wtiRaw, wtiTv) || wtiData;
+  if (wtiQuoteRaw) wtiData = buildYahooQuoteData(wtiRaw, wtiQuoteRaw) || wtiData;
+  else if (!wtiData && wtiRaw) wtiData = extractSinglePrice(wtiRaw);
 
-  brentData = applyTradingViewDailyReference('brent', brentData, brentTv, brentRaw);
-  wtiData = applyTradingViewDailyReference('wti', wtiData, wtiTv, wtiRaw);
+  if (!brentData && brentTv) brentData = buildQuoteFallbackData(brentRaw, brentTv) || brentData;
+  if (!wtiData && wtiTv) wtiData = buildQuoteFallbackData(wtiRaw, wtiTv) || wtiData;
 
   if (!brentData || !wtiData) {
     try {
@@ -553,7 +598,7 @@ async function fetchPrices() {
   }
 
   if (!brentData && !wtiData) state.priceSource = 'offline';
-  else if (brentTv || wtiTv) state.priceSource = 'live';
+  else if (brentQuoteRaw || wtiQuoteRaw || brentTv || wtiTv) state.priceSource = 'live';
 
   renderSparkline('brentSpark', brentSparkline, isPositiveChange(brentData));
   renderSparkline('wtiSpark', wtiSparkline, isPositiveChange(wtiData));
@@ -855,6 +900,9 @@ if (typeof globalThis !== 'undefined') {
     applyTradingViewDailyReference,
     getPolymarketConditionExpiryMs,
     filterActivePolymarketConditions,
+    buildYahooQuoteData,
+    YAHOO_QUOTE_RANGE,
+    YAHOO_QUOTE_INTERVAL,
     PRICE_CHART_RANGE,
     PRICE_CHART_INTERVAL,
     shouldUseTradingViewFallback,
