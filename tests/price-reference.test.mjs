@@ -163,6 +163,35 @@ test('yahoo quote data uses regular market price and previous close', () => {
   assert.equal(data.referenceLabel, '对比 4/20 收盘');
 });
 
+test('yahoo quote data can anchor on the prior daily settlement', () => {
+  const hooks = loadAppHooks();
+  const data = hooks.buildYahooQuoteData(
+    { timestamps: [1776990000], closes: [105.97], meta: {} },
+    {
+      meta: {
+        regularMarketPrice: 99.53,
+        regularMarketTime: 1777039308,
+        currentTradingPeriod: { regular: { start: 1777003200 } },
+        exchangeTimezoneName: 'America/New_York',
+        chartPreviousClose: 104.49,
+        previousClose: 99.35,
+      },
+    },
+    {
+      timestamps: [1776830400, 1776916800, 1777003200],
+      closes: [101.91, 105.07, 99.53],
+      meta: {
+        currentTradingPeriod: { regular: { start: 1777003200 } },
+        exchangeTimezoneName: 'America/New_York',
+      },
+    }
+  );
+
+  assert.equal(data.price, '99.53');
+  assert.equal(data.change, '-5.54');
+  assert.equal(data.referenceLabel, '对比 4/23 收盘');
+});
+
 test('yahoo previous trading day label follows exchange session boundary', () => {
   const hooks = loadAppHooks();
   const label = hooks.getPreviousTradingDayLabelFromMeta({

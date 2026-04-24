@@ -7,6 +7,8 @@ const CACHE_KEY = 'oil_v4_aligned';
 const TV_DAILY_REF_KEY = 'oil_tv_daily_ref_v1';
 const YAHOO_QUOTE_RANGE = '1d';
 const YAHOO_QUOTE_INTERVAL = '1m';
+const YAHOO_SETTLEMENT_RANGE = '1mo';
+const YAHOO_SETTLEMENT_INTERVAL = '1d';
 const PRICE_CHART_RANGE = '5d';
 const PRICE_CHART_INTERVAL = '5m';
 const TV_FALLBACK_LOOKAHEAD_SEC = 15 * 60;
@@ -146,6 +148,29 @@ function getReferenceCloseInfo(raw) {
     prevClose,
     referenceLabel: referenceTime ? `对比 ${referenceTime} 收盘` : '对比上一交易时段收盘',
   };
+}
+
+function getSettlementCloseInfo(raw, meta = {}, fallbackRaw = null) {
+  const currentBarTime = meta?.currentTradingPeriod?.regular?.start
+    ?? raw?.meta?.currentTradingPeriod?.regular?.start
+    ?? meta?.regularMarketTime
+    ?? raw?.meta?.regularMarketTime
+    ?? Date.now() / 1000;
+  const inferred = inferPreviousCloseFromRaw(raw, currentBarTime)
+    || inferPreviousCloseFromRaw(fallbackRaw, currentBarTime);
+  if (inferred?.price != null) {
+    const previousTradingDayLabel =
+      getPreviousTradingDayLabelFromMeta(meta) ||
+      getPreviousTradingDayLabelFromMeta(raw?.meta) ||
+      null;
+    return {
+      prevClose: inferred.price,
+      referenceLabel: previousTradingDayLabel
+        ? `对比 ${previousTradingDayLabel} 收盘`
+        : `对比 ${formatTradingDayLabel(inferred.barTime)} 收盘`,
+    };
+  }
+  return getReferenceCloseInfo(fallbackRaw || raw);
 }
 
 function impactClass(n) { return n >= 8 ? 'impact-high' : n >= 5 ? 'impact-mid' : 'impact-low'; }
@@ -457,7 +482,15 @@ async function loadSources() {
 
 // ========== Prices: 对齐 + Sparkline + 闪动 ==========
 async function fetchRawChartData(symbol) {
-  const yahooUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=${PRICE_CHART_RANGE}&interval=${PRICE_CHART_INTERVAL}`;
+  return fetchYahooChartData(symbol, PRICE_CHART_RANGE, PRICE_CHART_INTERVAL);
+}
+
+async function fetchYahooSettlementData(symbol) {
+  return fetchYahooChartData(symbol, YAHOO_SETTLEMENT_RANGE, YAHOO_SETTLEMENT_INTERVAL);
+}
+
+async function fetchYahooChartData(symbol, range, interval) {
+  const yahooUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=${range}&interval=${interval}`;
   const proxies = [];
   if (CF_WORKER_URL) proxies.push(`${CF_WORKER_URL}?url=${encodeURIComponent(yahooUrl)}`);
   proxies.push(
@@ -509,10 +542,10 @@ function renderPrice(id, data) {
 }
 
 function extractSinglePrice(raw) {
+  const ref = getSettlementCloseInfo(raw, raw?.meta || {}, raw);
   const pairs = extractClosePairs(raw);
   if (!pairs.length) return null;
   const latest = pairs[pairs.length - 1];
-  const ref = getReferenceCloseInfo(raw);
   const prev = ref.prevClose ?? (pairs.length >= 2 ? pairs[pairs.length - 2].close : latest.close);
   const chg = latest.close - prev;
   return { price: latest.close.toFixed(2), change: chg.toFixed(2),
@@ -520,13 +553,12 @@ function extractSinglePrice(raw) {
     referenceLabel: ref.referenceLabel, cached: false };
 }
 
-function buildYahooQuoteData(raw, quoteRaw) {
+function buildYahooQuoteData(raw, quoteRaw, settlementRaw = null) {
   if (!quoteRaw?.meta?.regularMarketTime || quoteRaw?.meta?.regularMarketPrice == null) return null;
   const price = Number(quoteRaw.meta.regularMarketPrice);
   const currentTs = Number(quoteRaw.meta.regularMarketTime);
-  const inferred = inferPreviousCloseFromRaw(raw, quoteRaw.meta?.currentTradingPeriod?.regular?.start || currentTs);
-  const prev = quoteRaw.meta?.chartPreviousClose ?? quoteRaw.meta?.previousClose ?? inferred?.price ?? price;
-  const previousTradingDayLabel = getPreviousTradingDayLabelFromMeta(quoteRaw.meta);
+  const reference = getSettlementCloseInfo(settlementRaw || raw, quoteRaw.meta, raw);
+  const prev = reference.prevClose ?? quoteRaw.meta?.previousClose ?? quoteRaw.meta?.chartPreviousClose ?? price;
   const chg = price - prev;
   return {
     price: price.toFixed(2),
@@ -534,18 +566,14 @@ function buildYahooQuoteData(raw, quoteRaw) {
     pct: prev ? ((chg / prev) * 100).toFixed(1) : '0.0',
     dataTime: formatSGTPrecise(new Date(currentTs * 1000)),
     dataTs: currentTs,
-    referenceLabel: previousTradingDayLabel
-      ? `对比 ${previousTradingDayLabel} 收盘`
-      : inferred?.barTime
-        ? `对比 ${formatTradingDayLabel(inferred.barTime)} 收盘`
-        : '对比前一交易日收盘',
+    referenceLabel: reference.referenceLabel || '对比前一交易日收盘',
     cached: false,
   };
 }
 
-function buildQuoteFallbackData(raw, quote) {
+function buildQuoteFallbackData(raw, quote, settlementRaw = null) {
   if (!quote || quote.price == null) return null;
-  const ref = getReferenceCloseInfo(raw);
+  const ref = getSettlementCloseInfo(settlementRaw || raw, quote?.meta || raw?.meta || {}, raw);
   const prev = ref.prevClose ?? Number(quote.price);
   const price = Number(quote.price);
   const chg = price - prev;
@@ -562,9 +590,11 @@ function buildQuoteFallbackData(raw, quote) {
 }
 
 async function fetchPrices() {
-  const [brentRaw, wtiRaw, brentQuoteRaw, wtiQuoteRaw, brentTv, wtiTv] = await Promise.all([
+  const [brentRaw, wtiRaw, brentSettlementRaw, wtiSettlementRaw, brentQuoteRaw, wtiQuoteRaw, brentTv, wtiTv] = await Promise.all([
     fetchRawChartData('BZ=F'),
     fetchRawChartData('CL=F'),
+    fetchYahooSettlementData('BZ=F'),
+    fetchYahooSettlementData('CL=F'),
     fetchYahooQuote('BZ=F'),
     fetchYahooQuote('CL=F'),
     fetchTradingViewQuote('brent'),
@@ -605,14 +635,14 @@ async function fetchPrices() {
     }
   }
 
-  if (brentQuoteRaw) brentData = buildYahooQuoteData(brentRaw, brentQuoteRaw) || brentData;
-  else if (!brentData && brentRaw) brentData = extractSinglePrice(brentRaw);
+  if (brentQuoteRaw) brentData = buildYahooQuoteData(brentRaw, brentQuoteRaw, brentSettlementRaw) || brentData;
+  else if (!brentData && brentRaw) brentData = extractSinglePrice(brentSettlementRaw || brentRaw) || extractSinglePrice(brentRaw);
 
-  if (wtiQuoteRaw) wtiData = buildYahooQuoteData(wtiRaw, wtiQuoteRaw) || wtiData;
-  else if (!wtiData && wtiRaw) wtiData = extractSinglePrice(wtiRaw);
+  if (wtiQuoteRaw) wtiData = buildYahooQuoteData(wtiRaw, wtiQuoteRaw, wtiSettlementRaw) || wtiData;
+  else if (!wtiData && wtiRaw) wtiData = extractSinglePrice(wtiSettlementRaw || wtiRaw) || extractSinglePrice(wtiRaw);
 
-  if (!brentData && brentTv) brentData = buildQuoteFallbackData(brentRaw, brentTv) || brentData;
-  if (!wtiData && wtiTv) wtiData = buildQuoteFallbackData(wtiRaw, wtiTv) || wtiData;
+  if (!brentData && brentTv) brentData = buildQuoteFallbackData(brentRaw, brentTv, brentSettlementRaw) || brentData;
+  if (!wtiData && wtiTv) wtiData = buildQuoteFallbackData(wtiRaw, wtiTv, wtiSettlementRaw) || wtiData;
 
   if (!brentData || !wtiData) {
     try {
