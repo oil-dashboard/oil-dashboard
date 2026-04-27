@@ -15,6 +15,10 @@ const TV_FALLBACK_LOOKAHEAD_SEC = 15 * 60;
 const OOTT_LIVE_CACHE_KEY = 'oil_oott_live_v1';
 const OOTT_LIVE_CACHE_TTL_MS = 10 * 60 * 1000;
 const OOTT_LIVE_LOOKBACK_MS = 72 * 60 * 60 * 1000;
+const IRAN_CACHE_KEY = 'oil_iran_cache_v1';
+const FEED_EVENTS_CACHE_KEY = 'oil_feed_events_cache_v1';
+const FEED_POSTS_CACHE_KEY = 'oil_feed_posts_cache_v1';
+const POLYMARKET_CACHE_KEY = 'oil_polymarket_cache_v1';
 const OOTT_FALLBACK_HANDLES = [
   'JuneGoh_Sparta', 'JavierBlas', 'JKempEnergy', 'HFI_Research', 'Rory_Johnston',
   'staunovo', 'TankerTrackers', 'OilHeadlineNews', 'Ole_S_Hansen',
@@ -68,6 +72,16 @@ function writeStorageJson(key, value) {
   try {
     localStorage.setItem(key, JSON.stringify(value));
   } catch {}
+}
+
+function readTextCache(key) {
+  const cached = readStorageJson(key);
+  return typeof cached?.text === 'string' ? cached : null;
+}
+
+function writeTextCache(key, text) {
+  if (!key || typeof text !== 'string' || !text.trim()) return;
+  writeStorageJson(key, { text, ts: Date.now() });
 }
 
 function parseDateMs(value) {
@@ -236,6 +250,53 @@ function normalizeOottPost(item, fallbackUsername = '') {
     videos: Array.isArray(item.videos) ? item.videos : [],
     engagement: item.engagement || '',
   };
+}
+
+function getCapduckProxyUrl(target) {
+  return CF_WORKER_URL ? `${CF_WORKER_URL}?url=${encodeURIComponent(target)}` : null;
+}
+
+function buildCapduckCandidates(target) {
+  const proxyUrl = getCapduckProxyUrl(target);
+  if (proxyUrl) return [proxyUrl];
+  return [target];
+}
+
+async function fetchTextWithCache(candidates, cacheKey) {
+  let lastError = null;
+  for (const url of candidates) {
+    try {
+      const r = await fetch(url, { signal: AbortSignal.timeout(10000), cache: 'no-store' });
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      const text = await r.text();
+      writeTextCache(cacheKey, text);
+      return { text, cached: false, error: null };
+    } catch (error) {
+      lastError = error;
+      console.warn('Fetch text fail:', url, error);
+    }
+  }
+  const cached = readTextCache(cacheKey);
+  if (cached?.text) return { text: cached.text, cached: true, error: lastError };
+  return { text: null, cached: false, error: lastError };
+}
+
+async function fetchCapduckText(target, cacheKey) {
+  return fetchTextWithCache(buildCapduckCandidates(target), cacheKey);
+}
+
+function getOriginDebugHint() {
+  if (typeof location !== 'undefined' && location.protocol === 'file:') {
+    return '当前是 file:// 本地直开，浏览器会拦截更多跨域请求；建议改用 http://127.0.0.1:8080 打开。';
+  }
+  return '';
+}
+
+function renderUnavailableState(label, extra = '') {
+  const hint = [extra, getOriginDebugHint()].filter(Boolean).join(' ');
+  return `<div class="loading-spinner"><span style="color:var(--text-dim)">${escapeHtml(label)} 暂时不可用</span>${
+    hint ? `<div style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5">${escapeHtml(hint)}</div>` : ''
+  }</div>`;
 }
 
 function inferPreviousCloseFromRaw(raw, currentBarTime) {
@@ -695,16 +756,21 @@ function startCountdown() {
 
 // ========== Iran ==========
 async function fetchIranBriefing() {
-  const text = await safeFetch(API_BASE);
-  if (!text || typeof text !== 'string') return;
+  const result = await fetchCapduckText(API_BASE, IRAN_CACHE_KEY);
+  const text = result.text;
+  const el = document.getElementById('iranContent');
+  if (!text || typeof text !== 'string') {
+    document.getElementById('tensionDesc').textContent = 'Iran API 暂不可用';
+    el.innerHTML = renderUnavailableState('伊朗简报', '上游 Iran API 当前返回异常或被跨域策略拦截。');
+    return;
+  }
   const tm = text.match(/Tension:\s*(\d+)\/10\s*(.+?)(?:\n|$)/);
   if (tm) {
     document.getElementById('tensionValue').textContent = tm[1]+'/10';
     document.getElementById('tensionDesc').textContent = tm[2].trim().substring(0,50);
   }
-  const el = document.getElementById('iranContent');
   const sections = text.split(/^## /m).filter(s => s.trim());
-  let html = '';
+  let html = result.cached ? `<div style="font-size:12px;color:var(--accent-gold);margin-bottom:12px;padding:4px 8px">⏳ 使用上次成功缓存 · Iran API 当前不可达</div>` : '';
   for (const s of sections) {
     const lines = s.split('\n'), title = lines[0].trim(), body = lines.slice(1).join('\n').trim();
     if (!title) continue;
@@ -801,11 +867,18 @@ function renderFeedItems(items) {
 }
 
 async function buildFeed() {
-  const [evtText, postText] = await Promise.all([
-    safeFetch(`${API_BASE}/events?impact=5&hours=24&limit=15`),
-    safeFetch(`${API_BASE}/posts?limit=15`),
+  const [evtResult, postResult] = await Promise.all([
+    fetchCapduckText(`${API_BASE}/events?impact=5&hours=24&limit=15`, FEED_EVENTS_CACHE_KEY),
+    fetchCapduckText(`${API_BASE}/posts?limit=15`, FEED_POSTS_CACHE_KEY),
   ]);
+  const evtText = evtResult.text;
+  const postText = postResult.text;
   const events = parseEvents(evtText), posts = parsePosts(postText);
+  const el = document.getElementById('feedList');
+  if (!evtText && !postText) {
+    el.innerHTML = renderUnavailableState('信息流', '事件流和帖子流上游接口当前不可用。');
+    return;
+  }
   const merged = []; let pi=0, ei=0;
   while (pi < posts.length || ei < events.length) {
     if (pi < posts.length) merged.push(posts[pi++]);
@@ -814,10 +887,10 @@ async function buildFeed() {
   }
   state.feedItems = merged;
   renderFeedItems(merged);
-  const el = document.getElementById('feedList');
   if (el && merged.length) {
-    el.innerHTML = `<div style="font-size:12px;color:var(--text-muted);margin-bottom:12px;padding:4px 8px">
-      📡 已刷新 ${formatSGT(new Date())} · 卡片时间是原消息发布时间，不是面板更新时间</div>` + el.innerHTML;
+    const cacheNote = (evtResult.cached || postResult.cached) ? ' · 使用上次成功缓存' : '';
+    el.innerHTML = `<div style="font-size:12px;color:${(evtResult.cached || postResult.cached) ? 'var(--accent-gold)' : 'var(--text-muted)'};margin-bottom:12px;padding:4px 8px">
+      📡 已刷新 ${formatSGT(new Date())} · 卡片时间是原消息发布时间，不是面板更新时间${cacheNote}</div>` + el.innerHTML;
   }
 }
 
@@ -832,9 +905,13 @@ window.filterFeed = function(type) {
 
 // ========== Polymarket ==========
 async function fetchPolymarket() {
-  const text = await safeFetch(`${API_BASE}/polymarket`);
+  const result = await fetchCapduckText(`${API_BASE}/polymarket`, POLYMARKET_CACHE_KEY);
+  const text = result.text;
   const el = document.getElementById('polyContent');
-  if (!text || typeof text !== 'string') { el.innerHTML = '<p style="color:var(--text-dim)">暂无数据</p>'; return; }
+  if (!text || typeof text !== 'string') {
+    el.innerHTML = renderUnavailableState('预测市场', 'Polymarket 上游接口当前不可用。');
+    return;
+  }
   const contracts = [], blocks = text.split(/^## /m).filter(s => s.trim());
   let hiddenExpiredCount = 0;
   for (const block of blocks) {
@@ -868,8 +945,9 @@ async function fetchPolymarket() {
     return;
   }
   const extraNote = hiddenExpiredCount ? ` · 已隐藏 ${hiddenExpiredCount} 个过期窗口` : '';
+  const cacheNote = result.cached ? ' · 使用上次成功缓存' : '';
   el.innerHTML = `<div style="font-size:12px;color:var(--text-muted);margin-bottom:12px;padding:4px 8px">
-    📊 已刷新 ${formatSGT(new Date())} · 卡片里的日期是合约到期/结算窗口${extraNote}</div>` + html;
+    📊 已刷新 ${formatSGT(new Date())} · 卡片里的日期是合约到期/结算窗口${extraNote}${cacheNote}</div>` + html;
 }
 
 // ========== 油市推文 (读 data/oott.json，由 OOTT cron 自动同步) ==========
@@ -966,5 +1044,6 @@ if (typeof globalThis !== 'undefined') {
     PRICE_CHART_RANGE,
     PRICE_CHART_INTERVAL,
     shouldUseTradingViewFallback,
+    buildCapduckCandidates,
   };
 }

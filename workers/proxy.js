@@ -130,19 +130,30 @@ export default {
       }
     }
 
-    // 4. Yahoo Finance Proxy
+    // 4. Generic upstream proxy for approved domains
     const target = url.searchParams.get('url');
     if (!target) return new Response('Missing ?url= or ?twitter= param', { status: 400 });
 
+    let parsedTarget;
     try {
-      const t = new URL(target);
-      if (!t.hostname.endsWith('yahoo.com')) return new Response('Domain not allowed', { status: 403 });
+      parsedTarget = new URL(target);
     } catch { return new Response('Invalid URL', { status: 400 }); }
 
+    const allowedHosts = ['query1.finance.yahoo.com', 'finance.yahoo.com', 'skill.capduck.com'];
+    if (!allowedHosts.includes(parsedTarget.hostname)) {
+      return new Response('Domain not allowed', { status: 403 });
+    }
+
     const resp = await fetch(target, { headers: { 'User-Agent': 'Mozilla/5.0 (compatible)' } });
+    const passthroughHeaders = new Headers();
+    const contentType = resp.headers.get('content-type');
+    if (contentType) passthroughHeaders.set('Content-Type', contentType);
+    passthroughHeaders.set('Access-Control-Allow-Origin', '*');
+    passthroughHeaders.set('Cache-Control', 'no-store, max-age=0');
+
     return new Response(await resp.text(), {
       status: resp.status,
-      headers: jsonHeaders,
+      headers: passthroughHeaders,
     });
   },
 };

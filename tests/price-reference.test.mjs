@@ -203,3 +203,12 @@ test('yahoo previous trading day label follows exchange session boundary', () =>
 
   assert.equal(label, '4/20');
 });
+
+test('capduck requests try worker proxy before direct upstream', () => {
+  const hooks = loadAppHooks();
+  const candidates = Array.from(hooks.buildCapduckCandidates('https://skill.capduck.com/iran/polymarket'));
+
+  assert.deepEqual(candidates, [
+    'https://oil-proxy.xzregproxy.workers.dev?url=https%3A%2F%2Fskill.capduck.com%2Firan%2Fpolymarket',
+  ]);
+});
