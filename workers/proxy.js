@@ -1,4 +1,4 @@
-// ========== Cloudflare Worker — Yahoo Finance & Twitter Headless Proxy ==========
+// ========== Cloudflare Worker — Market / News / Twitter Proxy ==========
 // 部署方式: npx wrangler deploy workers/proxy.js --name oil-proxy --compatibility-date 2024-04-03
 //
 export default {
@@ -139,12 +139,27 @@ export default {
       parsedTarget = new URL(target);
     } catch { return new Response('Invalid URL', { status: 400 }); }
 
-    const allowedHosts = ['query1.finance.yahoo.com', 'finance.yahoo.com', 'skill.capduck.com'];
+    const allowedHosts = [
+      'query1.finance.yahoo.com',
+      'finance.yahoo.com',
+      'skill.capduck.com',
+      'news.google.com',
+      'gamma-api.polymarket.com',
+    ];
     if (!allowedHosts.includes(parsedTarget.hostname)) {
       return new Response('Domain not allowed', { status: 403 });
     }
 
-    const resp = await fetch(target, { headers: { 'User-Agent': 'Mozilla/5.0 (compatible)' } });
+    const upstreamHeaders = {
+      'User-Agent': 'Mozilla/5.0 (compatible)',
+    };
+    if (parsedTarget.hostname === 'gamma-api.polymarket.com') {
+      upstreamHeaders.Accept = 'application/json,text/plain,*/*';
+      upstreamHeaders.Origin = 'https://polymarket.com';
+      upstreamHeaders.Referer = 'https://polymarket.com/';
+    }
+
+    const resp = await fetch(target, { headers: upstreamHeaders });
     const passthroughHeaders = new Headers();
     const contentType = resp.headers.get('content-type');
     if (contentType) passthroughHeaders.set('Content-Type', contentType);
