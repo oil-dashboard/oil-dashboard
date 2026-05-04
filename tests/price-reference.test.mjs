@@ -70,7 +70,7 @@ test('reference close label uses previous session end in Singapore time', () => 
   });
 
   assert.equal(info.prevClose, 94.79);
-  assert.equal(info.referenceLabel, '对比 4/15 11:59 收盘');
+  assert.equal(info.referenceLabel, '对比 4/15 收盘');
 });
 
 test('reference close label falls back gracefully when trading periods are missing', () => {
@@ -80,7 +80,7 @@ test('reference close label falls back gracefully when trading periods are missi
   });
 
   assert.equal(info.prevClose, 72.31);
-  assert.equal(info.referenceLabel, '对比上一交易时段收盘');
+  assert.equal(info.referenceLabel, '对比上一交易日收盘');
 });
 
 test('price chart fetch uses the stable Yahoo intraday range', () => {
@@ -202,6 +202,39 @@ test('yahoo previous trading day label follows exchange session boundary', () =>
   });
 
   assert.equal(label, '4/20');
+});
+
+test('previous trading day label skips weekend dates', () => {
+  const hooks = loadAppHooks();
+  const label = hooks.getPreviousTradingDayLabelFromMeta({
+    exchangeTimezoneName: 'America/New_York',
+    currentTradingPeriod: {
+      regular: { start: 1777867200 },
+    },
+  });
+
+  assert.equal(label, '5/1');
+});
+
+test('settlement close info uses previous trading day label from meta even on Monday session', () => {
+  const hooks = loadAppHooks();
+  const info = hooks.getSettlementCloseInfo(
+    {
+      timestamps: [1777348800, 1777435200, 1777521600, 1777608000, 1777867200],
+      closes: [111.26, 118.03, 114.01, 108.17, 108.10],
+      meta: {
+        currentTradingPeriod: { regular: { start: 1777867200 } },
+        exchangeTimezoneName: 'America/New_York',
+      },
+    },
+    {
+      currentTradingPeriod: { regular: { start: 1777867200 } },
+      exchangeTimezoneName: 'America/New_York',
+    }
+  );
+
+  assert.equal(info.prevClose, 108.17);
+  assert.equal(info.referenceLabel, '对比 5/1 收盘');
 });
 
 test('capduck requests try worker proxy before direct upstream', () => {

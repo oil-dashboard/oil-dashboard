@@ -146,11 +146,28 @@ function formatMonthDayInTimeZone(tsSec, timeZone = 'UTC') {
   }
 }
 
+function isWeekendInTimeZone(tsSec, timeZone = 'UTC') {
+  if (!Number.isFinite(tsSec)) return false;
+  try {
+    const weekday = new Intl.DateTimeFormat('en-US', {
+      timeZone,
+      weekday: 'short',
+    }).format(new Date(tsSec * 1000));
+    return weekday === 'Sat' || weekday === 'Sun';
+  } catch {
+    return false;
+  }
+}
+
 function getPreviousTradingDayLabelFromMeta(meta) {
   const sessionStart = meta?.currentTradingPeriod?.regular?.start;
   if (!Number.isFinite(sessionStart)) return null;
   const exchangeTimeZone = meta?.exchangeTimezoneName || 'America/New_York';
-  return formatMonthDayInTimeZone(sessionStart - 1, exchangeTimeZone);
+  let previousDayTs = sessionStart - 24 * 60 * 60;
+  while (isWeekendInTimeZone(previousDayTs, exchangeTimeZone)) {
+    previousDayTs -= 24 * 60 * 60;
+  }
+  return formatMonthDayInTimeZone(previousDayTs, exchangeTimeZone);
 }
 
 function flattenTradingPeriods(periods) {
@@ -160,16 +177,28 @@ function flattenTradingPeriods(periods) {
 
 function getReferenceCloseInfo(raw) {
   const prevClose = raw?.meta?.chartPreviousClose ?? raw?.meta?.previousClose ?? null;
+  const previousTradingDayLabel = getPreviousTradingDayLabelFromMeta(raw?.meta);
+  if (prevClose != null && previousTradingDayLabel) {
+    return {
+      prevClose,
+      referenceLabel: `对比 ${previousTradingDayLabel} 收盘`,
+    };
+  }
   const periods = flattenTradingPeriods(raw?.meta?.tradingPeriods);
   const prevPeriod = periods.length >= 2 ? periods[periods.length - 2] : null;
-  const referenceTime = prevPeriod?.end ? formatSGTCompact(new Date(prevPeriod.end * 1000)) : '';
+  const referenceDay = prevPeriod?.end ? formatTradingDayLabel(prevPeriod.end - 1) : '';
   return {
     prevClose,
-    referenceLabel: referenceTime ? `对比 ${referenceTime} 收盘` : '对比上一交易时段收盘',
+    referenceLabel: referenceDay ? `对比 ${referenceDay} 收盘` : '对比上一交易日收盘',
   };
 }
 
 function getSettlementCloseInfo(raw, meta = {}, fallbackRaw = null) {
+  const previousTradingDayLabel =
+    getPreviousTradingDayLabelFromMeta(meta) ||
+    getPreviousTradingDayLabelFromMeta(raw?.meta) ||
+    getPreviousTradingDayLabelFromMeta(fallbackRaw?.meta) ||
+    null;
   const currentBarTime = meta?.currentTradingPeriod?.regular?.start
     ?? raw?.meta?.currentTradingPeriod?.regular?.start
     ?? meta?.regularMarketTime
@@ -178,15 +207,18 @@ function getSettlementCloseInfo(raw, meta = {}, fallbackRaw = null) {
   const inferred = inferPreviousCloseFromRaw(raw, currentBarTime)
     || inferPreviousCloseFromRaw(fallbackRaw, currentBarTime);
   if (inferred?.price != null) {
-    const previousTradingDayLabel =
-      getPreviousTradingDayLabelFromMeta(meta) ||
-      getPreviousTradingDayLabelFromMeta(raw?.meta) ||
-      null;
     return {
       prevClose: inferred.price,
       referenceLabel: previousTradingDayLabel
         ? `对比 ${previousTradingDayLabel} 收盘`
         : `对比 ${formatTradingDayLabel(inferred.barTime)} 收盘`,
+    };
+  }
+  const prevCloseFromMeta = meta?.chartPreviousClose ?? meta?.previousClose ?? raw?.meta?.chartPreviousClose ?? raw?.meta?.previousClose ?? fallbackRaw?.meta?.chartPreviousClose ?? fallbackRaw?.meta?.previousClose ?? null;
+  if (prevCloseFromMeta != null && previousTradingDayLabel) {
+    return {
+      prevClose: prevCloseFromMeta,
+      referenceLabel: `对比 ${previousTradingDayLabel} 收盘`,
     };
   }
   return getReferenceCloseInfo(fallbackRaw || raw);
@@ -1156,16 +1188,6 @@ async function refresh() {
 }
 
 (async () => {
-  // 先显示缓存价格（瞬间），后台刷新
-  try {
-    const c = JSON.parse(localStorage.getItem(CACHE_KEY));
-    if (c) {
-      if (c.brent) renderPrice('brent', { ...c.brent, cached: true });
-      if (c.wti) renderPrice('wti', { ...c.wti, cached: true });
-      if (c.brent && c.wti)
-        document.getElementById('spreadValue').textContent = `$${(parseFloat(c.brent.price) - parseFloat(c.wti.price)).toFixed(2)}`;
-    }
-  } catch {}
   await loadSources();
   refresh(); // 不 await，让页面先响应
   setInterval(refresh, REFRESH_MS);
@@ -1179,6 +1201,7 @@ if (typeof globalThis !== 'undefined') {
   globalThis.__oilDashboardTestHooks = {
     flattenTradingPeriods,
     getReferenceCloseInfo,
+    getSettlementCloseInfo,
     formatSGTCompact,
     getSgtDateParts,
     normalizeOottPost,
