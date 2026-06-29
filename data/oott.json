@@ -7,12 +7,12 @@
     "authorName": "Javier Blas",
     "authorUsername": "JavierBlas",
     "url": "https://x.com/JavierBlas/status/2071188694862594353",
-    "likes": 200,
+    "likes": 202,
     "retweets": 47,
     "replies": 15,
     "quotes": 4,
-    "views": 53648,
-    "engagement": 336,
+    "views": 53851,
+    "engagement": 338,
     "photos": [],
     "videos": [],
     "quotedTweet": null,
@@ -26,15 +26,128 @@
     "authorName": "Javier Blas",
     "authorUsername": "JavierBlas",
     "url": "https://x.com/JavierBlas/status/2071155042569052229",
-    "likes": 784,
+    "likes": 785,
     "retweets": 145,
     "replies": 54,
     "quotes": 27,
-    "views": 153234,
-    "engagement": 1263,
+    "views": 153976,
+    "engagement": 1264,
     "photos": [],
     "videos": [],
     "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2070828154134966312",
+    "text": "The Omani route in the Strait of Hormuz is now operating in both directions (previously, tankers were encouraged only out, rather than in). Now, the route is cleared also for inbound tankers. https://t.co/T2EBjJhTcF",
+    "createdAt": "2026-06-27T11:14:40+00:00",
+    "username": "JavierBlas",
+    "authorName": "Javier Blas",
+    "authorUsername": "JavierBlas",
+    "url": "https://x.com/JavierBlas/status/2070828154134966312",
+    "likes": 671,
+    "retweets": 165,
+    "replies": 97,
+    "quotes": 23,
+    "views": 128899,
+    "engagement": 1264,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2070556263214207410",
+    "text": "CHART OF THE DAY: Brent Dated-to-Frontline spread, a key indicator of the strength (or weakness) of the physical crude market in the Atlantic. The DFL is at its weakest since mid-2023. https://t.co/IdzvmHPslv",
+    "createdAt": "2026-06-26T17:14:16+00:00",
+    "username": "JavierBlas",
+    "authorName": "Javier Blas",
+    "authorUsername": "JavierBlas",
+    "url": "https://x.com/JavierBlas/status/2070556263214207410",
+    "likes": 208,
+    "retweets": 31,
+    "replies": 13,
+    "quotes": 4,
+    "views": 41769,
+    "engagement": 308,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HLwX8kQW0AA4-Bd.jpg"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2070529758476058690",
+    "text": "China gave, and China hath taken away.",
+    "createdAt": "2026-06-26T15:28:57+00:00",
+    "username": "JavierBlas",
+    "authorName": "Javier Blas",
+    "authorUsername": "JavierBlas",
+    "url": "https://x.com/JavierBlas/status/2070529758476058690",
+    "likes": 274,
+    "retweets": 14,
+    "replies": 9,
+    "quotes": 2,
+    "views": 99351,
+    "engagement": 326,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2070417577587671459",
+    "text": "Filed under \"least surprising news\" category: \n\nChina is leaving room for coal consumption to grow in coming years. “We will always prioritize energy security,” Wang Hongzhi, head of the National Energy Administration, said on Friday.\n\nhttps://t.co/W0NPmILaM0",
+    "createdAt": "2026-06-26T08:03:11+00:00",
+    "username": "JavierBlas",
+    "authorName": "Javier Blas",
+    "authorUsername": "JavierBlas",
+    "url": "https://x.com/JavierBlas/status/2070417577587671459",
+    "likes": 198,
+    "retweets": 70,
+    "replies": 15,
+    "quotes": 8,
+    "views": 33299,
+    "engagement": 392,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2070396326445973603",
+    "text": "PHOTOS OF THE DAY: Saudi Arabia is loading simultaneously 4 supertankers in the Persian Gulf. Two started loading yesterday at the single-point moorings of Ju’aymah (see post below) with their AIS visible (and a 3rd is waiting nearby). This morning, two others appear to be loading at Ras Tanura's Sea Islands, the world's largest oil terminal. One is broadcasting on AIS, the other is dark.\n📷 @CopernicusEU Sentinel-1 SAR 🛰️",
+    "createdAt": "2026-06-26T06:38:44+00:00",
+    "username": "JavierBlas",
+    "authorName": "Javier Blas",
+    "authorUsername": "JavierBlas",
+    "url": "https://x.com/JavierBlas/status/2070396326445973603",
+    "likes": 575,
+    "retweets": 103,
+    "replies": 20,
+    "quotes": 8,
+    "views": 208208,
+    "engagement": 845,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HLuEAMwWsAA5Jra.jpg"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/HLuEtpnXgAAvI1k.jpg"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": {
+      "id": "2070116566037913608",
+      "text": "Saudi Arabia appears to be about re-starting oil loadings inside the Persian Gulf. \n\nThree Saudi-owned in ballast VLCCs are concentrating around the Ju’aymah terminal (it has 6 single point moorings).\n\nIf the loadings go ahead, it would be the first known since early March.",
+      "author": {
+        "screenName": "JavierBlas",
+        "name": "Javier Blas"
+      }
+    },
     "sourceKind": "whitelist"
   },
   {
@@ -49,7 +162,7 @@
     "retweets": 1,
     "replies": 3,
     "quotes": 0,
-    "views": 4506,
+    "views": 4530,
     "engagement": 45,
     "photos": [
       {
@@ -68,12 +181,12 @@
     "authorName": "John Kemp",
     "authorUsername": "JKempEnergy",
     "url": "https://x.com/JKempEnergy/status/2071134001205489697",
-    "likes": 76,
-    "retweets": 28,
+    "likes": 77,
+    "retweets": 29,
     "replies": 6,
     "quotes": 0,
-    "views": 6703,
-    "engagement": 144,
+    "views": 6726,
+    "engagement": 147,
     "photos": [
       {
         "url": "https://pbs.twimg.com/media/HL1QAZJXkAAacHb.png"
@@ -95,9 +208,112 @@
     "retweets": 1,
     "replies": 0,
     "quotes": 1,
-    "views": 1790,
+    "views": 1794,
     "engagement": 8,
     "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2070862797169123817",
+    "text": "LONG TROUSERS make no sense in summer especially during a heatwave - agree 100% https://t.co/IVWDwqPiXI",
+    "createdAt": "2026-06-27T13:32:20+00:00",
+    "username": "JKempEnergy",
+    "authorName": "John Kemp",
+    "authorUsername": "JKempEnergy",
+    "url": "https://x.com/JKempEnergy/status/2070862797169123817",
+    "likes": 11,
+    "retweets": 4,
+    "replies": 3,
+    "quotes": 0,
+    "views": 4574,
+    "engagement": 25,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2070865648910025102",
+    "text": "Even before I stopped working in an airconditioned office, I started wearing shorts to work whenever the forecast topped 30C given sweltering temperatures on the underground. The taboo against wearing shorts to work makes zero sense in the modern urban environment",
+    "createdAt": "2026-06-27T13:43:40+00:00",
+    "username": "JKempEnergy",
+    "authorName": "John Kemp",
+    "authorUsername": "JKempEnergy",
+    "url": "https://x.com/JKempEnergy/status/2070865648910025102",
+    "likes": 15,
+    "retweets": 1,
+    "replies": 1,
+    "quotes": 0,
+    "views": 2762,
+    "engagement": 19,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2070837549069697049",
+    "text": "Bearish Oil Trade Becomes Increasingly Crowded\n\nInvestors have become extremely bearish about the outlook for crude oil prices following the memorandum of understanding between Iran and the United States to re-open the Strait of Hormuz.\n\nHedge funds and other money managers cut their net position across the three main crude oil futures and options contracts to just 179 million barrels on June 23 (3rd percentile for all weeks since 2011).\n\nThe combined position has been reduced in ten of the most recent fourteen weeks by a total of 375 million barrels since March 17 ...",
+    "createdAt": "2026-06-27T11:52:00+00:00",
+    "username": "JKempEnergy",
+    "authorName": "John Kemp",
+    "authorUsername": "JKempEnergy",
+    "url": "https://x.com/JKempEnergy/status/2070837549069697049",
+    "likes": 104,
+    "retweets": 23,
+    "replies": 12,
+    "quotes": 3,
+    "views": 12607,
+    "engagement": 183,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HL0XxY9WoAA4y3u.png"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2070837773838250111",
+    "text": "This is a short extract from my newsletter emailed to clients earlier today. If you would like to read my newsletters in full, three times a week, you can subscribe via my website https://t.co/YjJTctVocX",
+    "createdAt": "2026-06-27T11:52:54+00:00",
+    "username": "JKempEnergy",
+    "authorName": "John Kemp",
+    "authorUsername": "JKempEnergy",
+    "url": "https://x.com/JKempEnergy/status/2070837773838250111",
+    "likes": 2,
+    "retweets": 1,
+    "replies": 1,
+    "quotes": 1,
+    "views": 2313,
+    "engagement": 9,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2070443862972158232",
+    "text": "U.S. GAS production, consumption and exports appear to have been balanced for the last two months, stabilising inventories after a steady accumulation earlier in the year. Inventories were 173 billion cubic feet (+7% or +0.47 standard deviations) above the ten-year seasonal average on June 19, essentially unchanged from a surplus of 169 bcf (+9% or +0.41σ) two months earlier. In a sign the market is more balanced, front-month gas futures have risen to almost $3.40 per million British thermal units (the threshold at which gas and coal-fired generation are roughly competitive with each other) from a low of just $2.50 in the middle of April:",
+    "createdAt": "2026-06-26T09:47:38+00:00",
+    "username": "JKempEnergy",
+    "authorName": "John Kemp",
+    "authorUsername": "JKempEnergy",
+    "url": "https://x.com/JKempEnergy/status/2070443862972158232",
+    "likes": 21,
+    "retweets": 5,
+    "replies": 0,
+    "quotes": 1,
+    "views": 3586,
+    "engagement": 34,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HLuxswzWkAAkAeh.jpg"
+      }
+    ],
     "videos": [],
     "quotedTweet": null,
     "sourceKind": "whitelist"
@@ -110,12 +326,12 @@
     "authorName": "HFI Research",
     "authorUsername": "HFI_Research",
     "url": "https://x.com/HFI_Research/status/2071342163007619214",
-    "likes": 145,
-    "retweets": 16,
+    "likes": 148,
+    "retweets": 17,
     "replies": 3,
-    "quotes": 4,
-    "views": 17226,
-    "engagement": 195,
+    "quotes": 3,
+    "views": 18129,
+    "engagement": 197,
     "photos": [
       {
         "url": "https://pbs.twimg.com/media/HL7it66bUAAy8GJ.jpg"
@@ -140,12 +356,12 @@
     "authorName": "HFI Research",
     "authorUsername": "HFI_Research",
     "url": "https://x.com/HFI_Research/status/2071278874974114214",
-    "likes": 209,
+    "likes": 211,
     "retweets": 16,
     "replies": 3,
     "quotes": 3,
-    "views": 44458,
-    "engagement": 256,
+    "views": 45326,
+    "engagement": 258,
     "photos": [
       {
         "url": "https://pbs.twimg.com/media/HL6pKKYbcAEFiIY.jpg"
@@ -174,7 +390,7 @@
     "retweets": 19,
     "replies": 8,
     "quotes": 2,
-    "views": 37094,
+    "views": 37197,
     "engagement": 243,
     "photos": [
       {
@@ -204,7 +420,7 @@
     "retweets": 29,
     "replies": 3,
     "quotes": 3,
-    "views": 23239,
+    "views": 23346,
     "engagement": 272,
     "photos": [],
     "videos": [],
@@ -219,12 +435,12 @@
     "authorName": "HFI Research",
     "authorUsername": "HFI_Research",
     "url": "https://x.com/HFI_Research/status/2071113867007291817",
-    "likes": 299,
+    "likes": 300,
     "retweets": 40,
     "replies": 6,
     "quotes": 12,
-    "views": 91570,
-    "engagement": 427,
+    "views": 91812,
+    "engagement": 428,
     "photos": [
       {
         "url": "https://pbs.twimg.com/media/HL4TEijbgAAQiTF.jpg"
@@ -252,9 +468,9 @@
     "likes": 62,
     "retweets": 6,
     "replies": 0,
-    "quotes": 5,
-    "views": 13622,
-    "engagement": 89,
+    "quotes": 3,
+    "views": 13639,
+    "engagement": 83,
     "photos": [
       {
         "url": "https://pbs.twimg.com/media/HL3jDeBaIAArX66.png"
@@ -265,6 +481,36 @@
     "sourceKind": "whitelist"
   },
   {
+    "id": "2070889427472384151",
+    "text": "Nothing in Oman’s lane. https://t.co/ANCQ9GBXfR",
+    "createdAt": "2026-06-27T15:18:09+00:00",
+    "username": "HFI_Research",
+    "authorName": "HFI Research",
+    "authorUsername": "HFI_Research",
+    "url": "https://x.com/HFI_Research/status/2070889427472384151",
+    "likes": 559,
+    "retweets": 89,
+    "replies": 5,
+    "quotes": 16,
+    "views": 56143,
+    "engagement": 795,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HL1G9STbkAAD07g.jpg"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": {
+      "id": "2070683748652523524",
+      "text": "My analysis of the Strait of Hormuz over the last 24 hours.\n\nTraffic flow has slowed considerably since the strike yesterday, at least on AIS. \n\nThere was a small cluster of VLCCs that were escorted by the US that transited the Strait of Hormuz. These 3 VLCCs were unsanctioned presenting the largest inbound VLCC count since the MOU was signed.\n\nFollowing the US strike, there's one tanker that's bravely transiting the Oman route, but has stalled at the end of the video. It is yet to be seen what happens. There were several interesting u-turns observed over the last 24 hours with one LNG tanker, Umm Salal, turning around. \n\nThis weekend will be important to see just how many transits we see through the Oman lane. \n\nI have attached the video from @MarineTraffic and my table of inbound tankers.",
+      "author": {
+        "screenName": "HFI_Research",
+        "name": "HFI Research"
+      }
+    },
+    "sourceKind": "whitelist"
+  },
+  {
     "id": "2071353264696692767",
     "text": "*BRENT OIL RISES 1.9% AT OPEN AFTER IRAN, US TRADE FRESH ATTACKS\n\nAndddddd it’s already gone.",
     "createdAt": "2026-06-28T22:01:16+00:00",
@@ -272,12 +518,12 @@
     "authorName": "Rory Johnston",
     "authorUsername": "Rory_Johnston",
     "url": "https://x.com/Rory_Johnston/status/2071353264696692767",
-    "likes": 290,
-    "retweets": 7,
-    "replies": 19,
+    "likes": 319,
+    "retweets": 8,
+    "replies": 21,
     "quotes": 1,
-    "views": 22308,
-    "engagement": 345,
+    "views": 25947,
+    "engagement": 380,
     "photos": [],
     "videos": [],
     "quotedTweet": null,
@@ -291,12 +537,12 @@
     "authorName": "Rory Johnston",
     "authorUsername": "Rory_Johnston",
     "url": "https://x.com/Rory_Johnston/status/2071332754009067653",
-    "likes": 500,
+    "likes": 515,
     "retweets": 44,
     "replies": 43,
     "quotes": 11,
-    "views": 33078,
-    "engagement": 707,
+    "views": 35554,
+    "engagement": 722,
     "photos": [
       {
         "url": "https://pbs.twimg.com/media/HL7aKYBWgAAbv4t.jpg"
@@ -314,12 +560,12 @@
     "authorName": "Rory Johnston",
     "authorUsername": "Rory_Johnston",
     "url": "https://x.com/Rory_Johnston/status/2071333413794075079",
-    "likes": 94,
+    "likes": 95,
     "retweets": 7,
-    "replies": 6,
+    "replies": 7,
     "quotes": 0,
-    "views": 7066,
-    "engagement": 120,
+    "views": 7260,
+    "engagement": 123,
     "photos": [
       {
         "url": "https://pbs.twimg.com/media/HL7awwkXsAE9PLX.jpg"
@@ -337,12 +583,12 @@
     "authorName": "Rory Johnston",
     "authorUsername": "Rory_Johnston",
     "url": "https://x.com/Rory_Johnston/status/2071333612046143917",
-    "likes": 179,
-    "retweets": 12,
+    "likes": 182,
+    "retweets": 13,
     "replies": 15,
     "quotes": 0,
-    "views": 6724,
-    "engagement": 233,
+    "views": 6908,
+    "engagement": 238,
     "photos": [],
     "videos": [],
     "quotedTweet": null,
@@ -356,12 +602,12 @@
     "authorName": "Rory Johnston",
     "authorUsername": "Rory_Johnston",
     "url": "https://x.com/Rory_Johnston/status/2071304558911819858",
-    "likes": 46,
+    "likes": 48,
     "retweets": 4,
     "replies": 3,
     "quotes": 0,
-    "views": 11228,
-    "engagement": 60,
+    "views": 11345,
+    "engagement": 62,
     "photos": [],
     "videos": [],
     "quotedTweet": null,
@@ -379,7 +625,7 @@
     "retweets": 1,
     "replies": 3,
     "quotes": 0,
-    "views": 5999,
+    "views": 6068,
     "engagement": 35,
     "photos": [
       {
@@ -402,7 +648,7 @@
     "retweets": 8,
     "replies": 8,
     "quotes": 0,
-    "views": 38109,
+    "views": 38368,
     "engagement": 244,
     "photos": [
       {
@@ -425,7 +671,7 @@
     "retweets": 2,
     "replies": 8,
     "quotes": 0,
-    "views": 19279,
+    "views": 19321,
     "engagement": 119,
     "photos": [],
     "videos": [
@@ -444,6 +690,232 @@
     "sourceKind": "whitelist"
   },
   {
+    "id": "2071001831937843637",
+    "text": "Thursday: Iran hits a ship.\n\nFriday: US retaliates against drone/missile/radar sites\n\nSaturday morning: Iran hits another ship \n\nSaturday evening: US hits more Iranian sites\n\nSunday: ??",
+    "createdAt": "2026-06-27T22:44:48+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2071001831937843637",
+    "likes": 470,
+    "retweets": 53,
+    "replies": 123,
+    "quotes": 5,
+    "views": 103651,
+    "engagement": 837,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": {
+      "id": "2070988759785406866",
+      "text": "US forces are carrying out airstrikes on Iran again tonight, reportedly larger than last night's round. \n\nMultiple explosions have been reported in Qeshm, Bandar Lengeh, and Sirik. https://t.co/HNvF4oxDbF",
+      "author": {
+        "screenName": "Osinttechnical",
+        "name": "OSINTtechnical"
+      }
+    },
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2070895259500900816",
+    "text": "Iran currently trying to fight the spread of that yellow Omani Route breakout.\n\nTehran wants ~everything in dark blue. https://t.co/pDktxBR47j",
+    "createdAt": "2026-06-27T15:41:19+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2070895259500900816",
+    "likes": 363,
+    "retweets": 52,
+    "replies": 11,
+    "quotes": 6,
+    "views": 44372,
+    "engagement": 507,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HL1MFpmXEAA4a1-.jpg"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2070828027869610377",
+    "text": "Iran’s Hormuz management experience so far https://t.co/gTvfB62WnZ",
+    "createdAt": "2026-06-27T11:14:10+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2070828027869610377",
+    "likes": 210,
+    "retweets": 14,
+    "replies": 6,
+    "quotes": 1,
+    "views": 22757,
+    "engagement": 253,
+    "photos": [],
+    "videos": [
+      {
+        "url": "https://video.twimg.com/tweet_video/HL0PHVNWgAEi3y-.mp4"
+      }
+    ],
+    "quotedTweet": {
+      "id": "2070824775086137840",
+      "text": "MORE SHIPS SEEK PERMITS FROM IRAN TO TRANSIT STRAIT OF HORMUZ AFTER NON-AUTHORISED VESSELS FACED WARNING SHOTS",
+      "author": {
+        "screenName": "DeItaone",
+        "name": "*Walter Bloomberg"
+      }
+    },
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2070825256416153750",
+    "text": "Another [presumably Iranian] ship attack this morning following yesterday’s US retaliatory strikes against Iran missile/drone/radar systems.\n\nJMIC has lifted the regional threat assessment from MODERATE to SUBSTANTIAL.",
+    "createdAt": "2026-06-27T11:03:09+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2070825256416153750",
+    "likes": 192,
+    "retweets": 25,
+    "replies": 13,
+    "quotes": 2,
+    "views": 29106,
+    "engagement": 274,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": {
+      "id": "2070804115509190704",
+      "text": "UKMTO WARNING 076-26\n\nClick here to view UKMTO Products⤵️\nhttps://t.co/alTxwBuCqv\n\n#MaritimeSecurity #MarSec https://t.co/wVnubqrMdp",
+      "author": {
+        "screenName": "UK_MTO",
+        "name": "UKMTO Operations Centre"
+      }
+    },
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2070641328023654546",
+    "text": "The issue with the current MOU status quo is that Iran believes that it secured the right to manage Hormuz and the US is acting like it didn’t.\n\nThe US is encouraging an Omani reroute around Iran (first dark, now in the open)\n\nIf Iran doesn’t challenge the reroute it loses control. It tried radio warning and then went to the main tool in its toolkit: drone strike a ship as a warning.\n\nNow the US can’t let that stand—it initially looked like they would but I guess they were just waiting for markets to close—so it counterstrikes Iranian drone, missile, and radar facilities (i.e., the stuff Iran uses to control the Strait)\n\nNow we wait to see what Iran does in response. If it does nothing, it continues to lose its claim to control of Hormuz. If it meaningfully retaliates it risks blowing up the MOU ceasefire and testing how war-averse Trump really is.\n\nSomeone’s gotta give in.",
+    "createdAt": "2026-06-26T22:52:17+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2070641328023654546",
+    "likes": 830,
+    "retweets": 128,
+    "replies": 54,
+    "quotes": 8,
+    "views": 67367,
+    "engagement": 1218,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2070613532660408725",
+    "text": "weekends are for war https://t.co/QB95Qvz5Xs",
+    "createdAt": "2026-06-26T21:01:50+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2070613532660408725",
+    "likes": 307,
+    "retweets": 26,
+    "replies": 24,
+    "quotes": 2,
+    "views": 28497,
+    "engagement": 413,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HLxMBluWgAAPkjv.jpg"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": {
+      "id": "2070607101207232829",
+      "text": "https://t.co/W4zjNqnmCt",
+      "author": {
+        "screenName": "CENTCOM",
+        "name": "U.S. Central Command"
+      }
+    },
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2070612607099134346",
+    "text": "Every week, I summarize and analyze developments in flat crude prices, calendar spreads, high-frequency inventories, refined products, and positioning data, as well as a taste of the themes I’ve been thinking about or following closely\n\nSubscribe and read: https://t.co/Y9lYBJsm63",
+    "createdAt": "2026-06-26T20:58:10+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2070612607099134346",
+    "likes": 19,
+    "retweets": 4,
+    "replies": 1,
+    "quotes": 0,
+    "views": 5494,
+    "engagement": 29,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2070598402430083119",
+    "text": "https://t.co/mvaShjbuOS",
+    "createdAt": "2026-06-26T20:01:43+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2070598402430083119",
+    "likes": 116,
+    "retweets": 5,
+    "replies": 9,
+    "quotes": 0,
+    "views": 15849,
+    "engagement": 144,
+    "photos": [],
+    "videos": [
+      {
+        "url": "https://video.twimg.com/tweet_video/HLw-RRwXgAAjKjB.mp4"
+      }
+    ],
+    "quotedTweet": {
+      "id": "2070597322489123274",
+      "text": "TRUMP: YOU WILL FIND OUT WHEN ASKED ABOUT IRAN'S ACTIONS IN STRAIT OF HORMUZ",
+      "author": {
+        "screenName": "DeItaone",
+        "name": "*Walter Bloomberg"
+      }
+    },
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2070563744757809554",
+    "text": "sometimes, imo, the reply guys are inadvertently excellent https://t.co/93vxyTnp6b",
+    "createdAt": "2026-06-26T17:44:00+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2070563744757809554",
+    "likes": 357,
+    "retweets": 2,
+    "replies": 24,
+    "quotes": 2,
+    "views": 25582,
+    "engagement": 415,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HLwesQYWoAAQWaT.png"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
     "id": "2071298222031507894",
     "text": "No Iranian missiles hit U.S. assets in Bahrain and Kuwait, official says\nhttps://t.co/urpJiryxNJ",
     "createdAt": "2026-06-28T18:22:33+00:00",
@@ -455,7 +927,7 @@
     "retweets": 4,
     "replies": 1,
     "quotes": 0,
-    "views": 6563,
+    "views": 6625,
     "engagement": 20,
     "photos": [],
     "videos": [],
@@ -474,7 +946,7 @@
     "retweets": 2,
     "replies": 1,
     "quotes": 0,
-    "views": 4742,
+    "views": 4762,
     "engagement": 17,
     "photos": [],
     "videos": [],
@@ -493,7 +965,7 @@
     "retweets": 3,
     "replies": 1,
     "quotes": 0,
-    "views": 4373,
+    "views": 4398,
     "engagement": 20,
     "photos": [],
     "videos": [],
@@ -512,7 +984,7 @@
     "retweets": 1,
     "replies": 1,
     "quotes": 0,
-    "views": 3752,
+    "views": 3770,
     "engagement": 14,
     "photos": [],
     "videos": [],
@@ -531,7 +1003,7 @@
     "retweets": 1,
     "replies": 1,
     "quotes": 0,
-    "views": 3812,
+    "views": 3850,
     "engagement": 11,
     "photos": [],
     "videos": [],
@@ -550,7 +1022,7 @@
     "retweets": 6,
     "replies": 1,
     "quotes": 3,
-    "views": 4900,
+    "views": 4949,
     "engagement": 42,
     "photos": [],
     "videos": [],
@@ -569,7 +1041,7 @@
     "retweets": 5,
     "replies": 1,
     "quotes": 0,
-    "views": 3721,
+    "views": 3736,
     "engagement": 29,
     "photos": [],
     "videos": [],
@@ -588,7 +1060,7 @@
     "retweets": 1,
     "replies": 1,
     "quotes": 0,
-    "views": 3354,
+    "views": 3369,
     "engagement": 11,
     "photos": [],
     "videos": [],
@@ -607,7 +1079,7 @@
     "retweets": 0,
     "replies": 1,
     "quotes": 0,
-    "views": 2949,
+    "views": 2964,
     "engagement": 9,
     "photos": [],
     "videos": [],
@@ -626,7 +1098,7 @@
     "retweets": 1,
     "replies": 0,
     "quotes": 0,
-    "views": 3030,
+    "views": 3049,
     "engagement": 7,
     "photos": [],
     "videos": [],
@@ -645,7 +1117,7 @@
     "retweets": 2,
     "replies": 0,
     "quotes": 1,
-    "views": 3475,
+    "views": 3494,
     "engagement": 13,
     "photos": [],
     "videos": [],
@@ -664,7 +1136,7 @@
     "retweets": 2,
     "replies": 0,
     "quotes": 0,
-    "views": 4208,
+    "views": 4222,
     "engagement": 8,
     "photos": [],
     "videos": [],
@@ -679,13 +1151,36 @@
     "authorName": "JH",
     "authorUsername": "CRUDEOIL231",
     "url": "https://x.com/CRUDEOIL231/status/2071358520059179513",
-    "likes": 104,
+    "likes": 119,
     "retweets": 4,
     "replies": 10,
     "quotes": 1,
-    "views": 8482,
-    "engagement": 135,
+    "views": 9683,
+    "engagement": 150,
     "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2070628310900719878",
+    "text": "After keeping capital allocation on ice for a minute, it looks like the right time to start layering into my mineral equity longs and avg up. I’m already chipping into the junior miners to build a base.\n\nThe real sweet spot for me right now is producers with a structural overlap in copper and molybdenum. Meanwhile the uranium playbook is definitely a slow-burn trade, but that lack of velocity is actually a feature, not a bug—it drastically chokes out the tail risk of an absolute wipeout.\n\nThe primary bear case here is if the AI capex hype completely deflates, taking the massive structural demand for power and infrastructure down with it. But hey, nothing on this tape is ever a 100% lock.\n\nWhile I’m still not 100% sold on clean USD rollover or whether we've seen a total flush in the metals patch, I’m getting the sense that the timing is turning right to start layering in size and just playing the waiting game.\n\n#copper #uranium",
+    "createdAt": "2026-06-26T22:00:34+00:00",
+    "username": "CRUDEOIL231",
+    "authorName": "JH",
+    "authorUsername": "CRUDEOIL231",
+    "url": "https://x.com/CRUDEOIL231/status/2070628310900719878",
+    "likes": 126,
+    "retweets": 7,
+    "replies": 12,
+    "quotes": 2,
+    "views": 15953,
+    "engagement": 170,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HLxWr2sbYAAUxPS.jpg"
+      }
+    ],
     "videos": [],
     "quotedTweet": null,
     "sourceKind": "whitelist"
@@ -698,12 +1193,12 @@
     "authorName": "Energy Headline News",
     "authorUsername": "OilHeadlineNews",
     "url": "https://x.com/OilHeadlineNews/status/2071380040671957065",
-    "likes": 12,
-    "retweets": 0,
-    "replies": 1,
+    "likes": 27,
+    "retweets": 3,
+    "replies": 2,
     "quotes": 0,
-    "views": 1250,
-    "engagement": 14,
+    "views": 2114,
+    "engagement": 37,
     "photos": [],
     "videos": [],
     "quotedTweet": null,
@@ -717,12 +1212,12 @@
     "authorName": "Energy Headline News",
     "authorUsername": "OilHeadlineNews",
     "url": "https://x.com/OilHeadlineNews/status/2071377257122181218",
-    "likes": 3,
+    "likes": 5,
     "retweets": 0,
     "replies": 0,
     "quotes": 0,
-    "views": 1221,
-    "engagement": 3,
+    "views": 1585,
+    "engagement": 5,
     "photos": [],
     "videos": [],
     "quotedTweet": null,
@@ -740,7 +1235,7 @@
     "retweets": 2,
     "replies": 1,
     "quotes": 0,
-    "views": 3208,
+    "views": 3340,
     "engagement": 19,
     "photos": [],
     "videos": [],
@@ -755,12 +1250,12 @@
     "authorName": "Energy Headline News",
     "authorUsername": "OilHeadlineNews",
     "url": "https://x.com/OilHeadlineNews/status/2071345362208538969",
-    "likes": 11,
+    "likes": 12,
     "retweets": 0,
     "replies": 2,
     "quotes": 0,
-    "views": 1214,
-    "engagement": 15,
+    "views": 1258,
+    "engagement": 16,
     "photos": [],
     "videos": [],
     "quotedTweet": null,
@@ -778,7 +1273,7 @@
     "retweets": 1,
     "replies": 2,
     "quotes": 1,
-    "views": 2921,
+    "views": 3004,
     "engagement": 17,
     "photos": [
       {
@@ -799,10 +1294,10 @@
     "url": "https://x.com/OilHeadlineNews/status/2071332309001797663",
     "likes": 14,
     "retweets": 2,
-    "replies": 8,
+    "replies": 9,
     "quotes": 5,
-    "views": 24465,
-    "engagement": 49,
+    "views": 25912,
+    "engagement": 51,
     "photos": [],
     "videos": [],
     "quotedTweet": null,
@@ -820,7 +1315,7 @@
     "retweets": 1,
     "replies": 1,
     "quotes": 1,
-    "views": 2801,
+    "views": 2853,
     "engagement": 12,
     "photos": [
       {
@@ -843,7 +1338,7 @@
     "retweets": 0,
     "replies": 0,
     "quotes": 0,
-    "views": 3144,
+    "views": 3209,
     "engagement": 23,
     "photos": [],
     "videos": [],
@@ -862,7 +1357,7 @@
     "retweets": 0,
     "replies": 0,
     "quotes": 0,
-    "views": 2989,
+    "views": 3036,
     "engagement": 16,
     "photos": [],
     "videos": [],
@@ -881,7 +1376,7 @@
     "retweets": 1,
     "replies": 1,
     "quotes": 0,
-    "views": 3082,
+    "views": 3105,
     "engagement": 19,
     "photos": [],
     "videos": [],
@@ -900,7 +1395,7 @@
     "retweets": 3,
     "replies": 1,
     "quotes": 0,
-    "views": 2966,
+    "views": 2995,
     "engagement": 23,
     "photos": [],
     "videos": [],
@@ -919,7 +1414,7 @@
     "retweets": 1,
     "replies": 0,
     "quotes": 0,
-    "views": 2131,
+    "views": 2144,
     "engagement": 5,
     "photos": [],
     "videos": [],
@@ -938,7 +1433,7 @@
     "retweets": 2,
     "replies": 1,
     "quotes": 2,
-    "views": 19861,
+    "views": 20045,
     "engagement": 30,
     "photos": [],
     "videos": [],
@@ -957,7 +1452,7 @@
     "retweets": 7,
     "replies": 3,
     "quotes": 8,
-    "views": 30827,
+    "views": 30941,
     "engagement": 96,
     "photos": [],
     "videos": [],
@@ -976,7 +1471,7 @@
     "retweets": 0,
     "replies": 1,
     "quotes": 0,
-    "views": 3557,
+    "views": 3564,
     "engagement": 6,
     "photos": [],
     "videos": [],
@@ -1002,7 +1497,7 @@
     "retweets": 0,
     "replies": 0,
     "quotes": 0,
-    "views": 1743,
+    "views": 1745,
     "engagement": 1,
     "photos": [],
     "videos": [],
@@ -1028,7 +1523,7 @@
     "retweets": 1,
     "replies": 0,
     "quotes": 0,
-    "views": 3216,
+    "views": 3233,
     "engagement": 15,
     "photos": [],
     "videos": [],
@@ -1047,7 +1542,7 @@
     "retweets": 0,
     "replies": 0,
     "quotes": 0,
-    "views": 2801,
+    "views": 2814,
     "engagement": 21,
     "photos": [],
     "videos": [],
@@ -1062,12 +1557,12 @@
     "authorName": "Energy Headline News",
     "authorUsername": "OilHeadlineNews",
     "url": "https://x.com/OilHeadlineNews/status/2071255832034001309",
-    "likes": 93,
+    "likes": 94,
     "retweets": 4,
     "replies": 11,
     "quotes": 4,
-    "views": 10233,
-    "engagement": 135,
+    "views": 10304,
+    "engagement": 136,
     "photos": [],
     "videos": [],
     "quotedTweet": null,
@@ -1081,12 +1576,12 @@
     "authorName": "Ole S Hansen",
     "authorUsername": "Ole_S_Hansen",
     "url": "https://x.com/Ole_S_Hansen/status/2071167914397368810",
-    "likes": 64,
+    "likes": 65,
     "retweets": 13,
     "replies": 1,
     "quotes": 0,
-    "views": 10544,
-    "engagement": 92,
+    "views": 10594,
+    "engagement": 93,
     "photos": [
       {
         "url": "https://pbs.twimg.com/media/HL5EOjJWEAA5buk.png"
@@ -1104,12 +1599,12 @@
     "authorName": "Ole S Hansen",
     "authorUsername": "Ole_S_Hansen",
     "url": "https://x.com/Ole_S_Hansen/status/2071168169306157171",
-    "likes": 16,
+    "likes": 18,
     "retweets": 6,
     "replies": 1,
     "quotes": 0,
-    "views": 4302,
-    "engagement": 30,
+    "views": 4326,
+    "engagement": 32,
     "photos": [
       {
         "url": "https://pbs.twimg.com/media/HL5ES0WWEAAjoFB.png"
@@ -1127,12 +1622,12 @@
     "authorName": "Ole S Hansen",
     "authorUsername": "Ole_S_Hansen",
     "url": "https://x.com/Ole_S_Hansen/status/2071168172179239287",
-    "likes": 13,
+    "likes": 14,
     "retweets": 3,
     "replies": 0,
     "quotes": 0,
-    "views": 3768,
-    "engagement": 19,
+    "views": 3781,
+    "engagement": 20,
     "photos": [
       {
         "url": "https://pbs.twimg.com/media/HL5EdgWX0AAMbPg.png"
@@ -1150,12 +1645,12 @@
     "authorName": "Ole S Hansen",
     "authorUsername": "Ole_S_Hansen",
     "url": "https://x.com/Ole_S_Hansen/status/2071161409224704046",
-    "likes": 82,
+    "likes": 84,
     "retweets": 29,
     "replies": 1,
     "quotes": 1,
-    "views": 11624,
-    "engagement": 145,
+    "views": 11707,
+    "engagement": 147,
     "photos": [
       {
         "url": "https://pbs.twimg.com/media/HL4-Uk7XgAAv5fC.jpg"
@@ -1173,12 +1668,12 @@
     "authorName": "Ole S Hansen",
     "authorUsername": "Ole_S_Hansen",
     "url": "https://x.com/Ole_S_Hansen/status/2071158513351471514",
-    "likes": 127,
-    "retweets": 37,
+    "likes": 131,
+    "retweets": 38,
     "replies": 0,
     "quotes": 4,
-    "views": 18930,
-    "engagement": 213,
+    "views": 19138,
+    "engagement": 219,
     "photos": [
       {
         "url": "https://pbs.twimg.com/media/HL46f6nW0AA7QMh.png"
@@ -1200,7 +1695,7 @@
     "retweets": 15,
     "replies": 1,
     "quotes": 1,
-    "views": 10458,
+    "views": 10500,
     "engagement": 80,
     "photos": [
       {
@@ -1223,7 +1718,7 @@
     "retweets": 3,
     "replies": 0,
     "quotes": 0,
-    "views": 3068,
+    "views": 3074,
     "engagement": 18,
     "photos": [
       {
@@ -1232,6 +1727,81 @@
     ],
     "videos": [],
     "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2070470263133688124",
+    "text": "Commodities weekly: June reset as peace hopes hawkish Fed and fund liquidation hit crowded longs https://t.co/E3LtU7TSkI via @saxobank https://t.co/86h8LSl0z7",
+    "createdAt": "2026-06-26T11:32:32+00:00",
+    "username": "Ole_S_Hansen",
+    "authorName": "Ole S Hansen",
+    "authorUsername": "Ole_S_Hansen",
+    "url": "https://x.com/Ole_S_Hansen/status/2070470263133688124",
+    "likes": 40,
+    "retweets": 16,
+    "replies": 0,
+    "quotes": 0,
+    "views": 8423,
+    "engagement": 72,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HLvJt--XsAAK5NV.jpg"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2070406844531536322",
+    "text": "😂",
+    "createdAt": "2026-06-26T07:20:32+00:00",
+    "username": "Ole_S_Hansen",
+    "authorName": "Ole S Hansen",
+    "authorUsername": "Ole_S_Hansen",
+    "url": "https://x.com/Ole_S_Hansen/status/2070406844531536322",
+    "likes": 28,
+    "retweets": 1,
+    "replies": 3,
+    "quotes": 0,
+    "views": 11829,
+    "engagement": 36,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": {
+      "id": "2070192088516350179",
+      "text": "This is funny - the next phase of the #hydration break in the #worldcup . Watch till the end #england https://t.co/nFrdLvnrL7",
+      "author": {
+        "screenName": "bagshaw2112",
+        "name": "steve"
+      }
+    },
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2070402943308751022",
+    "text": "#Commodities\nThe Bloomberg Commodity Index, which tracks a basket of 25 major futures contracts, is heading for a sixth consecutive weekly loss, down 3% this week and 12% since hitting a record high last month. All sectors, except soft commodities - where a 24% weather-driven surge in cocoa has provided support - are trading lower, led by industrial and precious metals as investors adjust to a stronger dollar, a hawkish Federal Reserve, and the reopening of the Strait of Hormuz. The biggest weekly declines have been recorded in silver (-14%), aluminium (-6%), and crude oil (-6.5%).\n\nOil resumed its decline after tanker transits through the Strait of Hormuz accelerated, following a brief rebound on Thursday when a container ship was struck by an unknown projectile off the coast of Oman. The mini tsunami of released barrels is weighing on the front end of the futures curve, while refined fuel markets remain tight. As a result, refinery margins stay elevated, delaying price relief for end users of diesel, jet fuel, and, not least, gasoline as the Northern Hemisphere driving season reaches its peak.\n\nGold is trading near USD 4,000 for a third consecutive session and is heading for a fourth weekly loss, with investor sentiment still shaken by the recent selloff as markets adjust to the twin headwinds of a hawkish Fed and a stronger dollar. While the technical breakdown continues to weigh on sentiment, continued declines in energy prices and softer bond yields may eventually reduce pressure on the Federal Reserve to tighten policy further, potentially offering some support to the precious metal.",
+    "createdAt": "2026-06-26T07:05:02+00:00",
+    "username": "Ole_S_Hansen",
+    "authorName": "Ole S Hansen",
+    "authorUsername": "Ole_S_Hansen",
+    "url": "https://x.com/Ole_S_Hansen/status/2070402943308751022",
+    "likes": 56,
+    "retweets": 11,
+    "replies": 3,
+    "quotes": 0,
+    "views": 11541,
+    "engagement": 84,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": {
+      "id": "2070396083696500863",
+      "text": "Market Quick Take - 26 June 2026 https://t.co/pja15U1JO7 via @saxobank https://t.co/Rp2V8qQwvy",
+      "author": {
+        "screenName": "cottonfields",
+        "name": "Koen Hoorelbeke"
+      }
+    },
     "sourceKind": "whitelist"
   }
 ]
