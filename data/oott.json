@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2077917325593059565",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 56,
-    "retweets": 6,
-    "replies": 1,
-    "engagement": 71,
+    "likes": 78,
+    "retweets": 7,
+    "replies": 4,
+    "engagement": 104,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10071,
-    "score": 10071
+    "rawScore": 10104,
+    "score": 10104
   },
   {
     "id": "2077925994917179703",
@@ -30,12 +30,31 @@
     "hasPhoto": false,
     "likes": 2,
     "retweets": 1,
-    "replies": 1,
-    "engagement": 7,
+    "replies": 2,
+    "engagement": 10,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10007,
-    "score": 10007
+    "rawScore": 10010,
+    "score": 10010
+  },
+  {
+    "id": "2077949357979258883",
+    "text": "3-2-1 crack spread is now $70.32/bbl, highest in history. https://t.co/LpwP4P88y7",
+    "createdAt": "2026-07-17T02:51:48+00:00",
+    "tweetTime": 1784256708000,
+    "username": "HFI_Research",
+    "displayName": "HFI Research",
+    "url": "https://x.com/HFI_Research/status/2077949357979258883",
+    "photoUrl": "https://pbs.twimg.com/media/HNZb7braoAAzK4z.jpg",
+    "hasPhoto": true,
+    "likes": 230,
+    "retweets": 46,
+    "replies": 1,
+    "engagement": 325,
+    "isRetweet": false,
+    "relevance": 8,
+    "rawScore": 8625,
+    "score": 8625
   },
   {
     "id": "2077836667835056431",
@@ -47,14 +66,14 @@
     "url": "https://x.com/staunovo/status/2077836667835056431",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 14,
+    "likes": 17,
     "retweets": 4,
     "replies": 0,
-    "engagement": 22,
+    "engagement": 25,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48022,
-    "score": 40819
+    "rawScore": 48025,
+    "score": 31216
   },
   {
     "id": "2077836540143886740",
@@ -66,14 +85,14 @@
     "url": "https://x.com/staunovo/status/2077836540143886740",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 13,
+    "likes": 14,
     "retweets": 2,
     "replies": 0,
-    "engagement": 17,
+    "engagement": 18,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10017,
-    "score": 8514
+    "rawScore": 10018,
+    "score": 6512
   },
   {
     "id": "2077836165529403644",
@@ -92,7 +111,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20014,
-    "score": 17012
+    "score": 13009
   },
   {
     "id": "2077794721175314902",
@@ -104,33 +123,14 @@
     "url": "https://x.com/Rory_Johnston/status/2077794721175314902",
     "photoUrl": "https://pbs.twimg.com/media/HNXOm0UWcAATT_P.jpg",
     "hasPhoto": true,
-    "likes": 143,
-    "retweets": 21,
+    "likes": 147,
+    "retweets": 23,
     "replies": 8,
-    "engagement": 209,
+    "engagement": 217,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10509,
-    "score": 6831
-  },
-  {
-    "id": "2077776791054241871",
-    "text": "Spending the day with Chinese oil data.\n\nWould appreciate it if no would did anything distracting. https://t.co/ExPzo4cqjs",
-    "createdAt": "2026-07-16T15:26:04+00:00",
-    "tweetTime": 1784215564000,
-    "username": "Rory_Johnston",
-    "displayName": "Rory Johnston",
-    "url": "https://x.com/Rory_Johnston/status/2077776791054241871",
-    "photoUrl": "https://pbs.twimg.com/media/HNW-8IzWgAAYih3.png",
-    "hasPhoto": true,
-    "likes": 180,
-    "retweets": 4,
-    "replies": 13,
-    "engagement": 227,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10527,
-    "score": 6843
+    "rawScore": 10517,
+    "score": 6836
   },
   {
     "id": "2077903603000365164",
@@ -142,14 +142,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2077903603000365164",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 17,
+    "likes": 18,
     "retweets": 3,
     "replies": 0,
-    "engagement": 23,
+    "engagement": 24,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28023,
-    "score": 28023
+    "rawScore": 28024,
+    "score": 23820
   },
   {
     "id": "2077846612374700164",
@@ -161,14 +161,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2077846612374700164",
     "photoUrl": "https://pbs.twimg.com/media/HNX-ey1W0AAzO84.jpg",
     "hasPhoto": true,
-    "likes": 54,
-    "retweets": 3,
+    "likes": 67,
+    "retweets": 6,
     "replies": 4,
-    "engagement": 72,
+    "engagement": 91,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10372,
-    "score": 8816
+    "rawScore": 10391,
+    "score": 8832
   },
   {
     "id": "2077889092407431436",
@@ -180,13 +180,13 @@
     "url": "https://x.com/TankerTrackers/status/2077889092407431436",
     "photoUrl": "https://pbs.twimg.com/media/HNYjP_OXMAEnukd.png",
     "hasPhoto": true,
-    "likes": 84,
-    "retweets": 20,
-    "replies": 1,
-    "engagement": 127,
+    "likes": 101,
+    "retweets": 24,
+    "replies": 2,
+    "engagement": 155,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20427,
-    "score": 20427
+    "rawScore": 20455,
+    "score": 17387
   }
 ]
