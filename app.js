@@ -8,6 +8,8 @@ const YAHOO_QUOTE_RANGE = '1d';
 const YAHOO_QUOTE_INTERVAL = '1m';
 const YAHOO_SETTLEMENT_RANGE = '1mo';
 const YAHOO_SETTLEMENT_INTERVAL = '1d';
+const YAHOO_BRENT_FRONT_MONTH_OFFSET = 2;
+const YAHOO_FUTURES_MONTH_CODES = ['F', 'G', 'H', 'J', 'K', 'M', 'N', 'Q', 'U', 'V', 'X', 'Z'];
 const PRICE_CHART_RANGE = '5d';
 const PRICE_CHART_INTERVAL = '5m';
 const TV_FALLBACK_LOOKAHEAD_SEC = 15 * 60;
@@ -94,13 +96,13 @@ function parseDateMs(value) {
   return Number.isFinite(ms) ? ms : null;
 }
 
-function getSgtDateParts(dateLike = new Date()) {
+function getDatePartsInTimeZone(dateLike = new Date(), timeZone = 'UTC') {
   const date = dateLike instanceof Date ? dateLike : new Date(dateLike);
   if (Number.isNaN(date.getTime())) return null;
   try {
     const parts = Object.fromEntries(
       new Intl.DateTimeFormat('en-CA', {
-        timeZone: 'Asia/Singapore', year: 'numeric', month: '2-digit', day: '2-digit'
+        timeZone, year: 'numeric', month: '2-digit', day: '2-digit'
       }).formatToParts(date).filter(p => p.type !== 'literal').map(p => [p.type, p.value])
     );
     return {
@@ -109,6 +111,23 @@ function getSgtDateParts(dateLike = new Date()) {
       day: Number(parts.day),
     };
   } catch { return null; }
+}
+
+function getSgtDateParts(dateLike = new Date()) {
+  return getDatePartsInTimeZone(dateLike, 'Asia/Singapore');
+}
+
+function getYahooFuturesContractSymbol(root, monthOffset, dateLike = new Date(), suffix = '.NYM') {
+  const parts = getDatePartsInTimeZone(dateLike, 'America/New_York');
+  if (!parts || !root) return `${root || ''}=F`;
+  const monthIndex = parts.month - 1 + monthOffset;
+  const contractYear = parts.year + Math.floor(monthIndex / 12);
+  const normalizedMonthIndex = ((monthIndex % 12) + 12) % 12;
+  return `${root}${YAHOO_FUTURES_MONTH_CODES[normalizedMonthIndex]}${String(contractYear).slice(-2)}${suffix}`;
+}
+
+function getYahooBrentFrontMonthSymbol(dateLike = new Date()) {
+  return getYahooFuturesContractSymbol('BZ', YAHOO_BRENT_FRONT_MONTH_OFFSET, dateLike);
 }
 
 function getSGTDayKey(dateLike) {
@@ -846,12 +865,13 @@ function buildQuoteFallbackData(raw, quote, settlementRaw = null) {
 }
 
 async function fetchPrices() {
+  const brentYahooSymbol = getYahooBrentFrontMonthSymbol();
   const [brentRaw, wtiRaw, brentSettlementRaw, wtiSettlementRaw, brentQuoteRaw, wtiQuoteRaw, brentTv, wtiTv] = await Promise.all([
-    fetchRawChartData('BZ=F'),
+    fetchRawChartData(brentYahooSymbol),
     fetchRawChartData('CL=F'),
-    fetchYahooSettlementData('BZ=F'),
+    fetchYahooSettlementData(brentYahooSymbol),
     fetchYahooSettlementData('CL=F'),
-    fetchYahooQuote('BZ=F'),
+    fetchYahooQuote(brentYahooSymbol),
     fetchYahooQuote('CL=F'),
     fetchTradingViewQuote('brent'),
     fetchTradingViewQuote('wti'),
@@ -1203,7 +1223,10 @@ if (typeof globalThis !== 'undefined') {
     getReferenceCloseInfo,
     getSettlementCloseInfo,
     formatSGTCompact,
+    getDatePartsInTimeZone,
     getSgtDateParts,
+    getYahooFuturesContractSymbol,
+    getYahooBrentFrontMonthSymbol,
     normalizeOottPost,
     mergeOottPosts,
     needsLiveOottRefresh,

@@ -92,6 +92,14 @@ test('price chart fetch uses the stable Yahoo intraday range', () => {
   assert.equal(hooks.PRICE_CHART_INTERVAL, '5m');
 });
 
+test('brent yahoo symbol uses the front month contract instead of Yahoo BZ=F', () => {
+  const hooks = loadAppHooks();
+
+  assert.equal(hooks.getYahooBrentFrontMonthSymbol(new Date('2026-07-23T08:00:00Z')), 'BZU26.NYM');
+  assert.equal(hooks.getYahooBrentFrontMonthSymbol(new Date('2026-08-03T08:00:00Z')), 'BZV26.NYM');
+  assert.equal(hooks.getYahooBrentFrontMonthSymbol(new Date('2026-11-15T08:00:00Z')), 'BZF27.NYM');
+});
+
 test('tradingview fallback turns on when yahoo has not entered the current session', () => {
   const hooks = loadAppHooks();
   const raw = {
