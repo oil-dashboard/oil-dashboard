@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2080564949299155226",
     "photoUrl": "https://pbs.twimg.com/media/HN-myvhbIAAvESH.jpg",
     "hasPhoto": true,
-    "likes": 27,
+    "likes": 30,
     "retweets": 1,
     "replies": 0,
-    "engagement": 29,
+    "engagement": 32,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18329,
-    "score": 18329
+    "rawScore": 18332,
+    "score": 18332
   },
   {
     "id": "2080549403257901515",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JavierBlas/status/2080549403257901515",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 314,
-    "retweets": 77,
-    "replies": 17,
-    "engagement": 519,
+    "likes": 376,
+    "retweets": 84,
+    "replies": 18,
+    "engagement": 598,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38519,
-    "score": 38519
+    "rawScore": 38598,
+    "score": 32808
   },
   {
     "id": "2080492080095478207",
@@ -47,14 +47,14 @@
     "url": "https://x.com/HFI_Research/status/2080492080095478207",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 169,
+    "likes": 180,
     "retweets": 13,
     "replies": 1,
-    "engagement": 198,
+    "engagement": 209,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18198,
-    "score": 15468
+    "rawScore": 18209,
+    "score": 11836
   },
   {
     "id": "2080442058226229482",
@@ -66,14 +66,14 @@
     "url": "https://x.com/HFI_Research/status/2080442058226229482",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 233,
+    "likes": 238,
     "retweets": 42,
     "replies": 1,
-    "engagement": 320,
+    "engagement": 325,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10320,
-    "score": 6708
+    "rawScore": 10325,
+    "score": 6711
   },
   {
     "id": "2080587348161466401",
@@ -85,14 +85,14 @@
     "url": "https://x.com/staunovo/status/2080587348161466401",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 4,
+    "likes": 6,
     "retweets": 0,
     "replies": 0,
-    "engagement": 4,
+    "engagement": 6,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30004,
-    "score": 30004
+    "rawScore": 30006,
+    "score": 30006
   },
   {
     "id": "2080564146718818441",
@@ -104,14 +104,14 @@
     "url": "https://x.com/staunovo/status/2080564146718818441",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 5,
+    "likes": 6,
     "retweets": 2,
     "replies": 0,
-    "engagement": 9,
+    "engagement": 10,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28009,
-    "score": 28009
+    "rawScore": 28010,
+    "score": 28010
   },
   {
     "id": "2080559755236429903",
@@ -123,13 +123,32 @@
     "url": "https://x.com/staunovo/status/2080559755236429903",
     "photoUrl": "https://pbs.twimg.com/media/HN-iEIQXwAADSD8.png",
     "hasPhoto": true,
-    "likes": 9,
+    "likes": 10,
     "retweets": 2,
     "replies": 0,
-    "engagement": 13,
+    "engagement": 14,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28313,
-    "score": 28313
+    "rawScore": 28314,
+    "score": 28314
+  },
+  {
+    "id": "2080599227445526966",
+    "text": "I am waiting for the salvo of apocalyptic forecasts like $150/200 per barrel during current US/Iran confrontation as my entry point to short crude oil #oott #crudeoil",
+    "createdAt": "2026-07-24T10:21:26+00:00",
+    "tweetTime": 1784888486000,
+    "username": "crudeoilreport",
+    "displayName": "Crude Oil Report",
+    "url": "https://x.com/crudeoilreport/status/2080599227445526966",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 1,
+    "isRetweet": false,
+    "relevance": 40,
+    "rawScore": 40001,
+    "score": 40001
   }
 ]
