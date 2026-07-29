@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2082445317367369888",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 7,
-    "retweets": 0,
+    "likes": 22,
+    "retweets": 2,
     "replies": 0,
-    "engagement": 7,
+    "engagement": 26,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40007,
-    "score": 40007
+    "rawScore": 40026,
+    "score": 40026
   },
   {
     "id": "2082386374917750889",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JavierBlas/status/2082386374917750889",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 203,
-    "retweets": 59,
-    "replies": 9,
-    "engagement": 348,
+    "likes": 216,
+    "retweets": 61,
+    "replies": 10,
+    "engagement": 368,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20348,
-    "score": 17296
+    "rawScore": 20368,
+    "score": 17313
   },
   {
     "id": "2082381334316536090",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2082381334316536090",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 227,
-    "retweets": 29,
+    "likes": 250,
+    "retweets": 32,
     "replies": 9,
-    "engagement": 312,
+    "engagement": 341,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38312,
-    "score": 32565
+    "rawScore": 38341,
+    "score": 32590
   },
   {
     "id": "2082448691646931127",
@@ -66,14 +66,14 @@
     "url": "https://x.com/staunovo/status/2082448691646931127",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 0,
+    "likes": 5,
     "retweets": 0,
     "replies": 0,
-    "engagement": 0,
+    "engagement": 5,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20000,
-    "score": 20000
+    "rawScore": 20005,
+    "score": 20005
   },
   {
     "id": "2082448580128723363",
@@ -85,14 +85,33 @@
     "url": "https://x.com/staunovo/status/2082448580128723363",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 0,
+    "likes": 4,
     "retweets": 0,
-    "replies": 0,
-    "engagement": 0,
+    "replies": 1,
+    "engagement": 7,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10000,
-    "score": 10000
+    "rawScore": 10007,
+    "score": 10007
+  },
+  {
+    "id": "2082452230247006538",
+    "text": "Spoke with @TheAtlantic about the oil market's ongoing transfixed fascination with what's happening in China.\n\nWhat we know, what we still don't—and may never—know about China's crude import collapse, and what it all means for the future of the oil market.\nhttps://t.co/llIRUTCIyZ",
+    "createdAt": "2026-07-29T13:04:36+00:00",
+    "tweetTime": 1785330276000,
+    "username": "Rory_Johnston",
+    "displayName": "Rory Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2082452230247006538",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 63,
+    "retweets": 8,
+    "replies": 4,
+    "engagement": 91,
+    "isRetweet": false,
+    "relevance": 20,
+    "rawScore": 20091,
+    "score": 20091
   },
   {
     "id": "2082440639195525272",
@@ -104,14 +123,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2082440639195525272",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 9,
+    "likes": 11,
     "retweets": 1,
     "replies": 1,
-    "engagement": 14,
+    "engagement": 16,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10014,
-    "score": 10014
+    "rawScore": 10016,
+    "score": 10016
   },
   {
     "id": "2082436071732789745",
@@ -123,14 +142,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2082436071732789745",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 3,
-    "retweets": 0,
+    "likes": 6,
+    "retweets": 1,
     "replies": 1,
-    "engagement": 6,
+    "engagement": 11,
     "isRetweet": false,
     "relevance": 8,
-    "rawScore": 8006,
-    "score": 8006
+    "rawScore": 8011,
+    "score": 8011
   },
   {
     "id": "2082435922725949917",
@@ -142,13 +161,13 @@
     "url": "https://x.com/OilHeadlineNews/status/2082435922725949917",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 9,
-    "retweets": 0,
+    "likes": 16,
+    "retweets": 1,
     "replies": 0,
-    "engagement": 9,
+    "engagement": 18,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10009,
-    "score": 10009
+    "rawScore": 10018,
+    "score": 10018
   }
 ]
