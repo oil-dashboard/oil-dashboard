@@ -28,14 +28,14 @@
     "url": "https://x.com/JavierBlas/status/2082883023956013228",
     "photoUrl": "https://pbs.twimg.com/media/HOfisMgWwAAMnCX.png",
     "hasPhoto": true,
-    "likes": 352,
-    "retweets": 124,
+    "likes": 366,
+    "retweets": 125,
     "replies": 23,
-    "engagement": 669,
+    "engagement": 685,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10969,
-    "score": 7130
+    "rawScore": 10985,
+    "score": 7140
   },
   {
     "id": "2082869642448564675",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2082869642448564675",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 283,
-    "retweets": 36,
+    "likes": 293,
+    "retweets": 38,
     "replies": 33,
-    "engagement": 454,
+    "engagement": 468,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10454,
-    "score": 6795
+    "rawScore": 10468,
+    "score": 6804
   },
   {
     "id": "2082853240727544008",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2082853240727544008",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 120,
+    "likes": 123,
     "retweets": 23,
-    "replies": 15,
-    "engagement": 211,
+    "replies": 16,
+    "engagement": 217,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30211,
-    "score": 19637
+    "rawScore": 30217,
+    "score": 13598
   },
   {
     "id": "2082847341376057837",
@@ -85,14 +85,14 @@
     "url": "https://x.com/JavierBlas/status/2082847341376057837",
     "photoUrl": "https://pbs.twimg.com/media/HOfBt3YWkAAfiOT.jpg",
     "hasPhoto": true,
-    "likes": 120,
+    "likes": 122,
     "retweets": 20,
     "replies": 7,
-    "engagement": 181,
+    "engagement": 183,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10481,
-    "score": 6813
+    "rawScore": 10483,
+    "score": 4717
   },
   {
     "id": "2082830831576367177",
@@ -123,14 +123,14 @@
     "url": "https://x.com/JavierBlas/status/2082738276700389570",
     "photoUrl": "https://pbs.twimg.com/media/HOdfN_YXwAAolpe.jpg",
     "hasPhoto": true,
-    "likes": 269,
+    "likes": 277,
     "retweets": 45,
     "replies": 9,
-    "engagement": 386,
+    "engagement": 394,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10686,
-    "score": 3206
+    "rawScore": 10694,
+    "score": 3208
   },
   {
     "id": "2082710955213942939",
@@ -142,13 +142,13 @@
     "url": "https://x.com/JavierBlas/status/2082710955213942939",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 615,
+    "likes": 616,
     "retweets": 82,
     "replies": 16,
-    "engagement": 827,
+    "engagement": 828,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38827,
+    "rawScore": 38828,
     "score": 11648
   },
   {
@@ -161,14 +161,14 @@
     "url": "https://x.com/HFI_Research/status/2082855825492845038",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 161,
+    "likes": 163,
     "retweets": 13,
     "replies": 1,
-    "engagement": 190,
+    "engagement": 192,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10190,
-    "score": 6624
+    "rawScore": 10192,
+    "score": 4586
   },
   {
     "id": "2082839031445152001",
@@ -209,25 +209,6 @@
     "score": 5559
   },
   {
-    "id": "2082688737109311855",
-    "text": "Fundamentally, we have an inherent issue in crude oil production. That’s because the Strait of Hormuz is closed, inbound tankers remain nonexistent, and Middle East producers cannot offload onshore crude oil production into tankers, thus shutting in production.\n\nHowever, the market is instead focusing on product tightness because... you guessed it, product prices haven’t sold off. Pavlov’s experiment is on crude, not products, which is inherently making people think that product is where the issue is.\n\nNow don’t misunderstand my point here: petroleum products are an issue, but China has spare refining capacity. To say that we have serious structural issues in petroleum products is like saying we don’t have enough steaks because we don’t have enough butcher shops. No man, we don’t have enough cows.",
-    "createdAt": "2026-07-30T04:44:24+00:00",
-    "tweetTime": 1785386664000,
-    "username": "HFI_Research",
-    "displayName": "HFI Research",
-    "url": "https://x.com/HFI_Research/status/2082688737109311855",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 474,
-    "retweets": 40,
-    "replies": 9,
-    "engagement": 581,
-    "isRetweet": false,
-    "relevance": 58,
-    "rawScore": 58581,
-    "score": 17574
-  },
-  {
     "id": "2082948422227669179",
     "text": "Shipping volume remains depressed through Middle East chokepoints https://t.co/rQnKXBbKO2",
     "createdAt": "2026-07-30T21:56:17+00:00",
@@ -237,14 +218,14 @@
     "url": "https://x.com/staunovo/status/2082948422227669179",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 11,
+    "likes": 12,
     "retweets": 2,
     "replies": 2,
-    "engagement": 21,
+    "engagement": 22,
     "isRetweet": false,
     "relevance": 8,
-    "rawScore": 8021,
-    "score": 6818
+    "rawScore": 8022,
+    "score": 6819
   },
   {
     "id": "2082918955165900888",
@@ -256,14 +237,14 @@
     "url": "https://x.com/staunovo/status/2082918955165900888",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 33,
+    "likes": 42,
     "retweets": 0,
     "replies": 3,
-    "engagement": 42,
+    "engagement": 51,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48042,
-    "score": 40836
+    "rawScore": 48051,
+    "score": 31233
   },
   {
     "id": "2082916627989803301",
@@ -282,7 +263,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10005,
-    "score": 8504
+    "score": 6503
   },
   {
     "id": "2082916236829040885",
@@ -294,14 +275,14 @@
     "url": "https://x.com/staunovo/status/2082916236829040885",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 6,
+    "likes": 7,
     "retweets": 0,
     "replies": 0,
-    "engagement": 6,
+    "engagement": 7,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28006,
-    "score": 23805
+    "rawScore": 28007,
+    "score": 18205
   },
   {
     "id": "2082917119587410019",
@@ -313,14 +294,14 @@
     "url": "https://x.com/Rory_Johnston/status/2082917119587410019",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 366,
-    "retweets": 51,
-    "replies": 21,
-    "engagement": 531,
+    "likes": 387,
+    "retweets": 56,
+    "replies": 22,
+    "engagement": 565,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10531,
-    "score": 8951
+    "rawScore": 10565,
+    "score": 6867
   },
   {
     "id": "2082917949610840078",
@@ -332,14 +313,14 @@
     "url": "https://x.com/Rory_Johnston/status/2082917949610840078",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 54,
+    "likes": 55,
     "retweets": 1,
     "replies": 1,
-    "engagement": 59,
+    "engagement": 60,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28059,
-    "score": 23850
+    "rawScore": 28060,
+    "score": 18239
   },
   {
     "id": "2082911545651048569",
@@ -351,14 +332,14 @@
     "url": "https://x.com/Rory_Johnston/status/2082911545651048569",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 110,
+    "likes": 117,
     "retweets": 8,
     "replies": 13,
-    "engagement": 165,
+    "engagement": 172,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20165,
-    "score": 17140
+    "rawScore": 20172,
+    "score": 13112
   },
   {
     "id": "2082843600744784223",
@@ -370,14 +351,14 @@
     "url": "https://x.com/Rory_Johnston/status/2082843600744784223",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 139,
+    "likes": 143,
     "retweets": 8,
-    "replies": 36,
-    "engagement": 263,
+    "replies": 37,
+    "engagement": 270,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10263,
-    "score": 4618
+    "rawScore": 10270,
+    "score": 4622
   },
   {
     "id": "2082819673440018658",
@@ -389,14 +370,14 @@
     "url": "https://x.com/Rory_Johnston/status/2082819673440018658",
     "photoUrl": "https://pbs.twimg.com/media/HOepBAoWUAAtIAf.jpg",
     "hasPhoto": true,
-    "likes": 459,
-    "retweets": 87,
+    "likes": 472,
+    "retweets": 89,
     "replies": 34,
-    "engagement": 735,
+    "engagement": 752,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 21035,
-    "score": 9466
+    "rawScore": 21052,
+    "score": 9473
   },
   {
     "id": "2082961240498766302",
@@ -408,14 +389,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2082961240498766302",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 15,
+    "likes": 16,
     "retweets": 1,
     "replies": 1,
-    "engagement": 20,
+    "engagement": 21,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28020,
-    "score": 23817
+    "rawScore": 28021,
+    "score": 23818
   },
   {
     "id": "2082959469302972494",
@@ -427,14 +408,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2082959469302972494",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 14,
+    "likes": 15,
     "retweets": 0,
     "replies": 0,
-    "engagement": 14,
+    "engagement": 15,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28014,
-    "score": 23812
+    "rawScore": 28015,
+    "score": 23813
   },
   {
     "id": "2082956631655293416",
@@ -446,14 +427,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2082956631655293416",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 18,
+    "likes": 19,
     "retweets": 2,
     "replies": 0,
-    "engagement": 22,
+    "engagement": 23,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38022,
-    "score": 32319
+    "rawScore": 38023,
+    "score": 32320
   },
   {
     "id": "2082752867908075952",
