@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2084193397389345090",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 7,
+    "likes": 9,
     "retweets": 0,
     "replies": 0,
-    "engagement": 7,
+    "engagement": 9,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10007,
-    "score": 10007
+    "rawScore": 10009,
+    "score": 10009
   },
   {
     "id": "2084209932153340052",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JavierBlas/status/2084209932153340052",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 98,
-    "retweets": 25,
-    "replies": 11,
-    "engagement": 181,
+    "likes": 316,
+    "retweets": 77,
+    "replies": 26,
+    "engagement": 548,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10181,
-    "score": 10181
+    "rawScore": 10548,
+    "score": 10548
   },
   {
     "id": "2084197199353667615",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2084197199353667615",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 115,
-    "retweets": 31,
-    "replies": 10,
-    "engagement": 207,
+    "likes": 168,
+    "retweets": 41,
+    "replies": 11,
+    "engagement": 283,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18207,
-    "score": 18207
+    "rawScore": 18283,
+    "score": 18283
   },
   {
     "id": "2084183102876680215",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2084183102876680215",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 138,
-    "retweets": 25,
-    "replies": 21,
-    "engagement": 251,
+    "likes": 187,
+    "retweets": 41,
+    "replies": 26,
+    "engagement": 347,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20251,
-    "score": 20251
+    "rawScore": 20347,
+    "score": 20347
   },
   {
     "id": "2084201089562558739",
@@ -85,14 +85,14 @@
     "url": "https://x.com/HFI_Research/status/2084201089562558739",
     "photoUrl": "https://pbs.twimg.com/media/HOyR2FhaUAAukVL.jpg",
     "hasPhoto": true,
-    "likes": 89,
-    "retweets": 7,
-    "replies": 0,
-    "engagement": 103,
+    "likes": 134,
+    "retweets": 12,
+    "replies": 1,
+    "engagement": 161,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18403,
-    "score": 18403
+    "rawScore": 18461,
+    "score": 18461
   },
   {
     "id": "2084182785351438772",
@@ -104,14 +104,14 @@
     "url": "https://x.com/HFI_Research/status/2084182785351438772",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 135,
-    "retweets": 13,
+    "likes": 152,
+    "retweets": 14,
     "replies": 0,
-    "engagement": 161,
+    "engagement": 180,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18161,
-    "score": 18161
+    "rawScore": 18180,
+    "score": 18180
   },
   {
     "id": "2084215766388228307",
@@ -123,14 +123,14 @@
     "url": "https://x.com/staunovo/status/2084215766388228307",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 0,
+    "likes": 5,
     "retweets": 0,
     "replies": 0,
-    "engagement": 0,
+    "engagement": 5,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38000,
-    "score": 38000
+    "rawScore": 38005,
+    "score": 38005
   },
   {
     "id": "2084213260492873844",
@@ -142,14 +142,14 @@
     "url": "https://x.com/staunovo/status/2084213260492873844",
     "photoUrl": "https://pbs.twimg.com/media/HOyc6euXsAAwPyT.jpg",
     "hasPhoto": true,
-    "likes": 2,
+    "likes": 8,
     "retweets": 0,
     "replies": 0,
-    "engagement": 2,
+    "engagement": 8,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20302,
-    "score": 20302
+    "rawScore": 20308,
+    "score": 20308
   },
   {
     "id": "2084186057910690299",
@@ -161,14 +161,14 @@
     "url": "https://x.com/staunovo/status/2084186057910690299",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 8,
+    "likes": 10,
     "retweets": 0,
     "replies": 0,
-    "engagement": 8,
+    "engagement": 10,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38008,
-    "score": 38008
+    "rawScore": 38010,
+    "score": 38010
   },
   {
     "id": "2084182977207034330",
@@ -180,14 +180,14 @@
     "url": "https://x.com/staunovo/status/2084182977207034330",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 4,
+    "likes": 5,
     "retweets": 1,
     "replies": 1,
-    "engagement": 9,
+    "engagement": 10,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28009,
-    "score": 28009
+    "rawScore": 28010,
+    "score": 28010
   },
   {
     "id": "2084182730619662452",
@@ -199,13 +199,13 @@
     "url": "https://x.com/staunovo/status/2084182730619662452",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 12,
-    "retweets": 3,
+    "likes": 15,
+    "retweets": 5,
     "replies": 0,
-    "engagement": 18,
+    "engagement": 25,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38018,
-    "score": 38018
+    "rawScore": 38025,
+    "score": 38025
   }
 ]
