@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2085606625134670001",
     "photoUrl": "https://pbs.twimg.com/media/HPGPcF8aYAAmelt.jpg",
     "hasPhoto": true,
-    "likes": 28,
+    "likes": 33,
     "retweets": 4,
     "replies": 0,
-    "engagement": 36,
+    "engagement": 41,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28336,
-    "score": 28336
+    "rawScore": 28341,
+    "score": 28341
   },
   {
     "id": "2085610286501736475",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JavierBlas/status/2085610286501736475",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 32,
+    "likes": 38,
     "retweets": 6,
     "replies": 0,
-    "engagement": 44,
+    "engagement": 50,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10044,
-    "score": 10044
+    "rawScore": 10050,
+    "score": 10050
   },
   {
     "id": "2085601937953837475",
@@ -47,14 +47,14 @@
     "url": "https://x.com/HFI_Research/status/2085601937953837475",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 338,
-    "retweets": 54,
+    "likes": 395,
+    "retweets": 63,
     "replies": 8,
-    "engagement": 470,
+    "engagement": 545,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28470,
-    "score": 28470
+    "rawScore": 28545,
+    "score": 24263
   },
   {
     "id": "2085636478562934831",
@@ -112,25 +112,6 @@
     "relevance": 10,
     "rawScore": 10006,
     "score": 10006
-  },
-  {
-    "id": "2085616703472333145",
-    "text": "#China’s crude oil imports rebounded last month from a near-decade low, after flows through the Strait of Hormuz picked up and refiners boosted purchases from nations outside the Middle East including Russia.\n\nPipeline and seaborne flows rose to 35.73 million tons in July, according to customs data released Friday. That’s up 22% from June, when shipments hit the lowest since October 2016. The volume for last month is equivalent to 8.45 million barrels a day, well below the pace in the same period last year.\n#oott https://t.co/9TQWv2W5iK",
-    "createdAt": "2026-08-07T06:39:05+00:00",
-    "tweetTime": 1786084745000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2085616703472333145",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 6,
-    "retweets": 1,
-    "replies": 0,
-    "engagement": 8,
-    "isRetweet": false,
-    "relevance": 50,
-    "rawScore": 50008,
-    "score": 50008
   },
   {
     "id": "2085565121015734396",
