@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2087062913169391827",
     "photoUrl": "https://pbs.twimg.com/media/HPa8MMmaYAEXDYt.jpg",
     "hasPhoto": true,
-    "likes": 11,
-    "retweets": 0,
-    "replies": 1,
-    "engagement": 14,
+    "likes": 23,
+    "retweets": 3,
+    "replies": 2,
+    "engagement": 35,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10314,
-    "score": 10314
+    "rawScore": 10335,
+    "score": 10335
   },
   {
     "id": "2087061050474553346",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JavierBlas/status/2087061050474553346",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 105,
-    "retweets": 20,
-    "replies": 16,
-    "engagement": 193,
+    "likes": 212,
+    "retweets": 38,
+    "replies": 30,
+    "engagement": 378,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20193,
-    "score": 20193
+    "rawScore": 20378,
+    "score": 20378
   },
   {
     "id": "2086805759321346252",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2086805759321346252",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 102,
+    "likes": 103,
     "retweets": 8,
     "replies": 4,
-    "engagement": 130,
+    "engagement": 131,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20130,
-    "score": 9059
+    "rawScore": 20131,
+    "score": 6039
   },
   {
     "id": "2086759830191058951",
@@ -85,14 +85,14 @@
     "url": "https://x.com/HFI_Research/status/2087041823537610847",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 156,
-    "retweets": 31,
+    "likes": 202,
+    "retweets": 41,
     "replies": 4,
-    "engagement": 230,
+    "engagement": 296,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48230,
-    "score": 48230
+    "rawScore": 48296,
+    "score": 48296
   },
   {
     "id": "2086951021776167336",
@@ -104,33 +104,52 @@
     "url": "https://x.com/HFI_Research/status/2086951021776167336",
     "photoUrl": "https://pbs.twimg.com/media/HPZW5LGbEAA4tJy.jpg",
     "hasPhoto": true,
-    "likes": 183,
+    "likes": 192,
     "retweets": 26,
     "replies": 2,
-    "engagement": 241,
+    "engagement": 250,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10541,
-    "score": 6852
+    "rawScore": 10550,
+    "score": 6858
   },
   {
-    "id": "2086938052786815334",
-    "text": "The oil market will never be the same again. Iranian demands make it essentially impossible for there to be a diplomatic resolution. With that, the US faces the inevitable choice of total capitulation or escalation. Both scenarios result in higher oil prices for longer contrary to consensus expectations.",
-    "createdAt": "2026-08-10T22:09:39+00:00",
-    "tweetTime": 1786399779000,
-    "username": "HFI_Research",
-    "displayName": "HFI Research",
-    "url": "https://x.com/HFI_Research/status/2086938052786815334",
+    "id": "2087085905957867680",
+    "text": "#China's oil and gas major CNOOC announced on August 9 that its Phase I development project at the Bozhong 19-6 gas field began full production, with daily oil and gas output exceeding 5,200 metric tons of oil equivalent, or 37,960 barrels per day, state-owned media reported. https://t.co/O7WNMk4iyg",
+    "createdAt": "2026-08-11T07:57:10+00:00",
+    "tweetTime": 1786435030000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2087085905957867680",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 407,
-    "retweets": 48,
-    "replies": 9,
-    "engagement": 530,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 1,
+    "isRetweet": false,
+    "relevance": 20,
+    "rawScore": 20001,
+    "score": 20001
+  },
+  {
+    "id": "2087084489562370549",
+    "text": "An industrial enterprise was on fire in Russia's Orenburg region after an attack by \"enemy drones\", the local governor said on Tuesday. #ootthttps://www.marketscreener.com/news/industrial-enterprise-on-fire-in-russia-s-orenburg-region-after-attack-governor-says-ce7859dade8bf121",
+    "createdAt": "2026-08-11T07:51:33+00:00",
+    "tweetTime": 1786434693000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2087084489562370549",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 1,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10530,
-    "score": 6845
+    "rawScore": 10001,
+    "score": 10001
   },
   {
     "id": "2087064521445650642",
@@ -142,14 +161,14 @@
     "url": "https://x.com/staunovo/status/2087064521445650642",
     "photoUrl": "https://pbs.twimg.com/media/HPa-FXTWkAAmZsj.png",
     "hasPhoto": true,
-    "likes": 8,
-    "retweets": 0,
-    "replies": 0,
-    "engagement": 8,
+    "likes": 22,
+    "retweets": 6,
+    "replies": 1,
+    "engagement": 37,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30308,
-    "score": 30308
+    "rawScore": 30337,
+    "score": 30337
   },
   {
     "id": "2087060113827762363",
@@ -161,14 +180,14 @@
     "url": "https://x.com/staunovo/status/2087060113827762363",
     "photoUrl": "https://pbs.twimg.com/media/HPa6GrnXQAAeiP9.png",
     "hasPhoto": true,
-    "likes": 6,
-    "retweets": 0,
+    "likes": 12,
+    "retweets": 1,
     "replies": 0,
-    "engagement": 6,
+    "engagement": 14,
     "isRetweet": false,
     "relevance": 44,
-    "rawScore": 44306,
-    "score": 44306
+    "rawScore": 44314,
+    "score": 44314
   },
   {
     "id": "2087059805764485277",
@@ -180,52 +199,14 @@
     "url": "https://x.com/staunovo/status/2087059805764485277",
     "photoUrl": "https://pbs.twimg.com/media/HPa5075WoAACH6F.png",
     "hasPhoto": true,
-    "likes": 9,
+    "likes": 15,
     "retweets": 1,
     "replies": 0,
-    "engagement": 11,
+    "engagement": 17,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30311,
-    "score": 30311
-  },
-  {
-    "id": "2087059443577946374",
-    "text": "Ukrainian drones attacked an oil refinery in Russian Orsk, one and a half thousand kilometers from the border\nA fire broke out at the local oil refinery in Orsk, Orenburg Oblast, after a series of explosions. Local residents are publishing videos from the scene showing a plume of smoke above the enterprise, located more than 1500 kilometers from Ukraine.\n#oott https://t.co/OVohPpPZVW",
-    "createdAt": "2026-08-11T06:12:01+00:00",
-    "tweetTime": 1786428721000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2087059443577946374",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 5,
-    "retweets": 2,
-    "replies": 0,
-    "engagement": 9,
-    "isRetweet": false,
-    "relevance": 38,
-    "rawScore": 38009,
-    "score": 38009
-  },
-  {
-    "id": "2087057847792070886",
-    "text": "Aluminum Hits Seven-Week High as Hormuz Impasse Threatens Supply https://t.co/IcNy0FcIAo",
-    "createdAt": "2026-08-11T06:05:41+00:00",
-    "tweetTime": 1786428341000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2087057847792070886",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 9,
-    "retweets": 1,
-    "replies": 0,
-    "engagement": 11,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10011,
-    "score": 10011
+    "rawScore": 30317,
+    "score": 30317
   },
   {
     "id": "2086939468603310138",
@@ -263,7 +244,7 @@
     "isRetweet": false,
     "relevance": 36,
     "rawScore": 36303,
-    "score": 30858
+    "score": 23597
   },
   {
     "id": "2086927926046458276",
@@ -294,14 +275,14 @@
     "url": "https://x.com/crudeoilreport/status/2086912667646673083",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 2,
+    "likes": 3,
     "retweets": 1,
     "replies": 4,
-    "engagement": 16,
+    "engagement": 17,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40016,
-    "score": 26010
+    "rawScore": 40017,
+    "score": 26011
   },
   {
     "id": "2086902861414146346",
@@ -320,7 +301,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20023,
-    "score": 13015
+    "score": 9010
   },
   {
     "id": "2086985346332459503",
@@ -332,14 +313,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2086985346332459503",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 22,
+    "likes": 25,
     "retweets": 6,
     "replies": 1,
-    "engagement": 37,
+    "engagement": 40,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38037,
-    "score": 32331
+    "rawScore": 38040,
+    "score": 32334
   },
   {
     "id": "2086905801403158860",
@@ -358,7 +339,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10014,
-    "score": 6509
+    "score": 4506
   },
   {
     "id": "2086895766162043030",
@@ -377,7 +358,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10008,
-    "score": 6505
+    "score": 4504
   },
   {
     "id": "2086890751397683453",
@@ -389,32 +370,13 @@
     "url": "https://x.com/OilHeadlineNews/status/2086890751397683453",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 9,
+    "likes": 10,
     "retweets": 3,
     "replies": 0,
-    "engagement": 15,
+    "engagement": 16,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20015,
+    "rawScore": 20016,
     "score": 9007
-  },
-  {
-    "id": "2086720711591174151",
-    "text": "#Agriculture: Global food prices rose to a three-year high last month as summer heatwaves and conflicts in Ukraine and the Middle East lifted crop costs, potentially feeding through to higher consumer prices in the coming months. The UN FAO Food Price Index reached its highest since January 2023, although the year-on-year increase remained contained at just 1%. Sugar led the monthly rise at 5.6%, followed by grains at 3.4% and vegetable oils at 2%, while meat fell 2.8% and dairy declined 0.7%.\nhttps://t.co/Q3r6UwCPW9",
-    "createdAt": "2026-08-10T07:46:01+00:00",
-    "tweetTime": 1786347961000,
-    "username": "Ole_S_Hansen",
-    "displayName": "Ole S Hansen",
-    "url": "https://x.com/Ole_S_Hansen/status/2086720711591174151",
-    "photoUrl": "https://pbs.twimg.com/media/HPWDDH3XwAAAw8O.jpg",
-    "hasPhoto": true,
-    "likes": 72,
-    "retweets": 21,
-    "replies": 3,
-    "engagement": 123,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10423,
-    "score": 3127
   }
 ]
