@@ -1,316 +1,116 @@
 [
   {
-    "id": "2087393109571408060",
-    "text": "Quoted in Al Jazeera:\n\n“OPEC crude production can only increase once there is a normalcy in flows in both directions through the Strait of Hormuz,” June Goh, a senior oil market analyst at Sparta Commodities in Singapore, told Al Jazeera.\n\n“Thus, fundamentally, oil prices remain supported at the $85-90 per barrel level barring any new headlines on renewed optimism over the diplomatic talks that have not progressed significantly.”\n\nhttps://t.co/LjEm05cAMg\n\n #oott",
-    "createdAt": "2026-08-12T04:17:53+00:00",
-    "username": "JuneGoh_Sparta",
-    "authorName": "June Goh",
-    "authorUsername": "JuneGoh_Sparta",
-    "url": "https://x.com/JuneGoh_Sparta/status/2087393109571408060",
-    "likes": 78,
-    "retweets": 17,
-    "replies": 3,
-    "quotes": 0,
-    "views": 5405,
-    "engagement": 118,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087653296374726851",
-    "text": "“…Near-record inventories, technological advances and the rise of key exporters such as Brazil and Russia have made the global food system more resilient to this year's \"super\" El Nino than similar past events….”\n\nhttps://t.co/CKa1RXb7gv",
-    "createdAt": "2026-08-12T21:31:47+00:00",
-    "username": "JavierBlas",
-    "authorName": "Javier Blas",
-    "authorUsername": "JavierBlas",
-    "url": "https://x.com/JavierBlas/status/2087653296374726851",
-    "likes": 53,
-    "retweets": 15,
-    "replies": 6,
-    "quotes": 2,
-    "views": 11938,
-    "engagement": 101,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087645088524452214",
-    "text": "We can debate whether the non-Iranian flows via the Strait of Hormuz amount to ~5m b/d, as most tanker trackers say, or ~9m b/d, as the U.S. gov claims. But what’s clear is that the waterway is not fully “blocked.” Quite a lot of oil keeps leaking out.",
-    "createdAt": "2026-08-12T20:59:10+00:00",
-    "username": "JavierBlas",
-    "authorName": "Javier Blas",
-    "authorUsername": "JavierBlas",
-    "url": "https://x.com/JavierBlas/status/2087645088524452214",
-    "likes": 172,
-    "retweets": 27,
-    "replies": 31,
-    "quotes": 4,
-    "views": 34471,
-    "engagement": 300,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": {
-      "id": "2087610756518846642",
-      "text": "Claims and repeated posts by U.S. officials that the Strait of Hormuz is no longer blocked do not change the reality: the Strait of Hormuz remains blocked and will not be reopened until Iran’s conditions are accepted.",
-      "author": {
-        "screenName": "PGSA_IRAN",
-        "name": "PGSA | نهاد مدیریت آبراه خلیج فارس"
-      }
-    },
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087562818878886382",
-    "text": "A chart view of the @IEA revisions to historical global oil demand. Pre 2022 all revisions are negative, post are positive and (cumulatively) very large. https://t.co/QrK5yHpyCH",
-    "createdAt": "2026-08-12T15:32:15+00:00",
-    "username": "JavierBlas",
-    "authorName": "Javier Blas",
-    "authorUsername": "JavierBlas",
-    "url": "https://x.com/JavierBlas/status/2087562818878886382",
-    "likes": 142,
-    "retweets": 33,
-    "replies": 12,
-    "quotes": 8,
-    "views": 55799,
-    "engagement": 256,
-    "photos": [
-      {
-        "url": "https://pbs.twimg.com/media/HPiDQC7W4AEv9K6.png"
-      }
-    ],
-    "videos": [],
-    "quotedTweet": {
-      "id": "2087473201211220360",
-      "text": "The @IEA has once again revised historical annual data for oil consumption (it does so every August), resulting in some significant upgrades to global demand. \n\nThe net result is that 20025 oil consumption is now estimated at 104.8m b/d (that's ~300,000 b/d higher than the last estimate, and ***a huge 1.1m b/d higher*** than where the IEA pegged a year ago 2025 demand). \n\nDespite the huge revision to demand forecasts, the IEA still sees the market last year as oversupplied, with supply running at 106.3m b/d on average. \n\nThe changes also mean that the 105.7m b/d of oil consumption that the IEA now anticipates for 2027 is **higher** than the absolute peak oil demand it forecast a year ago (when it said that global oil consumption would peak in 2029 at 105.6m b/d).",
-      "author": {
-        "screenName": "JavierBlas",
-        "name": "Javier Blas"
-      }
-    },
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087561358942327156",
-    "text": "US imports of Venezuelan oil are at their highest in 9 years.",
-    "createdAt": "2026-08-12T15:26:27+00:00",
-    "username": "JavierBlas",
-    "authorName": "Javier Blas",
-    "authorUsername": "JavierBlas",
-    "url": "https://x.com/JavierBlas/status/2087561358942327156",
-    "likes": 297,
-    "retweets": 65,
-    "replies": 24,
-    "quotes": 4,
-    "views": 34545,
-    "engagement": 487,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087544048135397519",
-    "text": "The US hasn't imported a single barrel of Saudi crude since early July — but in the next few days, a small armada of tankers with Saudi crude (via the Suez Canal / Sumed pipeline) will start to arrive. Freight costs (and the extra days needed to bypass Bab el Mandeb for Asia bound cargoes) redirecting the flows. Just in time for the US.",
-    "createdAt": "2026-08-12T14:17:40+00:00",
-    "username": "JavierBlas",
-    "authorName": "Javier Blas",
-    "authorUsername": "JavierBlas",
-    "url": "https://x.com/JavierBlas/status/2087544048135397519",
-    "likes": 328,
-    "retweets": 47,
-    "replies": 21,
-    "quotes": 4,
-    "views": 55782,
-    "engagement": 476,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087473201211220360",
-    "text": "The @IEA has once again revised historical annual data for oil consumption (it does so every August), resulting in some significant upgrades to global demand. \n\nThe net result is that 20025 oil consumption is now estimated at 104.8m b/d (that's ~300,000 b/d higher than the last estimate, and ***a huge 1.1m b/d higher*** than where the IEA pegged a year ago 2025 demand). \n\nDespite the huge revision to demand forecasts, the IEA still sees the market last year as oversupplied, with supply running at 106.3m b/d on average. \n\nThe changes also mean that the 105.7m b/d of oil consumption that the IEA now anticipates for 2027 is **higher** than the absolute peak oil demand it forecast a year ago (when it said that global oil consumption would peak in 2029 at 105.6m b/d).",
-    "createdAt": "2026-08-12T09:36:09+00:00",
-    "username": "JavierBlas",
-    "authorName": "Javier Blas",
-    "authorUsername": "JavierBlas",
-    "url": "https://x.com/JavierBlas/status/2087473201211220360",
-    "likes": 257,
-    "retweets": 59,
-    "replies": 25,
-    "quotes": 12,
-    "views": 81174,
-    "engagement": 461,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087457341893410840",
-    "text": "CHART OF THE DAY: @IEA estimates Chinese EV fleet (cars + trucks) is displacing &gt;1.5m b/d of oil demand (up from ~1m b/d) a year ago.\n\n\"This displacement [...] suggests an acceleration in the already very strong growth in the use of electricity for transportation,\" the IEA said. https://t.co/pI5JvTE0uG",
-    "createdAt": "2026-08-12T08:33:08+00:00",
-    "username": "JavierBlas",
-    "authorName": "Javier Blas",
-    "authorUsername": "JavierBlas",
-    "url": "https://x.com/JavierBlas/status/2087457341893410840",
-    "likes": 368,
-    "retweets": 112,
-    "replies": 17,
-    "quotes": 30,
-    "views": 63087,
-    "engagement": 716,
-    "photos": [
-      {
-        "url": "https://pbs.twimg.com/media/HPgi_dqWAAE8D4S.png"
-      }
-    ],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087510146393964970",
-    "text": "GB ELECTRICITY generation is currently dominated by solar (accounting for almost 40% of total output). \n\nAs the country nears the solar eclipse in late afternoon gas-fired generators will receive instructions to begin ramping up to maintain supply. \n\nPumped storage generators and interconnectors will also be available to provide extra supply and frequency regulation during the relatively short period of greatest darkness. \n\nSource: https://t.co/JrcF8p3yA1",
-    "createdAt": "2026-08-12T12:02:57+00:00",
-    "username": "JKempEnergy",
-    "authorName": "John Kemp",
-    "authorUsername": "JKempEnergy",
-    "url": "https://x.com/JKempEnergy/status/2087510146393964970",
-    "likes": 18,
-    "retweets": 6,
-    "replies": 1,
-    "quotes": 0,
-    "views": 2791,
-    "engagement": 32,
-    "photos": [
-      {
-        "url": "https://pbs.twimg.com/media/HPhSBf4XQAA5-9_.jpg"
-      }
-    ],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087477306352652371",
-    "text": "CHINA’s production of electric and other new energy vehicles has more than doubled in the last three years. Production accelerated to 1.6 million units in June 2026 up from 1.2 million a year ago and just 0.7 million in June 2023. The deployment of new energy vehicles on massive scale is rapidly changing the composition of the vehicle fleet. New energy vehicles are on course to make up roughly one quarter of all registered cars by the end of the decade:",
-    "createdAt": "2026-08-12T09:52:27+00:00",
-    "username": "JKempEnergy",
-    "authorName": "John Kemp",
-    "authorUsername": "JKempEnergy",
-    "url": "https://x.com/JKempEnergy/status/2087477306352652371",
-    "likes": 18,
-    "retweets": 9,
-    "replies": 0,
-    "quotes": 2,
-    "views": 2794,
-    "engagement": 42,
-    "photos": [
-      {
-        "url": "https://pbs.twimg.com/media/HPg1iyHXYAA4wYh.png"
-      }
-    ],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087551685455659010",
-    "text": "One of the highest US crude import figures in years as Bab al-Mandeb flows change how oil is being moved around. \n\nImports turn to exports, so it’s just a timing issue. \n\nEIA reported +17.4 million bbls for commercial vs our +13.3 million bbls.",
-    "createdAt": "2026-08-12T14:48:01+00:00",
-    "username": "HFI_Research",
-    "authorName": "HFI Research",
-    "authorUsername": "HFI_Research",
-    "url": "https://x.com/HFI_Research/status/2087551685455659010",
-    "likes": 294,
-    "retweets": 28,
-    "replies": 3,
-    "quotes": 5,
-    "views": 59905,
-    "engagement": 371,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": {
-      "id": "2086883186399928735",
-      "text": "Heads up. \n\nBig crude build for this week’s EIA oil storage report. \n\nTemporary mismatch in imports and exports.",
-      "author": {
-        "screenName": "HFI_Research",
-        "name": "HFI Research"
-      }
-    },
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087425464155668832",
-    "text": "This is hilarious. \n\nX flagged this post as a “sensitive warning” post.",
-    "createdAt": "2026-08-12T06:26:27+00:00",
-    "username": "HFI_Research",
-    "authorName": "HFI Research",
-    "authorUsername": "HFI_Research",
-    "url": "https://x.com/HFI_Research/status/2087425464155668832",
-    "likes": 93,
-    "retweets": 3,
+    "id": "2087697543807324426",
+    "text": "For more on what we currently know about the Beijing Swing and why I definitely think it’s too early to say that it’s over.\nhttps://t.co/fkTrif26Uz",
+    "createdAt": "2026-08-13T00:27:36+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2087697543807324426",
+    "likes": 20,
+    "retweets": 2,
     "replies": 2,
-    "quotes": 3,
-    "views": 15378,
-    "engagement": 112,
+    "quotes": 0,
+    "views": 2058,
+    "engagement": 28,
     "photos": [],
     "videos": [],
     "quotedTweet": null,
     "sourceKind": "whitelist"
   },
   {
-    "id": "2087420830188032346",
-    "text": "Strait of Hormuz over the last 24 hours: Iran learns the Twitter game\n\nThe US has dominated the Iran war so far in one category: the jawbone.\n\nIranian diplomats like Araghchi and Ghalibaf are either too stupid, too naive, or complicit to realize that the US is absolutely kicking Iran's ass in the media game.\n\nWe've had countless ceasefire announcements, the Strait of Hormuz is opening soon, and a peace deal is coming headlines over the last 5 months. Oil traders have already experienced VAR (value-at-risk) shocks, so taking outright long positions isn't possible for many large trading firms.\n\nBut it seems the Iranians are learning the Twitter game with hardliners now taking firmer control over both the public communication channels and the diplomacy routes.\n\nSoon after another bogus headline from Pakistan about how the US and Iran are going to reach some permanent peace deal soon, the newly appointed Mohsen Rezaee denied all of it with his posts about the conditions the US needs to meet.\n\nI suspect oil market participants are taking notice as well as oil prices completely disregarded the Pakistani headline, Chris Wright's bogus claim about ~9 million b/d moving through the Strait, and Trump's comments. \n\nEither way, we will see soon enough what the next escalation roadmap looks like. It won't be long.\n\nVideo from @MarineTraffic.",
-    "createdAt": "2026-08-12T06:08:02+00:00",
-    "username": "HFI_Research",
-    "authorName": "HFI Research",
-    "authorUsername": "HFI_Research",
-    "url": "https://x.com/HFI_Research/status/2087420830188032346",
-    "likes": 751,
-    "retweets": 107,
-    "replies": 14,
-    "quotes": 15,
-    "views": 136073,
-    "engagement": 1038,
+    "id": "2087696747770335245",
+    "text": "https://t.co/O9A3CqGoDv",
+    "createdAt": "2026-08-13T00:24:26+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2087696747770335245",
+    "likes": 110,
+    "retweets": 8,
+    "replies": 6,
+    "quotes": 1,
+    "views": 7885,
+    "engagement": 141,
     "photos": [],
     "videos": [
       {
-        "url": "https://video.twimg.com/amplify_video/2087419043921952768/vid/avc1/2700x2160/69m33CyfvQrd5qbr.mp4?tag=29"
+        "url": "https://video.twimg.com/tweet_video/HPj9IAfXIAA3UJE.mp4"
       }
     ],
+    "quotedTweet": {
+      "id": "2087689325697999305",
+      "text": "CHINA IS SHIFTING FROM DRAINING OIL STOCKPILES TO REBUILDING INVENTORIES, WITH CRUDE IMPORTS EXPECTED TO RECOVER AND TIGHTEN THE GLOBAL OIL MARKET.",
+      "author": {
+        "screenName": "FirstSquawk",
+        "name": "First Squawk"
+      }
+    },
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087694697754173744",
+    "text": "Looks like another tanker made it through the Oman lane. https://t.co/rGBiHHz8ME",
+    "createdAt": "2026-08-13T00:16:18+00:00",
+    "username": "HFI_Research",
+    "authorName": "HFI Research",
+    "authorUsername": "HFI_Research",
+    "url": "https://x.com/HFI_Research/status/2087694697754173744",
+    "likes": 38,
+    "retweets": 1,
+    "replies": 0,
+    "quotes": 1,
+    "views": 4563,
+    "engagement": 43,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HPj7GpqbQAAQ_WC.jpg"
+      }
+    ],
+    "videos": [],
     "quotedTweet": null,
     "sourceKind": "whitelist"
   },
   {
-    "id": "2087411317070344329",
-    "text": "It's so covert that you are openly bragging about it!\n\nNow it's not covert. Good job!",
-    "createdAt": "2026-08-12T05:30:14+00:00",
-    "username": "HFI_Research",
-    "authorName": "HFI Research",
-    "authorUsername": "HFI_Research",
-    "url": "https://x.com/HFI_Research/status/2087411317070344329",
-    "likes": 230,
-    "retweets": 14,
+    "id": "2087689079303323751",
+    "text": "Iran warns it is preparing for military operations on US soil following a “new military doctrine tasking IRGC to attack enemy in its soil,” adding Iran will “take operations into enemy territory, into the enemy’s lands, and carry out operations far from our own territory,” IRGC senior advisor General Mohammad Reza Naqdi says. @HormuzLetter",
+    "createdAt": "2026-08-12T23:53:58+00:00",
+    "username": "OilHeadlineNews",
+    "authorName": "Energy Headline News",
+    "authorUsername": "OilHeadlineNews",
+    "url": "https://x.com/OilHeadlineNews/status/2087689079303323751",
+    "likes": 8,
+    "retweets": 3,
     "replies": 0,
-    "quotes": 4,
-    "views": 25694,
-    "engagement": 270,
+    "quotes": 1,
+    "views": 1127,
+    "engagement": 17,
     "photos": [],
     "videos": [],
-    "quotedTweet": {
-      "id": "2087369361375785016",
-      "text": "In coordination with the U.S. military, the U.S. Department of Energy maintains the best available data related to oil and oil products leaving the Arabian gulf.\n\nMany private businesses undercount the number of ships leaving the Strait of Hormuz due to ships moving covertly through the waterway.",
-      "author": {
-        "screenName": "SecretaryWright",
-        "name": "Secretary Chris Wright"
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087673109453177174",
+    "text": "Today's solar eclipse, as seen from space!\n\nThanks again, @zoom_earth! https://t.co/ObbBchRsGO",
+    "createdAt": "2026-08-12T22:50:31+00:00",
+    "username": "TankerTrackers",
+    "authorName": "TankerTrackers.com, Inc.",
+    "authorUsername": "TankerTrackers",
+    "url": "https://x.com/TankerTrackers/status/2087673109453177174",
+    "likes": 70,
+    "retweets": 12,
+    "replies": 1,
+    "quotes": 0,
+    "views": 6401,
+    "engagement": 96,
+    "photos": [],
+    "videos": [
+      {
+        "url": "https://video.twimg.com/amplify_video/2087672878602846209/vid/avc1/3826x1898/s17_fkK3cwh8MG00.mp4?tag=29"
       }
-    },
+    ],
+    "quotedTweet": null,
     "sourceKind": "whitelist"
   },
   {
@@ -344,6 +144,82 @@
     "sourceKind": "whitelist"
   },
   {
+    "id": "2087655752131317974",
+    "text": "Crude is finding alternate routes... \"The Saudis are now shipping more oil through a pipeline that stretches across Egypt to the Mediterranean Sea as Houthi militants attack tankers in the Red Sea.\" cnbc #oott",
+    "createdAt": "2026-08-12T21:41:32+00:00",
+    "username": "crudeoilreport",
+    "authorName": "Crude Oil Report",
+    "authorUsername": "crudeoilreport",
+    "url": "https://x.com/crudeoilreport/status/2087655752131317974",
+    "likes": 2,
+    "retweets": 0,
+    "replies": 1,
+    "quotes": 0,
+    "views": 446,
+    "engagement": 4,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087655409691566476",
+    "text": "A UAE Royal Jet previously tied to financial transfers flew back and forth between Abu Dhabi and Tehran for consecutive days amid Iran's $300 billion demand and Donald Trump's reported off ramp request through intermediaries, per flight tracking data.\n@HormuzReport",
+    "createdAt": "2026-08-12T21:40:11+00:00",
+    "username": "OilHeadlineNews",
+    "authorName": "Energy Headline News",
+    "authorUsername": "OilHeadlineNews",
+    "url": "https://x.com/OilHeadlineNews/status/2087655409691566476",
+    "likes": 14,
+    "retweets": 2,
+    "replies": 2,
+    "quotes": 0,
+    "views": 2264,
+    "engagement": 22,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087655212651614483",
+    "text": "Bloomberg: Iran has restructured its military for greater aggression abroad and is preparing for a prolonged era of regional conflict",
+    "createdAt": "2026-08-12T21:39:24+00:00",
+    "username": "OilHeadlineNews",
+    "authorName": "Energy Headline News",
+    "authorUsername": "OilHeadlineNews",
+    "url": "https://x.com/OilHeadlineNews/status/2087655212651614483",
+    "likes": 13,
+    "retweets": 1,
+    "replies": 2,
+    "quotes": 0,
+    "views": 1566,
+    "engagement": 19,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087653296374726851",
+    "text": "“…Near-record inventories, technological advances and the rise of key exporters such as Brazil and Russia have made the global food system more resilient to this year's \"super\" El Nino than similar past events….”\n\nhttps://t.co/CKa1RXb7gv",
+    "createdAt": "2026-08-12T21:31:47+00:00",
+    "username": "JavierBlas",
+    "authorName": "Javier Blas",
+    "authorUsername": "JavierBlas",
+    "url": "https://x.com/JavierBlas/status/2087653296374726851",
+    "likes": 53,
+    "retweets": 15,
+    "replies": 6,
+    "quotes": 2,
+    "views": 11938,
+    "engagement": 101,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
     "id": "2087648956452929722",
     "text": "The thing about it is that, if you’re good at your job, you’re actively relearning it daily. https://t.co/kHUTQnTlDF",
     "createdAt": "2026-08-12T21:14:32+00:00",
@@ -367,247 +243,48 @@
     "sourceKind": "whitelist"
   },
   {
-    "id": "2087600248923226421",
-    "text": "With most of Saudi Red Sea shipping going dark, this is what confirmable West Coast Saudi oil loadings look like via @Kpler \n\nNote that while it is likely that we've seen some pullback in East-West pipeline flow and loading activity, this chart overstates the scale of the decline and will likely drift higher with dark transit revisions over time as they're ID'd.",
-    "createdAt": "2026-08-12T18:00:59+00:00",
-    "username": "Rory_Johnston",
-    "authorName": "Rory Johnston",
-    "authorUsername": "Rory_Johnston",
-    "url": "https://x.com/Rory_Johnston/status/2087600248923226421",
-    "likes": 93,
-    "retweets": 13,
-    "replies": 5,
-    "quotes": 0,
-    "views": 24686,
-    "engagement": 129,
-    "photos": [
-      {
-        "url": "https://pbs.twimg.com/media/HPik7oHWgAADUuU.png"
-      }
-    ],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087601540928315594",
-    "text": "Take all super recent tanker-tracked oil flow counts with a grain of salt atm.\n\nFog is thick.",
-    "createdAt": "2026-08-12T18:06:07+00:00",
-    "username": "Rory_Johnston",
-    "authorName": "Rory Johnston",
-    "authorUsername": "Rory_Johnston",
-    "url": "https://x.com/Rory_Johnston/status/2087601540928315594",
-    "likes": 56,
-    "retweets": 4,
-    "replies": 0,
-    "quotes": 0,
-    "views": 5981,
-    "engagement": 64,
+    "id": "2087645088524452214",
+    "text": "We can debate whether the non-Iranian flows via the Strait of Hormuz amount to ~5m b/d, as most tanker trackers say, or ~9m b/d, as the U.S. gov claims. But what’s clear is that the waterway is not fully “blocked.” Quite a lot of oil keeps leaking out.",
+    "createdAt": "2026-08-12T20:59:10+00:00",
+    "username": "JavierBlas",
+    "authorName": "Javier Blas",
+    "authorUsername": "JavierBlas",
+    "url": "https://x.com/JavierBlas/status/2087645088524452214",
+    "likes": 172,
+    "retweets": 27,
+    "replies": 31,
+    "quotes": 4,
+    "views": 34471,
+    "engagement": 300,
     "photos": [],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087594244051521923",
-    "text": "\"Bessent asserted to Trump, and later in interviews, that the Strait of Hormuz would become irrelevant within two years, claiming that up to 70 percent of the energy that transits the waterway will eventually flow through underground pipelines.\"\n\nGood luck! https://t.co/pmC3mboILE",
-    "createdAt": "2026-08-12T17:37:08+00:00",
-    "username": "Rory_Johnston",
-    "authorName": "Rory Johnston",
-    "authorUsername": "Rory_Johnston",
-    "url": "https://x.com/Rory_Johnston/status/2087594244051521923",
-    "likes": 239,
-    "retweets": 25,
-    "replies": 34,
-    "quotes": 9,
-    "views": 20611,
-    "engagement": 384,
-    "photos": [
-      {
-        "url": "https://pbs.twimg.com/media/HPif2nEXUAAXLrf.jpg"
-      }
-    ],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087594325467119785",
-    "text": "https://t.co/rLkNUh2WiP",
-    "createdAt": "2026-08-12T17:37:27+00:00",
-    "username": "Rory_Johnston",
-    "authorName": "Rory Johnston",
-    "authorUsername": "Rory_Johnston",
-    "url": "https://x.com/Rory_Johnston/status/2087594325467119785",
-    "likes": 10,
-    "retweets": 1,
-    "replies": 0,
-    "quotes": 0,
-    "views": 4168,
-    "engagement": 12,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087586119982493919",
-    "text": "The latest oil demand outlook comparison between the IEA, EIA, and OPEC.\n\nBoth the IEA and EIA see annual average demand contracting by ~1.5 MMbpd this year, while OPEC still has us growing at ~0.5 MMbpd.\n\nNext year, all three have growth above 2 MMbpd on the bounceback. https://t.co/9o9i94wvmS",
-    "createdAt": "2026-08-12T17:04:51+00:00",
-    "username": "Rory_Johnston",
-    "authorName": "Rory Johnston",
-    "authorUsername": "Rory_Johnston",
-    "url": "https://x.com/Rory_Johnston/status/2087586119982493919",
-    "likes": 74,
-    "retweets": 14,
-    "replies": 3,
-    "quotes": 0,
-    "views": 8376,
-    "engagement": 108,
-    "photos": [
-      {
-        "url": "https://pbs.twimg.com/media/HPiYPe3XQAA8TYP.jpg"
-      }
-    ],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087556264570064955",
-    "text": "Cripes, that's a BIG crude build.\n\nUS commercial petroleum inventories rose by 15.7 MMbbl last week, driven overwhelmingly by a massive 17.4 MMbbl crude build (note: also had a 6.1 MMbbl SPR draw last week).\n\nRefined products drew modestly, but oh boy that crude build. https://t.co/KNQ6QVEkGb",
-    "createdAt": "2026-08-12T15:06:13+00:00",
-    "username": "Rory_Johnston",
-    "authorName": "Rory Johnston",
-    "authorUsername": "Rory_Johnston",
-    "url": "https://x.com/Rory_Johnston/status/2087556264570064955",
-    "likes": 303,
-    "retweets": 34,
-    "replies": 66,
-    "quotes": 10,
-    "views": 57401,
-    "engagement": 533,
-    "photos": [
-      {
-        "url": "https://pbs.twimg.com/media/HPh8tuzXcAAzXhw.jpg"
-      }
-    ],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087554134652207469",
-    "text": "Iran, the country that keeps hitting ships in the Strait of Hormuz, is all talk and no action, says the man who keeps threatening escalation and then backing down at the literal last minute https://t.co/l7672nEf4I",
-    "createdAt": "2026-08-12T14:57:45+00:00",
-    "username": "Rory_Johnston",
-    "authorName": "Rory Johnston",
-    "authorUsername": "Rory_Johnston",
-    "url": "https://x.com/Rory_Johnston/status/2087554134652207469",
-    "likes": 646,
-    "retweets": 69,
-    "replies": 38,
-    "quotes": 8,
-    "views": 28266,
-    "engagement": 884,
-    "photos": [
-      {
-        "url": "https://pbs.twimg.com/media/HPh6XRjW8AAu_ZU.jpg"
-      }
-    ],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087514474026537436",
-    "text": "Seems difficult for folks to simultaneously accept both:\n\n1) Chinese EV charging is displacing a gobsmacking volume of road fuel demand and accelerating rapidly\n\n2) EVs alone fall far short of explaining sharp collapse in Chinese apparent fuel demand in response to Hormuz shock",
-    "createdAt": "2026-08-12T12:20:09+00:00",
-    "username": "Rory_Johnston",
-    "authorName": "Rory Johnston",
-    "authorUsername": "Rory_Johnston",
-    "url": "https://x.com/Rory_Johnston/status/2087514474026537436",
-    "likes": 731,
-    "retweets": 84,
-    "replies": 45,
-    "quotes": 8,
-    "views": 62374,
-    "engagement": 1013,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087517299343249552",
-    "text": "there's soooooo much room in this industry between the extremes https://t.co/BR3bW2FvZ2",
-    "createdAt": "2026-08-12T12:31:23+00:00",
-    "username": "Rory_Johnston",
-    "authorName": "Rory Johnston",
-    "authorUsername": "Rory_Johnston",
-    "url": "https://x.com/Rory_Johnston/status/2087517299343249552",
-    "likes": 35,
-    "retweets": 2,
-    "replies": 1,
-    "quotes": 0,
-    "views": 7277,
-    "engagement": 41,
-    "photos": [],
-    "videos": [
-      {
-        "url": "https://video.twimg.com/tweet_video/HPhZ6tGXIAAOd0T.mp4"
-      }
-    ],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087504597795389814",
-    "text": "FWIW this is largely in line with my own estimates, but really important to stress that this is *total* displacement not the incremental response to the Hormuz shock (ie how we’d talk about year-over-year oil demand growth)\n\nIEA chart: https://t.co/j8cKvMoCJ1",
-    "createdAt": "2026-08-12T11:40:54+00:00",
-    "username": "Rory_Johnston",
-    "authorName": "Rory Johnston",
-    "authorUsername": "Rory_Johnston",
-    "url": "https://x.com/Rory_Johnston/status/2087504597795389814",
-    "likes": 119,
-    "retweets": 12,
-    "replies": 6,
-    "quotes": 3,
-    "views": 17753,
-    "engagement": 164,
-    "photos": [
-      {
-        "url": "https://pbs.twimg.com/media/HPhOXm4WgAAO2rq.jpg"
-      }
-    ],
     "videos": [],
     "quotedTweet": {
-      "id": "2087471048472052179",
-      "text": "IEA: “The crisis around the Strait of Hormuz looks set to hasten the ongoing structural decline in demand for gasoil and gasoline in China… More than 1.5m b/d of Chinese road fuel demand was substituted by EVs during 2Q26”",
+      "id": "2087610756518846642",
+      "text": "Claims and repeated posts by U.S. officials that the Strait of Hormuz is no longer blocked do not change the reality: the Strait of Hormuz remains blocked and will not be reopened until Iran’s conditions are accepted.",
       "author": {
-        "screenName": "annmarie",
-        "name": "Annmarie Hordern"
+        "screenName": "PGSA_IRAN",
+        "name": "PGSA | نهاد مدیریت آبراه خلیج فارس"
       }
     },
     "sourceKind": "whitelist"
   },
   {
-    "id": "2087499557085024522",
-    "text": "More telling that the rallying flat price of crude, Brent’s prompt timespread* has roughly doubled over the past week.\n\n*difference between first/second futures contract, a measure of market tightness (higher is tighter) https://t.co/XLutCtmlQI",
-    "createdAt": "2026-08-12T11:20:52+00:00",
-    "username": "Rory_Johnston",
-    "authorName": "Rory Johnston",
-    "authorUsername": "Rory_Johnston",
-    "url": "https://x.com/Rory_Johnston/status/2087499557085024522",
-    "likes": 154,
-    "retweets": 22,
-    "replies": 5,
-    "quotes": 2,
-    "views": 15348,
-    "engagement": 214,
+    "id": "2087640984054022491",
+    "text": "Interpretation is that Abu Dhabi is carrying messages between Iran and other parties, possibly the United States. It is reserved for Government, royal/VIP travelers. You can see it for yourself #oott https://t.co/fCiEMaVC00",
+    "createdAt": "2026-08-12T20:42:51+00:00",
+    "username": "crudeoilreport",
+    "authorName": "Crude Oil Report",
+    "authorUsername": "crudeoilreport",
+    "url": "https://x.com/crudeoilreport/status/2087640984054022491",
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0,
+    "quotes": 0,
+    "views": 265,
+    "engagement": 0,
     "photos": [
       {
-        "url": "https://pbs.twimg.com/media/HPhJyIeXgAACNi4.jpg"
+        "url": "https://pbs.twimg.com/media/HPjKXo7WYAAHAEh.jpg"
       }
     ],
     "videos": [],
@@ -615,49 +292,61 @@
     "sourceKind": "whitelist"
   },
   {
-    "id": "2087333428534313312",
-    "text": "https://t.co/xDABu7d0tS",
-    "createdAt": "2026-08-12T00:20:44+00:00",
-    "username": "Rory_Johnston",
-    "authorName": "Rory Johnston",
-    "authorUsername": "Rory_Johnston",
-    "url": "https://x.com/Rory_Johnston/status/2087333428534313312",
-    "likes": 104,
-    "retweets": 4,
-    "replies": 4,
-    "quotes": 0,
-    "views": 21218,
-    "engagement": 120,
-    "photos": [
-      {
-        "url": "https://pbs.twimg.com/media/HPeysOHWkAA2GuN.jpg"
-      }
-    ],
-    "videos": [],
-    "quotedTweet": {
-      "id": "2087259683715260502",
-      "text": "Are you foregoing a romantic relationship to work on your AI ambitions? I'd love to speak with you for a story if so. DMs open or find me on signal at madymills.21",
-      "author": {
-        "screenName": "MadisonMills22",
-        "name": "Madison Mills"
-      }
-    },
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087336417877721553",
-    "text": "I got married and had kids before I could hustle on my AI ambitions, so unfortunately I’m doomed to the permanent parental underclass.",
-    "createdAt": "2026-08-12T00:32:37+00:00",
-    "username": "Rory_Johnston",
-    "authorName": "Rory Johnston",
-    "authorUsername": "Rory_Johnston",
-    "url": "https://x.com/Rory_Johnston/status/2087336417877721553",
-    "likes": 63,
+    "id": "2087639586172203485",
+    "text": "The Emirati Royal Jet (A6-RJA), a Boeing 737 Business Jet has completed consecutive back-to-back flights between Abu Dhabi and Tehran on August 11 and August 12, 2026 #OOTT https://t.co/MFYJ5S3PMV",
+    "createdAt": "2026-08-12T20:37:18+00:00",
+    "username": "crudeoilreport",
+    "authorName": "Crude Oil Report",
+    "authorUsername": "crudeoilreport",
+    "url": "https://x.com/crudeoilreport/status/2087639586172203485",
+    "likes": 1,
     "retweets": 0,
     "replies": 1,
     "quotes": 0,
-    "views": 6403,
-    "engagement": 65,
+    "views": 553,
+    "engagement": 3,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HPjJHSoWwAA90r9.jpg"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087630052305563952",
+    "text": "IDF Chief of Staff Eyal Zamir to cabinet ministers: \"The blockade on Iran is very effective. The economic crisis there is getting worse.\"\n@Osint613",
+    "createdAt": "2026-08-12T19:59:25+00:00",
+    "username": "OilHeadlineNews",
+    "authorName": "Energy Headline News",
+    "authorUsername": "OilHeadlineNews",
+    "url": "https://x.com/OilHeadlineNews/status/2087630052305563952",
+    "likes": 7,
+    "retweets": 0,
+    "replies": 0,
+    "quotes": 0,
+    "views": 1782,
+    "engagement": 7,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087628870694363152",
+    "text": "Global oil markets are experiencing more supply constraints than expected after the recent renewed escalation in the Iran conflict. - Bloomberg",
+    "createdAt": "2026-08-12T19:54:43+00:00",
+    "username": "OilHeadlineNews",
+    "authorName": "Energy Headline News",
+    "authorUsername": "OilHeadlineNews",
+    "url": "https://x.com/OilHeadlineNews/status/2087628870694363152",
+    "likes": 20,
+    "retweets": 3,
+    "replies": 0,
+    "quotes": 1,
+    "views": 2177,
+    "engagement": 29,
     "photos": [],
     "videos": [],
     "quotedTweet": null,
@@ -965,6 +654,109 @@
     "sourceKind": "whitelist"
   },
   {
+    "id": "2087601540928315594",
+    "text": "Take all super recent tanker-tracked oil flow counts with a grain of salt atm.\n\nFog is thick.",
+    "createdAt": "2026-08-12T18:06:07+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2087601540928315594",
+    "likes": 56,
+    "retweets": 4,
+    "replies": 0,
+    "quotes": 0,
+    "views": 5981,
+    "engagement": 64,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087600248923226421",
+    "text": "With most of Saudi Red Sea shipping going dark, this is what confirmable West Coast Saudi oil loadings look like via @Kpler \n\nNote that while it is likely that we've seen some pullback in East-West pipeline flow and loading activity, this chart overstates the scale of the decline and will likely drift higher with dark transit revisions over time as they're ID'd.",
+    "createdAt": "2026-08-12T18:00:59+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2087600248923226421",
+    "likes": 93,
+    "retweets": 13,
+    "replies": 5,
+    "quotes": 0,
+    "views": 24686,
+    "engagement": 129,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HPik7oHWgAADUuU.png"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087595327201399110",
+    "text": "The Houthis are using Russian satellites to guide attacks on Saudi Arabia and Saudi-backed forces in Yemen, a southern Yemeni anti-Houthi source tells Kan News. The source says Riyadh is aware, and the intelligence was passed to the U.S.\n@Osint613 @kann_news",
+    "createdAt": "2026-08-12T17:41:26+00:00",
+    "username": "OilHeadlineNews",
+    "authorName": "Energy Headline News",
+    "authorUsername": "OilHeadlineNews",
+    "url": "https://x.com/OilHeadlineNews/status/2087595327201399110",
+    "likes": 23,
+    "retweets": 6,
+    "replies": 1,
+    "quotes": 3,
+    "views": 13331,
+    "engagement": 46,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087594325467119785",
+    "text": "https://t.co/rLkNUh2WiP",
+    "createdAt": "2026-08-12T17:37:27+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2087594325467119785",
+    "likes": 10,
+    "retweets": 1,
+    "replies": 0,
+    "quotes": 0,
+    "views": 4168,
+    "engagement": 12,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087594244051521923",
+    "text": "\"Bessent asserted to Trump, and later in interviews, that the Strait of Hormuz would become irrelevant within two years, claiming that up to 70 percent of the energy that transits the waterway will eventually flow through underground pipelines.\"\n\nGood luck! https://t.co/pmC3mboILE",
+    "createdAt": "2026-08-12T17:37:08+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2087594244051521923",
+    "likes": 239,
+    "retweets": 25,
+    "replies": 34,
+    "quotes": 9,
+    "views": 20611,
+    "engagement": 384,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HPif2nEXUAAXLrf.jpg"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
     "id": "2087593716970119458",
     "text": "U.S. and Ukrainian Forces Went Head-to-Head in an Exercise. Ukraine’s Drones Won.\nBattlefield drill shows U.S. military hasn’t fully absorbed lessons of Russia’s war https://t.co/zx8iFQSsiS",
     "createdAt": "2026-08-12T17:35:02+00:00",
@@ -979,6 +771,48 @@
     "views": 2722,
     "engagement": 6,
     "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087592062048702596",
+    "text": "Mediators need more time on the stalled U.S.–Iran files, a source told Al Arabiya. The Pakistani mediator is optimistic the 60-day window will be extended.",
+    "createdAt": "2026-08-12T17:28:27+00:00",
+    "username": "OilHeadlineNews",
+    "authorName": "Energy Headline News",
+    "authorUsername": "OilHeadlineNews",
+    "url": "https://x.com/OilHeadlineNews/status/2087592062048702596",
+    "likes": 11,
+    "retweets": 0,
+    "replies": 0,
+    "quotes": 0,
+    "views": 2205,
+    "engagement": 11,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087586119982493919",
+    "text": "The latest oil demand outlook comparison between the IEA, EIA, and OPEC.\n\nBoth the IEA and EIA see annual average demand contracting by ~1.5 MMbpd this year, while OPEC still has us growing at ~0.5 MMbpd.\n\nNext year, all three have growth above 2 MMbpd on the bounceback. https://t.co/9o9i94wvmS",
+    "createdAt": "2026-08-12T17:04:51+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2087586119982493919",
+    "likes": 74,
+    "retweets": 14,
+    "replies": 3,
+    "quotes": 0,
+    "views": 8376,
+    "engagement": 108,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HPiYPe3XQAA8TYP.jpg"
+      }
+    ],
     "videos": [],
     "quotedTweet": null,
     "sourceKind": "whitelist"
@@ -1060,6 +894,25 @@
     "sourceKind": "whitelist"
   },
   {
+    "id": "2087569453131165969",
+    "text": "Greenland oil wildcatters delay controversial drilling plan - FT",
+    "createdAt": "2026-08-12T15:58:37+00:00",
+    "username": "OilHeadlineNews",
+    "authorName": "Energy Headline News",
+    "authorUsername": "OilHeadlineNews",
+    "url": "https://x.com/OilHeadlineNews/status/2087569453131165969",
+    "likes": 10,
+    "retweets": 1,
+    "replies": 1,
+    "quotes": 0,
+    "views": 2698,
+    "engagement": 14,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
     "id": "2087567778911867029",
     "text": "US distillate and gasoline inventories remain at multi-year lows #oott",
     "createdAt": "2026-08-12T15:51:58+00:00",
@@ -1083,6 +936,25 @@
         "name": "Giovanni Staunovo🛢"
       }
     },
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087567463915372745",
+    "text": "Russian oil production plunged nearly 1 million barrels per day below its OPEC+ quota in July",
+    "createdAt": "2026-08-12T15:50:43+00:00",
+    "username": "OilHeadlineNews",
+    "authorName": "Energy Headline News",
+    "authorUsername": "OilHeadlineNews",
+    "url": "https://x.com/OilHeadlineNews/status/2087567463915372745",
+    "likes": 39,
+    "retweets": 7,
+    "replies": 1,
+    "quotes": 0,
+    "views": 4984,
+    "engagement": 55,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
     "sourceKind": "whitelist"
   },
   {
@@ -1262,6 +1134,36 @@
     "sourceKind": "whitelist"
   },
   {
+    "id": "2087562818878886382",
+    "text": "A chart view of the @IEA revisions to historical global oil demand. Pre 2022 all revisions are negative, post are positive and (cumulatively) very large. https://t.co/QrK5yHpyCH",
+    "createdAt": "2026-08-12T15:32:15+00:00",
+    "username": "JavierBlas",
+    "authorName": "Javier Blas",
+    "authorUsername": "JavierBlas",
+    "url": "https://x.com/JavierBlas/status/2087562818878886382",
+    "likes": 142,
+    "retweets": 33,
+    "replies": 12,
+    "quotes": 8,
+    "views": 55799,
+    "engagement": 256,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HPiDQC7W4AEv9K6.png"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": {
+      "id": "2087473201211220360",
+      "text": "The @IEA has once again revised historical annual data for oil consumption (it does so every August), resulting in some significant upgrades to global demand. \n\nThe net result is that 20025 oil consumption is now estimated at 104.8m b/d (that's ~300,000 b/d higher than the last estimate, and ***a huge 1.1m b/d higher*** than where the IEA pegged a year ago 2025 demand). \n\nDespite the huge revision to demand forecasts, the IEA still sees the market last year as oversupplied, with supply running at 106.3m b/d on average. \n\nThe changes also mean that the 105.7m b/d of oil consumption that the IEA now anticipates for 2027 is **higher** than the absolute peak oil demand it forecast a year ago (when it said that global oil consumption would peak in 2029 at 105.6m b/d).",
+      "author": {
+        "screenName": "JavierBlas",
+        "name": "Javier Blas"
+      }
+    },
+    "sourceKind": "whitelist"
+  },
+  {
     "id": "2087562697936187490",
     "text": "What directional changes can we interpret from China?\nChina’s oil policies start to shift in July, signalling that refiners are increasingly focused on protecting margins while maintaining supply security.\n#oott https://t.co/Jn9yOO9kck",
     "createdAt": "2026-08-12T15:31:46+00:00",
@@ -1351,6 +1253,25 @@
     "quotes": 1,
     "views": 2865,
     "engagement": 10,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087561358942327156",
+    "text": "US imports of Venezuelan oil are at their highest in 9 years.",
+    "createdAt": "2026-08-12T15:26:27+00:00",
+    "username": "JavierBlas",
+    "authorName": "Javier Blas",
+    "authorUsername": "JavierBlas",
+    "url": "https://x.com/JavierBlas/status/2087561358942327156",
+    "likes": 297,
+    "retweets": 65,
+    "replies": 24,
+    "quotes": 4,
+    "views": 34545,
+    "engagement": 487,
     "photos": [],
     "videos": [],
     "quotedTweet": null,
@@ -1471,234 +1392,22 @@
     "sourceKind": "whitelist"
   },
   {
-    "id": "2087673109453177174",
-    "text": "Today's solar eclipse, as seen from space!\n\nThanks again, @zoom_earth! https://t.co/ObbBchRsGO",
-    "createdAt": "2026-08-12T22:50:31+00:00",
-    "username": "TankerTrackers",
-    "authorName": "TankerTrackers.com, Inc.",
-    "authorUsername": "TankerTrackers",
-    "url": "https://x.com/TankerTrackers/status/2087673109453177174",
-    "likes": 70,
-    "retweets": 12,
-    "replies": 1,
-    "quotes": 0,
-    "views": 6401,
-    "engagement": 96,
-    "photos": [],
-    "videos": [
-      {
-        "url": "https://video.twimg.com/amplify_video/2087672878602846209/vid/avc1/3826x1898/s17_fkK3cwh8MG00.mp4?tag=29"
-      }
-    ],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087494558342897668",
-    "text": "The oil spill appears to derive from the Iranian attack on bulk carrier MINOAN PIONEER (9471630) on 2026-08-03 (26.45938, 56.53871) when she was in the Musandam Governorate of Oman. The spillage then drifted across the strait over to Iran. A self-inflcted wound by Iran. https://t.co/cbsOpYxJ6i",
-    "createdAt": "2026-08-12T11:01:01+00:00",
-    "username": "TankerTrackers",
-    "authorName": "TankerTrackers.com, Inc.",
-    "authorUsername": "TankerTrackers",
-    "url": "https://x.com/TankerTrackers/status/2087494558342897668",
-    "likes": 174,
-    "retweets": 52,
-    "replies": 5,
-    "quotes": 3,
-    "views": 30467,
-    "engagement": 297,
+    "id": "2087556264570064955",
+    "text": "Cripes, that's a BIG crude build.\n\nUS commercial petroleum inventories rose by 15.7 MMbbl last week, driven overwhelmingly by a massive 17.4 MMbbl crude build (note: also had a 6.1 MMbbl SPR draw last week).\n\nRefined products drew modestly, but oh boy that crude build. https://t.co/KNQ6QVEkGb",
+    "createdAt": "2026-08-12T15:06:13+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2087556264570064955",
+    "likes": 303,
+    "retweets": 34,
+    "replies": 66,
+    "quotes": 10,
+    "views": 57401,
+    "engagement": 533,
     "photos": [
       {
-        "url": "https://pbs.twimg.com/media/HPhFABzXsAAi3yV.jpg"
-      }
-    ],
-    "videos": [],
-    "quotedTweet": {
-      "id": "2087237957077856512",
-      "text": "2026-08-10 at 26.64991, 55.8959 via ESA S2 https://t.co/YlXkumQhzq",
-      "author": {
-        "screenName": "TankerTrackers",
-        "name": "TankerTrackers.com, Inc."
-      }
-    },
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087360275410251932",
-    "text": "EXCLUSIVE: The 28-year-old Suezmax tanker CARUZO (IMO 9137648), which is under UK, EU, New Zealand, Canadian, Swiss, and Australian sanctions (but not US sanctions), sailed past us in Istanbul carrying one million barrels of Russian crude oil.\n\nThe first thing we noticed was that the crew had covered the superstructure with netting and boxed themselves in, apparently out of fear of Ukrainian drone strikes. The aft half of the vessel also appears to have additional protection in the form of cages dangling off the sides, intended to guard the engine room against attacks by sea drones.\n\nThe fear is real.\n\n#OOTT #UkraineWar #Tankers",
-    "createdAt": "2026-08-12T02:07:25+00:00",
-    "username": "TankerTrackers",
-    "authorName": "TankerTrackers.com, Inc.",
-    "authorUsername": "TankerTrackers",
-    "url": "https://x.com/TankerTrackers/status/2087360275410251932",
-    "likes": 444,
-    "retweets": 111,
-    "replies": 19,
-    "quotes": 14,
-    "views": 47299,
-    "engagement": 746,
-    "photos": [
-      {
-        "url": "https://pbs.twimg.com/media/HPfJuVSXQAALSem.jpg"
-      },
-      {
-        "url": "https://pbs.twimg.com/media/HPfJ0qZWMAA2-So.jpg"
-      },
-      {
-        "url": "https://pbs.twimg.com/media/HPfJ2XNWMAE728l.jpg"
-      },
-      {
-        "url": "https://pbs.twimg.com/media/HPfKY-kXUAA68By.jpg"
-      }
-    ],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087526875807817924",
-    "text": "Africa.... Miners ☠️🥰 https://t.co/Hj5Twx6fwu",
-    "createdAt": "2026-08-12T13:09:26+00:00",
-    "username": "CRUDEOIL231",
-    "authorName": "JH",
-    "authorUsername": "CRUDEOIL231",
-    "url": "https://x.com/CRUDEOIL231/status/2087526875807817924",
-    "likes": 71,
-    "retweets": 3,
-    "replies": 7,
-    "quotes": 2,
-    "views": 19413,
-    "engagement": 97,
-    "photos": [
-      {
-        "url": "https://pbs.twimg.com/media/HPhhyLnaAAAdNiu.jpg"
-      },
-      {
-        "url": "https://pbs.twimg.com/media/HPhijGEagAAHvaM.jpg"
-      },
-      {
-        "url": "https://pbs.twimg.com/media/HPhiUYWbsAA5b5X.jpg"
-      }
-    ],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087491613878779936",
-    "text": "I'm gonna show these damn utilities I can play the waiting game way longer than they can.\n\n#uranium $uroy $nxe https://t.co/jIjiOCpuyp",
-    "createdAt": "2026-08-12T10:49:19+00:00",
-    "username": "CRUDEOIL231",
-    "authorName": "JH",
-    "authorUsername": "CRUDEOIL231",
-    "url": "https://x.com/CRUDEOIL231/status/2087491613878779936",
-    "likes": 93,
-    "retweets": 14,
-    "replies": 11,
-    "quotes": 1,
-    "views": 14920,
-    "engagement": 146,
-    "photos": [
-      {
-        "url": "https://pbs.twimg.com/media/HPhCO0JbkAA_4mo.png"
-      }
-    ],
-    "videos": [],
-    "quotedTweet": {
-      "id": "2077397291015754027",
-      "text": "The uranium complex has been completely dormant over H1 of the year. \n\nThere’s nothing fundamentally broken with the thesis; the tape was simply digesting the previous run and going flatline. \n\nThe structural bull trend is still 100% intact, and once this thing finally wakes up, it’s going to rip faces off again.\n\n#oott #uranium",
-      "author": {
-        "screenName": "CRUDEOIL231",
-        "name": "JH"
-      }
-    },
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087490810757677215",
-    "text": "Goldman on copper\n\n#copper $hbm https://t.co/eVw5V3H0qO",
-    "createdAt": "2026-08-12T10:46:07+00:00",
-    "username": "CRUDEOIL231",
-    "authorName": "JH",
-    "authorUsername": "CRUDEOIL231",
-    "url": "https://x.com/CRUDEOIL231/status/2087490810757677215",
-    "likes": 161,
-    "retweets": 22,
-    "replies": 6,
-    "quotes": 0,
-    "views": 14060,
-    "engagement": 217,
-    "photos": [
-      {
-        "url": "https://pbs.twimg.com/media/HPhBupMbIAAKWSB.png"
-      },
-      {
-        "url": "https://pbs.twimg.com/media/HPhBys9bUAA5cL1.png"
-      }
-    ],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087655752131317974",
-    "text": "Crude is finding alternate routes... \"The Saudis are now shipping more oil through a pipeline that stretches across Egypt to the Mediterranean Sea as Houthi militants attack tankers in the Red Sea.\" cnbc #oott",
-    "createdAt": "2026-08-12T21:41:32+00:00",
-    "username": "crudeoilreport",
-    "authorName": "Crude Oil Report",
-    "authorUsername": "crudeoilreport",
-    "url": "https://x.com/crudeoilreport/status/2087655752131317974",
-    "likes": 2,
-    "retweets": 0,
-    "replies": 1,
-    "quotes": 0,
-    "views": 446,
-    "engagement": 4,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087639586172203485",
-    "text": "The Emirati Royal Jet (A6-RJA), a Boeing 737 Business Jet has completed consecutive back-to-back flights between Abu Dhabi and Tehran on August 11 and August 12, 2026 #OOTT https://t.co/MFYJ5S3PMV",
-    "createdAt": "2026-08-12T20:37:18+00:00",
-    "username": "crudeoilreport",
-    "authorName": "Crude Oil Report",
-    "authorUsername": "crudeoilreport",
-    "url": "https://x.com/crudeoilreport/status/2087639586172203485",
-    "likes": 1,
-    "retweets": 0,
-    "replies": 1,
-    "quotes": 0,
-    "views": 553,
-    "engagement": 3,
-    "photos": [
-      {
-        "url": "https://pbs.twimg.com/media/HPjJHSoWwAA90r9.jpg"
-      }
-    ],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087640984054022491",
-    "text": "Interpretation is that Abu Dhabi is carrying messages between Iran and other parties, possibly the United States. It is reserved for Government, royal/VIP travelers. You can see it for yourself #oott https://t.co/fCiEMaVC00",
-    "createdAt": "2026-08-12T20:42:51+00:00",
-    "username": "crudeoilreport",
-    "authorName": "Crude Oil Report",
-    "authorUsername": "crudeoilreport",
-    "url": "https://x.com/crudeoilreport/status/2087640984054022491",
-    "likes": 0,
-    "retweets": 0,
-    "replies": 0,
-    "quotes": 0,
-    "views": 265,
-    "engagement": 0,
-    "photos": [
-      {
-        "url": "https://pbs.twimg.com/media/HPjKXo7WYAAHAEh.jpg"
+        "url": "https://pbs.twimg.com/media/HPh8tuzXcAAzXhw.jpg"
       }
     ],
     "videos": [],
@@ -1720,6 +1429,78 @@
     "views": 413,
     "engagement": 2,
     "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087554134652207469",
+    "text": "Iran, the country that keeps hitting ships in the Strait of Hormuz, is all talk and no action, says the man who keeps threatening escalation and then backing down at the literal last minute https://t.co/l7672nEf4I",
+    "createdAt": "2026-08-12T14:57:45+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2087554134652207469",
+    "likes": 646,
+    "retweets": 69,
+    "replies": 38,
+    "quotes": 8,
+    "views": 28266,
+    "engagement": 884,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HPh6XRjW8AAu_ZU.jpg"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087551685455659010",
+    "text": "One of the highest US crude import figures in years as Bab al-Mandeb flows change how oil is being moved around. \n\nImports turn to exports, so it’s just a timing issue. \n\nEIA reported +17.4 million bbls for commercial vs our +13.3 million bbls.",
+    "createdAt": "2026-08-12T14:48:01+00:00",
+    "username": "HFI_Research",
+    "authorName": "HFI Research",
+    "authorUsername": "HFI_Research",
+    "url": "https://x.com/HFI_Research/status/2087551685455659010",
+    "likes": 294,
+    "retweets": 28,
+    "replies": 3,
+    "quotes": 5,
+    "views": 59905,
+    "engagement": 371,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": {
+      "id": "2086883186399928735",
+      "text": "Heads up. \n\nBig crude build for this week’s EIA oil storage report. \n\nTemporary mismatch in imports and exports.",
+      "author": {
+        "screenName": "HFI_Research",
+        "name": "HFI Research"
+      }
+    },
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087550503404101829",
+    "text": "Trump: The U.S.A. has total control over the Strait of Hormuz. I THINK WE WILL KEEP IT! https://t.co/lUYWM8GW5C",
+    "createdAt": "2026-08-12T14:43:19+00:00",
+    "username": "OilHeadlineNews",
+    "authorName": "Energy Headline News",
+    "authorUsername": "OilHeadlineNews",
+    "url": "https://x.com/OilHeadlineNews/status/2087550503404101829",
+    "likes": 11,
+    "retweets": 1,
+    "replies": 3,
+    "quotes": 3,
+    "views": 16839,
+    "engagement": 28,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HPh4HoYXIAA7AEz.jpg"
+      }
+    ],
     "videos": [],
     "quotedTweet": null,
     "sourceKind": "whitelist"
@@ -1767,226 +1548,6 @@
     "photos": [
       {
         "url": "https://pbs.twimg.com/media/HPh2Z1WXoAAmj4L.png"
-      }
-    ],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087516210220900508",
-    "text": "Best available data is with the U.S. military, no doubts about that #oott",
-    "createdAt": "2026-08-12T12:27:03+00:00",
-    "username": "crudeoilreport",
-    "authorName": "Crude Oil Report",
-    "authorUsername": "crudeoilreport",
-    "url": "https://x.com/crudeoilreport/status/2087516210220900508",
-    "likes": 2,
-    "retweets": 0,
-    "replies": 3,
-    "quotes": 2,
-    "views": 1047,
-    "engagement": 14,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": {
-      "id": "2087369361375785016",
-      "text": "In coordination with the U.S. military, the U.S. Department of Energy maintains the best available data related to oil and oil products leaving the Arabian gulf.\n\nMany private businesses undercount the number of ships leaving the Strait of Hormuz due to ships moving covertly through the waterway.",
-      "author": {
-        "screenName": "SecretaryWright",
-        "name": "Secretary Chris Wright"
-      }
-    },
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087689079303323751",
-    "text": "Iran warns it is preparing for military operations on US soil following a “new military doctrine tasking IRGC to attack enemy in its soil,” adding Iran will “take operations into enemy territory, into the enemy’s lands, and carry out operations far from our own territory,” IRGC senior advisor General Mohammad Reza Naqdi says. @HormuzLetter",
-    "createdAt": "2026-08-12T23:53:58+00:00",
-    "username": "OilHeadlineNews",
-    "authorName": "Energy Headline News",
-    "authorUsername": "OilHeadlineNews",
-    "url": "https://x.com/OilHeadlineNews/status/2087689079303323751",
-    "likes": 8,
-    "retweets": 3,
-    "replies": 0,
-    "quotes": 1,
-    "views": 1127,
-    "engagement": 17,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087655409691566476",
-    "text": "A UAE Royal Jet previously tied to financial transfers flew back and forth between Abu Dhabi and Tehran for consecutive days amid Iran's $300 billion demand and Donald Trump's reported off ramp request through intermediaries, per flight tracking data.\n@HormuzReport",
-    "createdAt": "2026-08-12T21:40:11+00:00",
-    "username": "OilHeadlineNews",
-    "authorName": "Energy Headline News",
-    "authorUsername": "OilHeadlineNews",
-    "url": "https://x.com/OilHeadlineNews/status/2087655409691566476",
-    "likes": 14,
-    "retweets": 2,
-    "replies": 2,
-    "quotes": 0,
-    "views": 2264,
-    "engagement": 22,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087655212651614483",
-    "text": "Bloomberg: Iran has restructured its military for greater aggression abroad and is preparing for a prolonged era of regional conflict",
-    "createdAt": "2026-08-12T21:39:24+00:00",
-    "username": "OilHeadlineNews",
-    "authorName": "Energy Headline News",
-    "authorUsername": "OilHeadlineNews",
-    "url": "https://x.com/OilHeadlineNews/status/2087655212651614483",
-    "likes": 13,
-    "retweets": 1,
-    "replies": 2,
-    "quotes": 0,
-    "views": 1566,
-    "engagement": 19,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087630052305563952",
-    "text": "IDF Chief of Staff Eyal Zamir to cabinet ministers: \"The blockade on Iran is very effective. The economic crisis there is getting worse.\"\n@Osint613",
-    "createdAt": "2026-08-12T19:59:25+00:00",
-    "username": "OilHeadlineNews",
-    "authorName": "Energy Headline News",
-    "authorUsername": "OilHeadlineNews",
-    "url": "https://x.com/OilHeadlineNews/status/2087630052305563952",
-    "likes": 7,
-    "retweets": 0,
-    "replies": 0,
-    "quotes": 0,
-    "views": 1782,
-    "engagement": 7,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087628870694363152",
-    "text": "Global oil markets are experiencing more supply constraints than expected after the recent renewed escalation in the Iran conflict. - Bloomberg",
-    "createdAt": "2026-08-12T19:54:43+00:00",
-    "username": "OilHeadlineNews",
-    "authorName": "Energy Headline News",
-    "authorUsername": "OilHeadlineNews",
-    "url": "https://x.com/OilHeadlineNews/status/2087628870694363152",
-    "likes": 20,
-    "retweets": 3,
-    "replies": 0,
-    "quotes": 1,
-    "views": 2177,
-    "engagement": 29,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087595327201399110",
-    "text": "The Houthis are using Russian satellites to guide attacks on Saudi Arabia and Saudi-backed forces in Yemen, a southern Yemeni anti-Houthi source tells Kan News. The source says Riyadh is aware, and the intelligence was passed to the U.S.\n@Osint613 @kann_news",
-    "createdAt": "2026-08-12T17:41:26+00:00",
-    "username": "OilHeadlineNews",
-    "authorName": "Energy Headline News",
-    "authorUsername": "OilHeadlineNews",
-    "url": "https://x.com/OilHeadlineNews/status/2087595327201399110",
-    "likes": 23,
-    "retweets": 6,
-    "replies": 1,
-    "quotes": 3,
-    "views": 13331,
-    "engagement": 46,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087592062048702596",
-    "text": "Mediators need more time on the stalled U.S.–Iran files, a source told Al Arabiya. The Pakistani mediator is optimistic the 60-day window will be extended.",
-    "createdAt": "2026-08-12T17:28:27+00:00",
-    "username": "OilHeadlineNews",
-    "authorName": "Energy Headline News",
-    "authorUsername": "OilHeadlineNews",
-    "url": "https://x.com/OilHeadlineNews/status/2087592062048702596",
-    "likes": 11,
-    "retweets": 0,
-    "replies": 0,
-    "quotes": 0,
-    "views": 2205,
-    "engagement": 11,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087569453131165969",
-    "text": "Greenland oil wildcatters delay controversial drilling plan - FT",
-    "createdAt": "2026-08-12T15:58:37+00:00",
-    "username": "OilHeadlineNews",
-    "authorName": "Energy Headline News",
-    "authorUsername": "OilHeadlineNews",
-    "url": "https://x.com/OilHeadlineNews/status/2087569453131165969",
-    "likes": 10,
-    "retweets": 1,
-    "replies": 1,
-    "quotes": 0,
-    "views": 2698,
-    "engagement": 14,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087567463915372745",
-    "text": "Russian oil production plunged nearly 1 million barrels per day below its OPEC+ quota in July",
-    "createdAt": "2026-08-12T15:50:43+00:00",
-    "username": "OilHeadlineNews",
-    "authorName": "Energy Headline News",
-    "authorUsername": "OilHeadlineNews",
-    "url": "https://x.com/OilHeadlineNews/status/2087567463915372745",
-    "likes": 39,
-    "retweets": 7,
-    "replies": 1,
-    "quotes": 0,
-    "views": 4984,
-    "engagement": 55,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087550503404101829",
-    "text": "Trump: The U.S.A. has total control over the Strait of Hormuz. I THINK WE WILL KEEP IT! https://t.co/lUYWM8GW5C",
-    "createdAt": "2026-08-12T14:43:19+00:00",
-    "username": "OilHeadlineNews",
-    "authorName": "Energy Headline News",
-    "authorUsername": "OilHeadlineNews",
-    "url": "https://x.com/OilHeadlineNews/status/2087550503404101829",
-    "likes": 11,
-    "retweets": 1,
-    "replies": 3,
-    "quotes": 3,
-    "views": 16839,
-    "engagement": 28,
-    "photos": [
-      {
-        "url": "https://pbs.twimg.com/media/HPh4HoYXIAA7AEz.jpg"
       }
     ],
     "videos": [],
@@ -2051,6 +1612,48 @@
     "sourceKind": "whitelist"
   },
   {
+    "id": "2087544048135397519",
+    "text": "The US hasn't imported a single barrel of Saudi crude since early July — but in the next few days, a small armada of tankers with Saudi crude (via the Suez Canal / Sumed pipeline) will start to arrive. Freight costs (and the extra days needed to bypass Bab el Mandeb for Asia bound cargoes) redirecting the flows. Just in time for the US.",
+    "createdAt": "2026-08-12T14:17:40+00:00",
+    "username": "JavierBlas",
+    "authorName": "Javier Blas",
+    "authorUsername": "JavierBlas",
+    "url": "https://x.com/JavierBlas/status/2087544048135397519",
+    "likes": 328,
+    "retweets": 47,
+    "replies": 21,
+    "quotes": 4,
+    "views": 55782,
+    "engagement": 476,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087532724709953708",
+    "text": "OPEC production rose by 1.16 million barrels per day (mb/d) to 19.44 mb/d last month, according to a recent Bloomberg survey. Last week, the eight OPEC+ countries participating in voluntary output cuts announced another production increase for September, effectively completing the unwinding of the voluntary adjustments introduced in April and November 2023.  \n\nThe return to these higher production baselines gives several Gulf producers significant room to increase supply further. Saudi Arabia, Iraq and Kuwait alone could potentially raise production by a combined 6.3 mb/d from July levels if they were to move back towards their respective production targets.   \n\nThis highlights both the scale of production lost during the past six months and the potential for a sizeable supply rebound once stability returns. However, any recovery is likely to be gradual, with accumulated inventories and storage facilities needing to be drawn down before shut-in production can be restarted and exports normalised.",
+    "createdAt": "2026-08-12T13:32:40+00:00",
+    "username": "Ole_S_Hansen",
+    "authorName": "Ole S Hansen",
+    "authorUsername": "Ole_S_Hansen",
+    "url": "https://x.com/Ole_S_Hansen/status/2087532724709953708",
+    "likes": 31,
+    "retweets": 17,
+    "replies": 2,
+    "quotes": 0,
+    "views": 5330,
+    "engagement": 69,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HPhn1ggWYAERara.png"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
     "id": "2087531639270224014",
     "text": "OPEC cuts its 2026 oil demand growth forecast to 580,000 BPD from 780,000 BPD",
     "createdAt": "2026-08-12T13:28:21+00:00",
@@ -2066,6 +1669,100 @@
     "engagement": 28,
     "photos": [],
     "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087526875807817924",
+    "text": "Africa.... Miners ☠️🥰 https://t.co/Hj5Twx6fwu",
+    "createdAt": "2026-08-12T13:09:26+00:00",
+    "username": "CRUDEOIL231",
+    "authorName": "JH",
+    "authorUsername": "CRUDEOIL231",
+    "url": "https://x.com/CRUDEOIL231/status/2087526875807817924",
+    "likes": 71,
+    "retweets": 3,
+    "replies": 7,
+    "quotes": 2,
+    "views": 19413,
+    "engagement": 97,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HPhhyLnaAAAdNiu.jpg"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/HPhijGEagAAHvaM.jpg"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/HPhiUYWbsAA5b5X.jpg"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087525153437573518",
+    "text": "The monthly oil market reports from OPEC, the EIA and the IEA continue to highlight a massive divergence in 2026 demand growth expectations, with the gap between OPEC on one hand and the two others now exceeding 2 million barrels per day. OPEC remains the clear outlier, still expecting demand to grow by around 0.6 million b/d, while the EIA and IEA have progressively raised their contraction forecasts to around 1.3 million b/d and 1.6 million b/d, respectively.\n\nThe widening gap highlights the extraordinary uncertainty surrounding the demand outlook following six months of Middle East supply disruption and elevated energy prices. It also helps explain why crude oil has struggled to sustain a stronger rally despite tight physical conditions: the market is balancing severe near-term supply constraints against growing concerns that high prices and weaker economic activity are already producing a meaningful demand response.\n\nIn 2027, the divergence largely disappears as all three forecasters expect global oil demand growth to rebound strongly next year, with their latest estimates clustering around 2.2–2.4 million b/d. This suggests the disagreement is less about the longer-term trajectory of oil consumption and more about the scale and duration of the demand destruction triggered by this year’s supply shock and elevated prices.",
+    "createdAt": "2026-08-12T13:02:35+00:00",
+    "username": "Ole_S_Hansen",
+    "authorName": "Ole S Hansen",
+    "authorUsername": "Ole_S_Hansen",
+    "url": "https://x.com/Ole_S_Hansen/status/2087525153437573518",
+    "likes": 28,
+    "retweets": 9,
+    "replies": 5,
+    "quotes": 1,
+    "views": 3750,
+    "engagement": 59,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HPhf9XhWYAMyfNY.png"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087520367564791873",
+    "text": "https://t.co/RlcDt1cjpj",
+    "createdAt": "2026-08-12T12:43:34+00:00",
+    "username": "Ole_S_Hansen",
+    "authorName": "Ole S Hansen",
+    "authorUsername": "Ole_S_Hansen",
+    "url": "https://x.com/Ole_S_Hansen/status/2087520367564791873",
+    "likes": 18,
+    "retweets": 6,
+    "replies": 1,
+    "quotes": 0,
+    "views": 4487,
+    "engagement": 32,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087517299343249552",
+    "text": "there's soooooo much room in this industry between the extremes https://t.co/BR3bW2FvZ2",
+    "createdAt": "2026-08-12T12:31:23+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2087517299343249552",
+    "likes": 35,
+    "retweets": 2,
+    "replies": 1,
+    "quotes": 0,
+    "views": 7277,
+    "engagement": 41,
+    "photos": [],
+    "videos": [
+      {
+        "url": "https://video.twimg.com/tweet_video/HPhZ6tGXIAAOd0T.mp4"
+      }
+    ],
     "quotedTweet": null,
     "sourceKind": "whitelist"
   },
@@ -2086,6 +1783,32 @@
     "photos": [],
     "videos": [],
     "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087516210220900508",
+    "text": "Best available data is with the U.S. military, no doubts about that #oott",
+    "createdAt": "2026-08-12T12:27:03+00:00",
+    "username": "crudeoilreport",
+    "authorName": "Crude Oil Report",
+    "authorUsername": "crudeoilreport",
+    "url": "https://x.com/crudeoilreport/status/2087516210220900508",
+    "likes": 2,
+    "retweets": 0,
+    "replies": 3,
+    "quotes": 2,
+    "views": 1047,
+    "engagement": 14,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": {
+      "id": "2087369361375785016",
+      "text": "In coordination with the U.S. military, the U.S. Department of Energy maintains the best available data related to oil and oil products leaving the Arabian gulf.\n\nMany private businesses undercount the number of ships leaving the Strait of Hormuz due to ships moving covertly through the waterway.",
+      "author": {
+        "screenName": "SecretaryWright",
+        "name": "Secretary Chris Wright"
+      }
+    },
     "sourceKind": "whitelist"
   },
   {
@@ -2127,6 +1850,78 @@
     "sourceKind": "whitelist"
   },
   {
+    "id": "2087514474026537436",
+    "text": "Seems difficult for folks to simultaneously accept both:\n\n1) Chinese EV charging is displacing a gobsmacking volume of road fuel demand and accelerating rapidly\n\n2) EVs alone fall far short of explaining sharp collapse in Chinese apparent fuel demand in response to Hormuz shock",
+    "createdAt": "2026-08-12T12:20:09+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2087514474026537436",
+    "likes": 731,
+    "retweets": 84,
+    "replies": 45,
+    "quotes": 8,
+    "views": 62374,
+    "engagement": 1013,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087510146393964970",
+    "text": "GB ELECTRICITY generation is currently dominated by solar (accounting for almost 40% of total output). \n\nAs the country nears the solar eclipse in late afternoon gas-fired generators will receive instructions to begin ramping up to maintain supply. \n\nPumped storage generators and interconnectors will also be available to provide extra supply and frequency regulation during the relatively short period of greatest darkness. \n\nSource: https://t.co/JrcF8p3yA1",
+    "createdAt": "2026-08-12T12:02:57+00:00",
+    "username": "JKempEnergy",
+    "authorName": "John Kemp",
+    "authorUsername": "JKempEnergy",
+    "url": "https://x.com/JKempEnergy/status/2087510146393964970",
+    "likes": 18,
+    "retweets": 6,
+    "replies": 1,
+    "quotes": 0,
+    "views": 2813,
+    "engagement": 32,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HPhSBf4XQAA5-9_.jpg"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087504597795389814",
+    "text": "FWIW this is largely in line with my own estimates, but really important to stress that this is *total* displacement not the incremental response to the Hormuz shock (ie how we’d talk about year-over-year oil demand growth)\n\nIEA chart: https://t.co/j8cKvMoCJ1",
+    "createdAt": "2026-08-12T11:40:54+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2087504597795389814",
+    "likes": 119,
+    "retweets": 12,
+    "replies": 6,
+    "quotes": 3,
+    "views": 17753,
+    "engagement": 164,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HPhOXm4WgAAO2rq.jpg"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": {
+      "id": "2087471048472052179",
+      "text": "IEA: “The crisis around the Strait of Hormuz looks set to hasten the ongoing structural decline in demand for gasoil and gasoline in China… More than 1.5m b/d of Chinese road fuel demand was substituted by EVs during 2Q26”",
+      "author": {
+        "screenName": "annmarie",
+        "name": "Annmarie Hordern"
+      }
+    },
+    "sourceKind": "whitelist"
+  },
+  {
     "id": "2087502188276859348",
     "text": "Al Hadath: Fighting underway in Marib and Taiz as Yemeni government forces move against the Houthis.\n@Osint613",
     "createdAt": "2026-08-12T11:31:20+00:00",
@@ -2165,6 +1960,29 @@
     "sourceKind": "whitelist"
   },
   {
+    "id": "2087499557085024522",
+    "text": "More telling that the rallying flat price of crude, Brent’s prompt timespread* has roughly doubled over the past week.\n\n*difference between first/second futures contract, a measure of market tightness (higher is tighter) https://t.co/XLutCtmlQI",
+    "createdAt": "2026-08-12T11:20:52+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2087499557085024522",
+    "likes": 154,
+    "retweets": 22,
+    "replies": 5,
+    "quotes": 2,
+    "views": 15348,
+    "engagement": 214,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HPhJyIeXgAACNi4.jpg"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
     "id": "2087498906296881392",
     "text": "BRENT CRUDE OIL FUTURES, WTI CRUDE OIL FUTURES ERASE LOSSES AFTER REUTERS CITES IRANIAN SOURCE SAYING NO DISCUSSIONS ON CEASEFIRE",
     "createdAt": "2026-08-12T11:18:17+00:00",
@@ -2179,6 +1997,356 @@
     "views": 2696,
     "engagement": 34,
     "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087497406719955381",
+    "text": "\"A dangerous view is creeping into the markets that the US has already gone so far down the path of a debt compound trap that it dare not raise interest rates to control inflation\". \nProbably part of the explanation for why #gold has found a fresh bid despite 10-year U.S. real yields trading just a few basis points below their 2008 high, and why ETF demand is showing signs of a comeback.  https://t.co/J6dHVr5Uzp",
+    "createdAt": "2026-08-12T11:12:20+00:00",
+    "username": "Ole_S_Hansen",
+    "authorName": "Ole S Hansen",
+    "authorUsername": "Ole_S_Hansen",
+    "url": "https://x.com/Ole_S_Hansen/status/2087497406719955381",
+    "likes": 214,
+    "retweets": 47,
+    "replies": 18,
+    "quotes": 11,
+    "views": 40382,
+    "engagement": 377,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087494558342897668",
+    "text": "The oil spill appears to derive from the Iranian attack on bulk carrier MINOAN PIONEER (9471630) on 2026-08-03 (26.45938, 56.53871) when she was in the Musandam Governorate of Oman. The spillage then drifted across the strait over to Iran. A self-inflcted wound by Iran. https://t.co/cbsOpYxJ6i",
+    "createdAt": "2026-08-12T11:01:01+00:00",
+    "username": "TankerTrackers",
+    "authorName": "TankerTrackers.com, Inc.",
+    "authorUsername": "TankerTrackers",
+    "url": "https://x.com/TankerTrackers/status/2087494558342897668",
+    "likes": 174,
+    "retweets": 52,
+    "replies": 5,
+    "quotes": 3,
+    "views": 30467,
+    "engagement": 297,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HPhFABzXsAAi3yV.jpg"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": {
+      "id": "2087237957077856512",
+      "text": "2026-08-10 at 26.64991, 55.8959 via ESA S2 https://t.co/YlXkumQhzq",
+      "author": {
+        "screenName": "TankerTrackers",
+        "name": "TankerTrackers.com, Inc."
+      }
+    },
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087491613878779936",
+    "text": "I'm gonna show these damn utilities I can play the waiting game way longer than they can.\n\n#uranium $uroy $nxe https://t.co/jIjiOCpuyp",
+    "createdAt": "2026-08-12T10:49:19+00:00",
+    "username": "CRUDEOIL231",
+    "authorName": "JH",
+    "authorUsername": "CRUDEOIL231",
+    "url": "https://x.com/CRUDEOIL231/status/2087491613878779936",
+    "likes": 93,
+    "retweets": 14,
+    "replies": 11,
+    "quotes": 1,
+    "views": 14920,
+    "engagement": 146,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HPhCO0JbkAA_4mo.png"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": {
+      "id": "2077397291015754027",
+      "text": "The uranium complex has been completely dormant over H1 of the year. \n\nThere’s nothing fundamentally broken with the thesis; the tape was simply digesting the previous run and going flatline. \n\nThe structural bull trend is still 100% intact, and once this thing finally wakes up, it’s going to rip faces off again.\n\n#oott #uranium",
+      "author": {
+        "screenName": "CRUDEOIL231",
+        "name": "JH"
+      }
+    },
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087491131504275935",
+    "text": "Oil gyrates on Hormuz headlines as depleted inventories and tight distillates raise the stakes #crudeoil #IEA #EIA https://t.co/E1BQ0Z9gNB via @saxobank",
+    "createdAt": "2026-08-12T10:47:24+00:00",
+    "username": "Ole_S_Hansen",
+    "authorName": "Ole S Hansen",
+    "authorUsername": "Ole_S_Hansen",
+    "url": "https://x.com/Ole_S_Hansen/status/2087491131504275935",
+    "likes": 15,
+    "retweets": 7,
+    "replies": 1,
+    "quotes": 0,
+    "views": 4925,
+    "engagement": 31,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087490810757677215",
+    "text": "Goldman on copper\n\n#copper $hbm https://t.co/eVw5V3H0qO",
+    "createdAt": "2026-08-12T10:46:07+00:00",
+    "username": "CRUDEOIL231",
+    "authorName": "JH",
+    "authorUsername": "CRUDEOIL231",
+    "url": "https://x.com/CRUDEOIL231/status/2087490810757677215",
+    "likes": 161,
+    "retweets": 22,
+    "replies": 6,
+    "quotes": 0,
+    "views": 14060,
+    "engagement": 217,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HPhBupMbIAAKWSB.png"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/HPhBys9bUAA5cL1.png"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087477306352652371",
+    "text": "CHINA’s production of electric and other new energy vehicles has more than doubled in the last three years. Production accelerated to 1.6 million units in June 2026 up from 1.2 million a year ago and just 0.7 million in June 2023. The deployment of new energy vehicles on massive scale is rapidly changing the composition of the vehicle fleet. New energy vehicles are on course to make up roughly one quarter of all registered cars by the end of the decade:",
+    "createdAt": "2026-08-12T09:52:27+00:00",
+    "username": "JKempEnergy",
+    "authorName": "John Kemp",
+    "authorUsername": "JKempEnergy",
+    "url": "https://x.com/JKempEnergy/status/2087477306352652371",
+    "likes": 18,
+    "retweets": 9,
+    "replies": 0,
+    "quotes": 2,
+    "views": 2810,
+    "engagement": 42,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HPg1iyHXYAA4wYh.png"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087473201211220360",
+    "text": "The @IEA has once again revised historical annual data for oil consumption (it does so every August), resulting in some significant upgrades to global demand. \n\nThe net result is that 20025 oil consumption is now estimated at 104.8m b/d (that's ~300,000 b/d higher than the last estimate, and ***a huge 1.1m b/d higher*** than where the IEA pegged a year ago 2025 demand). \n\nDespite the huge revision to demand forecasts, the IEA still sees the market last year as oversupplied, with supply running at 106.3m b/d on average. \n\nThe changes also mean that the 105.7m b/d of oil consumption that the IEA now anticipates for 2027 is **higher** than the absolute peak oil demand it forecast a year ago (when it said that global oil consumption would peak in 2029 at 105.6m b/d).",
+    "createdAt": "2026-08-12T09:36:09+00:00",
+    "username": "JavierBlas",
+    "authorName": "Javier Blas",
+    "authorUsername": "JavierBlas",
+    "url": "https://x.com/JavierBlas/status/2087473201211220360",
+    "likes": 257,
+    "retweets": 59,
+    "replies": 25,
+    "quotes": 12,
+    "views": 81174,
+    "engagement": 461,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087457341893410840",
+    "text": "CHART OF THE DAY: @IEA estimates Chinese EV fleet (cars + trucks) is displacing &gt;1.5m b/d of oil demand (up from ~1m b/d) a year ago.\n\n\"This displacement [...] suggests an acceleration in the already very strong growth in the use of electricity for transportation,\" the IEA said. https://t.co/pI5JvTE0uG",
+    "createdAt": "2026-08-12T08:33:08+00:00",
+    "username": "JavierBlas",
+    "authorName": "Javier Blas",
+    "authorUsername": "JavierBlas",
+    "url": "https://x.com/JavierBlas/status/2087457341893410840",
+    "likes": 368,
+    "retweets": 112,
+    "replies": 17,
+    "quotes": 30,
+    "views": 63087,
+    "engagement": 716,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HPgi_dqWAAE8D4S.png"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087452607023403160",
+    "text": "https://t.co/ki4pDH8j0d",
+    "createdAt": "2026-08-12T08:14:19+00:00",
+    "username": "Ole_S_Hansen",
+    "authorName": "Ole S Hansen",
+    "authorUsername": "Ole_S_Hansen",
+    "url": "https://x.com/Ole_S_Hansen/status/2087452607023403160",
+    "likes": 24,
+    "retweets": 8,
+    "replies": 0,
+    "quotes": 1,
+    "views": 6031,
+    "engagement": 43,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087439531574231507",
+    "text": "Refineries are enjoying exceptionally strong margins amid tightness across refined products, particularly middle distillates such as diesel, jet fuel and heating oil. The squeeze reflects the loss of supply from two critical refining regions: the Middle East, where disrupted crude flows and refinery outages have curtailed exports, and Russia, where Ukrainian attacks continue to constrain refinery runs.\n\nThe Middle East matters disproportionately to the distillate market. Before the war, the region accounted for more than 10% of global refining capacity and had developed into a major export-oriented refining hub, supplying 3.3 million barrels per day of refined products in 2025. Gulf refineries also benefit from ready access to medium and heavier sour crude grades that are particularly well suited to complex refineries configured to maximise yields of diesel, jet fuel and other middle distillates.\n\nThe loss of these barrels is therefore difficult to replace quickly, especially with Russian refinery runs also curtailed. The IEA has highlighted diesel and jet fuel as particularly vulnerable to an extended loss of Middle Eastern production and exports, given limited spare flexibility elsewhere in the global refining system.\n\nAs the charts highlight, the result has been a surge in distillate cracks well above gasoline margins across the US, Europe and Asia, while the NYMEX 3-2-1 crack spread has climbed to exceptionally elevated levels. In short, refiners able to secure crude and maintain high utilisation rates are currently being handsomely rewarded for a global shortage of refining capacity in precisely the part of the barrel the market needs most.\n\nSome of the world's largest refiners include Sinopec, Saudi Aramco, ExxonMobil, Marathon Petroleum and Valero. The latter two, with their significant exposure to the US refining market, have seen their share prices more than double year to date, highlighting the extraordinary improvement in refining economics as global product shortages have driven crack spreads sharply higher.",
+    "createdAt": "2026-08-12T07:22:21+00:00",
+    "username": "Ole_S_Hansen",
+    "authorName": "Ole S Hansen",
+    "authorUsername": "Ole_S_Hansen",
+    "url": "https://x.com/Ole_S_Hansen/status/2087439531574231507",
+    "likes": 50,
+    "retweets": 18,
+    "replies": 1,
+    "quotes": 3,
+    "views": 8791,
+    "engagement": 97,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HPgQoh6WUAAS2LX.png"
+      }
+    ],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087425464155668832",
+    "text": "This is hilarious. \n\nX flagged this post as a “sensitive warning” post.",
+    "createdAt": "2026-08-12T06:26:27+00:00",
+    "username": "HFI_Research",
+    "authorName": "HFI Research",
+    "authorUsername": "HFI_Research",
+    "url": "https://x.com/HFI_Research/status/2087425464155668832",
+    "likes": 93,
+    "retweets": 3,
+    "replies": 2,
+    "quotes": 3,
+    "views": 15378,
+    "engagement": 112,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087420830188032346",
+    "text": "Strait of Hormuz over the last 24 hours: Iran learns the Twitter game\n\nThe US has dominated the Iran war so far in one category: the jawbone.\n\nIranian diplomats like Araghchi and Ghalibaf are either too stupid, too naive, or complicit to realize that the US is absolutely kicking Iran's ass in the media game.\n\nWe've had countless ceasefire announcements, the Strait of Hormuz is opening soon, and a peace deal is coming headlines over the last 5 months. Oil traders have already experienced VAR (value-at-risk) shocks, so taking outright long positions isn't possible for many large trading firms.\n\nBut it seems the Iranians are learning the Twitter game with hardliners now taking firmer control over both the public communication channels and the diplomacy routes.\n\nSoon after another bogus headline from Pakistan about how the US and Iran are going to reach some permanent peace deal soon, the newly appointed Mohsen Rezaee denied all of it with his posts about the conditions the US needs to meet.\n\nI suspect oil market participants are taking notice as well as oil prices completely disregarded the Pakistani headline, Chris Wright's bogus claim about ~9 million b/d moving through the Strait, and Trump's comments. \n\nEither way, we will see soon enough what the next escalation roadmap looks like. It won't be long.\n\nVideo from @MarineTraffic.",
+    "createdAt": "2026-08-12T06:08:02+00:00",
+    "username": "HFI_Research",
+    "authorName": "HFI Research",
+    "authorUsername": "HFI_Research",
+    "url": "https://x.com/HFI_Research/status/2087420830188032346",
+    "likes": 751,
+    "retweets": 107,
+    "replies": 14,
+    "quotes": 15,
+    "views": 136073,
+    "engagement": 1038,
+    "photos": [],
+    "videos": [
+      {
+        "url": "https://video.twimg.com/amplify_video/2087419043921952768/vid/avc1/2700x2160/69m33CyfvQrd5qbr.mp4?tag=29"
+      }
+    ],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087411317070344329",
+    "text": "It's so covert that you are openly bragging about it!\n\nNow it's not covert. Good job!",
+    "createdAt": "2026-08-12T05:30:14+00:00",
+    "username": "HFI_Research",
+    "authorName": "HFI Research",
+    "authorUsername": "HFI_Research",
+    "url": "https://x.com/HFI_Research/status/2087411317070344329",
+    "likes": 230,
+    "retweets": 14,
+    "replies": 0,
+    "quotes": 4,
+    "views": 25694,
+    "engagement": 270,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": {
+      "id": "2087369361375785016",
+      "text": "In coordination with the U.S. military, the U.S. Department of Energy maintains the best available data related to oil and oil products leaving the Arabian gulf.\n\nMany private businesses undercount the number of ships leaving the Strait of Hormuz due to ships moving covertly through the waterway.",
+      "author": {
+        "screenName": "SecretaryWright",
+        "name": "Secretary Chris Wright"
+      }
+    },
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087393109571408060",
+    "text": "Quoted in Al Jazeera:\n\n“OPEC crude production can only increase once there is a normalcy in flows in both directions through the Strait of Hormuz,” June Goh, a senior oil market analyst at Sparta Commodities in Singapore, told Al Jazeera.\n\n“Thus, fundamentally, oil prices remain supported at the $85-90 per barrel level barring any new headlines on renewed optimism over the diplomatic talks that have not progressed significantly.”\n\nhttps://t.co/LjEm05cAMg\n\n #oott",
+    "createdAt": "2026-08-12T04:17:53+00:00",
+    "username": "JuneGoh_Sparta",
+    "authorName": "June Goh",
+    "authorUsername": "JuneGoh_Sparta",
+    "url": "https://x.com/JuneGoh_Sparta/status/2087393109571408060",
+    "likes": 78,
+    "retweets": 17,
+    "replies": 3,
+    "quotes": 0,
+    "views": 5405,
+    "engagement": 118,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087360275410251932",
+    "text": "EXCLUSIVE: The 28-year-old Suezmax tanker CARUZO (IMO 9137648), which is under UK, EU, New Zealand, Canadian, Swiss, and Australian sanctions (but not US sanctions), sailed past us in Istanbul carrying one million barrels of Russian crude oil.\n\nThe first thing we noticed was that the crew had covered the superstructure with netting and boxed themselves in, apparently out of fear of Ukrainian drone strikes. The aft half of the vessel also appears to have additional protection in the form of cages dangling off the sides, intended to guard the engine room against attacks by sea drones.\n\nThe fear is real.\n\n#OOTT #UkraineWar #Tankers",
+    "createdAt": "2026-08-12T02:07:25+00:00",
+    "username": "TankerTrackers",
+    "authorName": "TankerTrackers.com, Inc.",
+    "authorUsername": "TankerTrackers",
+    "url": "https://x.com/TankerTrackers/status/2087360275410251932",
+    "likes": 444,
+    "retweets": 111,
+    "replies": 19,
+    "quotes": 14,
+    "views": 47299,
+    "engagement": 746,
+    "photos": [
+      {
+        "url": "https://pbs.twimg.com/media/HPfJuVSXQAALSem.jpg"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/HPfJ0qZWMAA2-So.jpg"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/HPfJ2XNWMAE728l.jpg"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/HPfKY-kXUAA68By.jpg"
+      }
+    ],
     "videos": [],
     "quotedTweet": null,
     "sourceKind": "whitelist"
@@ -2226,148 +2394,52 @@
     "sourceKind": "whitelist"
   },
   {
-    "id": "2087532724709953708",
-    "text": "OPEC production rose by 1.16 million barrels per day (mb/d) to 19.44 mb/d last month, according to a recent Bloomberg survey. Last week, the eight OPEC+ countries participating in voluntary output cuts announced another production increase for September, effectively completing the unwinding of the voluntary adjustments introduced in April and November 2023.  \n\nThe return to these higher production baselines gives several Gulf producers significant room to increase supply further. Saudi Arabia, Iraq and Kuwait alone could potentially raise production by a combined 6.3 mb/d from July levels if they were to move back towards their respective production targets.   \n\nThis highlights both the scale of production lost during the past six months and the potential for a sizeable supply rebound once stability returns. However, any recovery is likely to be gradual, with accumulated inventories and storage facilities needing to be drawn down before shut-in production can be restarted and exports normalised.",
-    "createdAt": "2026-08-12T13:32:40+00:00",
-    "username": "Ole_S_Hansen",
-    "authorName": "Ole S Hansen",
-    "authorUsername": "Ole_S_Hansen",
-    "url": "https://x.com/Ole_S_Hansen/status/2087532724709953708",
-    "likes": 31,
-    "retweets": 17,
-    "replies": 2,
+    "id": "2087336417877721553",
+    "text": "I got married and had kids before I could hustle on my AI ambitions, so unfortunately I’m doomed to the permanent parental underclass.",
+    "createdAt": "2026-08-12T00:32:37+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2087336417877721553",
+    "likes": 63,
+    "retweets": 0,
+    "replies": 1,
     "quotes": 0,
-    "views": 5259,
-    "engagement": 69,
+    "views": 6403,
+    "engagement": 65,
+    "photos": [],
+    "videos": [],
+    "quotedTweet": null,
+    "sourceKind": "whitelist"
+  },
+  {
+    "id": "2087333428534313312",
+    "text": "https://t.co/xDABu7d0tS",
+    "createdAt": "2026-08-12T00:20:44+00:00",
+    "username": "Rory_Johnston",
+    "authorName": "Rory Johnston",
+    "authorUsername": "Rory_Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2087333428534313312",
+    "likes": 104,
+    "retweets": 4,
+    "replies": 4,
+    "quotes": 0,
+    "views": 21218,
+    "engagement": 120,
     "photos": [
       {
-        "url": "https://pbs.twimg.com/media/HPhn1ggWYAERara.png"
+        "url": "https://pbs.twimg.com/media/HPeysOHWkAA2GuN.jpg"
       }
     ],
     "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087525153437573518",
-    "text": "The monthly oil market reports from OPEC, the EIA and the IEA continue to highlight a massive divergence in 2026 demand growth expectations, with the gap between OPEC on one hand and the two others now exceeding 2 million barrels per day. OPEC remains the clear outlier, still expecting demand to grow by around 0.6 million b/d, while the EIA and IEA have progressively raised their contraction forecasts to around 1.3 million b/d and 1.6 million b/d, respectively.\n\nThe widening gap highlights the extraordinary uncertainty surrounding the demand outlook following six months of Middle East supply disruption and elevated energy prices. It also helps explain why crude oil has struggled to sustain a stronger rally despite tight physical conditions: the market is balancing severe near-term supply constraints against growing concerns that high prices and weaker economic activity are already producing a meaningful demand response.\n\nIn 2027, the divergence largely disappears as all three forecasters expect global oil demand growth to rebound strongly next year, with their latest estimates clustering around 2.2–2.4 million b/d. This suggests the disagreement is less about the longer-term trajectory of oil consumption and more about the scale and duration of the demand destruction triggered by this year’s supply shock and elevated prices.",
-    "createdAt": "2026-08-12T13:02:35+00:00",
-    "username": "Ole_S_Hansen",
-    "authorName": "Ole S Hansen",
-    "authorUsername": "Ole_S_Hansen",
-    "url": "https://x.com/Ole_S_Hansen/status/2087525153437573518",
-    "likes": 28,
-    "retweets": 9,
-    "replies": 5,
-    "quotes": 1,
-    "views": 3718,
-    "engagement": 59,
-    "photos": [
-      {
-        "url": "https://pbs.twimg.com/media/HPhf9XhWYAMyfNY.png"
+    "quotedTweet": {
+      "id": "2087259683715260502",
+      "text": "Are you foregoing a romantic relationship to work on your AI ambitions? I'd love to speak with you for a story if so. DMs open or find me on signal at madymills.21",
+      "author": {
+        "screenName": "MadisonMills22",
+        "name": "Madison Mills"
       }
-    ],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087520367564791873",
-    "text": "https://t.co/RlcDt1cjpj",
-    "createdAt": "2026-08-12T12:43:34+00:00",
-    "username": "Ole_S_Hansen",
-    "authorName": "Ole S Hansen",
-    "authorUsername": "Ole_S_Hansen",
-    "url": "https://x.com/Ole_S_Hansen/status/2087520367564791873",
-    "likes": 18,
-    "retweets": 6,
-    "replies": 1,
-    "quotes": 0,
-    "views": 4442,
-    "engagement": 32,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087497406719955381",
-    "text": "\"A dangerous view is creeping into the markets that the US has already gone so far down the path of a debt compound trap that it dare not raise interest rates to control inflation\". \nProbably part of the explanation for why #gold has found a fresh bid despite 10-year U.S. real yields trading just a few basis points below their 2008 high, and why ETF demand is showing signs of a comeback.  https://t.co/J6dHVr5Uzp",
-    "createdAt": "2026-08-12T11:12:20+00:00",
-    "username": "Ole_S_Hansen",
-    "authorName": "Ole S Hansen",
-    "authorUsername": "Ole_S_Hansen",
-    "url": "https://x.com/Ole_S_Hansen/status/2087497406719955381",
-    "likes": 214,
-    "retweets": 47,
-    "replies": 18,
-    "quotes": 11,
-    "views": 40382,
-    "engagement": 377,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087491131504275935",
-    "text": "Oil gyrates on Hormuz headlines as depleted inventories and tight distillates raise the stakes #crudeoil #IEA #EIA https://t.co/E1BQ0Z9gNB via @saxobank",
-    "createdAt": "2026-08-12T10:47:24+00:00",
-    "username": "Ole_S_Hansen",
-    "authorName": "Ole S Hansen",
-    "authorUsername": "Ole_S_Hansen",
-    "url": "https://x.com/Ole_S_Hansen/status/2087491131504275935",
-    "likes": 15,
-    "retweets": 7,
-    "replies": 1,
-    "quotes": 0,
-    "views": 4925,
-    "engagement": 31,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087452607023403160",
-    "text": "https://t.co/ki4pDH8j0d",
-    "createdAt": "2026-08-12T08:14:19+00:00",
-    "username": "Ole_S_Hansen",
-    "authorName": "Ole S Hansen",
-    "authorUsername": "Ole_S_Hansen",
-    "url": "https://x.com/Ole_S_Hansen/status/2087452607023403160",
-    "likes": 24,
-    "retweets": 8,
-    "replies": 0,
-    "quotes": 1,
-    "views": 6031,
-    "engagement": 43,
-    "photos": [],
-    "videos": [],
-    "quotedTweet": null,
-    "sourceKind": "whitelist"
-  },
-  {
-    "id": "2087439531574231507",
-    "text": "Refineries are enjoying exceptionally strong margins amid tightness across refined products, particularly middle distillates such as diesel, jet fuel and heating oil. The squeeze reflects the loss of supply from two critical refining regions: the Middle East, where disrupted crude flows and refinery outages have curtailed exports, and Russia, where Ukrainian attacks continue to constrain refinery runs.\n\nThe Middle East matters disproportionately to the distillate market. Before the war, the region accounted for more than 10% of global refining capacity and had developed into a major export-oriented refining hub, supplying 3.3 million barrels per day of refined products in 2025. Gulf refineries also benefit from ready access to medium and heavier sour crude grades that are particularly well suited to complex refineries configured to maximise yields of diesel, jet fuel and other middle distillates.\n\nThe loss of these barrels is therefore difficult to replace quickly, especially with Russian refinery runs also curtailed. The IEA has highlighted diesel and jet fuel as particularly vulnerable to an extended loss of Middle Eastern production and exports, given limited spare flexibility elsewhere in the global refining system.\n\nAs the charts highlight, the result has been a surge in distillate cracks well above gasoline margins across the US, Europe and Asia, while the NYMEX 3-2-1 crack spread has climbed to exceptionally elevated levels. In short, refiners able to secure crude and maintain high utilisation rates are currently being handsomely rewarded for a global shortage of refining capacity in precisely the part of the barrel the market needs most.\n\nSome of the world's largest refiners include Sinopec, Saudi Aramco, ExxonMobil, Marathon Petroleum and Valero. The latter two, with their significant exposure to the US refining market, have seen their share prices more than double year to date, highlighting the extraordinary improvement in refining economics as global product shortages have driven crack spreads sharply higher.",
-    "createdAt": "2026-08-12T07:22:21+00:00",
-    "username": "Ole_S_Hansen",
-    "authorName": "Ole S Hansen",
-    "authorUsername": "Ole_S_Hansen",
-    "url": "https://x.com/Ole_S_Hansen/status/2087439531574231507",
-    "likes": 50,
-    "retweets": 18,
-    "replies": 1,
-    "quotes": 3,
-    "views": 8791,
-    "engagement": 97,
-    "photos": [
-      {
-        "url": "https://pbs.twimg.com/media/HPgQoh6WUAAS2LX.png"
-      }
-    ],
-    "videos": [],
-    "quotedTweet": null,
+    },
     "sourceKind": "whitelist"
   }
 ]
