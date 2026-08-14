@@ -28,13 +28,13 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2087878008753541576",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 56,
+    "likes": 57,
     "retweets": 7,
     "replies": 6,
-    "engagement": 88,
+    "engagement": 89,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40088,
+    "rawScore": 40089,
     "score": 18040
   },
   {
@@ -104,14 +104,14 @@
     "url": "https://x.com/JavierBlas/status/2088038352326897957",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 43,
+    "likes": 45,
     "retweets": 3,
     "replies": 11,
-    "engagement": 82,
+    "engagement": 84,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20082,
-    "score": 20082
+    "rawScore": 20084,
+    "score": 17071
   },
   {
     "id": "2088036711863365871",
@@ -123,14 +123,14 @@
     "url": "https://x.com/JavierBlas/status/2088036711863365871",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 120,
-    "retweets": 14,
-    "replies": 37,
-    "engagement": 259,
+    "likes": 138,
+    "retweets": 16,
+    "replies": 40,
+    "engagement": 290,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10259,
-    "score": 10259
+    "rawScore": 10290,
+    "score": 8747
   },
   {
     "id": "2087950374162341995",
@@ -142,14 +142,14 @@
     "url": "https://x.com/JavierBlas/status/2087950374162341995",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 386,
-    "retweets": 95,
-    "replies": 35,
-    "engagement": 681,
+    "likes": 403,
+    "retweets": 98,
+    "replies": 36,
+    "engagement": 707,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 58681,
-    "score": 38143
+    "rawScore": 58707,
+    "score": 38160
   },
   {
     "id": "2087929302411063500",
@@ -161,14 +161,14 @@
     "url": "https://x.com/JavierBlas/status/2087929302411063500",
     "photoUrl": "https://pbs.twimg.com/media/HPnQLAiWEAAH5tR.png",
     "hasPhoto": true,
-    "likes": 152,
-    "retweets": 35,
+    "likes": 157,
+    "retweets": 36,
     "replies": 12,
-    "engagement": 258,
+    "engagement": 265,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28558,
-    "score": 18563
+    "rawScore": 28565,
+    "score": 18567
   },
   {
     "id": "2087908148992471123",
@@ -180,14 +180,14 @@
     "url": "https://x.com/JavierBlas/status/2087908148992471123",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 583,
+    "likes": 598,
     "retweets": 64,
-    "replies": 86,
-    "engagement": 969,
+    "replies": 88,
+    "engagement": 990,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20969,
-    "score": 13630
+    "rawScore": 20990,
+    "score": 9446
   },
   {
     "id": "2087798071593681352",
@@ -199,14 +199,14 @@
     "url": "https://x.com/JavierBlas/status/2087798071593681352",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 404,
-    "retweets": 92,
+    "likes": 405,
+    "retweets": 93,
     "replies": 48,
-    "engagement": 732,
+    "engagement": 735,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20732,
-    "score": 6220
+    "rawScore": 20735,
+    "score": 6221
   },
   {
     "id": "2087849042386604249",
@@ -218,14 +218,14 @@
     "url": "https://x.com/JKempEnergy/status/2087849042386604249",
     "photoUrl": "https://pbs.twimg.com/media/HPmHnVaWUAAzFfj.jpg",
     "hasPhoto": true,
-    "likes": 57,
-    "retweets": 17,
+    "likes": 59,
+    "retweets": 18,
     "replies": 5,
-    "engagement": 106,
+    "engagement": 110,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38406,
-    "score": 17283
+    "rawScore": 38410,
+    "score": 17285
   },
   {
     "id": "2088084530305573103",
@@ -237,14 +237,14 @@
     "url": "https://x.com/HFI_Research/status/2088084530305573103",
     "photoUrl": "https://pbs.twimg.com/media/HPpdz7TbsAAmiZ2.jpg",
     "hasPhoto": true,
-    "likes": 22,
-    "retweets": 2,
-    "replies": 0,
-    "engagement": 26,
+    "likes": 91,
+    "retweets": 16,
+    "replies": 2,
+    "engagement": 129,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10326,
-    "score": 10326
+    "rawScore": 10429,
+    "score": 10429
   },
   {
     "id": "2087773925908623404",
@@ -256,33 +256,14 @@
     "url": "https://x.com/HFI_Research/status/2087773925908623404",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 65,
+    "likes": 66,
     "retweets": 5,
     "replies": 1,
-    "engagement": 78,
+    "engagement": 79,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10078,
-    "score": 3023
-  },
-  {
-    "id": "2087740206258758005",
-    "text": "We aren't building distillate storage despite maxing out refinery runs. https://t.co/gkgbpKiIk0",
-    "createdAt": "2026-08-13T03:17:08+00:00",
-    "tweetTime": 1786591028000,
-    "username": "HFI_Research",
-    "displayName": "HFI Research",
-    "url": "https://x.com/HFI_Research/status/2087740206258758005",
-    "photoUrl": "https://pbs.twimg.com/media/HPkkpQTaQAAUs8Z.jpg",
-    "hasPhoto": true,
-    "likes": 257,
-    "retweets": 32,
-    "replies": 4,
-    "engagement": 333,
-    "isRetweet": false,
-    "relevance": 18,
-    "rawScore": 18633,
-    "score": 5590
+    "rawScore": 10079,
+    "score": 3024
   },
   {
     "id": "2087975780722626847",
@@ -301,7 +282,7 @@
     "isRetweet": false,
     "relevance": 28,
     "rawScore": 28008,
-    "score": 23807
+    "score": 18205
   },
   {
     "id": "2087973301259735342",
@@ -313,14 +294,14 @@
     "url": "https://x.com/staunovo/status/2087973301259735342",
     "photoUrl": "https://pbs.twimg.com/media/HPn4plwW4AAdMbH.jpg",
     "hasPhoto": true,
-    "likes": 9,
+    "likes": 10,
     "retweets": 0,
     "replies": 0,
-    "engagement": 9,
+    "engagement": 10,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10309,
-    "score": 8763
+    "rawScore": 10310,
+    "score": 6702
   },
   {
     "id": "2087970259093372940",
@@ -339,7 +320,7 @@
     "isRetweet": false,
     "relevance": 26,
     "rawScore": 26011,
-    "score": 22109
+    "score": 16907
   },
   {
     "id": "2087986551166796174",
@@ -399,6 +380,25 @@
     "score": 6000
   },
   {
+    "id": "2088092759798264272",
+    "text": "Saudi Aramco estimates the world lost 2.6 billion barrels of oil since the US-Iran conflict began, erasing about 25 days of pre-war global consumption - Reuters",
+    "createdAt": "2026-08-14T02:38:03+00:00",
+    "tweetTime": 1786675083000,
+    "username": "OilHeadlineNews",
+    "displayName": "Energy Headline News",
+    "url": "https://x.com/OilHeadlineNews/status/2088092759798264272",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 17,
+    "retweets": 3,
+    "replies": 1,
+    "engagement": 26,
+    "isRetweet": false,
+    "relevance": 20,
+    "rawScore": 20026,
+    "score": 20026
+  },
+  {
     "id": "2088066693385814230",
     "text": "Diversified Energy nears $1.7B deal for Elliott-backed Birch Resources - Bloomberg",
     "createdAt": "2026-08-14T00:54:28+00:00",
@@ -408,14 +408,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2088066693385814230",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 2,
+    "likes": 7,
     "retweets": 0,
     "replies": 0,
-    "engagement": 2,
+    "engagement": 7,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10002,
-    "score": 10002
+    "rawScore": 10007,
+    "score": 10007
   },
   {
     "id": "2088012251223806342",
@@ -427,14 +427,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2088012251223806342",
     "photoUrl": "https://pbs.twimg.com/media/HPocE3yXwAALqNU.jpg",
     "hasPhoto": true,
-    "likes": 48,
-    "retweets": 8,
-    "replies": 1,
-    "engagement": 67,
+    "likes": 54,
+    "retweets": 9,
+    "replies": 2,
+    "engagement": 78,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10367,
-    "score": 8812
+    "rawScore": 10378,
+    "score": 8821
   },
   {
     "id": "2087989116361130310",
@@ -465,14 +465,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2087966610472460322",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 34,
+    "likes": 36,
     "retweets": 6,
     "replies": 3,
-    "engagement": 55,
+    "engagement": 57,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 58055,
-    "score": 37736
+    "rawScore": 58057,
+    "score": 37737
   },
   {
     "id": "2087953321789194449",
@@ -503,13 +503,13 @@
     "url": "https://x.com/Ole_S_Hansen/status/2087862440323117414",
     "photoUrl": "https://pbs.twimg.com/media/HPmTwH0WUAA6_wY.jpg",
     "hasPhoto": true,
-    "likes": 38,
+    "likes": 39,
     "retweets": 9,
     "replies": 2,
-    "engagement": 62,
+    "engagement": 63,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18362,
+    "rawScore": 18363,
     "score": 8263
   },
   {
@@ -522,14 +522,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2087785546466689207",
     "photoUrl": "https://pbs.twimg.com/media/HPlNkAQW4AA_vLa.png",
     "hasPhoto": true,
-    "likes": 56,
-    "retweets": 19,
+    "likes": 57,
+    "retweets": 20,
     "replies": 3,
-    "engagement": 103,
+    "engagement": 106,
     "isRetweet": false,
     "relevance": 68,
-    "rawScore": 68403,
-    "score": 20521
+    "rawScore": 68406,
+    "score": 20522
   },
   {
     "id": "2088030282033119377",
@@ -541,13 +541,13 @@
     "url": "https://x.com/TankerTrackers/status/2088030282033119377",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 132,
+    "likes": 151,
     "retweets": 24,
     "replies": 2,
-    "engagement": 186,
+    "engagement": 205,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20186,
-    "score": 20186
+    "rawScore": 20205,
+    "score": 17174
   }
 ]
