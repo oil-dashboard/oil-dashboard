@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2089561790598590749",
     "photoUrl": "https://pbs.twimg.com/media/HP-c216a0AAy4Qt.jpg",
     "hasPhoto": true,
-    "likes": 244,
-    "retweets": 54,
-    "replies": 12,
-    "engagement": 388,
+    "likes": 268,
+    "retweets": 56,
+    "replies": 13,
+    "engagement": 419,
     "isRetweet": false,
     "relevance": 54,
-    "rawScore": 54688,
-    "score": 46485
+    "rawScore": 54719,
+    "score": 46511
   },
   {
     "id": "2089490998808420402",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2089490998808420402",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 72,
+    "likes": 75,
     "retweets": 8,
     "replies": 10,
-    "engagement": 118,
+    "engagement": 121,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10118,
-    "score": 6577
+    "rawScore": 10121,
+    "score": 4554
   },
   {
     "id": "2089329634819428775",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2089415784770523363",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 218,
+    "likes": 221,
     "retweets": 33,
-    "replies": 18,
-    "engagement": 338,
+    "replies": 22,
+    "engagement": 353,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38338,
-    "score": 17252
+    "rawScore": 38353,
+    "score": 17259
   },
   {
     "id": "2089380051422736526",
@@ -104,14 +104,14 @@
     "url": "https://x.com/JKempEnergy/status/2089649426834899386",
     "photoUrl": "https://pbs.twimg.com/media/HP_tDZSXsAAAGS3.jpg",
     "hasPhoto": true,
-    "likes": 6,
-    "retweets": 6,
+    "likes": 14,
+    "retweets": 8,
     "replies": 0,
-    "engagement": 18,
+    "engagement": 30,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48318,
-    "score": 48318
+    "rawScore": 48330,
+    "score": 48330
   },
   {
     "id": "2089416521139544334",
@@ -123,14 +123,71 @@
     "url": "https://x.com/HFI_Research/status/2089416521139544334",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 149,
-    "retweets": 28,
+    "likes": 152,
+    "retweets": 29,
     "replies": 2,
-    "engagement": 211,
+    "engagement": 216,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10211,
-    "score": 4595
+    "rawScore": 10216,
+    "score": 4597
+  },
+  {
+    "id": "2089667617690698235",
+    "text": "Hormuz Strait to remain shut until U.S. meets interim deal conditions, Iran says https://t.co/TS7x2pD3vq",
+    "createdAt": "2026-08-18T10:55:58+00:00",
+    "tweetTime": 1787050558000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2089667617690698235",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 5,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 5,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10005,
+    "score": 10005
+  },
+  {
+    "id": "2089659775562760466",
+    "text": "A Greek-owned bulk carrier was on fire on Tuesday after being struck by five drones 20 miles off the port of Novorossiysk in the Black Sea on Monday, a source close to the owner told Reuters.\n\nThe vessel’s crew had evacuated the ship and they were all safe and accounted for, the source said. The vessel was flying under the flag of Liberia.\n#oott https://t.co/gZvze0w1Gp",
+    "createdAt": "2026-08-18T10:24:49+00:00",
+    "tweetTime": 1787048689000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2089659775562760466",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 10,
+    "retweets": 1,
+    "replies": 0,
+    "engagement": 12,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10012,
+    "score": 10012
+  },
+  {
+    "id": "2089659499770450000",
+    "text": "#China's fossil-fuelled power output fell in July as rainfall in the southwest boosted hydropower, with renewables and nuclear also rising to crowd out coal. Thermal electricity, generated mostly by coal-fired capacity, fell 3.5% in July but rose 1.8% over the first seven months of the year, according to data from the National Bureau of Statistics on Monday. That marked the first year-on-year decline for China's fossil-fuelled power this year, which has ticked up following a historic decline in 2025. Analysts attributed a 0.1% year-on-year decline in overall power demand, to 943.9 billion kilowatt-hours (kWh), to the statistics bureau's calculation methods, which only include companies above a certain size. That means that data from the National Energy Administration, typically released later in the month, can, in contrast, show an increase in power consumption. #oott https://t.co/u3tDHHKnvJ",
+    "createdAt": "2026-08-18T10:23:43+00:00",
+    "tweetTime": 1787048623000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2089659499770450000",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 4,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 4,
+    "isRetweet": false,
+    "relevance": 20,
+    "rawScore": 20004,
+    "score": 20004
   },
   {
     "id": "2089643444868100415",
@@ -142,14 +199,14 @@
     "url": "https://x.com/staunovo/status/2089643444868100415",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 4,
+    "likes": 6,
     "retweets": 0,
-    "replies": 1,
-    "engagement": 7,
+    "replies": 2,
+    "engagement": 12,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 58007,
-    "score": 58007
+    "rawScore": 58012,
+    "score": 58012
   },
   {
     "id": "2089643207873147387",
@@ -161,33 +218,33 @@
     "url": "https://x.com/staunovo/status/2089643207873147387",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 10,
-    "retweets": 2,
+    "likes": 21,
+    "retweets": 5,
     "replies": 0,
-    "engagement": 14,
+    "engagement": 31,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38014,
-    "score": 38014
+    "rawScore": 38031,
+    "score": 38031
   },
   {
-    "id": "2089624609083572558",
-    "text": "China's state shippers deploy oil tankers outside Gulf, avoid chokepoints, sources say #oott https://t.co/BxbCgoHWeS",
-    "createdAt": "2026-08-18T08:05:04+00:00",
-    "tweetTime": 1787040304000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2089624609083572558",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 6,
-    "retweets": 0,
-    "replies": 0,
-    "engagement": 6,
+    "id": "2089669386927853659",
+    "text": "“Compute is the new Oil” https://t.co/jUH9TQJAlh",
+    "createdAt": "2026-08-18T11:03:00+00:00",
+    "tweetTime": 1787050980000,
+    "username": "Rory_Johnston",
+    "displayName": "Rory Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2089669386927853659",
+    "photoUrl": "https://pbs.twimg.com/media/HP__O23XQAAfCM7.jpg",
+    "hasPhoto": true,
+    "likes": 42,
+    "retweets": 2,
+    "replies": 6,
+    "engagement": 64,
     "isRetweet": false,
-    "relevance": 38,
-    "rawScore": 38006,
-    "score": 38006
+    "relevance": 10,
+    "rawScore": 10364,
+    "score": 10364
   },
   {
     "id": "2089427802516763003",
@@ -199,13 +256,13 @@
     "url": "https://x.com/Rory_Johnston/status/2089427802516763003",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 283,
+    "likes": 284,
     "retweets": 6,
     "replies": 14,
-    "engagement": 337,
+    "engagement": 338,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10337,
+    "rawScore": 10338,
     "score": 4652
   },
   {
@@ -218,14 +275,14 @@
     "url": "https://x.com/Rory_Johnston/status/2089404857312588149",
     "photoUrl": "https://pbs.twimg.com/media/HP8OpPaXgAA_3kN.png",
     "hasPhoto": true,
-    "likes": 389,
-    "retweets": 41,
+    "likes": 393,
+    "retweets": 42,
     "replies": 14,
-    "engagement": 513,
+    "engagement": 519,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18813,
-    "score": 8466
+    "rawScore": 18819,
+    "score": 8469
   },
   {
     "id": "2089342754614559007",
@@ -237,14 +294,14 @@
     "url": "https://x.com/Rory_Johnston/status/2089342754614559007",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 195,
+    "likes": 196,
     "retweets": 8,
     "replies": 21,
-    "engagement": 274,
+    "engagement": 275,
     "isRetweet": false,
     "relevance": 8,
-    "rawScore": 8274,
-    "score": 2482
+    "rawScore": 8275,
+    "score": 2483
   },
   {
     "id": "2089468091516276748",
@@ -256,14 +313,14 @@
     "url": "https://x.com/crudeoilreport/status/2089468091516276748",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 0,
+    "likes": 1,
     "retweets": 0,
     "replies": 1,
-    "engagement": 3,
+    "engagement": 4,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10003,
-    "score": 4501
+    "rawScore": 10004,
+    "score": 4502
   },
   {
     "id": "2089467414693962073",
@@ -342,6 +399,25 @@
     "score": 3000
   },
   {
+    "id": "2089673417595445514",
+    "text": "State-owned Chinese companies COSCO and CMES have stopped sending oil tankers through the Strait of Hormuz and Bab el-Mandeb due to security threats, Reuters reports",
+    "createdAt": "2026-08-18T11:19:01+00:00",
+    "tweetTime": 1787051941000,
+    "username": "OilHeadlineNews",
+    "displayName": "Energy Headline News",
+    "url": "https://x.com/OilHeadlineNews/status/2089673417595445514",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 1,
+    "isRetweet": false,
+    "relevance": 38,
+    "rawScore": 38001,
+    "score": 38001
+  },
+  {
     "id": "2089558090236694625",
     "text": "Iran's IRGC struck an oil tanker in the Strait of Hormuz US-backed southern corridor, while transiting under US escort, causing a large fire in the engine room and casualties among the crew, per UKMTO https://t.co/JgHfTSTzes",
     "createdAt": "2026-08-18T03:40:45+00:00",
@@ -351,14 +427,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2089558090236694625",
     "photoUrl": "https://pbs.twimg.com/media/HP-aAica0AAoJVx.jpg",
     "hasPhoto": true,
-    "likes": 91,
+    "likes": 92,
     "retweets": 16,
     "replies": 7,
-    "engagement": 144,
+    "engagement": 145,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38444,
-    "score": 32677
+    "rawScore": 38445,
+    "score": 32678
   },
   {
     "id": "2089555295907537089",
@@ -370,14 +446,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2089555295907537089",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 18,
+    "likes": 23,
     "retweets": 2,
-    "replies": 7,
-    "engagement": 43,
+    "replies": 9,
+    "engagement": 54,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28043,
-    "score": 23837
+    "rawScore": 28054,
+    "score": 23846
   },
   {
     "id": "2089552952927330416",
@@ -389,14 +465,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2089552952927330416",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 144,
+    "likes": 160,
     "retweets": 26,
     "replies": 5,
-    "engagement": 211,
+    "engagement": 227,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10211,
-    "score": 8679
+    "rawScore": 10227,
+    "score": 6648
   },
   {
     "id": "2089480201126473959",
@@ -415,7 +491,7 @@
     "isRetweet": false,
     "relevance": 28,
     "rawScore": 28057,
-    "score": 18237
+    "score": 12626
   },
   {
     "id": "2089463419820982576",
@@ -427,13 +503,13 @@
     "url": "https://x.com/OilHeadlineNews/status/2089463419820982576",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 34,
+    "likes": 35,
     "retweets": 7,
     "replies": 4,
-    "engagement": 60,
+    "engagement": 61,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20060,
+    "rawScore": 20061,
     "score": 9027
   },
   {
@@ -453,7 +529,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10044,
-    "score": 4520
+    "score": 3013
   },
   {
     "id": "2089397274992652292",
@@ -472,7 +548,7 @@
     "isRetweet": false,
     "relevance": 40,
     "rawScore": 40137,
-    "score": 18062
+    "score": 12041
   },
   {
     "id": "2089396127892447403",
@@ -491,7 +567,7 @@
     "isRetweet": false,
     "relevance": 38,
     "rawScore": 38050,
-    "score": 17123
+    "score": 11415
   },
   {
     "id": "2089608292087533641",
@@ -503,14 +579,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2089608292087533641",
     "photoUrl": "https://pbs.twimg.com/media/HP_GXhpWQAA-Jou.png",
     "hasPhoto": true,
-    "likes": 30,
-    "retweets": 12,
+    "likes": 36,
+    "retweets": 14,
     "replies": 3,
-    "engagement": 63,
+    "engagement": 73,
     "isRetweet": false,
     "relevance": 64,
-    "rawScore": 64363,
-    "score": 64363
+    "rawScore": 64373,
+    "score": 54717
   },
   {
     "id": "2089590843095105937",
