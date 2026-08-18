@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2089561790598590749",
     "photoUrl": "https://pbs.twimg.com/media/HP-c216a0AAy4Qt.jpg",
     "hasPhoto": true,
-    "likes": 67,
-    "retweets": 18,
-    "replies": 7,
-    "engagement": 124,
+    "likes": 130,
+    "retweets": 31,
+    "replies": 8,
+    "engagement": 216,
     "isRetweet": false,
     "relevance": 54,
-    "rawScore": 54424,
-    "score": 54424
+    "rawScore": 54516,
+    "score": 54516
   },
   {
     "id": "2089490998808420402",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2089490998808420402",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 58,
-    "retweets": 4,
+    "likes": 64,
+    "retweets": 5,
     "replies": 10,
-    "engagement": 96,
+    "engagement": 104,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10096,
-    "score": 8582
+    "rawScore": 10104,
+    "score": 8588
   },
   {
     "id": "2089329634819428775",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2089329634819428775",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 66,
+    "likes": 67,
     "retweets": 2,
     "replies": 6,
-    "engagement": 88,
+    "engagement": 89,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30088,
-    "score": 13540
+    "rawScore": 30089,
+    "score": 9027
   },
   {
     "id": "2089415784770523363",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2089415784770523363",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 197,
-    "retweets": 30,
+    "likes": 203,
+    "retweets": 31,
     "replies": 18,
-    "engagement": 311,
+    "engagement": 319,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38311,
-    "score": 24902
+    "rawScore": 38319,
+    "score": 17244
   },
   {
     "id": "2089380051422736526",
@@ -85,14 +85,14 @@
     "url": "https://x.com/JavierBlas/status/2089380051422736526",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 214,
-    "retweets": 32,
+    "likes": 225,
+    "retweets": 34,
     "replies": 14,
-    "engagement": 320,
+    "engagement": 335,
     "isRetweet": false,
     "relevance": 54,
-    "rawScore": 54320,
-    "score": 24444
+    "rawScore": 54335,
+    "score": 24451
   },
   {
     "id": "2089351661781131445",
@@ -104,33 +104,14 @@
     "url": "https://x.com/JavierBlas/status/2089351661781131445",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 462,
-    "retweets": 105,
+    "likes": 470,
+    "retweets": 107,
     "replies": 36,
-    "engagement": 780,
+    "engagement": 792,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30780,
-    "score": 13851
-  },
-  {
-    "id": "2089268459498622977",
-    "text": "COLUMN: The center of gravity of oil is shifting away from the Middle East toward the Americas. \n\nIt's not just the US shale revolution, but a continent-wide oil boom with huge geo-economic implications.\n\n@Opinion \nhttps://t.co/YL9NywEZz9",
-    "createdAt": "2026-08-17T08:29:52+00:00",
-    "tweetTime": 1786955392000,
-    "username": "JavierBlas",
-    "displayName": "Javier Blas",
-    "url": "https://x.com/JavierBlas/status/2089268459498622977",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 725,
-    "retweets": 203,
-    "replies": 44,
-    "engagement": 1263,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 11263,
-    "score": 3379
+    "rawScore": 30792,
+    "score": 13856
   },
   {
     "id": "2089284656935956554",
@@ -161,33 +142,14 @@
     "url": "https://x.com/HFI_Research/status/2089416521139544334",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 137,
-    "retweets": 24,
+    "likes": 141,
+    "retweets": 25,
     "replies": 2,
-    "engagement": 191,
+    "engagement": 197,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10191,
-    "score": 6624
-  },
-  {
-    "id": "2089235982562492708",
-    "text": "Brent is starting to outperform WTI. \n\nUS crude inventory will get some relief from the Bab al-Mandeb closure as oil will be rerouted in the US and then head to Asia (steeper discount). https://t.co/r3lrWm4f2d",
-    "createdAt": "2026-08-17T06:20:49+00:00",
-    "tweetTime": 1786947649000,
-    "username": "HFI_Research",
-    "displayName": "HFI Research",
-    "url": "https://x.com/HFI_Research/status/2089235982562492708",
-    "photoUrl": "https://pbs.twimg.com/media/HP51DQlaYAAGPlR.jpg",
-    "hasPhoto": true,
-    "likes": 227,
-    "retweets": 28,
-    "replies": 0,
-    "engagement": 283,
-    "isRetweet": false,
-    "relevance": 54,
-    "rawScore": 54583,
-    "score": 16375
+    "rawScore": 10197,
+    "score": 4589
   },
   {
     "id": "2089575789599572009",
@@ -199,14 +161,14 @@
     "url": "https://x.com/staunovo/status/2089575789599572009",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1,
-    "retweets": 1,
+    "likes": 2,
+    "retweets": 2,
     "replies": 0,
-    "engagement": 3,
+    "engagement": 6,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20003,
-    "score": 20003
+    "rawScore": 20006,
+    "score": 20006
   },
   {
     "id": "2089575536762708377",
@@ -218,14 +180,14 @@
     "url": "https://x.com/staunovo/status/2089575536762708377",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 13,
-    "retweets": 1,
-    "replies": 0,
-    "engagement": 15,
+    "likes": 26,
+    "retweets": 3,
+    "replies": 1,
+    "engagement": 35,
     "isRetweet": false,
     "relevance": 68,
-    "rawScore": 68015,
-    "score": 68015
+    "rawScore": 68035,
+    "score": 68035
   },
   {
     "id": "2089427802516763003",
@@ -237,14 +199,14 @@
     "url": "https://x.com/Rory_Johnston/status/2089427802516763003",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 261,
+    "likes": 270,
     "retweets": 6,
     "replies": 13,
-    "engagement": 312,
+    "engagement": 321,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10312,
-    "score": 6703
+    "rawScore": 10321,
+    "score": 6709
   },
   {
     "id": "2089404857312588149",
@@ -256,14 +218,14 @@
     "url": "https://x.com/Rory_Johnston/status/2089404857312588149",
     "photoUrl": "https://pbs.twimg.com/media/HP8OpPaXgAA_3kN.png",
     "hasPhoto": true,
-    "likes": 372,
-    "retweets": 37,
+    "likes": 380,
+    "retweets": 39,
     "replies": 14,
-    "engagement": 488,
+    "engagement": 500,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18788,
-    "score": 12212
+    "rawScore": 18800,
+    "score": 8460
   },
   {
     "id": "2089342754614559007",
@@ -275,13 +237,13 @@
     "url": "https://x.com/Rory_Johnston/status/2089342754614559007",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 192,
+    "likes": 193,
     "retweets": 8,
     "replies": 21,
-    "engagement": 271,
+    "engagement": 272,
     "isRetweet": false,
     "relevance": 8,
-    "rawScore": 8271,
+    "rawScore": 8272,
     "score": 3722
   },
   {
@@ -301,7 +263,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10003,
-    "score": 8503
+    "score": 6502
   },
   {
     "id": "2089467414693962073",
@@ -320,7 +282,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10004,
-    "score": 8503
+    "score": 6503
   },
   {
     "id": "2089432944607728083",
@@ -358,7 +320,7 @@
     "isRetweet": false,
     "relevance": 30,
     "rawScore": 30007,
-    "score": 19505
+    "score": 13503
   },
   {
     "id": "2089344587789660198",
@@ -389,14 +351,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2089558090236694625",
     "photoUrl": "https://pbs.twimg.com/media/HP-aAica0AAoJVx.jpg",
     "hasPhoto": true,
-    "likes": 58,
-    "retweets": 15,
+    "likes": 77,
+    "retweets": 16,
     "replies": 6,
-    "engagement": 106,
+    "engagement": 127,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38406,
-    "score": 38406
+    "rawScore": 38427,
+    "score": 38427
   },
   {
     "id": "2089555295907537089",
@@ -408,14 +370,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2089555295907537089",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 12,
+    "likes": 14,
     "retweets": 1,
-    "replies": 5,
-    "engagement": 29,
+    "replies": 6,
+    "engagement": 34,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28029,
-    "score": 28029
+    "rawScore": 28034,
+    "score": 28034
   },
   {
     "id": "2089552952927330416",
@@ -427,14 +389,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2089552952927330416",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 55,
-    "retweets": 10,
-    "replies": 2,
-    "engagement": 81,
+    "likes": 94,
+    "retweets": 16,
+    "replies": 5,
+    "engagement": 141,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10081,
-    "score": 10081
+    "rawScore": 10141,
+    "score": 10141
   },
   {
     "id": "2089480201126473959",
@@ -446,14 +408,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2089480201126473959",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 34,
+    "likes": 35,
     "retweets": 7,
     "replies": 2,
-    "engagement": 54,
+    "engagement": 55,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28054,
-    "score": 23846
+    "rawScore": 28055,
+    "score": 18236
   },
   {
     "id": "2089463419820982576",
@@ -465,13 +427,13 @@
     "url": "https://x.com/OilHeadlineNews/status/2089463419820982576",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 32,
+    "likes": 33,
     "retweets": 7,
     "replies": 4,
-    "engagement": 58,
+    "engagement": 59,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20058,
+    "rawScore": 20059,
     "score": 13038
   },
   {
@@ -486,12 +448,12 @@
     "hasPhoto": false,
     "likes": 38,
     "retweets": 1,
-    "replies": 0,
-    "engagement": 40,
+    "replies": 1,
+    "engagement": 43,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10040,
-    "score": 4518
+    "rawScore": 10043,
+    "score": 4519
   },
   {
     "id": "2089397274992652292",
@@ -503,14 +465,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2089397274992652292",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 102,
+    "likes": 103,
     "retweets": 12,
     "replies": 1,
-    "engagement": 129,
+    "engagement": 130,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40129,
-    "score": 18058
+    "rawScore": 40130,
+    "score": 18059
   },
   {
     "id": "2089396127892447403",
@@ -532,22 +494,22 @@
     "score": 17118
   },
   {
-    "id": "2089233035929559241",
-    "text": "#Commodities:\n#CrudeOil trades steady, holding onto its geopolitical bid, with Brent near the top of its recent range near USD 89 as fresh fighting in Lebanon and attacks on vessels in the Strait of Hormuz cloud the outlook for a deal to end the US-Iran war. Meanwhile, and despite the attacks, Middle Eastern producers continue to shuttle large volumes of crude out of the Persian Gulf, with daily flows reportedly running above market estimates of around 4 million barrels, helping to keep prices in check.\n\n#Copper rose towards a record in London, trading up 1.45% at USD 14,365 per ton in early trading. A combination of major producers struggling to meet production targets and intense competition for supply between the US and China has driven the premium for spot delivery in London over three-month metal to nearly USD 500 per ton, highlighting acute nearby tightness. HG copper in New York trades back above USD 6.70 after last week's correction towards USD 6.50 was met with fresh buying.\n\n#Gold holds near USD 4,400 after a week of weak US economic data and a softer dollar provided support, despite long-end bond yields trading near cycle highs, not least the 10-year real yield. The resilience highlights a market where demand from less interest-rate-sensitive investors has returned amid mounting fiscal and debt concerns. The dynamic is reminiscent of 2022–23, when gold held its ground amid strong central-bank buying despite aggressive rate hikes and rising bond yields. For now, bullion remains stuck in a wide USD 4,200 to USD 4,505 range, with the upper level representing the important 200-day moving average",
-    "createdAt": "2026-08-17T06:09:06+00:00",
-    "tweetTime": 1786946946000,
+    "id": "2089590843095105937",
+    "text": "#Commodities\n#CrudeOil firmed again, with Brent reaching a two-week high above USD 91 after Trump rejected extending the US-Iran agreement, while new attacks on vessels were reported in the Strait of Hormuz and fighting resumed in Lebanon. Together, these developments have further dimmed prospects for a near-term resolution of the 6½-month-long US/Israel-Iran war. The US continues to signal that it intends to use sustained economic pressure to force Tehran into accepting its demands.\n\nPrecious metals: Spot #gold traded near USD 4,400, having steadied after gaining 1.5% over the previous two sessions. The metal is up more than 11% over the past month, its strongest 22-session advance since early February, supported by a softer dollar, fading Fed rate-hike expectations and continued demand from central banks. Investor concerns about the US fiscal and debt outlook are also providing support, particularly as long-end Treasury yields continue to rise.\n\nBroad commodities: The BCOM TR index has now rebounded 13% from its late-June correction low and trades just 3.2% below the record high reached in May. Notably, the recovery has been broad-based, with all major sectors except industrial metals, up 7%, recording double-digit gains from the correction low. Energy and soft commodities lead with gains of more than 19%, followed by grains at 12% and precious metals at 10%. At the individual commodity level, natural gas is the only contract trading lower over the period, while the strongest gains have been seen in diesel, crude oil, coffee, gasoline and sugar.",
+    "createdAt": "2026-08-18T05:50:54+00:00",
+    "tweetTime": 1787032254000,
     "username": "Ole_S_Hansen",
     "displayName": "Ole S Hansen",
-    "url": "https://x.com/Ole_S_Hansen/status/2089233035929559241",
+    "url": "https://x.com/Ole_S_Hansen/status/2089590843095105937",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 16,
-    "retweets": 1,
+    "likes": 4,
+    "retweets": 0,
     "replies": 0,
-    "engagement": 18,
+    "engagement": 4,
     "isRetweet": false,
-    "relevance": 58,
-    "rawScore": 58018,
-    "score": 17405
+    "relevance": 68,
+    "rawScore": 68004,
+    "score": 68004
   }
 ]
