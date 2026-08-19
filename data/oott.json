@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2089966173693575223",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 14,
-    "retweets": 3,
+    "likes": 21,
+    "retweets": 5,
     "replies": 0,
-    "engagement": 20,
+    "engagement": 31,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38020,
-    "score": 38020
+    "rawScore": 38031,
+    "score": 38031
   },
   {
     "id": "2089962783496344018",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JavierBlas/status/2089962783496344018",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 56,
-    "retweets": 13,
-    "replies": 7,
-    "engagement": 103,
+    "likes": 82,
+    "retweets": 20,
+    "replies": 8,
+    "engagement": 146,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38103,
-    "score": 38103
+    "rawScore": 38146,
+    "score": 38146
   },
   {
     "id": "2089751477522759793",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2089714211525988672",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 143,
+    "likes": 145,
     "retweets": 15,
     "replies": 42,
-    "engagement": 299,
+    "engagement": 301,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10299,
-    "score": 4635
+    "rawScore": 10301,
+    "score": 3090
   },
   {
     "id": "2089722008346968152",
@@ -85,14 +85,14 @@
     "url": "https://x.com/JKempEnergy/status/2089722008346968152",
     "photoUrl": "https://pbs.twimg.com/media/HQAu1UfXMAAbmoV.png",
     "hasPhoto": true,
-    "likes": 36,
+    "likes": 37,
     "retweets": 10,
     "replies": 3,
-    "engagement": 65,
+    "engagement": 66,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20365,
-    "score": 9164
+    "rawScore": 20366,
+    "score": 9165
   },
   {
     "id": "2089649426834899386",
@@ -104,13 +104,13 @@
     "url": "https://x.com/JKempEnergy/status/2089649426834899386",
     "photoUrl": "https://pbs.twimg.com/media/HP_tDZSXsAAAGS3.jpg",
     "hasPhoto": true,
-    "likes": 36,
+    "likes": 37,
     "retweets": 19,
     "replies": 1,
-    "engagement": 77,
+    "engagement": 78,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48377,
+    "rawScore": 48378,
     "score": 14513
   },
   {
@@ -123,33 +123,14 @@
     "url": "https://x.com/HFI_Research/status/2089913136140984377",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 391,
-    "retweets": 51,
+    "likes": 445,
+    "retweets": 55,
     "replies": 9,
-    "engagement": 520,
+    "engagement": 582,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30520,
-    "score": 25942
-  },
-  {
-    "id": "2089851268575682735",
-    "text": "WSJ:\n\nIranian attacks on shipping in the Strait of Hormuz are piling up without an American military response, raising the risks of crossing the strategic waterway and frustrating some Arab allies who worry the U.S. doesn’t have a strategy to wind down the conflict.\n\nIran fired two ballistic missiles toward the strait on Tuesday, triggering air defenses in the United Arab Emirates, according to that country’s Ministry of Defense, which said the missiles were targeting maritime traffic but ultimately fell into the sea.\n\nEarlier Tuesday, an Iranian attack hit the engine room of a bulk carrier in the strait east of Oman, leaving the chief engineer dead, maritime security firms said.",
-    "createdAt": "2026-08-18T23:05:44+00:00",
-    "tweetTime": 1787094344000,
-    "username": "HFI_Research",
-    "displayName": "HFI Research",
-    "url": "https://x.com/HFI_Research/status/2089851268575682735",
-    "photoUrl": "https://pbs.twimg.com/media/HQCkppdbIAIWKkZ.jpg",
-    "hasPhoto": true,
-    "likes": 179,
-    "retweets": 35,
-    "replies": 2,
-    "engagement": 255,
-    "isRetweet": false,
-    "relevance": 18,
-    "rawScore": 18555,
-    "score": 12061
+    "rawScore": 30582,
+    "score": 25995
   },
   {
     "id": "2089950508312051952",
@@ -161,14 +142,14 @@
     "url": "https://x.com/staunovo/status/2089950508312051952",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 11,
-    "retweets": 2,
-    "replies": 0,
-    "engagement": 15,
+    "likes": 17,
+    "retweets": 4,
+    "replies": 1,
+    "engagement": 28,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48015,
-    "score": 48015
+    "rawScore": 48028,
+    "score": 48028
   },
   {
     "id": "2089945656680943628",
@@ -180,14 +161,14 @@
     "url": "https://x.com/staunovo/status/2089945656680943628",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1,
+    "likes": 2,
     "retweets": 0,
     "replies": 0,
-    "engagement": 1,
+    "engagement": 2,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30001,
-    "score": 30001
+    "rawScore": 30002,
+    "score": 30002
   },
   {
     "id": "2089942647616000470",
@@ -218,14 +199,14 @@
     "url": "https://x.com/Rory_Johnston/status/2089799953077969135",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 216,
+    "likes": 220,
     "retweets": 1,
     "replies": 11,
-    "engagement": 251,
+    "engagement": 255,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10251,
-    "score": 6663
+    "rawScore": 10255,
+    "score": 4615
   },
   {
     "id": "2089785593370759353",
@@ -237,14 +218,14 @@
     "url": "https://x.com/Rory_Johnston/status/2089785593370759353",
     "photoUrl": "https://pbs.twimg.com/media/HQBo65VWMAAMSJI.jpg",
     "hasPhoto": true,
-    "likes": 335,
+    "likes": 339,
     "retweets": 3,
     "replies": 27,
-    "engagement": 422,
+    "engagement": 426,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10722,
-    "score": 4825
+    "rawScore": 10726,
+    "score": 4827
   },
   {
     "id": "2089718609840869531",
@@ -256,14 +237,14 @@
     "url": "https://x.com/Rory_Johnston/status/2089718609840869531",
     "photoUrl": "https://pbs.twimg.com/media/HQArjvGX0AAgs6g.png",
     "hasPhoto": true,
-    "likes": 113,
+    "likes": 115,
     "retweets": 18,
     "replies": 18,
-    "engagement": 203,
+    "engagement": 205,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20503,
-    "score": 9226
+    "rawScore": 20505,
+    "score": 6152
   },
   {
     "id": "2089669386927853659",
@@ -275,14 +256,14 @@
     "url": "https://x.com/Rory_Johnston/status/2089669386927853659",
     "photoUrl": "https://pbs.twimg.com/media/HP__O23XQAAfCM7.jpg",
     "hasPhoto": true,
-    "likes": 463,
+    "likes": 465,
     "retweets": 34,
     "replies": 20,
-    "engagement": 591,
+    "engagement": 593,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10891,
-    "score": 3267
+    "rawScore": 10893,
+    "score": 3268
   },
   {
     "id": "2089838311221420267",
@@ -320,7 +301,7 @@
     "isRetweet": false,
     "relevance": 30,
     "rawScore": 30001,
-    "score": 19501
+    "score": 13500
   },
   {
     "id": "2089745255859921304",
@@ -370,13 +351,13 @@
     "url": "https://x.com/Ole_S_Hansen/status/2089954894551675055",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 6,
+    "likes": 7,
     "retweets": 0,
     "replies": 0,
-    "engagement": 6,
+    "engagement": 7,
     "isRetweet": false,
     "relevance": 74,
-    "rawScore": 74006,
-    "score": 74006
+    "rawScore": 74007,
+    "score": 74007
   }
 ]
