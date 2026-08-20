@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2090271962727866496",
     "photoUrl": "https://pbs.twimg.com/media/HQIi1_Ba8AAWDlF.jpg",
     "hasPhoto": true,
-    "likes": 27,
-    "retweets": 4,
-    "replies": 4,
-    "engagement": 47,
+    "likes": 39,
+    "retweets": 5,
+    "replies": 5,
+    "engagement": 64,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10347,
-    "score": 10347
+    "rawScore": 10364,
+    "score": 10364
   },
   {
     "id": "2090003284371419588",
@@ -28,13 +28,13 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2090003284371419588",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 67,
+    "likes": 68,
     "retweets": 14,
     "replies": 5,
-    "engagement": 110,
+    "engagement": 111,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20110,
+    "rawScore": 20111,
     "score": 6033
   },
   {
@@ -47,14 +47,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2089966173693575223",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 66,
+    "likes": 67,
     "retweets": 9,
     "replies": 0,
-    "engagement": 84,
+    "engagement": 85,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38084,
-    "score": 11425
+    "rawScore": 38085,
+    "score": 11426
   },
   {
     "id": "2090218945974329519",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2090218945974329519",
     "photoUrl": "https://pbs.twimg.com/media/HQHzCsCWcAA4nZ2.jpg",
     "hasPhoto": true,
-    "likes": 116,
-    "retweets": 22,
-    "replies": 34,
-    "engagement": 262,
+    "likes": 125,
+    "retweets": 24,
+    "replies": 37,
+    "engagement": 284,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10562,
-    "score": 8978
+    "rawScore": 10584,
+    "score": 8996
   },
   {
     "id": "2089962783496344018",
@@ -85,14 +85,14 @@
     "url": "https://x.com/JavierBlas/status/2089962783496344018",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 173,
+    "likes": 178,
     "retweets": 44,
     "replies": 9,
-    "engagement": 288,
+    "engagement": 293,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38288,
-    "score": 11486
+    "rawScore": 38293,
+    "score": 11488
   },
   {
     "id": "2090110990406873210",
@@ -104,14 +104,14 @@
     "url": "https://x.com/JKempEnergy/status/2090110990406873210",
     "photoUrl": "https://pbs.twimg.com/media/HQGQ1Z0W0AAJ9sW.png",
     "hasPhoto": true,
-    "likes": 40,
+    "likes": 41,
     "retweets": 12,
     "replies": 2,
-    "engagement": 70,
+    "engagement": 71,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10370,
-    "score": 6741
+    "rawScore": 10371,
+    "score": 4667
   },
   {
     "id": "2090013029735788603",
@@ -123,14 +123,14 @@
     "url": "https://x.com/JKempEnergy/status/2090013029735788603",
     "photoUrl": "https://pbs.twimg.com/media/HQE3xPrXEAABuSD.jpg",
     "hasPhoto": true,
-    "likes": 21,
+    "likes": 22,
     "retweets": 9,
     "replies": 2,
-    "engagement": 45,
+    "engagement": 46,
     "isRetweet": false,
     "relevance": 66,
-    "rawScore": 66345,
-    "score": 29855
+    "rawScore": 66346,
+    "score": 19904
   },
   {
     "id": "2090174267027755236",
@@ -142,14 +142,14 @@
     "url": "https://x.com/HFI_Research/status/2090174267027755236",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 113,
+    "likes": 116,
     "retweets": 17,
     "replies": 0,
-    "engagement": 147,
+    "engagement": 150,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20147,
-    "score": 17125
+    "rawScore": 20150,
+    "score": 13098
   },
   {
     "id": "2090161606844174748",
@@ -161,14 +161,14 @@
     "url": "https://x.com/HFI_Research/status/2090161606844174748",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 311,
-    "retweets": 25,
-    "replies": 3,
-    "engagement": 370,
+    "likes": 325,
+    "retweets": 27,
+    "replies": 4,
+    "engagement": 391,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10370,
-    "score": 6741
+    "rawScore": 10391,
+    "score": 6754
   },
   {
     "id": "2090160619869913519",
@@ -180,23 +180,42 @@
     "url": "https://x.com/HFI_Research/status/2090160619869913519",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 134,
-    "retweets": 12,
+    "likes": 140,
+    "retweets": 14,
     "replies": 2,
-    "engagement": 164,
+    "engagement": 174,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 58164,
-    "score": 37807
+    "rawScore": 58174,
+    "score": 37813
   },
   {
-    "id": "2090282112414879839",
-    "text": "Donald Trump proposed reviving the Keystone XL pipeline. Does Canada still want it?\nThe bilateral relationship has soured significantly since the project was first proposed two decades ago #oott https://t.co/FQ0BJWgIk0",
-    "createdAt": "2026-08-20T03:37:45+00:00",
-    "tweetTime": 1787197065000,
+    "id": "2090297955202793501",
+    "text": "Ukrainian drones reportedly struck an oil refinery in the Russian Republic of Tatarstan and an oil terminal in Krasnodar Krai overnight on Aug. 20, Russian Telegram media channels reported, as Ukraine continues its campaign targeting Russian oil infrastructure.\n\nDrones reportedly targeted the TANECO oil refinery in Nizhnekamsk, Russian Telegram media channels reported. Photos and videos posted to social media purport to show long-range drones striking the refinery overnight. #oott https://t.co/iL8OsEh4Pv",
+    "createdAt": "2026-08-20T04:40:43+00:00",
+    "tweetTime": 1787200843000,
     "username": "staunovo",
     "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2090282112414879839",
+    "url": "https://x.com/staunovo/status/2090297955202793501",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 3,
+    "retweets": 1,
+    "replies": 0,
+    "engagement": 5,
+    "isRetweet": false,
+    "relevance": 38,
+    "rawScore": 38005,
+    "score": 38005
+  },
+  {
+    "id": "2090297764575900021",
+    "text": "The Abu Dhabi National Oil Company (ADNOC) is offering spot crude in a tender, its ninth since the start of June, as the UAE state oil company works to move oil from inside the Strait of Hormuz, trade sources said.\n\n* The tender is for sale of Upper Zakum, Umm Lulu and Das crude oil produced from fields within the Gulf for loading in October and November, the sources said. #oott https://t.co/g4Dk637aVM",
+    "createdAt": "2026-08-20T04:39:57+00:00",
+    "tweetTime": 1787200797000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2090297764575900021",
     "photoUrl": null,
     "hasPhoto": false,
     "likes": 0,
@@ -204,9 +223,66 @@
     "replies": 0,
     "engagement": 0,
     "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10000,
-    "score": 10000
+    "relevance": 40,
+    "rawScore": 40000,
+    "score": 40000
+  },
+  {
+    "id": "2090297623446016425",
+    "text": "Hormuz shipping unchanged amid US-Iran stalemate, data shows #oott https://t.co/V5HThGLea7",
+    "createdAt": "2026-08-20T04:39:23+00:00",
+    "tweetTime": 1787200763000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2090297623446016425",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 2,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 2,
+    "isRetweet": false,
+    "relevance": 28,
+    "rawScore": 28002,
+    "score": 28002
+  },
+  {
+    "id": "2090297376065851725",
+    "text": "North Dakota oil production up 28,000 bpd in June vs May to 1,153,000 bpd – state regulator #oott https://t.co/Ad6xUOU4qj",
+    "createdAt": "2026-08-20T04:38:24+00:00",
+    "tweetTime": 1787200704000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2090297376065851725",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 2,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 2,
+    "isRetweet": false,
+    "relevance": 20,
+    "rawScore": 20002,
+    "score": 20002
+  },
+  {
+    "id": "2090296972376707116",
+    "text": "Demand for tankers soars as Gulf oil producers search for ways to export cargoes\nOil-exporting countries looking to secure their own fleets are driving prices, particularly for readily available vessels\n#oott https://t.co/ljNhopUPpV",
+    "createdAt": "2026-08-20T04:36:48+00:00",
+    "tweetTime": 1787200608000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2090296972376707116",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 1,
+    "isRetweet": false,
+    "relevance": 38,
+    "rawScore": 38001,
+    "score": 38001
   },
   {
     "id": "2090192021994770901",
@@ -218,14 +294,14 @@
     "url": "https://x.com/Rory_Johnston/status/2090192021994770901",
     "photoUrl": "https://pbs.twimg.com/media/HQHakO8WoAA-Xit.jpg",
     "hasPhoto": true,
-    "likes": 243,
-    "retweets": 37,
-    "replies": 35,
-    "engagement": 422,
+    "likes": 262,
+    "retweets": 38,
+    "replies": 39,
+    "engagement": 455,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28722,
-    "score": 24414
+    "rawScore": 28755,
+    "score": 24442
   },
   {
     "id": "2090051261643034963",
@@ -237,13 +313,13 @@
     "url": "https://x.com/Rory_Johnston/status/2090051261643034963",
     "photoUrl": "https://pbs.twimg.com/media/HQFai5_WkAADXL7.jpg",
     "hasPhoto": true,
-    "likes": 160,
+    "likes": 161,
     "retweets": 11,
     "replies": 6,
-    "engagement": 200,
+    "engagement": 201,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20500,
+    "rawScore": 20501,
     "score": 9225
   },
   {
@@ -263,7 +339,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20011,
-    "score": 17009
+    "score": 13007
   },
   {
     "id": "2090115019937607749",
@@ -282,7 +358,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10000,
-    "score": 6500
+    "score": 4500
   },
   {
     "id": "2090181825641771400",
@@ -296,12 +372,12 @@
     "hasPhoto": false,
     "likes": 68,
     "retweets": 9,
-    "replies": 26,
-    "engagement": 164,
+    "replies": 27,
+    "engagement": 167,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48164,
-    "score": 40939
+    "rawScore": 48167,
+    "score": 40942
   },
   {
     "id": "2090164088563494946",
@@ -320,7 +396,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10028,
-    "score": 8524
+    "score": 6518
   },
   {
     "id": "2090041794482368524",
@@ -370,14 +446,14 @@
     "url": "https://x.com/TankerTrackers/status/2090192468813697093",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 267,
-    "retweets": 38,
-    "replies": 17,
-    "engagement": 394,
+    "likes": 293,
+    "retweets": 45,
+    "replies": 19,
+    "engagement": 440,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10394,
-    "score": 8835
+    "rawScore": 10440,
+    "score": 8874
   },
   {
     "id": "2090051875001303465",
@@ -389,13 +465,13 @@
     "url": "https://x.com/TankerTrackers/status/2090051875001303465",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 328,
+    "likes": 336,
     "retweets": 44,
     "replies": 9,
-    "engagement": 443,
+    "engagement": 451,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10443,
-    "score": 4699
+    "rawScore": 10451,
+    "score": 4703
   }
 ]
