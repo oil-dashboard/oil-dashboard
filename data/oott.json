@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2090711896395845704",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 106,
-    "retweets": 16,
+    "likes": 124,
+    "retweets": 20,
     "replies": 3,
-    "engagement": 147,
+    "engagement": 173,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10147,
-    "score": 8625
+    "rawScore": 10173,
+    "score": 8647
   },
   {
     "id": "2090718773859041483",
@@ -35,7 +35,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20006,
-    "score": 20006
+    "score": 17005
   },
   {
     "id": "2090440559517401089",
@@ -66,14 +66,14 @@
     "url": "https://x.com/HFI_Research/status/2090613534862594378",
     "photoUrl": "https://pbs.twimg.com/media/HQNZ7ezbsAAMyeL.jpg",
     "hasPhoto": true,
-    "likes": 132,
-    "retweets": 15,
+    "likes": 140,
+    "retweets": 17,
     "replies": 1,
-    "engagement": 165,
+    "engagement": 177,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38465,
-    "score": 25002
+    "rawScore": 38477,
+    "score": 25010
   },
   {
     "id": "2090631298230444201",
@@ -85,14 +85,14 @@
     "url": "https://x.com/Rory_Johnston/status/2090631298230444201",
     "photoUrl": "https://pbs.twimg.com/media/HQNpjZZWEAAKmnw.jpg",
     "hasPhoto": true,
-    "likes": 81,
+    "likes": 87,
     "retweets": 6,
     "replies": 7,
-    "engagement": 114,
+    "engagement": 120,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10414,
-    "score": 6769
+    "rawScore": 10420,
+    "score": 6773
   },
   {
     "id": "2090578999940407570",
@@ -104,14 +104,14 @@
     "url": "https://x.com/Rory_Johnston/status/2090578999940407570",
     "photoUrl": "https://pbs.twimg.com/media/HQM6hS-WgAAHOob.jpg",
     "hasPhoto": true,
-    "likes": 277,
+    "likes": 283,
     "retweets": 13,
-    "replies": 24,
-    "engagement": 375,
+    "replies": 25,
+    "engagement": 384,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10675,
-    "score": 4804
+    "rawScore": 10684,
+    "score": 4808
   },
   {
     "id": "2090464800023130191",
@@ -123,14 +123,14 @@
     "url": "https://x.com/Rory_Johnston/status/2090464800023130191",
     "photoUrl": "https://pbs.twimg.com/media/HQLSOeAW8AAO_9p.png",
     "hasPhoto": true,
-    "likes": 1078,
-    "retweets": 219,
-    "replies": 21,
-    "engagement": 1579,
+    "likes": 1094,
+    "retweets": 224,
+    "replies": 22,
+    "engagement": 1608,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 39879,
-    "score": 11964
+    "rawScore": 39908,
+    "score": 11972
   },
   {
     "id": "2090443742679367915",
@@ -142,14 +142,14 @@
     "url": "https://x.com/Rory_Johnston/status/2090443742679367915",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 232,
+    "likes": 233,
     "retweets": 8,
     "replies": 21,
-    "engagement": 311,
+    "engagement": 312,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20311,
-    "score": 6093
+    "rawScore": 20312,
+    "score": 6094
   },
   {
     "id": "2090442083131691047",
@@ -161,14 +161,52 @@
     "url": "https://x.com/Rory_Johnston/status/2090442083131691047",
     "photoUrl": "https://pbs.twimg.com/media/HQK9jIuW4AEUuB6.png",
     "hasPhoto": true,
-    "likes": 116,
-    "retweets": 18,
+    "likes": 118,
+    "retweets": 19,
     "replies": 12,
-    "engagement": 188,
+    "engagement": 192,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10488,
-    "score": 3146
+    "rawScore": 10492,
+    "score": 3148
+  },
+  {
+    "id": "2090790709318029682",
+    "text": "Crude oil bulls are having a field day past couple of days with the crude oil price spike.... I’m starting to notice $100 pb prognostications which is a good signal for shorting crude. #OOTT",
+    "createdAt": "2026-08-21T13:18:44+00:00",
+    "tweetTime": 1787318324000,
+    "username": "crudeoilreport",
+    "displayName": "Crude Oil Report",
+    "url": "https://x.com/crudeoilreport/status/2090790709318029682",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 1,
+    "engagement": 3,
+    "isRetweet": false,
+    "relevance": 30,
+    "rawScore": 30003,
+    "score": 30003
+  },
+  {
+    "id": "2090787254453055490",
+    "text": "A good problem for Venezuela to have: crude production is rising toward 1.25 million bpd in 2026, but port bottlenecks are emerging as the next constraint on export growth. As long as they can pump crude, infra is an easy fix for wildcatters in the field #OOTT",
+    "createdAt": "2026-08-21T13:05:01+00:00",
+    "tweetTime": 1787317501000,
+    "username": "crudeoilreport",
+    "displayName": "Crude Oil Report",
+    "url": "https://x.com/crudeoilreport/status/2090787254453055490",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 0,
+    "isRetweet": false,
+    "relevance": 20,
+    "rawScore": 20000,
+    "score": 20000
   },
   {
     "id": "2090588805338202383",
@@ -180,13 +218,13 @@
     "url": "https://x.com/OilHeadlineNews/status/2090588805338202383",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 35,
+    "likes": 36,
     "retweets": 1,
     "replies": 3,
-    "engagement": 46,
+    "engagement": 47,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10046,
+    "rawScore": 10047,
     "score": 4521
   },
   {
@@ -206,7 +244,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10008,
-    "score": 4504
+    "score": 3002
   },
   {
     "id": "2090518053234880726",
@@ -225,45 +263,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10004,
-    "score": 4502
-  },
-  {
-    "id": "2090492214208082363",
-    "text": "Bessent: \"We've got a spike in oil prices today that I don't really understand\" https://t.co/TQPIiyQKAF",
-    "createdAt": "2026-08-20T17:32:37+00:00",
-    "tweetTime": 1787247157000,
-    "username": "OilHeadlineNews",
-    "displayName": "Energy Headline News",
-    "url": "https://x.com/OilHeadlineNews/status/2090492214208082363",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 142,
-    "retweets": 10,
-    "replies": 46,
-    "engagement": 300,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10300,
-    "score": 3090
-  },
-  {
-    "id": "2090478791206261227",
-    "text": "DEUTSCHE BANK IS REBUILDING ENERGY TRADING WITH STRING OF HIRES",
-    "createdAt": "2026-08-20T16:39:17+00:00",
-    "tweetTime": 1787243957000,
-    "username": "OilHeadlineNews",
-    "displayName": "Energy Headline News",
-    "url": "https://x.com/OilHeadlineNews/status/2090478791206261227",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 7,
-    "retweets": 3,
-    "replies": 1,
-    "engagement": 16,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10016,
-    "score": 3005
+    "score": 3001
   },
   {
     "id": "2090757824133337291",
@@ -275,14 +275,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2090757824133337291",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 9,
-    "retweets": 3,
+    "likes": 13,
+    "retweets": 5,
     "replies": 0,
-    "engagement": 15,
+    "engagement": 23,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10015,
-    "score": 10015
+    "rawScore": 10023,
+    "score": 10023
   },
   {
     "id": "2090683919582601376",
@@ -294,14 +294,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2090683919582601376",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 17,
+    "likes": 16,
     "retweets": 3,
     "replies": 1,
-    "engagement": 26,
+    "engagement": 25,
     "isRetweet": false,
     "relevance": 74,
-    "rawScore": 74026,
-    "score": 62922
+    "rawScore": 74025,
+    "score": 62921
   },
   {
     "id": "2090523850840670541",
@@ -313,33 +313,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2090523850840670541",
     "photoUrl": "https://pbs.twimg.com/media/HQMIXI7WYAAHUbz.jpg",
     "hasPhoto": true,
-    "likes": 32,
+    "likes": 34,
     "retweets": 8,
     "replies": 1,
-    "engagement": 51,
+    "engagement": 53,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10351,
-    "score": 4658
-  },
-  {
-    "id": "2090418026751345025",
-    "text": "Yields rise, gold and stocks drop on renewed crude rally:\nUS Treasury yields have already erased yesterday’s post-buyback relief, with the 10-year rising 6 basis points to 4.70%, above the level seen before the Treasury announced its expanded buyback programme. The 30-year yield has climbed 7 basis points to 5.26%, leaving it just shy of its pre-announcement level.\n\nThe rapid reversal underlines concerns that buybacks may provide temporary liquidity support but do little to address the underlying fiscal and inflation risks driving the term premium higher. The outlook is not being helped by another increase in oil prices, with the Middle East crisis showing no signs of ending and renewed energy-price pressure adding to inflation concerns. \n\nDevelopments that are also weighing on gold following yesterday’s powerful rally, which briefly took the metal above the 200-day moving average at USD 4,511. The rebound in long-end Treasury yields, together with renewed oil-driven inflation concerns, has triggered some profit-taking and potentially forced long-liquidation from short-term focused momentum traders, all reinforcing this area as a key technical hurdle.\n\nChart source: Bloomberg",
-    "createdAt": "2026-08-20T12:37:50+00:00",
-    "tweetTime": 1787229470000,
-    "username": "Ole_S_Hansen",
-    "displayName": "Ole S Hansen",
-    "url": "https://x.com/Ole_S_Hansen/status/2090418026751345025",
-    "photoUrl": "https://pbs.twimg.com/media/HQKlpwzWQAAvXSD.png",
-    "hasPhoto": true,
-    "likes": 77,
-    "retweets": 20,
-    "replies": 2,
-    "engagement": 123,
-    "isRetweet": false,
-    "relevance": 30,
-    "rawScore": 30423,
-    "score": 9127
+    "rawScore": 10353,
+    "score": 4659
   },
   {
     "id": "2090516380068041075",
@@ -351,13 +332,13 @@
     "url": "https://x.com/TankerTrackers/status/2090516380068041075",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 915,
+    "likes": 932,
     "retweets": 125,
     "replies": 89,
-    "engagement": 1432,
+    "engagement": 1449,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 21432,
-    "score": 9644
+    "rawScore": 21449,
+    "score": 6435
   }
 ]
