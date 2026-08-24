@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2091820264590029146",
     "photoUrl": "https://pbs.twimg.com/media/HQejT3kbEAAMl4m.jpg",
     "hasPhoto": true,
-    "likes": 16,
-    "retweets": 1,
+    "likes": 32,
+    "retweets": 2,
     "replies": 2,
-    "engagement": 24,
+    "engagement": 42,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20324,
-    "score": 20324
+    "rawScore": 20342,
+    "score": 20342
   },
   {
     "id": "2091802318333436086",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2091802318333436086",
     "photoUrl": "https://pbs.twimg.com/media/HQeS0IJbQAASSxz.png",
     "hasPhoto": true,
-    "likes": 44,
+    "likes": 64,
     "retweets": 8,
-    "replies": 3,
-    "engagement": 69,
+    "replies": 4,
+    "engagement": 92,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38369,
-    "score": 38369
+    "rawScore": 38392,
+    "score": 38392
   },
   {
     "id": "2091767122733211927",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2091767122733211927",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 33,
+    "likes": 39,
     "retweets": 2,
     "replies": 14,
-    "engagement": 79,
+    "engagement": 85,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38079,
-    "score": 32367
+    "rawScore": 38085,
+    "score": 32372
   },
   {
     "id": "2091037278256988613",
@@ -95,6 +95,44 @@
     "score": 3002
   },
   {
+    "id": "2091841086759043169",
+    "text": "Shell CEO Wael Sawan says petroleum “products markets are more squeezed” than crude oil. He warns that market shock absorbers are getting wore down.",
+    "createdAt": "2026-08-24T10:52:34+00:00",
+    "tweetTime": 1787568754000,
+    "username": "JavierBlas",
+    "displayName": "Javier Blas",
+    "url": "https://x.com/JavierBlas/status/2091841086759043169",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 38,
+    "retweets": 10,
+    "replies": 4,
+    "engagement": 70,
+    "isRetweet": false,
+    "relevance": 30,
+    "rawScore": 30070,
+    "score": 30070
+  },
+  {
+    "id": "2091832157069062625",
+    "text": "TotalEnergies CEO Patrick Pouyanne describes the supply and demand fundamentals for crude oil — emphasis on crude — as “completely bearish.” \n\nBut he warns the real oil shortage is in petroleum refined products, saying the outlook for diesel is “very bullish.”",
+    "createdAt": "2026-08-24T10:17:05+00:00",
+    "tweetTime": 1787566625000,
+    "username": "JavierBlas",
+    "displayName": "Javier Blas",
+    "url": "https://x.com/JavierBlas/status/2091832157069062625",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 40,
+    "retweets": 9,
+    "replies": 3,
+    "engagement": 67,
+    "isRetweet": false,
+    "relevance": 40,
+    "rawScore": 40067,
+    "score": 40067
+  },
+  {
     "id": "2091826562106544155",
     "text": "TotalEnergies CEO Patrick Pouyanne says oil is flowing the Strait of Hormuz “very quietly,” and his company is largest trader of Iraqi/Qatari crude. \n\nPouyanne says it costs ~$20 million per VLCC per SoH passage (including return) in freight and insurance. TotalEnergies is buying crude inside Persian Gulf at ~$50-$60 a barrel as producers are “desperate” for lifters, making the process profitable.",
     "createdAt": "2026-08-24T09:54:51+00:00",
@@ -104,14 +142,14 @@
     "url": "https://x.com/JavierBlas/status/2091826562106544155",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 16,
-    "retweets": 4,
-    "replies": 1,
-    "engagement": 27,
+    "likes": 292,
+    "retweets": 68,
+    "replies": 16,
+    "engagement": 476,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40027,
-    "score": 40027
+    "rawScore": 40476,
+    "score": 40476
   },
   {
     "id": "2091826430229278814",
@@ -123,14 +161,14 @@
     "url": "https://x.com/JavierBlas/status/2091826430229278814",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 2,
+    "likes": 4,
     "retweets": 1,
     "replies": 0,
-    "engagement": 4,
+    "engagement": 6,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30004,
-    "score": 30004
+    "rawScore": 30006,
+    "score": 30006
   },
   {
     "id": "2091631820596969918",
@@ -142,14 +180,14 @@
     "url": "https://x.com/JavierBlas/status/2091631820596969918",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 788,
-    "retweets": 129,
-    "replies": 65,
-    "engagement": 1241,
+    "likes": 805,
+    "retweets": 131,
+    "replies": 67,
+    "engagement": 1268,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 21241,
-    "score": 9558
+    "rawScore": 21268,
+    "score": 9571
   },
   {
     "id": "2091408571133030852",
@@ -162,13 +200,13 @@
     "photoUrl": null,
     "hasPhoto": false,
     "likes": 6,
-    "retweets": 1,
+    "retweets": 3,
     "replies": 0,
-    "engagement": 8,
+    "engagement": 12,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10008,
-    "score": 3002
+    "rawScore": 10012,
+    "score": 3004
   },
   {
     "id": "2091160167630987635",
@@ -218,14 +256,14 @@
     "url": "https://x.com/HFI_Research/status/2091733940759605472",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 175,
+    "likes": 190,
     "retweets": 13,
     "replies": 3,
-    "engagement": 210,
+    "engagement": 225,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18210,
-    "score": 15479
+    "rawScore": 18225,
+    "score": 15491
   },
   {
     "id": "2091718514294095913",
@@ -237,14 +275,14 @@
     "url": "https://x.com/HFI_Research/status/2091718514294095913",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 414,
-    "retweets": 27,
+    "likes": 437,
+    "retweets": 28,
     "replies": 6,
-    "engagement": 486,
+    "engagement": 511,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10486,
-    "score": 8913
+    "rawScore": 10511,
+    "score": 6832
   },
   {
     "id": "2091381052887691755",
@@ -275,13 +313,13 @@
     "url": "https://x.com/HFI_Research/status/2091363579555688487",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 382,
+    "likes": 383,
     "retweets": 37,
     "replies": 3,
-    "engagement": 465,
+    "engagement": 466,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10465,
+    "rawScore": 10466,
     "score": 3140
   },
   {
@@ -294,14 +332,14 @@
     "url": "https://x.com/HFI_Research/status/2091216886117908878",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 815,
+    "likes": 817,
     "retweets": 97,
-    "replies": 10,
-    "engagement": 1039,
+    "replies": 11,
+    "engagement": 1044,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 19039,
-    "score": 5712
+    "rawScore": 19044,
+    "score": 5713
   },
   {
     "id": "2091212993396965831",
@@ -313,14 +351,14 @@
     "url": "https://x.com/HFI_Research/status/2091212993396965831",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1081,
+    "likes": 1082,
     "retweets": 139,
     "replies": 4,
-    "engagement": 1371,
+    "engagement": 1372,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 21371,
-    "score": 6411
+    "rawScore": 21372,
+    "score": 6412
   },
   {
     "id": "2091813098067800365",
@@ -332,14 +370,14 @@
     "url": "https://x.com/staunovo/status/2091813098067800365",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1,
+    "likes": 2,
     "retweets": 1,
     "replies": 0,
-    "engagement": 3,
+    "engagement": 4,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20003,
-    "score": 20003
+    "rawScore": 20004,
+    "score": 20004
   },
   {
     "id": "2091812917687513122",
@@ -351,14 +389,14 @@
     "url": "https://x.com/staunovo/status/2091812917687513122",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 0,
+    "likes": 2,
     "retweets": 1,
     "replies": 0,
-    "engagement": 2,
+    "engagement": 4,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28002,
-    "score": 28002
+    "rawScore": 28004,
+    "score": 28004
   },
   {
     "id": "2091812756227752446",
@@ -370,14 +408,14 @@
     "url": "https://x.com/staunovo/status/2091812756227752446",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 0,
+    "likes": 1,
     "retweets": 1,
     "replies": 0,
-    "engagement": 2,
+    "engagement": 3,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10002,
-    "score": 10002
+    "rawScore": 10003,
+    "score": 10003
   },
   {
     "id": "2091812533065671063",
@@ -389,14 +427,14 @@
     "url": "https://x.com/staunovo/status/2091812533065671063",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 6,
+    "likes": 11,
     "retweets": 0,
     "replies": 0,
-    "engagement": 6,
+    "engagement": 11,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20006,
-    "score": 20006
+    "rawScore": 20011,
+    "score": 20011
   },
   {
     "id": "2091811185133822406",
@@ -427,14 +465,14 @@
     "url": "https://x.com/staunovo/status/2091810956682707220",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 0,
+    "likes": 1,
     "retweets": 0,
     "replies": 0,
-    "engagement": 0,
+    "engagement": 1,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10000,
-    "score": 10000
+    "rawScore": 10001,
+    "score": 10001
   },
   {
     "id": "2091809269326713181",
@@ -446,14 +484,14 @@
     "url": "https://x.com/staunovo/status/2091809269326713181",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 11,
+    "likes": 17,
     "retweets": 4,
     "replies": 0,
-    "engagement": 19,
+    "engagement": 25,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28019,
-    "score": 28019
+    "rawScore": 28025,
+    "score": 28025
   },
   {
     "id": "2091657201613938942",
@@ -465,14 +503,14 @@
     "url": "https://x.com/Rory_Johnston/status/2091657201613938942",
     "photoUrl": "https://pbs.twimg.com/media/HQcPI5jWQAA1tvs.jpg",
     "hasPhoto": true,
-    "likes": 108,
+    "likes": 110,
     "retweets": 13,
     "replies": 13,
-    "engagement": 173,
+    "engagement": 175,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10473,
-    "score": 6807
+    "rawScore": 10475,
+    "score": 4714
   },
   {
     "id": "2091621232831586718",
@@ -484,14 +522,14 @@
     "url": "https://x.com/Rory_Johnston/status/2091621232831586718",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 134,
+    "likes": 136,
     "retweets": 8,
     "replies": 11,
-    "engagement": 183,
+    "engagement": 185,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40183,
-    "score": 18082
+    "rawScore": 40185,
+    "score": 18083
   },
   {
     "id": "2091512503146582510",
@@ -503,14 +541,14 @@
     "url": "https://x.com/Rory_Johnston/status/2091512503146582510",
     "photoUrl": "https://pbs.twimg.com/media/HQaKvTmWoAAkzCk.jpg",
     "hasPhoto": true,
-    "likes": 137,
+    "likes": 139,
     "retweets": 26,
     "replies": 16,
-    "engagement": 237,
+    "engagement": 239,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10537,
-    "score": 3161
+    "rawScore": 10539,
+    "score": 3162
   },
   {
     "id": "2091290655184036133",
@@ -522,13 +560,13 @@
     "url": "https://x.com/Rory_Johnston/status/2091290655184036133",
     "photoUrl": "https://pbs.twimg.com/media/HQXBxFtXIAEWaKl.jpg",
     "hasPhoto": true,
-    "likes": 335,
+    "likes": 336,
     "retweets": 60,
     "replies": 30,
-    "engagement": 545,
+    "engagement": 546,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28845,
+    "rawScore": 28846,
     "score": 8654
   },
   {
@@ -581,12 +619,12 @@
     "hasPhoto": false,
     "likes": 3,
     "retweets": 0,
-    "replies": 9,
-    "engagement": 30,
+    "replies": 10,
+    "engagement": 33,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20030,
-    "score": 13020
+    "rawScore": 20033,
+    "score": 9015
   },
   {
     "id": "2091679068924072136",
@@ -731,14 +769,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2091792442110402971",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 16,
-    "retweets": 2,
+    "likes": 21,
+    "retweets": 3,
     "replies": 0,
-    "engagement": 20,
+    "engagement": 27,
     "isRetweet": false,
     "relevance": 54,
-    "rawScore": 54020,
-    "score": 54020
+    "rawScore": 54027,
+    "score": 54027
   },
   {
     "id": "2091446641827921989",
@@ -760,25 +798,6 @@
     "score": 6134
   },
   {
-    "id": "2090757824133337291",
-    "text": "Commodities Weekly: Weather, war and debt broaden the commodity rally\nBroad-based commodity gains gather momentum as weather risks, geopolitical disruption, tight supply and US fiscal concerns drive strength across energy, metals and agriculture. https://t.co/bV3M9ueSpl via @saxobank",
-    "createdAt": "2026-08-21T11:08:04+00:00",
-    "tweetTime": 1787310484000,
-    "username": "Ole_S_Hansen",
-    "displayName": "Ole S Hansen",
-    "url": "https://x.com/Ole_S_Hansen/status/2090757824133337291",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 29,
-    "retweets": 8,
-    "replies": 1,
-    "engagement": 48,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10048,
-    "score": 3014
-  },
-  {
     "id": "2091187632168473034",
     "text": "Officials like to pick cherries when it suits them. It's the daily averages over a longer duration that matter. Flotilla convoys move only a number of tankers at a time due to limited air support, and most likely a laden egress one night followed by a ballast ingress the next.",
     "createdAt": "2026-08-22T15:35:58+00:00",
@@ -788,13 +807,13 @@
     "url": "https://x.com/TankerTrackers/status/2091187632168473034",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 369,
+    "likes": 370,
     "retweets": 61,
     "replies": 17,
-    "engagement": 542,
+    "engagement": 543,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18542,
+    "rawScore": 18543,
     "score": 5563
   },
   {
