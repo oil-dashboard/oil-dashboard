@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2091767122733211927",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 9,
-    "retweets": 0,
-    "replies": 7,
-    "engagement": 30,
+    "likes": 18,
+    "retweets": 2,
+    "replies": 13,
+    "engagement": 61,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38030,
-    "score": 38030
+    "rawScore": 38061,
+    "score": 38061
   },
   {
     "id": "2091037278256988613",
@@ -85,14 +85,14 @@
     "url": "https://x.com/JavierBlas/status/2091631820596969918",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 735,
-    "retweets": 118,
+    "likes": 752,
+    "retweets": 120,
     "replies": 62,
-    "engagement": 1157,
+    "engagement": 1178,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 21157,
-    "score": 13752
+    "rawScore": 21178,
+    "score": 13766
   },
   {
     "id": "2091408571133030852",
@@ -124,13 +124,13 @@
     "photoUrl": "https://pbs.twimg.com/media/HQVLEykXIAAGHZJ.png",
     "hasPhoto": true,
     "likes": 16,
-    "retweets": 9,
+    "retweets": 10,
     "replies": 1,
-    "engagement": 37,
+    "engagement": 39,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20337,
-    "score": 6101
+    "rawScore": 20339,
+    "score": 6102
   },
   {
     "id": "2091017409389834282",
@@ -161,14 +161,14 @@
     "url": "https://x.com/HFI_Research/status/2091733940759605472",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 131,
-    "retweets": 9,
-    "replies": 3,
-    "engagement": 158,
+    "likes": 150,
+    "retweets": 11,
+    "replies": 2,
+    "engagement": 178,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18158,
-    "score": 18158
+    "rawScore": 18178,
+    "score": 15451
   },
   {
     "id": "2091718514294095913",
@@ -180,14 +180,14 @@
     "url": "https://x.com/HFI_Research/status/2091718514294095913",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 347,
-    "retweets": 22,
+    "likes": 371,
+    "retweets": 25,
     "replies": 6,
-    "engagement": 409,
+    "engagement": 439,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10409,
-    "score": 10409
+    "rawScore": 10439,
+    "score": 8873
   },
   {
     "id": "2091381052887691755",
@@ -218,14 +218,14 @@
     "url": "https://x.com/HFI_Research/status/2091363579555688487",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 380,
+    "likes": 381,
     "retweets": 36,
     "replies": 3,
-    "engagement": 461,
+    "engagement": 462,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10461,
-    "score": 3138
+    "rawScore": 10462,
+    "score": 3139
   },
   {
     "id": "2091216886117908878",
@@ -237,14 +237,14 @@
     "url": "https://x.com/HFI_Research/status/2091216886117908878",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 814,
+    "likes": 815,
     "retweets": 97,
     "replies": 10,
-    "engagement": 1038,
+    "engagement": 1039,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 19038,
-    "score": 5711
+    "rawScore": 19039,
+    "score": 5712
   },
   {
     "id": "2091212993396965831",
@@ -275,14 +275,14 @@
     "url": "https://x.com/staunovo/status/2091767485032751495",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 4,
+    "likes": 5,
     "retweets": 1,
     "replies": 0,
-    "engagement": 6,
+    "engagement": 7,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20006,
-    "score": 20006
+    "rawScore": 20007,
+    "score": 20007
   },
   {
     "id": "2091767396398739569",
@@ -294,14 +294,14 @@
     "url": "https://x.com/staunovo/status/2091767396398739569",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 8,
-    "retweets": 1,
+    "likes": 18,
+    "retweets": 3,
     "replies": 0,
-    "engagement": 10,
+    "engagement": 24,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20010,
-    "score": 20010
+    "rawScore": 20024,
+    "score": 20024
   },
   {
     "id": "2091760783906464039",
@@ -313,14 +313,14 @@
     "url": "https://x.com/staunovo/status/2091760783906464039",
     "photoUrl": "https://pbs.twimg.com/media/HQdtWKqWQAAkTik.jpg",
     "hasPhoto": true,
-    "likes": 5,
-    "retweets": 2,
+    "likes": 7,
+    "retweets": 3,
     "replies": 0,
-    "engagement": 9,
+    "engagement": 13,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10309,
-    "score": 10309
+    "rawScore": 10313,
+    "score": 10313
   },
   {
     "id": "2091760443287106048",
@@ -332,14 +332,14 @@
     "url": "https://x.com/staunovo/status/2091760443287106048",
     "photoUrl": "https://pbs.twimg.com/media/HQdtCXyXoAA_-0R.jpg",
     "hasPhoto": true,
-    "likes": 24,
-    "retweets": 4,
-    "replies": 0,
-    "engagement": 32,
+    "likes": 34,
+    "retweets": 8,
+    "replies": 1,
+    "engagement": 53,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30332,
-    "score": 30332
+    "rawScore": 30353,
+    "score": 30353
   },
   {
     "id": "2091760038507429947",
@@ -351,14 +351,14 @@
     "url": "https://x.com/staunovo/status/2091760038507429947",
     "photoUrl": "https://pbs.twimg.com/media/HQdsq0UXEAA1vk_.jpg",
     "hasPhoto": true,
-    "likes": 5,
-    "retweets": 1,
+    "likes": 8,
+    "retweets": 2,
     "replies": 0,
-    "engagement": 7,
+    "engagement": 12,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28307,
-    "score": 28307
+    "rawScore": 28312,
+    "score": 28312
   },
   {
     "id": "2091747784047136815",
@@ -389,14 +389,14 @@
     "url": "https://x.com/Rory_Johnston/status/2091657201613938942",
     "photoUrl": "https://pbs.twimg.com/media/HQcPI5jWQAA1tvs.jpg",
     "hasPhoto": true,
-    "likes": 104,
+    "likes": 107,
     "retweets": 13,
     "replies": 13,
-    "engagement": 169,
+    "engagement": 172,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10469,
-    "score": 6805
+    "rawScore": 10472,
+    "score": 6807
   },
   {
     "id": "2091621232831586718",
@@ -408,14 +408,14 @@
     "url": "https://x.com/Rory_Johnston/status/2091621232831586718",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 120,
-    "retweets": 7,
+    "likes": 126,
+    "retweets": 8,
     "replies": 11,
-    "engagement": 167,
+    "engagement": 175,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40167,
-    "score": 26109
+    "rawScore": 40175,
+    "score": 26114
   },
   {
     "id": "2091512503146582510",
@@ -427,14 +427,14 @@
     "url": "https://x.com/Rory_Johnston/status/2091512503146582510",
     "photoUrl": "https://pbs.twimg.com/media/HQaKvTmWoAAkzCk.jpg",
     "hasPhoto": true,
-    "likes": 132,
-    "retweets": 25,
+    "likes": 134,
+    "retweets": 26,
     "replies": 16,
-    "engagement": 230,
+    "engagement": 234,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10530,
-    "score": 4739
+    "rawScore": 10534,
+    "score": 3160
   },
   {
     "id": "2091290655184036133",
@@ -446,13 +446,13 @@
     "url": "https://x.com/Rory_Johnston/status/2091290655184036133",
     "photoUrl": "https://pbs.twimg.com/media/HQXBxFtXIAEWaKl.jpg",
     "hasPhoto": true,
-    "likes": 333,
+    "likes": 334,
     "retweets": 60,
     "replies": 29,
-    "engagement": 540,
+    "engagement": 541,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28840,
+    "rawScore": 28841,
     "score": 8652
   },
   {
@@ -465,14 +465,14 @@
     "url": "https://x.com/Rory_Johnston/status/2091286423517250031",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 306,
+    "likes": 307,
     "retweets": 28,
     "replies": 24,
-    "engagement": 434,
+    "engagement": 435,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10434,
-    "score": 3130
+    "rawScore": 10435,
+    "score": 3131
   },
   {
     "id": "2091283480881643573",
@@ -567,7 +567,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20004,
-    "score": 9002
+    "score": 6001
   },
   {
     "id": "2091266570659958798",
@@ -637,13 +637,32 @@
     "photoUrl": null,
     "hasPhoto": false,
     "likes": 40,
-    "retweets": 5,
+    "retweets": 6,
     "replies": 2,
-    "engagement": 56,
+    "engagement": 58,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20056,
-    "score": 13036
+    "rawScore": 20058,
+    "score": 13038
+  },
+  {
+    "id": "2091792442110402971",
+    "text": "#Commodities\nGold extended its recent strong gains as last week’s US Treasury intervention continued to reverberate across markets, raising the prospect of a weaker dollar while reinforcing demand for debasement trades amid growing concerns about US fiscal sustainability. Spot gold’s break back above its 200-day moving average, currently around USD 4,516, continues to attract fresh technical and momentum-driven demand, with prices reaching USD 4,656 during the Asian session. Traders and investors will be focusing on the dollar, US Treasury yields and, not least, the upcoming Jackson Hole symposium, where Fed Chair Kevin Warsh is due to deliver his first keynote address on Friday, 28 August.\n#CrudeOil slipped after a two-week rally as traders awaited details of the US plan to increase the economic pressure on Iran, due later Monday. Brent eased toward USD 93 after gaining around 13% over the past two weeks, while WTI traded near USD 86. Treasury Secretary Scott Bessent is expected to unveil the measures and press US allies to participate. With the US-Iran war now in its sixth month and continuing to restrict global supplies of crude and refined products, it remains unclear how Washington can meaningfully increase the pressure on Tehran without targeting China, the main buyer of Iranian crude, and risking significant economic and geopolitical blowback.\nThe latest COT reporting week to 18 August covered the period leading up to last Wednesday’s surprise US Treasury bond buyback announcement, which subsequently triggered a rush into hard assets, particularly precious metals, while the accompanying dollar tumble provided broader support across commodities. Overall, however, the week belonged to agriculture which has seen continued demand since late June amid an increasingly supportive fundamental backdrop, helped by a softer dollar, firmer crude oil prices strengthening the biofuel link, lower-than-expected US corn yields, Russia-Ukraine attacks on grain infrastructure, and not least weather concerns.\n#Corn and #wheat both starting the week adding to recent strong gains, supported by forecasts for a smaller US corn harvest and persistent tensions in the Black Sea region stoking concerns over global supplies. Over the weekend Ukraine’s Zelenskyy said Russia rejected Ukraine’s offer of a truce on attacks against ships carrying agricultural commodities through the Black Sea.",
+    "createdAt": "2026-08-24T07:39:16+00:00",
+    "tweetTime": 1787557156000,
+    "username": "Ole_S_Hansen",
+    "displayName": "Ole S Hansen",
+    "url": "https://x.com/Ole_S_Hansen/status/2091792442110402971",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 5,
+    "retweets": 1,
+    "replies": 0,
+    "engagement": 7,
+    "isRetweet": false,
+    "relevance": 54,
+    "rawScore": 54007,
+    "score": 54007
   },
   {
     "id": "2091446641827921989",
@@ -655,13 +674,13 @@
     "url": "https://x.com/Ole_S_Hansen/status/2091446641827921989",
     "photoUrl": "https://pbs.twimg.com/media/HQZPE7EXAAAKxVO.png",
     "hasPhoto": true,
-    "likes": 88,
+    "likes": 90,
     "retweets": 24,
     "replies": 2,
-    "engagement": 142,
+    "engagement": 144,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20442,
+    "rawScore": 20444,
     "score": 6133
   },
   {
@@ -693,14 +712,14 @@
     "url": "https://x.com/TankerTrackers/status/2091187632168473034",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 368,
+    "likes": 369,
     "retweets": 61,
     "replies": 17,
-    "engagement": 541,
+    "engagement": 542,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18541,
-    "score": 5562
+    "rawScore": 18542,
+    "score": 5563
   },
   {
     "id": "2090917248156238282",
@@ -712,13 +731,13 @@
     "url": "https://x.com/TankerTrackers/status/2090917248156238282",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1533,
+    "likes": 1534,
     "retweets": 59,
     "replies": 12,
-    "engagement": 1687,
+    "engagement": 1688,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 21687,
+    "rawScore": 21688,
     "score": 6506
   }
 ]
