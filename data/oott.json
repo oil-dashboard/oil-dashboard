@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2091820264590029146",
     "photoUrl": "https://pbs.twimg.com/media/HQejT3kbEAAMl4m.jpg",
     "hasPhoto": true,
-    "likes": 35,
+    "likes": 41,
     "retweets": 3,
     "replies": 3,
-    "engagement": 50,
+    "engagement": 56,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20350,
-    "score": 20350
+    "rawScore": 20356,
+    "score": 17303
   },
   {
     "id": "2091802318333436086",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2091802318333436086",
     "photoUrl": "https://pbs.twimg.com/media/HQeS0IJbQAASSxz.png",
     "hasPhoto": true,
-    "likes": 82,
-    "retweets": 12,
+    "likes": 91,
+    "retweets": 13,
     "replies": 8,
-    "engagement": 130,
+    "engagement": 141,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38430,
-    "score": 32666
+    "rawScore": 38441,
+    "score": 32675
   },
   {
     "id": "2091767122733211927",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2091767122733211927",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 44,
+    "likes": 48,
     "retweets": 2,
-    "replies": 19,
-    "engagement": 105,
+    "replies": 20,
+    "engagement": 112,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38105,
-    "score": 32389
+    "rawScore": 38112,
+    "score": 32395
   },
   {
     "id": "2091037278256988613",
@@ -95,6 +95,25 @@
     "score": 3002
   },
   {
+    "id": "2091873645895299170",
+    "text": "European Commission President Ursula von der Leyen:\n\n“The global energy system has proved more resilient than many expected.”",
+    "createdAt": "2026-08-24T13:01:56+00:00",
+    "tweetTime": 1787576516000,
+    "username": "JavierBlas",
+    "displayName": "Javier Blas",
+    "url": "https://x.com/JavierBlas/status/2091873645895299170",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 43,
+    "retweets": 9,
+    "replies": 21,
+    "engagement": 124,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10124,
+    "score": 10124
+  },
+  {
     "id": "2091841086759043169",
     "text": "Shell CEO Wael Sawan says petroleum “products markets are more squeezed” than crude oil. He warns that market shock absorbers are getting wore down.",
     "createdAt": "2026-08-24T10:52:34+00:00",
@@ -104,14 +123,14 @@
     "url": "https://x.com/JavierBlas/status/2091841086759043169",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 86,
-    "retweets": 17,
-    "replies": 7,
-    "engagement": 141,
+    "likes": 111,
+    "retweets": 21,
+    "replies": 8,
+    "engagement": 177,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30141,
-    "score": 30141
+    "rawScore": 30177,
+    "score": 30177
   },
   {
     "id": "2091832157069062625",
@@ -123,14 +142,14 @@
     "url": "https://x.com/JavierBlas/status/2091832157069062625",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 106,
-    "retweets": 16,
+    "likes": 147,
+    "retweets": 24,
     "replies": 7,
-    "engagement": 159,
+    "engagement": 216,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40159,
-    "score": 40159
+    "rawScore": 40216,
+    "score": 40216
   },
   {
     "id": "2091826562106544155",
@@ -142,14 +161,14 @@
     "url": "https://x.com/JavierBlas/status/2091826562106544155",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 596,
-    "retweets": 122,
-    "replies": 23,
-    "engagement": 909,
+    "likes": 753,
+    "retweets": 163,
+    "replies": 28,
+    "engagement": 1163,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40909,
-    "score": 40909
+    "rawScore": 41163,
+    "score": 41163
   },
   {
     "id": "2091826430229278814",
@@ -161,33 +180,14 @@
     "url": "https://x.com/JavierBlas/status/2091826430229278814",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 6,
-    "retweets": 1,
-    "replies": 0,
-    "engagement": 8,
+    "likes": 7,
+    "retweets": 2,
+    "replies": 1,
+    "engagement": 14,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30008,
-    "score": 30008
-  },
-  {
-    "id": "2091631820596969918",
-    "text": "It’s a direct threat — but it’s also an implicit admission by Iran that the oil is flowing, beyond its control, via the Strait of Hormuz (despite repeated claims that it has fully closed it).",
-    "createdAt": "2026-08-23T21:01:01+00:00",
-    "tweetTime": 1787518861000,
-    "username": "JavierBlas",
-    "displayName": "Javier Blas",
-    "url": "https://x.com/JavierBlas/status/2091631820596969918",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 835,
-    "retweets": 137,
-    "replies": 67,
-    "engagement": 1310,
-    "isRetweet": false,
-    "relevance": 20,
-    "rawScore": 21310,
-    "score": 9590
+    "rawScore": 30014,
+    "score": 30014
   },
   {
     "id": "2091408571133030852",
@@ -256,14 +256,14 @@
     "url": "https://x.com/HFI_Research/status/2091733940759605472",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 210,
+    "likes": 220,
     "retweets": 14,
     "replies": 4,
-    "engagement": 250,
+    "engagement": 260,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18250,
-    "score": 11863
+    "rawScore": 18260,
+    "score": 11869
   },
   {
     "id": "2091718514294095913",
@@ -275,14 +275,14 @@
     "url": "https://x.com/HFI_Research/status/2091718514294095913",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 456,
-    "retweets": 28,
+    "likes": 468,
+    "retweets": 29,
     "replies": 6,
-    "engagement": 530,
+    "engagement": 544,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10530,
-    "score": 6845
+    "rawScore": 10544,
+    "score": 6854
   },
   {
     "id": "2091381052887691755",
@@ -332,14 +332,14 @@
     "url": "https://x.com/HFI_Research/status/2091216886117908878",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 823,
+    "likes": 824,
     "retweets": 99,
     "replies": 11,
-    "engagement": 1054,
+    "engagement": 1055,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 19054,
-    "score": 5716
+    "rawScore": 19055,
+    "score": 5717
   },
   {
     "id": "2091212993396965831",
@@ -351,14 +351,14 @@
     "url": "https://x.com/HFI_Research/status/2091212993396965831",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1082,
+    "likes": 1085,
     "retweets": 139,
     "replies": 4,
-    "engagement": 1372,
+    "engagement": 1375,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 21372,
-    "score": 6412
+    "rawScore": 21375,
+    "score": 6413
   },
   {
     "id": "2091813098067800365",
@@ -377,7 +377,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20008,
-    "score": 20008
+    "score": 17007
   },
   {
     "id": "2091812917687513122",
@@ -396,7 +396,7 @@
     "isRetweet": false,
     "relevance": 28,
     "rawScore": 28004,
-    "score": 28004
+    "score": 23803
   },
   {
     "id": "2091812756227752446",
@@ -408,14 +408,14 @@
     "url": "https://x.com/staunovo/status/2091812756227752446",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1,
+    "likes": 2,
     "retweets": 1,
     "replies": 0,
-    "engagement": 3,
+    "engagement": 4,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10003,
-    "score": 10003
+    "rawScore": 10004,
+    "score": 8503
   },
   {
     "id": "2091812533065671063",
@@ -427,14 +427,14 @@
     "url": "https://x.com/staunovo/status/2091812533065671063",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 14,
+    "likes": 16,
     "retweets": 3,
     "replies": 0,
-    "engagement": 20,
+    "engagement": 22,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20020,
-    "score": 20020
+    "rawScore": 20022,
+    "score": 17019
   },
   {
     "id": "2091811185133822406",
@@ -446,14 +446,14 @@
     "url": "https://x.com/staunovo/status/2091811185133822406",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 9,
+    "likes": 12,
     "retweets": 1,
     "replies": 0,
-    "engagement": 11,
+    "engagement": 14,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20011,
-    "score": 20011
+    "rawScore": 20014,
+    "score": 17012
   },
   {
     "id": "2091810956682707220",
@@ -472,7 +472,26 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10001,
-    "score": 10001
+    "score": 8501
+  },
+  {
+    "id": "2091873153660166503",
+    "text": "My comments to the WSJ’s @georgikantchev in this excellent roundup of the current Hormuz transit estimate debate.\n\nAs for my estimate:\n\n“Johnston’s latest seven-day average of confirmed transits is about 4 million barrels a day, though he expects that to be raised to 5 million to 6 million as ships that made dark crossings turn their transponders back on after they clear the strait and their voyages can be reconstructed.”",
+    "createdAt": "2026-08-24T12:59:59+00:00",
+    "tweetTime": 1787576399000,
+    "username": "Rory_Johnston",
+    "displayName": "Rory Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2091873153660166503",
+    "photoUrl": "https://pbs.twimg.com/media/HQfTi8MWcAArI7a.jpg",
+    "hasPhoto": true,
+    "likes": 30,
+    "retweets": 2,
+    "replies": 2,
+    "engagement": 40,
+    "isRetweet": false,
+    "relevance": 20,
+    "rawScore": 20340,
+    "score": 20340
   },
   {
     "id": "2091657201613938942",
@@ -503,14 +522,14 @@
     "url": "https://x.com/Rory_Johnston/status/2091621232831586718",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 138,
-    "retweets": 8,
+    "likes": 140,
+    "retweets": 9,
     "replies": 11,
-    "engagement": 187,
+    "engagement": 191,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40187,
-    "score": 18084
+    "rawScore": 40191,
+    "score": 18086
   },
   {
     "id": "2091512503146582510",
@@ -522,13 +541,13 @@
     "url": "https://x.com/Rory_Johnston/status/2091512503146582510",
     "photoUrl": "https://pbs.twimg.com/media/HQaKvTmWoAAkzCk.jpg",
     "hasPhoto": true,
-    "likes": 139,
+    "likes": 140,
     "retweets": 26,
     "replies": 16,
-    "engagement": 239,
+    "engagement": 240,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10539,
+    "rawScore": 10540,
     "score": 3162
   },
   {
@@ -684,32 +703,13 @@
     "score": 3002
   },
   {
-    "id": "2090790709318029682",
-    "text": "Crude oil bulls are having a field day past couple of days with the crude oil price spike.... I’m starting to notice $100 pb prognostications which is a good signal for shorting crude. #OOTT",
-    "createdAt": "2026-08-21T13:18:44+00:00",
-    "tweetTime": 1787318324000,
-    "username": "crudeoilreport",
-    "displayName": "Crude Oil Report",
-    "url": "https://x.com/crudeoilreport/status/2090790709318029682",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 0,
-    "retweets": 0,
-    "replies": 1,
-    "engagement": 3,
-    "isRetweet": false,
-    "relevance": 30,
-    "rawScore": 30003,
-    "score": 9001
-  },
-  {
-    "id": "2090787254453055490",
-    "text": "A good problem for Venezuela to have: crude production is rising toward 1.25 million bpd in 2026, but port bottlenecks are emerging as the next constraint on export growth. As long as they can pump crude, infra is an easy fix for wildcatters in the field #OOTT",
-    "createdAt": "2026-08-21T13:05:01+00:00",
-    "tweetTime": 1787317501000,
-    "username": "crudeoilreport",
-    "displayName": "Crude Oil Report",
-    "url": "https://x.com/crudeoilreport/status/2090787254453055490",
+    "id": "2091880711229776221",
+    "text": "The Trump administration says large volumes of oil are slipping through the Strait of Hormuz. The trackers whose job it is to count the world’s oil output and shipments see much less. - WSJ",
+    "createdAt": "2026-08-24T13:30:01+00:00",
+    "tweetTime": 1787578201000,
+    "username": "OilHeadlineNews",
+    "displayName": "Energy Headline News",
+    "url": "https://x.com/OilHeadlineNews/status/2091880711229776221",
     "photoUrl": null,
     "hasPhoto": false,
     "likes": 0,
@@ -719,7 +719,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20000,
-    "score": 6000
+    "score": 20000
   },
   {
     "id": "2091856463480148210",
@@ -731,14 +731,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2091856463480148210",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1,
+    "likes": 3,
     "retweets": 0,
     "replies": 1,
-    "engagement": 4,
+    "engagement": 6,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10004,
-    "score": 10004
+    "rawScore": 10006,
+    "score": 10006
   },
   {
     "id": "2091856595835605288",
@@ -750,14 +750,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2091856595835605288",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 3,
+    "likes": 5,
     "retweets": 1,
     "replies": 0,
-    "engagement": 5,
+    "engagement": 7,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10005,
-    "score": 10005
+    "rawScore": 10007,
+    "score": 10007
   },
   {
     "id": "2091854129282855204",
@@ -769,14 +769,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2091854129282855204",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 4,
+    "likes": 5,
     "retweets": 0,
     "replies": 1,
-    "engagement": 7,
+    "engagement": 8,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10007,
-    "score": 10007
+    "rawScore": 10008,
+    "score": 10008
   },
   {
     "id": "2091854049314242811",
@@ -807,14 +807,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2091792442110402971",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 25,
+    "likes": 27,
     "retweets": 4,
     "replies": 0,
-    "engagement": 33,
+    "engagement": 35,
     "isRetweet": false,
     "relevance": 54,
-    "rawScore": 54033,
-    "score": 45928
+    "rawScore": 54035,
+    "score": 45930
   },
   {
     "id": "2091446641827921989",
@@ -826,14 +826,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2091446641827921989",
     "photoUrl": "https://pbs.twimg.com/media/HQZPE7EXAAAKxVO.png",
     "hasPhoto": true,
-    "likes": 95,
-    "retweets": 24,
+    "likes": 96,
+    "retweets": 25,
     "replies": 2,
-    "engagement": 149,
+    "engagement": 152,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20449,
-    "score": 6135
+    "rawScore": 20452,
+    "score": 6136
   },
   {
     "id": "2091853825107780084",
@@ -845,14 +845,14 @@
     "url": "https://x.com/TankerTrackers/status/2091853825107780084",
     "photoUrl": "https://pbs.twimg.com/media/HQfBrwAWEAA-RBi.jpg",
     "hasPhoto": true,
-    "likes": 91,
-    "retweets": 27,
-    "replies": 5,
-    "engagement": 160,
+    "likes": 171,
+    "retweets": 48,
+    "replies": 7,
+    "engagement": 288,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 58460,
-    "score": 58460
+    "rawScore": 58588,
+    "score": 58588
   },
   {
     "id": "2091187632168473034",
@@ -864,14 +864,14 @@
     "url": "https://x.com/TankerTrackers/status/2091187632168473034",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 371,
+    "likes": 372,
     "retweets": 61,
     "replies": 17,
-    "engagement": 544,
+    "engagement": 545,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18544,
-    "score": 5563
+    "rawScore": 18545,
+    "score": 5564
   },
   {
     "id": "2090917248156238282",
@@ -883,13 +883,13 @@
     "url": "https://x.com/TankerTrackers/status/2090917248156238282",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1534,
-    "retweets": 59,
+    "likes": 1535,
+    "retweets": 60,
     "replies": 12,
-    "engagement": 1688,
+    "engagement": 1691,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 21688,
-    "score": 6506
+    "rawScore": 21691,
+    "score": 6507
   }
 ]
