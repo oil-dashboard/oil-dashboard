@@ -28,14 +28,14 @@
     "url": "https://x.com/JavierBlas/status/2092284150736699710",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 98,
-    "retweets": 27,
-    "replies": 8,
-    "engagement": 176,
+    "likes": 100,
+    "retweets": 29,
+    "replies": 9,
+    "engagement": 185,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10176,
-    "score": 6614
+    "rawScore": 10185,
+    "score": 4583
   },
   {
     "id": "2092264445397397720",
@@ -47,13 +47,13 @@
     "url": "https://x.com/JavierBlas/status/2092264445397397720",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 84,
+    "likes": 85,
     "retweets": 7,
     "replies": 8,
-    "engagement": 122,
+    "engagement": 123,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20122,
+    "rawScore": 20123,
     "score": 9055
   },
   {
@@ -85,14 +85,14 @@
     "url": "https://x.com/JKempEnergy/status/2092311293789155529",
     "photoUrl": "https://pbs.twimg.com/media/HQkz42uXgAAZEIT.png",
     "hasPhoto": true,
-    "likes": 30,
+    "likes": 31,
     "retweets": 7,
     "replies": 3,
-    "engagement": 53,
+    "engagement": 54,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28353,
-    "score": 18429
+    "rawScore": 28354,
+    "score": 18430
   },
   {
     "id": "2092191702647759062",
@@ -111,7 +111,26 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10364,
-    "score": 4664
+    "score": 3109
+  },
+  {
+    "id": "2092461824549773413",
+    "text": "It is not rocket science.\n\nIran has a history of transferring oil to Iraqi oil to bypass sanctions. Now it is doing it to bypass the blockade.\n\nBy now, everyone and their grandma knows that Prosperity tankers are the main players in the shuttle trade. They remain untouched.\n\nIran knows this, so why do you think it continues?\n\nMore importantly, it's what happens next. Does Iran let the other players remain in the game on the shuttle trade? What will the UAE do in response? What will the US do? And what will Iran do next to escalate?",
+    "createdAt": "2026-08-26T03:59:09+00:00",
+    "tweetTime": 1787716749000,
+    "username": "HFI_Research",
+    "displayName": "HFI Research",
+    "url": "https://x.com/HFI_Research/status/2092461824549773413",
+    "photoUrl": "https://pbs.twimg.com/media/HQnq2_iaIAAHmtm.jpg",
+    "hasPhoto": true,
+    "likes": 59,
+    "retweets": 10,
+    "replies": 0,
+    "engagement": 79,
+    "isRetweet": false,
+    "relevance": 28,
+    "rawScore": 28379,
+    "score": 28379
   },
   {
     "id": "2092435865071198495",
@@ -123,14 +142,14 @@
     "url": "https://x.com/HFI_Research/status/2092435865071198495",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 155,
-    "retweets": 14,
-    "replies": 1,
-    "engagement": 186,
+    "likes": 230,
+    "retweets": 23,
+    "replies": 3,
+    "engagement": 285,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28186,
-    "score": 28186
+    "rawScore": 28285,
+    "score": 28285
   },
   {
     "id": "2092393821481144731",
@@ -142,14 +161,14 @@
     "url": "https://x.com/HFI_Research/status/2092393821481144731",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 407,
-    "retweets": 39,
+    "likes": 439,
+    "retweets": 42,
     "replies": 5,
-    "engagement": 500,
+    "engagement": 538,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10500,
-    "score": 10500
+    "rawScore": 10538,
+    "score": 8957
   },
   {
     "id": "2092388656455745779",
@@ -161,14 +180,14 @@
     "url": "https://x.com/HFI_Research/status/2092388656455745779",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 116,
-    "retweets": 12,
+    "likes": 128,
+    "retweets": 13,
     "replies": 0,
-    "engagement": 140,
+    "engagement": 154,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10140,
-    "score": 8619
+    "rawScore": 10154,
+    "score": 8631
   },
   {
     "id": "2092383517330256305",
@@ -180,14 +199,14 @@
     "url": "https://x.com/HFI_Research/status/2092383517330256305",
     "photoUrl": "https://pbs.twimg.com/media/HQmjtPWaIAE4DZW.jpg",
     "hasPhoto": true,
-    "likes": 133,
-    "retweets": 11,
+    "likes": 140,
+    "retweets": 12,
     "replies": 2,
-    "engagement": 161,
+    "engagement": 170,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10461,
-    "score": 8892
+    "rawScore": 10470,
+    "score": 8900
   },
   {
     "id": "2092383356944261538",
@@ -199,14 +218,14 @@
     "url": "https://x.com/HFI_Research/status/2092383356944261538",
     "photoUrl": "https://pbs.twimg.com/media/HQmjkFpbgAAZDRF.jpg",
     "hasPhoto": true,
-    "likes": 139,
-    "retweets": 16,
+    "likes": 145,
+    "retweets": 17,
     "replies": 1,
-    "engagement": 174,
+    "engagement": 182,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10474,
-    "score": 8903
+    "rawScore": 10482,
+    "score": 8910
   },
   {
     "id": "2092178601148076527",
@@ -228,44 +247,6 @@
     "score": 3185
   },
   {
-    "id": "2092342065216491929",
-    "text": "Iranian Foreign Minister Abbas Araghchi and his Omani counterpart Badr Albusaidi discussed an “interim framework” aimed at resuming shipping through the Strait of Hormuz, according to a joint statement carried by the Oman News Agency, as the two sides press ahead with long-running talks over navigation through the key waterway.\n\nThe initiative seeks to establish a “temporary joint maritime corridor” and project for mine clearance to restore safe navigation through the area, according to the statement.\n\nTechnical talks between the two sides will continue with the aim of agreeing on a permanent maritime corridor, the future administration of the strait, as well as a mechanism for information exchange, traffic management, and the provision of relevant maritime and security services, it said https://t.co/monfPDwD9h",
-    "createdAt": "2026-08-25T20:03:16+00:00",
-    "tweetTime": 1787688196000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2092342065216491929",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 9,
-    "retweets": 2,
-    "replies": 0,
-    "engagement": 13,
-    "isRetweet": false,
-    "relevance": 18,
-    "rawScore": 18013,
-    "score": 15311
-  },
-  {
-    "id": "2092334165211377691",
-    "text": "Rubio says no new Iran offensive for now as US focuses on economic pressure, Hormuz https://t.co/BW16RHyxAx",
-    "createdAt": "2026-08-25T19:31:53+00:00",
-    "tweetTime": 1787686313000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2092334165211377691",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 7,
-    "retweets": 0,
-    "replies": 0,
-    "engagement": 7,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10007,
-    "score": 8506
-  },
-  {
     "id": "2092330193717260480",
     "text": "Getting a lot of breakout signs over the past week.\n\n@TankerTrackers have been great on things as they’ve been shifting",
     "createdAt": "2026-08-25T19:16:06+00:00",
@@ -275,14 +256,14 @@
     "url": "https://x.com/Rory_Johnston/status/2092330193717260480",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 136,
+    "likes": 141,
     "retweets": 18,
     "replies": 9,
-    "engagement": 199,
+    "engagement": 204,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18199,
-    "score": 11829
+    "rawScore": 18204,
+    "score": 11833
   },
   {
     "id": "2092306567613862106",
@@ -294,14 +275,14 @@
     "url": "https://x.com/Rory_Johnston/status/2092306567613862106",
     "photoUrl": "https://pbs.twimg.com/media/HQldrHKWsAAymaY.png",
     "hasPhoto": true,
-    "likes": 152,
+    "likes": 153,
     "retweets": 19,
     "replies": 5,
-    "engagement": 205,
+    "engagement": 206,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10505,
-    "score": 6828
+    "rawScore": 10506,
+    "score": 6829
   },
   {
     "id": "2092296081212076162",
@@ -313,14 +294,14 @@
     "url": "https://x.com/Rory_Johnston/status/2092296081212076162",
     "photoUrl": "https://pbs.twimg.com/media/HQlSy2-XQAAMsbr.jpg",
     "hasPhoto": true,
-    "likes": 216,
-    "retweets": 43,
+    "likes": 225,
+    "retweets": 45,
     "replies": 13,
-    "engagement": 341,
+    "engagement": 354,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10641,
-    "score": 6917
+    "rawScore": 10654,
+    "score": 6925
   },
   {
     "id": "2092282154738717113",
@@ -332,14 +313,14 @@
     "url": "https://x.com/Rory_Johnston/status/2092282154738717113",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 165,
+    "likes": 168,
     "retweets": 4,
     "replies": 13,
-    "engagement": 212,
+    "engagement": 215,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10212,
-    "score": 6638
+    "rawScore": 10215,
+    "score": 4597
   },
   {
     "id": "2092233345044263238",
@@ -351,13 +332,13 @@
     "url": "https://x.com/Rory_Johnston/status/2092233345044263238",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 303,
+    "likes": 304,
     "retweets": 40,
     "replies": 21,
-    "engagement": 446,
+    "engagement": 447,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10446,
+    "rawScore": 10447,
     "score": 4701
   },
   {
@@ -370,14 +351,14 @@
     "url": "https://x.com/crudeoilreport/status/2092353630137368662",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1,
+    "likes": 2,
     "retweets": 0,
     "replies": 0,
-    "engagement": 1,
+    "engagement": 2,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30001,
-    "score": 25501
+    "rawScore": 30002,
+    "score": 25502
   },
   {
     "id": "2092217585324507161",
@@ -408,14 +389,14 @@
     "url": "https://x.com/crudeoilreport/status/2092202053351211249",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1,
+    "likes": 2,
     "retweets": 1,
     "replies": 0,
-    "engagement": 3,
+    "engagement": 4,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20003,
-    "score": 9001
+    "rawScore": 20004,
+    "score": 9002
   },
   {
     "id": "2092368449859174624",
@@ -427,14 +408,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2092368449859174624",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 66,
-    "retweets": 3,
-    "replies": 2,
-    "engagement": 78,
+    "likes": 68,
+    "retweets": 4,
+    "replies": 3,
+    "engagement": 85,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10078,
-    "score": 8566
+    "rawScore": 10085,
+    "score": 8572
   },
   {
     "id": "2092352187661693082",
@@ -446,14 +427,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2092352187661693082",
     "photoUrl": "https://pbs.twimg.com/media/HQmHOceWAAApfev.jpg",
     "hasPhoto": true,
-    "likes": 34,
-    "retweets": 3,
+    "likes": 37,
+    "retweets": 4,
     "replies": 3,
-    "engagement": 49,
+    "engagement": 54,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10349,
-    "score": 8797
+    "rawScore": 10354,
+    "score": 8801
   },
   {
     "id": "2092350547298771409",
@@ -465,14 +446,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2092350547298771409",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 20,
-    "retweets": 0,
+    "likes": 23,
+    "retweets": 1,
     "replies": 1,
-    "engagement": 23,
+    "engagement": 28,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10023,
-    "score": 8520
+    "rawScore": 10028,
+    "score": 8524
   },
   {
     "id": "2092345284382626258",
@@ -491,7 +472,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10010,
-    "score": 8509
+    "score": 6507
   },
   {
     "id": "2092344241636696518",
@@ -510,7 +491,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10016,
-    "score": 8514
+    "score": 6510
   },
   {
     "id": "2092192985685373412",
@@ -529,7 +510,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10456,
-    "score": 4705
+    "score": 3137
   },
   {
     "id": "2092328933739864323",
@@ -541,13 +522,13 @@
     "url": "https://x.com/TankerTrackers/status/2092328933739864323",
     "photoUrl": "https://pbs.twimg.com/media/HQlxRx-WgAApUrm.jpg",
     "hasPhoto": true,
-    "likes": 2341,
-    "retweets": 461,
-    "replies": 105,
-    "engagement": 3578,
+    "likes": 2409,
+    "retweets": 471,
+    "replies": 111,
+    "engagement": 3684,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 61878,
-    "score": 40221
+    "rawScore": 61984,
+    "score": 40290
   }
 ]
