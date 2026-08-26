@@ -9,14 +9,14 @@
     "url": "https://x.com/JavierBlas/status/2092301142222905851",
     "photoUrl": "https://pbs.twimg.com/media/HQlYy6XWcAA9Yks.jpg",
     "hasPhoto": true,
-    "likes": 52,
+    "likes": 53,
     "retweets": 11,
     "replies": 9,
-    "engagement": 101,
+    "engagement": 102,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10401,
-    "score": 6761
+    "rawScore": 10402,
+    "score": 4681
   },
   {
     "id": "2092284150736699710",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JavierBlas/status/2092284150736699710",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 100,
+    "likes": 102,
     "retweets": 29,
     "replies": 9,
-    "engagement": 185,
+    "engagement": 187,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10185,
-    "score": 4583
+    "rawScore": 10187,
+    "score": 4584
   },
   {
     "id": "2092264445397397720",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2092264445397397720",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 85,
+    "likes": 86,
     "retweets": 7,
     "replies": 8,
-    "engagement": 123,
+    "engagement": 124,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20123,
-    "score": 9055
+    "rawScore": 20124,
+    "score": 9056
   },
   {
     "id": "2092131310563103068",
@@ -66,13 +66,13 @@
     "url": "https://x.com/JavierBlas/status/2092131310563103068",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 157,
+    "likes": 159,
     "retweets": 32,
     "replies": 6,
-    "engagement": 239,
+    "engagement": 241,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10239,
+    "rawScore": 10241,
     "score": 3072
   },
   {
@@ -85,14 +85,14 @@
     "url": "https://x.com/JKempEnergy/status/2092311293789155529",
     "photoUrl": "https://pbs.twimg.com/media/HQkz42uXgAAZEIT.png",
     "hasPhoto": true,
-    "likes": 31,
-    "retweets": 7,
+    "likes": 32,
+    "retweets": 8,
     "replies": 3,
-    "engagement": 54,
+    "engagement": 57,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28354,
-    "score": 18430
+    "rawScore": 28357,
+    "score": 18432
   },
   {
     "id": "2092191702647759062",
@@ -123,14 +123,14 @@
     "url": "https://x.com/HFI_Research/status/2092461824549773413",
     "photoUrl": "https://pbs.twimg.com/media/HQnq2_iaIAAHmtm.jpg",
     "hasPhoto": true,
-    "likes": 59,
-    "retweets": 10,
-    "replies": 0,
-    "engagement": 79,
+    "likes": 143,
+    "retweets": 24,
+    "replies": 3,
+    "engagement": 200,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28379,
-    "score": 28379
+    "rawScore": 28500,
+    "score": 28500
   },
   {
     "id": "2092435865071198495",
@@ -142,14 +142,14 @@
     "url": "https://x.com/HFI_Research/status/2092435865071198495",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 230,
-    "retweets": 23,
-    "replies": 3,
-    "engagement": 285,
+    "likes": 298,
+    "retweets": 34,
+    "replies": 4,
+    "engagement": 378,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28285,
-    "score": 28285
+    "rawScore": 28378,
+    "score": 28378
   },
   {
     "id": "2092393821481144731",
@@ -161,14 +161,14 @@
     "url": "https://x.com/HFI_Research/status/2092393821481144731",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 439,
-    "retweets": 42,
-    "replies": 5,
-    "engagement": 538,
+    "likes": 491,
+    "retweets": 44,
+    "replies": 6,
+    "engagement": 597,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10538,
-    "score": 8957
+    "rawScore": 10597,
+    "score": 9007
   },
   {
     "id": "2092388656455745779",
@@ -180,14 +180,14 @@
     "url": "https://x.com/HFI_Research/status/2092388656455745779",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 128,
-    "retweets": 13,
+    "likes": 140,
+    "retweets": 14,
     "replies": 0,
-    "engagement": 154,
+    "engagement": 168,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10154,
-    "score": 8631
+    "rawScore": 10168,
+    "score": 8643
   },
   {
     "id": "2092383517330256305",
@@ -199,14 +199,14 @@
     "url": "https://x.com/HFI_Research/status/2092383517330256305",
     "photoUrl": "https://pbs.twimg.com/media/HQmjtPWaIAE4DZW.jpg",
     "hasPhoto": true,
-    "likes": 140,
+    "likes": 153,
     "retweets": 12,
     "replies": 2,
-    "engagement": 170,
+    "engagement": 183,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10470,
-    "score": 8900
+    "rawScore": 10483,
+    "score": 8911
   },
   {
     "id": "2092383356944261538",
@@ -218,14 +218,14 @@
     "url": "https://x.com/HFI_Research/status/2092383356944261538",
     "photoUrl": "https://pbs.twimg.com/media/HQmjkFpbgAAZDRF.jpg",
     "hasPhoto": true,
-    "likes": 145,
+    "likes": 152,
     "retweets": 17,
     "replies": 1,
-    "engagement": 182,
+    "engagement": 189,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10482,
-    "score": 8910
+    "rawScore": 10489,
+    "score": 8916
   },
   {
     "id": "2092178601148076527",
@@ -237,14 +237,33 @@
     "url": "https://x.com/HFI_Research/status/2092178601148076527",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 527,
+    "likes": 528,
     "retweets": 41,
     "replies": 3,
-    "engagement": 618,
+    "engagement": 619,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10618,
-    "score": 3185
+    "rawScore": 10619,
+    "score": 3186
+  },
+  {
+    "id": "2092472686144356483",
+    "text": "Gulf ship traffic via Strait of Hormuz hovers below 10-day average, data shows https://t.co/YkIr7vXoqd",
+    "createdAt": "2026-08-26T04:42:19+00:00",
+    "tweetTime": 1787719339000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2092472686144356483",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 2,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 2,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10002,
+    "score": 10002
   },
   {
     "id": "2092330193717260480",
@@ -256,14 +275,14 @@
     "url": "https://x.com/Rory_Johnston/status/2092330193717260480",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 141,
+    "likes": 146,
     "retweets": 18,
-    "replies": 9,
-    "engagement": 204,
+    "replies": 11,
+    "engagement": 215,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18204,
-    "score": 11833
+    "rawScore": 18215,
+    "score": 11840
   },
   {
     "id": "2092306567613862106",
@@ -275,14 +294,14 @@
     "url": "https://x.com/Rory_Johnston/status/2092306567613862106",
     "photoUrl": "https://pbs.twimg.com/media/HQldrHKWsAAymaY.png",
     "hasPhoto": true,
-    "likes": 153,
+    "likes": 157,
     "retweets": 19,
     "replies": 5,
-    "engagement": 206,
+    "engagement": 210,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10506,
-    "score": 6829
+    "rawScore": 10510,
+    "score": 6832
   },
   {
     "id": "2092296081212076162",
@@ -294,14 +313,14 @@
     "url": "https://x.com/Rory_Johnston/status/2092296081212076162",
     "photoUrl": "https://pbs.twimg.com/media/HQlSy2-XQAAMsbr.jpg",
     "hasPhoto": true,
-    "likes": 225,
+    "likes": 227,
     "retweets": 45,
     "replies": 13,
-    "engagement": 354,
+    "engagement": 356,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10654,
-    "score": 6925
+    "rawScore": 10656,
+    "score": 4795
   },
   {
     "id": "2092282154738717113",
@@ -313,13 +332,13 @@
     "url": "https://x.com/Rory_Johnston/status/2092282154738717113",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 168,
+    "likes": 169,
     "retweets": 4,
     "replies": 13,
-    "engagement": 215,
+    "engagement": 216,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10215,
+    "rawScore": 10216,
     "score": 4597
   },
   {
@@ -332,14 +351,14 @@
     "url": "https://x.com/Rory_Johnston/status/2092233345044263238",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 304,
-    "retweets": 40,
+    "likes": 311,
+    "retweets": 41,
     "replies": 21,
-    "engagement": 447,
+    "engagement": 456,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10447,
-    "score": 4701
+    "rawScore": 10456,
+    "score": 4705
   },
   {
     "id": "2092353630137368662",
@@ -358,7 +377,7 @@
     "isRetweet": false,
     "relevance": 30,
     "rawScore": 30002,
-    "score": 25502
+    "score": 19501
   },
   {
     "id": "2092217585324507161",
@@ -396,7 +415,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20004,
-    "score": 9002
+    "score": 6001
   },
   {
     "id": "2092368449859174624",
@@ -408,14 +427,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2092368449859174624",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 68,
+    "likes": 72,
     "retweets": 4,
     "replies": 3,
-    "engagement": 85,
+    "engagement": 89,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10085,
-    "score": 8572
+    "rawScore": 10089,
+    "score": 8576
   },
   {
     "id": "2092352187661693082",
@@ -427,14 +446,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2092352187661693082",
     "photoUrl": "https://pbs.twimg.com/media/HQmHOceWAAApfev.jpg",
     "hasPhoto": true,
-    "likes": 37,
+    "likes": 38,
     "retweets": 4,
     "replies": 3,
-    "engagement": 54,
+    "engagement": 55,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10354,
-    "score": 8801
+    "rawScore": 10355,
+    "score": 6731
   },
   {
     "id": "2092350547298771409",
@@ -453,7 +472,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10028,
-    "score": 8524
+    "score": 6518
   },
   {
     "id": "2092345284382626258",
@@ -484,14 +503,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2092344241636696518",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 13,
-    "retweets": 0,
+    "likes": 14,
+    "retweets": 1,
     "replies": 1,
-    "engagement": 16,
+    "engagement": 19,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10016,
-    "score": 6510
+    "rawScore": 10019,
+    "score": 6512
   },
   {
     "id": "2092192985685373412",
@@ -503,13 +522,13 @@
     "url": "https://x.com/Ole_S_Hansen/status/2092192985685373412",
     "photoUrl": "https://pbs.twimg.com/media/HQj1y7tXwAIlErI.png",
     "hasPhoto": true,
-    "likes": 118,
+    "likes": 120,
     "retweets": 16,
     "replies": 2,
-    "engagement": 156,
+    "engagement": 158,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10456,
+    "rawScore": 10458,
     "score": 3137
   },
   {
@@ -522,13 +541,13 @@
     "url": "https://x.com/TankerTrackers/status/2092328933739864323",
     "photoUrl": "https://pbs.twimg.com/media/HQlxRx-WgAApUrm.jpg",
     "hasPhoto": true,
-    "likes": 2409,
-    "retweets": 471,
-    "replies": 111,
-    "engagement": 3684,
+    "likes": 2501,
+    "retweets": 483,
+    "replies": 112,
+    "engagement": 3803,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 61984,
-    "score": 40290
+    "rawScore": 62103,
+    "score": 40367
   }
 ]
