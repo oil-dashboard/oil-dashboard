@@ -1,5 +1,24 @@
 [
   {
+    "id": "2092924712087122360",
+    "text": "U.S. DISTILLATE stocks have depleted by 17 million barrels since the war with Iran started compared with an average seasonal drawdown of less than 1 million barrels in the previous ten years. As a result, stocks had fallen to just 103 million barrels on August 21, the lowest for the time of year in records dating back to 1982:",
+    "createdAt": "2026-08-27T10:38:30+00:00",
+    "tweetTime": 1787827110000,
+    "username": "JKempEnergy",
+    "displayName": "John Kemp",
+    "url": "https://x.com/JKempEnergy/status/2092924712087122360",
+    "photoUrl": "https://pbs.twimg.com/media/HQuP5_0WoAA9k0F.jpg",
+    "hasPhoto": true,
+    "likes": 0,
+    "retweets": 1,
+    "replies": 0,
+    "engagement": 2,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10302,
+    "score": 10302
+  },
+  {
     "id": "2092834449872629995",
     "text": "If Canadian politicians actually had guts, they would cut off Canadian crude exports to the US. \n\nIt would hurt Canadian oil producers temporarily, but US commercial crude inventories would hit tank bottom in 2 weeks (4 million b/d x 14 days = 56 million bbls).\n\nAnd yes, Canadian crude imports are that important for the US. \n\nBut they won’t do it, so don’t worry.",
     "createdAt": "2026-08-27T04:39:50+00:00",
@@ -9,14 +28,14 @@
     "url": "https://x.com/HFI_Research/status/2092834449872629995",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 268,
-    "retweets": 31,
+    "likes": 284,
+    "retweets": 32,
     "replies": 11,
-    "engagement": 363,
+    "engagement": 381,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20363,
-    "score": 17309
+    "rawScore": 20381,
+    "score": 17324
   },
   {
     "id": "2092905654050488374",
@@ -28,14 +47,14 @@
     "url": "https://x.com/staunovo/status/2092905654050488374",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 0,
+    "likes": 2,
     "retweets": 0,
     "replies": 0,
-    "engagement": 0,
+    "engagement": 2,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10000,
-    "score": 10000
+    "rawScore": 10002,
+    "score": 10002
   },
   {
     "id": "2092902769178955878",
@@ -47,14 +66,14 @@
     "url": "https://x.com/staunovo/status/2092902769178955878",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1,
+    "likes": 3,
     "retweets": 0,
     "replies": 0,
-    "engagement": 1,
+    "engagement": 3,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20001,
-    "score": 20001
+    "rawScore": 20003,
+    "score": 20003
   },
   {
     "id": "2092888600497082521",
@@ -66,14 +85,14 @@
     "url": "https://x.com/staunovo/status/2092888600497082521",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 3,
+    "likes": 4,
     "retweets": 1,
     "replies": 0,
-    "engagement": 5,
+    "engagement": 6,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10005,
-    "score": 10005
+    "rawScore": 10006,
+    "score": 10006
   },
   {
     "id": "2092856713124733186",
@@ -85,14 +104,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2092856713124733186",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 7,
+    "likes": 8,
     "retweets": 1,
     "replies": 0,
-    "engagement": 9,
+    "engagement": 10,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10009,
-    "score": 10009
+    "rawScore": 10010,
+    "score": 8509
   },
   {
     "id": "2092863945195266456",
@@ -104,14 +123,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2092863945195266456",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 7,
+    "likes": 11,
     "retweets": 0,
     "replies": 0,
-    "engagement": 7,
+    "engagement": 11,
     "isRetweet": false,
     "relevance": 66,
-    "rawScore": 66007,
-    "score": 66007
+    "rawScore": 66011,
+    "score": 56109
   },
   {
     "id": "2092850438521360709",
@@ -123,13 +142,13 @@
     "url": "https://x.com/Ole_S_Hansen/status/2092850438521360709",
     "photoUrl": "https://pbs.twimg.com/media/HQtMX9vWMAAuS7_.png",
     "hasPhoto": true,
-    "likes": 41,
-    "retweets": 13,
+    "likes": 64,
+    "retweets": 17,
     "replies": 0,
-    "engagement": 67,
+    "engagement": 98,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38367,
-    "score": 38367
+    "rawScore": 38398,
+    "score": 32638
   }
 ]
