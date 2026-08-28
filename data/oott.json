@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2093152653060800953",
     "photoUrl": "https://pbs.twimg.com/media/HQxdfEAaQAA8iGv.jpg",
     "hasPhoto": true,
-    "likes": 16,
+    "likes": 20,
     "retweets": 2,
     "replies": 3,
-    "engagement": 29,
+    "engagement": 33,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40329,
-    "score": 40329
+    "rawScore": 40333,
+    "score": 34283
   },
   {
     "id": "2092957931172241581",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2093017289138262226",
     "photoUrl": "https://pbs.twimg.com/media/HQvkIWjWkAAEVzh.jpg",
     "hasPhoto": true,
-    "likes": 95,
-    "retweets": 31,
+    "likes": 105,
+    "retweets": 33,
     "replies": 13,
-    "engagement": 196,
+    "engagement": 210,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10496,
-    "score": 4723
+    "rawScore": 10510,
+    "score": 4730
   },
   {
     "id": "2092924712087122360",
@@ -66,14 +66,52 @@
     "url": "https://x.com/JKempEnergy/status/2092924712087122360",
     "photoUrl": "https://pbs.twimg.com/media/HQuP5_0WoAA9k0F.jpg",
     "hasPhoto": true,
-    "likes": 21,
+    "likes": 22,
     "retweets": 9,
     "replies": 4,
-    "engagement": 51,
+    "engagement": 52,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10351,
-    "score": 3105
+    "rawScore": 10352,
+    "score": 3106
+  },
+  {
+    "id": "2093218397823869006",
+    "text": "Shhh, CENTCOM doesn't realize that the oil figures they are quoting includes Iran.",
+    "createdAt": "2026-08-28T06:05:30+00:00",
+    "tweetTime": 1787897130000,
+    "username": "HFI_Research",
+    "displayName": "HFI Research",
+    "url": "https://x.com/HFI_Research/status/2093218397823869006",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 0,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10000,
+    "score": 10000
+  },
+  {
+    "id": "2093218253393076472",
+    "text": "US implied oil demand is down ~0.5 million b/d y-o-y. https://t.co/w3VMl4bsxC",
+    "createdAt": "2026-08-28T06:04:56+00:00",
+    "tweetTime": 1787897096000,
+    "username": "HFI_Research",
+    "displayName": "HFI Research",
+    "url": "https://x.com/HFI_Research/status/2093218253393076472",
+    "photoUrl": "https://pbs.twimg.com/media/HQya0MEaQAANuqW.jpg",
+    "hasPhoto": true,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 0,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10300,
+    "score": 10300
   },
   {
     "id": "2093194536625586567",
@@ -85,14 +123,14 @@
     "url": "https://x.com/HFI_Research/status/2093194536625586567",
     "photoUrl": "https://pbs.twimg.com/media/HQyFVZqbwAA8Lfz.jpg",
     "hasPhoto": true,
-    "likes": 33,
-    "retweets": 4,
-    "replies": 1,
-    "engagement": 44,
+    "likes": 84,
+    "retweets": 14,
+    "replies": 2,
+    "engagement": 118,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10344,
-    "score": 10344
+    "rawScore": 10418,
+    "score": 10418
   },
   {
     "id": "2093194056411029650",
@@ -123,14 +161,14 @@
     "url": "https://x.com/staunovo/status/2093193438330015985",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 0,
+    "likes": 1,
     "retweets": 0,
     "replies": 0,
-    "engagement": 0,
+    "engagement": 1,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30000,
-    "score": 30000
+    "rawScore": 30001,
+    "score": 30001
   },
   {
     "id": "2093193323318054938",
@@ -142,14 +180,14 @@
     "url": "https://x.com/staunovo/status/2093193323318054938",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 3,
+    "likes": 4,
     "retweets": 0,
     "replies": 0,
-    "engagement": 3,
+    "engagement": 4,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18003,
-    "score": 18003
+    "rawScore": 18004,
+    "score": 18004
   },
   {
     "id": "2093039400921731470",
@@ -161,14 +199,14 @@
     "url": "https://x.com/Rory_Johnston/status/2093039400921731470",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 567,
+    "likes": 575,
     "retweets": 16,
     "replies": 62,
-    "engagement": 785,
+    "engagement": 793,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10785,
-    "score": 7010
+    "rawScore": 10793,
+    "score": 7015
   },
   {
     "id": "2093027532807328238",
@@ -180,14 +218,14 @@
     "url": "https://x.com/Rory_Johnston/status/2093027532807328238",
     "photoUrl": "https://pbs.twimg.com/media/HQvtNQRWcAAuakb.jpg",
     "hasPhoto": true,
-    "likes": 380,
-    "retweets": 32,
-    "replies": 34,
-    "engagement": 546,
+    "likes": 383,
+    "retweets": 33,
+    "replies": 35,
+    "engagement": 554,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10846,
-    "score": 7050
+    "rawScore": 10854,
+    "score": 4884
   },
   {
     "id": "2092992897658319174",
@@ -199,14 +237,14 @@
     "url": "https://x.com/Rory_Johnston/status/2092992897658319174",
     "photoUrl": "https://pbs.twimg.com/media/HQvNQB4XYAAKOuV.jpg",
     "hasPhoto": true,
-    "likes": 278,
+    "likes": 280,
     "retweets": 28,
     "replies": 8,
-    "engagement": 358,
+    "engagement": 360,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28658,
-    "score": 12896
+    "rawScore": 28660,
+    "score": 12897
   },
   {
     "id": "2092974002985717989",
@@ -218,14 +256,14 @@
     "url": "https://x.com/Rory_Johnston/status/2092974002985717989",
     "photoUrl": "https://pbs.twimg.com/media/HQu8qDDXcAAe6Qr.png",
     "hasPhoto": true,
-    "likes": 287,
+    "likes": 288,
     "retweets": 73,
     "replies": 12,
-    "engagement": 469,
+    "engagement": 470,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38769,
-    "score": 17446
+    "rawScore": 38770,
+    "score": 17447
   },
   {
     "id": "2092953268938834333",
@@ -263,7 +301,7 @@
     "isRetweet": false,
     "relevance": 38,
     "rawScore": 38008,
-    "score": 38008
+    "score": 32307
   },
   {
     "id": "2093077606685929551",
@@ -323,25 +361,6 @@
     "score": 19806
   },
   {
-    "id": "2092850438521360709",
-    "text": "Takeaways from the latest EIA inventory report:\n\nUS crude stocks rose less than expected, while Cushing inventories continued to recover. A further 3.7 million barrels were released from the SPR, taking the total draw to 125 million barrels, a 30% reduction. Both exports and imports slowed, leaving the net impact broadly unchanged.\n\nRefinery utilisation jumped to its highest seasonal level since 1998 as record-high refining margins incentivised production amid strong export demand due to Russian export ban and stranded capacity in the Persian Gulf.\n\nGasoline stocks fell to their lowest seasonal level since 2012 at 209.4 million barrels, while distillate inventories plunged to a record low of 105.6 million barrels.\n\nImplied gasoline demand held steady on a four-week average basis, while distillate demand strengthened.",
-    "createdAt": "2026-08-27T05:43:22+00:00",
-    "tweetTime": 1787809402000,
-    "username": "Ole_S_Hansen",
-    "displayName": "Ole S Hansen",
-    "url": "https://x.com/Ole_S_Hansen/status/2092850438521360709",
-    "photoUrl": "https://pbs.twimg.com/media/HQtMX9vWMAAuS7_.png",
-    "hasPhoto": true,
-    "likes": 123,
-    "retweets": 32,
-    "replies": 0,
-    "engagement": 187,
-    "isRetweet": false,
-    "relevance": 38,
-    "rawScore": 38487,
-    "score": 11546
-  },
-  {
     "id": "2093156960451338449",
     "text": "We are pleased to announce that our crude oil export datasets now also include the UAE and Qatar.\n\nTotal list of countries we track oil exports out of are:\n\nAngola, Congo, DRC, Ecuador, Eq Guinea, Gabon, Guyana, Iran, Iraq (and KRG), Israel, Kazakhstan, Kuwait, Libya, Niger, Nigeria, Norway, Oman, Qatar, Russia, Saudi Arabia, Sudan, Syria, UAE, USA, Venezuela and Yemen.",
     "createdAt": "2026-08-28T02:01:23+00:00",
@@ -351,14 +370,14 @@
     "url": "https://x.com/TankerTrackers/status/2093156960451338449",
     "photoUrl": "https://pbs.twimg.com/media/HQxiuc4XUAAKyG9.jpg",
     "hasPhoto": true,
-    "likes": 72,
-    "retweets": 4,
+    "likes": 82,
+    "retweets": 6,
     "replies": 1,
-    "engagement": 83,
+    "engagement": 97,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20383,
-    "score": 20383
+    "rawScore": 20397,
+    "score": 17337
   },
   {
     "id": "2093152533455700240",
@@ -370,14 +389,14 @@
     "url": "https://x.com/TankerTrackers/status/2093152533455700240",
     "photoUrl": "https://pbs.twimg.com/media/HQxfIjsXkAI0E5Z.jpg",
     "hasPhoto": true,
-    "likes": 177,
-    "retweets": 22,
-    "replies": 33,
-    "engagement": 320,
+    "likes": 203,
+    "retweets": 26,
+    "replies": 36,
+    "engagement": 363,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30620,
-    "score": 30620
+    "rawScore": 30663,
+    "score": 26064
   },
   {
     "id": "2093007480448016758",
@@ -389,14 +408,14 @@
     "url": "https://x.com/TankerTrackers/status/2093007480448016758",
     "photoUrl": "https://pbs.twimg.com/media/HQvarThWkAAe2P-.jpg",
     "hasPhoto": true,
-    "likes": 523,
-    "retweets": 90,
+    "likes": 533,
+    "retweets": 92,
     "replies": 30,
-    "engagement": 793,
+    "engagement": 807,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 11093,
-    "score": 4992
+    "rawScore": 11107,
+    "score": 4998
   },
   {
     "id": "2093008341115015665",
@@ -427,13 +446,13 @@
     "url": "https://x.com/TankerTrackers/status/2092967491483861145",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 276,
+    "likes": 280,
     "retweets": 68,
     "replies": 9,
-    "engagement": 439,
+    "engagement": 443,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10439,
-    "score": 4698
+    "rawScore": 10443,
+    "score": 4699
   }
 ]
