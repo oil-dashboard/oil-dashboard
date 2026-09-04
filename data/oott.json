@@ -9,33 +9,33 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2095778047773524361",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 4,
-    "retweets": 0,
-    "replies": 1,
-    "engagement": 7,
+    "likes": 6,
+    "retweets": 1,
+    "replies": 3,
+    "engagement": 17,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10007,
-    "score": 10007
+    "rawScore": 10017,
+    "score": 10017
   },
   {
-    "id": "2095451022181142940",
-    "text": "U.S. OIL AND GAS drilling has become very concentrated in Texas and New Mexico as relatively low prices have encouraged producers to focus on developing only the lowest cost and most productive oil and gas fields. The Permian Basin (shared by Texas and New Mexico) accounted for 45% of all active rigs nationwide in August. The Haynesville (10%) and Eagle Ford (8%) plays took the region’s share to nearly two-thirds of the national total:",
-    "createdAt": "2026-09-03T09:57:09+00:00",
-    "tweetTime": 1788429429000,
+    "id": "2095810174866866462",
+    "text": "BRENT spot prices have risen to the highest for more than a month in a sign oil exports from the Middle East remain severely disrupted despite efforts to re-open the Strait of Hormuz. Dated Brent prices for one week ahead have climbed over $100 per barrel for the first time since late July and before that early June. Physical prices are rising even faster than futures and the backwardation is steepening – all indications the market is short of physical barrels despite efforts to shuttle crude through the Strait or bypass it entirely by redirecting crude flows through the Red Sea:",
+    "createdAt": "2026-09-04T09:44:18+00:00",
+    "tweetTime": 1788515058000,
     "username": "JKempEnergy",
     "displayName": "John Kemp",
-    "url": "https://x.com/JKempEnergy/status/2095451022181142940",
-    "photoUrl": "https://pbs.twimg.com/media/HRSJmKka4AENQEH.png",
+    "url": "https://x.com/JKempEnergy/status/2095810174866866462",
+    "photoUrl": "https://pbs.twimg.com/media/HRXQNeLXgAMFWOD.png",
     "hasPhoto": true,
-    "likes": 25,
-    "retweets": 5,
+    "likes": 2,
+    "retweets": 2,
     "replies": 0,
-    "engagement": 35,
+    "engagement": 6,
     "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10335,
-    "score": 3101
+    "relevance": 58,
+    "rawScore": 58306,
+    "score": 58306
   },
   {
     "id": "2095724788782379457",
@@ -47,14 +47,14 @@
     "url": "https://x.com/HFI_Research/status/2095724788782379457",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 70,
-    "retweets": 3,
+    "likes": 83,
+    "retweets": 4,
     "replies": 1,
-    "engagement": 79,
+    "engagement": 94,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10079,
-    "score": 8567
+    "rawScore": 10094,
+    "score": 8580
   },
   {
     "id": "2095531182444433851",
@@ -73,7 +73,7 @@
     "isRetweet": false,
     "relevance": 18,
     "rawScore": 18546,
-    "score": 8346
+    "score": 5564
   },
   {
     "id": "2095791806885601743",
@@ -85,14 +85,14 @@
     "url": "https://x.com/staunovo/status/2095791806885601743",
     "photoUrl": "https://pbs.twimg.com/media/HRW_hvaXIAA1ban.png",
     "hasPhoto": true,
-    "likes": 3,
+    "likes": 6,
     "retweets": 2,
     "replies": 0,
-    "engagement": 7,
+    "engagement": 10,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28307,
-    "score": 28307
+    "rawScore": 28310,
+    "score": 28310
   },
   {
     "id": "2095791303141343508",
@@ -104,14 +104,14 @@
     "url": "https://x.com/staunovo/status/2095791303141343508",
     "photoUrl": "https://pbs.twimg.com/media/HRW_E0eW8AYsQBk.png",
     "hasPhoto": true,
-    "likes": 4,
-    "retweets": 2,
+    "likes": 6,
+    "retweets": 3,
     "replies": 0,
-    "engagement": 8,
+    "engagement": 12,
     "isRetweet": false,
     "relevance": 44,
-    "rawScore": 44308,
-    "score": 44308
+    "rawScore": 44312,
+    "score": 44312
   },
   {
     "id": "2095791011997913462",
@@ -123,14 +123,14 @@
     "url": "https://x.com/staunovo/status/2095791011997913462",
     "photoUrl": "https://pbs.twimg.com/media/HRW-0AMXMAEu120.png",
     "hasPhoto": true,
-    "likes": 3,
+    "likes": 5,
     "retweets": 1,
-    "replies": 0,
-    "engagement": 5,
+    "replies": 1,
+    "engagement": 10,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28305,
-    "score": 28305
+    "rawScore": 28310,
+    "score": 28310
   },
   {
     "id": "2095790610116497425",
@@ -142,14 +142,14 @@
     "url": "https://x.com/staunovo/status/2095790610116497425",
     "photoUrl": "https://pbs.twimg.com/media/HRW-a5LWYAURxjF.png",
     "hasPhoto": true,
-    "likes": 2,
+    "likes": 5,
     "retweets": 1,
     "replies": 0,
-    "engagement": 4,
+    "engagement": 7,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38304,
-    "score": 38304
+    "rawScore": 38307,
+    "score": 38307
   },
   {
     "id": "2095790191243940111",
@@ -171,25 +171,6 @@
     "score": 20000
   },
   {
-    "id": "2095789997509021779",
-    "text": "US retail diesel rose to a record, threatening to further spike energy-driven inflation as wars in Iran and Russia roil the market #oott https://t.co/HugvMbBvgs",
-    "createdAt": "2026-09-04T08:24:07+00:00",
-    "tweetTime": 1788510247000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2095789997509021779",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 0,
-    "retweets": 1,
-    "replies": 0,
-    "engagement": 2,
-    "isRetweet": false,
-    "relevance": 40,
-    "rawScore": 40002,
-    "score": 40002
-  },
-  {
     "id": "2095527847343325637",
     "text": "#OOTT bump",
     "createdAt": "2026-09-03T15:02:26+00:00",
@@ -206,7 +187,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10000,
-    "score": 4500
+    "score": 3000
   },
   {
     "id": "2095510956130370025",
@@ -256,14 +237,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2095629467691397136",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 10,
+    "likes": 11,
     "retweets": 1,
     "replies": 1,
-    "engagement": 15,
+    "engagement": 16,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10015,
-    "score": 6510
+    "rawScore": 10016,
+    "score": 4507
   },
   {
     "id": "2095523200251686980",
@@ -275,13 +256,13 @@
     "url": "https://x.com/OilHeadlineNews/status/2095523200251686980",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 30,
+    "likes": 31,
     "retweets": 7,
     "replies": 1,
-    "engagement": 47,
+    "engagement": 48,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10047,
+    "rawScore": 10048,
     "score": 3014
   },
   {
@@ -294,13 +275,13 @@
     "url": "https://x.com/Ole_S_Hansen/status/2095753977140752841",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 11,
+    "likes": 13,
     "retweets": 1,
     "replies": 1,
-    "engagement": 16,
+    "engagement": 18,
     "isRetweet": false,
     "relevance": 102,
-    "rawScore": 102016,
-    "score": 102016
+    "rawScore": 102018,
+    "score": 86715
   }
 ]
