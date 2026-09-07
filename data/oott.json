@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2096955199680348255",
     "photoUrl": "https://pbs.twimg.com/media/HRnhnwtakAA9ohf.jpg",
     "hasPhoto": true,
-    "likes": 3,
+    "likes": 24,
     "retweets": 0,
-    "replies": 0,
-    "engagement": 3,
+    "replies": 2,
+    "engagement": 30,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10303,
-    "score": 10303
+    "rawScore": 10330,
+    "score": 10330
   },
   {
     "id": "2096588371753853282",
@@ -28,13 +28,13 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2096588371753853282",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 84,
+    "likes": 85,
     "retweets": 5,
     "replies": 5,
-    "engagement": 109,
+    "engagement": 110,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10109,
+    "rawScore": 10110,
     "score": 3033
   },
   {
@@ -66,14 +66,14 @@
     "url": "https://x.com/JKempEnergy/status/2096954363713303031",
     "photoUrl": "https://pbs.twimg.com/media/HRngr_kaYAAeiaW.png",
     "hasPhoto": true,
-    "likes": 0,
-    "retweets": 0,
-    "replies": 1,
-    "engagement": 3,
+    "likes": 8,
+    "retweets": 7,
+    "replies": 3,
+    "engagement": 31,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28303,
-    "score": 28303
+    "rawScore": 28331,
+    "score": 28331
   },
   {
     "id": "2096849553886454071",
@@ -92,7 +92,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10006,
-    "score": 8505
+    "score": 6504
   },
   {
     "id": "2096512596333539530",
@@ -142,14 +142,14 @@
     "url": "https://x.com/HFI_Research/status/2096773740898205942",
     "photoUrl": "https://pbs.twimg.com/media/HRk8lylagAAAPqe.jpg",
     "hasPhoto": true,
-    "likes": 146,
-    "retweets": 13,
+    "likes": 147,
+    "retweets": 14,
     "replies": 3,
-    "engagement": 181,
+    "engagement": 184,
     "isRetweet": false,
     "relevance": 26,
-    "rawScore": 26481,
-    "score": 11916
+    "rawScore": 26484,
+    "score": 11918
   },
   {
     "id": "2096281070581031131",
@@ -161,13 +161,13 @@
     "url": "https://x.com/HFI_Research/status/2096281070581031131",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 372,
+    "likes": 373,
     "retweets": 31,
     "replies": 6,
-    "engagement": 452,
+    "engagement": 453,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18452,
+    "rawScore": 18453,
     "score": 5536
   },
   {
@@ -199,14 +199,14 @@
     "url": "https://x.com/staunovo/status/2096948978386338086",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 6,
-    "retweets": 0,
+    "likes": 12,
+    "retweets": 1,
     "replies": 1,
-    "engagement": 9,
+    "engagement": 17,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20009,
-    "score": 20009
+    "rawScore": 20017,
+    "score": 20017
   },
   {
     "id": "2096948819493630138",
@@ -219,13 +219,13 @@
     "photoUrl": null,
     "hasPhoto": false,
     "likes": 5,
-    "retweets": 0,
+    "retweets": 1,
     "replies": 0,
-    "engagement": 5,
+    "engagement": 7,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18005,
-    "score": 18005
+    "rawScore": 18007,
+    "score": 18007
   },
   {
     "id": "2096948706788413682",
@@ -237,14 +237,14 @@
     "url": "https://x.com/staunovo/status/2096948706788413682",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 5,
+    "likes": 11,
     "retweets": 2,
-    "replies": 0,
-    "engagement": 9,
+    "replies": 1,
+    "engagement": 18,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 58009,
-    "score": 58009
+    "rawScore": 58018,
+    "score": 58018
   },
   {
     "id": "2096637828868297095",
@@ -256,14 +256,14 @@
     "url": "https://x.com/Rory_Johnston/status/2096637828868297095",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 400,
+    "likes": 403,
     "retweets": 31,
     "replies": 19,
-    "engagement": 519,
+    "engagement": 522,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10519,
-    "score": 3156
+    "rawScore": 10522,
+    "score": 3157
   },
   {
     "id": "2096006218489753865",
@@ -351,14 +351,14 @@
     "url": "https://x.com/crudeoilreport/status/2096946017669206390",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 0,
+    "likes": 1,
     "retweets": 0,
     "replies": 0,
-    "engagement": 0,
+    "engagement": 1,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20000,
-    "score": 20000
+    "rawScore": 20001,
+    "score": 20001
   },
   {
     "id": "2096663275375345734",
@@ -456,6 +456,25 @@
     "score": 6000
   },
   {
+    "id": "2096970248628945289",
+    "text": "Hormuz traffic falls sharply - Kpler",
+    "createdAt": "2026-09-07T14:34:01+00:00",
+    "tweetTime": 1788791641000,
+    "username": "OilHeadlineNews",
+    "displayName": "Energy Headline News",
+    "url": "https://x.com/OilHeadlineNews/status/2096970248628945289",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 11,
+    "retweets": 5,
+    "replies": 0,
+    "engagement": 21,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10021,
+    "score": 10021
+  },
+  {
     "id": "2096942475713589528",
     "text": "Iran war drives $100 billion in extra energy costs for U.S. consumers - Axios",
     "createdAt": "2026-09-07T12:43:40+00:00",
@@ -465,14 +484,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2096942475713589528",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 5,
-    "retweets": 2,
+    "likes": 12,
+    "retweets": 4,
     "replies": 0,
-    "engagement": 9,
+    "engagement": 20,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10009,
-    "score": 10009
+    "rawScore": 10020,
+    "score": 10020
   },
   {
     "id": "2096938363731189859",
@@ -484,14 +503,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2096938363731189859",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 20,
-    "retweets": 5,
+    "likes": 31,
+    "retweets": 6,
     "replies": 2,
-    "engagement": 36,
+    "engagement": 49,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30036,
-    "score": 30036
+    "rawScore": 30049,
+    "score": 30049
   },
   {
     "id": "2096933278620012869",
@@ -503,14 +522,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2096933278620012869",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 9,
+    "likes": 11,
     "retweets": 1,
-    "replies": 0,
-    "engagement": 11,
+    "replies": 2,
+    "engagement": 19,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18011,
-    "score": 18011
+    "rawScore": 18019,
+    "score": 18019
   },
   {
     "id": "2096930872939131203",
@@ -541,33 +560,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2096744705484636474",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 38,
+    "likes": 39,
     "retweets": 6,
     "replies": 2,
-    "engagement": 56,
+    "engagement": 57,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28056,
-    "score": 12625
-  },
-  {
-    "id": "2096683452544200789",
-    "text": "CBS: US Energy secretary says \"we are always open\" for nuclear agreement with Iran",
-    "createdAt": "2026-09-06T19:34:24+00:00",
-    "tweetTime": 1788723264000,
-    "username": "OilHeadlineNews",
-    "displayName": "Energy Headline News",
-    "url": "https://x.com/OilHeadlineNews/status/2096683452544200789",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 12,
-    "retweets": 0,
-    "replies": 1,
-    "engagement": 15,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10015,
-    "score": 3005
+    "rawScore": 28057,
+    "score": 12626
   },
   {
     "id": "2096851619350561117",
@@ -586,7 +586,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10024,
-    "score": 8520
+    "score": 6516
   },
   {
     "id": "2096851911152435356",
@@ -598,14 +598,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2096851911152435356",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 13,
-    "retweets": 1,
+    "likes": 15,
+    "retweets": 2,
     "replies": 1,
-    "engagement": 18,
+    "engagement": 22,
     "isRetweet": false,
     "relevance": 96,
-    "rawScore": 96018,
-    "score": 81615
+    "rawScore": 96022,
+    "score": 62414
   },
   {
     "id": "2096544241480499233",
@@ -636,14 +636,14 @@
     "url": "https://x.com/TankerTrackers/status/2096758442392248523",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 323,
-    "retweets": 39,
+    "likes": 333,
+    "retweets": 41,
     "replies": 15,
-    "engagement": 446,
+    "engagement": 460,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20446,
-    "score": 9201
+    "rawScore": 20460,
+    "score": 9207
   },
   {
     "id": "2096640607749804050",
@@ -655,13 +655,13 @@
     "url": "https://x.com/TankerTrackers/status/2096640607749804050",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 122,
+    "likes": 123,
     "retweets": 11,
     "replies": 5,
-    "engagement": 159,
+    "engagement": 160,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18159,
+    "rawScore": 18160,
     "score": 5448
   },
   {
@@ -674,14 +674,14 @@
     "url": "https://x.com/TankerTrackers/status/2096612132733259782",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 514,
-    "retweets": 76,
+    "likes": 518,
+    "retweets": 77,
     "replies": 36,
-    "engagement": 774,
+    "engagement": 780,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30774,
-    "score": 9232
+    "rawScore": 30780,
+    "score": 9234
   },
   {
     "id": "2096605307552096296",
@@ -693,14 +693,14 @@
     "url": "https://x.com/TankerTrackers/status/2096605307552096296",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 574,
-    "retweets": 84,
+    "likes": 576,
+    "retweets": 85,
     "replies": 23,
-    "engagement": 811,
+    "engagement": 815,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30811,
-    "score": 9243
+    "rawScore": 30815,
+    "score": 9245
   },
   {
     "id": "2096606526714556743",
@@ -731,13 +731,13 @@
     "url": "https://x.com/TankerTrackers/status/2096600720048873750",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 174,
+    "likes": 175,
     "retweets": 8,
     "replies": 6,
-    "engagement": 208,
+    "engagement": 209,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28208,
-    "score": 8462
+    "rawScore": 28209,
+    "score": 8463
   }
 ]
