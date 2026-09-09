@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2097319741388140747",
     "photoUrl": "https://pbs.twimg.com/media/HRss3KFakAAPyjN.jpg",
     "hasPhoto": true,
-    "likes": 120,
-    "retweets": 12,
+    "likes": 122,
+    "retweets": 13,
     "replies": 7,
-    "engagement": 165,
+    "engagement": 169,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28465,
-    "score": 12809
+    "rawScore": 28469,
+    "score": 12811
   },
   {
     "id": "2097253256384884801",
@@ -35,7 +35,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20320,
-    "score": 9144
+    "score": 6096
   },
   {
     "id": "2097392021853843709",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JKempEnergy/status/2097392021853843709",
     "photoUrl": "https://pbs.twimg.com/media/HRswhXaWAAAvYfz.png",
     "hasPhoto": true,
-    "likes": 20,
-    "retweets": 5,
+    "likes": 21,
+    "retweets": 6,
     "replies": 4,
-    "engagement": 42,
+    "engagement": 45,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40342,
-    "score": 34291
+    "rawScore": 40345,
+    "score": 26224
   },
   {
     "id": "2097271329154007158",
@@ -76,42 +76,80 @@
     "score": 29859
   },
   {
-    "id": "2097425616559874220",
-    "text": "Iran’s military claimed that it captured an underwater drone from US forces amid ongoing tensions in the Strait of Hormuz, but the US dismissed the sea drone as “defective and malfunctioning” https://t.co/sht8MRO2Pv",
-    "createdAt": "2026-09-08T20:43:29+00:00",
-    "tweetTime": 1788900209000,
+    "id": "2097529193173016815",
+    "text": "Mexico’s government aims to reduce its financial support for state-owned oil company Petroleos Mexicanos’ debt payments to 81.1 billion pesos ($4.8 billion) in 2027, down by nearly 70% from the 263.5 billion pesos budgeted this year #oott https://t.co/4d36xtqtZU",
+    "createdAt": "2026-09-09T03:35:04+00:00",
+    "tweetTime": 1788924904000,
     "username": "staunovo",
     "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2097425616559874220",
+    "url": "https://x.com/staunovo/status/2097529193173016815",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 3,
-    "retweets": 1,
+    "likes": 0,
+    "retweets": 0,
     "replies": 0,
-    "engagement": 5,
+    "engagement": 0,
     "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10005,
-    "score": 8504
+    "relevance": 20,
+    "rawScore": 20000,
+    "score": 20000
   },
   {
-    "id": "2097425141424898321",
-    "text": "Argentina presents criminal complaint against Navitas Petroleum over Falklands drilling https://t.co/gqWAPhZJIh",
-    "createdAt": "2026-09-08T20:41:36+00:00",
-    "tweetTime": 1788900096000,
+    "id": "2097527930884632892",
+    "text": "CENTCOM confirms it struck five Iranian oil tankers https://t.co/emxGeh1cFq",
+    "createdAt": "2026-09-09T03:30:03+00:00",
+    "tweetTime": 1788924603000,
     "username": "staunovo",
     "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2097425141424898321",
+    "url": "https://x.com/staunovo/status/2097527930884632892",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 8,
-    "retweets": 1,
-    "replies": 1,
-    "engagement": 13,
+    "likes": 2,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 2,
+    "isRetweet": false,
+    "relevance": 28,
+    "rawScore": 28002,
+    "score": 28002
+  },
+  {
+    "id": "2097527655880904922",
+    "text": "UKMTO has received a report involving a merchant vessel in the Strait of Hormuz.\n\nReports indicate that the vessel was subject to interaction as part of ongoing military activity in the region.\n\nAuthorities are aware and relevant investigations remain ongoing.",
+    "createdAt": "2026-09-09T03:28:57+00:00",
+    "tweetTime": 1788924537000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2097527655880904922",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 1,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10013,
-    "score": 8511
+    "rawScore": 10001,
+    "score": 10001
+  },
+  {
+    "id": "2097527412804247779",
+    "text": "Drone debris falls on business grounds in Russia's Novorossiysk, mayor says #oott https://t.co/fsDABrG32c",
+    "createdAt": "2026-09-09T03:28:00+00:00",
+    "tweetTime": 1788924480000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2097527412804247779",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 0,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10000,
+    "score": 10000
   },
   {
     "id": "2097455509821370501",
@@ -123,14 +161,14 @@
     "url": "https://x.com/Rory_Johnston/status/2097455509821370501",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 222,
-    "retweets": 11,
+    "likes": 240,
+    "retweets": 12,
     "replies": 12,
-    "engagement": 280,
+    "engagement": 300,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18280,
-    "score": 18280
+    "rawScore": 18300,
+    "score": 15555
   },
   {
     "id": "2097402551868027071",
@@ -149,7 +187,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10576,
-    "score": 8990
+    "score": 6874
   },
   {
     "id": "2097461350163222541",
@@ -168,7 +206,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20002,
-    "score": 20002
+    "score": 17002
   },
   {
     "id": "2097423086005969375",
@@ -206,7 +244,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10003,
-    "score": 8503
+    "score": 6502
   },
   {
     "id": "2097333569907458476",
@@ -225,7 +263,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20007,
-    "score": 13005
+    "score": 9003
   },
   {
     "id": "2097461897448636777",
@@ -237,14 +275,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2097461897448636777",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 9,
+    "likes": 14,
     "retweets": 1,
     "replies": 3,
-    "engagement": 20,
+    "engagement": 25,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20020,
-    "score": 20020
+    "rawScore": 20025,
+    "score": 17021
   },
   {
     "id": "2097441074969002286",
@@ -256,13 +294,13 @@
     "url": "https://x.com/OilHeadlineNews/status/2097441074969002286",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 7,
+    "likes": 8,
     "retweets": 0,
     "replies": 1,
-    "engagement": 10,
+    "engagement": 11,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28010,
+    "rawScore": 28011,
     "score": 23809
   },
   {
@@ -275,14 +313,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2097422076722532661",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 13,
+    "likes": 14,
     "retweets": 2,
     "replies": 0,
-    "engagement": 17,
+    "engagement": 18,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28017,
-    "score": 23814
+    "rawScore": 28018,
+    "score": 23815
   },
   {
     "id": "2097383511720100152",
@@ -294,14 +332,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2097383511720100152",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 15,
+    "likes": 16,
     "retweets": 1,
     "replies": 1,
-    "engagement": 20,
+    "engagement": 21,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30020,
-    "score": 19513
+    "rawScore": 30021,
+    "score": 19514
   },
   {
     "id": "2097374873265844276",
@@ -313,14 +351,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2097374873265844276",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 149,
+    "likes": 151,
     "retweets": 15,
     "replies": 7,
-    "engagement": 200,
+    "engagement": 202,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10200,
-    "score": 6630
+    "rawScore": 10202,
+    "score": 6631
   },
   {
     "id": "2097373636629823517",
@@ -389,14 +427,14 @@
     "url": "https://x.com/TankerTrackers/status/2097452671867187400",
     "photoUrl": "https://pbs.twimg.com/media/HRulQxia0AAYXt1.jpg",
     "hasPhoto": true,
-    "likes": 453,
-    "retweets": 130,
-    "replies": 29,
-    "engagement": 800,
+    "likes": 512,
+    "retweets": 142,
+    "replies": 28,
+    "engagement": 880,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 59100,
-    "score": 59100
+    "rawScore": 59180,
+    "score": 50303
   },
   {
     "id": "2097453827297341945",
@@ -408,13 +446,13 @@
     "url": "https://x.com/TankerTrackers/status/2097453827297341945",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 82,
+    "likes": 88,
     "retweets": 21,
     "replies": 6,
-    "engagement": 142,
+    "engagement": 148,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28142,
-    "score": 28142
+    "rawScore": 28148,
+    "score": 23926
   }
 ]
