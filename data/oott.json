@@ -28,14 +28,14 @@
     "url": "https://x.com/JavierBlas/status/2097586524107772053",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 356,
-    "retweets": 87,
-    "replies": 36,
-    "engagement": 638,
+    "likes": 462,
+    "retweets": 105,
+    "replies": 44,
+    "engagement": 804,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48638,
-    "score": 48638
+    "rawScore": 48804,
+    "score": 48804
   },
   {
     "id": "2097625001948013023",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JKempEnergy/status/2097625001948013023",
     "photoUrl": "https://pbs.twimg.com/media/HRxCzvlaUAAnLjj.png",
     "hasPhoto": true,
-    "likes": 1,
-    "retweets": 1,
+    "likes": 11,
+    "retweets": 5,
     "replies": 0,
-    "engagement": 3,
+    "engagement": 21,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18303,
-    "score": 18303
+    "rawScore": 18321,
+    "score": 18321
   },
   {
     "id": "2097392021853843709",
@@ -76,25 +76,6 @@
     "score": 18159
   },
   {
-    "id": "2097271329154007158",
-    "text": "BRENT calendar spreads have swung into a ferocious backwardation as attacks on shipping escalate around the Strait of Hormuz and Saudi Arabia’s oil installations on the Red Sea are hit by missiles and drones launched from Yemen. The six-month futures spread is trading in a backwardation of $15 per barrel up from flat or a small contango at the start of July before the ceasefire between Iran and the United States broke down. Traders increasingly anticipate a prolonged disruption of exports from around the Persian Gulf that will tighten crude inventories through the end of the year and into 2027:",
-    "createdAt": "2026-09-08T10:30:24+00:00",
-    "tweetTime": 1788863424000,
-    "username": "JKempEnergy",
-    "displayName": "John Kemp",
-    "url": "https://x.com/JKempEnergy/status/2097271329154007158",
-    "photoUrl": "https://pbs.twimg.com/media/HRsBKCraEAARlBt.png",
-    "hasPhoto": true,
-    "likes": 27,
-    "retweets": 13,
-    "replies": 1,
-    "engagement": 56,
-    "isRetweet": false,
-    "relevance": 66,
-    "rawScore": 66356,
-    "score": 19907
-  },
-  {
     "id": "2097538417643209010",
     "text": "(WCTW) This Cannot Be That Obvious\n\nWe aren't going back to the way it was. The oil market has changed.\n\nhttps://t.co/JB3voY9eev",
     "createdAt": "2026-09-09T04:11:43+00:00",
@@ -104,14 +85,14 @@
     "url": "https://x.com/HFI_Research/status/2097538417643209010",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 73,
-    "retweets": 1,
+    "likes": 81,
+    "retweets": 2,
     "replies": 0,
-    "engagement": 75,
+    "engagement": 85,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10075,
-    "score": 8564
+    "rawScore": 10085,
+    "score": 8572
   },
   {
     "id": "2097613264423166091",
@@ -123,14 +104,14 @@
     "url": "https://x.com/staunovo/status/2097613264423166091",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 3,
-    "retweets": 2,
+    "likes": 4,
+    "retweets": 3,
     "replies": 0,
-    "engagement": 7,
+    "engagement": 10,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10007,
-    "score": 10007
+    "rawScore": 10010,
+    "score": 10010
   },
   {
     "id": "2097610895111188504",
@@ -152,25 +133,6 @@
     "score": 48001
   },
   {
-    "id": "2097610270495396066",
-    "text": "As of Monday, September 7, total oil product stocks in Fujairah stood at 9.982 million barrels. Overall, there was a net gain of 3.570 million barrels, or a 55.7% week-on-week increment. The weekly stocks movement in Fujairah saw decent recovery in all three categories, i.e. light, middle distillates and heavy residues categories. #oott https://t.co/eiuQmMGeCV",
-    "createdAt": "2026-09-09T08:57:14+00:00",
-    "tweetTime": 1788944234000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2097610270495396066",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 9,
-    "retweets": 1,
-    "replies": 0,
-    "engagement": 11,
-    "isRetweet": false,
-    "relevance": 30,
-    "rawScore": 30011,
-    "score": 30011
-  },
-  {
     "id": "2097455509821370501",
     "text": "Washington just scuttled a bunch of Iranian tankers off Kharg island\n\nAnd Tehran just cluster-bombed a US base in Jordan. https://t.co/btpr4MJmG3",
     "createdAt": "2026-09-08T22:42:17+00:00",
@@ -180,14 +142,14 @@
     "url": "https://x.com/Rory_Johnston/status/2097455509821370501",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 290,
+    "likes": 296,
     "retweets": 13,
     "replies": 15,
-    "engagement": 361,
+    "engagement": 367,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18361,
-    "score": 11935
+    "rawScore": 18367,
+    "score": 8265
   },
   {
     "id": "2097402551868027071",
@@ -225,7 +187,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20002,
-    "score": 13001
+    "score": 9001
   },
   {
     "id": "2097423086005969375",
@@ -237,13 +199,13 @@
     "url": "https://x.com/crudeoilreport/status/2097423086005969375",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 2,
+    "likes": 3,
     "retweets": 0,
     "replies": 0,
-    "engagement": 2,
+    "engagement": 3,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10002,
+    "rawScore": 10003,
     "score": 4501
   },
   {
@@ -301,7 +263,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20033,
-    "score": 13021
+    "score": 9015
   },
   {
     "id": "2097441074969002286",
@@ -408,14 +370,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2097561695895867481",
     "photoUrl": "https://pbs.twimg.com/media/HRwIqZ_WsAAJGZq.png",
     "hasPhoto": true,
-    "likes": 47,
-    "retweets": 9,
+    "likes": 55,
+    "retweets": 14,
     "replies": 1,
-    "engagement": 68,
+    "engagement": 86,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28368,
-    "score": 24113
+    "rawScore": 28386,
+    "score": 24128
   },
   {
     "id": "2097452671867187400",
@@ -427,14 +389,14 @@
     "url": "https://x.com/TankerTrackers/status/2097452671867187400",
     "photoUrl": "https://pbs.twimg.com/media/HRulQxia0AAYXt1.jpg",
     "hasPhoto": true,
-    "likes": 618,
-    "retweets": 173,
+    "likes": 628,
+    "retweets": 178,
     "replies": 30,
-    "engagement": 1054,
+    "engagement": 1074,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 59354,
-    "score": 38580
+    "rawScore": 59374,
+    "score": 26718
   },
   {
     "id": "2097453827297341945",
@@ -446,13 +408,13 @@
     "url": "https://x.com/TankerTrackers/status/2097453827297341945",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 98,
+    "likes": 99,
     "retweets": 21,
     "replies": 7,
-    "engagement": 161,
+    "engagement": 162,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28161,
-    "score": 18305
+    "rawScore": 28162,
+    "score": 12673
   }
 ]
