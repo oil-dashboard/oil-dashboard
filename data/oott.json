@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2097319741388140747",
     "photoUrl": "https://pbs.twimg.com/media/HRss3KFakAAPyjN.jpg",
     "hasPhoto": true,
-    "likes": 124,
-    "retweets": 13,
-    "replies": 7,
-    "engagement": 171,
+    "likes": 126,
+    "retweets": 14,
+    "replies": 8,
+    "engagement": 178,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28471,
-    "score": 12812
+    "rawScore": 28478,
+    "score": 8543
   },
   {
     "id": "2097253256384884801",
@@ -38,6 +38,25 @@
     "score": 6096
   },
   {
+    "id": "2097586524107772053",
+    "text": "Brent crude oil hits $100 a barrel for first time since July",
+    "createdAt": "2026-09-09T07:22:53+00:00",
+    "tweetTime": 1788938573000,
+    "username": "JavierBlas",
+    "displayName": "Javier Blas",
+    "url": "https://x.com/JavierBlas/status/2097586524107772053",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 189,
+    "retweets": 61,
+    "replies": 23,
+    "engagement": 380,
+    "isRetweet": false,
+    "relevance": 48,
+    "rawScore": 48380,
+    "score": 48380
+  },
+  {
     "id": "2097392021853843709",
     "text": "U.S. oil output flattens as shale revolution matures\n\nU.S. oil production has remained essentially stable over the last year as the industry has focused on controlling costs and maintaining a disciplined approach to investment despite higher prices driven by war in the Middle East. \n\nTotal crude and condensates production increased by just 136,000 barrels per day (b/d) or 1% in June compared with the same month a year earlier, according to data from the U.S. Energy Information Administration.  \n\nVery modest growth is based on revised and more comprehensive data for 2025 from the U.S. Energy Information Administration published on September 1.  \n\nProduction from the Lower 48 states excluding federal waters in the Gulf of Mexico increased by less than 90,000 b/d in June compared with a year earlier, the slowest growth since the pandemic ...\n\nThis is a short extract from my newsletter emailed to clients earlier today. If you would like to read my newsletters in full, three times a week, you can subscribe via my website https://t.co/aW1Xb1tAI9",
     "createdAt": "2026-09-08T18:30:00+00:00",
@@ -48,12 +67,12 @@
     "photoUrl": "https://pbs.twimg.com/media/HRswhXaWAAAvYfz.png",
     "hasPhoto": true,
     "likes": 24,
-    "retweets": 7,
+    "retweets": 8,
     "replies": 4,
-    "engagement": 50,
+    "engagement": 52,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40350,
+    "rawScore": 40352,
     "score": 18158
   },
   {
@@ -85,14 +104,33 @@
     "url": "https://x.com/HFI_Research/status/2097538417643209010",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 55,
+    "likes": 62,
     "retweets": 1,
     "replies": 0,
-    "engagement": 57,
+    "engagement": 64,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10057,
-    "score": 10057
+    "rawScore": 10064,
+    "score": 8554
+  },
+  {
+    "id": "2097587401916809365",
+    "text": "Brent &gt; 100 #oott",
+    "createdAt": "2026-09-09T07:26:22+00:00",
+    "tweetTime": 1788938782000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2097587401916809365",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 11,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 11,
+    "isRetweet": false,
+    "relevance": 28,
+    "rawScore": 28011,
+    "score": 28011
   },
   {
     "id": "2097579173585850674",
@@ -104,14 +142,14 @@
     "url": "https://x.com/staunovo/status/2097579173585850674",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 2,
-    "retweets": 1,
+    "likes": 11,
+    "retweets": 4,
     "replies": 0,
-    "engagement": 4,
+    "engagement": 19,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 58004,
-    "score": 58004
+    "rawScore": 58019,
+    "score": 58019
   },
   {
     "id": "2097566230303420458",
@@ -123,14 +161,14 @@
     "url": "https://x.com/staunovo/status/2097566230303420458",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 2,
+    "likes": 3,
     "retweets": 0,
     "replies": 0,
-    "engagement": 2,
+    "engagement": 3,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20002,
-    "score": 20002
+    "rawScore": 20003,
+    "score": 20003
   },
   {
     "id": "2097565789687521599",
@@ -142,14 +180,14 @@
     "url": "https://x.com/staunovo/status/2097565789687521599",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 2,
+    "likes": 3,
     "retweets": 0,
     "replies": 0,
-    "engagement": 2,
+    "engagement": 3,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20002,
-    "score": 20002
+    "rawScore": 20003,
+    "score": 20003
   },
   {
     "id": "2097565560154247395",
@@ -161,14 +199,14 @@
     "url": "https://x.com/staunovo/status/2097565560154247395",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1,
+    "likes": 2,
     "retweets": 0,
     "replies": 0,
-    "engagement": 1,
+    "engagement": 2,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10001,
-    "score": 10001
+    "rawScore": 10002,
+    "score": 10002
   },
   {
     "id": "2097565204523409738",
@@ -180,14 +218,14 @@
     "url": "https://x.com/staunovo/status/2097565204523409738",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 8,
-    "retweets": 0,
+    "likes": 10,
+    "retweets": 1,
     "replies": 0,
-    "engagement": 8,
+    "engagement": 12,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28008,
-    "score": 28008
+    "rawScore": 28012,
+    "score": 28012
   },
   {
     "id": "2097564116827218001",
@@ -199,14 +237,14 @@
     "url": "https://x.com/staunovo/status/2097564116827218001",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 4,
+    "likes": 6,
     "retweets": 1,
     "replies": 0,
-    "engagement": 6,
+    "engagement": 8,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38006,
-    "score": 38006
+    "rawScore": 38008,
+    "score": 38008
   },
   {
     "id": "2097455509821370501",
@@ -218,14 +256,14 @@
     "url": "https://x.com/Rory_Johnston/status/2097455509821370501",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 284,
+    "likes": 290,
     "retweets": 13,
     "replies": 15,
-    "engagement": 355,
+    "engagement": 361,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18355,
-    "score": 11931
+    "rawScore": 18361,
+    "score": 11935
   },
   {
     "id": "2097402551868027071",
@@ -237,14 +275,14 @@
     "url": "https://x.com/Rory_Johnston/status/2097402551868027071",
     "photoUrl": "https://pbs.twimg.com/media/HRt4axNXEAAyTxg.png",
     "hasPhoto": true,
-    "likes": 219,
+    "likes": 221,
     "retweets": 22,
     "replies": 8,
-    "engagement": 287,
+    "engagement": 289,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10587,
-    "score": 4764
+    "rawScore": 10589,
+    "score": 4765
   },
   {
     "id": "2097461350163222541",
@@ -275,14 +313,14 @@
     "url": "https://x.com/crudeoilreport/status/2097423086005969375",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1,
+    "likes": 2,
     "retweets": 0,
     "replies": 0,
-    "engagement": 1,
+    "engagement": 2,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10001,
-    "score": 6501
+    "rawScore": 10002,
+    "score": 4501
   },
   {
     "id": "2097408004635455636",
@@ -301,7 +339,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10003,
-    "score": 6502
+    "score": 4501
   },
   {
     "id": "2097333569907458476",
@@ -320,7 +358,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20007,
-    "score": 9003
+    "score": 6002
   },
   {
     "id": "2097461897448636777",
@@ -334,12 +372,12 @@
     "hasPhoto": false,
     "likes": 19,
     "retweets": 1,
-    "replies": 3,
-    "engagement": 30,
+    "replies": 4,
+    "engagement": 33,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20030,
-    "score": 13020
+    "rawScore": 20033,
+    "score": 13021
   },
   {
     "id": "2097441074969002286",
@@ -377,7 +415,7 @@
     "isRetweet": false,
     "relevance": 28,
     "rawScore": 28018,
-    "score": 18212
+    "score": 12608
   },
   {
     "id": "2097383511720100152",
@@ -446,14 +484,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2097561695895867481",
     "photoUrl": "https://pbs.twimg.com/media/HRwIqZ_WsAAJGZq.png",
     "hasPhoto": true,
-    "likes": 33,
-    "retweets": 7,
-    "replies": 0,
-    "engagement": 47,
+    "likes": 40,
+    "retweets": 8,
+    "replies": 1,
+    "engagement": 59,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28347,
-    "score": 28347
+    "rawScore": 28359,
+    "score": 28359
   },
   {
     "id": "2097452671867187400",
@@ -465,14 +503,14 @@
     "url": "https://x.com/TankerTrackers/status/2097452671867187400",
     "photoUrl": "https://pbs.twimg.com/media/HRulQxia0AAYXt1.jpg",
     "hasPhoto": true,
-    "likes": 597,
-    "retweets": 168,
-    "replies": 29,
-    "engagement": 1020,
+    "likes": 609,
+    "retweets": 173,
+    "replies": 30,
+    "engagement": 1045,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 59320,
-    "score": 38558
+    "rawScore": 59345,
+    "score": 38574
   },
   {
     "id": "2097453827297341945",
@@ -484,13 +522,13 @@
     "url": "https://x.com/TankerTrackers/status/2097453827297341945",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 93,
+    "likes": 97,
     "retweets": 21,
     "replies": 7,
-    "engagement": 156,
+    "engagement": 160,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28156,
-    "score": 18301
+    "rawScore": 28160,
+    "score": 18304
   }
 ]
