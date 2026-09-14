@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2099377601777484277",
     "photoUrl": "https://pbs.twimg.com/media/HSJ8GKmaUAA8yFM.jpg",
     "hasPhoto": true,
-    "likes": 55,
+    "likes": 59,
     "retweets": 6,
-    "replies": 5,
-    "engagement": 82,
+    "replies": 6,
+    "engagement": 89,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30382,
-    "score": 25825
+    "rawScore": 30389,
+    "score": 25831
   },
   {
     "id": "2099378237843669159",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2099330493787594996",
     "photoUrl": "https://pbs.twimg.com/media/HSJRqy4bEAAfHRJ.png",
     "hasPhoto": true,
-    "likes": 56,
+    "likes": 62,
     "retweets": 5,
     "replies": 2,
-    "engagement": 72,
+    "engagement": 78,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20372,
-    "score": 17316
+    "rawScore": 20378,
+    "score": 13246
   },
   {
     "id": "2099325018631278812",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2099325018631278812",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 69,
+    "likes": 74,
     "retweets": 12,
-    "replies": 5,
-    "engagement": 108,
+    "replies": 6,
+    "engagement": 116,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20108,
-    "score": 13070
+    "rawScore": 20116,
+    "score": 13075
   },
   {
     "id": "2099325365525303614",
@@ -133,25 +133,6 @@
     "score": 6211
   },
   {
-    "id": "2098665803814212018",
-    "text": "For the uninitiated, the crack spreads refers to the price differential between the product and the underlying crude price. \n\nFor US, I used Heating Oil contracts against WTI. Oct WTI swap is around 95$/bbl, so the flatprice of diesel in US is more than 200$/bbl.\n\nFor the European market, I used ICE GO swaps against Brent. Oct Brent swap is around 100$/bbl, so flatprice of diesel in Europe is around 190$/bbl.\n\nSingapore markets are similar to the Europe side, marked against Brent (some mark cracks against Dubai too). For this exercise, the flatprice of diesel in SIngapore is around 180$/bbl.\n\nThis also shows you the divergence between East and West spreads. Diesel in the East is weaker than the Atlantic Basin. But it is still very, very strong.\n\n#oott",
-    "createdAt": "2026-09-12T06:51:33+00:00",
-    "tweetTime": 1789195893000,
-    "username": "JuneGoh_Sparta",
-    "displayName": "June Goh",
-    "url": "https://x.com/JuneGoh_Sparta/status/2098665803814212018",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 47,
-    "retweets": 7,
-    "replies": 0,
-    "engagement": 61,
-    "isRetweet": false,
-    "relevance": 82,
-    "rawScore": 82061,
-    "score": 24618
-  },
-  {
     "id": "2099427295127642197",
     "text": "An astonishing fact: Japan's largest oil source is now the United States, which in July accounted for ~37% of the barrels Tokyo imported, according to official @meti_NIPPON data.",
     "createdAt": "2026-09-14T09:17:27+00:00",
@@ -161,14 +142,14 @@
     "url": "https://x.com/JavierBlas/status/2099427295127642197",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 193,
-    "retweets": 39,
-    "replies": 10,
-    "engagement": 301,
+    "likes": 341,
+    "retweets": 75,
+    "replies": 12,
+    "engagement": 527,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20301,
-    "score": 20301
+    "rawScore": 20527,
+    "score": 20527
   },
   {
     "id": "2099406739242148197",
@@ -180,14 +161,14 @@
     "url": "https://x.com/JavierBlas/status/2099406739242148197",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 121,
-    "retweets": 34,
-    "replies": 12,
-    "engagement": 225,
+    "likes": 152,
+    "retweets": 38,
+    "replies": 14,
+    "engagement": 270,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40225,
-    "score": 40225
+    "rawScore": 40270,
+    "score": 40270
   },
   {
     "id": "2099194945873576326",
@@ -199,14 +180,14 @@
     "url": "https://x.com/JavierBlas/status/2099194945873576326",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 94,
+    "likes": 97,
     "retweets": 9,
     "replies": 10,
-    "engagement": 142,
+    "engagement": 145,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10142,
-    "score": 4564
+    "rawScore": 10145,
+    "score": 4565
   },
   {
     "id": "2099152950731907185",
@@ -218,14 +199,14 @@
     "url": "https://x.com/JavierBlas/status/2099152950731907185",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 555,
-    "retweets": 94,
-    "replies": 93,
-    "engagement": 1022,
+    "likes": 558,
+    "retweets": 95,
+    "replies": 94,
+    "engagement": 1030,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 21022,
-    "score": 6307
+    "rawScore": 21030,
+    "score": 6309
   },
   {
     "id": "2098482750814613984",
@@ -256,14 +237,14 @@
     "url": "https://x.com/JKempEnergy/status/2099442921304891648",
     "photoUrl": "https://pbs.twimg.com/media/HSK4Jp0XIAIJdBA.jpg",
     "hasPhoto": true,
-    "likes": 6,
-    "retweets": 2,
+    "likes": 23,
+    "retweets": 7,
     "replies": 1,
-    "engagement": 13,
+    "engagement": 40,
     "isRetweet": false,
     "relevance": 74,
-    "rawScore": 74313,
-    "score": 74313
+    "rawScore": 74340,
+    "score": 74340
   },
   {
     "id": "2099360535263277125",
@@ -275,14 +256,14 @@
     "url": "https://x.com/JKempEnergy/status/2099360535263277125",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 16,
+    "likes": 17,
     "retweets": 6,
     "replies": 2,
-    "engagement": 34,
+    "engagement": 35,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28034,
-    "score": 23829
+    "rawScore": 28035,
+    "score": 23830
   },
   {
     "id": "2099162689335656561",
@@ -294,33 +275,14 @@
     "url": "https://x.com/JKempEnergy/status/2099162689335656561",
     "photoUrl": "https://pbs.twimg.com/media/HSGCdpXXoAQZHYO.jpg",
     "hasPhoto": true,
-    "likes": 60,
-    "retweets": 17,
+    "likes": 62,
+    "retweets": 18,
     "replies": 5,
-    "engagement": 109,
+    "engagement": 113,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10409,
-    "score": 3123
-  },
-  {
-    "id": "2098360804563124264",
-    "text": "U.S. DIESEL PRICES have surged to some of the highest on record even adjusting for the impact of inflation as the security situation in the Persian Gulf and Red Sea deteriorates and Ukraine’s attacks on Russia’s oil refineries continue. Front-month U.S. diesel futures have traded at an average of $199 per barrel so far in September (97th percentile for all months since 2000) more than doubling from $99 (37th percentile) in January. Futures prices so far this year have averaged more than $150 per barrel the highest in real terms since 2022 and before that 2014:",
-    "createdAt": "2026-09-11T10:39:36+00:00",
-    "tweetTime": 1789123176000,
-    "username": "JKempEnergy",
-    "displayName": "John Kemp",
-    "url": "https://x.com/JKempEnergy/status/2098360804563124264",
-    "photoUrl": "https://pbs.twimg.com/media/HR7f-eZX0AobxF8.jpg",
-    "hasPhoto": true,
-    "likes": 42,
-    "retweets": 17,
-    "replies": 1,
-    "engagement": 79,
-    "isRetweet": false,
-    "relevance": 30,
-    "rawScore": 30379,
-    "score": 9114
+    "rawScore": 10413,
+    "score": 3124
   },
   {
     "id": "2099347816573534367",
@@ -332,14 +294,14 @@
     "url": "https://x.com/HFI_Research/status/2099347816573534367",
     "photoUrl": "https://pbs.twimg.com/media/HSJhtpca0AAm7DH.jpg",
     "hasPhoto": true,
-    "likes": 80,
+    "likes": 88,
     "retweets": 7,
     "replies": 2,
-    "engagement": 100,
+    "engagement": 108,
     "isRetweet": false,
     "relevance": 34,
-    "rawScore": 34400,
-    "score": 29240
+    "rawScore": 34408,
+    "score": 29247
   },
   {
     "id": "2099423395012026847",
@@ -351,14 +313,14 @@
     "url": "https://x.com/staunovo/status/2099423395012026847",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1,
+    "likes": 2,
     "retweets": 2,
-    "replies": 0,
-    "engagement": 5,
+    "replies": 1,
+    "engagement": 9,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10005,
-    "score": 10005
+    "rawScore": 10009,
+    "score": 10009
   },
   {
     "id": "2099399183295824201",
@@ -377,7 +339,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10007,
-    "score": 10007
+    "score": 8506
   },
   {
     "id": "2099389817293304235",
@@ -396,7 +358,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10000,
-    "score": 10000
+    "score": 8500
   },
   {
     "id": "2099268869604974611",
@@ -408,14 +370,14 @@
     "url": "https://x.com/Rory_Johnston/status/2099268869604974611",
     "photoUrl": "https://pbs.twimg.com/media/HSIZ6R_bMAAgBHY.jpg",
     "hasPhoto": true,
-    "likes": 328,
+    "likes": 336,
     "retweets": 41,
     "replies": 7,
-    "engagement": 431,
+    "engagement": 439,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10731,
-    "score": 6975
+    "rawScore": 10739,
+    "score": 4833
   },
   {
     "id": "2099226659144520014",
@@ -427,14 +389,14 @@
     "url": "https://x.com/Rory_Johnston/status/2099226659144520014",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 174,
+    "likes": 175,
     "retweets": 17,
     "replies": 11,
-    "engagement": 241,
+    "engagement": 242,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10241,
-    "score": 4608
+    "rawScore": 10242,
+    "score": 4609
   },
   {
     "id": "2099157383591117010",
@@ -465,13 +427,13 @@
     "url": "https://x.com/Rory_Johnston/status/2099133744292548910",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 244,
+    "likes": 245,
     "retweets": 13,
     "replies": 11,
-    "engagement": 303,
+    "engagement": 304,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10303,
+    "rawScore": 10304,
     "score": 3091
   },
   {
@@ -484,13 +446,13 @@
     "url": "https://x.com/Rory_Johnston/status/2098836023052480626",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 903,
+    "likes": 904,
     "retweets": 84,
     "replies": 47,
-    "engagement": 1212,
+    "engagement": 1213,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 21212,
+    "rawScore": 21213,
     "score": 6364
   },
   {
@@ -503,14 +465,14 @@
     "url": "https://x.com/Rory_Johnston/status/2098819210205909124",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 733,
+    "likes": 735,
     "retweets": 62,
     "replies": 41,
-    "engagement": 980,
+    "engagement": 982,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48980,
-    "score": 14694
+    "rawScore": 48982,
+    "score": 14695
   },
   {
     "id": "2099197459893309536",
@@ -617,14 +579,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2099364563552456727",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 76,
-    "retweets": 9,
+    "likes": 80,
+    "retweets": 10,
     "replies": 2,
-    "engagement": 100,
+    "engagement": 106,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10100,
-    "score": 8585
+    "rawScore": 10106,
+    "score": 8590
   },
   {
     "id": "2099341644420067424",
@@ -636,14 +598,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2099341644420067424",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 91,
+    "likes": 95,
     "retweets": 16,
     "replies": 3,
-    "engagement": 132,
+    "engagement": 136,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38132,
-    "score": 32412
+    "rawScore": 38136,
+    "score": 24788
   },
   {
     "id": "2099292739217334400",
@@ -655,14 +617,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2099292739217334400",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 104,
+    "likes": 108,
     "retweets": 14,
     "replies": 4,
-    "engagement": 144,
+    "engagement": 148,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10144,
-    "score": 6594
+    "rawScore": 10148,
+    "score": 6596
   },
   {
     "id": "2099261577446711579",
@@ -674,14 +636,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2099261577446711579",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 35,
+    "likes": 36,
     "retweets": 3,
     "replies": 0,
-    "engagement": 41,
+    "engagement": 42,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28041,
-    "score": 12618
+    "rawScore": 28042,
+    "score": 12619
   },
   {
     "id": "2099204490972758031",
@@ -712,14 +674,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2099203232413503968",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 46,
+    "likes": 47,
     "retweets": 4,
     "replies": 0,
-    "engagement": 54,
+    "engagement": 55,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10054,
-    "score": 4524
+    "rawScore": 10055,
+    "score": 4525
   },
   {
     "id": "2099412190201516115",
@@ -731,14 +693,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2099412190201516115",
     "photoUrl": "https://pbs.twimg.com/media/HSKcA5tbgAAUefU.png",
     "hasPhoto": true,
-    "likes": 63,
-    "retweets": 9,
-    "replies": 3,
-    "engagement": 90,
+    "likes": 90,
+    "retweets": 16,
+    "replies": 5,
+    "engagement": 137,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28390,
-    "score": 28390
+    "rawScore": 28437,
+    "score": 28437
   },
   {
     "id": "2099408198927069210",
@@ -750,14 +712,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2099408198927069210",
     "photoUrl": "https://pbs.twimg.com/media/HSKWgB3XMAUuICN.png",
     "hasPhoto": true,
-    "likes": 56,
-    "retweets": 17,
+    "likes": 78,
+    "retweets": 22,
     "replies": 2,
-    "engagement": 96,
+    "engagement": 128,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20396,
-    "score": 20396
+    "rawScore": 20428,
+    "score": 20428
   },
   {
     "id": "2099391658236264559",
@@ -769,14 +731,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2099391658236264559",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 29,
-    "retweets": 6,
+    "likes": 33,
+    "retweets": 8,
     "replies": 4,
-    "engagement": 53,
+    "engagement": 61,
     "isRetweet": false,
     "relevance": 82,
-    "rawScore": 82053,
-    "score": 82053
+    "rawScore": 82061,
+    "score": 69752
   },
   {
     "id": "2099083885501976743",
@@ -807,13 +769,13 @@
     "url": "https://x.com/TankerTrackers/status/2099115235210625519",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 329,
-    "retweets": 40,
+    "likes": 336,
+    "retweets": 41,
     "replies": 22,
-    "engagement": 475,
+    "engagement": 484,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38475,
-    "score": 11543
+    "rawScore": 38484,
+    "score": 11545
   }
 ]
