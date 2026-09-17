@@ -1,5 +1,24 @@
 [
   {
+    "id": "2100523798294413616",
+    "text": "China is having their Mid Autumn break on 25 September. Then it is the Golden Week holidays from 1 to 7 Oct.\n\nExpect the buying activity to die down when we get into those weeks.\n\nEven traders need a holiday.\n\n#oott",
+    "createdAt": "2026-09-17T09:54:34+00:00",
+    "tweetTime": 1789638874000,
+    "username": "JuneGoh_Sparta",
+    "displayName": "June Goh",
+    "url": "https://x.com/JuneGoh_Sparta/status/2100523798294413616",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 13,
+    "retweets": 2,
+    "replies": 1,
+    "engagement": 20,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10020,
+    "score": 10020
+  },
+  {
     "id": "2100474654301581364",
     "text": "Despite its name, Arab Light crude is not really a light crude. (Why are oil markets so darn confusing?)\n\nSo please don't think we can replace Arab Light directly with other light sweet crudes. The lower residue yield from the lighter crudes will be insufficient to load up the secondary units such as the FCC or cokers.\n\nThese grades from the attached chart are more suitable.\n\nTo take the lighter grades (like WTI and CPC), some blending will be required with heavier grades.\n\nMore details in the report link below.\n\n#oott",
     "createdAt": "2026-09-17T06:39:17+00:00",
@@ -9,14 +28,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2100474654301581364",
     "photoUrl": "https://pbs.twimg.com/media/HSZhImCaUAAb3cj.jpg",
     "hasPhoto": true,
-    "likes": 21,
+    "likes": 29,
     "retweets": 3,
     "replies": 4,
-    "engagement": 39,
+    "engagement": 47,
     "isRetweet": false,
     "relevance": 46,
-    "rawScore": 46339,
-    "score": 46339
+    "rawScore": 46347,
+    "score": 39395
   },
   {
     "id": "2100474656931344553",
@@ -35,7 +54,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10006,
-    "score": 10006
+    "score": 8505
   },
   {
     "id": "2100385516839645370",
@@ -47,14 +66,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2100385516839645370",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 51,
-    "retweets": 2,
+    "likes": 61,
+    "retweets": 3,
     "replies": 8,
-    "engagement": 79,
+    "engagement": 91,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10079,
-    "score": 6551
+    "rawScore": 10091,
+    "score": 6559
   },
   {
     "id": "2100214951902355497",
@@ -95,25 +114,6 @@
     "score": 5511
   },
   {
-    "id": "2100163458734108924",
-    "text": "Hi California, Asian jet fuel arbs are shut for the first time in a long time.\n\n#oott https://t.co/wkDCiprCYd",
-    "createdAt": "2026-09-16T10:02:42+00:00",
-    "tweetTime": 1789552962000,
-    "username": "JuneGoh_Sparta",
-    "displayName": "June Goh",
-    "url": "https://x.com/JuneGoh_Sparta/status/2100163458734108924",
-    "photoUrl": "https://pbs.twimg.com/media/HSVHODSaAAAisyw.jpg",
-    "hasPhoto": true,
-    "likes": 63,
-    "retweets": 8,
-    "replies": 2,
-    "engagement": 85,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10385,
-    "score": 3116
-  },
-  {
     "id": "2100486946250186797",
     "text": "Although the US-Iran war attracts most attention in the oil market, two important developments on the Russia-Ukraine war: \n\n1) Further fighting overnight (including strikes against refineries) seems to confirm that the energy truce is only happening in Donald Trump’s mind. \n\n2) US Congress passed legislation (with multiple Democrats supporting it) that would allow Trump to impose up to 100% tariffs on nations buying Russia crude (read here India and China). New Delhi issued overnight its protest.",
     "createdAt": "2026-09-17T07:28:07+00:00",
@@ -123,14 +123,14 @@
     "url": "https://x.com/JavierBlas/status/2100486946250186797",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 212,
-    "retweets": 56,
-    "replies": 9,
-    "engagement": 351,
+    "likes": 255,
+    "retweets": 71,
+    "replies": 10,
+    "engagement": 427,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30351,
-    "score": 30351
+    "rawScore": 30427,
+    "score": 30427
   },
   {
     "id": "2100253412545765526",
@@ -142,14 +142,14 @@
     "url": "https://x.com/JavierBlas/status/2100253412545765526",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 501,
-    "retweets": 129,
+    "likes": 511,
+    "retweets": 133,
     "replies": 54,
-    "engagement": 921,
+    "engagement": 939,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10921,
-    "score": 4914
+    "rawScore": 10939,
+    "score": 3282
   },
   {
     "id": "2100235368985452769",
@@ -161,14 +161,33 @@
     "url": "https://x.com/JavierBlas/status/2100235368985452769",
     "photoUrl": "https://pbs.twimg.com/media/HSWIsEpX0AAeF0G.png",
     "hasPhoto": true,
-    "likes": 3455,
-    "retweets": 648,
+    "likes": 3518,
+    "retweets": 658,
     "replies": 104,
-    "engagement": 5063,
+    "engagement": 5146,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 25363,
-    "score": 7609
+    "rawScore": 25446,
+    "score": 7634
+  },
+  {
+    "id": "2100521950745436372",
+    "text": "U.S. REFINERS processed an average of 17.4 million barrels per day of crude and other feedstocks over the seven days ending on September 11. Processing was almost 0.5 million b/d higher than at the same point in 2025 and 2024 as refiners captured near-record margins and sought to offset the global shortage of gasoline and especially diesel. Processing was the fastest for the time of year since before the pandemic in 2019, despite a reduction in capacity, which resulted in exceptionally high rates of utilisation above 96%:",
+    "createdAt": "2026-09-17T09:47:13+00:00",
+    "tweetTime": 1789638433000,
+    "username": "JKempEnergy",
+    "displayName": "John Kemp",
+    "url": "https://x.com/JKempEnergy/status/2100521950745436372",
+    "photoUrl": "https://pbs.twimg.com/media/HSaNjyBWQAAusTC.png",
+    "hasPhoto": true,
+    "likes": 9,
+    "retweets": 1,
+    "replies": 1,
+    "engagement": 14,
+    "isRetweet": false,
+    "relevance": 30,
+    "rawScore": 30314,
+    "score": 30314
   },
   {
     "id": "2100489902848930198",
@@ -180,14 +199,14 @@
     "url": "https://x.com/HFI_Research/status/2100489902848930198",
     "photoUrl": "https://pbs.twimg.com/media/HSZwbvCbMAALjUz.jpg",
     "hasPhoto": true,
-    "likes": 113,
-    "retweets": 18,
+    "likes": 150,
+    "retweets": 25,
     "replies": 2,
-    "engagement": 155,
+    "engagement": 206,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40455,
-    "score": 40455
+    "rawScore": 40506,
+    "score": 40506
   },
   {
     "id": "2100410956459438089",
@@ -199,14 +218,14 @@
     "url": "https://x.com/HFI_Research/status/2100410956459438089",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 65,
-    "retweets": 3,
+    "likes": 69,
+    "retweets": 4,
     "replies": 3,
-    "engagement": 80,
+    "engagement": 86,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10080,
-    "score": 8568
+    "rawScore": 10086,
+    "score": 6556
   },
   {
     "id": "2100394796590494040",
@@ -218,14 +237,14 @@
     "url": "https://x.com/HFI_Research/status/2100394796590494040",
     "photoUrl": "https://pbs.twimg.com/media/HSYZ7oAaUAAlWl3.jpg",
     "hasPhoto": true,
-    "likes": 192,
-    "retweets": 22,
-    "replies": 3,
-    "engagement": 245,
+    "likes": 205,
+    "retweets": 23,
+    "replies": 4,
+    "engagement": 263,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20545,
-    "score": 13354
+    "rawScore": 20563,
+    "score": 13366
   },
   {
     "id": "2100506739103683036",
@@ -275,14 +294,14 @@
     "url": "https://x.com/staunovo/status/2100476193367560494",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 10,
+    "likes": 11,
     "retweets": 2,
     "replies": 1,
-    "engagement": 17,
+    "engagement": 18,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30017,
-    "score": 30017
+    "rawScore": 30018,
+    "score": 25515
   },
   {
     "id": "2100375195613585889",
@@ -294,14 +313,14 @@
     "url": "https://x.com/Rory_Johnston/status/2100375195613585889",
     "photoUrl": "https://pbs.twimg.com/media/HSYIG_GWYAIdasp.jpg",
     "hasPhoto": true,
-    "likes": 431,
-    "retweets": 41,
-    "replies": 19,
-    "engagement": 570,
+    "likes": 461,
+    "retweets": 46,
+    "replies": 20,
+    "engagement": 613,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10870,
-    "score": 7066
+    "rawScore": 10913,
+    "score": 7093
   },
   {
     "id": "2100333712009261523",
@@ -313,14 +332,14 @@
     "url": "https://x.com/Rory_Johnston/status/2100333712009261523",
     "photoUrl": "https://pbs.twimg.com/media/HSXiYNoXIAABERl.jpg",
     "hasPhoto": true,
-    "likes": 214,
+    "likes": 218,
     "retweets": 8,
     "replies": 34,
-    "engagement": 332,
+    "engagement": 336,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10632,
-    "score": 4784
+    "rawScore": 10636,
+    "score": 4786
   },
   {
     "id": "2100265272657465761",
@@ -332,14 +351,14 @@
     "url": "https://x.com/Rory_Johnston/status/2100265272657465761",
     "photoUrl": "https://pbs.twimg.com/media/HSWjhDaWEAEe-JQ.png",
     "hasPhoto": true,
-    "likes": 210,
+    "likes": 211,
     "retweets": 46,
     "replies": 13,
-    "engagement": 341,
+    "engagement": 342,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10641,
-    "score": 4788
+    "rawScore": 10642,
+    "score": 3193
   },
   {
     "id": "2100250656288153897",
@@ -351,14 +370,14 @@
     "url": "https://x.com/Rory_Johnston/status/2100250656288153897",
     "photoUrl": "https://pbs.twimg.com/media/HSWWzGYWsAA99J_.png",
     "hasPhoto": true,
-    "likes": 959,
-    "retweets": 92,
+    "likes": 975,
+    "retweets": 100,
     "replies": 73,
-    "engagement": 1362,
+    "engagement": 1394,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 21662,
-    "score": 9748
+    "rawScore": 21694,
+    "score": 6508
   },
   {
     "id": "2100239822182846872",
@@ -389,14 +408,14 @@
     "url": "https://x.com/Rory_Johnston/status/2100231485848514610",
     "photoUrl": "https://pbs.twimg.com/media/HSWFQKFXoAAzfmz.png",
     "hasPhoto": true,
-    "likes": 825,
+    "likes": 829,
     "retweets": 71,
     "replies": 10,
-    "engagement": 997,
+    "engagement": 1001,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 11297,
-    "score": 3389
+    "rawScore": 11301,
+    "score": 3390
   },
   {
     "id": "2100281298921181235",
@@ -434,7 +453,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20007,
-    "score": 9003
+    "score": 6002
   },
   {
     "id": "2100248540727398695",
@@ -465,14 +484,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2100429135495508066",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 18,
+    "likes": 19,
     "retweets": 2,
     "replies": 0,
-    "engagement": 22,
+    "engagement": 23,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10022,
-    "score": 8519
+    "rawScore": 10023,
+    "score": 8520
   },
   {
     "id": "2100424690095251602",
@@ -484,13 +503,13 @@
     "url": "https://x.com/OilHeadlineNews/status/2100424690095251602",
     "photoUrl": "https://pbs.twimg.com/media/HSY1H6kXcAEoNps.jpg",
     "hasPhoto": true,
-    "likes": 11,
-    "retweets": 2,
+    "likes": 12,
+    "retweets": 3,
     "replies": 0,
-    "engagement": 15,
+    "engagement": 18,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10315,
-    "score": 8768
+    "rawScore": 10318,
+    "score": 8770
   }
 ]
