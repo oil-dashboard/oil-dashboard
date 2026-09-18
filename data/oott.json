@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2100756162128003334",
     "photoUrl": "https://pbs.twimg.com/media/HSdiSy6bYAAvmjo.png",
     "hasPhoto": true,
-    "likes": 13,
+    "likes": 20,
     "retweets": 1,
     "replies": 1,
-    "engagement": 18,
+    "engagement": 25,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10318,
-    "score": 10318
+    "rawScore": 10325,
+    "score": 10325
   },
   {
     "id": "2100754218227540442",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2100754218227540442",
     "photoUrl": "https://pbs.twimg.com/media/HSdf_rsbQAAaXHs.png",
     "hasPhoto": true,
-    "likes": 20,
+    "likes": 26,
     "retweets": 3,
     "replies": 1,
-    "engagement": 29,
+    "engagement": 35,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28329,
-    "score": 28329
+    "rawScore": 28335,
+    "score": 28335
   },
   {
     "id": "2100523798294413616",
@@ -47,13 +47,13 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2100523798294413616",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 63,
+    "likes": 64,
     "retweets": 9,
     "replies": 6,
-    "engagement": 99,
+    "engagement": 100,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10099,
+    "rawScore": 10100,
     "score": 4545
   },
   {
@@ -104,14 +104,14 @@
     "url": "https://x.com/JavierBlas/status/2100633597086433647",
     "photoUrl": "https://pbs.twimg.com/media/HSbq30fWoAAFD8D.jpg",
     "hasPhoto": true,
-    "likes": 546,
-    "retweets": 100,
-    "replies": 37,
-    "engagement": 857,
+    "likes": 564,
+    "retweets": 102,
+    "replies": 40,
+    "engagement": 888,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 21157,
-    "score": 13752
+    "rawScore": 21188,
+    "score": 13772
   },
   {
     "id": "2100586963757678869",
@@ -123,14 +123,14 @@
     "url": "https://x.com/JavierBlas/status/2100586963757678869",
     "photoUrl": "https://pbs.twimg.com/media/HSbHE2IXMAAS3Wp.png",
     "hasPhoto": true,
-    "likes": 69,
+    "likes": 72,
     "retweets": 16,
     "replies": 6,
-    "engagement": 119,
+    "engagement": 122,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10419,
-    "score": 4689
+    "rawScore": 10422,
+    "score": 4690
   },
   {
     "id": "2100625612780064812",
@@ -163,12 +163,31 @@
     "hasPhoto": true,
     "likes": 21,
     "retweets": 8,
-    "replies": 3,
-    "engagement": 46,
+    "replies": 5,
+    "engagement": 52,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30346,
-    "score": 13656
+    "rawScore": 30352,
+    "score": 9106
+  },
+  {
+    "id": "2100777224244953545",
+    "text": "What Is The Endgame For The Oil Market?\n\nhttps://t.co/G3NEMoiWwU",
+    "createdAt": "2026-09-18T02:41:35+00:00",
+    "tweetTime": 1789699295000,
+    "username": "HFI_Research",
+    "displayName": "HFI Research",
+    "url": "https://x.com/HFI_Research/status/2100777224244953545",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 33,
+    "retweets": 2,
+    "replies": 2,
+    "engagement": 43,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10043,
+    "score": 10043
   },
   {
     "id": "2100756854330782195",
@@ -180,14 +199,14 @@
     "url": "https://x.com/HFI_Research/status/2100756854330782195",
     "photoUrl": "https://pbs.twimg.com/media/HSdjOKqakAA16_t.jpg",
     "hasPhoto": true,
-    "likes": 247,
-    "retweets": 56,
-    "replies": 2,
-    "engagement": 365,
+    "likes": 833,
+    "retweets": 216,
+    "replies": 4,
+    "engagement": 1277,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10665,
-    "score": 10665
+    "rawScore": 11577,
+    "score": 11577
   },
   {
     "id": "2100572831381922219",
@@ -199,14 +218,14 @@
     "url": "https://x.com/HFI_Research/status/2100572831381922219",
     "photoUrl": "https://pbs.twimg.com/media/HSa7240a0AALGE5.jpg",
     "hasPhoto": true,
-    "likes": 132,
+    "likes": 136,
     "retweets": 3,
     "replies": 5,
-    "engagement": 153,
+    "engagement": 157,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18453,
-    "score": 8304
+    "rawScore": 18457,
+    "score": 8306
   },
   {
     "id": "2100489902848930198",
@@ -218,14 +237,14 @@
     "url": "https://x.com/HFI_Research/status/2100489902848930198",
     "photoUrl": "https://pbs.twimg.com/media/HSZwbvCbMAALjUz.jpg",
     "hasPhoto": true,
-    "likes": 367,
+    "likes": 374,
     "retweets": 78,
     "replies": 3,
-    "engagement": 532,
+    "engagement": 539,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40832,
-    "score": 12250
+    "rawScore": 40839,
+    "score": 12252
   },
   {
     "id": "2100673499282960485",
@@ -244,7 +263,7 @@
     "isRetweet": false,
     "relevance": 28,
     "rawScore": 28015,
-    "score": 23813
+    "score": 18210
   },
   {
     "id": "2100672755436032303",
@@ -263,7 +282,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10010,
-    "score": 8509
+    "score": 6507
   },
   {
     "id": "2100683670348595703",
@@ -275,14 +294,14 @@
     "url": "https://x.com/Rory_Johnston/status/2100683670348595703",
     "photoUrl": "https://pbs.twimg.com/media/HScgc1qXMAEEe9N.png",
     "hasPhoto": true,
-    "likes": 137,
-    "retweets": 11,
-    "replies": 6,
-    "engagement": 177,
+    "likes": 147,
+    "retweets": 12,
+    "replies": 7,
+    "engagement": 192,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10477,
-    "score": 8905
+    "rawScore": 10492,
+    "score": 8918
   },
   {
     "id": "2100672981118660813",
@@ -294,14 +313,14 @@
     "url": "https://x.com/Rory_Johnston/status/2100672981118660813",
     "photoUrl": "https://pbs.twimg.com/media/HScW4a1W0AAgYte.jpg",
     "hasPhoto": true,
-    "likes": 147,
+    "likes": 151,
     "retweets": 15,
     "replies": 6,
-    "engagement": 195,
+    "engagement": 199,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10495,
-    "score": 8921
+    "rawScore": 10499,
+    "score": 6824
   },
   {
     "id": "2100667733356445890",
@@ -313,14 +332,14 @@
     "url": "https://x.com/Rory_Johnston/status/2100667733356445890",
     "photoUrl": "https://pbs.twimg.com/media/HScR8WjWgAAUWMU.png",
     "hasPhoto": true,
-    "likes": 96,
-    "retweets": 13,
+    "likes": 104,
+    "retweets": 17,
     "replies": 5,
-    "engagement": 137,
+    "engagement": 153,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10437,
-    "score": 8871
+    "rawScore": 10453,
+    "score": 6794
   },
   {
     "id": "2100663876761141418",
@@ -332,14 +351,14 @@
     "url": "https://x.com/Rory_Johnston/status/2100663876761141418",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 228,
+    "likes": 238,
     "retweets": 11,
     "replies": 9,
-    "engagement": 277,
+    "engagement": 287,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40277,
-    "score": 34235
+    "rawScore": 40287,
+    "score": 26187
   },
   {
     "id": "2100650548441563484",
@@ -351,14 +370,14 @@
     "url": "https://x.com/Rory_Johnston/status/2100650548441563484",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 495,
+    "likes": 504,
     "retweets": 74,
     "replies": 22,
-    "engagement": 709,
+    "engagement": 718,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10709,
-    "score": 6961
+    "rawScore": 10718,
+    "score": 6967
   },
   {
     "id": "2100638640330223981",
@@ -371,13 +390,13 @@
     "photoUrl": "https://pbs.twimg.com/media/HSb3cNSWEAABF4N.png",
     "hasPhoto": true,
     "likes": 111,
-    "retweets": 7,
+    "retweets": 8,
     "replies": 9,
-    "engagement": 152,
+    "engagement": 154,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28452,
-    "score": 18494
+    "rawScore": 28454,
+    "score": 18495
   },
   {
     "id": "2100676626291823026",
@@ -415,7 +434,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10003,
-    "score": 8503
+    "score": 6502
   },
   {
     "id": "2100559249650667534",
@@ -446,14 +465,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2100710343492145644",
     "photoUrl": "https://pbs.twimg.com/media/HSc47K4XMAAWm9N.jpg",
     "hasPhoto": true,
-    "likes": 8,
+    "likes": 10,
     "retweets": 0,
     "replies": 0,
-    "engagement": 8,
+    "engagement": 10,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38308,
-    "score": 32562
+    "rawScore": 38310,
+    "score": 32564
   },
   {
     "id": "2100615117263999199",
@@ -465,13 +484,13 @@
     "url": "https://x.com/OilHeadlineNews/status/2100615117263999199",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 16,
+    "likes": 17,
     "retweets": 4,
     "replies": 0,
-    "engagement": 24,
+    "engagement": 25,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28024,
+    "rawScore": 28025,
     "score": 18216
   }
 ]
