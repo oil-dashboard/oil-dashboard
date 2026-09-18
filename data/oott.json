@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2100871620797882415",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 5,
+    "likes": 8,
     "retweets": 1,
     "replies": 2,
-    "engagement": 13,
+    "engagement": 16,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20013,
-    "score": 20013
+    "rawScore": 20016,
+    "score": 20016
   },
   {
     "id": "2100845527202222572",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2100845527202222572",
     "photoUrl": "https://pbs.twimg.com/media/HSezSxAaUAAQer7.png",
     "hasPhoto": true,
-    "likes": 10,
-    "retweets": 3,
+    "likes": 13,
+    "retweets": 4,
     "replies": 0,
-    "engagement": 16,
+    "engagement": 21,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10316,
-    "score": 10316
+    "rawScore": 10321,
+    "score": 10321
   },
   {
     "id": "2100756162128003334",
@@ -47,33 +47,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2100756162128003334",
     "photoUrl": "https://pbs.twimg.com/media/HSdiSy6bYAAvmjo.png",
     "hasPhoto": true,
-    "likes": 34,
+    "likes": 37,
     "retweets": 3,
     "replies": 3,
-    "engagement": 49,
+    "engagement": 52,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10349,
-    "score": 6727
-  },
-  {
-    "id": "2100523798294413616",
-    "text": "China is having their Mid Autumn break on 25 September. Then it is the Golden Week holidays from 1 to 7 Oct.\n\nExpect the buying activity to die down when we get into those weeks.\n\nEven traders need a holiday.\n\n#oott",
-    "createdAt": "2026-09-17T09:54:34+00:00",
-    "tweetTime": 1789638874000,
-    "username": "JuneGoh_Sparta",
-    "displayName": "June Goh",
-    "url": "https://x.com/JuneGoh_Sparta/status/2100523798294413616",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 68,
-    "retweets": 9,
-    "replies": 6,
-    "engagement": 104,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10104,
-    "score": 3031
+    "rawScore": 10352,
+    "score": 6729
   },
   {
     "id": "2100633597086433647",
@@ -85,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2100633597086433647",
     "photoUrl": "https://pbs.twimg.com/media/HSbq30fWoAAFD8D.jpg",
     "hasPhoto": true,
-    "likes": 632,
-    "retweets": 120,
-    "replies": 45,
-    "engagement": 1007,
+    "likes": 640,
+    "retweets": 122,
+    "replies": 46,
+    "engagement": 1022,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 21307,
-    "score": 9588
+    "rawScore": 21322,
+    "score": 9595
   },
   {
     "id": "2100586963757678869",
@@ -104,14 +85,14 @@
     "url": "https://x.com/JavierBlas/status/2100586963757678869",
     "photoUrl": "https://pbs.twimg.com/media/HSbHE2IXMAAS3Wp.png",
     "hasPhoto": true,
-    "likes": 84,
+    "likes": 85,
     "retweets": 18,
     "replies": 6,
-    "engagement": 138,
+    "engagement": 139,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10438,
-    "score": 3131
+    "rawScore": 10439,
+    "score": 3132
   },
   {
     "id": "2100625612780064812",
@@ -130,26 +111,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10360,
-    "score": 4662
-  },
-  {
-    "id": "2100521950745436372",
-    "text": "U.S. REFINERS processed an average of 17.4 million barrels per day of crude and other feedstocks over the seven days ending on September 11. Processing was almost 0.5 million b/d higher than at the same point in 2025 and 2024 as refiners captured near-record margins and sought to offset the global shortage of gasoline and especially diesel. Processing was the fastest for the time of year since before the pandemic in 2019, despite a reduction in capacity, which resulted in exceptionally high rates of utilisation above 96%:",
-    "createdAt": "2026-09-17T09:47:13+00:00",
-    "tweetTime": 1789638433000,
-    "username": "JKempEnergy",
-    "displayName": "John Kemp",
-    "url": "https://x.com/JKempEnergy/status/2100521950745436372",
-    "photoUrl": "https://pbs.twimg.com/media/HSaNjyBWQAAusTC.png",
-    "hasPhoto": true,
-    "likes": 28,
-    "retweets": 9,
-    "replies": 5,
-    "engagement": 61,
-    "isRetweet": false,
-    "relevance": 30,
-    "rawScore": 30361,
-    "score": 9108
+    "score": 3108
   },
   {
     "id": "2100838334201565414",
@@ -161,14 +123,14 @@
     "url": "https://x.com/HFI_Research/status/2100838334201565414",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 260,
-    "retweets": 29,
-    "replies": 1,
-    "engagement": 321,
+    "likes": 321,
+    "retweets": 38,
+    "replies": 2,
+    "engagement": 403,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20321,
-    "score": 20321
+    "rawScore": 20403,
+    "score": 17343
   },
   {
     "id": "2100777224244953545",
@@ -180,14 +142,14 @@
     "url": "https://x.com/HFI_Research/status/2100777224244953545",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 67,
+    "likes": 69,
     "retweets": 4,
     "replies": 3,
-    "engagement": 84,
+    "engagement": 86,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10084,
-    "score": 8571
+    "rawScore": 10086,
+    "score": 6556
   },
   {
     "id": "2100756854330782195",
@@ -199,14 +161,14 @@
     "url": "https://x.com/HFI_Research/status/2100756854330782195",
     "photoUrl": "https://pbs.twimg.com/media/HSdjOKqakAA16_t.jpg",
     "hasPhoto": true,
-    "likes": 2194,
-    "retweets": 541,
-    "replies": 17,
-    "engagement": 3327,
+    "likes": 2469,
+    "retweets": 594,
+    "replies": 20,
+    "engagement": 3717,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 13627,
-    "score": 8858
+    "rawScore": 14017,
+    "score": 9111
   },
   {
     "id": "2100572831381922219",
@@ -218,14 +180,52 @@
     "url": "https://x.com/HFI_Research/status/2100572831381922219",
     "photoUrl": "https://pbs.twimg.com/media/HSa7240a0AALGE5.jpg",
     "hasPhoto": true,
-    "likes": 140,
+    "likes": 141,
     "retweets": 3,
     "replies": 5,
-    "engagement": 161,
+    "engagement": 162,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18461,
-    "score": 5538
+    "rawScore": 18462,
+    "score": 5539
+  },
+  {
+    "id": "2100894598180553104",
+    "text": "#India's crude oil imports in August fell more than 11% from the previous month to 19.01 million metric tons, government data showed on Friday.\n\nOn an annual basis, crude oil imports were down 3%, from 19.60 million tons in August last year, data from the Petroleum Planning and Analysis Cell showed. #oott https://t.co/ja9OyL241i",
+    "createdAt": "2026-09-18T10:27:59+00:00",
+    "tweetTime": 1789727279000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2100894598180553104",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 4,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 4,
+    "isRetweet": false,
+    "relevance": 40,
+    "rawScore": 40004,
+    "score": 40004
+  },
+  {
+    "id": "2100893280808395121",
+    "text": "European Union finance ministers will discuss on Friday whether to impose an EU-wide windfall tax on energy companies benefiting from a surge in oil and gas prices following the closure of the Strait of Hormuz, with further talks expected in October.\n\nThe debate was triggered in late August when the finance ministers of Germany, Spain, Portugal, Italy, Poland and Austria warned that consumers were facing one of the biggest oil supply shocks in decades, fuelling voter discontent over rising living costs. Parliamentary elections are due next year in France, Italy, Spain, Poland, Greece, Finland, Slovakia and Estonia.\n#oott https://t.co/XEA2iWJIHV",
+    "createdAt": "2026-09-18T10:22:45+00:00",
+    "tweetTime": 1789726965000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2100893280808395121",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 2,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 2,
+    "isRetweet": false,
+    "relevance": 40,
+    "rawScore": 40002,
+    "score": 40002
   },
   {
     "id": "2100881055871795385",
@@ -237,14 +237,14 @@
     "url": "https://x.com/staunovo/status/2100881055871795385",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1,
-    "retweets": 0,
+    "likes": 6,
+    "retweets": 1,
     "replies": 1,
-    "engagement": 4,
+    "engagement": 11,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20004,
-    "score": 20004
+    "rawScore": 20011,
+    "score": 20011
   },
   {
     "id": "2100880996061094002",
@@ -266,44 +266,6 @@
     "score": 10003
   },
   {
-    "id": "2100880931527512310",
-    "text": "ECB's Vujcic cools oil-fuelled bets on rate hikes https://t.co/QqGwLce9B7",
-    "createdAt": "2026-09-18T09:33:41+00:00",
-    "tweetTime": 1789724021000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2100880931527512310",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 0,
-    "retweets": 0,
-    "replies": 1,
-    "engagement": 3,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10003,
-    "score": 10003
-  },
-  {
-    "id": "2100880281389429242",
-    "text": "At least two liquefied natural gas shipments transited the Strait of Hormuz this week as producers look for ways to increase flows to a market struggling with a lack of supply and surging prices https://t.co/WWeumqU2Qz",
-    "createdAt": "2026-09-18T09:31:06+00:00",
-    "tweetTime": 1789723866000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2100880281389429242",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 2,
-    "retweets": 0,
-    "replies": 1,
-    "engagement": 5,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10005,
-    "score": 10005
-  },
-  {
     "id": "2100683670348595703",
     "text": "US Secretary of Energy // US Secretary of Transportation https://t.co/ye2z4eUI4I",
     "createdAt": "2026-09-17T20:29:50+00:00",
@@ -313,14 +275,14 @@
     "url": "https://x.com/Rory_Johnston/status/2100683670348595703",
     "photoUrl": "https://pbs.twimg.com/media/HScgc1qXMAEEe9N.png",
     "hasPhoto": true,
-    "likes": 158,
+    "likes": 160,
     "retweets": 12,
-    "replies": 9,
-    "engagement": 209,
+    "replies": 10,
+    "engagement": 214,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10509,
-    "score": 4729
+    "rawScore": 10514,
+    "score": 4731
   },
   {
     "id": "2100672981118660813",
@@ -351,14 +313,14 @@
     "url": "https://x.com/Rory_Johnston/status/2100667733356445890",
     "photoUrl": "https://pbs.twimg.com/media/HScR8WjWgAAUWMU.png",
     "hasPhoto": true,
-    "likes": 117,
-    "retweets": 18,
+    "likes": 118,
+    "retweets": 19,
     "replies": 6,
-    "engagement": 171,
+    "engagement": 174,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10471,
-    "score": 4712
+    "rawScore": 10474,
+    "score": 4713
   },
   {
     "id": "2100663876761141418",
@@ -370,14 +332,14 @@
     "url": "https://x.com/Rory_Johnston/status/2100663876761141418",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 258,
+    "likes": 260,
     "retweets": 12,
     "replies": 10,
-    "engagement": 312,
+    "engagement": 314,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40312,
-    "score": 18140
+    "rawScore": 40314,
+    "score": 18141
   },
   {
     "id": "2100650548441563484",
@@ -389,14 +351,14 @@
     "url": "https://x.com/Rory_Johnston/status/2100650548441563484",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 553,
-    "retweets": 78,
+    "likes": 569,
+    "retweets": 79,
     "replies": 24,
-    "engagement": 781,
+    "engagement": 799,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10781,
-    "score": 4851
+    "rawScore": 10799,
+    "score": 4860
   },
   {
     "id": "2100638640330223981",
@@ -408,14 +370,14 @@
     "url": "https://x.com/Rory_Johnston/status/2100638640330223981",
     "photoUrl": "https://pbs.twimg.com/media/HSb3cNSWEAABF4N.png",
     "hasPhoto": true,
-    "likes": 117,
+    "likes": 118,
     "retweets": 8,
     "replies": 10,
-    "engagement": 163,
+    "engagement": 164,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28463,
-    "score": 12808
+    "rawScore": 28464,
+    "score": 12809
   },
   {
     "id": "2100676626291823026",
@@ -491,7 +453,7 @@
     "isRetweet": false,
     "relevance": 38,
     "rawScore": 38310,
-    "score": 24902
+    "score": 17240
   },
   {
     "id": "2100615117263999199",
@@ -510,7 +472,7 @@
     "isRetweet": false,
     "relevance": 28,
     "rawScore": 28025,
-    "score": 12611
+    "score": 8408
   },
   {
     "id": "2100856691667415262",
@@ -522,13 +484,13 @@
     "url": "https://x.com/Ole_S_Hansen/status/2100856691667415262",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 39,
-    "retweets": 4,
+    "likes": 48,
+    "retweets": 5,
     "replies": 1,
-    "engagement": 50,
+    "engagement": 61,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10050,
-    "score": 10050
+    "rawScore": 10061,
+    "score": 10061
   }
 ]
