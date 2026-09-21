@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2101889446081966092",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 99,
-    "retweets": 11,
-    "replies": 7,
-    "engagement": 142,
+    "likes": 126,
+    "retweets": 17,
+    "replies": 8,
+    "engagement": 184,
     "isRetweet": false,
     "relevance": 46,
-    "rawScore": 46142,
-    "score": 46142
+    "rawScore": 46184,
+    "score": 46184
   },
   {
     "id": "2101890901425717690",
@@ -29,13 +29,13 @@
     "photoUrl": "https://pbs.twimg.com/media/HStqaU6bgAAXR2O.jpg",
     "hasPhoto": true,
     "likes": 2,
-    "retweets": 0,
+    "retweets": 1,
     "replies": 0,
-    "engagement": 2,
+    "engagement": 4,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10302,
-    "score": 10302
+    "rawScore": 10304,
+    "score": 10304
   },
   {
     "id": "2101889586146529379",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2101654734772052365",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 408,
-    "retweets": 66,
+    "likes": 419,
+    "retweets": 68,
     "replies": 9,
-    "engagement": 567,
+    "engagement": 582,
     "isRetweet": false,
     "relevance": 72,
-    "rawScore": 72567,
-    "score": 32655
+    "rawScore": 72582,
+    "score": 21775
   },
   {
     "id": "2101657275605864754",
@@ -92,7 +92,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10307,
-    "score": 4638
+    "score": 3092
   },
   {
     "id": "2101656002747924677",
@@ -111,7 +111,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10314,
-    "score": 4641
+    "score": 3094
   },
   {
     "id": "2101582702218817752",
@@ -123,14 +123,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2101582702218817752",
     "photoUrl": "https://pbs.twimg.com/media/HSpJhtvbkAAkC-w.png",
     "hasPhoto": true,
-    "likes": 117,
-    "retweets": 21,
+    "likes": 120,
+    "retweets": 22,
     "replies": 10,
-    "engagement": 189,
+    "engagement": 194,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10489,
-    "score": 3147
+    "rawScore": 10494,
+    "score": 3148
   },
   {
     "id": "2101742310966902901",
@@ -142,14 +142,14 @@
     "url": "https://x.com/JavierBlas/status/2101742310966902901",
     "photoUrl": "https://pbs.twimg.com/media/HSri97CWwAAguZZ.jpg",
     "hasPhoto": true,
-    "likes": 951,
-    "retweets": 149,
-    "replies": 62,
-    "engagement": 1435,
+    "likes": 978,
+    "retweets": 155,
+    "replies": 63,
+    "engagement": 1477,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 21735,
-    "score": 14128
+    "rawScore": 21777,
+    "score": 9800
   },
   {
     "id": "2101198079806304761",
@@ -161,14 +161,14 @@
     "url": "https://x.com/JavierBlas/status/2101198079806304761",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 218,
-    "retweets": 23,
+    "likes": 219,
+    "retweets": 24,
     "replies": 13,
-    "engagement": 303,
+    "engagement": 306,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10303,
-    "score": 3091
+    "rawScore": 10306,
+    "score": 3092
   },
   {
     "id": "2101202269588840922",
@@ -199,14 +199,14 @@
     "url": "https://x.com/JavierBlas/status/2100994626672906548",
     "photoUrl": "https://pbs.twimg.com/media/HSg7IN1XcAAxOQF.jpg",
     "hasPhoto": true,
-    "likes": 230,
-    "retweets": 65,
+    "likes": 231,
+    "retweets": 66,
     "replies": 14,
-    "engagement": 402,
+    "engagement": 405,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38702,
-    "score": 11611
+    "rawScore": 38705,
+    "score": 11612
   },
   {
     "id": "2100983447674098106",
@@ -218,14 +218,14 @@
     "url": "https://x.com/JavierBlas/status/2100983447674098106",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 237,
-    "retweets": 38,
+    "likes": 238,
+    "retweets": 39,
     "replies": 11,
-    "engagement": 346,
+    "engagement": 349,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38346,
-    "score": 11504
+    "rawScore": 38349,
+    "score": 11505
   },
   {
     "id": "2100956228469862567",
@@ -237,14 +237,14 @@
     "url": "https://x.com/JavierBlas/status/2100956228469862567",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 310,
-    "retweets": 39,
+    "likes": 311,
+    "retweets": 40,
     "replies": 55,
-    "engagement": 553,
+    "engagement": 556,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20553,
-    "score": 6166
+    "rawScore": 20556,
+    "score": 6167
   },
   {
     "id": "2100932203236454500",
@@ -256,14 +256,14 @@
     "url": "https://x.com/JavierBlas/status/2100932203236454500",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 821,
-    "retweets": 143,
+    "likes": 822,
+    "retweets": 144,
     "replies": 32,
-    "engagement": 1203,
+    "engagement": 1206,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 11203,
-    "score": 3361
+    "rawScore": 11206,
+    "score": 3362
   },
   {
     "id": "2101624047410823412",
@@ -304,23 +304,42 @@
     "score": 3003
   },
   {
-    "id": "2100838334201565414",
-    "text": "The reason the endgame scenario started to form for me wasn’t because of JPM’s piece about how they can’t model the endgame. It was because of this vitally important news today about the Saudis pleading with China to help get the oil out of the Oman lane.\n\nFrom the start of this conflict, China has been the black-box variable, but some of its recent actions make me think I may have read China’s incentives correctly from the start.\n\nFor China, the Strait of Hormuz issue is also an all-or-nothing dilemma. If the US were to win the war and restore the Strait to its pre-war status, the security arrangements that would need to be put in place to prevent another closure by Iran would almost guarantee that China would be held hostage at a later date.\n\nConversely, if Iran controls the Strait, China would effectively become the region’s new peace guarantor. Geopolitically, this is the move of the century.",
-    "createdAt": "2026-09-18T06:44:25+00:00",
-    "tweetTime": 1789713865000,
-    "username": "HFI_Research",
-    "displayName": "HFI Research",
-    "url": "https://x.com/HFI_Research/status/2100838334201565414",
+    "id": "2101923748995625208",
+    "text": "Trafigura launches Volare tanker arm, plans Oslo listing https://t.co/i38QTVQPQg",
+    "createdAt": "2026-09-21T06:37:28+00:00",
+    "tweetTime": 1789972648000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2101923748995625208",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 710,
-    "retweets": 85,
-    "replies": 8,
-    "engagement": 904,
+    "likes": 3,
+    "retweets": 1,
+    "replies": 0,
+    "engagement": 5,
     "isRetweet": false,
-    "relevance": 20,
-    "rawScore": 20904,
-    "score": 6271
+    "relevance": 18,
+    "rawScore": 18005,
+    "score": 18005
+  },
+  {
+    "id": "2101923121183809647",
+    "text": "Trafigura to float supertanker arm in first IPO of a business\nCommodities trader to take Volare Shipping public in Oslo as Gulf crisis drives tanker rates to record highs https://t.co/0ciYdRwsd5",
+    "createdAt": "2026-09-21T06:34:58+00:00",
+    "tweetTime": 1789972498000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2101923121183809647",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 12,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 12,
+    "isRetweet": false,
+    "relevance": 18,
+    "rawScore": 18012,
+    "score": 18012
   },
   {
     "id": "2101915602101105115",
@@ -332,14 +351,14 @@
     "url": "https://x.com/staunovo/status/2101915602101105115",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 2,
+    "likes": 4,
     "retweets": 0,
     "replies": 0,
-    "engagement": 2,
+    "engagement": 4,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20002,
-    "score": 20002
+    "rawScore": 20004,
+    "score": 20004
   },
   {
     "id": "2101915114664296594",
@@ -351,14 +370,14 @@
     "url": "https://x.com/staunovo/status/2101915114664296594",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 2,
-    "retweets": 1,
-    "replies": 0,
-    "engagement": 4,
+    "likes": 10,
+    "retweets": 3,
+    "replies": 1,
+    "engagement": 19,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20004,
-    "score": 20004
+    "rawScore": 20019,
+    "score": 20019
   },
   {
     "id": "2101913683647439122",
@@ -370,14 +389,14 @@
     "url": "https://x.com/staunovo/status/2101913683647439122",
     "photoUrl": "https://pbs.twimg.com/media/HSt_ThpXYAAHzsp.png",
     "hasPhoto": true,
-    "likes": 2,
-    "retweets": 0,
+    "likes": 5,
+    "retweets": 1,
     "replies": 0,
-    "engagement": 2,
+    "engagement": 7,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10302,
-    "score": 10302
+    "rawScore": 10307,
+    "score": 10307
   },
   {
     "id": "2101913484292223300",
@@ -389,14 +408,14 @@
     "url": "https://x.com/staunovo/status/2101913484292223300",
     "photoUrl": "https://pbs.twimg.com/media/HSt_KWwXgAAmndW.png",
     "hasPhoto": true,
-    "likes": 0,
+    "likes": 2,
     "retweets": 0,
     "replies": 1,
-    "engagement": 3,
+    "engagement": 5,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20303,
-    "score": 20303
+    "rawScore": 20305,
+    "score": 20305
   },
   {
     "id": "2101913239269277823",
@@ -408,14 +427,14 @@
     "url": "https://x.com/staunovo/status/2101913239269277823",
     "photoUrl": "https://pbs.twimg.com/media/HSt-8hyWUAACL9d.jpg",
     "hasPhoto": true,
-    "likes": 11,
+    "likes": 21,
     "retweets": 1,
-    "replies": 1,
-    "engagement": 16,
+    "replies": 2,
+    "engagement": 29,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30316,
-    "score": 30316
+    "rawScore": 30329,
+    "score": 30329
   },
   {
     "id": "2101912135513071975",
@@ -427,71 +446,14 @@
     "url": "https://x.com/staunovo/status/2101912135513071975",
     "photoUrl": "https://pbs.twimg.com/media/HSt98TlX0AA8S3t.png",
     "hasPhoto": true,
-    "likes": 7,
-    "retweets": 1,
+    "likes": 8,
+    "retweets": 2,
     "replies": 1,
-    "engagement": 12,
+    "engagement": 15,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28312,
-    "score": 28312
-  },
-  {
-    "id": "2101911969921950123",
-    "text": "Dated Brent retains its premium....\n\nDated Brent versus front month Brent futures contract in USD/bbl #oott https://t.co/gQIC9ifmay",
-    "createdAt": "2026-09-21T05:50:39+00:00",
-    "tweetTime": 1789969839000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2101911969921950123",
-    "photoUrl": "https://pbs.twimg.com/media/HSt9yZZWYAADeY4.png",
-    "hasPhoto": true,
-    "likes": 10,
-    "retweets": 0,
-    "replies": 0,
-    "engagement": 10,
-    "isRetweet": false,
-    "relevance": 28,
-    "rawScore": 28310,
-    "score": 28310
-  },
-  {
-    "id": "2101911614416957907",
-    "text": "Shanghai premium over Brent further narrowing\nBrent crude front month future contract versus Shanghai crude front month future contract in USD/bbl\n#oott https://t.co/0Vl0xXieLH",
-    "createdAt": "2026-09-21T05:49:15+00:00",
-    "tweetTime": 1789969755000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2101911614416957907",
-    "photoUrl": "https://pbs.twimg.com/media/HSt9d9KWYAA7PMx.png",
-    "hasPhoto": true,
-    "likes": 9,
-    "retweets": 0,
-    "replies": 0,
-    "engagement": 9,
-    "isRetweet": false,
-    "relevance": 38,
-    "rawScore": 38309,
-    "score": 38309
-  },
-  {
-    "id": "2101911263076929872",
-    "text": "#China: crude imports by origin in mbpd by origin - customs office data #oott https://t.co/zlDtTgTjef",
-    "createdAt": "2026-09-21T05:47:51+00:00",
-    "tweetTime": 1789969671000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2101911263076929872",
-    "photoUrl": "https://pbs.twimg.com/media/HSt9JaOWgAAt8yf.jpg",
-    "hasPhoto": true,
-    "likes": 6,
-    "retweets": 1,
-    "replies": 0,
-    "engagement": 8,
-    "isRetweet": false,
-    "relevance": 20,
-    "rawScore": 20308,
-    "score": 20308
+    "rawScore": 28315,
+    "score": 28315
   },
   {
     "id": "2101756566714069309",
@@ -503,14 +465,14 @@
     "url": "https://x.com/Rory_Johnston/status/2101756566714069309",
     "photoUrl": "https://pbs.twimg.com/media/HSrwdSmWcAANjVX.jpg",
     "hasPhoto": true,
-    "likes": 155,
+    "likes": 157,
     "retweets": 10,
     "replies": 6,
-    "engagement": 193,
+    "engagement": 195,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18493,
-    "score": 12020
+    "rawScore": 18495,
+    "score": 8323
   },
   {
     "id": "2101509901138772139",
@@ -524,12 +486,12 @@
     "hasPhoto": false,
     "likes": 374,
     "retweets": 4,
-    "replies": 125,
-    "engagement": 757,
+    "replies": 126,
+    "engagement": 760,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10757,
-    "score": 3227
+    "rawScore": 10760,
+    "score": 3228
   },
   {
     "id": "2101300250904350800",
@@ -719,7 +681,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10045,
-    "score": 6529
+    "score": 4520
   },
   {
     "id": "2101692971087208594",
@@ -741,6 +703,25 @@
     "score": 4519
   },
   {
+    "id": "2101924822510870585",
+    "text": "#Commodities:\n#Crudeoil is lower for a fourth consecutive session, with Brent at USD 102, down 1.8%, and the front-month November WTI contract at USD 94.00, down 2.2%. Supply concerns are easing as shipments through the Strait of Hormuz reach a six-month high and Saudi Arabia works to restore its East-West pipeline, while Qatar has confirmed an exchange of messages between the US and Iran. Houthi missile and drone attacks on Saudi Arabia on Saturday failed to reverse the decline, suggesting traders currently expect any resulting disruption to be manageable. Crude implied volatility eased 3.3% to 50.39, although it remains historically elevated.\n#Gold has started the week on a softer footing, down 0.6% at USD 4,355, following last week’s hawkish US rate hike. The decline comes despite another drop in oil prices and rising bond futures pointing to lower yields after fresh cycle highs were reached on Friday. Notably, the US 10-year real yield ended the week at 2.67%, its highest level in more than 20 years, maintaining a significant headwind for non-yielding gold. For now, resistance ahead of USD 4,400 has triggered some profit-taking as traders continue to weigh persistent inflation risks against the outlook for interest rates and bond yields.\nThe Bloomberg Commodity Index (BCOM) ended last week broadly unchanged, leaving it up 36% year-to-date, as profit-taking across grains and soft commodities offset gains elsewhere, most notably in energy and industrial metals. Cocoa, cotton, sugar and coffee led the declines, while copper, diesel, silver and gasoline topped the performance table.",
+    "createdAt": "2026-09-21T06:41:44+00:00",
+    "tweetTime": 1789972904000,
+    "username": "Ole_S_Hansen",
+    "displayName": "Ole S Hansen",
+    "url": "https://x.com/Ole_S_Hansen/status/2101924822510870585",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 20,
+    "retweets": 5,
+    "replies": 1,
+    "engagement": 33,
+    "isRetweet": false,
+    "relevance": 84,
+    "rawScore": 84033,
+    "score": 84033
+  },
+  {
     "id": "2101678463572656455",
     "text": "In commodities, the latest COT update covers the week to 15 September, when the Bloomberg Commodity Index gained 2.3%. The advance was entirely driven by a 9.4% surge in the energy sector, which more than offset weakness across agriculture, precious metals and, most notably, industrial metals.\nIn energy, hedge funds responded relatively cautiously to the additional price strength, with some fresh buying of Brent crude while the NYMEX-based RBOB gasoline and ULSD contracts both saw net selling.\nElsewhere, the metals sector saw broad long liquidation ahead of Wednesday’s FOMC rate hike. Copper length was cut by 20% amid the delay to a US tariff decision and renewed concerns about the pace of AI-related demand growth.\nIn agriculture, a record net long across grains and soft commodities was broadly reduced. However, fresh buying of soybean oil and meal helped limit the overall reduction to just 15k contracts, leaving the combined net long at a historically elevated 1.35 million contracts.\nMore in Monday's update.",
     "createdAt": "2026-09-20T14:22:47+00:00",
@@ -750,14 +731,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2101678463572656455",
     "photoUrl": "https://pbs.twimg.com/media/HSqpW__XsAAeUpY.png",
     "hasPhoto": true,
-    "likes": 64,
+    "likes": 68,
     "retweets": 10,
     "replies": 12,
-    "engagement": 120,
+    "engagement": 124,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48420,
-    "score": 21789
+    "rawScore": 48424,
+    "score": 21791
   },
   {
     "id": "2100856691667415262",
@@ -769,13 +750,13 @@
     "url": "https://x.com/Ole_S_Hansen/status/2100856691667415262",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 85,
+    "likes": 86,
     "retweets": 15,
     "replies": 2,
-    "engagement": 121,
+    "engagement": 122,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10121,
-    "score": 3036
+    "rawScore": 10122,
+    "score": 3037
   }
 ]
