@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2102559058142327044",
     "photoUrl": "https://pbs.twimg.com/media/HS3Juu1aEAAUi06.png",
     "hasPhoto": true,
-    "likes": 44,
-    "retweets": 5,
-    "replies": 8,
-    "engagement": 78,
+    "likes": 57,
+    "retweets": 7,
+    "replies": 10,
+    "engagement": 101,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40378,
-    "score": 40378
+    "rawScore": 40401,
+    "score": 40401
   },
   {
     "id": "2102572901673414918",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2102572251883417769",
     "photoUrl": "https://pbs.twimg.com/media/HS3V2MAaMAAgH2H.png",
     "hasPhoto": true,
-    "likes": 6,
-    "retweets": 0,
-    "replies": 3,
-    "engagement": 15,
+    "likes": 14,
+    "retweets": 1,
+    "replies": 4,
+    "engagement": 28,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30315,
-    "score": 30315
+    "rawScore": 30328,
+    "score": 30328
   },
   {
     "id": "2102572570478580056",
@@ -85,14 +85,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2102547097442762939",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 51,
+    "likes": 54,
     "retweets": 4,
-    "replies": 5,
-    "engagement": 74,
+    "replies": 6,
+    "engagement": 80,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20074,
-    "score": 20074
+    "rawScore": 20080,
+    "score": 17068
   },
   {
     "id": "2102388685568405762",
@@ -142,14 +142,14 @@
     "url": "https://x.com/JavierBlas/status/2102458307906879740",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 586,
-    "retweets": 112,
-    "replies": 42,
-    "engagement": 936,
+    "likes": 608,
+    "retweets": 115,
+    "replies": 43,
+    "engagement": 967,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10936,
-    "score": 7108
+    "rawScore": 10967,
+    "score": 7129
   },
   {
     "id": "2102424652505387452",
@@ -161,14 +161,14 @@
     "url": "https://x.com/JavierBlas/status/2102424652505387452",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 299,
+    "likes": 309,
     "retweets": 54,
     "replies": 19,
-    "engagement": 464,
+    "engagement": 474,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38464,
-    "score": 25002
+    "rawScore": 38474,
+    "score": 17313
   },
   {
     "id": "2102347858263638308",
@@ -180,14 +180,14 @@
     "url": "https://x.com/JavierBlas/status/2102347858263638308",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 557,
+    "likes": 563,
     "retweets": 118,
     "replies": 32,
-    "engagement": 889,
+    "engagement": 895,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10889,
-    "score": 4900
+    "rawScore": 10895,
+    "score": 4903
   },
   {
     "id": "2102440354658304453",
@@ -209,23 +209,42 @@
     "score": 13216
   },
   {
-    "id": "2102484252877013280",
-    "text": "Facilitating the renewed flow of oil in Strait of Hormuz - Trump #oott",
-    "createdAt": "2026-09-22T19:44:42+00:00",
-    "tweetTime": 1790106282000,
+    "id": "2102607250015568057",
+    "text": "Senator Susan Collins is calling on President Donald Trump to release supply from the Northeast Home Heating Oil Reserve to combat rising costs because of the Iran war and the Russia-Ukraine war.\n\nCollins, the only Senate Republican up for reelection in a state Trump lost in 2024, represents Maine, where heating oil prices have increased by 74% as of last week compared to the same time last year, according to the state’s Department of Energy Resources.\n\nThe embattled three-term senator joined fellow Maine Senator Angus King, an independent who votes with Democrats, in a Tuesday letter to Trump. https://t.co/XXtuxY3TzL",
+    "createdAt": "2026-09-23T03:53:27+00:00",
+    "tweetTime": 1790135607000,
     "username": "staunovo",
     "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2102484252877013280",
+    "url": "https://x.com/staunovo/status/2102607250015568057",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 5,
-    "retweets": 2,
-    "replies": 3,
-    "engagement": 18,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 0,
     "isRetweet": false,
-    "relevance": 30,
-    "rawScore": 30018,
-    "score": 25515
+    "relevance": 20,
+    "rawScore": 20000,
+    "score": 20000
+  },
+  {
+    "id": "2102607127172841659",
+    "text": "Oil traders are flocking to options betting on a decline in Brent crude, with bearish wagers surging to unprecedented levels as investors reposition after a blistering rally in recent sessions.\n\nTuesday saw volume in Brent put options top roughly 764,000 contracts, the most on record, according to preliminary ICE Futures Europe data. Much of the activity was concentrated in narrow put spreads, which are sometimes hedges for over-the-counter binary trades, as Saudi Arabia sought to restore flows on a vital pipeline and signs emerged of some diplomatic progress toward reopening the Strait of Hormuz #oott https://t.co/HmY2AjCppz",
+    "createdAt": "2026-09-23T03:52:58+00:00",
+    "tweetTime": 1790135578000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2102607127172841659",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 0,
+    "isRetweet": false,
+    "relevance": 58,
+    "rawScore": 58000,
+    "score": 58000
   },
   {
     "id": "2102525500274905103",
@@ -237,14 +256,14 @@
     "url": "https://x.com/Rory_Johnston/status/2102525500274905103",
     "photoUrl": "https://pbs.twimg.com/media/HS2rBFzXUAAFVQa.png",
     "hasPhoto": true,
-    "likes": 174,
-    "retweets": 16,
-    "replies": 11,
-    "engagement": 239,
+    "likes": 196,
+    "retweets": 19,
+    "replies": 12,
+    "engagement": 270,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20539,
-    "score": 17458
+    "rawScore": 20570,
+    "score": 17485
   },
   {
     "id": "2102523015775076483",
@@ -256,33 +275,14 @@
     "url": "https://x.com/Rory_Johnston/status/2102523015775076483",
     "photoUrl": "https://pbs.twimg.com/media/HS2phJqWMAE_ow0.jpg",
     "hasPhoto": true,
-    "likes": 129,
+    "likes": 144,
     "retweets": 16,
-    "replies": 16,
-    "engagement": 209,
+    "replies": 17,
+    "engagement": 227,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30509,
-    "score": 25933
-  },
-  {
-    "id": "2102522444691222574",
-    "text": "Huzzah, API!\n\nAPI knows better than most how terrible it would be for the White House to start mucking with export flows.\n\nTrashes US rep as reliable energy supplier, harms US industry, and despite ST sugar high of lower pump $ would ultimately rebound &amp; be worse for US consumers",
-    "createdAt": "2026-09-22T22:16:28+00:00",
-    "tweetTime": 1790115388000,
-    "username": "Rory_Johnston",
-    "displayName": "Rory Johnston",
-    "url": "https://x.com/Rory_Johnston/status/2102522444691222574",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 103,
-    "retweets": 11,
-    "replies": 12,
-    "engagement": 161,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10161,
-    "score": 8637
+    "rawScore": 30527,
+    "score": 25948
   },
   {
     "id": "2102533070825861185",
@@ -301,7 +301,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10001,
-    "score": 10001
+    "score": 8501
   },
   {
     "id": "2102503699801129189",
@@ -339,7 +339,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10002,
-    "score": 8502
+    "score": 6501
   },
   {
     "id": "2102457232692498734",
@@ -427,14 +427,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2102523645931200735",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 26,
+    "likes": 27,
     "retweets": 0,
     "replies": 0,
-    "engagement": 26,
+    "engagement": 27,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10026,
-    "score": 8522
+    "rawScore": 10027,
+    "score": 8523
   },
   {
     "id": "2102492421989023973",
@@ -446,14 +446,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2102492421989023973",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 11,
+    "likes": 12,
     "retweets": 1,
     "replies": 3,
-    "engagement": 22,
+    "engagement": 23,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10022,
-    "score": 8519
+    "rawScore": 10023,
+    "score": 8520
   },
   {
     "id": "2102481864195780882",
@@ -472,7 +472,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10005,
-    "score": 8504
+    "score": 6503
   },
   {
     "id": "2102477828239331472",
@@ -491,7 +491,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10014,
-    "score": 8512
+    "score": 6509
   },
   {
     "id": "2102457832557658335",
@@ -548,6 +548,6 @@
     "isRetweet": false,
     "relevance": 18,
     "rawScore": 18078,
-    "score": 8135
+    "score": 5423
   }
 ]
