@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2102559058142327044",
     "photoUrl": "https://pbs.twimg.com/media/HS3Juu1aEAAUi06.png",
     "hasPhoto": true,
-    "likes": 66,
+    "likes": 77,
     "retweets": 8,
     "replies": 11,
-    "engagement": 115,
+    "engagement": 126,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40415,
-    "score": 34353
+    "rawScore": 40426,
+    "score": 34362
   },
   {
     "id": "2102572901673414918",
@@ -35,7 +35,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20003,
-    "score": 20003
+    "score": 17003
   },
   {
     "id": "2102572251883417769",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2102572251883417769",
     "photoUrl": "https://pbs.twimg.com/media/HS3V2MAaMAAgH2H.png",
     "hasPhoto": true,
-    "likes": 16,
-    "retweets": 2,
+    "likes": 20,
+    "retweets": 3,
     "replies": 4,
-    "engagement": 32,
+    "engagement": 38,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30332,
-    "score": 30332
+    "rawScore": 30338,
+    "score": 25787
   },
   {
     "id": "2102572570478580056",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2102572570478580056",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 2,
+    "likes": 3,
     "retweets": 1,
     "replies": 0,
-    "engagement": 4,
+    "engagement": 5,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10004,
-    "score": 10004
+    "rawScore": 10005,
+    "score": 8504
   },
   {
     "id": "2102547097442762939",
@@ -85,14 +85,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2102547097442762939",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 62,
+    "likes": 73,
     "retweets": 4,
-    "replies": 6,
-    "engagement": 88,
+    "replies": 7,
+    "engagement": 102,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20088,
-    "score": 17075
+    "rawScore": 20102,
+    "score": 17087
   },
   {
     "id": "2102388685568405762",
@@ -142,14 +142,14 @@
     "url": "https://x.com/JavierBlas/status/2102458307906879740",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 620,
+    "likes": 629,
     "retweets": 117,
-    "replies": 43,
-    "engagement": 983,
+    "replies": 44,
+    "engagement": 995,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10983,
-    "score": 7139
+    "rawScore": 10995,
+    "score": 4948
   },
   {
     "id": "2102424652505387452",
@@ -161,33 +161,14 @@
     "url": "https://x.com/JavierBlas/status/2102424652505387452",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 312,
+    "likes": 316,
     "retweets": 55,
     "replies": 19,
-    "engagement": 479,
+    "engagement": 483,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38479,
-    "score": 17316
-  },
-  {
-    "id": "2102347858263638308",
-    "text": "From my Bloomberg News colleagues: \n\nSaudi Arabia is running tests on a crucial oil pipeline with a view to restarting it this week, a person familiar with the matter said. The kingdom also expects to resume oil loadings from the Red Sea port of Yanbu this week.",
-    "createdAt": "2026-09-22T10:42:43+00:00",
-    "tweetTime": 1790073763000,
-    "username": "JavierBlas",
-    "displayName": "Javier Blas",
-    "url": "https://x.com/JavierBlas/status/2102347858263638308",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 567,
-    "retweets": 118,
-    "replies": 32,
-    "engagement": 899,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10899,
-    "score": 3270
+    "rawScore": 38483,
+    "score": 17317
   },
   {
     "id": "2102440354658304453",
@@ -218,14 +199,14 @@
     "url": "https://x.com/staunovo/status/2102624352084599263",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 0,
+    "likes": 1,
     "retweets": 0,
     "replies": 0,
-    "engagement": 0,
+    "engagement": 1,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20000,
-    "score": 20000
+    "rawScore": 20001,
+    "score": 20001
   },
   {
     "id": "2102624101143609459",
@@ -256,14 +237,14 @@
     "url": "https://x.com/staunovo/status/2102623788856684675",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 0,
+    "likes": 3,
     "retweets": 0,
     "replies": 0,
-    "engagement": 0,
+    "engagement": 3,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10000,
-    "score": 10000
+    "rawScore": 10003,
+    "score": 10003
   },
   {
     "id": "2102617975538786765",
@@ -275,71 +256,14 @@
     "url": "https://x.com/staunovo/status/2102617975538786765",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 0,
-    "retweets": 0,
-    "replies": 0,
-    "engagement": 0,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10000,
-    "score": 10000
-  },
-  {
-    "id": "2102617746563305567",
-    "text": "Ninepoint shrugs off political rhetoric to launch ETF focusing on energy interdependence of US and Canada https://t.co/FQBwsTBJNF",
-    "createdAt": "2026-09-23T04:35:10+00:00",
-    "tweetTime": 1790138110000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2102617746563305567",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 0,
-    "retweets": 0,
-    "replies": 0,
-    "engagement": 0,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10000,
-    "score": 10000
-  },
-  {
-    "id": "2102617640342610297",
-    "text": "Ban on US diesel exports would hurt, not help fuel markets, analysts say #oott https://t.co/hrWJZhtMgh",
-    "createdAt": "2026-09-23T04:34:44+00:00",
-    "tweetTime": 1790138084000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2102617640342610297",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 4,
-    "retweets": 2,
-    "replies": 0,
-    "engagement": 8,
-    "isRetweet": false,
-    "relevance": 20,
-    "rawScore": 20008,
-    "score": 20008
-  },
-  {
-    "id": "2102617494028431514",
-    "text": "#Iraq exported 70 million barrels of oil in August and is currently exporting more than 3 million barrels per day, Oil Minister Basim Mohammed said in an interview with state TV on Tuesday.\n\nThe minister also said transporting crude by road from southern oilfields to a Kirkuk storage facility is expected to increase exports through Turkey's Ceyhan port to more than 600,000 barrels per day. #oott https://t.co/A2jnycyfpv",
-    "createdAt": "2026-09-23T04:34:09+00:00",
-    "tweetTime": 1790138049000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2102617494028431514",
-    "photoUrl": null,
-    "hasPhoto": false,
     "likes": 1,
-    "retweets": 1,
+    "retweets": 0,
     "replies": 0,
-    "engagement": 3,
+    "engagement": 1,
     "isRetweet": false,
-    "relevance": 40,
-    "rawScore": 40003,
-    "score": 40003
+    "relevance": 10,
+    "rawScore": 10001,
+    "score": 10001
   },
   {
     "id": "2102525500274905103",
@@ -351,14 +275,14 @@
     "url": "https://x.com/Rory_Johnston/status/2102525500274905103",
     "photoUrl": "https://pbs.twimg.com/media/HS2rBFzXUAAFVQa.png",
     "hasPhoto": true,
-    "likes": 225,
+    "likes": 236,
     "retweets": 22,
     "replies": 12,
-    "engagement": 305,
+    "engagement": 316,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20605,
-    "score": 17514
+    "rawScore": 20616,
+    "score": 17524
   },
   {
     "id": "2102523015775076483",
@@ -370,14 +294,14 @@
     "url": "https://x.com/Rory_Johnston/status/2102523015775076483",
     "photoUrl": "https://pbs.twimg.com/media/HS2phJqWMAE_ow0.jpg",
     "hasPhoto": true,
-    "likes": 150,
+    "likes": 155,
     "retweets": 17,
     "replies": 17,
-    "engagement": 235,
+    "engagement": 240,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30535,
-    "score": 25955
+    "rawScore": 30540,
+    "score": 25959
   },
   {
     "id": "2102533070825861185",
@@ -453,7 +377,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10002,
-    "score": 6501
+    "score": 4501
   },
   {
     "id": "2102397397145948188",
@@ -605,7 +529,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10051,
-    "score": 6533
+    "score": 4523
   },
   {
     "id": "2102451792831266890",
@@ -624,7 +548,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10007,
-    "score": 6505
+    "score": 4503
   },
   {
     "id": "2102320031992631360",
