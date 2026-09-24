@@ -28,14 +28,14 @@
     "url": "https://x.com/JavierBlas/status/2102868853114208343",
     "photoUrl": "https://pbs.twimg.com/media/HS7kEpfWkAA561G.jpg",
     "hasPhoto": true,
-    "likes": 1149,
-    "retweets": 391,
-    "replies": 53,
-    "engagement": 2090,
+    "likes": 1227,
+    "retweets": 424,
+    "replies": 54,
+    "engagement": 2237,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 22390,
-    "score": 19032
+    "rawScore": 22537,
+    "score": 14649
   },
   {
     "id": "2102814159897555045",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2102814159897555045",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 192,
+    "likes": 195,
     "retweets": 19,
     "replies": 16,
-    "engagement": 278,
+    "engagement": 281,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10278,
-    "score": 6681
+    "rawScore": 10281,
+    "score": 4626
   },
   {
     "id": "2102766492274012432",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2102766492274012432",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 304,
+    "likes": 305,
     "retweets": 49,
     "replies": 18,
-    "engagement": 456,
+    "engagement": 457,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10456,
-    "score": 4705
+    "rawScore": 10457,
+    "score": 4706
   },
   {
     "id": "2102758623591931933",
@@ -85,14 +85,14 @@
     "url": "https://x.com/JavierBlas/status/2102758623591931933",
     "photoUrl": "https://pbs.twimg.com/media/HS5_bc2XQAArdK9.png",
     "hasPhoto": true,
-    "likes": 182,
-    "retweets": 38,
+    "likes": 184,
+    "retweets": 39,
     "replies": 6,
-    "engagement": 276,
+    "engagement": 280,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20576,
-    "score": 9259
+    "rawScore": 20580,
+    "score": 9261
   },
   {
     "id": "2102706324442169607",
@@ -104,14 +104,14 @@
     "url": "https://x.com/JavierBlas/status/2102706324442169607",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1916,
-    "retweets": 268,
+    "likes": 1937,
+    "retweets": 270,
     "replies": 119,
-    "engagement": 2809,
+    "engagement": 2834,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 12809,
-    "score": 3843
+    "rawScore": 12834,
+    "score": 3850
   },
   {
     "id": "2102682171261452376",
@@ -142,14 +142,14 @@
     "url": "https://x.com/HFI_Research/status/2102928079333343742",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 582,
-    "retweets": 55,
-    "replies": 12,
-    "engagement": 728,
+    "likes": 642,
+    "retweets": 59,
+    "replies": 15,
+    "engagement": 805,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10728,
-    "score": 9119
+    "rawScore": 10805,
+    "score": 9184
   },
   {
     "id": "2102910947358826949",
@@ -161,14 +161,14 @@
     "url": "https://x.com/HFI_Research/status/2102910947358826949",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 168,
-    "retweets": 14,
+    "likes": 181,
+    "retweets": 15,
     "replies": 2,
-    "engagement": 202,
+    "engagement": 217,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10202,
-    "score": 8672
+    "rawScore": 10217,
+    "score": 8684
   },
   {
     "id": "2102688842423894287",
@@ -190,6 +190,25 @@
     "score": 3023
   },
   {
+    "id": "2102990175026438448",
+    "text": "Debris damages oil depot buildings in Russia's Rostov #oott https://t.co/6c4wjCmksR",
+    "createdAt": "2026-09-24T05:15:04+00:00",
+    "tweetTime": 1790226904000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2102990175026438448",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 1,
+    "retweets": 1,
+    "replies": 0,
+    "engagement": 3,
+    "isRetweet": false,
+    "relevance": 20,
+    "rawScore": 20003,
+    "score": 20003
+  },
+  {
     "id": "2102985629655036227",
     "text": "Shale magnate Scott Sheffield accuses Exxon of ‘smear campaign’ to block board seat\nPioneer Natural Resources founder says oil major and regulators ‘orchestrated’ allegations of Opec collusion against him #oott https://t.co/tDfHNhrHJ2",
     "createdAt": "2026-09-24T04:57:00+00:00",
@@ -199,14 +218,14 @@
     "url": "https://x.com/staunovo/status/2102985629655036227",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 2,
+    "likes": 3,
     "retweets": 0,
     "replies": 0,
-    "engagement": 2,
+    "engagement": 3,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38002,
-    "score": 38002
+    "rawScore": 38003,
+    "score": 38003
   },
   {
     "id": "2102984593175404628",
@@ -218,33 +237,14 @@
     "url": "https://x.com/staunovo/status/2102984593175404628",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 0,
+    "likes": 1,
     "retweets": 0,
-    "replies": 0,
-    "engagement": 0,
+    "replies": 1,
+    "engagement": 4,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10000,
-    "score": 10000
-  },
-  {
-    "id": "2102984190560030932",
-    "text": "#Germany's cabinet approved a roadmap on Wednesday to phase out coal, oil and gas by 2045, reaffirming a climate strategy focused on ‌electrification despite a minister's call for more flexibility on cars, heating and carbon pricing.\nAn environment ministry spokesperson said the plan would be presented at the United Nations General Assembly in New York later on ⁠Wednesday. https://t.co/ZqImd5UvGI",
-    "createdAt": "2026-09-24T04:51:17+00:00",
-    "tweetTime": 1790225477000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2102984190560030932",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 0,
-    "retweets": 0,
-    "replies": 0,
-    "engagement": 0,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10000,
-    "score": 10000
+    "rawScore": 10004,
+    "score": 10004
   },
   {
     "id": "2102911741848072319",
@@ -256,14 +256,14 @@
     "url": "https://x.com/Rory_Johnston/status/2102911741848072319",
     "photoUrl": "https://pbs.twimg.com/media/HS8LE6-bsAA-4HN.jpg",
     "hasPhoto": true,
-    "likes": 135,
-    "retweets": 4,
+    "likes": 146,
+    "retweets": 6,
     "replies": 6,
-    "engagement": 161,
+    "engagement": 176,
     "isRetweet": false,
     "relevance": 34,
-    "rawScore": 34461,
-    "score": 29292
+    "rawScore": 34476,
+    "score": 29305
   },
   {
     "id": "2102888123240005968",
@@ -358,7 +358,26 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10118,
-    "score": 6577
+    "score": 4553
+  },
+  {
+    "id": "2102999430504800749",
+    "text": "Recap of the EIA’s oil and fuel inventory report:\n\nUS crude inventories rose by 3 million barrels last week, largely reflecting a 1.6 mb/d drop in exports and a 0.5 mb/d decline in refinery inputs. SPR outflows slowed sharply to just 0.4 million barrels, while stocks at Cushing rose by 2 million barrels to their highest since May. Production held steady near an all-time high below 14 mb/d.\n\nThe headline crude build was somewhat distorted by an unexpected Midwest refinery shutdown caused by power outages. This reduced refinery demand for crude and contributed to a sharp drop in imports from Canada, a key source of supply to Midwest refiners.\n\nMeanwhile, both distillate and gasoline inventories declined. Implied demand broadly followed seasonal patterns, rising for distillates while easing for gasoline. Closely watched distillate exports fell to around 1.3 mb/d from roughly 1.6 mb/d recently, potentially easing some of the political pressure surrounding US diesel exports at a time when domestic inventories remain tight.",
+    "createdAt": "2026-09-24T05:51:50+00:00",
+    "tweetTime": 1790229110000,
+    "username": "Ole_S_Hansen",
+    "displayName": "Ole S Hansen",
+    "url": "https://x.com/Ole_S_Hansen/status/2102999430504800749",
+    "photoUrl": "https://pbs.twimg.com/media/HS9af_PWYAAl8hN.png",
+    "hasPhoto": true,
+    "likes": 9,
+    "retweets": 2,
+    "replies": 2,
+    "engagement": 19,
+    "isRetweet": false,
+    "relevance": 58,
+    "rawScore": 58319,
+    "score": 58319
   },
   {
     "id": "2102748785051124059",
@@ -408,14 +427,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2102657887533236497",
     "photoUrl": "https://pbs.twimg.com/media/HS4jjOoXgAALm1r.png",
     "hasPhoto": true,
-    "likes": 150,
-    "retweets": 28,
+    "likes": 155,
+    "retweets": 29,
     "replies": 4,
-    "engagement": 218,
+    "engagement": 225,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38518,
-    "score": 11555
+    "rawScore": 38525,
+    "score": 11558
   },
   {
     "id": "2102878266973467066",
@@ -427,14 +446,14 @@
     "url": "https://x.com/TankerTrackers/status/2102878266973467066",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1806,
-    "retweets": 294,
-    "replies": 95,
-    "engagement": 2679,
+    "likes": 1856,
+    "retweets": 305,
+    "replies": 97,
+    "engagement": 2757,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 60679,
-    "score": 51577
+    "rawScore": 60757,
+    "score": 39492
   },
   {
     "id": "2102745393427525914",
@@ -446,14 +465,14 @@
     "url": "https://x.com/TankerTrackers/status/2102745393427525914",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 448,
-    "retweets": 25,
+    "likes": 457,
+    "retweets": 26,
     "replies": 5,
-    "engagement": 513,
+    "engagement": 524,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18513,
-    "score": 8331
+    "rawScore": 18524,
+    "score": 8336
   },
   {
     "id": "2102728349932019787",
@@ -465,14 +484,14 @@
     "url": "https://x.com/TankerTrackers/status/2102728349932019787",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 787,
-    "retweets": 178,
-    "replies": 46,
-    "engagement": 1281,
+    "likes": 793,
+    "retweets": 179,
+    "replies": 47,
+    "engagement": 1292,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 21281,
-    "score": 9576
+    "rawScore": 21292,
+    "score": 6388
   },
   {
     "id": "2102696042445635896",
@@ -484,13 +503,13 @@
     "url": "https://x.com/TankerTrackers/status/2102696042445635896",
     "photoUrl": "https://pbs.twimg.com/media/HS5GSDwXAAAqW76.jpg",
     "hasPhoto": true,
-    "likes": 709,
-    "retweets": 130,
+    "likes": 715,
+    "retweets": 131,
     "replies": 39,
-    "engagement": 1086,
+    "engagement": 1094,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 49386,
-    "score": 14816
+    "rawScore": 49394,
+    "score": 14818
   }
 ]
