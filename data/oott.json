@@ -28,14 +28,14 @@
     "url": "https://x.com/JavierBlas/status/2102868853114208343",
     "photoUrl": "https://pbs.twimg.com/media/HS7kEpfWkAA561G.jpg",
     "hasPhoto": true,
-    "likes": 960,
-    "retweets": 320,
-    "replies": 47,
-    "engagement": 1741,
+    "likes": 1072,
+    "retweets": 363,
+    "replies": 51,
+    "engagement": 1951,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 22041,
-    "score": 18735
+    "rawScore": 22251,
+    "score": 18913
   },
   {
     "id": "2102814159897555045",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2102814159897555045",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 189,
+    "likes": 190,
     "retweets": 18,
     "replies": 16,
-    "engagement": 273,
+    "engagement": 274,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10273,
-    "score": 6677
+    "rawScore": 10274,
+    "score": 6678
   },
   {
     "id": "2102766492274012432",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2102766492274012432",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 303,
-    "retweets": 48,
+    "likes": 304,
+    "retweets": 49,
     "replies": 18,
-    "engagement": 453,
+    "engagement": 456,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10453,
-    "score": 4704
+    "rawScore": 10456,
+    "score": 4705
   },
   {
     "id": "2102758623591931933",
@@ -85,13 +85,13 @@
     "url": "https://x.com/JavierBlas/status/2102758623591931933",
     "photoUrl": "https://pbs.twimg.com/media/HS5_bc2XQAArdK9.png",
     "hasPhoto": true,
-    "likes": 178,
+    "likes": 179,
     "retweets": 37,
     "replies": 6,
-    "engagement": 270,
+    "engagement": 271,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20570,
+    "rawScore": 20571,
     "score": 9257
   },
   {
@@ -104,14 +104,14 @@
     "url": "https://x.com/JavierBlas/status/2102706324442169607",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1862,
+    "likes": 1887,
     "retweets": 262,
-    "replies": 118,
-    "engagement": 2740,
+    "replies": 119,
+    "engagement": 2768,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 12740,
-    "score": 5733
+    "rawScore": 12768,
+    "score": 5746
   },
   {
     "id": "2102682171261452376",
@@ -130,7 +130,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10024,
-    "score": 4511
+    "score": 3007
   },
   {
     "id": "2102928079333343742",
@@ -142,14 +142,14 @@
     "url": "https://x.com/HFI_Research/status/2102928079333343742",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 351,
-    "retweets": 32,
-    "replies": 5,
-    "engagement": 430,
+    "likes": 493,
+    "retweets": 47,
+    "replies": 10,
+    "engagement": 617,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10430,
-    "score": 10430
+    "rawScore": 10617,
+    "score": 10617
   },
   {
     "id": "2102910947358826949",
@@ -161,14 +161,14 @@
     "url": "https://x.com/HFI_Research/status/2102910947358826949",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 134,
-    "retweets": 9,
+    "likes": 151,
+    "retweets": 12,
     "replies": 2,
-    "engagement": 158,
+    "engagement": 181,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10158,
-    "score": 10158
+    "rawScore": 10181,
+    "score": 10181
   },
   {
     "id": "2102688842423894287",
@@ -187,7 +187,45 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10076,
-    "score": 4534
+    "score": 3023
+  },
+  {
+    "id": "2102968683597304001",
+    "text": "US oil industry pushes back against proposed diesel export ban\nGroups say there is no ‘silver bullet’ to fuel price crisis after president signals willingness to halt shipments abroad #oott https://t.co/Qj14XqOVuH",
+    "createdAt": "2026-09-24T03:49:40+00:00",
+    "tweetTime": 1790221780000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2102968683597304001",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 0,
+    "isRetweet": false,
+    "relevance": 30,
+    "rawScore": 30000,
+    "score": 30000
+  },
+  {
+    "id": "2102967327377551855",
+    "text": "Sales of Venezuelan oil for loading in October stalled after a surge in shipping costs muddled negotiations between the country’s state oil company and buyers of its oil.\n\nShipping costs — a key component of the delivered price — have more than doubled from the end of August. That’s making Venezuelan crude less competitive with Canadian barrels for US refiners and snarling sales deals, according to people with knowledge of the situation. Canada and Venezuela are the largest suppliers of foreign oil to the US. #oott https://t.co/M2CAetFAqu",
+    "createdAt": "2026-09-24T03:44:16+00:00",
+    "tweetTime": 1790221456000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2102967327377551855",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 1,
+    "retweets": 2,
+    "replies": 0,
+    "engagement": 5,
+    "isRetweet": false,
+    "relevance": 48,
+    "rawScore": 48005,
+    "score": 48005
   },
   {
     "id": "2102911741848072319",
@@ -199,14 +237,14 @@
     "url": "https://x.com/Rory_Johnston/status/2102911741848072319",
     "photoUrl": "https://pbs.twimg.com/media/HS8LE6-bsAA-4HN.jpg",
     "hasPhoto": true,
-    "likes": 108,
+    "likes": 123,
     "retweets": 4,
     "replies": 5,
-    "engagement": 131,
+    "engagement": 146,
     "isRetweet": false,
     "relevance": 34,
-    "rawScore": 34431,
-    "score": 34431
+    "rawScore": 34446,
+    "score": 34446
   },
   {
     "id": "2102888123240005968",
@@ -256,14 +294,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2102915124918882482",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 12,
+    "likes": 13,
     "retweets": 1,
     "replies": 1,
-    "engagement": 17,
+    "engagement": 18,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10017,
-    "score": 10017
+    "rawScore": 10018,
+    "score": 10018
   },
   {
     "id": "2102868588407173280",
@@ -294,14 +332,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2102817193293746202",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 72,
+    "likes": 74,
     "retweets": 10,
     "replies": 8,
-    "engagement": 116,
+    "engagement": 118,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10116,
-    "score": 6575
+    "rawScore": 10118,
+    "score": 6577
   },
   {
     "id": "2102748785051124059",
@@ -351,13 +389,13 @@
     "url": "https://x.com/Ole_S_Hansen/status/2102657887533236497",
     "photoUrl": "https://pbs.twimg.com/media/HS4jjOoXgAALm1r.png",
     "hasPhoto": true,
-    "likes": 147,
+    "likes": 149,
     "retweets": 28,
     "replies": 4,
-    "engagement": 215,
+    "engagement": 217,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38515,
+    "rawScore": 38517,
     "score": 11555
   },
   {
@@ -370,14 +408,14 @@
     "url": "https://x.com/TankerTrackers/status/2102878266973467066",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1553,
-    "retweets": 250,
-    "replies": 86,
-    "engagement": 2311,
+    "likes": 1721,
+    "retweets": 279,
+    "replies": 91,
+    "engagement": 2552,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 60311,
-    "score": 51264
+    "rawScore": 60552,
+    "score": 51469
   },
   {
     "id": "2102745393427525914",
@@ -389,14 +427,14 @@
     "url": "https://x.com/TankerTrackers/status/2102745393427525914",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 425,
+    "likes": 438,
     "retweets": 25,
     "replies": 5,
-    "engagement": 490,
+    "engagement": 503,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18490,
-    "score": 8321
+    "rawScore": 18503,
+    "score": 8326
   },
   {
     "id": "2102728349932019787",
@@ -408,14 +446,14 @@
     "url": "https://x.com/TankerTrackers/status/2102728349932019787",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 768,
-    "retweets": 173,
-    "replies": 45,
-    "engagement": 1249,
+    "likes": 777,
+    "retweets": 175,
+    "replies": 46,
+    "engagement": 1265,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 21249,
-    "score": 9562
+    "rawScore": 21265,
+    "score": 9569
   },
   {
     "id": "2102696042445635896",
@@ -427,13 +465,13 @@
     "url": "https://x.com/TankerTrackers/status/2102696042445635896",
     "photoUrl": "https://pbs.twimg.com/media/HS5GSDwXAAAqW76.jpg",
     "hasPhoto": true,
-    "likes": 691,
-    "retweets": 126,
-    "replies": 38,
-    "engagement": 1057,
+    "likes": 701,
+    "retweets": 129,
+    "replies": 39,
+    "engagement": 1076,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 49357,
-    "score": 22211
+    "rawScore": 49376,
+    "score": 14813
   }
 ]
