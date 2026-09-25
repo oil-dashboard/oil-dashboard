@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2103416209710706825",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 50,
-    "retweets": 6,
+    "likes": 54,
+    "retweets": 7,
     "replies": 6,
-    "engagement": 80,
+    "engagement": 86,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38080,
-    "score": 38080
+    "rawScore": 38086,
+    "score": 32373
   },
   {
     "id": "2103416211828846678",
@@ -35,7 +35,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10019,
-    "score": 10019
+    "score": 8516
   },
   {
     "id": "2103416213934334199",
@@ -54,7 +54,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10005,
-    "score": 10005
+    "score": 8504
   },
   {
     "id": "2103298180666548697",
@@ -73,7 +73,26 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20032,
-    "score": 13021
+    "score": 9014
+  },
+  {
+    "id": "2103471342674944127",
+    "text": "CHART OF THE DAY: Saudi oil exports -- so far in September, highest since the start of the war. https://t.co/unxrckDsZL",
+    "createdAt": "2026-09-25T13:07:03+00:00",
+    "tweetTime": 1790341623000,
+    "username": "JavierBlas",
+    "displayName": "Javier Blas",
+    "url": "https://x.com/JavierBlas/status/2103471342674944127",
+    "photoUrl": "https://pbs.twimg.com/media/HTEICQhXcAAXzkJ.png",
+    "hasPhoto": true,
+    "likes": 401,
+    "retweets": 90,
+    "replies": 24,
+    "engagement": 653,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10953,
+    "score": 10953
   },
   {
     "id": "2103399387984474542",
@@ -85,14 +104,14 @@
     "url": "https://x.com/JavierBlas/status/2103399387984474542",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 956,
-    "retweets": 171,
-    "replies": 36,
-    "engagement": 1406,
+    "likes": 1067,
+    "retweets": 189,
+    "replies": 39,
+    "engagement": 1562,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 31406,
-    "score": 26695
+    "rawScore": 31562,
+    "score": 26828
   },
   {
     "id": "2103214113967194259",
@@ -104,14 +123,14 @@
     "url": "https://x.com/JavierBlas/status/2103214113967194259",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 631,
-    "retweets": 139,
-    "replies": 38,
-    "engagement": 1023,
+    "likes": 638,
+    "retweets": 142,
+    "replies": 39,
+    "engagement": 1039,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 11023,
-    "score": 4960
+    "rawScore": 11039,
+    "score": 3312
   },
   {
     "id": "2103141087254884519",
@@ -123,14 +142,14 @@
     "url": "https://x.com/JavierBlas/status/2103141087254884519",
     "photoUrl": "https://pbs.twimg.com/media/HS_bW3DW4AAVx5M.png",
     "hasPhoto": true,
-    "likes": 152,
-    "retweets": 27,
+    "likes": 158,
+    "retweets": 29,
     "replies": 10,
-    "engagement": 236,
+    "engagement": 246,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10536,
-    "score": 3161
+    "rawScore": 10546,
+    "score": 3164
   },
   {
     "id": "2103183527198236789",
@@ -161,14 +180,14 @@
     "url": "https://x.com/HFI_Research/status/2103465229632053557",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 94,
-    "retweets": 3,
+    "likes": 175,
+    "retweets": 4,
     "replies": 0,
-    "engagement": 100,
+    "engagement": 183,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10100,
-    "score": 10100
+    "rawScore": 10183,
+    "score": 10183
   },
   {
     "id": "2103295702050996502",
@@ -180,14 +199,14 @@
     "url": "https://x.com/HFI_Research/status/2103295702050996502",
     "photoUrl": "https://pbs.twimg.com/media/HTBoQqObsAAlkpf.jpg",
     "hasPhoto": true,
-    "likes": 468,
-    "retweets": 84,
-    "replies": 24,
-    "engagement": 708,
+    "likes": 471,
+    "retweets": 86,
+    "replies": 25,
+    "engagement": 718,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 11008,
-    "score": 7155
+    "rawScore": 11018,
+    "score": 4958
   },
   {
     "id": "2103459634027634928",
@@ -199,14 +218,14 @@
     "url": "https://x.com/staunovo/status/2103459634027634928",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 2,
-    "retweets": 0,
+    "likes": 10,
+    "retweets": 1,
     "replies": 0,
-    "engagement": 2,
+    "engagement": 12,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20002,
-    "score": 20002
+    "rawScore": 20012,
+    "score": 20012
   },
   {
     "id": "2103450922005192741",
@@ -256,14 +275,14 @@
     "url": "https://x.com/staunovo/status/2103450150442037483",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 4,
-    "retweets": 1,
+    "likes": 10,
+    "retweets": 2,
     "replies": 0,
-    "engagement": 6,
+    "engagement": 14,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30006,
-    "score": 30006
+    "rawScore": 30014,
+    "score": 30014
   },
   {
     "id": "2103397767825514657",
@@ -275,14 +294,52 @@
     "url": "https://x.com/staunovo/status/2103397767825514657",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 11,
-    "retweets": 4,
+    "likes": 14,
+    "retweets": 6,
     "replies": 0,
-    "engagement": 19,
+    "engagement": 26,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48019,
-    "score": 40816
+    "rawScore": 48026,
+    "score": 40822
+  },
+  {
+    "id": "2103487901057396931",
+    "text": "Still some post-headline spread between NYMEX diesel/ICE gasoil but it's narrowed (chart indexed)\n\nAnd agree—if market was really pricing this we'd see a MUCH bigger spread\n\nRight now imho oil market is saying there's a chance we see US diesel export restrictions, not full ban https://t.co/XvHe4Bsa1H",
+    "createdAt": "2026-09-25T14:12:51+00:00",
+    "tweetTime": 1790345571000,
+    "username": "Rory_Johnston",
+    "displayName": "Rory Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2103487901057396931",
+    "photoUrl": "https://pbs.twimg.com/media/HTEWW-hWkAANTG2.png",
+    "hasPhoto": true,
+    "likes": 2,
+    "retweets": 1,
+    "replies": 2,
+    "engagement": 10,
+    "isRetweet": false,
+    "relevance": 20,
+    "rawScore": 20310,
+    "score": 20310
+  },
+  {
+    "id": "2103472824975536161",
+    "text": "Widening gap between US (yellow) and Chinese (green) retail diesel prices year to date.\n\nNYMEX diesel (dark blue) and Singapore gasoil (light blue) futures prices included for reference. https://t.co/lor04KzzFs",
+    "createdAt": "2026-09-25T13:12:56+00:00",
+    "tweetTime": 1790341976000,
+    "username": "Rory_Johnston",
+    "displayName": "Rory Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2103472824975536161",
+    "photoUrl": "https://pbs.twimg.com/media/HTEJTtrWoAANDcB.jpg",
+    "hasPhoto": true,
+    "likes": 58,
+    "retweets": 8,
+    "replies": 6,
+    "engagement": 92,
+    "isRetweet": false,
+    "relevance": 20,
+    "rawScore": 20392,
+    "score": 20392
   },
   {
     "id": "2103203022046380215",
@@ -301,26 +358,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10162,
-    "score": 4573
-  },
-  {
-    "id": "2103109733414760776",
-    "text": "I've been warning this exact cycle was going to occur.\n\nClear that the West Coast Oil Pipeline isn't purely economically competitive with other pipeline expansion plans or southbound options.\n\nThe rationale has ALWAYS been strategic—Ottawa needs to state that clearly and up front",
-    "createdAt": "2026-09-24T13:10:08+00:00",
-    "tweetTime": 1790255408000,
-    "username": "Rory_Johnston",
-    "displayName": "Rory Johnston",
-    "url": "https://x.com/Rory_Johnston/status/2103109733414760776",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 217,
-    "retweets": 19,
-    "replies": 17,
-    "engagement": 306,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10306,
-    "score": 3092
+    "score": 3049
   },
   {
     "id": "2103191610943229993",
@@ -358,7 +396,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10006,
-    "score": 6504
+    "score": 4503
   },
   {
     "id": "2103235059117367556",
@@ -437,6 +475,25 @@
     "score": 6002
   },
   {
+    "id": "2103474487438061642",
+    "text": "Colombia Names New Ecopetrol CEO to Revive Oil, Fracking Ambitions - Bloomberg",
+    "createdAt": "2026-09-25T13:19:33+00:00",
+    "tweetTime": 1790342373000,
+    "username": "OilHeadlineNews",
+    "displayName": "Energy Headline News",
+    "url": "https://x.com/OilHeadlineNews/status/2103474487438061642",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 4,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 4,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10004,
+    "score": 10004
+  },
+  {
     "id": "2103335508571050149",
     "text": "Iran offers US new ‘7-day’ ceasefire proposal - FT\n\nForeign minister says plan could see Strait of Hormuz reopen within a week",
     "createdAt": "2026-09-25T04:07:17+00:00",
@@ -465,14 +522,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2103276613664211069",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 9,
+    "likes": 11,
     "retweets": 0,
     "replies": 0,
-    "engagement": 9,
+    "engagement": 11,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10009,
-    "score": 4504
+    "rawScore": 10011,
+    "score": 4505
   },
   {
     "id": "2103259205377392902",
@@ -484,33 +541,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2103259205377392902",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 15,
+    "likes": 16,
     "retweets": 1,
     "replies": 2,
-    "engagement": 23,
+    "engagement": 24,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28023,
-    "score": 12610
-  },
-  {
-    "id": "2103226382415266153",
-    "text": "Scott Sheffield, one of the earliest architects of the US shale oil boom, said he was “betrayed” by ExxonMobil Holdings Corp. after Chief Executive Officer Darren Woods failed to support him in a dispute with the Federal Trade Commission despite a promise to do so. - Bloomberg",
-    "createdAt": "2026-09-24T20:53:40+00:00",
-    "tweetTime": 1790283220000,
-    "username": "OilHeadlineNews",
-    "displayName": "Energy Headline News",
-    "url": "https://x.com/OilHeadlineNews/status/2103226382415266153",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 8,
-    "retweets": 0,
-    "replies": 2,
-    "engagement": 14,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10014,
-    "score": 4506
+    "rawScore": 28024,
+    "score": 12611
   },
   {
     "id": "2103452832808476780",
@@ -522,14 +560,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2103452832808476780",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 14,
-    "retweets": 4,
+    "likes": 21,
+    "retweets": 6,
     "replies": 4,
-    "engagement": 34,
+    "engagement": 45,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20034,
-    "score": 20034
+    "rawScore": 20045,
+    "score": 20045
   },
   {
     "id": "2103442041384439893",
@@ -541,14 +579,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2103442041384439893",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 10,
+    "likes": 11,
     "retweets": 0,
     "replies": 1,
-    "engagement": 13,
+    "engagement": 14,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20013,
-    "score": 20013
+    "rawScore": 20014,
+    "score": 20014
   },
   {
     "id": "2103367074361831564",
@@ -561,13 +599,13 @@
     "photoUrl": null,
     "hasPhoto": false,
     "likes": 18,
-    "retweets": 4,
+    "retweets": 5,
     "replies": 0,
-    "engagement": 26,
+    "engagement": 28,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 58026,
-    "score": 49322
+    "rawScore": 58028,
+    "score": 37718
   },
   {
     "id": "2103182823020736661",
@@ -579,14 +617,14 @@
     "url": "https://x.com/TankerTrackers/status/2103182823020736661",
     "photoUrl": "https://pbs.twimg.com/media/HTAAuS0XgAAUkbC.jpg",
     "hasPhoto": true,
-    "likes": 689,
-    "retweets": 87,
+    "likes": 697,
+    "retweets": 89,
     "replies": 39,
-    "engagement": 980,
+    "engagement": 992,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 11280,
-    "score": 3384
+    "rawScore": 11292,
+    "score": 3388
   },
   {
     "id": "2103183176189509962",
