@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2103416209710706825",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 5,
-    "retweets": 0,
-    "replies": 1,
-    "engagement": 8,
+    "likes": 28,
+    "retweets": 4,
+    "replies": 4,
+    "engagement": 48,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38008,
-    "score": 38008
+    "rawScore": 38048,
+    "score": 38048
   },
   {
     "id": "2103416211828846678",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2103416211828846678",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 2,
-    "retweets": 0,
-    "replies": 1,
-    "engagement": 5,
+    "likes": 7,
+    "retweets": 1,
+    "replies": 3,
+    "engagement": 18,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10005,
-    "score": 10005
+    "rawScore": 10018,
+    "score": 10018
   },
   {
     "id": "2103416213934334199",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2103416213934334199",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 2,
-    "retweets": 0,
+    "likes": 3,
+    "retweets": 1,
     "replies": 0,
-    "engagement": 2,
+    "engagement": 5,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10002,
-    "score": 10002
+    "rawScore": 10005,
+    "score": 10005
   },
   {
     "id": "2103298180666548697",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2103298180666548697",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 16,
-    "retweets": 1,
+    "likes": 17,
+    "retweets": 2,
     "replies": 2,
-    "engagement": 24,
+    "engagement": 27,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20024,
-    "score": 13016
+    "rawScore": 20027,
+    "score": 13018
   },
   {
     "id": "2103399387984474542",
@@ -85,14 +85,14 @@
     "url": "https://x.com/JavierBlas/status/2103399387984474542",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 351,
-    "retweets": 70,
-    "replies": 18,
-    "engagement": 545,
+    "likes": 610,
+    "retweets": 116,
+    "replies": 25,
+    "engagement": 917,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30545,
-    "score": 30545
+    "rawScore": 30917,
+    "score": 30917
   },
   {
     "id": "2103214113967194259",
@@ -104,14 +104,14 @@
     "url": "https://x.com/JavierBlas/status/2103214113967194259",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 585,
-    "retweets": 134,
+    "likes": 605,
+    "retweets": 137,
     "replies": 38,
-    "engagement": 967,
+    "engagement": 993,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10967,
-    "score": 4935
+    "rawScore": 10993,
+    "score": 4947
   },
   {
     "id": "2103141087254884519",
@@ -123,14 +123,14 @@
     "url": "https://x.com/JavierBlas/status/2103141087254884519",
     "photoUrl": "https://pbs.twimg.com/media/HS_bW3DW4AAVx5M.png",
     "hasPhoto": true,
-    "likes": 137,
-    "retweets": 23,
-    "replies": 9,
-    "engagement": 210,
+    "likes": 143,
+    "retweets": 25,
+    "replies": 10,
+    "engagement": 223,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10510,
-    "score": 3153
+    "rawScore": 10523,
+    "score": 3157
   },
   {
     "id": "2103183527198236789",
@@ -142,13 +142,13 @@
     "url": "https://x.com/JKempEnergy/status/2103183527198236789",
     "photoUrl": "https://pbs.twimg.com/media/HTACOpZXYAAt_lo.png",
     "hasPhoto": true,
-    "likes": 39,
+    "likes": 40,
     "retweets": 9,
     "replies": 6,
-    "engagement": 75,
+    "engagement": 76,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48375,
+    "rawScore": 48376,
     "score": 21769
   },
   {
@@ -161,14 +161,14 @@
     "url": "https://x.com/JKempEnergy/status/2103077801091899478",
     "photoUrl": "https://pbs.twimg.com/media/HS-iB4jXEAAeoVO.png",
     "hasPhoto": true,
-    "likes": 76,
+    "likes": 77,
     "retweets": 23,
     "replies": 4,
-    "engagement": 134,
+    "engagement": 135,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30434,
-    "score": 9130
+    "rawScore": 30435,
+    "score": 9131
   },
   {
     "id": "2103295702050996502",
@@ -180,14 +180,14 @@
     "url": "https://x.com/HFI_Research/status/2103295702050996502",
     "photoUrl": "https://pbs.twimg.com/media/HTBoQqObsAAlkpf.jpg",
     "hasPhoto": true,
-    "likes": 441,
+    "likes": 447,
     "retweets": 81,
-    "replies": 22,
-    "engagement": 669,
+    "replies": 23,
+    "engagement": 678,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10969,
-    "score": 7130
+    "rawScore": 10978,
+    "score": 7136
   },
   {
     "id": "2103397767825514657",
@@ -199,14 +199,14 @@
     "url": "https://x.com/staunovo/status/2103397767825514657",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 6,
-    "retweets": 1,
+    "likes": 9,
+    "retweets": 3,
     "replies": 0,
-    "engagement": 8,
+    "engagement": 15,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48008,
-    "score": 48008
+    "rawScore": 48015,
+    "score": 48015
   },
   {
     "id": "2103395460689858625",
@@ -218,14 +218,14 @@
     "url": "https://x.com/staunovo/status/2103395460689858625",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1,
-    "retweets": 0,
+    "likes": 2,
+    "retweets": 1,
     "replies": 0,
-    "engagement": 1,
+    "engagement": 4,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10001,
-    "score": 10001
+    "rawScore": 10004,
+    "score": 10004
   },
   {
     "id": "2103372176850112644",
@@ -244,7 +244,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10009,
-    "score": 10009
+    "score": 8508
   },
   {
     "id": "2103203022046380215",
@@ -256,14 +256,14 @@
     "url": "https://x.com/Rory_Johnston/status/2103203022046380215",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 133,
+    "likes": 134,
     "retweets": 7,
     "replies": 3,
-    "engagement": 156,
+    "engagement": 157,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10156,
-    "score": 4570
+    "rawScore": 10157,
+    "score": 4571
   },
   {
     "id": "2103109733414760776",
@@ -275,13 +275,13 @@
     "url": "https://x.com/Rory_Johnston/status/2103109733414760776",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 213,
+    "likes": 215,
     "retweets": 19,
     "replies": 17,
-    "engagement": 302,
+    "engagement": 304,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10302,
+    "rawScore": 10304,
     "score": 3091
   },
   {
@@ -302,25 +302,6 @@
     "relevance": 10,
     "rawScore": 10012,
     "score": 4505
-  },
-  {
-    "id": "2103067264073527787",
-    "text": "\"Low stock levels ‌appear to have raised Beijing's concern\" as \"China's gasoline and diesel inventories have fallen to their lowest levels in more than a decade\" https://t.co/l1c4g9vbYo",
-    "createdAt": "2026-09-24T10:21:23+00:00",
-    "tweetTime": 1790245283000,
-    "username": "Rory_Johnston",
-    "displayName": "Rory Johnston",
-    "url": "https://x.com/Rory_Johnston/status/2103067264073527787",
-    "photoUrl": "https://pbs.twimg.com/media/HS-Yd5tWAAE6zW6.png",
-    "hasPhoto": true,
-    "likes": 419,
-    "retweets": 44,
-    "replies": 15,
-    "engagement": 552,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10852,
-    "score": 3256
   },
   {
     "id": "2103293443426623522",
@@ -415,7 +396,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20005,
-    "score": 9002
+    "score": 6002
   },
   {
     "id": "2103335508571050149",
@@ -427,14 +408,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2103335508571050149",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 24,
+    "likes": 27,
     "retweets": 3,
     "replies": 2,
-    "engagement": 36,
+    "engagement": 39,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10036,
-    "score": 8531
+    "rawScore": 10039,
+    "score": 8533
   },
   {
     "id": "2103276613664211069",
@@ -522,14 +503,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2103367074361831564",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 13,
-    "retweets": 3,
+    "likes": 15,
+    "retweets": 4,
     "replies": 0,
-    "engagement": 19,
+    "engagement": 23,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 58019,
-    "score": 58019
+    "rawScore": 58023,
+    "score": 49320
   },
   {
     "id": "2103109606725616121",
@@ -541,13 +522,13 @@
     "url": "https://x.com/Ole_S_Hansen/status/2103109606725616121",
     "photoUrl": "https://pbs.twimg.com/media/HS--upZWcAABrAd.png",
     "hasPhoto": true,
-    "likes": 53,
+    "likes": 54,
     "retweets": 19,
     "replies": 5,
-    "engagement": 106,
+    "engagement": 107,
     "isRetweet": false,
     "relevance": 8,
-    "rawScore": 8406,
+    "rawScore": 8407,
     "score": 2522
   },
   {
@@ -560,33 +541,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2103081113518293280",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 33,
+    "likes": 34,
     "retweets": 10,
     "replies": 3,
-    "engagement": 62,
-    "isRetweet": false,
-    "relevance": 28,
-    "rawScore": 28062,
-    "score": 8419
-  },
-  {
-    "id": "2103080255070061031",
-    "text": "#Container #freight markets are becoming increasingly two-speed, with transpacific rates surging while Asia–Europe routes continue to soften.\n\nThe latest Drewry World Container Index remains broadly unchanged over the past six weeks at USD 4,467 per 40-foot container, but the headline masks a sharp divergence between the major East–West trades. Shanghai–Los Angeles rates have jumped 15% over the period to USD 7,838, while Shanghai–New York has risen 9% to USD 10,373, with both reaching their highest levels since June 2022. By contrast, Shanghai–Rotterdam has fallen 21% to USD 3,485. Overall, the Drewry index is still around 135% above levels seen before the Middle East war disrupted global shipping routes.\n\nThe strength on transpacific routes reflects a combination of firm US import demand, tight capacity and continued logistical disruption. An extended peak season, supported by retailer restocking and resilient consumer demand, has coincided with carrier capacity management through blank sailings, while weather-related congestion in Asia and Panama Canal restrictions have further reduced effective capacity.\n\nEurope is moving in the opposite direction. Softer post-peak demand has been accompanied by the gradual return of container services through the Red Sea and Suez Canal. The shorter routing releases vessel capacity previously absorbed by lengthy Cape of Good Hope diversions, helping push rates lower.\n\nThe result is a freight market where the composite index looks stable, while regional supply-demand conditions are increasingly anything but.",
-    "createdAt": "2026-09-24T11:13:00+00:00",
-    "tweetTime": 1790248380000,
-    "username": "Ole_S_Hansen",
-    "displayName": "Ole S Hansen",
-    "url": "https://x.com/Ole_S_Hansen/status/2103080255070061031",
-    "photoUrl": "https://pbs.twimg.com/media/HS-kVTDXMAAjGdZ.jpg",
-    "hasPhoto": true,
-    "likes": 27,
-    "retweets": 15,
-    "replies": 2,
     "engagement": 63,
     "isRetweet": false,
-    "relevance": 8,
-    "rawScore": 8363,
-    "score": 2509
+    "relevance": 28,
+    "rawScore": 28063,
+    "score": 8419
   },
   {
     "id": "2103182823020736661",
@@ -598,14 +560,14 @@
     "url": "https://x.com/TankerTrackers/status/2103182823020736661",
     "photoUrl": "https://pbs.twimg.com/media/HTAAuS0XgAAUkbC.jpg",
     "hasPhoto": true,
-    "likes": 662,
+    "likes": 669,
     "retweets": 81,
     "replies": 39,
-    "engagement": 941,
+    "engagement": 948,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 11241,
-    "score": 5058
+    "rawScore": 11248,
+    "score": 5062
   },
   {
     "id": "2103183176189509962",
@@ -617,32 +579,13 @@
     "url": "https://x.com/TankerTrackers/status/2103183176189509962",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 67,
+    "likes": 68,
     "retweets": 3,
     "replies": 4,
-    "engagement": 85,
+    "engagement": 86,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10085,
-    "score": 4538
-  },
-  {
-    "id": "2103064591903211687",
-    "text": "Saudi Arabia began seesawing its crude oil exports back east before the Petroline was even hit. They got TWICE AS MUCH (2Mbpd would have been plenty enough for refining) amount of crude flowing through the Petroline pipelines within a little over a week, and likely a sufficient amount sooner than that. ARAMCO has 24/365 access to spare parts for every single little piece of infrastructure.",
-    "createdAt": "2026-09-24T10:10:46+00:00",
-    "tweetTime": 1790244646000,
-    "username": "TankerTrackers",
-    "displayName": "TankerTrackers.com, Inc.",
-    "url": "https://x.com/TankerTrackers/status/2103064591903211687",
-    "photoUrl": "https://pbs.twimg.com/media/HS-T7zoWAAACjc7.jpg",
-    "hasPhoto": true,
-    "likes": 573,
-    "retweets": 64,
-    "replies": 32,
-    "engagement": 797,
-    "isRetweet": false,
-    "relevance": 20,
-    "rawScore": 21097,
-    "score": 6329
+    "rawScore": 10086,
+    "score": 4539
   }
 ]
