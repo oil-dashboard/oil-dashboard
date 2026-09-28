@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2104486507079971048",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 0,
+    "likes": 3,
     "retweets": 0,
     "replies": 0,
-    "engagement": 0,
+    "engagement": 3,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40000,
-    "score": 40000
+    "rawScore": 40003,
+    "score": 40003
   },
   {
     "id": "2104434962904834542",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2104434962904834542",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 36,
+    "likes": 43,
     "retweets": 3,
     "replies": 3,
-    "engagement": 51,
+    "engagement": 58,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20051,
-    "score": 20051
+    "rawScore": 20058,
+    "score": 17049
   },
   {
     "id": "2104159856869691864",
@@ -133,6 +133,25 @@
     "score": 3005
   },
   {
+    "id": "2104490593824952495",
+    "text": "COLUMN: Every major oil importer wants to run away from the Middle East: Watch out for Japan.\n\nThe oil market’s algebra, however, is unyieldingly zero-sum. Trouble is, who would like to boost its reliance on Middle Eastern oil? I draw a blank.\n\n@Opinion https://t.co/zsmgzLxNfQ",
+    "createdAt": "2026-09-28T08:37:11+00:00",
+    "tweetTime": 1790584631000,
+    "username": "JavierBlas",
+    "displayName": "Javier Blas",
+    "url": "https://x.com/JavierBlas/status/2104490593824952495",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 80,
+    "retweets": 17,
+    "replies": 6,
+    "engagement": 132,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10132,
+    "score": 10132
+  },
+  {
     "id": "2104463618926625097",
     "text": "BIG OIL STRATEGY: French oil and gas champion TotalEnergies commits to a 5% annual dividend increase  until 2030; it announces larger share buybacks in the short term. The company also lowered its net capex guidance (to $14-$17 billion annually, down from $15-$17 billion). https://t.co/0Zdd80ibVT",
     "createdAt": "2026-09-28T06:50:00+00:00",
@@ -142,14 +161,14 @@
     "url": "https://x.com/JavierBlas/status/2104463618926625097",
     "photoUrl": "https://pbs.twimg.com/media/HTSNZd0XkAAyzY2.jpg",
     "hasPhoto": true,
-    "likes": 184,
-    "retweets": 24,
-    "replies": 9,
-    "engagement": 259,
+    "likes": 308,
+    "retweets": 43,
+    "replies": 11,
+    "engagement": 427,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10559,
-    "score": 10559
+    "rawScore": 10727,
+    "score": 10727
   },
   {
     "id": "2104448265546805360",
@@ -161,14 +180,14 @@
     "url": "https://x.com/JavierBlas/status/2104448265546805360",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 127,
-    "retweets": 30,
+    "likes": 152,
+    "retweets": 33,
     "replies": 8,
-    "engagement": 211,
+    "engagement": 242,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10211,
-    "score": 10211
+    "rawScore": 10242,
+    "score": 10242
   },
   {
     "id": "2103957550152515592",
@@ -180,14 +199,14 @@
     "url": "https://x.com/JavierBlas/status/2103957550152515592",
     "photoUrl": "https://pbs.twimg.com/media/HTLCPZTXoAAhrQe.jpg",
     "hasPhoto": true,
-    "likes": 2438,
-    "retweets": 424,
+    "likes": 2442,
+    "retweets": 425,
     "replies": 112,
-    "engagement": 3622,
+    "engagement": 3628,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 13922,
-    "score": 4177
+    "rawScore": 13928,
+    "score": 4178
   },
   {
     "id": "2103866172613509294",
@@ -199,33 +218,14 @@
     "url": "https://x.com/JavierBlas/status/2103866172613509294",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 310,
+    "likes": 311,
     "retweets": 24,
     "replies": 19,
-    "engagement": 415,
+    "engagement": 416,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20415,
+    "rawScore": 20416,
     "score": 6125
-  },
-  {
-    "id": "2103840379741032757",
-    "text": "Strait of Hormuz flows are hovering at ~13-14 million barrels a day (7-day average). That's about the same as the brief peak in July. But with two notable difference: a) Iranian flows are zero (rather than ~2m b/d); b) all flows are fresh loadings, rather than pre-loaded tankers.",
-    "createdAt": "2026-09-26T13:33:28+00:00",
-    "tweetTime": 1790429608000,
-    "username": "JavierBlas",
-    "displayName": "Javier Blas",
-    "url": "https://x.com/JavierBlas/status/2103840379741032757",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 4219,
-    "retweets": 596,
-    "replies": 135,
-    "engagement": 5816,
-    "isRetweet": false,
-    "relevance": 38,
-    "rawScore": 43816,
-    "score": 13145
   },
   {
     "id": "2104482968358269209",
@@ -237,14 +237,14 @@
     "url": "https://x.com/HFI_Research/status/2104482968358269209",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 21,
-    "retweets": 1,
-    "replies": 0,
-    "engagement": 23,
+    "likes": 60,
+    "retweets": 4,
+    "replies": 1,
+    "engagement": 71,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10023,
-    "score": 10023
+    "rawScore": 10071,
+    "score": 10071
   },
   {
     "id": "2104376431950356907",
@@ -256,14 +256,14 @@
     "url": "https://x.com/HFI_Research/status/2104376431950356907",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 536,
-    "retweets": 35,
+    "likes": 549,
+    "retweets": 37,
     "replies": 8,
-    "engagement": 630,
+    "engagement": 647,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10630,
-    "score": 9036
+    "rawScore": 10647,
+    "score": 6921
   },
   {
     "id": "2104117623252463768",
@@ -304,6 +304,25 @@
     "score": 3149
   },
   {
+    "id": "2104489729861304803",
+    "text": "#Libya: Sharara oil field production over 300kbpd - NOC chairman #oott",
+    "createdAt": "2026-09-28T08:33:45+00:00",
+    "tweetTime": 1790584425000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2104489729861304803",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 5,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 5,
+    "isRetweet": false,
+    "relevance": 20,
+    "rawScore": 20005,
+    "score": 20005
+  },
+  {
     "id": "2104479270055670227",
     "text": "China’s industrial enterprises saw their earnings growth moderate for the fourth consecutive month in August, highlighting the limits of a recovery disproportionately driven by elevated oil costs and sectors linked to AI https://t.co/YB8M749aX2",
     "createdAt": "2026-09-28T07:52:11+00:00",
@@ -313,14 +332,14 @@
     "url": "https://x.com/staunovo/status/2104479270055670227",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 3,
+    "likes": 5,
     "retweets": 1,
     "replies": 1,
-    "engagement": 8,
+    "engagement": 10,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10008,
-    "score": 10008
+    "rawScore": 10010,
+    "score": 10010
   },
   {
     "id": "2104479209930338757",
@@ -332,14 +351,14 @@
     "url": "https://x.com/staunovo/status/2104479209930338757",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1,
+    "likes": 3,
     "retweets": 0,
     "replies": 0,
-    "engagement": 1,
+    "engagement": 3,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20001,
-    "score": 20001
+    "rawScore": 20003,
+    "score": 20003
   },
   {
     "id": "2104479135728898162",
@@ -351,14 +370,14 @@
     "url": "https://x.com/staunovo/status/2104479135728898162",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 2,
-    "retweets": 1,
+    "likes": 5,
+    "retweets": 2,
     "replies": 0,
-    "engagement": 4,
+    "engagement": 9,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10004,
-    "score": 10004
+    "rawScore": 10009,
+    "score": 10009
   },
   {
     "id": "2104479090333962691",
@@ -370,14 +389,14 @@
     "url": "https://x.com/staunovo/status/2104479090333962691",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 3,
-    "retweets": 0,
+    "likes": 5,
+    "retweets": 1,
     "replies": 0,
-    "engagement": 3,
+    "engagement": 7,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30003,
-    "score": 30003
+    "rawScore": 30007,
+    "score": 30007
   },
   {
     "id": "2104354380640051367",
@@ -389,14 +408,14 @@
     "url": "https://x.com/Rory_Johnston/status/2104354380640051367",
     "photoUrl": "https://pbs.twimg.com/media/HTQrKFgWkAAqMFf.jpg",
     "hasPhoto": true,
-    "likes": 137,
+    "likes": 140,
     "retweets": 7,
     "replies": 8,
-    "engagement": 175,
+    "engagement": 178,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10475,
-    "score": 6809
+    "rawScore": 10478,
+    "score": 6811
   },
   {
     "id": "2104350752256987563",
@@ -408,14 +427,14 @@
     "url": "https://x.com/Rory_Johnston/status/2104350752256987563",
     "photoUrl": "https://pbs.twimg.com/media/HTQn2unWIAA4Jo5.jpg",
     "hasPhoto": true,
-    "likes": 199,
+    "likes": 206,
     "retweets": 20,
     "replies": 15,
-    "engagement": 284,
+    "engagement": 291,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10584,
-    "score": 6880
+    "rawScore": 10591,
+    "score": 6884
   },
   {
     "id": "2104265242440241339",
@@ -427,14 +446,14 @@
     "url": "https://x.com/Rory_Johnston/status/2104265242440241339",
     "photoUrl": "https://pbs.twimg.com/media/HTPaFOMX0AAw2Q1.jpg",
     "hasPhoto": true,
-    "likes": 176,
+    "likes": 177,
     "retweets": 0,
-    "replies": 13,
-    "engagement": 215,
+    "replies": 14,
+    "engagement": 219,
     "isRetweet": false,
     "relevance": 8,
-    "rawScore": 8515,
-    "score": 3832
+    "rawScore": 8519,
+    "score": 3834
   },
   {
     "id": "2104248691335078222",
@@ -446,14 +465,14 @@
     "url": "https://x.com/Rory_Johnston/status/2104248691335078222",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 147,
+    "likes": 148,
     "retweets": 8,
     "replies": 8,
-    "engagement": 187,
+    "engagement": 188,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10187,
-    "score": 4584
+    "rawScore": 10188,
+    "score": 4585
   },
   {
     "id": "2104248277327569201",
@@ -465,14 +484,14 @@
     "url": "https://x.com/Rory_Johnston/status/2104248277327569201",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 454,
-    "retweets": 17,
+    "likes": 458,
+    "retweets": 18,
     "replies": 19,
-    "engagement": 545,
+    "engagement": 551,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10545,
-    "score": 4745
+    "rawScore": 10551,
+    "score": 4748
   },
   {
     "id": "2104228598244855918",
@@ -484,14 +503,14 @@
     "url": "https://x.com/Rory_Johnston/status/2104228598244855918",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 312,
+    "likes": 317,
     "retweets": 31,
     "replies": 30,
-    "engagement": 464,
+    "engagement": 469,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20464,
-    "score": 9209
+    "rawScore": 20469,
+    "score": 6141
   },
   {
     "id": "2104400600376950839",
@@ -675,13 +694,13 @@
     "photoUrl": null,
     "hasPhoto": false,
     "likes": 13,
-    "retweets": 2,
+    "retweets": 3,
     "replies": 1,
-    "engagement": 20,
+    "engagement": 22,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10020,
-    "score": 8517
+    "rawScore": 10022,
+    "score": 8519
   },
   {
     "id": "2104345214253142025",
@@ -731,13 +750,13 @@
     "url": "https://x.com/OilHeadlineNews/status/2104278327897063899",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 40,
+    "likes": 41,
     "retweets": 5,
     "replies": 1,
-    "engagement": 53,
+    "engagement": 54,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10053,
+    "rawScore": 10054,
     "score": 4524
   },
   {
@@ -750,14 +769,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2104468398293893546",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 13,
-    "retweets": 2,
+    "likes": 15,
+    "retweets": 3,
     "replies": 3,
-    "engagement": 26,
+    "engagement": 30,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30026,
-    "score": 30026
+    "rawScore": 30030,
+    "score": 30030
   },
   {
     "id": "2104457385444008116",
@@ -769,14 +788,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2104457385444008116",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 52,
+    "likes": 57,
     "retweets": 5,
     "replies": 3,
-    "engagement": 71,
+    "engagement": 76,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38071,
-    "score": 38071
+    "rawScore": 38076,
+    "score": 38076
   },
   {
     "id": "2104158529955205419",
@@ -826,14 +845,14 @@
     "url": "https://x.com/TankerTrackers/status/2104325400310554703",
     "photoUrl": "https://pbs.twimg.com/media/HTQQWfxXAAAKo0A.jpg",
     "hasPhoto": true,
-    "likes": 121,
+    "likes": 124,
     "retweets": 6,
     "replies": 15,
-    "engagement": 178,
+    "engagement": 181,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10478,
-    "score": 6811
+    "rawScore": 10481,
+    "score": 6813
   },
   {
     "id": "2104287402374176885",
@@ -845,13 +864,13 @@
     "url": "https://x.com/TankerTrackers/status/2104287402374176885",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 682,
-    "retweets": 76,
+    "likes": 692,
+    "retweets": 77,
     "replies": 41,
-    "engagement": 957,
+    "engagement": 969,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20957,
-    "score": 9431
+    "rawScore": 20969,
+    "score": 9436
   }
 ]
