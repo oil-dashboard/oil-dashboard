@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2105534034650804403",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 43,
-    "retweets": 6,
-    "replies": 4,
-    "engagement": 67,
+    "likes": 71,
+    "retweets": 15,
+    "replies": 5,
+    "engagement": 116,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38067,
-    "score": 38067
+    "rawScore": 38116,
+    "score": 38116
   },
   {
     "id": "2105298533410803901",
@@ -28,33 +28,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2105298533410803901",
     "photoUrl": "https://pbs.twimg.com/media/HTeE8wbbEAAq8Mi.jpg",
     "hasPhoto": true,
-    "likes": 65,
-    "retweets": 10,
+    "likes": 66,
+    "retweets": 11,
     "replies": 7,
-    "engagement": 106,
+    "engagement": 109,
     "isRetweet": false,
     "relevance": 44,
-    "rawScore": 44406,
-    "score": 19983
-  },
-  {
-    "id": "2105203452506931614",
-    "text": "Back on @AsharqBusiness to share my views on the oil markets. Tensions come off, oil prices fall.... right?\n\nNot necessarily because oil is not just crude.\n\nThe freight to deliver crude into the refining hubs are astronomical. \n\nThe refining kit itself remains constrained with Russia and some Middle Eastern refineries out. \n\nThat means refined oil product prices remain elevated.\n\n#oott\n\nhttps://t.co/28Msrre86e",
-    "createdAt": "2026-09-30T07:49:50+00:00",
-    "tweetTime": 1790754590000,
-    "username": "JuneGoh_Sparta",
-    "displayName": "June Goh",
-    "url": "https://x.com/JuneGoh_Sparta/status/2105203452506931614",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 20,
-    "retweets": 2,
-    "replies": 1,
-    "engagement": 27,
-    "isRetweet": false,
-    "relevance": 30,
-    "rawScore": 30027,
-    "score": 9008
+    "rawScore": 44409,
+    "score": 19984
   },
   {
     "id": "2105381602733772977",
@@ -66,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2105381602733772977",
     "photoUrl": "https://pbs.twimg.com/media/HTfRH6lWcAA2MMb.png",
     "hasPhoto": true,
-    "likes": 550,
-    "retweets": 167,
+    "likes": 570,
+    "retweets": 172,
     "replies": 20,
-    "engagement": 944,
+    "engagement": 974,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 21244,
-    "score": 13809
+    "rawScore": 21274,
+    "score": 9573
   },
   {
     "id": "2105359186968318123",
@@ -85,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2105359186968318123",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 88,
+    "likes": 92,
     "retweets": 6,
     "replies": 6,
-    "engagement": 118,
+    "engagement": 122,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10118,
-    "score": 4553
+    "rawScore": 10122,
+    "score": 4555
   },
   {
     "id": "2105316250951864381",
@@ -104,14 +85,14 @@
     "url": "https://x.com/JavierBlas/status/2105316250951864381",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 937,
-    "retweets": 128,
+    "likes": 947,
+    "retweets": 129,
     "replies": 50,
-    "engagement": 1343,
+    "engagement": 1355,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 21343,
-    "score": 9604
+    "rawScore": 21355,
+    "score": 9610
   },
   {
     "id": "2105308500339351915",
@@ -142,14 +123,14 @@
     "url": "https://x.com/JavierBlas/status/2105260865851212131",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 419,
+    "likes": 424,
     "retweets": 54,
     "replies": 38,
-    "engagement": 641,
+    "engagement": 646,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38641,
-    "score": 11592
+    "rawScore": 38646,
+    "score": 11594
   },
   {
     "id": "2105215345095016715",
@@ -161,33 +142,14 @@
     "url": "https://x.com/JavierBlas/status/2105215345095016715",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1070,
-    "retweets": 167,
+    "likes": 1083,
+    "retweets": 170,
     "replies": 275,
-    "engagement": 2229,
+    "engagement": 2248,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 22229,
-    "score": 6669
-  },
-  {
-    "id": "2105204918265192932",
-    "text": "BREAKING: Russia extends its diesel export ban until the end of Oct. While the measure was largely expected, it would further tighten the global diesel market.",
-    "createdAt": "2026-09-30T07:55:39+00:00",
-    "tweetTime": 1790754939000,
-    "username": "JavierBlas",
-    "displayName": "Javier Blas",
-    "url": "https://x.com/JavierBlas/status/2105204918265192932",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 388,
-    "retweets": 78,
-    "replies": 12,
-    "engagement": 580,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10580,
-    "score": 3174
+    "rawScore": 22248,
+    "score": 6674
   },
   {
     "id": "2105233526421442764",
@@ -218,14 +180,14 @@
     "url": "https://x.com/HFI_Research/status/2105549649767698639",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 9,
-    "retweets": 1,
+    "likes": 63,
+    "retweets": 5,
     "replies": 0,
-    "engagement": 11,
+    "engagement": 73,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10011,
-    "score": 10011
+    "rawScore": 10073,
+    "score": 10073
   },
   {
     "id": "2105549326399516779",
@@ -237,14 +199,14 @@
     "url": "https://x.com/HFI_Research/status/2105549326399516779",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 14,
-    "retweets": 4,
+    "likes": 89,
+    "retweets": 10,
     "replies": 0,
-    "engagement": 22,
+    "engagement": 109,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38022,
-    "score": 38022
+    "rawScore": 38109,
+    "score": 38109
   },
   {
     "id": "2105511334096110057",
@@ -256,14 +218,14 @@
     "url": "https://x.com/HFI_Research/status/2105511334096110057",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 261,
-    "retweets": 23,
-    "replies": 9,
-    "engagement": 334,
+    "likes": 302,
+    "retweets": 27,
+    "replies": 11,
+    "engagement": 389,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10334,
-    "score": 10334
+    "rawScore": 10389,
+    "score": 10389
   },
   {
     "id": "2105492738603180099",
@@ -275,14 +237,14 @@
     "url": "https://x.com/HFI_Research/status/2105492738603180099",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 148,
-    "retweets": 7,
+    "likes": 156,
+    "retweets": 10,
     "replies": 0,
-    "engagement": 162,
+    "engagement": 176,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30162,
-    "score": 30162
+    "rawScore": 30176,
+    "score": 25650
   },
   {
     "id": "2105487412680106171",
@@ -294,14 +256,14 @@
     "url": "https://x.com/HFI_Research/status/2105487412680106171",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 106,
+    "likes": 110,
     "retweets": 9,
     "replies": 2,
-    "engagement": 130,
+    "engagement": 134,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18130,
-    "score": 15411
+    "rawScore": 18134,
+    "score": 15414
   },
   {
     "id": "2105548166258995532",
@@ -313,14 +275,14 @@
     "url": "https://x.com/staunovo/status/2105548166258995532",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 7,
-    "retweets": 0,
-    "replies": 1,
-    "engagement": 10,
+    "likes": 29,
+    "retweets": 7,
+    "replies": 2,
+    "engagement": 49,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48010,
-    "score": 48010
+    "rawScore": 48049,
+    "score": 48049
   },
   {
     "id": "2105533161098625186",
@@ -332,14 +294,14 @@
     "url": "https://x.com/staunovo/status/2105533161098625186",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1,
+    "likes": 5,
     "retweets": 0,
     "replies": 4,
-    "engagement": 13,
+    "engagement": 17,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40013,
-    "score": 40013
+    "rawScore": 40017,
+    "score": 40017
   },
   {
     "id": "2105532679840047543",
@@ -351,14 +313,14 @@
     "url": "https://x.com/staunovo/status/2105532679840047543",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 3,
-    "retweets": 0,
+    "likes": 8,
+    "retweets": 1,
     "replies": 0,
-    "engagement": 3,
+    "engagement": 10,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 58003,
-    "score": 58003
+    "rawScore": 58010,
+    "score": 58010
   },
   {
     "id": "2105427678396612730",
@@ -408,14 +370,14 @@
     "url": "https://x.com/Rory_Johnston/status/2105420938045190530",
     "photoUrl": "https://pbs.twimg.com/media/HTf1LsUXYAAjamI.jpg",
     "hasPhoto": true,
-    "likes": 57,
-    "retweets": 6,
+    "likes": 59,
+    "retweets": 7,
     "replies": 13,
-    "engagement": 108,
+    "engagement": 112,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10408,
-    "score": 6765
+    "rawScore": 10412,
+    "score": 6768
   },
   {
     "id": "2105316989086658654",
@@ -429,12 +391,12 @@
     "hasPhoto": false,
     "likes": 205,
     "retweets": 21,
-    "replies": 15,
-    "engagement": 292,
+    "replies": 16,
+    "engagement": 295,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28292,
-    "score": 12731
+    "rawScore": 28295,
+    "score": 12733
   },
   {
     "id": "2105315072306274520",
@@ -446,13 +408,13 @@
     "url": "https://x.com/Rory_Johnston/status/2105315072306274520",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 171,
+    "likes": 172,
     "retweets": 6,
     "replies": 13,
-    "engagement": 222,
+    "engagement": 223,
     "isRetweet": false,
     "relevance": 8,
-    "rawScore": 8222,
+    "rawScore": 8223,
     "score": 3700
   },
   {
@@ -472,7 +434,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20142,
-    "score": 9064
+    "score": 6043
   },
   {
     "id": "2105292903144722450",
@@ -484,14 +446,14 @@
     "url": "https://x.com/Rory_Johnston/status/2105292903144722450",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1093,
+    "likes": 1103,
     "retweets": 95,
     "replies": 33,
-    "engagement": 1382,
+    "engagement": 1392,
     "isRetweet": false,
     "relevance": 46,
-    "rawScore": 47382,
-    "score": 21322
+    "rawScore": 47392,
+    "score": 14218
   },
   {
     "id": "2105291446706373026",
@@ -503,14 +465,14 @@
     "url": "https://x.com/Rory_Johnston/status/2105291446706373026",
     "photoUrl": "https://pbs.twimg.com/media/HTd_TvKXoAA62Ff.png",
     "hasPhoto": true,
-    "likes": 1845,
-    "retweets": 402,
+    "likes": 1856,
+    "retweets": 407,
     "replies": 40,
-    "engagement": 2769,
+    "engagement": 2790,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 13069,
-    "score": 5881
+    "rawScore": 13090,
+    "score": 3927
   },
   {
     "id": "2105370432274862570",
@@ -529,7 +491,7 @@
     "isRetweet": false,
     "relevance": 30,
     "rawScore": 30002,
-    "score": 19501
+    "score": 13501
   },
   {
     "id": "2105272606421041464",
@@ -617,14 +579,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2105419959405105214",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 10,
+    "likes": 12,
     "retweets": 2,
     "replies": 2,
-    "engagement": 20,
+    "engagement": 22,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10020,
-    "score": 6513
+    "rawScore": 10022,
+    "score": 6514
   },
   {
     "id": "2105412584967156041",
@@ -646,23 +608,23 @@
     "score": 6501
   },
   {
-    "id": "2105550874873414104",
-    "text": "September produced a striking divergence between gold and investment demand. Gold fell as US Treasury yields surged, yet gold ETF holdings rose for a second consecutive month. The continued inflows suggest investors were looking beyond the immediate headwind from higher real yields and instead focusing on what those higher borrowing costs may ultimately mean for fiscal sustainability and already elevated government debt levels. It raises an interesting question: what happens to gold once yields stabilise and the inflationary impulse from higher energy prices begins to fade? If investment demand has remained resilient during such a hostile rates environment, an easing of that pressure could provide a powerful tailwind. \nChart source: Bloomberg",
-    "createdAt": "2026-10-01T06:50:22+00:00",
-    "tweetTime": 1790837422000,
+    "id": "2105551864766812498",
+    "text": "September produced a striking divergence between #gold and investment demand. Gold fell as US Treasury #yields surged, yet gold ETF holdings rose for a second consecutive month. The continued inflows suggest investors were looking beyond the immediate headwind from higher real yields and instead focusing on what those higher borrowing costs may ultimately mean for fiscal sustainability and already elevated government debt levels. It raises an interesting question: what happens to gold once yields stabilise and the inflationary impulse from higher energy prices begins to fade? If investment demand has remained resilient during such a hostile rates environment, an easing of that pressure could provide a powerful tailwind. \nChart source: Bloomberg",
+    "createdAt": "2026-10-01T06:54:18+00:00",
+    "tweetTime": 1790837658000,
     "username": "Ole_S_Hansen",
     "displayName": "Ole S Hansen",
-    "url": "https://x.com/Ole_S_Hansen/status/2105550874873414104",
+    "url": "https://x.com/Ole_S_Hansen/status/2105551864766812498",
     "photoUrl": "https://pbs.twimg.com/media/HThqGtMXMAAujHj.jpg",
     "hasPhoto": true,
-    "likes": 5,
-    "retweets": 0,
-    "replies": 0,
-    "engagement": 5,
+    "likes": 40,
+    "retweets": 16,
+    "replies": 4,
+    "engagement": 84,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10305,
-    "score": 10305
+    "rawScore": 10384,
+    "score": 10384
   },
   {
     "id": "2105326358687617460",
@@ -674,13 +636,13 @@
     "url": "https://x.com/TankerTrackers/status/2105326358687617460",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 536,
-    "retweets": 82,
+    "likes": 539,
+    "retweets": 83,
     "replies": 33,
-    "engagement": 799,
+    "engagement": 804,
     "isRetweet": false,
     "relevance": 68,
-    "rawScore": 68799,
-    "score": 30960
+    "rawScore": 68804,
+    "score": 30962
   }
 ]
