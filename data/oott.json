@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2107339513639117185",
     "photoUrl": "https://pbs.twimg.com/media/HT7FPF5aYAAk2OY.jpg",
     "hasPhoto": true,
-    "likes": 25,
-    "retweets": 6,
+    "likes": 32,
+    "retweets": 7,
     "replies": 4,
-    "engagement": 49,
+    "engagement": 58,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30349,
-    "score": 30349
+    "rawScore": 30358,
+    "score": 30358
   },
   {
     "id": "2107339516545786021",
@@ -54,7 +54,7 @@
     "isRetweet": false,
     "relevance": 40,
     "rawScore": 40322,
-    "score": 34274
+    "score": 26209
   },
   {
     "id": "2107116922768883724",
@@ -73,7 +73,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20022,
-    "score": 9010
+    "score": 6007
   },
   {
     "id": "2107106663094419611",
@@ -114,6 +114,25 @@
     "score": 8419
   },
   {
+    "id": "2107392811192799678",
+    "text": "Shell CEO Wael Sawan on the new conversation around energy: \n\n“I think there's a recognition once again that you cannot have national security without energy security. You cannot have an industrial or an economic strategy that is not underpinned with a solid energy strategy.”",
+    "createdAt": "2026-10-06T08:49:34+00:00",
+    "tweetTime": 1791276574000,
+    "username": "JavierBlas",
+    "displayName": "Javier Blas",
+    "url": "https://x.com/JavierBlas/status/2107392811192799678",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 22,
+    "retweets": 5,
+    "replies": 0,
+    "engagement": 32,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10032,
+    "score": 10032
+  },
+  {
     "id": "2107341969391300718",
     "text": "White House widens access to tax-exempted diesel, which normally is restricted to non-road uses like farming (dyed diesel), in a bid to reduce fuel coast ahead of the U.S. midterm elections. The new rule allows dyed diesel use on highways until year-end. https://t.co/FzwpHp2HhS",
     "createdAt": "2026-10-06T05:27:32+00:00",
@@ -123,14 +142,14 @@
     "url": "https://x.com/JavierBlas/status/2107341969391300718",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 42,
-    "retweets": 3,
+    "likes": 58,
+    "retweets": 6,
     "replies": 7,
-    "engagement": 69,
+    "engagement": 91,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10069,
-    "score": 10069
+    "rawScore": 10091,
+    "score": 10091
   },
   {
     "id": "2107137350358695972",
@@ -142,14 +161,14 @@
     "url": "https://x.com/JavierBlas/status/2107137350358695972",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 392,
-    "retweets": 33,
+    "likes": 403,
+    "retweets": 34,
     "replies": 14,
-    "engagement": 500,
+    "engagement": 513,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28500,
-    "score": 12825
+    "rawScore": 28513,
+    "score": 12831
   },
   {
     "id": "2107094671352828000",
@@ -161,14 +180,14 @@
     "url": "https://x.com/JavierBlas/status/2107094671352828000",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 203,
-    "retweets": 42,
+    "likes": 204,
+    "retweets": 43,
     "replies": 21,
-    "engagement": 350,
+    "engagement": 353,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20350,
-    "score": 6105
+    "rawScore": 20353,
+    "score": 6106
   },
   {
     "id": "2107091129095098489",
@@ -180,14 +199,14 @@
     "url": "https://x.com/JavierBlas/status/2107091129095098489",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 251,
-    "retweets": 35,
+    "likes": 257,
+    "retweets": 36,
     "replies": 10,
-    "engagement": 351,
+    "engagement": 359,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10351,
-    "score": 3105
+    "rawScore": 10359,
+    "score": 3108
   },
   {
     "id": "2107113579531194424",
@@ -199,14 +218,14 @@
     "url": "https://x.com/JKempEnergy/status/2107113579531194424",
     "photoUrl": "https://pbs.twimg.com/media/HT33XihW4AAJG7t.jpg",
     "hasPhoto": true,
-    "likes": 63,
-    "retweets": 22,
+    "likes": 65,
+    "retweets": 23,
     "replies": 8,
-    "engagement": 131,
+    "engagement": 135,
     "isRetweet": false,
     "relevance": 76,
-    "rawScore": 76431,
-    "score": 34394
+    "rawScore": 76435,
+    "score": 22931
   },
   {
     "id": "2107051715828572482",
@@ -218,14 +237,14 @@
     "url": "https://x.com/JKempEnergy/status/2107051715828572482",
     "photoUrl": "https://pbs.twimg.com/media/HT3AWQyXcAA_lVn.jpg",
     "hasPhoto": true,
-    "likes": 110,
-    "retweets": 50,
+    "likes": 116,
+    "retweets": 52,
     "replies": 8,
-    "engagement": 234,
+    "engagement": 244,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28534,
-    "score": 8560
+    "rawScore": 28544,
+    "score": 8563
   },
   {
     "id": "2107332561693250026",
@@ -237,23 +256,42 @@
     "url": "https://x.com/HFI_Research/status/2107332561693250026",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 125,
-    "retweets": 15,
+    "likes": 142,
+    "retweets": 16,
     "replies": 3,
-    "engagement": 164,
+    "engagement": 183,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30164,
-    "score": 30164
+    "rawScore": 30183,
+    "score": 25656
   },
   {
-    "id": "2107344952673935639",
-    "text": "The US blockade of Iran is keeping dozens of laden tankers bottled up along the nation’s coast, while others outside the Persian Gulf are holding off Sri Lanka, according to United Against Nuclear Iran.\n\nAt least 50 tankers carrying Iranian oil remain backed up near the country, broadly unchanged from two months ago, the nonprofit group said in a regular shipping update on Oct. 5. The vessels are mostly carrying crude, as well as petroleum products and liquefied petroleum gas, it said.\n\nElsewhere, empty vessels are “loitering at anchorages across the Indo-Pacific rather than transiting back to Iranian ports because of the US blockade,” according to UANI, which describes itself a non-partisan policy organization. Twenty Iran-flagged vessels are off Sri Lanka, while one is off Oman. #oott https://t.co/LpVkc7YYfq",
-    "createdAt": "2026-10-06T05:39:23+00:00",
-    "tweetTime": 1791265163000,
+    "id": "2107395073306411404",
+    "text": "Limit to how much oil's shock absorbers can take - CEO Shell #oott",
+    "createdAt": "2026-10-06T08:58:33+00:00",
+    "tweetTime": 1791277113000,
     "username": "staunovo",
     "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2107344952673935639",
+    "url": "https://x.com/staunovo/status/2107395073306411404",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 1,
+    "isRetweet": false,
+    "relevance": 20,
+    "rawScore": 20001,
+    "score": 20001
+  },
+  {
+    "id": "2107389138546606215",
+    "text": "Drilling more wells with fewer rigs than ever - Chevron CEO #oott",
+    "createdAt": "2026-10-06T08:34:58+00:00",
+    "tweetTime": 1791275698000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2107389138546606215",
     "photoUrl": null,
     "hasPhoto": false,
     "likes": 2,
@@ -261,9 +299,47 @@
     "replies": 0,
     "engagement": 2,
     "isRetweet": false,
-    "relevance": 58,
-    "rawScore": 58002,
-    "score": 58002
+    "relevance": 10,
+    "rawScore": 10002,
+    "score": 10002
+  },
+  {
+    "id": "2107387270256898505",
+    "text": "US diesel ban would send bad signal to allies - Chevron CEO #OOTT",
+    "createdAt": "2026-10-06T08:27:33+00:00",
+    "tweetTime": 1791275253000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2107387270256898505",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 5,
+    "retweets": 1,
+    "replies": 0,
+    "engagement": 7,
+    "isRetweet": false,
+    "relevance": 20,
+    "rawScore": 20007,
+    "score": 20007
+  },
+  {
+    "id": "2107385163139211307",
+    "text": "Oil and gas demand will continue to grow post Iran war - Chevron CEO #OOTT",
+    "createdAt": "2026-10-06T08:19:10+00:00",
+    "tweetTime": 1791274750000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2107385163139211307",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 6,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 6,
+    "isRetweet": false,
+    "relevance": 20,
+    "rawScore": 20006,
+    "score": 20006
   },
   {
     "id": "2107126366022128122",
@@ -275,14 +351,14 @@
     "url": "https://x.com/Rory_Johnston/status/2107126366022128122",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 388,
+    "likes": 390,
     "retweets": 15,
     "replies": 19,
-    "engagement": 475,
+    "engagement": 477,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10475,
-    "score": 4714
+    "rawScore": 10477,
+    "score": 4715
   },
   {
     "id": "2107174107557372190",
@@ -339,7 +415,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20001,
-    "score": 13001
+    "score": 9000
   },
   {
     "id": "2107293871067525249",
@@ -377,7 +453,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10008,
-    "score": 8507
+    "score": 6505
   },
   {
     "id": "2107361043940769965",
@@ -389,14 +465,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2107361043940769965",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 10,
-    "retweets": 0,
-    "replies": 3,
-    "engagement": 19,
+    "likes": 21,
+    "retweets": 3,
+    "replies": 5,
+    "engagement": 42,
     "isRetweet": false,
     "relevance": 56,
-    "rawScore": 56019,
-    "score": 56019
+    "rawScore": 56042,
+    "score": 56042
   },
   {
     "id": "2107279126222475303",
@@ -408,14 +484,14 @@
     "url": "https://x.com/TankerTrackers/status/2107279126222475303",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 233,
-    "retweets": 26,
+    "likes": 244,
+    "retweets": 27,
     "replies": 12,
-    "engagement": 321,
+    "engagement": 334,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28321,
-    "score": 24073
+    "rawScore": 28334,
+    "score": 24084
   },
   {
     "id": "2107231235567431859",
@@ -427,14 +503,14 @@
     "url": "https://x.com/TankerTrackers/status/2107231235567431859",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 407,
+    "likes": 424,
     "retweets": 26,
-    "replies": 26,
-    "engagement": 537,
+    "replies": 28,
+    "engagement": 560,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28537,
-    "score": 18549
+    "rawScore": 28560,
+    "score": 18564
   },
   {
     "id": "2107044347392733346",
@@ -446,13 +522,13 @@
     "url": "https://x.com/TankerTrackers/status/2107044347392733346",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 277,
+    "likes": 278,
     "retweets": 33,
-    "replies": 37,
-    "engagement": 454,
+    "replies": 39,
+    "engagement": 461,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30454,
-    "score": 9136
+    "rawScore": 30461,
+    "score": 9138
   }
 ]
