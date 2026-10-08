@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2107803731396079703",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 40,
+    "likes": 42,
     "retweets": 3,
     "replies": 2,
-    "engagement": 52,
+    "engagement": 54,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10052,
-    "score": 4523
+    "rawScore": 10054,
+    "score": 4524
   },
   {
     "id": "2107682044881113292",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2107874680308707730",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 274,
+    "likes": 276,
     "retweets": 49,
     "replies": 35,
-    "engagement": 477,
+    "engagement": 479,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38477,
-    "score": 25010
+    "rawScore": 38479,
+    "score": 25011
   },
   {
     "id": "2107864999372734759",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2107864999372734759",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 131,
+    "likes": 135,
     "retweets": 14,
     "replies": 7,
-    "engagement": 180,
+    "engagement": 184,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38180,
-    "score": 24817
+    "rawScore": 38184,
+    "score": 24820
   },
   {
     "id": "2107788412900037104",
@@ -85,14 +85,14 @@
     "url": "https://x.com/JavierBlas/status/2107788412900037104",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 621,
-    "retweets": 122,
+    "likes": 627,
+    "retweets": 123,
     "replies": 30,
-    "engagement": 955,
+    "engagement": 963,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10955,
-    "score": 4930
+    "rawScore": 10963,
+    "score": 4933
   },
   {
     "id": "2107717907702771738",
@@ -114,6 +114,25 @@
     "score": 6121
   },
   {
+    "id": "2108032715794825601",
+    "text": "It's Here\n\nThe inevitable escalation is here and what happens to the oil market when the shuttle trade falters.\n\nhttps://t.co/WmUs5vLULy",
+    "createdAt": "2026-10-08T03:12:19+00:00",
+    "tweetTime": 1791429139000,
+    "username": "HFI_Research",
+    "displayName": "HFI Research",
+    "url": "https://x.com/HFI_Research/status/2108032715794825601",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 69,
+    "retweets": 8,
+    "replies": 1,
+    "engagement": 88,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10088,
+    "score": 10088
+  },
+  {
     "id": "2108011966212309382",
     "text": "I know this might be hard to believe, but total implied US oil demand on a 4-week average is at a 5-year high for this time of the year.\n\nWe are going to need prices to go a lot higher to kill demand. https://t.co/iVUwqxWh14",
     "createdAt": "2026-10-08T01:49:52+00:00",
@@ -123,14 +142,14 @@
     "url": "https://x.com/HFI_Research/status/2108011966212309382",
     "photoUrl": "https://pbs.twimg.com/media/HUEpsr2a0AElQLW.jpg",
     "hasPhoto": true,
-    "likes": 101,
-    "retweets": 18,
-    "replies": 5,
-    "engagement": 152,
+    "likes": 143,
+    "retweets": 26,
+    "replies": 6,
+    "engagement": 213,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10452,
-    "score": 10452
+    "rawScore": 10513,
+    "score": 10513
   },
   {
     "id": "2108012108395016645",
@@ -142,14 +161,14 @@
     "url": "https://x.com/HFI_Research/status/2108012108395016645",
     "photoUrl": "https://pbs.twimg.com/media/HUEpzOsasAAFoJw.jpg",
     "hasPhoto": true,
-    "likes": 5,
+    "likes": 7,
     "retweets": 0,
     "replies": 0,
-    "engagement": 5,
+    "engagement": 7,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10305,
-    "score": 10305
+    "rawScore": 10307,
+    "score": 10307
   },
   {
     "id": "2108000287747387393",
@@ -161,33 +180,14 @@
     "url": "https://x.com/HFI_Research/status/2108000287747387393",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 127,
-    "retweets": 14,
+    "likes": 152,
+    "retweets": 16,
     "replies": 2,
-    "engagement": 161,
+    "engagement": 190,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18161,
-    "score": 18161
-  },
-  {
-    "id": "2107979226859409505",
-    "text": "Here we go again:\n\nPower plants and energy infrastructure attacks on Iran. \n\nExcept this time, the markets aren’t that gullible.",
-    "createdAt": "2026-10-07T23:39:46+00:00",
-    "tweetTime": 1791416386000,
-    "username": "HFI_Research",
-    "displayName": "HFI Research",
-    "url": "https://x.com/HFI_Research/status/2107979226859409505",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 229,
-    "retweets": 14,
-    "replies": 4,
-    "engagement": 269,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10269,
-    "score": 10269
+    "rawScore": 18190,
+    "score": 18190
   },
   {
     "id": "2107924092162621598",
@@ -237,14 +237,14 @@
     "url": "https://x.com/staunovo/status/2107920570461364647",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 8,
+    "likes": 9,
     "retweets": 7,
     "replies": 0,
-    "engagement": 22,
+    "engagement": 23,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30022,
-    "score": 25519
+    "rawScore": 30023,
+    "score": 19515
   },
   {
     "id": "2107920320065597601",
@@ -263,7 +263,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10009,
-    "score": 8508
+    "score": 6506
   },
   {
     "id": "2107919779021586617",
@@ -282,7 +282,7 @@
     "isRetweet": false,
     "relevance": 18,
     "rawScore": 18045,
-    "score": 15338
+    "score": 11729
   },
   {
     "id": "2107914386127913297",
@@ -294,14 +294,14 @@
     "url": "https://x.com/staunovo/status/2107914386127913297",
     "photoUrl": "https://pbs.twimg.com/media/HUDQ9cZWsAA8C_M.png",
     "hasPhoto": true,
-    "likes": 26,
+    "likes": 27,
     "retweets": 5,
     "replies": 3,
-    "engagement": 45,
+    "engagement": 46,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20345,
-    "score": 17293
+    "rawScore": 20346,
+    "score": 13225
   },
   {
     "id": "2107923823450259642",
@@ -313,14 +313,14 @@
     "url": "https://x.com/Rory_Johnston/status/2107923823450259642",
     "photoUrl": "https://pbs.twimg.com/media/HUDZirmXgAATEKn.jpg",
     "hasPhoto": true,
-    "likes": 124,
-    "retweets": 19,
+    "likes": 132,
+    "retweets": 21,
     "replies": 15,
-    "engagement": 207,
+    "engagement": 219,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10507,
-    "score": 8931
+    "rawScore": 10519,
+    "score": 8941
   },
   {
     "id": "2107917688664146046",
@@ -332,14 +332,14 @@
     "url": "https://x.com/Rory_Johnston/status/2107917688664146046",
     "photoUrl": "https://pbs.twimg.com/media/HUDT9oEWkAAiwDe.jpg",
     "hasPhoto": true,
-    "likes": 158,
-    "retweets": 3,
+    "likes": 163,
+    "retweets": 4,
     "replies": 21,
-    "engagement": 227,
+    "engagement": 234,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10527,
-    "score": 8948
+    "rawScore": 10534,
+    "score": 6847
   },
   {
     "id": "2107889341817028833",
@@ -351,33 +351,14 @@
     "url": "https://x.com/Rory_Johnston/status/2107889341817028833",
     "photoUrl": "https://pbs.twimg.com/media/HUC6Lp2XgAA5KPh.jpg",
     "hasPhoto": true,
-    "likes": 116,
-    "retweets": 16,
+    "likes": 118,
+    "retweets": 17,
     "replies": 31,
-    "engagement": 241,
+    "engagement": 245,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 58541,
-    "score": 38052
-  },
-  {
-    "id": "2107928766634668228",
-    "text": "Tanker hit in the Persian Gulf https://t.co/IJyFNO7Sqv",
-    "createdAt": "2026-10-07T20:19:16+00:00",
-    "tweetTime": 1791404356000,
-    "username": "OilHeadlineNews",
-    "displayName": "Energy Headline News",
-    "url": "https://x.com/OilHeadlineNews/status/2107928766634668228",
-    "photoUrl": "https://pbs.twimg.com/media/HUDeCrHWwAA3Cqd.jpg",
-    "hasPhoto": true,
-    "likes": 21,
-    "retweets": 2,
-    "replies": 0,
-    "engagement": 25,
-    "isRetweet": false,
-    "relevance": 18,
-    "rawScore": 18325,
-    "score": 15576
+    "rawScore": 58545,
+    "score": 38054
   },
   {
     "id": "2107765999256699357",
@@ -396,7 +377,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20038,
-    "score": 9017
+    "score": 6011
   },
   {
     "id": "2107713434405986648",
@@ -427,13 +408,13 @@
     "url": "https://x.com/TankerTrackers/status/2107812250362798085",
     "photoUrl": "https://pbs.twimg.com/media/HUBywLkXkAA8GL-.jpg",
     "hasPhoto": true,
-    "likes": 272,
+    "likes": 277,
     "retweets": 46,
     "replies": 32,
-    "engagement": 460,
+    "engagement": 465,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48760,
-    "score": 21942
+    "rawScore": 48765,
+    "score": 21944
   }
 ]
