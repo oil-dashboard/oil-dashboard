@@ -9,13 +9,13 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2108172347228492090",
     "photoUrl": "https://pbs.twimg.com/media/HUG7Dw0bUAA-f-I.jpg",
     "hasPhoto": true,
-    "likes": 16,
+    "likes": 17,
     "retweets": 4,
     "replies": 3,
-    "engagement": 33,
+    "engagement": 34,
     "isRetweet": false,
     "relevance": 46,
-    "rawScore": 46333,
+    "rawScore": 46334,
     "score": 20850
   },
   {
@@ -47,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2108248389179646342",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 156,
-    "retweets": 51,
+    "likes": 163,
+    "retweets": 52,
     "replies": 8,
-    "engagement": 282,
+    "engagement": 291,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28282,
-    "score": 18383
+    "rawScore": 28291,
+    "score": 18389
   },
   {
     "id": "2108236167317717241",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2108236167317717241",
     "photoUrl": "https://pbs.twimg.com/media/HUH1OhbXAAAPztD.png",
     "hasPhoto": true,
-    "likes": 206,
-    "retweets": 83,
+    "likes": 211,
+    "retweets": 85,
     "replies": 16,
-    "engagement": 420,
+    "engagement": 429,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10720,
-    "score": 6968
+    "rawScore": 10729,
+    "score": 4828
   },
   {
     "id": "2108232108057772078",
@@ -85,14 +85,14 @@
     "url": "https://x.com/JavierBlas/status/2108232108057772078",
     "photoUrl": "https://pbs.twimg.com/media/HUHxYMLX0AADGpb.png",
     "hasPhoto": true,
-    "likes": 416,
-    "retweets": 78,
+    "likes": 421,
+    "retweets": 80,
     "replies": 82,
-    "engagement": 818,
+    "engagement": 827,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 11118,
-    "score": 7227
+    "rawScore": 11127,
+    "score": 5007
   },
   {
     "id": "2108194344843047256",
@@ -142,13 +142,13 @@
     "url": "https://x.com/JavierBlas/status/2108214594913042919",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 18,
+    "likes": 19,
     "retweets": 0,
     "replies": 4,
-    "engagement": 30,
+    "engagement": 31,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10030,
+    "rawScore": 10031,
     "score": 4514
   },
   {
@@ -161,14 +161,14 @@
     "url": "https://x.com/JavierBlas/status/2108114399064113509",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 362,
-    "retweets": 76,
-    "replies": 25,
-    "engagement": 589,
+    "likes": 367,
+    "retweets": 77,
+    "replies": 26,
+    "engagement": 599,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10589,
-    "score": 3177
+    "rawScore": 10599,
+    "score": 3180
   },
   {
     "id": "2108126138371289172",
@@ -199,14 +199,71 @@
     "url": "https://x.com/HFI_Research/status/2108256968305672307",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 58,
+    "likes": 59,
     "retweets": 1,
     "replies": 0,
-    "engagement": 60,
+    "engagement": 61,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10060,
-    "score": 6539
+    "rawScore": 10061,
+    "score": 6540
+  },
+  {
+    "id": "2108414769531158888",
+    "text": "Record El Niño Is Roiling Industries Months Before Its Peak\nMeteorologists are predicting the phenomenon will last at least until February. https://t.co/dZGwxmyx90",
+    "createdAt": "2026-10-09T04:30:28+00:00",
+    "tweetTime": 1791520228000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2108414769531158888",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 3,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 3,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10003,
+    "score": 10003
+  },
+  {
+    "id": "2108412623033139227",
+    "text": "#China to resume October fuel exports after a brief halt, four trade sources say #oott  https://t.co/LeSNYHhDoQ",
+    "createdAt": "2026-10-09T04:21:56+00:00",
+    "tweetTime": 1791519716000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2108412623033139227",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 3,
+    "retweets": 1,
+    "replies": 0,
+    "engagement": 5,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10005,
+    "score": 10005
+  },
+  {
+    "id": "2108412482360385578",
+    "text": "#China has set the crude oil import quota for non-state trade at 257 million metric tons for 2027, a commerce ministry statement showed on Friday, unchanged from the quota for 2026. #oott https://t.co/oLgR5r69nE",
+    "createdAt": "2026-10-09T04:21:22+00:00",
+    "tweetTime": 1791519682000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2108412482360385578",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 2,
+    "engagement": 7,
+    "isRetweet": false,
+    "relevance": 30,
+    "rawScore": 30007,
+    "score": 30007
   },
   {
     "id": "2108295368551059804",
@@ -218,14 +275,14 @@
     "url": "https://x.com/staunovo/status/2108295368551059804",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 50,
+    "likes": 52,
     "retweets": 7,
     "replies": 1,
-    "engagement": 67,
+    "engagement": 69,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10067,
-    "score": 8557
+    "rawScore": 10069,
+    "score": 6545
   },
   {
     "id": "2108294790056124591",
@@ -244,7 +301,7 @@
     "isRetweet": false,
     "relevance": 48,
     "rawScore": 48022,
-    "score": 40819
+    "score": 31214
   },
   {
     "id": "2108232220905521365",
@@ -256,14 +313,14 @@
     "url": "https://x.com/Rory_Johnston/status/2108232220905521365",
     "photoUrl": "https://pbs.twimg.com/media/HUHyBqqawAATvx_.jpg",
     "hasPhoto": true,
-    "likes": 363,
+    "likes": 365,
     "retweets": 25,
     "replies": 36,
-    "engagement": 521,
+    "engagement": 523,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10821,
-    "score": 7034
+    "rawScore": 10823,
+    "score": 4870
   },
   {
     "id": "2108232881592307963",
@@ -282,7 +339,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10044,
-    "score": 6529
+    "score": 4520
   },
   {
     "id": "2108229355646386443",
@@ -294,14 +351,14 @@
     "url": "https://x.com/Rory_Johnston/status/2108229355646386443",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 148,
-    "retweets": 14,
+    "likes": 152,
+    "retweets": 16,
     "replies": 5,
-    "engagement": 191,
+    "engagement": 199,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10191,
-    "score": 6624
+    "rawScore": 10199,
+    "score": 4590
   },
   {
     "id": "2108367914956919120",
@@ -332,14 +389,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2108329106366484851",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 57,
+    "likes": 60,
     "retweets": 10,
     "replies": 0,
-    "engagement": 77,
+    "engagement": 80,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28077,
-    "score": 23865
+    "rawScore": 28080,
+    "score": 23868
   },
   {
     "id": "2108150350121144528",
@@ -351,14 +408,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2108150350121144528",
     "photoUrl": "https://pbs.twimg.com/media/HUGmMORWUAAuLD7.jpg",
     "hasPhoto": true,
-    "likes": 40,
-    "retweets": 12,
+    "likes": 41,
+    "retweets": 15,
     "replies": 5,
-    "engagement": 79,
+    "engagement": 86,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18379,
-    "score": 8271
+    "rawScore": 18386,
+    "score": 8274
   },
   {
     "id": "2108146472747208931",
@@ -377,7 +434,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10029,
-    "score": 4513
+    "score": 3009
   },
   {
     "id": "2108089378123755536",
@@ -427,14 +484,14 @@
     "url": "https://x.com/TankerTrackers/status/2108337640726474961",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 179,
-    "retweets": 20,
-    "replies": 21,
-    "engagement": 282,
+    "likes": 203,
+    "retweets": 22,
+    "replies": 22,
+    "engagement": 313,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28282,
-    "score": 24040
+    "rawScore": 28313,
+    "score": 24066
   },
   {
     "id": "2108316085007376755",
@@ -446,14 +503,14 @@
     "url": "https://x.com/TankerTrackers/status/2108316085007376755",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 157,
-    "retweets": 16,
+    "likes": 177,
+    "retweets": 18,
     "replies": 16,
-    "engagement": 237,
+    "engagement": 261,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28237,
-    "score": 24001
+    "rawScore": 28261,
+    "score": 24022
   },
   {
     "id": "2108247727398420761",
@@ -465,14 +522,14 @@
     "url": "https://x.com/TankerTrackers/status/2108247727398420761",
     "photoUrl": "https://pbs.twimg.com/media/HUH_6ZxWIAAiDUa.jpg",
     "hasPhoto": true,
-    "likes": 175,
+    "likes": 180,
     "retweets": 43,
     "replies": 20,
-    "engagement": 321,
+    "engagement": 326,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28621,
-    "score": 18604
+    "rawScore": 28626,
+    "score": 18607
   },
   {
     "id": "2108249199666176304",
@@ -484,13 +541,13 @@
     "url": "https://x.com/TankerTrackers/status/2108249199666176304",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 59,
+    "likes": 60,
     "retweets": 11,
     "replies": 4,
-    "engagement": 93,
+    "engagement": 94,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18093,
-    "score": 11760
+    "rawScore": 18094,
+    "score": 11761
   }
 ]
