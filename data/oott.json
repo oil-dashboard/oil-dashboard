@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2108479230619398380",
     "photoUrl": "https://pbs.twimg.com/media/HULSXB_b0AAtW1n.png",
     "hasPhoto": true,
-    "likes": 15,
-    "retweets": 5,
+    "likes": 23,
+    "retweets": 7,
     "replies": 1,
-    "engagement": 28,
+    "engagement": 40,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38328,
-    "score": 38328
+    "rawScore": 38340,
+    "score": 38340
   },
   {
     "id": "2108432760008585371",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2108474232871035182",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 24,
+    "likes": 25,
     "retweets": 8,
     "replies": 7,
-    "engagement": 61,
+    "engagement": 62,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10061,
-    "score": 10061
+    "rawScore": 10062,
+    "score": 10062
   },
   {
     "id": "2108431335144427709",
@@ -85,14 +85,14 @@
     "url": "https://x.com/JavierBlas/status/2108431335144427709",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 186,
-    "retweets": 40,
+    "likes": 218,
+    "retweets": 48,
     "replies": 9,
-    "engagement": 293,
+    "engagement": 341,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20293,
-    "score": 17249
+    "rawScore": 20341,
+    "score": 17290
   },
   {
     "id": "2108248389179646342",
@@ -104,14 +104,14 @@
     "url": "https://x.com/JavierBlas/status/2108248389179646342",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 184,
-    "retweets": 62,
+    "likes": 194,
+    "retweets": 63,
     "replies": 13,
-    "engagement": 347,
+    "engagement": 359,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28347,
-    "score": 12756
+    "rawScore": 28359,
+    "score": 12762
   },
   {
     "id": "2108236167317717241",
@@ -123,14 +123,14 @@
     "url": "https://x.com/JavierBlas/status/2108236167317717241",
     "photoUrl": "https://pbs.twimg.com/media/HUH1OhbXAAAPztD.png",
     "hasPhoto": true,
-    "likes": 228,
-    "retweets": 90,
+    "likes": 237,
+    "retweets": 93,
     "replies": 17,
-    "engagement": 459,
+    "engagement": 474,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10759,
-    "score": 4842
+    "rawScore": 10774,
+    "score": 3232
   },
   {
     "id": "2108232108057772078",
@@ -142,14 +142,14 @@
     "url": "https://x.com/JavierBlas/status/2108232108057772078",
     "photoUrl": "https://pbs.twimg.com/media/HUHxYMLX0AADGpb.png",
     "hasPhoto": true,
-    "likes": 436,
+    "likes": 438,
     "retweets": 80,
     "replies": 83,
-    "engagement": 845,
+    "engagement": 847,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 11145,
-    "score": 5015
+    "rawScore": 11147,
+    "score": 3344
   },
   {
     "id": "2108194344843047256",
@@ -161,14 +161,14 @@
     "url": "https://x.com/JavierBlas/status/2108194344843047256",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 317,
+    "likes": 321,
     "retweets": 32,
     "replies": 47,
-    "engagement": 522,
+    "engagement": 526,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20522,
-    "score": 6157
+    "rawScore": 20526,
+    "score": 6158
   },
   {
     "id": "2108220348516974731",
@@ -199,14 +199,14 @@
     "url": "https://x.com/JavierBlas/status/2108214594913042919",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 20,
-    "retweets": 0,
+    "likes": 21,
+    "retweets": 1,
     "replies": 4,
-    "engagement": 32,
+    "engagement": 35,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10032,
-    "score": 3010
+    "rawScore": 10035,
+    "score": 3011
   },
   {
     "id": "2108491864714235912",
@@ -218,14 +218,14 @@
     "url": "https://x.com/JKempEnergy/status/2108491864714235912",
     "photoUrl": "https://pbs.twimg.com/media/HULeHO1X0AAwcgC.png",
     "hasPhoto": true,
-    "likes": 3,
-    "retweets": 4,
+    "likes": 14,
+    "retweets": 8,
     "replies": 1,
-    "engagement": 14,
+    "engagement": 33,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10314,
-    "score": 10314
+    "rawScore": 10333,
+    "score": 10333
   },
   {
     "id": "2108256968305672307",
@@ -247,6 +247,25 @@
     "score": 4529
   },
   {
+    "id": "2108500369802149951",
+    "text": "New Trump rules will make it harder for farmers to access US funds for energy projects https://t.co/XoUBv7oJJO",
+    "createdAt": "2026-10-09T10:10:36+00:00",
+    "tweetTime": 1791540636000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2108500369802149951",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 3,
+    "retweets": 1,
+    "replies": 0,
+    "engagement": 5,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10005,
+    "score": 10005
+  },
+  {
     "id": "2108486895017595360",
     "text": "Venezuela opposition leader María Corina Machado calls for elections next year\nExiled Nobel Peace Prize laureate demands ‘transparency’ over oil revenues after deal with Trump administration https://t.co/U0Z4ZVFJTn",
     "createdAt": "2026-10-09T09:17:04+00:00",
@@ -256,14 +275,14 @@
     "url": "https://x.com/staunovo/status/2108486895017595360",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 4,
+    "likes": 5,
     "retweets": 0,
     "replies": 0,
-    "engagement": 4,
+    "engagement": 5,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10004,
-    "score": 10004
+    "rawScore": 10005,
+    "score": 10005
   },
   {
     "id": "2108486750175637814",
@@ -275,14 +294,14 @@
     "url": "https://x.com/staunovo/status/2108486750175637814",
     "photoUrl": "https://pbs.twimg.com/media/HULZdfeWwAAAl5n.png",
     "hasPhoto": true,
-    "likes": 3,
-    "retweets": 1,
+    "likes": 6,
+    "retweets": 2,
     "replies": 0,
-    "engagement": 5,
+    "engagement": 10,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10305,
-    "score": 10305
+    "rawScore": 10310,
+    "score": 10310
   },
   {
     "id": "2108485188363616588",
@@ -294,14 +313,14 @@
     "url": "https://x.com/staunovo/status/2108485188363616588",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 4,
+    "likes": 5,
     "retweets": 0,
     "replies": 0,
-    "engagement": 4,
+    "engagement": 5,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20004,
-    "score": 20004
+    "rawScore": 20005,
+    "score": 20005
   },
   {
     "id": "2108232220905521365",
@@ -313,14 +332,14 @@
     "url": "https://x.com/Rory_Johnston/status/2108232220905521365",
     "photoUrl": "https://pbs.twimg.com/media/HUHyBqqawAATvx_.jpg",
     "hasPhoto": true,
-    "likes": 372,
+    "likes": 376,
     "retweets": 25,
     "replies": 36,
-    "engagement": 530,
+    "engagement": 534,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10830,
-    "score": 4874
+    "rawScore": 10834,
+    "score": 3250
   },
   {
     "id": "2108232881592307963",
@@ -339,7 +358,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10046,
-    "score": 4521
+    "score": 3014
   },
   {
     "id": "2108229355646386443",
@@ -351,14 +370,14 @@
     "url": "https://x.com/Rory_Johnston/status/2108229355646386443",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 164,
+    "likes": 165,
     "retweets": 17,
     "replies": 5,
-    "engagement": 213,
+    "engagement": 214,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10213,
-    "score": 4596
+    "rawScore": 10214,
+    "score": 3064
   },
   {
     "id": "2108367914956919120",
@@ -389,14 +408,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2108329106366484851",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 68,
+    "likes": 69,
     "retweets": 10,
     "replies": 0,
-    "engagement": 88,
+    "engagement": 89,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28088,
-    "score": 18257
+    "rawScore": 28089,
+    "score": 12640
   },
   {
     "id": "2108438222539788669",
@@ -408,52 +427,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2108438222539788669",
     "photoUrl": "https://pbs.twimg.com/media/HUKtT3uWoAEHJNb.png",
     "hasPhoto": true,
-    "likes": 57,
-    "retweets": 12,
-    "replies": 9,
-    "engagement": 108,
+    "likes": 71,
+    "retweets": 15,
+    "replies": 11,
+    "engagement": 134,
     "isRetweet": false,
     "relevance": 76,
-    "rawScore": 76408,
-    "score": 76408
-  },
-  {
-    "id": "2108150350121144528",
-    "text": "Container freight costs: Global container freight rates have started to ease, with continued weakness on the Shanghai-to-Europe routes now being joined by the Shanghai-to-US lanes, following weeks of exceptional strength that drove shipping costs to Los Angeles and New York to four-year highs.\n\nThe Drewry Composite Index fell 2% this week to USD 4,351 per 40-foot container, but remains up 164% over the past year, with much of that increase (129%) occurring since the start of the Middle East conflict which triggered widespread disruptions to global shipping routes and supply chains.\n\nThe latest decline may partly reflect the seasonal winding down of peak shipping demand ahead of the Christmas shopping season, compounded by reduced Chinese factory activity during the Golden Week holiday. Meanwhile, increased vessel transits through the Suez Canal are helping ease capacity constraints on European routes.\n\nHowever, underlying shipping costs remain elevated, not least because of continued restrictions at the Panama Canal, where El Niño-related water shortages have reduced transit capacity while rerouted energy shipments have increased competition for available slots. This has driven auction premiums sharply higher, adding to the cost of serving US East Coast destinations.\n\nThe recent easing therefore reflects some relief from seasonal demand and capacity pressures rather than a broader normalisation of global shipping conditions. With geopolitical disruptions continuing and key maritime chokepoints operating under constraints, freight rates remain vulnerable to renewed volatility.",
-    "createdAt": "2026-10-08T10:59:45+00:00",
-    "tweetTime": 1791457185000,
-    "username": "Ole_S_Hansen",
-    "displayName": "Ole S Hansen",
-    "url": "https://x.com/Ole_S_Hansen/status/2108150350121144528",
-    "photoUrl": "https://pbs.twimg.com/media/HUGmMORWUAAuLD7.jpg",
-    "hasPhoto": true,
-    "likes": 45,
-    "retweets": 16,
-    "replies": 5,
-    "engagement": 92,
-    "isRetweet": false,
-    "relevance": 18,
-    "rawScore": 18392,
-    "score": 5518
-  },
-  {
-    "id": "2108146472747208931",
-    "text": "In today's podcast, I joined our host @johnjhardy to discuss the latest developments across commodities, including the renewed spike in oil prices, Europe's natural gas situation, sugar, gold and silver.\n\nJohn also highlighted the rather ugly risk-off tone across global markets, with strong earnings reports from Samsung and TSMC receiving a surprisingly poor reception overnight in Asia. Europe is enduring another weak session, while the major US indices have once again shown remarkable resilience. But how much longer can Wall Street hold up against an increasingly worrying global backdrop? https://t.co/cDQzsAPS29 via @saxobank",
-    "createdAt": "2026-10-08T10:44:21+00:00",
-    "tweetTime": 1791456261000,
-    "username": "Ole_S_Hansen",
-    "displayName": "Ole S Hansen",
-    "url": "https://x.com/Ole_S_Hansen/status/2108146472747208931",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 20,
-    "retweets": 0,
-    "replies": 3,
-    "engagement": 29,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10029,
-    "score": 3009
+    "rawScore": 76434,
+    "score": 64969
   },
   {
     "id": "2108337640726474961",
@@ -465,14 +446,14 @@
     "url": "https://x.com/TankerTrackers/status/2108337640726474961",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 257,
-    "retweets": 27,
-    "replies": 29,
-    "engagement": 398,
+    "likes": 268,
+    "retweets": 30,
+    "replies": 32,
+    "engagement": 424,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28398,
-    "score": 18459
+    "rawScore": 28424,
+    "score": 18476
   },
   {
     "id": "2108316085007376755",
@@ -484,14 +465,14 @@
     "url": "https://x.com/TankerTrackers/status/2108316085007376755",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 227,
-    "retweets": 20,
-    "replies": 17,
-    "engagement": 318,
+    "likes": 232,
+    "retweets": 22,
+    "replies": 18,
+    "engagement": 330,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28318,
-    "score": 18407
+    "rawScore": 28330,
+    "score": 12749
   },
   {
     "id": "2108247727398420761",
@@ -503,14 +484,14 @@
     "url": "https://x.com/TankerTrackers/status/2108247727398420761",
     "photoUrl": "https://pbs.twimg.com/media/HUH_6ZxWIAAiDUa.jpg",
     "hasPhoto": true,
-    "likes": 193,
-    "retweets": 46,
+    "likes": 194,
+    "retweets": 47,
     "replies": 20,
-    "engagement": 345,
+    "engagement": 348,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28645,
-    "score": 12890
+    "rawScore": 28648,
+    "score": 12892
   },
   {
     "id": "2108249199666176304",
@@ -522,13 +503,13 @@
     "url": "https://x.com/TankerTrackers/status/2108249199666176304",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 65,
-    "retweets": 11,
+    "likes": 66,
+    "retweets": 14,
     "replies": 4,
-    "engagement": 99,
+    "engagement": 106,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18099,
-    "score": 8145
+    "rawScore": 18106,
+    "score": 8148
   }
 ]
