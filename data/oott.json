@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2110429102414954854",
     "photoUrl": "https://pbs.twimg.com/media/HUmpHENWwAELvdY.jpg",
     "hasPhoto": true,
-    "likes": 152,
-    "retweets": 25,
+    "likes": 156,
+    "retweets": 26,
     "replies": 15,
-    "engagement": 247,
+    "engagement": 253,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38547,
-    "score": 25056
+    "rawScore": 38553,
+    "score": 25059
   },
   {
     "id": "2110410044927885369",
@@ -85,14 +85,14 @@
     "url": "https://x.com/JavierBlas/status/2110410044927885369",
     "photoUrl": "https://pbs.twimg.com/media/HUmuv5yWMAAlA8M.png",
     "hasPhoto": true,
-    "likes": 288,
-    "retweets": 79,
+    "likes": 298,
+    "retweets": 83,
     "replies": 30,
-    "engagement": 536,
+    "engagement": 554,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48836,
-    "score": 31743
+    "rawScore": 48854,
+    "score": 31755
   },
   {
     "id": "2110354163158634771",
@@ -104,14 +104,14 @@
     "url": "https://x.com/JavierBlas/status/2110354163158634771",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 343,
+    "likes": 348,
     "retweets": 64,
     "replies": 24,
-    "engagement": 543,
+    "engagement": 548,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10543,
-    "score": 4744
+    "rawScore": 10548,
+    "score": 4747
   },
   {
     "id": "2110307401404387343",
@@ -123,14 +123,14 @@
     "url": "https://x.com/JavierBlas/status/2110307401404387343",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 274,
-    "retweets": 41,
+    "likes": 280,
+    "retweets": 42,
     "replies": 15,
-    "engagement": 401,
+    "engagement": 409,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10401,
-    "score": 4680
+    "rawScore": 10409,
+    "score": 4684
   },
   {
     "id": "2110304042823946658",
@@ -142,14 +142,14 @@
     "url": "https://x.com/JavierBlas/status/2110304042823946658",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 214,
-    "retweets": 44,
+    "likes": 219,
+    "retweets": 45,
     "replies": 27,
-    "engagement": 383,
+    "engagement": 390,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20383,
-    "score": 9172
+    "rawScore": 20390,
+    "score": 6117
   },
   {
     "id": "2110359349571006817",
@@ -180,14 +180,14 @@
     "url": "https://x.com/HFI_Research/status/2110419854092288222",
     "photoUrl": "https://pbs.twimg.com/media/HUm3qC3akAAkhh1.jpg",
     "hasPhoto": true,
-    "likes": 108,
+    "likes": 116,
     "retweets": 4,
     "replies": 0,
-    "engagement": 116,
+    "engagement": 124,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20416,
-    "score": 13270
+    "rawScore": 20424,
+    "score": 13276
   },
   {
     "id": "2110419481927581903",
@@ -199,14 +199,14 @@
     "url": "https://x.com/HFI_Research/status/2110419481927581903",
     "photoUrl": "https://pbs.twimg.com/media/HUm3VREa8AAanFF.jpg",
     "hasPhoto": true,
-    "likes": 189,
-    "retweets": 14,
+    "likes": 194,
+    "retweets": 16,
     "replies": 8,
-    "engagement": 241,
+    "engagement": 250,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10541,
-    "score": 6852
+    "rawScore": 10550,
+    "score": 6858
   },
   {
     "id": "2110402726157045838",
@@ -218,14 +218,14 @@
     "url": "https://x.com/HFI_Research/status/2110402726157045838",
     "photoUrl": "https://pbs.twimg.com/media/HUmoGDpasAArtU7.jpg",
     "hasPhoto": true,
-    "likes": 130,
-    "retweets": 16,
+    "likes": 133,
+    "retweets": 17,
     "replies": 2,
-    "engagement": 168,
+    "engagement": 173,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18468,
-    "score": 12004
+    "rawScore": 18473,
+    "score": 12007
   },
   {
     "id": "2110443217124503940",
@@ -237,14 +237,14 @@
     "url": "https://x.com/Rory_Johnston/status/2110443217124503940",
     "photoUrl": "https://pbs.twimg.com/media/HUnMG6_W4AAIVlv.jpg",
     "hasPhoto": true,
-    "likes": 132,
-    "retweets": 26,
-    "replies": 15,
-    "engagement": 229,
+    "likes": 144,
+    "retweets": 28,
+    "replies": 16,
+    "engagement": 248,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28529,
-    "score": 24250
+    "rawScore": 28548,
+    "score": 18556
   },
   {
     "id": "2110419435957977117",
@@ -256,13 +256,13 @@
     "url": "https://x.com/Rory_Johnston/status/2110419435957977117",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 63,
+    "likes": 64,
     "retweets": 10,
     "replies": 7,
-    "engagement": 104,
+    "engagement": 105,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38104,
+    "rawScore": 38105,
     "score": 24768
   },
   {
@@ -275,33 +275,14 @@
     "url": "https://x.com/Rory_Johnston/status/2110362223365210115",
     "photoUrl": "https://pbs.twimg.com/media/HUmDPVXWUAEqtYz.jpg",
     "hasPhoto": true,
-    "likes": 168,
+    "likes": 171,
     "retweets": 37,
     "replies": 13,
-    "engagement": 281,
+    "engagement": 284,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18581,
-    "score": 8361
-  },
-  {
-    "id": "2110203508591038486",
-    "text": "Why? Record shipping costs.\n\nWelcome to the balkanized oil market.",
-    "createdAt": "2026-10-14T02:58:16+00:00",
-    "tweetTime": 1791946696000,
-    "username": "Rory_Johnston",
-    "displayName": "Rory Johnston",
-    "url": "https://x.com/Rory_Johnston/status/2110203508591038486",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 58,
-    "retweets": 4,
-    "replies": 2,
-    "engagement": 72,
-    "isRetweet": false,
-    "relevance": 18,
-    "rawScore": 18072,
-    "score": 5422
+    "rawScore": 18584,
+    "score": 8363
   },
   {
     "id": "2110523280935309319",
@@ -323,6 +304,25 @@
     "score": 10000
   },
   {
+    "id": "2110571611405382029",
+    "text": "Asia Scrambles For Coal As Energy Crisis Sends Prices To Two-Year High Ahead Of Winter",
+    "createdAt": "2026-10-15T03:20:59+00:00",
+    "tweetTime": 1792034459000,
+    "username": "OilHeadlineNews",
+    "displayName": "Energy Headline News",
+    "url": "https://x.com/OilHeadlineNews/status/2110571611405382029",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 11,
+    "retweets": 1,
+    "replies": 0,
+    "engagement": 13,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10013,
+    "score": 10013
+  },
+  {
     "id": "2110548949094297925",
     "text": "Trump:\n\nOur country is making more money than it has ever made because of the fact that oil is so high. https://t.co/znhzVgg03B",
     "createdAt": "2026-10-15T01:50:56+00:00",
@@ -332,14 +332,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2110548949094297925",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 7,
+    "likes": 12,
     "retweets": 0,
     "replies": 3,
-    "engagement": 16,
+    "engagement": 21,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10016,
-    "score": 10016
+    "rawScore": 10021,
+    "score": 10021
   },
   {
     "id": "2110499443615142183",
@@ -351,14 +351,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2110499443615142183",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 48,
+    "likes": 54,
     "retweets": 3,
     "replies": 1,
-    "engagement": 57,
+    "engagement": 63,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10057,
-    "score": 10057
+    "rawScore": 10063,
+    "score": 8554
   },
   {
     "id": "2110350395822239859",
@@ -389,14 +389,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2110345332232003959",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 23,
+    "likes": 25,
     "retweets": 8,
     "replies": 3,
-    "engagement": 48,
+    "engagement": 50,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48048,
-    "score": 21622
+    "rawScore": 48050,
+    "score": 21623
   },
   {
     "id": "2110281973529026980",
@@ -408,13 +408,13 @@
     "url": "https://x.com/Ole_S_Hansen/status/2110281973529026980",
     "photoUrl": "https://pbs.twimg.com/media/HUk6QUAWMAA4mgz.png",
     "hasPhoto": true,
-    "likes": 50,
+    "likes": 51,
     "retweets": 13,
     "replies": 7,
-    "engagement": 97,
+    "engagement": 98,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10397,
+    "rawScore": 10398,
     "score": 3119
   },
   {
@@ -434,7 +434,7 @@
     "isRetweet": false,
     "relevance": 28,
     "rawScore": 28016,
-    "score": 12607
+    "score": 8405
   },
   {
     "id": "2110332097529606343",
@@ -446,14 +446,14 @@
     "url": "https://x.com/TankerTrackers/status/2110332097529606343",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 220,
+    "likes": 222,
     "retweets": 12,
     "replies": 14,
-    "engagement": 286,
+    "engagement": 288,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30286,
-    "score": 13629
+    "rawScore": 30288,
+    "score": 13630
   },
   {
     "id": "2110333581944127517",
@@ -465,13 +465,13 @@
     "url": "https://x.com/TankerTrackers/status/2110333581944127517",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 214,
+    "likes": 216,
     "retweets": 2,
     "replies": 10,
-    "engagement": 248,
+    "engagement": 250,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20248,
-    "score": 9112
+    "rawScore": 20250,
+    "score": 9113
   }
 ]
