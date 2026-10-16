@@ -16,7 +16,7 @@
     "isRetweet": false,
     "relevance": 30,
     "rawScore": 30035,
-    "score": 13516
+    "score": 9011
   },
   {
     "id": "2110652033414074825",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2110750079858643163",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 56,
+    "likes": 58,
     "retweets": 13,
     "replies": 5,
-    "engagement": 97,
+    "engagement": 99,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30097,
-    "score": 19563
+    "rawScore": 30099,
+    "score": 13545
   },
   {
     "id": "2110732523882074511",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2110732523882074511",
     "photoUrl": "https://pbs.twimg.com/media/HUrTl9kWkAADWhD.png",
     "hasPhoto": true,
-    "likes": 124,
-    "retweets": 56,
-    "replies": 12,
-    "engagement": 272,
+    "likes": 130,
+    "retweets": 57,
+    "replies": 13,
+    "engagement": 283,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20572,
-    "score": 9257
+    "rawScore": 20583,
+    "score": 9262
   },
   {
     "id": "2110713563274953067",
@@ -85,14 +85,14 @@
     "url": "https://x.com/JavierBlas/status/2110713563274953067",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 332,
-    "retweets": 82,
+    "likes": 340,
+    "retweets": 83,
     "replies": 19,
-    "engagement": 553,
+    "engagement": 563,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10553,
-    "score": 4749
+    "rawScore": 10563,
+    "score": 4753
   },
   {
     "id": "2110610234838229478",
@@ -104,14 +104,14 @@
     "url": "https://x.com/JavierBlas/status/2110610234838229478",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 419,
-    "retweets": 59,
+    "likes": 423,
+    "retweets": 60,
     "replies": 42,
-    "engagement": 663,
+    "engagement": 669,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10663,
-    "score": 3199
+    "rawScore": 10669,
+    "score": 3201
   },
   {
     "id": "2110620471934816523",
@@ -123,14 +123,14 @@
     "url": "https://x.com/JavierBlas/status/2110620471934816523",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 59,
-    "retweets": 10,
+    "likes": 60,
+    "retweets": 11,
     "replies": 0,
-    "engagement": 79,
+    "engagement": 82,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28079,
-    "score": 8424
+    "rawScore": 28082,
+    "score": 8425
   },
   {
     "id": "2110670872629358854",
@@ -149,7 +149,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10353,
-    "score": 4659
+    "score": 3106
   },
   {
     "id": "2110920187608432770",
@@ -161,14 +161,14 @@
     "url": "https://x.com/HFI_Research/status/2110920187608432770",
     "photoUrl": "https://pbs.twimg.com/media/HUt-uRza8AAnD7z.jpg",
     "hasPhoto": true,
-    "likes": 47,
-    "retweets": 7,
-    "replies": 0,
-    "engagement": 61,
+    "likes": 83,
+    "retweets": 9,
+    "replies": 1,
+    "engagement": 104,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10361,
-    "score": 10361
+    "rawScore": 10404,
+    "score": 10404
   },
   {
     "id": "2110815139478085738",
@@ -180,14 +180,14 @@
     "url": "https://x.com/HFI_Research/status/2110815139478085738",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 42,
+    "likes": 44,
     "retweets": 1,
     "replies": 0,
-    "engagement": 44,
+    "engagement": 46,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10044,
-    "score": 8537
+    "rawScore": 10046,
+    "score": 6530
   },
   {
     "id": "2110803540365201628",
@@ -218,33 +218,52 @@
     "url": "https://x.com/HFI_Research/status/2110802585888444788",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 127,
-    "retweets": 7,
-    "replies": 2,
-    "engagement": 147,
+    "likes": 129,
+    "retweets": 8,
+    "replies": 3,
+    "engagement": 154,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30147,
-    "score": 19596
+    "rawScore": 30154,
+    "score": 19600
   },
   {
-    "id": "2110801386355200335",
-    "text": "Seriously, what demand destruction?\n\nImplied total US oil demand is at a 5-year high for this time of the year.\n\nBig 3 + other oil is at a 5-year high for this time of the year. https://t.co/gYk1JfB4yt",
-    "createdAt": "2026-10-15T18:34:01+00:00",
-    "tweetTime": 1792089241000,
-    "username": "HFI_Research",
-    "displayName": "HFI Research",
-    "url": "https://x.com/HFI_Research/status/2110801386355200335",
-    "photoUrl": "https://pbs.twimg.com/media/HUsSk4maMAA79Gf.jpg",
-    "hasPhoto": true,
-    "likes": 234,
-    "retweets": 26,
-    "replies": 2,
-    "engagement": 292,
+    "id": "2110940903258927314",
+    "text": "Global fuel oil market stays tight as conflicts hit Mideast, Russia supplies, Vitol says #oott https://t.co/MBBhxgHF2c",
+    "createdAt": "2026-10-16T03:48:25+00:00",
+    "tweetTime": 1792122505000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2110940903258927314",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 1,
+    "isRetweet": false,
+    "relevance": 20,
+    "rawScore": 20001,
+    "score": 20001
+  },
+  {
+    "id": "2110940810279620974",
+    "text": "Mideast war alters global bunker buying patterns, industry execs say #oott https://t.co/CtU3NOMeQx",
+    "createdAt": "2026-10-16T03:48:03+00:00",
+    "tweetTime": 1792122483000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2110940810279620974",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 1,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10592,
-    "score": 6885
+    "rawScore": 10001,
+    "score": 10001
   },
   {
     "id": "2110823625779540039",
@@ -256,13 +275,13 @@
     "url": "https://x.com/staunovo/status/2110823625779540039",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 8,
+    "likes": 9,
     "retweets": 1,
     "replies": 0,
-    "engagement": 10,
+    "engagement": 11,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10010,
+    "rawScore": 10011,
     "score": 8509
   },
   {
@@ -285,44 +304,6 @@
     "score": 23805
   },
   {
-    "id": "2110823569685180457",
-    "text": "#Angola wants to keep crude production above 1 million barrels a day as Africa’s third-biggest oil producer tries to offset a decline in output from mature fields #oott https://t.co/9miLe4OsUI",
-    "createdAt": "2026-10-15T20:02:10+00:00",
-    "tweetTime": 1792094530000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2110823569685180457",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 1,
-    "retweets": 0,
-    "replies": 0,
-    "engagement": 1,
-    "isRetweet": false,
-    "relevance": 40,
-    "rawScore": 40001,
-    "score": 34001
-  },
-  {
-    "id": "2110823499711623380",
-    "text": "Putin says Ukrainian refinery attacks caused little damage, Interfax reports #oott https://t.co/TzZPxN3hOQ",
-    "createdAt": "2026-10-15T20:01:54+00:00",
-    "tweetTime": 1792094514000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2110823499711623380",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 2,
-    "retweets": 0,
-    "replies": 0,
-    "engagement": 2,
-    "isRetweet": false,
-    "relevance": 28,
-    "rawScore": 28002,
-    "score": 23802
-  },
-  {
     "id": "2110765726042648686",
     "text": "WHOOSH\n\nUS commercial petroleum stocks fell by 13.4 million barrels last week—largest weekly commercial draw since April\n\nDraw was driven by crude, diesel, and \"other\" products (largely NGLs)\n\nCrude back below trailing 5yr seasonal lows and falling at a time it should be building https://t.co/DcNKLnwnSm",
     "createdAt": "2026-10-15T16:12:19+00:00",
@@ -332,14 +313,14 @@
     "url": "https://x.com/Rory_Johnston/status/2110765726042648686",
     "photoUrl": "https://pbs.twimg.com/media/HUrxLuYWYAAM3F6.jpg",
     "hasPhoto": true,
-    "likes": 392,
-    "retweets": 85,
+    "likes": 396,
+    "retweets": 87,
     "replies": 26,
-    "engagement": 640,
+    "engagement": 648,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40940,
-    "score": 26611
+    "rawScore": 40948,
+    "score": 26616
   },
   {
     "id": "2110745229770760637",
@@ -351,33 +332,14 @@
     "url": "https://x.com/Rory_Johnston/status/2110745229770760637",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 90,
+    "likes": 92,
     "retweets": 6,
     "replies": 14,
-    "engagement": 144,
+    "engagement": 146,
     "isRetweet": false,
     "relevance": 8,
-    "rawScore": 8144,
-    "score": 3665
-  },
-  {
-    "id": "2110732395947471020",
-    "text": "*IEA AGREES TO COMPLETE RELEASE OF OUTSTANDING 100M BBL OF OIL\n*IEA SAYS OIL RELEASE ANNOUNCED IN MARCH TO EXCEED 400M BARRELS\n*IEA: Diesel Release Is Part of Previously Agreed Release of Around 100 Mln Barrels of Crude Oil, Fuel From Emergency Stocks https://t.co/PUMn4Nu9VY",
-    "createdAt": "2026-10-15T13:59:53+00:00",
-    "tweetTime": 1792072793000,
-    "username": "Rory_Johnston",
-    "displayName": "Rory Johnston",
-    "url": "https://x.com/Rory_Johnston/status/2110732395947471020",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 122,
-    "retweets": 8,
-    "replies": 10,
-    "engagement": 168,
-    "isRetweet": false,
-    "relevance": 40,
-    "rawScore": 40168,
-    "score": 18076
+    "rawScore": 8146,
+    "score": 3666
   },
   {
     "id": "2110763503279562764",
@@ -427,14 +389,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2110890435941904611",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 14,
-    "retweets": 3,
+    "likes": 15,
+    "retweets": 4,
     "replies": 0,
-    "engagement": 20,
+    "engagement": 23,
     "isRetweet": false,
     "relevance": 8,
-    "rawScore": 8020,
-    "score": 8020
+    "rawScore": 8023,
+    "score": 8023
   },
   {
     "id": "2110866742646026412",
@@ -453,7 +415,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10019,
-    "score": 10019
+    "score": 8516
   },
   {
     "id": "2110718472955310307",
@@ -503,14 +465,14 @@
     "url": "https://x.com/TankerTrackers/status/2110819975367721257",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 362,
-    "retweets": 23,
-    "replies": 22,
-    "engagement": 474,
+    "likes": 378,
+    "retweets": 25,
+    "replies": 23,
+    "engagement": 497,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18474,
-    "score": 15703
+    "rawScore": 18497,
+    "score": 12023
   },
   {
     "id": "2110677006211842376",
@@ -522,14 +484,14 @@
     "url": "https://x.com/TankerTrackers/status/2110677006211842376",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1833,
-    "retweets": 262,
+    "likes": 1845,
+    "retweets": 265,
     "replies": 68,
-    "engagement": 2561,
+    "engagement": 2579,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 30561,
-    "score": 13752
+    "rawScore": 30579,
+    "score": 13761
   },
   {
     "id": "2110671200955589065",
@@ -548,7 +510,7 @@
     "isRetweet": false,
     "relevance": 18,
     "rawScore": 18316,
-    "score": 8242
+    "score": 5495
   },
   {
     "id": "2110643306866540986",
@@ -560,13 +522,13 @@
     "url": "https://x.com/TankerTrackers/status/2110643306866540986",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 371,
-    "retweets": 55,
+    "likes": 377,
+    "retweets": 59,
     "replies": 23,
-    "engagement": 550,
+    "engagement": 564,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28550,
-    "score": 8565
+    "rawScore": 28564,
+    "score": 8569
   }
 ]
