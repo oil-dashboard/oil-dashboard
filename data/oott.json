@@ -28,14 +28,14 @@
     "url": "https://x.com/JavierBlas/status/2112250047307944063",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 140,
+    "likes": 147,
     "retweets": 29,
-    "replies": 11,
-    "engagement": 231,
+    "replies": 13,
+    "engagement": 244,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48231,
-    "score": 31350
+    "rawScore": 48244,
+    "score": 31359
   },
   {
     "id": "2112143140203508035",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2112143140203508035",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 361,
+    "likes": 364,
     "retweets": 63,
     "replies": 27,
-    "engagement": 568,
+    "engagement": 571,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10568,
-    "score": 4756
+    "rawScore": 10571,
+    "score": 4757
   },
   {
     "id": "2112090151572967629",
@@ -85,14 +85,14 @@
     "url": "https://x.com/HFI_Research/status/2112275666599333917",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 393,
-    "retweets": 52,
+    "likes": 423,
+    "retweets": 57,
     "replies": 5,
-    "engagement": 512,
+    "engagement": 552,
     "isRetweet": false,
     "relevance": 86,
-    "rawScore": 86512,
-    "score": 73535
+    "rawScore": 86552,
+    "score": 56259
   },
   {
     "id": "2112270684516954126",
@@ -123,14 +123,14 @@
     "url": "https://x.com/HFI_Research/status/2112240010745495754",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 267,
+    "likes": 274,
     "retweets": 10,
     "replies": 2,
-    "engagement": 293,
+    "engagement": 300,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10293,
-    "score": 6690
+    "rawScore": 10300,
+    "score": 6695
   },
   {
     "id": "2112227576098025789",
@@ -142,33 +142,33 @@
     "url": "https://x.com/HFI_Research/status/2112227576098025789",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 181,
+    "likes": 183,
     "retweets": 3,
     "replies": 1,
-    "engagement": 190,
+    "engagement": 192,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10190,
-    "score": 6624
+    "rawScore": 10192,
+    "score": 4586
   },
   {
-    "id": "2112390958352347454",
-    "text": "Trump envoys to hold fresh Ukraine talks as energy crunch looms over midterms\nSteve Witkoff and Jared Kushner expected to travel to Norway to meet Volodymyr Zelenskyy https://t.co/qMvC2P2Ts2",
-    "createdAt": "2026-10-20T03:50:25+00:00",
-    "tweetTime": 1792468225000,
+    "id": "2112406823638540685",
+    "text": "US to launch $8 billion support program for farmers to offset diesel costs, Trump says https://t.co/w5yMB0RjUf",
+    "createdAt": "2026-10-20T04:53:28+00:00",
+    "tweetTime": 1792472008000,
     "username": "staunovo",
     "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2112390958352347454",
+    "url": "https://x.com/staunovo/status/2112406823638540685",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1,
+    "likes": 2,
     "retweets": 0,
-    "replies": 1,
-    "engagement": 4,
+    "replies": 0,
+    "engagement": 2,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10004,
-    "score": 10004
+    "rawScore": 10002,
+    "score": 10002
   },
   {
     "id": "2112245226140242236",
@@ -180,14 +180,14 @@
     "url": "https://x.com/Rory_Johnston/status/2112245226140242236",
     "photoUrl": "https://pbs.twimg.com/media/HVAzfB4WMAAtRJt.png",
     "hasPhoto": true,
-    "likes": 285,
-    "retweets": 17,
+    "likes": 294,
+    "retweets": 19,
     "replies": 9,
-    "engagement": 346,
+    "engagement": 359,
     "isRetweet": false,
     "relevance": 26,
-    "rawScore": 26646,
-    "score": 17320
+    "rawScore": 26659,
+    "score": 17328
   },
   {
     "id": "2112232824614879543",
@@ -199,14 +199,14 @@
     "url": "https://x.com/Rory_Johnston/status/2112232824614879543",
     "photoUrl": "https://pbs.twimg.com/media/HVAoijTWAAEKwsm.png",
     "hasPhoto": true,
-    "likes": 750,
-    "retweets": 136,
+    "likes": 758,
+    "retweets": 137,
     "replies": 31,
-    "engagement": 1115,
+    "engagement": 1125,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 29415,
-    "score": 19120
+    "rawScore": 29425,
+    "score": 19126
   },
   {
     "id": "2112215411546874004",
@@ -219,13 +219,13 @@
     "photoUrl": "https://pbs.twimg.com/media/HVAYYjnWYAEbjqC.png",
     "hasPhoto": true,
     "likes": 269,
-    "retweets": 25,
+    "retweets": 26,
     "replies": 16,
-    "engagement": 367,
+    "engagement": 369,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28667,
-    "score": 18634
+    "rawScore": 28669,
+    "score": 12901
   },
   {
     "id": "2112322513380499822",
@@ -282,7 +282,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10024,
-    "score": 8520
+    "score": 6516
   },
   {
     "id": "2112218600081850630",
@@ -301,7 +301,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10069,
-    "score": 6545
+    "score": 4531
   },
   {
     "id": "2112199363175002595",
@@ -313,13 +313,13 @@
     "url": "https://x.com/TankerTrackers/status/2112199363175002595",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 416,
-    "retweets": 45,
-    "replies": 32,
-    "engagement": 602,
+    "likes": 425,
+    "retweets": 46,
+    "replies": 33,
+    "engagement": 616,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28602,
-    "score": 12871
+    "rawScore": 28616,
+    "score": 12877
   }
 ]
