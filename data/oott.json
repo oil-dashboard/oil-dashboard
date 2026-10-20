@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2112460491075567747",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 14,
+    "likes": 15,
     "retweets": 1,
     "replies": 3,
-    "engagement": 25,
+    "engagement": 26,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20025,
-    "score": 20025
+    "rawScore": 20026,
+    "score": 20026
   },
   {
     "id": "2112159366149439589",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2112443415237701798",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 64,
-    "retweets": 12,
-    "replies": 5,
-    "engagement": 103,
+    "likes": 73,
+    "retweets": 13,
+    "replies": 6,
+    "engagement": 117,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10103,
-    "score": 10103
+    "rawScore": 10117,
+    "score": 10117
   },
   {
     "id": "2112250047307944063",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2112250047307944063",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 167,
+    "likes": 173,
     "retweets": 34,
     "replies": 14,
-    "engagement": 277,
+    "engagement": 283,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48277,
-    "score": 21725
+    "rawScore": 48283,
+    "score": 21727
   },
   {
     "id": "2112143140203508035",
@@ -85,14 +85,14 @@
     "url": "https://x.com/JavierBlas/status/2112143140203508035",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 373,
+    "likes": 381,
     "retweets": 63,
-    "replies": 27,
-    "engagement": 580,
+    "replies": 28,
+    "engagement": 591,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10580,
-    "score": 3174
+    "rawScore": 10591,
+    "score": 3177
   },
   {
     "id": "2112275666599333917",
@@ -104,14 +104,14 @@
     "url": "https://x.com/HFI_Research/status/2112275666599333917",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 496,
-    "retweets": 63,
+    "likes": 511,
+    "retweets": 64,
     "replies": 5,
-    "engagement": 637,
+    "engagement": 654,
     "isRetweet": false,
     "relevance": 86,
-    "rawScore": 86637,
-    "score": 38987
+    "rawScore": 86654,
+    "score": 38994
   },
   {
     "id": "2112270684516954126",
@@ -123,14 +123,14 @@
     "url": "https://x.com/HFI_Research/status/2112270684516954126",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 31,
+    "likes": 32,
     "retweets": 1,
     "replies": 1,
-    "engagement": 36,
+    "engagement": 37,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10036,
-    "score": 4516
+    "rawScore": 10037,
+    "score": 4517
   },
   {
     "id": "2112240010745495754",
@@ -142,14 +142,14 @@
     "url": "https://x.com/HFI_Research/status/2112240010745495754",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 283,
+    "likes": 286,
     "retweets": 10,
     "replies": 2,
-    "engagement": 309,
+    "engagement": 312,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10309,
-    "score": 4639
+    "rawScore": 10312,
+    "score": 4640
   },
   {
     "id": "2112227576098025789",
@@ -161,14 +161,33 @@
     "url": "https://x.com/HFI_Research/status/2112227576098025789",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 193,
+    "likes": 196,
     "retweets": 3,
     "replies": 1,
-    "engagement": 202,
+    "engagement": 205,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10202,
-    "score": 4591
+    "rawScore": 10205,
+    "score": 4592
+  },
+  {
+    "id": "2112483915952705943",
+    "text": "IEA oil stocks release timing is up to individual members, chief says #oott https://t.co/1lJVY3aWqo",
+    "createdAt": "2026-10-20T09:59:48+00:00",
+    "tweetTime": 1792490388000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2112483915952705943",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 2,
+    "retweets": 0,
+    "replies": 2,
+    "engagement": 8,
+    "isRetweet": false,
+    "relevance": 20,
+    "rawScore": 20008,
+    "score": 20008
   },
   {
     "id": "2112459337398358049",
@@ -180,14 +199,14 @@
     "url": "https://x.com/staunovo/status/2112459337398358049",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 5,
+    "likes": 9,
     "retweets": 1,
     "replies": 0,
-    "engagement": 7,
+    "engagement": 11,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20007,
-    "score": 20007
+    "rawScore": 20011,
+    "score": 20011
   },
   {
     "id": "2112459228535247021",
@@ -237,14 +256,14 @@
     "url": "https://x.com/Rory_Johnston/status/2112245226140242236",
     "photoUrl": "https://pbs.twimg.com/media/HVAzfB4WMAAtRJt.png",
     "hasPhoto": true,
-    "likes": 308,
+    "likes": 310,
     "retweets": 21,
     "replies": 9,
-    "engagement": 377,
+    "engagement": 379,
     "isRetweet": false,
     "relevance": 26,
-    "rawScore": 26677,
-    "score": 12005
+    "rawScore": 26679,
+    "score": 12006
   },
   {
     "id": "2112232824614879543",
@@ -256,14 +275,14 @@
     "url": "https://x.com/Rory_Johnston/status/2112232824614879543",
     "photoUrl": "https://pbs.twimg.com/media/HVAoijTWAAEKwsm.png",
     "hasPhoto": true,
-    "likes": 769,
+    "likes": 773,
     "retweets": 139,
     "replies": 32,
-    "engagement": 1143,
+    "engagement": 1147,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 29443,
-    "score": 13249
+    "rawScore": 29447,
+    "score": 13251
   },
   {
     "id": "2112215411546874004",
@@ -275,14 +294,14 @@
     "url": "https://x.com/Rory_Johnston/status/2112215411546874004",
     "photoUrl": "https://pbs.twimg.com/media/HVAYYjnWYAEbjqC.png",
     "hasPhoto": true,
-    "likes": 277,
+    "likes": 279,
     "retweets": 27,
     "replies": 16,
-    "engagement": 379,
+    "engagement": 381,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28679,
-    "score": 12906
+    "rawScore": 28681,
+    "score": 8604
   },
   {
     "id": "2112322513380499822",
@@ -320,7 +339,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10025,
-    "score": 6516
+    "score": 4511
   },
   {
     "id": "2112282500483760462",
@@ -358,7 +377,64 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10069,
-    "score": 4531
+    "score": 3021
+  },
+  {
+    "id": "2112480509678797051",
+    "text": "Meanwhile, US retail diesel prices remain stuck at USD 6.3 per gallon. https://t.co/J5LvJ78neG",
+    "createdAt": "2026-10-20T09:46:16+00:00",
+    "tweetTime": 1792489576000,
+    "username": "Ole_S_Hansen",
+    "displayName": "Ole S Hansen",
+    "url": "https://x.com/Ole_S_Hansen/status/2112480509678797051",
+    "photoUrl": "https://pbs.twimg.com/media/HVEJxXxWwAAazPJ.png",
+    "hasPhoto": true,
+    "likes": 13,
+    "retweets": 2,
+    "replies": 1,
+    "engagement": 20,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10320,
+    "score": 10320
+  },
+  {
+    "id": "2112489654960488772",
+    "text": "A minority nonetheless; and most of these tankers that get hit, make it out to the GoO for an STS transfer.",
+    "createdAt": "2026-10-20T10:22:36+00:00",
+    "tweetTime": 1792491756000,
+    "username": "TankerTrackers",
+    "displayName": "TankerTrackers.com, Inc.",
+    "url": "https://x.com/TankerTrackers/status/2112489654960488772",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 18,
+    "retweets": 3,
+    "replies": 0,
+    "engagement": 24,
+    "isRetweet": false,
+    "relevance": 18,
+    "rawScore": 18024,
+    "score": 18024
+  },
+  {
+    "id": "2112480625651220619",
+    "text": "The cited source (IMF Portwatch) only report what pings over AIS. Everyone and their brother knows by now that the overwhelming majority of tankers switch off their AIS transponders when traversing the Strait of Hormuz for security reasons.",
+    "createdAt": "2026-10-20T09:46:43+00:00",
+    "tweetTime": 1792489603000,
+    "username": "TankerTrackers",
+    "displayName": "TankerTrackers.com, Inc.",
+    "url": "https://x.com/TankerTrackers/status/2112480625651220619",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 83,
+    "retweets": 9,
+    "replies": 14,
+    "engagement": 143,
+    "isRetweet": false,
+    "relevance": 28,
+    "rawScore": 28143,
+    "score": 28143
   },
   {
     "id": "2112199363175002595",
@@ -370,13 +446,13 @@
     "url": "https://x.com/TankerTrackers/status/2112199363175002595",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 446,
-    "retweets": 50,
-    "replies": 32,
-    "engagement": 642,
+    "likes": 455,
+    "retweets": 51,
+    "replies": 33,
+    "engagement": 656,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28642,
-    "score": 8593
+    "rawScore": 28656,
+    "score": 8597
   }
 ]
