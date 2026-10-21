@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2112746182338580653",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1,
+    "likes": 2,
     "retweets": 0,
     "replies": 0,
-    "engagement": 1,
+    "engagement": 2,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10001,
-    "score": 10001
+    "rawScore": 10002,
+    "score": 10002
   },
   {
     "id": "2112532810653446174",
@@ -28,13 +28,13 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2112532810653446174",
     "photoUrl": "https://pbs.twimg.com/media/HVE5UkRaAAA2_wp.jpg",
     "hasPhoto": true,
-    "likes": 12,
+    "likes": 13,
     "retweets": 2,
     "replies": 2,
-    "engagement": 22,
+    "engagement": 23,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10322,
+    "rawScore": 10323,
     "score": 4645
   },
   {
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2112562020499214358",
     "photoUrl": "https://pbs.twimg.com/media/HVFS03HWYAACS0k.png",
     "hasPhoto": true,
-    "likes": 175,
-    "retweets": 41,
+    "likes": 177,
+    "retweets": 42,
     "replies": 18,
-    "engagement": 311,
+    "engagement": 315,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20611,
-    "score": 9275
+    "rawScore": 20615,
+    "score": 9277
   },
   {
     "id": "2112597084717080862",
@@ -104,14 +104,14 @@
     "url": "https://x.com/JavierBlas/status/2112593841912172669",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 149,
+    "likes": 152,
     "retweets": 55,
     "replies": 6,
-    "engagement": 277,
+    "engagement": 280,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28277,
-    "score": 18380
+    "rawScore": 28280,
+    "score": 18382
   },
   {
     "id": "2112540359251157463",
@@ -123,14 +123,14 @@
     "url": "https://x.com/JavierBlas/status/2112540359251157463",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 292,
+    "likes": 299,
     "retweets": 70,
     "replies": 46,
-    "engagement": 570,
+    "engagement": 577,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48570,
-    "score": 21857
+    "rawScore": 48577,
+    "score": 21860
   },
   {
     "id": "2112539577105695200",
@@ -142,14 +142,14 @@
     "url": "https://x.com/JavierBlas/status/2112539577105695200",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 147,
+    "likes": 149,
     "retweets": 7,
     "replies": 38,
-    "engagement": 275,
+    "engagement": 277,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10275,
-    "score": 4624
+    "rawScore": 10277,
+    "score": 4625
   },
   {
     "id": "2112526839927415097",
@@ -161,14 +161,14 @@
     "url": "https://x.com/JavierBlas/status/2112526839927415097",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 101,
-    "retweets": 23,
+    "likes": 105,
+    "retweets": 24,
     "replies": 22,
-    "engagement": 213,
+    "engagement": 219,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10213,
-    "score": 4596
+    "rawScore": 10219,
+    "score": 4599
   },
   {
     "id": "2112653567601545355",
@@ -180,52 +180,33 @@
     "url": "https://x.com/HFI_Research/status/2112653567601545355",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 177,
-    "retweets": 11,
+    "likes": 187,
+    "retweets": 12,
     "replies": 0,
-    "engagement": 199,
+    "engagement": 211,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10199,
-    "score": 8669
+    "rawScore": 10211,
+    "score": 8679
   },
   {
-    "id": "2112751897928986984",
-    "text": "United Airlines forecast weaker-than-expected earnings for the final three months of the year, underscoring how soaring jet fuel prices are eating into airline profits despite resilient demand for air travel #oott  https://t.co/Hv1QumLJN9",
-    "createdAt": "2026-10-21T03:44:40+00:00",
-    "tweetTime": 1792554280000,
+    "id": "2112769010332844248",
+    "text": "Alaska Air Group Swings to Third-Quarter Loss on Fuel Costs\nHigher-than-expected fuel headwinds more than offset the airline’s double-digit revenue growth in the third quarter #oott https://t.co/3dJxpXS8vz",
+    "createdAt": "2026-10-21T04:52:40+00:00",
+    "tweetTime": 1792558360000,
     "username": "staunovo",
     "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2112751897928986984",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 0,
-    "retweets": 1,
-    "replies": 1,
-    "engagement": 5,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10005,
-    "score": 10005
-  },
-  {
-    "id": "2112751834251026770",
-    "text": "With high gas prices sending car buyers flocking to hybrids, General Motors Co. is giving the technology another look.\n\nA skeptic of gas-electric vehicles, the Detroit-based automaker now plans to have hybrid models in “multiple segments” in its lineup, Chief Executive Mary Barra told analysts Tuesday on a conference call. The need to hit on high-demand products has gained urgency with GM’s overall sales volumes declining in the US.\n\n“We will have hybrids,” she said. “We’ll talk more about them as we get closer to the launch.” #oott https://t.co/Crh9CEFEjj",
-    "createdAt": "2026-10-21T03:44:24+00:00",
-    "tweetTime": 1792554264000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2112751834251026770",
+    "url": "https://x.com/staunovo/status/2112769010332844248",
     "photoUrl": null,
     "hasPhoto": false,
     "likes": 0,
     "retweets": 0,
-    "replies": 0,
-    "engagement": 0,
+    "replies": 2,
+    "engagement": 6,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10000,
-    "score": 10000
+    "rawScore": 10006,
+    "score": 10006
   },
   {
     "id": "2112681991166476708",
@@ -237,14 +218,14 @@
     "url": "https://x.com/Rory_Johnston/status/2112681991166476708",
     "photoUrl": "https://pbs.twimg.com/media/HVHBExkXkAAO-SP.jpg",
     "hasPhoto": true,
-    "likes": 239,
-    "retweets": 12,
+    "likes": 254,
+    "retweets": 13,
     "replies": 15,
-    "engagement": 308,
+    "engagement": 325,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10608,
-    "score": 9017
+    "rawScore": 10625,
+    "score": 9031
   },
   {
     "id": "2112637511432364464",
@@ -256,14 +237,14 @@
     "url": "https://x.com/Rory_Johnston/status/2112637511432364464",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 180,
+    "likes": 189,
     "retweets": 1,
     "replies": 15,
-    "engagement": 227,
+    "engagement": 236,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10227,
-    "score": 8693
+    "rawScore": 10236,
+    "score": 6653
   },
   {
     "id": "2112585060238983266",
@@ -275,14 +256,14 @@
     "url": "https://x.com/Rory_Johnston/status/2112585060238983266",
     "photoUrl": "https://pbs.twimg.com/media/HVFoiYIWsAErI__.png",
     "hasPhoto": true,
-    "likes": 142,
-    "retweets": 12,
+    "likes": 143,
+    "retweets": 13,
     "replies": 7,
-    "engagement": 187,
+    "engagement": 190,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18487,
-    "score": 12017
+    "rawScore": 18490,
+    "score": 8321
   },
   {
     "id": "2112569863327637910",
@@ -294,13 +275,13 @@
     "url": "https://x.com/Rory_Johnston/status/2112569863327637910",
     "photoUrl": "https://pbs.twimg.com/media/HVFaisiXEAAmqAL.png",
     "hasPhoto": true,
-    "likes": 182,
+    "likes": 183,
     "retweets": 14,
     "replies": 15,
-    "engagement": 255,
+    "engagement": 256,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10555,
+    "rawScore": 10556,
     "score": 4750
   },
   {
@@ -339,7 +320,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10004,
-    "score": 6503
+    "score": 4502
   },
   {
     "id": "2112551714658140245",
@@ -370,14 +351,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2112736479248335317",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 12,
+    "likes": 17,
     "retweets": 0,
     "replies": 1,
-    "engagement": 15,
+    "engagement": 20,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38015,
-    "score": 38015
+    "rawScore": 38020,
+    "score": 38020
   },
   {
     "id": "2112725142250156370",
@@ -389,14 +370,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2112725142250156370",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 39,
+    "likes": 44,
     "retweets": 3,
     "replies": 0,
-    "engagement": 45,
+    "engagement": 50,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38045,
-    "score": 38045
+    "rawScore": 38050,
+    "score": 38050
   },
   {
     "id": "2112705067984052447",
@@ -408,14 +389,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2112705067984052447",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 31,
+    "likes": 32,
     "retweets": 2,
     "replies": 2,
-    "engagement": 41,
+    "engagement": 42,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10041,
-    "score": 10041
+    "rawScore": 10042,
+    "score": 8536
   },
   {
     "id": "2112649057084838368",
@@ -427,14 +408,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2112649057084838368",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 147,
+    "likes": 153,
     "retweets": 15,
     "replies": 8,
-    "engagement": 201,
+    "engagement": 207,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10201,
-    "score": 8671
+    "rawScore": 10207,
+    "score": 6635
   },
   {
     "id": "2112480509678797051",
@@ -465,14 +446,14 @@
     "url": "https://x.com/TankerTrackers/status/2112667312876671453",
     "photoUrl": "https://pbs.twimg.com/media/HVGx56vXgAAcHf-.jpg",
     "hasPhoto": true,
-    "likes": 174,
+    "likes": 202,
     "retweets": 36,
-    "replies": 13,
-    "engagement": 285,
+    "replies": 14,
+    "engagement": 316,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48585,
-    "score": 41297
+    "rawScore": 48616,
+    "score": 41324
   },
   {
     "id": "2112514470199128095",
@@ -484,14 +465,14 @@
     "url": "https://x.com/TankerTrackers/status/2112514470199128095",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 151,
-    "retweets": 10,
+    "likes": 154,
+    "retweets": 11,
     "replies": 12,
-    "engagement": 207,
+    "engagement": 212,
     "isRetweet": false,
     "relevance": 46,
-    "rawScore": 46207,
-    "score": 20793
+    "rawScore": 46212,
+    "score": 20795
   },
   {
     "id": "2112489654960488772",
@@ -510,7 +491,7 @@
     "isRetweet": false,
     "relevance": 18,
     "rawScore": 18254,
-    "score": 8214
+    "score": 5476
   },
   {
     "id": "2112480625651220619",
@@ -522,13 +503,13 @@
     "url": "https://x.com/TankerTrackers/status/2112480625651220619",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 271,
+    "likes": 272,
     "retweets": 28,
     "replies": 21,
-    "engagement": 390,
+    "engagement": 391,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28390,
+    "rawScore": 28391,
     "score": 8517
   }
 ]
