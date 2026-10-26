@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2114523145654919175",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 36,
-    "retweets": 2,
+    "likes": 43,
+    "retweets": 5,
     "replies": 2,
-    "engagement": 46,
+    "engagement": 59,
     "isRetweet": false,
     "relevance": 56,
-    "rawScore": 56046,
-    "score": 47639
+    "rawScore": 56059,
+    "score": 47650
   },
   {
     "id": "2114353453866856642",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2114353453866856642",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 168,
-    "retweets": 17,
+    "likes": 172,
+    "retweets": 20,
     "replies": 6,
-    "engagement": 220,
+    "engagement": 230,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28220,
-    "score": 12699
+    "rawScore": 28230,
+    "score": 12704
   },
   {
     "id": "2113602225033658649",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2114434374972088659",
     "photoUrl": "https://pbs.twimg.com/media/HVf6X9sXQAAe6EK.jpg",
     "hasPhoto": true,
-    "likes": 235,
-    "retweets": 28,
+    "likes": 242,
+    "retweets": 30,
     "replies": 32,
-    "engagement": 387,
+    "engagement": 398,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20687,
-    "score": 13447
+    "rawScore": 20698,
+    "score": 13454
   },
   {
     "id": "2113647413433090530",
@@ -123,33 +123,14 @@
     "url": "https://x.com/HFI_Research/status/2114517604568289397",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 183,
+    "likes": 203,
     "retweets": 15,
     "replies": 7,
-    "engagement": 234,
+    "engagement": 254,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10234,
-    "score": 8699
-  },
-  {
-    "id": "2114589677348925448",
-    "text": "Saudi crude to be stored at Singapore’s Jurong Rock caverns from H2 2027: Singapore minister #oott https://t.co/9eAFCjeWmp",
-    "createdAt": "2026-10-26T05:27:20+00:00",
-    "tweetTime": 1792992440000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2114589677348925448",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 0,
-    "retweets": 0,
-    "replies": 1,
-    "engagement": 3,
-    "isRetweet": false,
-    "relevance": 20,
-    "rawScore": 20003,
-    "score": 20003
+    "rawScore": 10254,
+    "score": 8716
   },
   {
     "id": "2114496348288659916",
@@ -161,14 +142,14 @@
     "url": "https://x.com/Rory_Johnston/status/2114496348288659916",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 87,
+    "likes": 92,
     "retweets": 2,
     "replies": 7,
-    "engagement": 112,
+    "engagement": 117,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10112,
-    "score": 8595
+    "rawScore": 10117,
+    "score": 8599
   },
   {
     "id": "2113742720342908938",
@@ -244,7 +225,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10002,
-    "score": 8502
+    "score": 6501
   },
   {
     "id": "2114423086699487364",
@@ -263,7 +244,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10006,
-    "score": 6504
+    "score": 4503
   },
   {
     "id": "2114126977426682105",
@@ -389,14 +370,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2114469270981574657",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 66,
+    "likes": 69,
     "retweets": 2,
     "replies": 3,
-    "engagement": 79,
+    "engagement": 82,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10079,
-    "score": 6551
+    "rawScore": 10082,
+    "score": 6553
   },
   {
     "id": "2113944402116722807",
@@ -484,14 +465,14 @@
     "url": "https://x.com/TankerTrackers/status/2114559064369713341",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 146,
-    "retweets": 30,
-    "replies": 7,
-    "engagement": 227,
+    "likes": 178,
+    "retweets": 35,
+    "replies": 8,
+    "engagement": 272,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38227,
-    "score": 38227
+    "rawScore": 38272,
+    "score": 38272
   },
   {
     "id": "2114400655159038135",
@@ -503,14 +484,14 @@
     "url": "https://x.com/TankerTrackers/status/2114400655159038135",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 155,
+    "likes": 158,
     "retweets": 24,
-    "replies": 10,
-    "engagement": 233,
+    "replies": 11,
+    "engagement": 239,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10233,
-    "score": 4605
+    "rawScore": 10239,
+    "score": 4608
   },
   {
     "id": "2114395903826301204",
@@ -522,14 +503,14 @@
     "url": "https://x.com/TankerTrackers/status/2114395903826301204",
     "photoUrl": "https://pbs.twimg.com/media/HVfXZvWXEAADtkq.jpg",
     "hasPhoto": true,
-    "likes": 218,
+    "likes": 222,
     "retweets": 39,
     "replies": 48,
-    "engagement": 440,
+    "engagement": 444,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18740,
-    "score": 8433
+    "rawScore": 18744,
+    "score": 8435
   },
   {
     "id": "2114388558555275711",
@@ -541,14 +522,14 @@
     "url": "https://x.com/TankerTrackers/status/2114388558555275711",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 611,
-    "retweets": 53,
+    "likes": 624,
+    "retweets": 55,
     "replies": 32,
-    "engagement": 813,
+    "engagement": 830,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10813,
-    "score": 4866
+    "rawScore": 10830,
+    "score": 4874
   },
   {
     "id": "2114387264482484438",
@@ -560,13 +541,13 @@
     "url": "https://x.com/TankerTrackers/status/2114387264482484438",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 337,
+    "likes": 347,
     "retweets": 33,
     "replies": 21,
-    "engagement": 466,
+    "engagement": 476,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10466,
-    "score": 4710
+    "rawScore": 10476,
+    "score": 4714
   }
 ]
