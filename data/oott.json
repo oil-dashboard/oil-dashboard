@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2114523145654919175",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 52,
-    "retweets": 6,
-    "replies": 2,
-    "engagement": 70,
+    "likes": 60,
+    "retweets": 7,
+    "replies": 3,
+    "engagement": 83,
     "isRetweet": false,
     "relevance": 56,
-    "rawScore": 56070,
-    "score": 36446
+    "rawScore": 56083,
+    "score": 36454
   },
   {
     "id": "2114353453866856642",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2114353453866856642",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 182,
-    "retweets": 21,
+    "likes": 194,
+    "retweets": 22,
     "replies": 6,
-    "engagement": 242,
+    "engagement": 256,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28242,
-    "score": 8473
+    "rawScore": 28256,
+    "score": 8477
   },
   {
     "id": "2113602225033658649",
@@ -47,13 +47,13 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2113602225033658649",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 16,
+    "likes": 17,
     "retweets": 2,
     "replies": 0,
-    "engagement": 20,
+    "engagement": 21,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38020,
+    "rawScore": 38021,
     "score": 11406
   },
   {
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2114621771085172911",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 117,
-    "retweets": 15,
-    "replies": 11,
-    "engagement": 180,
+    "likes": 207,
+    "retweets": 22,
+    "replies": 16,
+    "engagement": 299,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10180,
-    "score": 10180
+    "rawScore": 10299,
+    "score": 10299
   },
   {
     "id": "2114434374972088659",
@@ -85,14 +85,14 @@
     "url": "https://x.com/JavierBlas/status/2114434374972088659",
     "photoUrl": "https://pbs.twimg.com/media/HVf6X9sXQAAe6EK.jpg",
     "hasPhoto": true,
-    "likes": 261,
-    "retweets": 31,
-    "replies": 33,
-    "engagement": 422,
+    "likes": 269,
+    "retweets": 32,
+    "replies": 35,
+    "engagement": 438,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20722,
-    "score": 9325
+    "rawScore": 20738,
+    "score": 9332
   },
   {
     "id": "2113647413433090530",
@@ -123,14 +123,33 @@
     "url": "https://x.com/HFI_Research/status/2114517604568289397",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 219,
+    "likes": 228,
     "retweets": 16,
     "replies": 7,
-    "engagement": 272,
+    "engagement": 281,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10272,
-    "score": 6677
+    "rawScore": 10281,
+    "score": 6683
+  },
+  {
+    "id": "2114651524307591510",
+    "text": "UKMTO has received a verified time-late report of an incident in the Strait of Hormuz.\n\nA tanker transiting outbound was struck by an unknown projectile, disabling the vessel. The crew have been reported safe. There is no damage assessment or environmental impact report at present.\n\nVessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate.\n\n#oott",
+    "createdAt": "2026-10-26T09:33:06+00:00",
+    "tweetTime": 1793007186000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2114651524307591510",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 1,
+    "retweets": 1,
+    "replies": 0,
+    "engagement": 3,
+    "isRetweet": false,
+    "relevance": 38,
+    "rawScore": 38003,
+    "score": 38003
   },
   {
     "id": "2114641310011306453",
@@ -142,14 +161,14 @@
     "url": "https://x.com/staunovo/status/2114641310011306453",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 2,
+    "likes": 3,
     "retweets": 0,
     "replies": 0,
-    "engagement": 2,
+    "engagement": 3,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18002,
-    "score": 18002
+    "rawScore": 18003,
+    "score": 18003
   },
   {
     "id": "2114637558625779767",
@@ -161,14 +180,14 @@
     "url": "https://x.com/staunovo/status/2114637558625779767",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1,
+    "likes": 3,
     "retweets": 0,
     "replies": 0,
-    "engagement": 1,
+    "engagement": 3,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10001,
-    "score": 10001
+    "rawScore": 10003,
+    "score": 10003
   },
   {
     "id": "2114633364426703197",
@@ -180,14 +199,14 @@
     "url": "https://x.com/staunovo/status/2114633364426703197",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 2,
+    "likes": 3,
     "retweets": 0,
     "replies": 0,
-    "engagement": 2,
+    "engagement": 3,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20002,
-    "score": 20002
+    "rawScore": 20003,
+    "score": 20003
   },
   {
     "id": "2114496348288659916",
@@ -199,14 +218,14 @@
     "url": "https://x.com/Rory_Johnston/status/2114496348288659916",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 94,
+    "likes": 99,
     "retweets": 2,
     "replies": 7,
-    "engagement": 119,
+    "engagement": 124,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10119,
-    "score": 6577
+    "rawScore": 10124,
+    "score": 6581
   },
   {
     "id": "2113742720342908938",
@@ -427,14 +446,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2114469270981574657",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 74,
+    "likes": 75,
     "retweets": 2,
     "replies": 3,
-    "engagement": 87,
+    "engagement": 88,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10087,
-    "score": 6557
+    "rawScore": 10088,
+    "score": 4540
   },
   {
     "id": "2113944402116722807",
@@ -494,25 +513,6 @@
     "score": 5431
   },
   {
-    "id": "2113560910132367655",
-    "text": "On Thursday, I rejoined @davidlin_TV to discuss the latest risk off correction, the Iran war's impact on global energy supplies, and the forces driving gold, natural gas, agricultural commodities, and copper.  https://t.co/kh1Ozuh1NG via @YouTube",
-    "createdAt": "2026-10-23T09:19:23+00:00",
-    "tweetTime": 1792747163000,
-    "username": "Ole_S_Hansen",
-    "displayName": "Ole S Hansen",
-    "url": "https://x.com/Ole_S_Hansen/status/2113560910132367655",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 35,
-    "retweets": 8,
-    "replies": 2,
-    "engagement": 57,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10057,
-    "score": 3017
-  },
-  {
     "id": "2114559064369713341",
     "text": "BREAKING: At least two VLCC supertankers formerly part of the US-sanctioned Dark Fleet are underway toward the Middle East in what we believe is an effort to support @SecretaryWright's recently announced plan to lower oil transportation costs.\n\nDetails with clients.\n\n#OOTT #Tankers #IranWar",
     "createdAt": "2026-10-26T03:25:42+00:00",
@@ -522,14 +522,14 @@
     "url": "https://x.com/TankerTrackers/status/2114559064369713341",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 204,
+    "likes": 216,
     "retweets": 38,
     "replies": 8,
-    "engagement": 304,
+    "engagement": 316,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38304,
-    "score": 32558
+    "rawScore": 38316,
+    "score": 32569
   },
   {
     "id": "2114400655159038135",
@@ -541,14 +541,14 @@
     "url": "https://x.com/TankerTrackers/status/2114400655159038135",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 160,
-    "retweets": 25,
+    "likes": 164,
+    "retweets": 27,
     "replies": 12,
-    "engagement": 246,
+    "engagement": 254,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10246,
-    "score": 4611
+    "rawScore": 10254,
+    "score": 4614
   },
   {
     "id": "2114395903826301204",
@@ -560,14 +560,14 @@
     "url": "https://x.com/TankerTrackers/status/2114395903826301204",
     "photoUrl": "https://pbs.twimg.com/media/HVfXZvWXEAADtkq.jpg",
     "hasPhoto": true,
-    "likes": 227,
-    "retweets": 39,
+    "likes": 231,
+    "retweets": 41,
     "replies": 49,
-    "engagement": 452,
+    "engagement": 460,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18752,
-    "score": 8438
+    "rawScore": 18760,
+    "score": 8442
   },
   {
     "id": "2114388558555275711",
@@ -579,14 +579,14 @@
     "url": "https://x.com/TankerTrackers/status/2114388558555275711",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 645,
+    "likes": 649,
     "retweets": 55,
     "replies": 33,
-    "engagement": 854,
+    "engagement": 858,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10854,
-    "score": 4884
+    "rawScore": 10858,
+    "score": 3257
   },
   {
     "id": "2114387264482484438",
@@ -598,13 +598,13 @@
     "url": "https://x.com/TankerTrackers/status/2114387264482484438",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 367,
-    "retweets": 36,
+    "likes": 369,
+    "retweets": 37,
     "replies": 21,
-    "engagement": 502,
+    "engagement": 506,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10502,
-    "score": 4726
+    "rawScore": 10506,
+    "score": 3152
   }
 ]
