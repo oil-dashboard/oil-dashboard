@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2114523145654919175",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 9,
-    "retweets": 0,
+    "likes": 24,
+    "retweets": 1,
     "replies": 2,
-    "engagement": 15,
+    "engagement": 32,
     "isRetweet": false,
     "relevance": 56,
-    "rawScore": 56015,
-    "score": 56015
+    "rawScore": 56032,
+    "score": 56032
   },
   {
     "id": "2114353453866856642",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2114353453866856642",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 147,
-    "retweets": 12,
+    "likes": 152,
+    "retweets": 15,
     "replies": 5,
-    "engagement": 186,
+    "engagement": 197,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28186,
-    "score": 12684
+    "rawScore": 28197,
+    "score": 12689
   },
   {
     "id": "2113602225033658649",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2114434374972088659",
     "photoUrl": "https://pbs.twimg.com/media/HVf6X9sXQAAe6EK.jpg",
     "hasPhoto": true,
-    "likes": 208,
-    "retweets": 22,
-    "replies": 31,
-    "engagement": 345,
+    "likes": 215,
+    "retweets": 23,
+    "replies": 32,
+    "engagement": 357,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20645,
-    "score": 17548
+    "rawScore": 20657,
+    "score": 13427
   },
   {
     "id": "2113647413433090530",
@@ -123,14 +123,14 @@
     "url": "https://x.com/HFI_Research/status/2114517604568289397",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 124,
-    "retweets": 12,
+    "likes": 146,
+    "retweets": 14,
     "replies": 6,
-    "engagement": 166,
+    "engagement": 192,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10166,
-    "score": 10166
+    "rawScore": 10192,
+    "score": 10192
   },
   {
     "id": "2114496348288659916",
@@ -142,14 +142,14 @@
     "url": "https://x.com/Rory_Johnston/status/2114496348288659916",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 77,
+    "likes": 80,
     "retweets": 2,
     "replies": 7,
-    "engagement": 102,
+    "engagement": 105,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10102,
-    "score": 10102
+    "rawScore": 10105,
+    "score": 8589
   },
   {
     "id": "2113742720342908938",
@@ -225,7 +225,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10002,
-    "score": 10002
+    "score": 8502
   },
   {
     "id": "2114423086699487364",
@@ -244,7 +244,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10006,
-    "score": 8505
+    "score": 6504
   },
   {
     "id": "2114126977426682105",
@@ -370,14 +370,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2114469270981574657",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 58,
+    "likes": 61,
     "retweets": 1,
     "replies": 3,
-    "engagement": 69,
+    "engagement": 72,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10069,
-    "score": 8559
+    "rawScore": 10072,
+    "score": 8561
   },
   {
     "id": "2113944402116722807",
@@ -456,6 +456,25 @@
     "score": 3017
   },
   {
+    "id": "2114559064369713341",
+    "text": "BREAKING: At least two VLCC supertankers formerly part of the US-sanctioned Dark Fleet are underway toward the Middle East in what we believe is an effort to support @SecretaryWright's recently announced plan to lower oil transportation costs.\n\nDetails with clients.\n\n#OOTT #Tankers #IranWar",
+    "createdAt": "2026-10-26T03:25:42+00:00",
+    "tweetTime": 1792985142000,
+    "username": "TankerTrackers",
+    "displayName": "TankerTrackers.com, Inc.",
+    "url": "https://x.com/TankerTrackers/status/2114559064369713341",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 2,
+    "retweets": 2,
+    "replies": 0,
+    "engagement": 6,
+    "isRetweet": false,
+    "relevance": 38,
+    "rawScore": 38006,
+    "score": 38006
+  },
+  {
     "id": "2114400655159038135",
     "text": "Based on their past statements, CENTCOM’s current total of 1.5 billion barrels implies that 14.7 Mbpd has departed via the SoH over the past 17 days; which is up from 13.2 Mbpd during the previous 19 days.",
     "createdAt": "2026-10-25T16:56:14+00:00",
@@ -465,14 +484,14 @@
     "url": "https://x.com/TankerTrackers/status/2114400655159038135",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 142,
+    "likes": 146,
     "retweets": 24,
-    "replies": 8,
-    "engagement": 214,
+    "replies": 9,
+    "engagement": 221,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10214,
-    "score": 6639
+    "rawScore": 10221,
+    "score": 6644
   },
   {
     "id": "2114395903826301204",
@@ -484,14 +503,14 @@
     "url": "https://x.com/TankerTrackers/status/2114395903826301204",
     "photoUrl": "https://pbs.twimg.com/media/HVfXZvWXEAADtkq.jpg",
     "hasPhoto": true,
-    "likes": 200,
+    "likes": 205,
     "retweets": 38,
     "replies": 47,
-    "engagement": 417,
+    "engagement": 422,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18717,
-    "score": 12166
+    "rawScore": 18722,
+    "score": 12169
   },
   {
     "id": "2114388558555275711",
@@ -503,14 +522,14 @@
     "url": "https://x.com/TankerTrackers/status/2114388558555275711",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 577,
-    "retweets": 52,
+    "likes": 594,
+    "retweets": 53,
     "replies": 30,
-    "engagement": 771,
+    "engagement": 790,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10771,
-    "score": 7001
+    "rawScore": 10790,
+    "score": 7014
   },
   {
     "id": "2114387264482484438",
@@ -522,32 +541,13 @@
     "url": "https://x.com/TankerTrackers/status/2114387264482484438",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 310,
-    "retweets": 30,
-    "replies": 16,
-    "engagement": 418,
+    "likes": 314,
+    "retweets": 31,
+    "replies": 17,
+    "engagement": 427,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10418,
-    "score": 6772
-  },
-  {
-    "id": "2114338900852294073",
-    "text": "GEM NO. 2 (9735373) was attacked by Iran on 2026-10-09. The vessel had been anchored for an extended period with 2 million barrels of Saudi crude oil aboard and her AIS transponder switched on, making her an easy target. A fire broke out and was extinguished the same day. Satellite imagery captured the following day confirmed that the fire had been extinguished and showed no oil spillage in the water. The earliest sign of spillage appeared on 2026-10-19. Five days later, the spill covered hundreds of square kilometers.",
-    "createdAt": "2026-10-25T12:50:51+00:00",
-    "tweetTime": 1792932651000,
-    "username": "TankerTrackers",
-    "displayName": "TankerTrackers.com, Inc.",
-    "url": "https://x.com/TankerTrackers/status/2114338900852294073",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 186,
-    "retweets": 46,
-    "replies": 15,
-    "engagement": 323,
-    "isRetweet": false,
-    "relevance": 30,
-    "rawScore": 30323,
-    "score": 13645
+    "rawScore": 10427,
+    "score": 6778
   }
 ]
