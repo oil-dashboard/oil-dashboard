@@ -9,14 +9,33 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2115740735005958468",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 9,
+    "likes": 16,
     "retweets": 0,
     "replies": 1,
-    "engagement": 12,
+    "engagement": 19,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10012,
-    "score": 10012
+    "rawScore": 10019,
+    "score": 10019
+  },
+  {
+    "id": "2115761784065757282",
+    "text": "Meanwhile, in the heavy oil market: \n\n\"... Heavy crude is essentially a race to the bottom for both Canadian and Venezuelan, and even high-sulfur fuel oil...\" -- senior executive at US oil refiner Phillips 66 in conference call with shareholders",
+    "createdAt": "2026-10-29T11:04:52+00:00",
+    "tweetTime": 1793271892000,
+    "username": "JavierBlas",
+    "displayName": "Javier Blas",
+    "url": "https://x.com/JavierBlas/status/2115761784065757282",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 32,
+    "retweets": 10,
+    "replies": 3,
+    "engagement": 61,
+    "isRetweet": false,
+    "relevance": 20,
+    "rawScore": 20061,
+    "score": 20061
   },
   {
     "id": "2115714054320722315",
@@ -28,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2115714054320722315",
     "photoUrl": "https://pbs.twimg.com/media/HVyBNRuXoAAqWL4.jpg",
     "hasPhoto": true,
-    "likes": 81,
-    "retweets": 13,
-    "replies": 9,
-    "engagement": 134,
+    "likes": 103,
+    "retweets": 18,
+    "replies": 10,
+    "engagement": 169,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10434,
-    "score": 10434
+    "rawScore": 10469,
+    "score": 10469
   },
   {
     "id": "2115713978663866744",
@@ -47,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2115713978663866744",
     "photoUrl": "https://pbs.twimg.com/media/HVyGhoeW8AAFIAN.jpg",
     "hasPhoto": true,
-    "likes": 49,
+    "likes": 59,
     "retweets": 8,
     "replies": 3,
-    "engagement": 74,
+    "engagement": 84,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10374,
-    "score": 10374
+    "rawScore": 10384,
+    "score": 10384
   },
   {
     "id": "2115469421456286201",
@@ -66,14 +85,14 @@
     "url": "https://x.com/JavierBlas/status/2115469421456286201",
     "photoUrl": "https://pbs.twimg.com/media/HVun0I2XIAAWWcU.jpg",
     "hasPhoto": true,
-    "likes": 618,
-    "retweets": 121,
+    "likes": 623,
+    "retweets": 123,
     "replies": 48,
-    "engagement": 1004,
+    "engagement": 1013,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 29304,
-    "score": 8791
+    "rawScore": 29313,
+    "score": 8794
   },
   {
     "id": "2115545507561107757",
@@ -85,14 +104,14 @@
     "url": "https://x.com/JavierBlas/status/2115545507561107757",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 21,
+    "likes": 22,
     "retweets": 3,
     "replies": 3,
-    "engagement": 36,
+    "engagement": 37,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38036,
-    "score": 17116
+    "rawScore": 38037,
+    "score": 17117
   },
   {
     "id": "2115438544072106128",
@@ -104,52 +123,14 @@
     "url": "https://x.com/JavierBlas/status/2115438544072106128",
     "photoUrl": "https://pbs.twimg.com/media/HVuMJHzWYAAkSiO.png",
     "hasPhoto": true,
-    "likes": 264,
-    "retweets": 50,
-    "replies": 18,
-    "engagement": 418,
+    "likes": 265,
+    "retweets": 51,
+    "replies": 19,
+    "engagement": 424,
     "isRetweet": false,
     "relevance": 36,
-    "rawScore": 36718,
-    "score": 11015
-  },
-  {
-    "id": "2115470118394150942",
-    "text": "Now, imagine the money that BP's Whiting refinery, in northwest Indiana, is making thanks to this situation. Alongside the rest of the US Midwest refining industry, it's benefiting from quite cheap feedstock and incredibly high finished fuel product prices.",
-    "createdAt": "2026-10-28T15:45:54+00:00",
-    "tweetTime": 1793202354000,
-    "username": "JavierBlas",
-    "displayName": "Javier Blas",
-    "url": "https://x.com/JavierBlas/status/2115470118394150942",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 30,
-    "retweets": 3,
-    "replies": 4,
-    "engagement": 48,
-    "isRetweet": false,
-    "relevance": 18,
-    "rawScore": 18048,
-    "score": 5414
-  },
-  {
-    "id": "2115408177151848620",
-    "text": "U.S. DIESEL PRICES at retail level (including taxes) have been essentially unchanged in October at $6.25 per gallon ($263 per barrel) from $6.29 ($264) in September. Retail prices were in the 97th percentile for all months since the start of the century up from just the 32nd percentile in January. Multiple efforts to reduce prices by pressing refiners to increase output, release more fuel from strategic reserves, and suspend restrictions on the used of dyed fuels have not lowered prices though they probably prevented them from rising even further:",
-    "createdAt": "2026-10-28T11:39:46+00:00",
-    "tweetTime": 1793187586000,
-    "username": "JKempEnergy",
-    "displayName": "John Kemp",
-    "url": "https://x.com/JKempEnergy/status/2115408177151848620",
-    "photoUrl": "https://pbs.twimg.com/media/HVtwfHdWoAA7eEJ.png",
-    "hasPhoto": true,
-    "likes": 30,
-    "retweets": 13,
-    "replies": 10,
-    "engagement": 86,
-    "isRetweet": false,
-    "relevance": 20,
-    "rawScore": 20386,
-    "score": 6116
+    "rawScore": 36724,
+    "score": 11017
   },
   {
     "id": "2115638979009929463",
@@ -161,14 +142,14 @@
     "url": "https://x.com/HFI_Research/status/2115638979009929463",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 23,
+    "likes": 26,
     "retweets": 3,
     "replies": 2,
-    "engagement": 35,
+    "engagement": 38,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28035,
-    "score": 23830
+    "rawScore": 28038,
+    "score": 18225
   },
   {
     "id": "2115628196771348721",
@@ -180,14 +161,14 @@
     "url": "https://x.com/HFI_Research/status/2115628196771348721",
     "photoUrl": "https://pbs.twimg.com/media/HVw4obRaYAArh3H.png",
     "hasPhoto": true,
-    "likes": 138,
+    "likes": 143,
     "retweets": 16,
     "replies": 1,
-    "engagement": 173,
+    "engagement": 178,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20473,
-    "score": 13307
+    "rawScore": 20478,
+    "score": 13311
   },
   {
     "id": "2115626350874947907",
@@ -199,14 +180,14 @@
     "url": "https://x.com/HFI_Research/status/2115626350874947907",
     "photoUrl": "https://pbs.twimg.com/media/HVw2839bYAA5tDp.jpg",
     "hasPhoto": true,
-    "likes": 104,
+    "likes": 115,
     "retweets": 18,
     "replies": 2,
-    "engagement": 146,
+    "engagement": 157,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28446,
-    "score": 18490
+    "rawScore": 28457,
+    "score": 18497
   },
   {
     "id": "2115573386541948980",
@@ -218,14 +199,14 @@
     "url": "https://x.com/HFI_Research/status/2115573386541948980",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 167,
+    "likes": 169,
     "retweets": 10,
     "replies": 2,
-    "engagement": 193,
+    "engagement": 195,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10193,
-    "score": 4587
+    "rawScore": 10195,
+    "score": 4588
   },
   {
     "id": "2115520479423615370",
@@ -237,14 +218,14 @@
     "url": "https://x.com/HFI_Research/status/2115520479423615370",
     "photoUrl": "https://pbs.twimg.com/media/HVvWih-bkAABDH0.jpg",
     "hasPhoto": true,
-    "likes": 284,
+    "likes": 288,
     "retweets": 35,
     "replies": 6,
-    "engagement": 372,
+    "engagement": 376,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20672,
-    "score": 9302
+    "rawScore": 20676,
+    "score": 9304
   },
   {
     "id": "2115755232395149707",
@@ -256,14 +237,14 @@
     "url": "https://x.com/staunovo/status/2115755232395149707",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 0,
-    "retweets": 0,
+    "likes": 1,
+    "retweets": 3,
     "replies": 0,
-    "engagement": 0,
+    "engagement": 7,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20000,
-    "score": 20000
+    "rawScore": 20007,
+    "score": 20007
   },
   {
     "id": "2115754520374292592",
@@ -275,14 +256,14 @@
     "url": "https://x.com/staunovo/status/2115754520374292592",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 0,
-    "retweets": 1,
+    "likes": 3,
+    "retweets": 2,
     "replies": 0,
-    "engagement": 2,
+    "engagement": 7,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10002,
-    "score": 10002
+    "rawScore": 10007,
+    "score": 10007
   },
   {
     "id": "2115753789596598503",
@@ -294,14 +275,14 @@
     "url": "https://x.com/staunovo/status/2115753789596598503",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 0,
+    "likes": 2,
     "retweets": 0,
     "replies": 0,
-    "engagement": 0,
+    "engagement": 2,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48000,
-    "score": 48000
+    "rawScore": 48002,
+    "score": 48002
   },
   {
     "id": "2115538737719378217",
@@ -313,14 +294,14 @@
     "url": "https://x.com/Rory_Johnston/status/2115538737719378217",
     "photoUrl": "https://pbs.twimg.com/media/HVvnPRwWEAAnso2.png",
     "hasPhoto": true,
-    "likes": 217,
+    "likes": 218,
     "retweets": 25,
     "replies": 9,
-    "engagement": 294,
+    "engagement": 295,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10594,
-    "score": 4767
+    "rawScore": 10595,
+    "score": 4768
   },
   {
     "id": "2115521423506608129",
@@ -332,14 +313,14 @@
     "url": "https://x.com/Rory_Johnston/status/2115521423506608129",
     "photoUrl": "https://pbs.twimg.com/media/HVvW_eOWAAEvmGW.png",
     "hasPhoto": true,
-    "likes": 47,
+    "likes": 49,
     "retweets": 4,
     "replies": 6,
-    "engagement": 73,
+    "engagement": 75,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28373,
-    "score": 12768
+    "rawScore": 28375,
+    "score": 12769
   },
   {
     "id": "2115493891952513233",
@@ -358,7 +339,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20022,
-    "score": 9010
+    "score": 6007
   },
   {
     "id": "2115481970012549413",
@@ -453,7 +434,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10003,
-    "score": 4501
+    "score": 3001
   },
   {
     "id": "2115491118620299559",
@@ -472,7 +453,7 @@
     "isRetweet": false,
     "relevance": 38,
     "rawScore": 38001,
-    "score": 17100
+    "score": 11400
   },
   {
     "id": "2115549893930697182",
@@ -484,14 +465,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2115549893930697182",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 15,
+    "likes": 16,
     "retweets": 0,
     "replies": 1,
-    "engagement": 18,
+    "engagement": 19,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10018,
-    "score": 4508
+    "rawScore": 10019,
+    "score": 4509
   },
   {
     "id": "2115623275816485089",
@@ -503,14 +484,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2115623275816485089",
     "photoUrl": "https://pbs.twimg.com/media/HVw0JrqXAAAZNm9.png",
     "hasPhoto": true,
-    "likes": 53,
-    "retweets": 14,
+    "likes": 54,
+    "retweets": 16,
     "replies": 5,
-    "engagement": 96,
+    "engagement": 101,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28396,
-    "score": 18457
+    "rawScore": 28401,
+    "score": 18461
   },
   {
     "id": "2115619337252085945",
@@ -522,13 +503,13 @@
     "url": "https://x.com/Ole_S_Hansen/status/2115619337252085945",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 96,
-    "retweets": 21,
+    "likes": 101,
+    "retweets": 23,
     "replies": 5,
-    "engagement": 153,
+    "engagement": 162,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10153,
-    "score": 6599
+    "rawScore": 10162,
+    "score": 6605
   }
 ]
