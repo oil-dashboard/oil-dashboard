@@ -9,14 +9,33 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2116114456061309096",
     "photoUrl": null,
     "hasPhoto": false,
+    "likes": 8,
+    "retweets": 0,
+    "replies": 1,
+    "engagement": 11,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10011,
+    "score": 10011
+  },
+  {
+    "id": "2116138431478976552",
+    "text": "BIG OIL 3Q EARNINGS: Chevron continues with the trend among major oil companies, profiting from sky high refining margins (and record refining throughout). $CVX didn't increase the size of the shares buyback, instead using the windfall to cut debt further.\n\n$CVX https://t.co/iOIr3tneUZ",
+    "createdAt": "2026-10-30T12:01:32+00:00",
+    "tweetTime": 1793361692000,
+    "username": "JavierBlas",
+    "displayName": "Javier Blas",
+    "url": "https://x.com/JavierBlas/status/2116138431478976552",
+    "photoUrl": "https://pbs.twimg.com/media/HV4F9zDW0AAaGHX.png",
+    "hasPhoto": true,
     "likes": 4,
     "retweets": 0,
     "replies": 1,
     "engagement": 7,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10007,
-    "score": 10007
+    "rawScore": 10307,
+    "score": 10307
   },
   {
     "id": "2116093172304708018",
@@ -28,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2116093172304708018",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 46,
-    "retweets": 4,
+    "likes": 71,
+    "retweets": 8,
     "replies": 2,
-    "engagement": 60,
+    "engagement": 93,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10060,
-    "score": 10060
+    "rawScore": 10093,
+    "score": 10093
   },
   {
     "id": "2116073351034937399",
@@ -47,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2116073351034937399",
     "photoUrl": "https://pbs.twimg.com/media/HV3NWQwaEAEud4j.jpg",
     "hasPhoto": true,
-    "likes": 142,
-    "retweets": 21,
-    "replies": 12,
-    "engagement": 220,
+    "likes": 170,
+    "retweets": 26,
+    "replies": 13,
+    "engagement": 261,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10520,
-    "score": 10520
+    "rawScore": 10561,
+    "score": 8977
   },
   {
     "id": "2115927707062075833",
@@ -66,33 +85,14 @@
     "url": "https://x.com/JavierBlas/status/2115927707062075833",
     "photoUrl": "https://pbs.twimg.com/media/HV1JCGjXUAAN574.jpg",
     "hasPhoto": true,
-    "likes": 105,
+    "likes": 110,
     "retweets": 15,
     "replies": 10,
-    "engagement": 165,
+    "engagement": 170,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40465,
-    "score": 18209
-  },
-  {
-    "id": "2115794027106689224",
-    "text": "CHART OF THE DAY: While oil prices have increased over the last few weeks, the opposite is true for US retail gasoline prices (the main focus of the White House). The nationwide average is down &gt;5% over the las month. Of course, all could change if the Iran war re-start. https://t.co/CweKOEsdMj",
-    "createdAt": "2026-10-29T13:13:00+00:00",
-    "tweetTime": 1793279580000,
-    "username": "JavierBlas",
-    "displayName": "Javier Blas",
-    "url": "https://x.com/JavierBlas/status/2115794027106689224",
-    "photoUrl": "https://pbs.twimg.com/media/HVye32UWkAAlbVS.png",
-    "hasPhoto": true,
-    "likes": 127,
-    "retweets": 26,
-    "replies": 25,
-    "engagement": 254,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10554,
-    "score": 3166
+    "rawScore": 40470,
+    "score": 18212
   },
   {
     "id": "2115813130911539454",
@@ -123,14 +123,14 @@
     "url": "https://x.com/HFI_Research/status/2116067380875112854",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 147,
+    "likes": 170,
     "retweets": 5,
     "replies": 3,
-    "engagement": 166,
+    "engagement": 189,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10166,
-    "score": 10166
+    "rawScore": 10189,
+    "score": 8661
   },
   {
     "id": "2116058006966489271",
@@ -142,14 +142,14 @@
     "url": "https://x.com/HFI_Research/status/2116058006966489271",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 191,
+    "likes": 211,
     "retweets": 5,
     "replies": 6,
-    "engagement": 219,
+    "engagement": 239,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10219,
-    "score": 8686
+    "rawScore": 10239,
+    "score": 8703
   },
   {
     "id": "2116122220757966970",
@@ -161,14 +161,14 @@
     "url": "https://x.com/staunovo/status/2116122220757966970",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 0,
+    "likes": 5,
     "retweets": 0,
     "replies": 1,
-    "engagement": 3,
+    "engagement": 8,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10003,
-    "score": 10003
+    "rawScore": 10008,
+    "score": 10008
   },
   {
     "id": "2116122163140833467",
@@ -218,14 +218,14 @@
     "url": "https://x.com/staunovo/status/2116121847624274209",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 2,
+    "likes": 3,
     "retweets": 0,
     "replies": 0,
-    "engagement": 2,
+    "engagement": 3,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20002,
-    "score": 20002
+    "rawScore": 20003,
+    "score": 20003
   },
   {
     "id": "2116116070901645648",
@@ -275,14 +275,14 @@
     "url": "https://x.com/Rory_Johnston/status/2115985473772630362",
     "photoUrl": "https://pbs.twimg.com/media/HV19ksnXsAA0QDy.jpg",
     "hasPhoto": true,
-    "likes": 543,
+    "likes": 555,
     "retweets": 52,
     "replies": 28,
-    "engagement": 731,
+    "engagement": 743,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 29031,
-    "score": 18870
+    "rawScore": 29043,
+    "score": 18878
   },
   {
     "id": "2115916442939818314",
@@ -313,13 +313,13 @@
     "url": "https://x.com/Rory_Johnston/status/2115909578886205803",
     "photoUrl": "https://pbs.twimg.com/media/HV04LqFWEAAHK09.jpg",
     "hasPhoto": true,
-    "likes": 134,
+    "likes": 135,
     "retweets": 27,
     "replies": 18,
-    "engagement": 242,
+    "engagement": 243,
     "isRetweet": false,
     "relevance": 26,
-    "rawScore": 26542,
+    "rawScore": 26543,
     "score": 11944
   },
   {
@@ -358,7 +358,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20002,
-    "score": 13001
+    "score": 9001
   },
   {
     "id": "2115803752355541401",
@@ -397,6 +397,25 @@
     "relevance": 30,
     "rawScore": 30001,
     "score": 9000
+  },
+  {
+    "id": "2116137082548552028",
+    "text": "CENTCOM: Update from Adm Cooper on the operations in the Middle East and Strait of Hormuz. https://t.co/phl2Yli2kg",
+    "createdAt": "2026-10-30T11:56:11+00:00",
+    "tweetTime": 1793361371000,
+    "username": "OilHeadlineNews",
+    "displayName": "Energy Headline News",
+    "url": "https://x.com/OilHeadlineNews/status/2116137082548552028",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 0,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10000,
+    "score": 10000
   },
   {
     "id": "2115992440553558384",
@@ -456,25 +475,6 @@
     "score": 18002
   },
   {
-    "id": "2115899892669288708",
-    "text": "Tanker struck in the Strait of Hormuz\nhttps://t.co/VNljbx65Ne",
-    "createdAt": "2026-10-29T20:13:40+00:00",
-    "tweetTime": 1793304820000,
-    "username": "OilHeadlineNews",
-    "displayName": "Energy Headline News",
-    "url": "https://x.com/OilHeadlineNews/status/2115899892669288708",
-    "photoUrl": "https://pbs.twimg.com/media/HV0R4RRWcAAptNV.png",
-    "hasPhoto": true,
-    "likes": 8,
-    "retweets": 1,
-    "replies": 0,
-    "engagement": 10,
-    "isRetweet": false,
-    "relevance": 28,
-    "rawScore": 28310,
-    "score": 12740
-  },
-  {
     "id": "2116079085474451808",
     "text": "A flat October for commodities masks a major sector rotation.\n\nEnergy surges on continued Middle East tensions, while precious metals and grains struggle.\n\nEnergy +100% YTD after losing 10% in 2025. Precious metals -11% after last year's 80% rally.\n\nA reminder of why diversification matters.\n\n#Commodities #BCOM https://t.co/DgIKlZ1FZ9 via @saxobank",
     "createdAt": "2026-10-30T08:05:43+00:00",
@@ -484,14 +484,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2116079085474451808",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 25,
-    "retweets": 6,
-    "replies": 4,
-    "engagement": 49,
+    "likes": 31,
+    "retweets": 7,
+    "replies": 5,
+    "engagement": 60,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10049,
-    "score": 10049
+    "rawScore": 10060,
+    "score": 8551
   },
   {
     "id": "2116124118437282081",
@@ -503,14 +503,14 @@
     "url": "https://x.com/TankerTrackers/status/2116124118437282081",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 5,
-    "retweets": 1,
-    "replies": 1,
-    "engagement": 10,
+    "likes": 100,
+    "retweets": 15,
+    "replies": 23,
+    "engagement": 199,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10010,
-    "score": 10010
+    "rawScore": 10199,
+    "score": 10199
   },
   {
     "id": "2116118731092815985",
@@ -522,14 +522,14 @@
     "url": "https://x.com/TankerTrackers/status/2116118731092815985",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 9,
+    "likes": 22,
     "retweets": 0,
-    "replies": 3,
-    "engagement": 18,
+    "replies": 4,
+    "engagement": 34,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48018,
-    "score": 48018
+    "rawScore": 48034,
+    "score": 48034
   },
   {
     "id": "2116106247321592043",
@@ -541,14 +541,14 @@
     "url": "https://x.com/TankerTrackers/status/2116106247321592043",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 77,
-    "retweets": 6,
-    "replies": 7,
-    "engagement": 110,
+    "likes": 116,
+    "retweets": 14,
+    "replies": 10,
+    "engagement": 174,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38110,
-    "score": 38110
+    "rawScore": 38174,
+    "score": 38174
   },
   {
     "id": "2116101221962445184",
@@ -560,13 +560,13 @@
     "url": "https://x.com/TankerTrackers/status/2116101221962445184",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 71,
+    "likes": 86,
     "retweets": 11,
-    "replies": 5,
-    "engagement": 108,
+    "replies": 6,
+    "engagement": 126,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38108,
-    "score": 38108
+    "rawScore": 38126,
+    "score": 38126
   }
 ]
