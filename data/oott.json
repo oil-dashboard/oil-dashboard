@@ -54,7 +54,7 @@
     "isRetweet": false,
     "relevance": 48,
     "rawScore": 48031,
-    "score": 40826
+    "score": 31220
   },
   {
     "id": "2117042952254165217",
@@ -66,14 +66,14 @@
     "url": "https://x.com/Rory_Johnston/status/2117042952254165217",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 334,
-    "retweets": 25,
+    "likes": 385,
+    "retweets": 28,
     "replies": 13,
-    "engagement": 423,
+    "engagement": 480,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30423,
-    "score": 30423
+    "rawScore": 30480,
+    "score": 25908
   },
   {
     "id": "2117040683282210848",
@@ -85,14 +85,14 @@
     "url": "https://x.com/Rory_Johnston/status/2117040683282210848",
     "photoUrl": "https://pbs.twimg.com/media/HWE9R17WAAAmnzA.jpg",
     "hasPhoto": true,
-    "likes": 95,
-    "retweets": 5,
+    "likes": 111,
+    "retweets": 8,
     "replies": 11,
-    "engagement": 138,
+    "engagement": 160,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28438,
-    "score": 28438
+    "rawScore": 28460,
+    "score": 24191
   },
   {
     "id": "2116520152170713402",
@@ -114,6 +114,25 @@
     "score": 3053
   },
   {
+    "id": "2117101171621917036",
+    "text": "China's oil refined product export quota reached the highest level since 2021 - S&amp;P Global https://t.co/0UxLxYNYxM",
+    "createdAt": "2026-11-02T03:47:07+00:00",
+    "tweetTime": 1793591227000,
+    "username": "OilHeadlineNews",
+    "displayName": "Energy Headline News",
+    "url": "https://x.com/OilHeadlineNews/status/2117101171621917036",
+    "photoUrl": "https://pbs.twimg.com/media/HWF0S12WUAA9Fud.jpg",
+    "hasPhoto": true,
+    "likes": 4,
+    "retweets": 1,
+    "replies": 0,
+    "engagement": 6,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10306,
+    "score": 10306
+  },
+  {
     "id": "2117082963871437149",
     "text": "Tanker attacked in the Arabian Gulf\nhttps://t.co/7GnXW3AGen",
     "createdAt": "2026-11-02T02:34:46+00:00",
@@ -123,14 +142,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2117082963871437149",
     "photoUrl": "https://pbs.twimg.com/media/HWFYobAXcAAYzAM.png",
     "hasPhoto": true,
-    "likes": 9,
-    "retweets": 0,
+    "likes": 18,
+    "retweets": 2,
     "replies": 0,
-    "engagement": 9,
+    "engagement": 22,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18309,
-    "score": 18309
+    "rawScore": 18322,
+    "score": 18322
   },
   {
     "id": "2117048902062928045",
@@ -142,14 +161,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2117048902062928045",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 11,
-    "retweets": 2,
+    "likes": 13,
+    "retweets": 3,
     "replies": 0,
-    "engagement": 15,
+    "engagement": 19,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10015,
-    "score": 10015
+    "rawScore": 10019,
+    "score": 10019
   },
   {
     "id": "2116996034442220023",
@@ -161,14 +180,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2116996034442220023",
     "photoUrl": "https://pbs.twimg.com/media/HWDy7YYX0AAvxT0.png",
     "hasPhoto": true,
-    "likes": 24,
+    "likes": 25,
     "retweets": 2,
     "replies": 0,
-    "engagement": 28,
+    "engagement": 29,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10328,
-    "score": 8779
+    "rawScore": 10329,
+    "score": 8780
   },
   {
     "id": "2116842695096168607",
@@ -180,14 +199,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2116842695096168607",
     "photoUrl": "https://pbs.twimg.com/media/HWCJC-kWQAA2FDI.png",
     "hasPhoto": true,
-    "likes": 74,
+    "likes": 76,
     "retweets": 18,
     "replies": 6,
-    "engagement": 128,
+    "engagement": 130,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10428,
-    "score": 4693
+    "rawScore": 10430,
+    "score": 4694
   },
   {
     "id": "2116838096633200933",
@@ -199,14 +218,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2116838096633200933",
     "photoUrl": "https://pbs.twimg.com/media/HWCE_WJXQAAHCyR.png",
     "hasPhoto": true,
-    "likes": 410,
-    "retweets": 63,
-    "replies": 16,
-    "engagement": 584,
+    "likes": 423,
+    "retweets": 65,
+    "replies": 19,
+    "engagement": 610,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10884,
-    "score": 4898
+    "rawScore": 10910,
+    "score": 4910
   },
   {
     "id": "2116079085474451808",
@@ -237,14 +256,14 @@
     "url": "https://x.com/TankerTrackers/status/2116850037804409051",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 232,
+    "likes": 233,
     "retweets": 25,
     "replies": 12,
-    "engagement": 318,
+    "engagement": 319,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28318,
-    "score": 12743
+    "rawScore": 28319,
+    "score": 12744
   },
   {
     "id": "2116871239486583096",
@@ -256,14 +275,14 @@
     "url": "https://x.com/TankerTrackers/status/2116871239486583096",
     "photoUrl": "https://pbs.twimg.com/media/HWCiV7RXoAA31UZ.jpg",
     "hasPhoto": true,
-    "likes": 108,
+    "likes": 110,
     "retweets": 23,
     "replies": 8,
-    "engagement": 178,
+    "engagement": 180,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 58478,
-    "score": 26315
+    "rawScore": 58480,
+    "score": 26316
   },
   {
     "id": "2116691002689716304",
@@ -275,13 +294,13 @@
     "url": "https://x.com/TankerTrackers/status/2116691002689716304",
     "photoUrl": "https://pbs.twimg.com/media/HV_-ajjWsAA5wMH.png",
     "hasPhoto": true,
-    "likes": 214,
+    "likes": 215,
     "retweets": 37,
     "replies": 16,
-    "engagement": 336,
+    "engagement": 337,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 58636,
+    "rawScore": 58637,
     "score": 17591
   },
   {
