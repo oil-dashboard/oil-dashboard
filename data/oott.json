@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2117494578353955079",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 8,
-    "retweets": 2,
-    "replies": 0,
-    "engagement": 12,
+    "likes": 14,
+    "retweets": 4,
+    "replies": 1,
+    "engagement": 25,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30012,
-    "score": 30012
+    "rawScore": 30025,
+    "score": 30025
   },
   {
     "id": "2117320686012338323",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JavierBlas/status/2117320686012338323",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 417,
-    "retweets": 54,
+    "likes": 428,
+    "retweets": 56,
     "replies": 29,
-    "engagement": 612,
+    "engagement": 627,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48612,
-    "score": 21875
+    "rawScore": 48627,
+    "score": 21882
   },
   {
     "id": "2117240160052236474",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2117240160052236474",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 403,
-    "retweets": 44,
+    "likes": 406,
+    "retweets": 45,
     "replies": 39,
-    "engagement": 608,
+    "engagement": 613,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10608,
-    "score": 3182
+    "rawScore": 10613,
+    "score": 3184
   },
   {
     "id": "2117234950059753635",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2117234950059753635",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 276,
+    "likes": 277,
     "retweets": 35,
     "replies": 25,
-    "engagement": 421,
+    "engagement": 422,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10421,
-    "score": 3126
+    "rawScore": 10422,
+    "score": 3127
   },
   {
     "id": "2117226683531190634",
@@ -85,13 +85,13 @@
     "url": "https://x.com/JavierBlas/status/2117226683531190634",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 124,
+    "likes": 125,
     "retweets": 18,
     "replies": 9,
-    "engagement": 187,
+    "engagement": 188,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20187,
+    "rawScore": 20188,
     "score": 6056
   },
   {
@@ -104,14 +104,14 @@
     "url": "https://x.com/JKempEnergy/status/2117262599922262519",
     "photoUrl": "https://pbs.twimg.com/media/HWIG6H8XEAAe_ek.png",
     "hasPhoto": true,
-    "likes": 8,
-    "retweets": 4,
+    "likes": 9,
+    "retweets": 5,
     "replies": 3,
-    "engagement": 25,
+    "engagement": 28,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30325,
-    "score": 13646
+    "rawScore": 30328,
+    "score": 9098
   },
   {
     "id": "2117451580857635252",
@@ -123,14 +123,14 @@
     "url": "https://x.com/HFI_Research/status/2117451580857635252",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 12,
+    "likes": 15,
     "retweets": 1,
     "replies": 0,
-    "engagement": 14,
+    "engagement": 17,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10014,
-    "score": 8512
+    "rawScore": 10017,
+    "score": 8514
   },
   {
     "id": "2117417646287462459",
@@ -142,14 +142,52 @@
     "url": "https://x.com/HFI_Research/status/2117417646287462459",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 360,
-    "retweets": 30,
+    "likes": 376,
+    "retweets": 31,
     "replies": 4,
-    "engagement": 432,
+    "engagement": 450,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10432,
-    "score": 8867
+    "rawScore": 10450,
+    "score": 8883
+  },
+  {
+    "id": "2117535500068098370",
+    "text": "Do not see structural oil demand destruction - CEO Aramco #oott",
+    "createdAt": "2026-11-03T08:32:59+00:00",
+    "tweetTime": 1793694779000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2117535500068098370",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 0,
+    "isRetweet": false,
+    "relevance": 20,
+    "rawScore": 20000,
+    "score": 20000
+  },
+  {
+    "id": "2117527941571584168",
+    "text": "BPCL buys 1 million barrels of WTI crude, sources say #oott https://t.co/WpYgi926Lz",
+    "createdAt": "2026-11-03T08:02:57+00:00",
+    "tweetTime": 1793692977000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2117527941571584168",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 1,
+    "isRetweet": false,
+    "relevance": 46,
+    "rawScore": 46001,
+    "score": 46001
   },
   {
     "id": "2117505149107130685",
@@ -159,25 +197,6 @@
     "username": "staunovo",
     "displayName": "Giovanni Staunovo🛢",
     "url": "https://x.com/staunovo/status/2117505149107130685",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 1,
-    "retweets": 0,
-    "replies": 0,
-    "engagement": 1,
-    "isRetweet": false,
-    "relevance": 20,
-    "rawScore": 20001,
-    "score": 20001
-  },
-  {
-    "id": "2117504820626006044",
-    "text": "Oil transit via Atyrau-Samara pipeline resumes after drone attack, Kazakhstan says #oott https://t.co/PrJfxBbpaR",
-    "createdAt": "2026-11-03T06:31:05+00:00",
-    "tweetTime": 1793687465000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2117504820626006044",
     "photoUrl": null,
     "hasPhoto": false,
     "likes": 2,
@@ -190,6 +209,25 @@
     "score": 20002
   },
   {
+    "id": "2117504820626006044",
+    "text": "Oil transit via Atyrau-Samara pipeline resumes after drone attack, Kazakhstan says #oott https://t.co/PrJfxBbpaR",
+    "createdAt": "2026-11-03T06:31:05+00:00",
+    "tweetTime": 1793687465000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2117504820626006044",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 3,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 3,
+    "isRetweet": false,
+    "relevance": 20,
+    "rawScore": 20003,
+    "score": 20003
+  },
+  {
     "id": "2117504730205155623",
     "text": "Shell agrees to sell North West Shelf interest to ADNOC's XRG for $1.45 billion #oott https://t.co/RA48zk7I79",
     "createdAt": "2026-11-03T06:30:43+00:00",
@@ -199,14 +237,14 @@
     "url": "https://x.com/staunovo/status/2117504730205155623",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1,
+    "likes": 2,
     "retweets": 0,
     "replies": 0,
-    "engagement": 1,
+    "engagement": 2,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10001,
-    "score": 10001
+    "rawScore": 10002,
+    "score": 10002
   },
   {
     "id": "2117504570968469554",
@@ -237,13 +275,13 @@
     "url": "https://x.com/Rory_Johnston/status/2117377529493192942",
     "photoUrl": "https://pbs.twimg.com/media/HWJvQvCXkAAVzhb.png",
     "hasPhoto": true,
-    "likes": 141,
+    "likes": 142,
     "retweets": 22,
     "replies": 12,
-    "engagement": 221,
+    "engagement": 222,
     "isRetweet": false,
     "relevance": 16,
-    "rawScore": 16521,
+    "rawScore": 16522,
     "score": 10739
   },
   {
@@ -256,14 +294,14 @@
     "url": "https://x.com/Rory_Johnston/status/2117352081568809234",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 320,
+    "likes": 327,
     "retweets": 20,
-    "replies": 41,
-    "engagement": 483,
+    "replies": 43,
+    "engagement": 496,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10483,
-    "score": 6814
+    "rawScore": 10496,
+    "score": 4723
   },
   {
     "id": "2117288080851816788",
@@ -275,14 +313,14 @@
     "url": "https://x.com/Rory_Johnston/status/2117288080851816788",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 330,
+    "likes": 332,
     "retweets": 19,
     "replies": 27,
-    "engagement": 449,
+    "engagement": 451,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10449,
-    "score": 4702
+    "rawScore": 10451,
+    "score": 4703
   },
   {
     "id": "2117255663554384368",
@@ -295,13 +333,13 @@
     "photoUrl": "https://pbs.twimg.com/media/HWIAjDlXgAA4s34.png",
     "hasPhoto": true,
     "likes": 147,
-    "retweets": 13,
+    "retweets": 15,
     "replies": 16,
-    "engagement": 221,
+    "engagement": 225,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28521,
-    "score": 12834
+    "rawScore": 28525,
+    "score": 8558
   },
   {
     "id": "2117261519549288773",
@@ -320,7 +358,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10007,
-    "score": 4503
+    "score": 3002
   },
   {
     "id": "2117255196052947134",
@@ -339,7 +377,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10001,
-    "score": 4500
+    "score": 3000
   },
   {
     "id": "2117252368882438350",
@@ -358,7 +396,7 @@
     "isRetweet": false,
     "relevance": 30,
     "rawScore": 30001,
-    "score": 13500
+    "score": 9000
   },
   {
     "id": "2117242082729275555",
@@ -389,14 +427,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2117508743243981254",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 16,
-    "retweets": 1,
-    "replies": 3,
-    "engagement": 27,
+    "likes": 32,
+    "retweets": 3,
+    "replies": 4,
+    "engagement": 50,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 58027,
-    "score": 58027
+    "rawScore": 58050,
+    "score": 58050
   },
   {
     "id": "2117265826155843973",
@@ -409,13 +447,13 @@
     "photoUrl": "https://pbs.twimg.com/media/HWII3wuWQAAFc5L.png",
     "hasPhoto": true,
     "likes": 226,
-    "retweets": 26,
+    "retweets": 27,
     "replies": 15,
-    "engagement": 323,
+    "engagement": 325,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20623,
-    "score": 9280
+    "rawScore": 20625,
+    "score": 9281
   },
   {
     "id": "2117250370799817186",
@@ -434,6 +472,6 @@
     "isRetweet": false,
     "relevance": 18,
     "rawScore": 18046,
-    "score": 8121
+    "score": 5414
   }
 ]
