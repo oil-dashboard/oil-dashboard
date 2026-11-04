@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2117784679730610290",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 14,
+    "likes": 15,
     "retweets": 1,
     "replies": 2,
-    "engagement": 22,
+    "engagement": 23,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20022,
-    "score": 17019
+    "rawScore": 20023,
+    "score": 17020
   },
   {
     "id": "2117606687859417376",
@@ -35,7 +35,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20321,
-    "score": 9144
+    "score": 6096
   },
   {
     "id": "2117606892394647875",
@@ -54,7 +54,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10006,
-    "score": 4503
+    "score": 3002
   },
   {
     "id": "2117630957679186107",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2117630957679186107",
     "photoUrl": "https://pbs.twimg.com/media/HWL8WxeWkAAaHW9.png",
     "hasPhoto": true,
-    "likes": 135,
+    "likes": 138,
     "retweets": 32,
     "replies": 24,
-    "engagement": 271,
+    "engagement": 274,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30571,
-    "score": 13757
+    "rawScore": 30574,
+    "score": 13758
   },
   {
     "id": "2117853554744721519",
@@ -85,14 +85,33 @@
     "url": "https://x.com/HFI_Research/status/2117853554744721519",
     "photoUrl": "https://pbs.twimg.com/media/HWQglP-b0AAVbJH.png",
     "hasPhoto": true,
-    "likes": 33,
-    "retweets": 1,
+    "likes": 51,
+    "retweets": 2,
     "replies": 0,
-    "engagement": 35,
+    "engagement": 55,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20335,
-    "score": 20335
+    "rawScore": 20355,
+    "score": 20355
+  },
+  {
+    "id": "2117877381364932782",
+    "text": "Nigerian billionaire Aliko Dangote's company will launch a fuel storage project in Namibia's main port of Walvis Bay later on Wednesday at a ceremony attended by President Netumbo Nandi-Ndaitwah. #oott https://t.co/ydnF26ZgDU",
+    "createdAt": "2026-11-04T07:11:30+00:00",
+    "tweetTime": 1793776290000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2117877381364932782",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 0,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10000,
+    "score": 10000
   },
   {
     "id": "2117747260662427969",
@@ -111,7 +130,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10079,
-    "score": 8567
+    "score": 6551
   },
   {
     "id": "2117737965627834655",
@@ -123,13 +142,13 @@
     "url": "https://x.com/OilHeadlineNews/status/2117737965627834655",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 16,
+    "likes": 17,
     "retweets": 1,
     "replies": 0,
-    "engagement": 18,
+    "engagement": 19,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30018,
+    "rawScore": 30019,
     "score": 19512
   },
   {
@@ -150,6 +169,25 @@
     "relevance": 28,
     "rawScore": 28334,
     "score": 18417
+  },
+  {
+    "id": "2117871845118562732",
+    "text": "US midterms response across key commodities: The Democrats' historic election victory has triggered an initial reassessment of US fiscal, trade and foreign policy, with precious metals emerging as the clear winners.\n\nPrecious metals: Gold and silver have rallied, supported by a softer dollar and lower Treasury yields amid expectations that a Democrat-controlled Congress could constrain Trump's fiscal agenda and limit further, increasingly unaffordable fiscal expansion. Short covering has added momentum after gold reclaimed key resistance at USD 3,970, potentially setting up a challenge of the downtrend in place since August, currently around USD 4,035.\n\nCopper: Prices trade lower but off their lows as traders reassess AI-related demand prospects and whether Trump's defeat, combined with voters' focus on affordability, has reduced the likelihood of US import tariffs on refined copper. Such a shift could ease short-term supply distortions and potentially release US-held inventories back onto the global market, while longer-term supply constraints remain supportive.\n\nEnergy: Oil prices have staged a modest rebound following a two-day slump as traders weigh conflicting signals over the prospects for US-Iran peace talks. Adding to the uncertainty is how Trump may respond on the foreign policy front, where his executive powers remain considerable despite a resounding electoral rebuke driven by voter frustration over the cost of living and the war in Iran. With his domestic agenda now facing greater congressional resistance, the risk of a more assertive stance abroad cannot be ignored, keeping geopolitical uncertainty firmly in focus.",
+    "createdAt": "2026-11-04T06:49:30+00:00",
+    "tweetTime": 1793774970000,
+    "username": "Ole_S_Hansen",
+    "displayName": "Ole S Hansen",
+    "url": "https://x.com/Ole_S_Hansen/status/2117871845118562732",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 54,
+    "retweets": 8,
+    "replies": 5,
+    "engagement": 85,
+    "isRetweet": false,
+    "relevance": 20,
+    "rawScore": 20085,
+    "score": 20085
   },
   {
     "id": "2117618841488355773",
@@ -180,33 +218,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2117549998451663272",
     "photoUrl": "https://pbs.twimg.com/media/HWMMf3IWQAALvTB.png",
     "hasPhoto": true,
-    "likes": 126,
+    "likes": 128,
     "retweets": 33,
     "replies": 8,
-    "engagement": 216,
+    "engagement": 218,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10516,
+    "rawScore": 10518,
     "score": 3155
-  },
-  {
-    "id": "2117508743243981254",
-    "text": "Commodities:\n\n#CrudeOil: Brent tumbled 8% on Monday after Iran's leadership authorised further talks with Washington, with both presidents citing progress in Qatar-mediated negotiations despite significant differences remaining. Prices rebounded modestly today after US forces reportedly carried out limited defensive strikes on Iran's Qeshm Island following claims by the IRGC that it had downed US drones near the Strait of Hormuz. However, President Trump apparently ruled out resuming strikes after the midterms. The oil slump also weighed on other energy markets, with European gas futures falling almost 9% and US heating oil posting its steepest decline in six months.\n\nPrecious metals: #Gold rebounded strongly from Friday's slump as tumbling oil prices initially improved risk sentiment. However, gold encountered renewed selling near USD 3,970, a former support level now acting as resistance. The rejection highlights fragile sentiment, with technical and momentum-driven selling continuing to outweigh longer-term investor demand. Attention now turns to today's US midterms, global equities, Middle East developments, and energy prices.\n\n#Copper's recent resilience is being tested, with prices falling 2.8% in Asian trading to USD 6.38, challenging recent lows in the USD 6.30–6.40 area. Despite supportive structural fundamentals, the short-term path of least resistance appears lower amid broader metals weakness, renewed equity market selling and growing questions over the AI and data centre demand narrative. Adding to the pressure, the yuan weakened after the PBOC moved to curb its recent appreciation, making dollar-denominated copper more expensive for Chinese buyers. For now, these headwinds are overshadowing tight physical markets and constrained mine supply.",
-    "createdAt": "2026-11-03T06:46:40+00:00",
-    "tweetTime": 1793688400000,
-    "username": "Ole_S_Hansen",
-    "displayName": "Ole S Hansen",
-    "url": "https://x.com/Ole_S_Hansen/status/2117508743243981254",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 71,
-    "retweets": 13,
-    "replies": 7,
-    "engagement": 118,
-    "isRetweet": false,
-    "relevance": 58,
-    "rawScore": 58118,
-    "score": 17435
   },
   {
     "id": "2117640724292440438",
@@ -218,13 +237,13 @@
     "url": "https://x.com/TankerTrackers/status/2117640724292440438",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 499,
-    "retweets": 34,
+    "likes": 504,
+    "retweets": 35,
     "replies": 26,
-    "engagement": 645,
+    "engagement": 652,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10645,
-    "score": 4790
+    "rawScore": 10652,
+    "score": 4793
   }
 ]
