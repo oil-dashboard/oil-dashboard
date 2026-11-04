@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2117784679730610290",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 12,
+    "likes": 13,
     "retweets": 1,
     "replies": 1,
-    "engagement": 17,
+    "engagement": 18,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20017,
-    "score": 20017
+    "rawScore": 20018,
+    "score": 17015
   },
   {
     "id": "2117606687859417376",
@@ -85,14 +85,14 @@
     "url": "https://x.com/JavierBlas/status/2117630957679186107",
     "photoUrl": "https://pbs.twimg.com/media/HWL8WxeWkAAaHW9.png",
     "hasPhoto": true,
-    "likes": 132,
+    "likes": 134,
     "retweets": 32,
     "replies": 24,
-    "engagement": 268,
+    "engagement": 270,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30568,
-    "score": 13756
+    "rawScore": 30570,
+    "score": 13757
   },
   {
     "id": "2117722832431903091",
@@ -111,7 +111,7 @@
     "isRetweet": false,
     "relevance": 40,
     "rawScore": 40016,
-    "score": 34014
+    "score": 26010
   },
   {
     "id": "2117721583896695084",
@@ -130,26 +130,7 @@
     "isRetweet": false,
     "relevance": 28,
     "rawScore": 28008,
-    "score": 23807
-  },
-  {
-    "id": "2117705952241816041",
-    "text": "Brent settled at USD 103.60/bbl #oott",
-    "createdAt": "2026-11-03T19:50:18+00:00",
-    "tweetTime": 1793735418000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2117705952241816041",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 1,
-    "retweets": 0,
-    "replies": 0,
-    "engagement": 1,
-    "isRetweet": false,
-    "relevance": 28,
-    "rawScore": 28001,
-    "score": 18201
+    "score": 18205
   },
   {
     "id": "2117747260662427969",
@@ -161,14 +142,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2117747260662427969",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 49,
+    "likes": 51,
     "retweets": 10,
     "replies": 2,
-    "engagement": 75,
+    "engagement": 77,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10075,
-    "score": 8564
+    "rawScore": 10077,
+    "score": 8565
   },
   {
     "id": "2117737965627834655",
@@ -180,14 +161,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2117737965627834655",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 15,
+    "likes": 16,
     "retweets": 1,
     "replies": 0,
-    "engagement": 17,
+    "engagement": 18,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30017,
-    "score": 25514
+    "rawScore": 30018,
+    "score": 25515
   },
   {
     "id": "2117723643572806078",
@@ -206,7 +187,7 @@
     "isRetweet": false,
     "relevance": 28,
     "rawScore": 28333,
-    "score": 24083
+    "score": 18416
   },
   {
     "id": "2117618841488355773",
@@ -239,12 +220,12 @@
     "hasPhoto": true,
     "likes": 124,
     "retweets": 33,
-    "replies": 7,
-    "engagement": 211,
+    "replies": 8,
+    "engagement": 214,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10511,
-    "score": 3153
+    "rawScore": 10514,
+    "score": 3154
   },
   {
     "id": "2117508743243981254",
@@ -256,13 +237,13 @@
     "url": "https://x.com/Ole_S_Hansen/status/2117508743243981254",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 70,
-    "retweets": 12,
+    "likes": 71,
+    "retweets": 13,
     "replies": 7,
-    "engagement": 115,
+    "engagement": 118,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 58115,
+    "rawScore": 58118,
     "score": 17435
   },
   {
@@ -275,13 +256,13 @@
     "url": "https://x.com/TankerTrackers/status/2117640724292440438",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 489,
+    "likes": 494,
     "retweets": 34,
-    "replies": 25,
-    "engagement": 632,
+    "replies": 26,
+    "engagement": 640,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10632,
-    "score": 4784
+    "rawScore": 10640,
+    "score": 4788
   }
 ]
