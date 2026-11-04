@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2117784679730610290",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 15,
-    "retweets": 1,
+    "likes": 16,
+    "retweets": 2,
     "replies": 2,
-    "engagement": 23,
+    "engagement": 26,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20023,
-    "score": 17020
+    "rawScore": 20026,
+    "score": 17022
   },
   {
     "id": "2117606687859417376",
@@ -57,6 +57,25 @@
     "score": 3002
   },
   {
+    "id": "2117896996564668429",
+    "text": "Suffice to say that Texas elected a Democrat to the Railroad Commission, which regulates the state’s oil industry, for the first time in &gt;30 years.",
+    "createdAt": "2026-11-04T08:29:27+00:00",
+    "tweetTime": 1793780967000,
+    "username": "JavierBlas",
+    "displayName": "Javier Blas",
+    "url": "https://x.com/JavierBlas/status/2117896996564668429",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 60,
+    "retweets": 11,
+    "replies": 8,
+    "engagement": 106,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10106,
+    "score": 10106
+  },
+  {
     "id": "2117630957679186107",
     "text": "CHART OF THE DAY: What’s a stake — Persian Gulf crude oil flows (ex Iran) via Strait of Hormuz plus all bypass routes, per @Vortexa data. Last data point is full month October. It could change - to the downside - at very short notice. And yes, the freight cost is huge. https://t.co/8w669H8LBB",
     "createdAt": "2026-11-03T14:52:18+00:00",
@@ -66,14 +85,14 @@
     "url": "https://x.com/JavierBlas/status/2117630957679186107",
     "photoUrl": "https://pbs.twimg.com/media/HWL8WxeWkAAaHW9.png",
     "hasPhoto": true,
-    "likes": 138,
-    "retweets": 32,
+    "likes": 139,
+    "retweets": 34,
     "replies": 24,
-    "engagement": 274,
+    "engagement": 279,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30574,
-    "score": 13758
+    "rawScore": 30579,
+    "score": 13761
   },
   {
     "id": "2117853554744721519",
@@ -85,14 +104,14 @@
     "url": "https://x.com/HFI_Research/status/2117853554744721519",
     "photoUrl": "https://pbs.twimg.com/media/HWQglP-b0AAVbJH.png",
     "hasPhoto": true,
-    "likes": 51,
-    "retweets": 2,
+    "likes": 63,
+    "retweets": 3,
     "replies": 0,
-    "engagement": 55,
+    "engagement": 69,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20355,
-    "score": 20355
+    "rawScore": 20369,
+    "score": 20369
   },
   {
     "id": "2117877381364932782",
@@ -104,14 +123,14 @@
     "url": "https://x.com/staunovo/status/2117877381364932782",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 0,
-    "retweets": 0,
+    "likes": 2,
+    "retweets": 1,
     "replies": 0,
-    "engagement": 0,
+    "engagement": 4,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10000,
-    "score": 10000
+    "rawScore": 10004,
+    "score": 10004
   },
   {
     "id": "2117747260662427969",
@@ -123,14 +142,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2117747260662427969",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 53,
+    "likes": 55,
     "retweets": 10,
     "replies": 2,
-    "engagement": 79,
+    "engagement": 81,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10079,
-    "score": 6551
+    "rawScore": 10081,
+    "score": 6553
   },
   {
     "id": "2117737965627834655",
@@ -180,14 +199,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2117871845118562732",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 54,
-    "retweets": 8,
-    "replies": 5,
-    "engagement": 85,
+    "likes": 85,
+    "retweets": 13,
+    "replies": 7,
+    "engagement": 132,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20085,
-    "score": 20085
+    "rawScore": 20132,
+    "score": 20132
   },
   {
     "id": "2117618841488355773",
@@ -199,14 +218,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2117618841488355773",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 63,
+    "likes": 62,
     "retweets": 7,
     "replies": 11,
-    "engagement": 110,
+    "engagement": 109,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10110,
-    "score": 4550
+    "rawScore": 10109,
+    "score": 3033
   },
   {
     "id": "2117549998451663272",
@@ -218,14 +237,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2117549998451663272",
     "photoUrl": "https://pbs.twimg.com/media/HWMMf3IWQAALvTB.png",
     "hasPhoto": true,
-    "likes": 128,
-    "retweets": 33,
+    "likes": 131,
+    "retweets": 34,
     "replies": 8,
-    "engagement": 218,
+    "engagement": 223,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10518,
-    "score": 3155
+    "rawScore": 10523,
+    "score": 3157
   },
   {
     "id": "2117640724292440438",
@@ -237,13 +256,13 @@
     "url": "https://x.com/TankerTrackers/status/2117640724292440438",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 504,
+    "likes": 505,
     "retweets": 35,
     "replies": 26,
-    "engagement": 652,
+    "engagement": 653,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10652,
-    "score": 4793
+    "rawScore": 10653,
+    "score": 4794
   }
 ]
