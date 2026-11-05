@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2118168001019318441",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 47,
+    "likes": 49,
     "retweets": 8,
     "replies": 7,
-    "engagement": 84,
+    "engagement": 86,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20084,
-    "score": 17071
+    "rawScore": 20086,
+    "score": 17073
   },
   {
     "id": "2118027082114470117",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JavierBlas/status/2118027082114470117",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 487,
+    "likes": 491,
     "retweets": 60,
     "replies": 41,
-    "engagement": 730,
+    "engagement": 734,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48730,
-    "score": 21929
+    "rawScore": 48734,
+    "score": 21930
   },
   {
     "id": "2117959303864951290",
@@ -47,33 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2117959303864951290",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 159,
+    "likes": 163,
     "retweets": 41,
     "replies": 19,
-    "engagement": 298,
+    "engagement": 302,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10298,
-    "score": 3089
-  },
-  {
-    "id": "2117896996564668429",
-    "text": "Suffice to say that Texas elected a Democrat to the Railroad Commission, which regulates the state’s oil industry, for the first time in &gt;30 years.",
-    "createdAt": "2026-11-04T08:29:27+00:00",
-    "tweetTime": 1793780967000,
-    "username": "JavierBlas",
-    "displayName": "Javier Blas",
-    "url": "https://x.com/JavierBlas/status/2117896996564668429",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 2931,
-    "retweets": 295,
-    "replies": 43,
-    "engagement": 3650,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 13650,
-    "score": 4095
+    "rawScore": 10302,
+    "score": 3091
   },
   {
     "id": "2118247380827115594",
@@ -85,14 +66,14 @@
     "url": "https://x.com/HFI_Research/status/2118247380827115594",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 0,
-    "retweets": 0,
-    "replies": 0,
-    "engagement": 0,
+    "likes": 131,
+    "retweets": 14,
+    "replies": 5,
+    "engagement": 174,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10000,
-    "score": 10000
+    "rawScore": 10174,
+    "score": 10174
   },
   {
     "id": "2118231702078439884",
@@ -104,14 +85,14 @@
     "url": "https://x.com/HFI_Research/status/2118231702078439884",
     "photoUrl": "https://pbs.twimg.com/media/HWV4gGpasAA5LWW.jpg",
     "hasPhoto": true,
-    "likes": 67,
-    "retweets": 9,
+    "likes": 80,
+    "retweets": 10,
     "replies": 0,
-    "engagement": 85,
+    "engagement": 100,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20385,
-    "score": 20385
+    "rawScore": 20400,
+    "score": 20400
   },
   {
     "id": "2118208528540479820",
@@ -123,14 +104,14 @@
     "url": "https://x.com/HFI_Research/status/2118208528540479820",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 61,
-    "retweets": 3,
+    "likes": 74,
+    "retweets": 4,
     "replies": 1,
-    "engagement": 70,
+    "engagement": 85,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10070,
-    "score": 10070
+    "rawScore": 10085,
+    "score": 10085
   },
   {
     "id": "2118200385416593729",
@@ -142,14 +123,14 @@
     "url": "https://x.com/HFI_Research/status/2118200385416593729",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 285,
-    "retweets": 24,
-    "replies": 4,
-    "engagement": 345,
+    "likes": 310,
+    "retweets": 29,
+    "replies": 5,
+    "engagement": 383,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28345,
-    "score": 28345
+    "rawScore": 28383,
+    "score": 24126
   },
   {
     "id": "2118243368169845011",
@@ -161,14 +142,14 @@
     "url": "https://x.com/staunovo/status/2118243368169845011",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 0,
-    "retweets": 0,
+    "likes": 3,
+    "retweets": 1,
     "replies": 0,
-    "engagement": 0,
+    "engagement": 5,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10000,
-    "score": 10000
+    "rawScore": 10005,
+    "score": 10005
   },
   {
     "id": "2118239408230986226",
@@ -180,14 +161,14 @@
     "url": "https://x.com/staunovo/status/2118239408230986226",
     "photoUrl": "https://pbs.twimg.com/media/HWV_g8hXwAA0QGY.jpg",
     "hasPhoto": true,
-    "likes": 3,
+    "likes": 6,
     "retweets": 0,
     "replies": 0,
-    "engagement": 3,
+    "engagement": 6,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28303,
-    "score": 28303
+    "rawScore": 28306,
+    "score": 28306
   },
   {
     "id": "2118239280954757553",
@@ -199,14 +180,14 @@
     "url": "https://x.com/staunovo/status/2118239280954757553",
     "photoUrl": "https://pbs.twimg.com/media/HWV_ZfXW4AANqnJ.jpg",
     "hasPhoto": true,
-    "likes": 1,
+    "likes": 3,
     "retweets": 0,
     "replies": 0,
-    "engagement": 1,
+    "engagement": 3,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38301,
-    "score": 38301
+    "rawScore": 38303,
+    "score": 38303
   },
   {
     "id": "2118238988846727594",
@@ -218,14 +199,14 @@
     "url": "https://x.com/staunovo/status/2118238988846727594",
     "photoUrl": "https://pbs.twimg.com/media/HWV_IdSXwAA1L-p.jpg",
     "hasPhoto": true,
-    "likes": 3,
+    "likes": 7,
     "retweets": 0,
     "replies": 0,
-    "engagement": 3,
+    "engagement": 7,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28303,
-    "score": 28303
+    "rawScore": 28307,
+    "score": 28307
   },
   {
     "id": "2118238876619685917",
@@ -237,14 +218,14 @@
     "url": "https://x.com/staunovo/status/2118238876619685917",
     "photoUrl": "https://pbs.twimg.com/media/HWV_B8-WAAAm6uU.jpg",
     "hasPhoto": true,
-    "likes": 2,
+    "likes": 3,
     "retweets": 0,
     "replies": 0,
-    "engagement": 2,
+    "engagement": 3,
     "isRetweet": false,
     "relevance": 56,
-    "rawScore": 56302,
-    "score": 56302
+    "rawScore": 56303,
+    "score": 56303
   },
   {
     "id": "2118238768343683329",
@@ -275,14 +256,14 @@
     "url": "https://x.com/staunovo/status/2118237828752515487",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1,
+    "likes": 2,
     "retweets": 0,
     "replies": 0,
-    "engagement": 1,
+    "engagement": 2,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20001,
-    "score": 20001
+    "rawScore": 20002,
+    "score": 20002
   },
   {
     "id": "2118237694169841664",
@@ -294,14 +275,14 @@
     "url": "https://x.com/staunovo/status/2118237694169841664",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 0,
+    "likes": 1,
     "retweets": 0,
     "replies": 0,
-    "engagement": 0,
+    "engagement": 1,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20000,
-    "score": 20000
+    "rawScore": 20001,
+    "score": 20001
   },
   {
     "id": "2118139308859417055",
@@ -320,7 +301,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10002,
-    "score": 8502
+    "score": 6501
   },
   {
     "id": "2118129481454162209",
@@ -332,14 +313,14 @@
     "url": "https://x.com/Rory_Johnston/status/2118129481454162209",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 403,
-    "retweets": 42,
-    "replies": 22,
-    "engagement": 553,
+    "likes": 430,
+    "retweets": 47,
+    "replies": 24,
+    "engagement": 596,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20553,
-    "score": 17470
+    "rawScore": 20596,
+    "score": 13387
   },
   {
     "id": "2118124112166240317",
@@ -351,14 +332,14 @@
     "url": "https://x.com/Rory_Johnston/status/2118124112166240317",
     "photoUrl": "https://pbs.twimg.com/media/HWUWpeIbQAAPvUJ.jpg",
     "hasPhoto": true,
-    "likes": 150,
+    "likes": 157,
     "retweets": 16,
     "replies": 24,
-    "engagement": 254,
+    "engagement": 261,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28554,
-    "score": 18560
+    "rawScore": 28561,
+    "score": 18565
   },
   {
     "id": "2118086917338415488",
@@ -370,14 +351,14 @@
     "url": "https://x.com/Rory_Johnston/status/2118086917338415488",
     "photoUrl": "https://pbs.twimg.com/media/HWT00X4bkAAvOao.jpg",
     "hasPhoto": true,
-    "likes": 134,
+    "likes": 139,
     "retweets": 1,
-    "replies": 10,
-    "engagement": 166,
+    "replies": 11,
+    "engagement": 174,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10466,
-    "score": 6803
+    "rawScore": 10474,
+    "score": 6808
   },
   {
     "id": "2118058716348244024",
@@ -389,14 +370,14 @@
     "url": "https://x.com/Rory_Johnston/status/2118058716348244024",
     "photoUrl": "https://pbs.twimg.com/media/HWTbK-TaEAAXznp.jpg",
     "hasPhoto": true,
-    "likes": 97,
+    "likes": 99,
     "retweets": 11,
     "replies": 13,
-    "engagement": 158,
+    "engagement": 160,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10458,
-    "score": 4706
+    "rawScore": 10460,
+    "score": 4707
   },
   {
     "id": "2118092535646089590",
@@ -456,6 +437,25 @@
     "score": 4530
   },
   {
+    "id": "2118252615016353898",
+    "text": "Meanwhile, the S&P 500 equal weight index reached a fresh record high yesterday, up 16.5% YTD while the S&P 500 has gained 12.3%.\nDriven by: Rotation away from mega-cap technology,  broadening earnings expectations, lower Treasury yields, falling energy prices, and changing US political expectations",
+    "createdAt": "2026-11-05T08:02:33+00:00",
+    "tweetTime": 1793865753000,
+    "username": "Ole_S_Hansen",
+    "displayName": "Ole S Hansen",
+    "url": "https://x.com/Ole_S_Hansen/status/2118252615016353898",
+    "photoUrl": "https://pbs.twimg.com/media/HWWH-nOWsAA1yUh.png",
+    "hasPhoto": true,
+    "likes": 11,
+    "retweets": 5,
+    "replies": 0,
+    "engagement": 21,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10321,
+    "score": 10321
+  },
+  {
     "id": "2118242319803564105",
     "text": "EIAs latest inventory report: US crude oil and fuel inventories all declined last week, with modest draws in crude and gasoline overshadowed by a 3.6 mb drop in distillate stocks, pushing the total below 100 million barrels for the first time since 2003.\n\nCrude production reached a fresh record above 14 mb/d having fully recovered from a recent weather related slump, while SPR withdrawals slowed to just 400 kb/d. Crude exports fell by 1.2 mb/d to below 4 mb/d, while gasoline and distillate exports both increased. Meanwhile, crude imports from Canada approached 4 mb/d, contributing to an inventory build at Cushing, with the Midwest remaining the largest US destination for Canadian crude.\n\nRefinery crude runs remained at a seasonal record of 16.7 mb/d, supported by elevated refining margins and the restart of several facilities following maintenance, particularly across the Midwest and Gulf Coast.",
     "createdAt": "2026-11-05T07:21:38+00:00",
@@ -465,14 +465,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2118242319803564105",
     "photoUrl": "https://pbs.twimg.com/media/HWWBqG4WgAAjmI_.png",
     "hasPhoto": true,
-    "likes": 3,
+    "likes": 10,
     "retweets": 0,
     "replies": 1,
-    "engagement": 6,
+    "engagement": 13,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48306,
-    "score": 48306
+    "rawScore": 48313,
+    "score": 48313
   },
   {
     "id": "2118237934146994233",
@@ -484,14 +484,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2118237934146994233",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 14,
-    "retweets": 2,
-    "replies": 2,
-    "engagement": 24,
+    "likes": 22,
+    "retweets": 4,
+    "replies": 3,
+    "engagement": 39,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48024,
-    "score": 48024
+    "rawScore": 48039,
+    "score": 48039
   },
   {
     "id": "2118232756085731673",
@@ -503,14 +503,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2118232756085731673",
     "photoUrl": "https://pbs.twimg.com/media/HWV5FHoXIAA4_hM.jpg",
     "hasPhoto": true,
-    "likes": 32,
-    "retweets": 3,
-    "replies": 5,
-    "engagement": 53,
+    "likes": 57,
+    "retweets": 7,
+    "replies": 6,
+    "engagement": 89,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20353,
-    "score": 20353
+    "rawScore": 20389,
+    "score": 20389
   },
   {
     "id": "2117951616024236055",
@@ -541,13 +541,13 @@
     "url": "https://x.com/TankerTrackers/status/2117944598702219510",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 139,
-    "retweets": 11,
+    "likes": 141,
+    "retweets": 12,
     "replies": 6,
-    "engagement": 179,
+    "engagement": 183,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38179,
-    "score": 11454
+    "rawScore": 38183,
+    "score": 11455
   }
 ]
