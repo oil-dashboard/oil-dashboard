@@ -47,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2119482592047079667",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 291,
-    "retweets": 52,
-    "replies": 24,
-    "engagement": 467,
+    "likes": 298,
+    "retweets": 53,
+    "replies": 26,
+    "engagement": 482,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38467,
-    "score": 25004
+    "rawScore": 38482,
+    "score": 25013
   },
   {
     "id": "2118685191942324550",
@@ -104,14 +104,14 @@
     "url": "https://x.com/HFI_Research/status/2119468095115034857",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 446,
+    "likes": 455,
     "retweets": 31,
     "replies": 10,
-    "engagement": 538,
+    "engagement": 547,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18538,
-    "score": 12050
+    "rawScore": 18547,
+    "score": 12056
   },
   {
     "id": "2119089386952245541",
@@ -161,14 +161,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2119573121459958019",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 5,
+    "likes": 8,
     "retweets": 0,
     "replies": 4,
-    "engagement": 17,
+    "engagement": 20,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38017,
-    "score": 38017
+    "rawScore": 38020,
+    "score": 32317
   },
   {
     "id": "2119384641769439728",
@@ -180,14 +180,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2119384641769439728",
     "photoUrl": "https://pbs.twimg.com/media/HWmRFkTWgAAQEUf.png",
     "hasPhoto": true,
-    "likes": 93,
+    "likes": 99,
     "retweets": 18,
-    "replies": 8,
-    "engagement": 153,
+    "replies": 9,
+    "engagement": 162,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10453,
-    "score": 4704
+    "rawScore": 10462,
+    "score": 4708
   },
   {
     "id": "2118682112165302452",
@@ -199,13 +199,13 @@
     "url": "https://x.com/Ole_S_Hansen/status/2118682112165302452",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 38,
+    "likes": 39,
     "retweets": 8,
     "replies": 7,
-    "engagement": 75,
+    "engagement": 76,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10075,
+    "rawScore": 10076,
     "score": 3023
   },
   {
