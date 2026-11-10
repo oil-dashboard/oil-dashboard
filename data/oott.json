@@ -16,7 +16,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10327,
-    "score": 4647
+    "score": 3098
   },
   {
     "id": "2119840722929271249",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JavierBlas/status/2119840722929271249",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 136,
-    "retweets": 23,
+    "likes": 139,
+    "retweets": 25,
     "replies": 5,
-    "engagement": 197,
+    "engagement": 204,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10197,
-    "score": 6628
+    "rawScore": 10204,
+    "score": 6633
   },
   {
     "id": "2119826332423008577",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2119826332423008577",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 330,
-    "retweets": 68,
+    "likes": 333,
+    "retweets": 69,
     "replies": 18,
-    "engagement": 520,
+    "engagement": 525,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20520,
-    "score": 13338
+    "rawScore": 20525,
+    "score": 9236
   },
   {
     "id": "2119808021215760480",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2119808021215760480",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 193,
-    "retweets": 26,
+    "likes": 201,
+    "retweets": 27,
     "replies": 8,
-    "engagement": 269,
+    "engagement": 279,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30269,
-    "score": 13621
+    "rawScore": 30279,
+    "score": 13626
   },
   {
     "id": "2119807473209180410",
@@ -114,6 +114,25 @@
     "score": 34009
   },
   {
+    "id": "2120005082624237628",
+    "text": "Latest Chinese official trade data showed crude oil imports rising to ~9.9 MMbpd in October.\n\n- Highest level since March \n- Up ~1 MMbpd m/m \n- Up ~3  MMbpd from June low\n- Still down ~2.5 MMbpd from prewar (Feb) level https://t.co/9i8zcPa9ES",
+    "createdAt": "2026-11-10T04:06:14+00:00",
+    "tweetTime": 1794283574000,
+    "username": "Rory_Johnston",
+    "displayName": "Rory Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2120005082624237628",
+    "photoUrl": "https://pbs.twimg.com/media/HWvE-sCWoAACIps.jpg",
+    "hasPhoto": true,
+    "likes": 62,
+    "retweets": 12,
+    "replies": 7,
+    "engagement": 107,
+    "isRetweet": false,
+    "relevance": 20,
+    "rawScore": 20407,
+    "score": 20407
+  },
+  {
     "id": "2119927436062371891",
     "text": "Crude falling nearly $30/bbl over the past ~week makes it much easier for Trump to talk nonchalantly about perpetuating the status quo.\n\nIran seemingly less so.\n\nBut it’s still a game of siege chicken.",
     "createdAt": "2026-11-09T22:57:41+00:00",
@@ -123,14 +142,14 @@
     "url": "https://x.com/Rory_Johnston/status/2119927436062371891",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 186,
+    "likes": 197,
     "retweets": 13,
     "replies": 11,
-    "engagement": 245,
+    "engagement": 256,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10245,
-    "score": 8708
+    "rawScore": 10256,
+    "score": 8718
   },
   {
     "id": "2119910842627989775",
@@ -161,13 +180,13 @@
     "url": "https://x.com/Rory_Johnston/status/2119897777346130376",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 47,
+    "likes": 48,
     "retweets": 2,
     "replies": 4,
-    "engagement": 63,
+    "engagement": 64,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10063,
+    "rawScore": 10064,
     "score": 8554
   },
   {
@@ -187,7 +206,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20156,
-    "score": 17133
+    "score": 13101
   },
   {
     "id": "2119881116316250329",
@@ -199,14 +218,14 @@
     "url": "https://x.com/Rory_Johnston/status/2119881116316250329",
     "photoUrl": "https://pbs.twimg.com/media/HWtUja3XAAAsO0o.png",
     "hasPhoto": true,
-    "likes": 300,
+    "likes": 303,
     "retweets": 19,
-    "replies": 23,
-    "engagement": 407,
+    "replies": 24,
+    "engagement": 413,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10707,
-    "score": 9101
+    "rawScore": 10713,
+    "score": 6963
   },
   {
     "id": "2119973453067616600",
@@ -218,14 +237,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2119973453067616600",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 5,
+    "likes": 6,
     "retweets": 2,
     "replies": 0,
-    "engagement": 9,
+    "engagement": 10,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48009,
-    "score": 48009
+    "rawScore": 48010,
+    "score": 48010
   },
   {
     "id": "2119679138881479143",
@@ -237,13 +256,13 @@
     "url": "https://x.com/TankerTrackers/status/2119679138881479143",
     "photoUrl": "https://pbs.twimg.com/media/HWqbp39XIAA6rnw.jpg",
     "hasPhoto": true,
-    "likes": 109,
+    "likes": 110,
     "retweets": 23,
     "replies": 3,
-    "engagement": 164,
+    "engagement": 165,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38464,
-    "score": 11539
+    "rawScore": 38465,
+    "score": 11540
   }
 ]
