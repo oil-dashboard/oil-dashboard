@@ -47,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2120920859095306729",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 232,
+    "likes": 235,
     "retweets": 36,
-    "replies": 21,
-    "engagement": 367,
+    "replies": 22,
+    "engagement": 373,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28367,
-    "score": 18439
+    "rawScore": 28373,
+    "score": 12768
   },
   {
     "id": "2120802801173381217",
@@ -66,14 +66,33 @@
     "url": "https://x.com/JavierBlas/status/2120802801173381217",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1086,
+    "likes": 1097,
     "retweets": 192,
     "replies": 46,
-    "engagement": 1608,
+    "engagement": 1619,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 29608,
-    "score": 8882
+    "rawScore": 29619,
+    "score": 8886
+  },
+  {
+    "id": "2121101409181372574",
+    "text": "“I suspect that as the oil market progresses from here, we are going to shift from a transitory sentiment to something more structural. If the market continues to see tensions in the Strait of Hormuz remain elevated, non-OPEC supply growth disappoint, and Middle East production recovery remain choppy at best, that would ripple into energy equities.”",
+    "createdAt": "2026-11-13T04:42:38+00:00",
+    "tweetTime": 1794544958000,
+    "username": "HFI_Research",
+    "displayName": "HFI Research",
+    "url": "https://x.com/HFI_Research/status/2121101409181372574",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 19,
+    "retweets": 2,
+    "replies": 0,
+    "engagement": 23,
+    "isRetweet": false,
+    "relevance": 48,
+    "rawScore": 48023,
+    "score": 48023
   },
   {
     "id": "2121041697975251130",
@@ -85,14 +104,14 @@
     "url": "https://x.com/HFI_Research/status/2121041697975251130",
     "photoUrl": "https://pbs.twimg.com/media/HW90LnraEAAY4_l.jpg",
     "hasPhoto": true,
-    "likes": 109,
+    "likes": 121,
     "retweets": 12,
     "replies": 2,
-    "engagement": 139,
+    "engagement": 151,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20439,
-    "score": 20439
+    "rawScore": 20451,
+    "score": 17383
   },
   {
     "id": "2121033790952964243",
@@ -104,14 +123,14 @@
     "url": "https://x.com/HFI_Research/status/2121033790952964243",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 100,
+    "likes": 108,
     "retweets": 5,
     "replies": 3,
-    "engagement": 119,
+    "engagement": 127,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18119,
-    "score": 18119
+    "rawScore": 18127,
+    "score": 15408
   },
   {
     "id": "2121026131415699939",
@@ -123,14 +142,14 @@
     "url": "https://x.com/HFI_Research/status/2121026131415699939",
     "photoUrl": "https://pbs.twimg.com/media/HW9mBl7akAAjOI7.jpg",
     "hasPhoto": true,
-    "likes": 168,
-    "retweets": 24,
-    "replies": 1,
-    "engagement": 219,
+    "likes": 183,
+    "retweets": 25,
+    "replies": 2,
+    "engagement": 239,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10519,
-    "score": 10519
+    "rawScore": 10539,
+    "score": 8958
   },
   {
     "id": "2121000976706666664",
@@ -142,14 +161,14 @@
     "url": "https://x.com/staunovo/status/2121000976706666664",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 8,
+    "likes": 9,
     "retweets": 0,
     "replies": 2,
-    "engagement": 14,
+    "engagement": 15,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10014,
-    "score": 8512
+    "rawScore": 10015,
+    "score": 8513
   },
   {
     "id": "2121000147077169211",
@@ -180,14 +199,14 @@
     "url": "https://x.com/staunovo/status/2120999892105503110",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 18,
-    "retweets": 2,
+    "likes": 20,
+    "retweets": 4,
     "replies": 1,
-    "engagement": 25,
+    "engagement": 31,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 58025,
-    "score": 49321
+    "rawScore": 58031,
+    "score": 49326
   },
   {
     "id": "2121013303988424837",
@@ -199,14 +218,14 @@
     "url": "https://x.com/Rory_Johnston/status/2121013303988424837",
     "photoUrl": "https://pbs.twimg.com/media/HW9aW5OXgAAYgnz.jpg",
     "hasPhoto": true,
-    "likes": 101,
+    "likes": 109,
     "retweets": 10,
-    "replies": 3,
-    "engagement": 130,
+    "replies": 4,
+    "engagement": 141,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10430,
-    "score": 8866
+    "rawScore": 10441,
+    "score": 8875
   },
   {
     "id": "2120977279895679166",
@@ -218,14 +237,14 @@
     "url": "https://x.com/Rory_Johnston/status/2120977279895679166",
     "photoUrl": "https://pbs.twimg.com/media/HW85GZpXMAAD3k9.jpg",
     "hasPhoto": true,
-    "likes": 113,
-    "retweets": 16,
+    "likes": 121,
+    "retweets": 18,
     "replies": 11,
-    "engagement": 178,
+    "engagement": 190,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30478,
-    "score": 25906
+    "rawScore": 30490,
+    "score": 19819
   },
   {
     "id": "2120874956750049558",
@@ -313,13 +332,13 @@
     "url": "https://x.com/Ole_S_Hansen/status/2120843148024799630",
     "photoUrl": "https://pbs.twimg.com/media/HW6_mTcWgAAdwRC.jpg",
     "hasPhoto": true,
-    "likes": 68,
+    "likes": 69,
     "retweets": 17,
     "replies": 6,
-    "engagement": 120,
+    "engagement": 121,
     "isRetweet": false,
     "relevance": 8,
-    "rawScore": 8420,
+    "rawScore": 8421,
     "score": 3789
   },
   {
@@ -332,13 +351,13 @@
     "url": "https://x.com/Ole_S_Hansen/status/2120818410003013989",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 49,
+    "likes": 50,
     "retweets": 7,
     "replies": 7,
-    "engagement": 84,
+    "engagement": 85,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48084,
-    "score": 21638
+    "rawScore": 48085,
+    "score": 14426
   }
 ]
