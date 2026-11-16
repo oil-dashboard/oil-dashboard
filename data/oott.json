@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2122150165448630421",
     "photoUrl": "https://pbs.twimg.com/media/HXNkPnkaUAETKQA.jpg",
     "hasPhoto": true,
-    "likes": 10,
+    "likes": 13,
     "retweets": 4,
     "replies": 0,
-    "engagement": 18,
+    "engagement": 21,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20318,
-    "score": 20318
+    "rawScore": 20321,
+    "score": 20321
   },
   {
     "id": "2122127765881389129",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2122127765881389129",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 12,
+    "likes": 13,
     "retweets": 3,
     "replies": 1,
-    "engagement": 21,
+    "engagement": 22,
     "isRetweet": false,
     "relevance": 74,
-    "rawScore": 74021,
-    "score": 74021
+    "rawScore": 74022,
+    "score": 62919
   },
   {
     "id": "2121162180100005943",
@@ -85,13 +85,13 @@
     "url": "https://x.com/JavierBlas/status/2121586696483676562",
     "photoUrl": "https://pbs.twimg.com/media/HXE_jX-WQAAwbWq.png",
     "hasPhoto": true,
-    "likes": 688,
+    "likes": 690,
     "retweets": 139,
     "replies": 43,
-    "engagement": 1095,
+    "engagement": 1097,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 31395,
+    "rawScore": 31397,
     "score": 9419
   },
   {
@@ -180,14 +180,14 @@
     "url": "https://x.com/HFI_Research/status/2121579001886236747",
     "photoUrl": "https://pbs.twimg.com/media/HXFc24Ia4AAHGto.jpg",
     "hasPhoto": true,
-    "likes": 449,
+    "likes": 453,
     "retweets": 21,
     "replies": 6,
-    "engagement": 509,
+    "engagement": 513,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20809,
-    "score": 6243
+    "rawScore": 20813,
+    "score": 6244
   },
   {
     "id": "2121451797894336939",
@@ -209,6 +209,25 @@
     "score": 3018
   },
   {
+    "id": "2122195862944121146",
+    "text": "#Singapore's marine fuel sales rose to a year-to-date high in October, supported by strong vessel traffic and robust bunkering demand, according to the latest official data.\n\nBunker sales at the world's largest bunkering port reached 5.31 million metric tons in October, up 12.3% from September and 10.2% from a year earlier, based on data from the Maritime and Port Authority of Singapore (MPA) as of Monday #oott https://t.co/QkJy45EjiL",
+    "createdAt": "2026-11-16T05:11:36+00:00",
+    "tweetTime": 1794805896000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2122195862944121146",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 0,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10000,
+    "score": 10000
+  },
+  {
     "id": "2122072671269904658",
     "text": "....And as of today, we have disabled more than 55% of Russia’s oil refining capacity.....#oott",
     "createdAt": "2026-11-15T21:02:05+00:00",
@@ -225,7 +244,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20022,
-    "score": 17019
+    "score": 13014
   },
   {
     "id": "2122063045937488201",
@@ -237,14 +256,14 @@
     "url": "https://x.com/staunovo/status/2122063045937488201",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 36,
+    "likes": 37,
     "retweets": 10,
     "replies": 0,
-    "engagement": 56,
+    "engagement": 57,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38056,
-    "score": 32348
+    "rawScore": 38057,
+    "score": 24737
   },
   {
     "id": "2121656146461082023",
@@ -285,6 +304,25 @@
     "score": 3121
   },
   {
+    "id": "2122188365151805493",
+    "text": "China's independent oil refiners are increasingly turning to Iraqi crude as the US naval blockade of Iran disrupts shipments from Tehran and drives up the cost of Russian alternatives, Bloomberg reported Sunday.",
+    "createdAt": "2026-11-16T04:41:49+00:00",
+    "tweetTime": 1794804109000,
+    "username": "OilHeadlineNews",
+    "displayName": "Energy Headline News",
+    "url": "https://x.com/OilHeadlineNews/status/2122188365151805493",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 4,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 4,
+    "isRetweet": false,
+    "relevance": 20,
+    "rawScore": 20004,
+    "score": 20004
+  },
+  {
     "id": "2121897683249930395",
     "text": "The US CFTC’s Commitment of Traders (COT) reports, covering positioning across US futures markets through 10 November, will be released on Monday at 3:30 PM ET, delayed by last week’s federal holiday.\n\nMeanwhile, ICE Futures Europe released its report on Friday, revealing a 26% slump in the speculative net long in Brent crude to a four-month low of 134k contracts, while the gasoil net long fell to 54k contracts, its lowest since June.",
     "createdAt": "2026-11-15T09:26:45+00:00",
@@ -294,14 +332,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2121897683249930395",
     "photoUrl": "https://pbs.twimg.com/media/HXJ-q1hWsAAOyOL.png",
     "hasPhoto": true,
-    "likes": 44,
+    "likes": 45,
     "retweets": 13,
     "replies": 6,
-    "engagement": 88,
+    "engagement": 89,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38388,
-    "score": 11516
+    "rawScore": 38389,
+    "score": 11517
   },
   {
     "id": "2121231584141427170",
@@ -408,14 +446,14 @@
     "url": "https://x.com/TankerTrackers/status/2121281065168109675",
     "photoUrl": "https://pbs.twimg.com/media/HXBNWcLXMAACss1.jpg",
     "hasPhoto": true,
-    "likes": 252,
+    "likes": 253,
     "retweets": 42,
     "replies": 16,
-    "engagement": 384,
+    "engagement": 385,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48684,
-    "score": 14605
+    "rawScore": 48685,
+    "score": 14606
   },
   {
     "id": "2121280178470932947",
