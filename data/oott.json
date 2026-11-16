@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2122150165448630421",
     "photoUrl": "https://pbs.twimg.com/media/HXNkPnkaUAETKQA.jpg",
     "hasPhoto": true,
-    "likes": 34,
+    "likes": 37,
     "retweets": 9,
-    "replies": 2,
-    "engagement": 58,
+    "replies": 3,
+    "engagement": 64,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20358,
-    "score": 13233
+    "rawScore": 20364,
+    "score": 9164
   },
   {
     "id": "2122127765881389129",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2122307233157378251",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 172,
-    "retweets": 29,
-    "replies": 16,
-    "engagement": 278,
+    "likes": 417,
+    "retweets": 58,
+    "replies": 34,
+    "engagement": 635,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10278,
-    "score": 10278
+    "rawScore": 10635,
+    "score": 10635
   },
   {
     "id": "2122268171486777570",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2122268171486777570",
     "photoUrl": "https://pbs.twimg.com/media/HXPPpxxWAAA0Up1.jpg",
     "hasPhoto": true,
-    "likes": 209,
-    "retweets": 47,
-    "replies": 11,
-    "engagement": 336,
+    "likes": 238,
+    "retweets": 54,
+    "replies": 12,
+    "engagement": 382,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30636,
-    "score": 30636
+    "rawScore": 30682,
+    "score": 26080
   },
   {
     "id": "2122251810983510196",
@@ -85,14 +85,14 @@
     "url": "https://x.com/JavierBlas/status/2122251810983510196",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 380,
-    "retweets": 44,
-    "replies": 16,
-    "engagement": 516,
+    "likes": 447,
+    "retweets": 56,
+    "replies": 21,
+    "engagement": 622,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10516,
-    "score": 8939
+    "rawScore": 10622,
+    "score": 9029
   },
   {
     "id": "2121586696483676562",
@@ -104,14 +104,14 @@
     "url": "https://x.com/JavierBlas/status/2121586696483676562",
     "photoUrl": "https://pbs.twimg.com/media/HXE_jX-WQAAwbWq.png",
     "hasPhoto": true,
-    "likes": 696,
+    "likes": 697,
     "retweets": 143,
     "replies": 43,
-    "engagement": 1111,
+    "engagement": 1112,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 31411,
-    "score": 9423
+    "rawScore": 31412,
+    "score": 9424
   },
   {
     "id": "2121270233256304864",
@@ -123,13 +123,13 @@
     "url": "https://x.com/JavierBlas/status/2121270233256304864",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 130,
+    "likes": 131,
     "retweets": 18,
     "replies": 18,
-    "engagement": 220,
+    "engagement": 221,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18220,
+    "rawScore": 18221,
     "score": 5466
   },
   {
@@ -142,14 +142,14 @@
     "url": "https://x.com/HFI_Research/status/2122302319253696951",
     "photoUrl": "https://pbs.twimg.com/media/HXPutgEbsAAnY1f.jpg",
     "hasPhoto": true,
-    "likes": 100,
-    "retweets": 9,
+    "likes": 157,
+    "retweets": 14,
     "replies": 4,
-    "engagement": 130,
+    "engagement": 197,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30430,
-    "score": 30430
+    "rawScore": 30497,
+    "score": 30497
   },
   {
     "id": "2121579001886236747",
@@ -199,14 +199,14 @@
     "url": "https://x.com/staunovo/status/2122292159604817924",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 15,
-    "retweets": 2,
+    "likes": 22,
+    "retweets": 3,
     "replies": 2,
-    "engagement": 25,
+    "engagement": 34,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10025,
-    "score": 10025
+    "rawScore": 10034,
+    "score": 10034
   },
   {
     "id": "2122263801470853415",
@@ -225,7 +225,26 @@
     "isRetweet": false,
     "relevance": 30,
     "rawScore": 30003,
-    "score": 30003
+    "score": 25503
+  },
+  {
+    "id": "2122335696606138545",
+    "text": "🎙️ NEW PODCAST 🎧\n\nOn the latest episode of Oil Ground Up, I was joined by the co-founders of @hiloanalytics to discuss what it’s like building an oil market data company today and how AI agents are changing the way analysts consume data.\n\nCheck it out:\nhttps://t.co/e263DKydps",
+    "createdAt": "2026-11-16T14:27:15+00:00",
+    "tweetTime": 1794839235000,
+    "username": "Rory_Johnston",
+    "displayName": "Rory Johnston",
+    "url": "https://x.com/Rory_Johnston/status/2122335696606138545",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 2,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 2,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10002,
+    "score": 10002
   },
   {
     "id": "2121656146461082023",
@@ -266,6 +285,25 @@
     "score": 3121
   },
   {
+    "id": "2122330025374421087",
+    "text": "GOLDMAN SACHS CUTS OIL PRICE FORECASTS FOR 2026 AND 2027",
+    "createdAt": "2026-11-16T14:04:43+00:00",
+    "tweetTime": 1794837883000,
+    "username": "OilHeadlineNews",
+    "displayName": "Energy Headline News",
+    "url": "https://x.com/OilHeadlineNews/status/2122330025374421087",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 4,
+    "retweets": 1,
+    "replies": 1,
+    "engagement": 9,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10009,
+    "score": 10009
+  },
+  {
     "id": "2122309076335862176",
     "text": "Canadian Natural Resources Limited Enters into Agreement to Acquire Advantage Energy Ltd.\n\nTotal transaction value of approximately $2.53 billion.",
     "createdAt": "2026-11-16T12:41:29+00:00",
@@ -275,14 +313,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2122309076335862176",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 3,
+    "likes": 8,
     "retweets": 0,
     "replies": 1,
-    "engagement": 6,
+    "engagement": 11,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10006,
-    "score": 10006
+    "rawScore": 10011,
+    "score": 10011
   },
   {
     "id": "2122200655716593759",
@@ -294,14 +332,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2122200655716593759",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 54,
+    "likes": 58,
     "retweets": 4,
-    "replies": 15,
-    "engagement": 107,
+    "replies": 16,
+    "engagement": 114,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48107,
-    "score": 40891
+    "rawScore": 48114,
+    "score": 31274
   },
   {
     "id": "2122188365151805493",
@@ -313,14 +351,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2122188365151805493",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 18,
+    "likes": 20,
     "retweets": 0,
     "replies": 0,
-    "engagement": 18,
+    "engagement": 20,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20018,
-    "score": 13012
+    "rawScore": 20020,
+    "score": 13013
   },
   {
     "id": "2122231070108025323",
@@ -332,14 +370,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2122231070108025323",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 37,
-    "retweets": 6,
+    "likes": 39,
+    "retweets": 8,
     "replies": 5,
-    "engagement": 64,
+    "engagement": 70,
     "isRetweet": false,
     "relevance": 76,
-    "rawScore": 76064,
-    "score": 64654
+    "rawScore": 76070,
+    "score": 64660
   },
   {
     "id": "2121897683249930395",
