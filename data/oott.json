@@ -9,14 +9,14 @@
     "url": "https://x.com/JuneGoh_Sparta/status/2122150165448630421",
     "photoUrl": "https://pbs.twimg.com/media/HXNkPnkaUAETKQA.jpg",
     "hasPhoto": true,
-    "likes": 33,
+    "likes": 34,
     "retweets": 9,
     "replies": 2,
-    "engagement": 57,
+    "engagement": 58,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20357,
-    "score": 13232
+    "rawScore": 20358,
+    "score": 13233
   },
   {
     "id": "2122127765881389129",
@@ -35,7 +35,26 @@
     "isRetweet": false,
     "relevance": 74,
     "rawScore": 74031,
-    "score": 48120
+    "score": 33314
+  },
+  {
+    "id": "2122307233157378251",
+    "text": "Lots of debate about Goldman Sach's 2027 oil view (surplus; bearish) published earlier today. But let me flag one item that's not yet getting enough attention:\n\n\"... We estimate that China's total oil demand peaked in 2025...\"",
+    "createdAt": "2026-11-16T12:34:09+00:00",
+    "tweetTime": 1794832449000,
+    "username": "JavierBlas",
+    "displayName": "Javier Blas",
+    "url": "https://x.com/JavierBlas/status/2122307233157378251",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 172,
+    "retweets": 29,
+    "replies": 16,
+    "engagement": 278,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10278,
+    "score": 10278
   },
   {
     "id": "2122268171486777570",
@@ -47,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2122268171486777570",
     "photoUrl": "https://pbs.twimg.com/media/HXPPpxxWAAA0Up1.jpg",
     "hasPhoto": true,
-    "likes": 168,
-    "retweets": 44,
-    "replies": 9,
-    "engagement": 283,
+    "likes": 209,
+    "retweets": 47,
+    "replies": 11,
+    "engagement": 336,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30583,
-    "score": 30583
+    "rawScore": 30636,
+    "score": 30636
   },
   {
     "id": "2122251810983510196",
@@ -66,14 +85,14 @@
     "url": "https://x.com/JavierBlas/status/2122251810983510196",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 312,
-    "retweets": 40,
-    "replies": 14,
-    "engagement": 434,
+    "likes": 380,
+    "retweets": 44,
+    "replies": 16,
+    "engagement": 516,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10434,
-    "score": 10434
+    "rawScore": 10516,
+    "score": 8939
   },
   {
     "id": "2121586696483676562",
@@ -85,14 +104,14 @@
     "url": "https://x.com/JavierBlas/status/2121586696483676562",
     "photoUrl": "https://pbs.twimg.com/media/HXE_jX-WQAAwbWq.png",
     "hasPhoto": true,
-    "likes": 693,
-    "retweets": 142,
+    "likes": 696,
+    "retweets": 143,
     "replies": 43,
-    "engagement": 1106,
+    "engagement": 1111,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 31406,
-    "score": 9422
+    "rawScore": 31411,
+    "score": 9423
   },
   {
     "id": "2121270233256304864",
@@ -123,14 +142,14 @@
     "url": "https://x.com/HFI_Research/status/2122302319253696951",
     "photoUrl": "https://pbs.twimg.com/media/HXPutgEbsAAnY1f.jpg",
     "hasPhoto": true,
-    "likes": 4,
-    "retweets": 1,
-    "replies": 0,
-    "engagement": 6,
+    "likes": 100,
+    "retweets": 9,
+    "replies": 4,
+    "engagement": 130,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30306,
-    "score": 30306
+    "rawScore": 30430,
+    "score": 30430
   },
   {
     "id": "2121579001886236747",
@@ -180,14 +199,14 @@
     "url": "https://x.com/staunovo/status/2122292159604817924",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 7,
-    "retweets": 1,
+    "likes": 15,
+    "retweets": 2,
     "replies": 2,
-    "engagement": 15,
+    "engagement": 25,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10015,
-    "score": 10015
+    "rawScore": 10025,
+    "score": 10025
   },
   {
     "id": "2122263801470853415",
@@ -218,14 +237,14 @@
     "url": "https://x.com/Rory_Johnston/status/2121656146461082023",
     "photoUrl": "https://pbs.twimg.com/media/HXGjA1vXcAAv7q9.jpg",
     "hasPhoto": true,
-    "likes": 140,
+    "likes": 141,
     "retweets": 2,
     "replies": 8,
-    "engagement": 168,
+    "engagement": 169,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10468,
-    "score": 3140
+    "rawScore": 10469,
+    "score": 3141
   },
   {
     "id": "2121420069167095951",
@@ -247,6 +266,25 @@
     "score": 3121
   },
   {
+    "id": "2122309076335862176",
+    "text": "Canadian Natural Resources Limited Enters into Agreement to Acquire Advantage Energy Ltd.\n\nTotal transaction value of approximately $2.53 billion.",
+    "createdAt": "2026-11-16T12:41:29+00:00",
+    "tweetTime": 1794832889000,
+    "username": "OilHeadlineNews",
+    "displayName": "Energy Headline News",
+    "url": "https://x.com/OilHeadlineNews/status/2122309076335862176",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 3,
+    "retweets": 0,
+    "replies": 1,
+    "engagement": 6,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10006,
+    "score": 10006
+  },
+  {
     "id": "2122200655716593759",
     "text": "Oil prices are falling as Strait of Hormuz shipments approached pre-war levels. Brent is trading near $95 a barrel after the IEA forecast a q4 global supply surplus of 1.7m BPD. - Reuters",
     "createdAt": "2026-11-16T05:30:39+00:00",
@@ -256,14 +294,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2122200655716593759",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 52,
+    "likes": 54,
     "retweets": 4,
-    "replies": 14,
-    "engagement": 102,
+    "replies": 15,
+    "engagement": 107,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48102,
-    "score": 40887
+    "rawScore": 48107,
+    "score": 40891
   },
   {
     "id": "2122188365151805493",
@@ -282,7 +320,7 @@
     "isRetweet": false,
     "relevance": 20,
     "rawScore": 20018,
-    "score": 17015
+    "score": 13012
   },
   {
     "id": "2122231070108025323",
@@ -294,14 +332,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2122231070108025323",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 33,
+    "likes": 37,
     "retweets": 6,
     "replies": 5,
-    "engagement": 60,
+    "engagement": 64,
     "isRetweet": false,
     "relevance": 76,
-    "rawScore": 76060,
-    "score": 64651
+    "rawScore": 76064,
+    "score": 64654
   },
   {
     "id": "2121897683249930395",
@@ -313,33 +351,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2121897683249930395",
     "photoUrl": "https://pbs.twimg.com/media/HXJ-q1hWsAAOyOL.png",
     "hasPhoto": true,
-    "likes": 49,
+    "likes": 50,
     "retweets": 14,
     "replies": 6,
-    "engagement": 95,
+    "engagement": 96,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38395,
+    "rawScore": 38396,
     "score": 11519
-  },
-  {
-    "id": "2121231584141427170",
-    "text": "Copper slides to four-month low as AI concerns and Fed outlook weigh\n\nCopper is heading for a fifth consecutive weekly decline, with futures in London and New York both falling to four-month lows amid growing turmoil in the artificial intelligence sector and mounting expectations of further US interest rate hikes. The crisis engulfing Nvidia, the influential chipmaker at the centre of the AI boom, has cast doubt on the scale and pace of future AI infrastructure investment. This has undermined one of copper's key bullish demand narratives, with investors increasingly questioning whether the massive spending planned for data centres, power grids and related infrastructure will materialise as expected.\n\nMeanwhile, a stronger dollar and rising US Treasury yields, driven by persistent inflation and an increasingly hawkish Fed outlook, have added further pressure on industrial metals. COMEX high-grade copper futures briefly touched USD 6.1165 per pound, marking a nearly 12% reversal from September's record high. The decline has brought prices below the 200-day moving average, with a sustained break potentially opening the door to further losses towards USD 5.93, the 38.2% Fibonacci retracement of the broader rally shown in the chart. \n\nWhile the technical outlook has weakened, attracting long liquidation from funds, longer-term electrification and grid investment needs remain intact, suggesting the current selloff reflects a reassessment of near-term growth expectations rather than a fundamental reversal of copper's structural demand outlook.",
-    "createdAt": "2026-11-13T13:19:54+00:00",
-    "tweetTime": 1794575994000,
-    "username": "Ole_S_Hansen",
-    "displayName": "Ole S Hansen",
-    "url": "https://x.com/Ole_S_Hansen/status/2121231584141427170",
-    "photoUrl": "https://pbs.twimg.com/media/HXAgZQgXEAAUzsL.png",
-    "hasPhoto": true,
-    "likes": 99,
-    "retweets": 20,
-    "replies": 12,
-    "engagement": 175,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10475,
-    "score": 3143
   },
   {
     "id": "2121591486584107057",
