@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2123507037808246942",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 79,
+    "likes": 81,
     "retweets": 12,
     "replies": 10,
-    "engagement": 133,
+    "engagement": 135,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18133,
-    "score": 11786
+    "rawScore": 18135,
+    "score": 8161
   },
   {
     "id": "2123491957507023283",
@@ -85,14 +85,14 @@
     "url": "https://x.com/JavierBlas/status/2123491957507023283",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 443,
-    "retweets": 73,
+    "likes": 481,
+    "retweets": 78,
     "replies": 17,
-    "engagement": 640,
+    "engagement": 688,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40640,
-    "score": 26416
+    "rawScore": 40688,
+    "score": 18310
   },
   {
     "id": "2123413497568534887",
@@ -104,14 +104,14 @@
     "url": "https://x.com/JavierBlas/status/2123413497568534887",
     "photoUrl": "https://pbs.twimg.com/media/HXffhCYW8AALAM0.png",
     "hasPhoto": true,
-    "likes": 447,
-    "retweets": 99,
+    "likes": 457,
+    "retweets": 102,
     "replies": 22,
-    "engagement": 711,
+    "engagement": 727,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 31011,
-    "score": 13955
+    "rawScore": 31027,
+    "score": 9308
   },
   {
     "id": "2123402643024347158",
@@ -130,26 +130,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10136,
-    "score": 4561
-  },
-  {
-    "id": "2123373933907022068",
-    "text": "After their trilateral meeting, Xi, Putin and Trump release a 4-point communiqué, pledging in rather vague terms to boost the supply of petroleum refined products.\n\n(FWIW: the US is maxed out; China can do more but only if it buys more crude; Russia is limited by Ukraine war) https://t.co/N6aLnn0kZK",
-    "createdAt": "2026-11-19T11:12:50+00:00",
-    "tweetTime": 1795086770000,
-    "username": "JavierBlas",
-    "displayName": "Javier Blas",
-    "url": "https://x.com/JavierBlas/status/2123373933907022068",
-    "photoUrl": "https://pbs.twimg.com/media/HXe8_-_XUAAK3T7.png",
-    "hasPhoto": true,
-    "likes": 219,
-    "retweets": 57,
-    "replies": 9,
-    "engagement": 360,
-    "isRetweet": false,
-    "relevance": 20,
-    "rawScore": 20660,
-    "score": 6198
+    "score": 3041
   },
   {
     "id": "2123446451556516085",
@@ -187,7 +168,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10351,
-    "score": 4658
+    "score": 3105
   },
   {
     "id": "2123637776914743453",
@@ -199,14 +180,14 @@
     "url": "https://x.com/HFI_Research/status/2123637776914743453",
     "photoUrl": "https://pbs.twimg.com/media/HXitTbVaQAA2DeO.jpg",
     "hasPhoto": true,
-    "likes": 99,
-    "retweets": 5,
+    "likes": 127,
+    "retweets": 6,
     "replies": 2,
-    "engagement": 115,
+    "engagement": 145,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10415,
-    "score": 10415
+    "rawScore": 10445,
+    "score": 10445
   },
   {
     "id": "2123587988500459628",
@@ -218,14 +199,14 @@
     "url": "https://x.com/HFI_Research/status/2123587988500459628",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 37,
+    "likes": 38,
     "retweets": 2,
     "replies": 0,
-    "engagement": 41,
+    "engagement": 42,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20041,
-    "score": 17035
+    "rawScore": 20042,
+    "score": 17036
   },
   {
     "id": "2123422487161831677",
@@ -237,14 +218,14 @@
     "url": "https://x.com/HFI_Research/status/2123422487161831677",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 319,
+    "likes": 320,
     "retweets": 15,
     "replies": 6,
-    "engagement": 367,
+    "engagement": 368,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10367,
-    "score": 4665
+    "rawScore": 10368,
+    "score": 4666
   },
   {
     "id": "2123663279914361078",
@@ -256,14 +237,14 @@
     "url": "https://x.com/staunovo/status/2123663279914361078",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 2,
+    "likes": 5,
     "retweets": 0,
     "replies": 1,
-    "engagement": 5,
+    "engagement": 8,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30005,
-    "score": 30005
+    "rawScore": 30008,
+    "score": 30008
   },
   {
     "id": "2123656485007712446",
@@ -275,14 +256,14 @@
     "url": "https://x.com/staunovo/status/2123656485007712446",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 4,
+    "likes": 8,
     "retweets": 1,
-    "replies": 1,
-    "engagement": 9,
+    "replies": 2,
+    "engagement": 16,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40009,
-    "score": 40009
+    "rawScore": 40016,
+    "score": 40016
   },
   {
     "id": "2123656094320832571",
@@ -332,14 +313,14 @@
     "url": "https://x.com/Rory_Johnston/status/2123530149262242288",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 19,
+    "likes": 20,
     "retweets": 0,
     "replies": 4,
-    "engagement": 31,
+    "engagement": 32,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28031,
-    "score": 18220
+    "rawScore": 28032,
+    "score": 18221
   },
   {
     "id": "2123413333457989916",
@@ -351,14 +332,14 @@
     "url": "https://x.com/Rory_Johnston/status/2123413333457989916",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 539,
-    "retweets": 53,
+    "likes": 546,
+    "retweets": 54,
     "replies": 33,
-    "engagement": 744,
+    "engagement": 753,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10744,
-    "score": 4835
+    "rawScore": 10753,
+    "score": 3226
   },
   {
     "id": "2123440373842182252",
@@ -415,7 +396,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10023,
-    "score": 10023
+    "score": 8520
   },
   {
     "id": "2123546683216691671",
@@ -427,14 +408,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2123546683216691671",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 21,
+    "likes": 22,
     "retweets": 2,
     "replies": 1,
-    "engagement": 28,
+    "engagement": 29,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28028,
-    "score": 18218
+    "rawScore": 28029,
+    "score": 18219
   },
   {
     "id": "2123508211948953710",
@@ -447,51 +428,32 @@
     "photoUrl": null,
     "hasPhoto": false,
     "likes": 4,
-    "retweets": 1,
+    "retweets": 2,
     "replies": 4,
-    "engagement": 18,
+    "engagement": 20,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30018,
-    "score": 19512
+    "rawScore": 30020,
+    "score": 13509
   },
   {
-    "id": "2123319096880021544",
-    "text": "EIA crude oil and fuel inventory report: US crude oil, gasoline and distillate inventories all rose last week, pointing to a gradual normalisation of supply conditions. Gasoline stocks are rebuilding rapidly amid seasonally weaker demand, while crude and distillate inventories remain below their five-year averages, with the latter still highlighting underlying tightness in the fuel market. Meanwhile, US crude production reached a fresh record of 14.03 million barrels per day, while oil exports rebounded above 4 million barrels per day. Refinery demand also remains elevated for this time of year, supporting fuel production and inventory replenishment. Overall, the report reinforces a picture of improving supply availability and easing market tightness, although historically low distillate stocks continue to provide a degree of support to refined product prices.",
-    "createdAt": "2026-11-19T07:34:56+00:00",
-    "tweetTime": 1795073696000,
+    "id": "2123682480746119427",
+    "text": "#Commodities - European am comment. \nThe Bloomberg Commodity Total Return Index is heading for a fifth consecutive weekly decline, falling 4.4% and extending its cumulative loss over the period to 11.4%, reducing the year-to-date gain to 20%. Beyond higher yields and expectations of further Fed rate hikes hurting global growth prospects, the broad-based selloff may also reflect tightening global dollar liquidity. Rising AI-related financing needs, IPO activity, equity market volatility and elevated energy security costs are boosting demand for cash just as higher interest rates make funding more expensive.\n\nPrecious and industrial metals have borne the brunt of the rout, with the AI-driven equity selloff triggering double-digit weekly losses in silver and platinum, while copper has slumped 9.5% to an eight-month low. Gold, despite its safe-haven status, has also been caught in the broader dash for cash, falling 8% as investors liquidate highly liquid assets to meet funding needs, cover losses elsewhere and reduce overall risk exposure.\n\nThe energy sector is down 4% on the week, with Brent settling into a narrow range in the low USD 90s amid alternating focus on rising supply from the Middle East and the risk of flare-ups. From an inflation perspective, the more encouraging development has been the sharper decline in distillate fuel prices, with London gasoil down 8% on the week to USD 158 per barrel, compared with around USD 200 at the start of the month. Meanwhile, agriculture is down around 2.5%, weighed down primarily by the stronger dollar and broader risk aversion.",
+    "createdAt": "2026-11-20T07:38:54+00:00",
+    "tweetTime": 1795160334000,
     "username": "Ole_S_Hansen",
     "displayName": "Ole S Hansen",
-    "url": "https://x.com/Ole_S_Hansen/status/2123319096880021544",
-    "photoUrl": "https://pbs.twimg.com/media/HXeJP4kXAAA0its.png",
-    "hasPhoto": true,
-    "likes": 68,
-    "retweets": 21,
-    "replies": 0,
-    "engagement": 110,
-    "isRetweet": false,
-    "relevance": 48,
-    "rawScore": 48410,
-    "score": 14523
-  },
-  {
-    "id": "2123312140530458965",
-    "text": "#Commodities - AM note from Copenhagen:\n\n#Copper slumped 5% yesterday to a seven-month low, pressured by global growth concerns, disappointing Chinese demand signals and expectations of increased US exports. Negative sentiment at a major industry conference in Shanghai triggered heavy speculative selling, while reports that copper could be redirected to China in December eased concerns about tight local supplies. Despite the sharp selloff, the longer-term outlook remains supported by tight scrap and mine supplies, resilient infrastructure demand and committed AI-related investment.\n\nPrecious metals: Gold extended its recent slump, touching a fresh 15-month low of USD 3,694 in Asia, as hawkish Fed minutes and Governor Waller's comments reinforced expectations of further rate hikes. Beyond higher yields and rate hike concerns, the broader commodity selloff may also reflect tightening global dollar liquidity as the dollar continues to rally. Rising AI-related financing needs, IPO activity, equity market volatility and elevated energy security costs are increasing demand for cash just as higher interest rates make funding more expensive. Gold, given its deep liquidity, and other metals may therefore be caught in a broader dash for cash, with investors selling liquid assets to meet funding needs and reduce risk exposure.\n\nOil: Brent trades near unchanged around USD 92 after falling 1.3% on the Wednesday. Alongside broader risk reduction across commodities, recent weakness has been driven by recovering Middle East production and exports, renewing concerns about an emerging supply glut. However, the risk of fresh disruptions remains, with the New York Times reporting that Trump, under renewed pressure from Israel's Netanyahu, is considering fresh strikes against Iran. Tehran has responded by warning neighbouring countries of retaliation should they allow US attacks to be launched from their territory.",
-    "createdAt": "2026-11-19T07:07:18+00:00",
-    "tweetTime": 1795072038000,
-    "username": "Ole_S_Hansen",
-    "displayName": "Ole S Hansen",
-    "url": "https://x.com/Ole_S_Hansen/status/2123312140530458965",
+    "url": "https://x.com/Ole_S_Hansen/status/2123682480746119427",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 83,
-    "retweets": 13,
-    "replies": 2,
-    "engagement": 115,
+    "likes": 10,
+    "retweets": 6,
+    "replies": 1,
+    "engagement": 25,
     "isRetweet": false,
-    "relevance": 38,
-    "rawScore": 38115,
-    "score": 11435
+    "relevance": 48,
+    "rawScore": 48025,
+    "score": 48025
   },
   {
     "id": "2123549073756279243",
@@ -503,14 +465,14 @@
     "url": "https://x.com/TankerTrackers/status/2123549073756279243",
     "photoUrl": "https://pbs.twimg.com/media/HXhbXbTXIAAOQ-2.jpg",
     "hasPhoto": true,
-    "likes": 282,
-    "retweets": 18,
+    "likes": 296,
+    "retweets": 21,
     "replies": 9,
-    "engagement": 345,
+    "engagement": 365,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 58645,
-    "score": 38119
+    "rawScore": 58665,
+    "score": 38132
   },
   {
     "id": "2123370674622206416",
@@ -522,13 +484,13 @@
     "url": "https://x.com/TankerTrackers/status/2123370674622206416",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1146,
+    "likes": 1152,
     "retweets": 142,
-    "replies": 79,
-    "engagement": 1667,
+    "replies": 80,
+    "engagement": 1676,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 39667,
-    "score": 11900
+    "rawScore": 39676,
+    "score": 11903
   }
 ]
