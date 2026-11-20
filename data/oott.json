@@ -47,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2123728857157030341",
     "photoUrl": "https://pbs.twimg.com/media/HXkAGQTWAAARVs0.jpg",
     "hasPhoto": true,
-    "likes": 58,
-    "retweets": 11,
-    "replies": 5,
-    "engagement": 95,
+    "likes": 85,
+    "retweets": 12,
+    "replies": 8,
+    "engagement": 133,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20395,
-    "score": 20395
+    "rawScore": 20433,
+    "score": 20433
   },
   {
     "id": "2123507037808246942",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2123507037808246942",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 84,
+    "likes": 86,
     "retweets": 12,
     "replies": 10,
-    "engagement": 138,
+    "engagement": 140,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18138,
-    "score": 8162
+    "rawScore": 18140,
+    "score": 8163
   },
   {
     "id": "2123491957507023283",
@@ -85,14 +85,14 @@
     "url": "https://x.com/JavierBlas/status/2123491957507023283",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 545,
-    "retweets": 91,
-    "replies": 20,
-    "engagement": 787,
+    "likes": 566,
+    "retweets": 96,
+    "replies": 22,
+    "engagement": 824,
     "isRetweet": false,
     "relevance": 40,
-    "rawScore": 40787,
-    "score": 18354
+    "rawScore": 40824,
+    "score": 18371
   },
   {
     "id": "2123413497568534887",
@@ -104,14 +104,14 @@
     "url": "https://x.com/JavierBlas/status/2123413497568534887",
     "photoUrl": "https://pbs.twimg.com/media/HXffhCYW8AALAM0.png",
     "hasPhoto": true,
-    "likes": 479,
-    "retweets": 108,
+    "likes": 488,
+    "retweets": 111,
     "replies": 24,
-    "engagement": 767,
+    "engagement": 782,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 31067,
-    "score": 9320
+    "rawScore": 31082,
+    "score": 9325
   },
   {
     "id": "2123446451556516085",
@@ -125,12 +125,12 @@
     "hasPhoto": true,
     "likes": 18,
     "retweets": 4,
-    "replies": 2,
-    "engagement": 32,
+    "replies": 3,
+    "engagement": 35,
     "isRetweet": false,
     "relevance": 60,
-    "rawScore": 60332,
-    "score": 18100
+    "rawScore": 60335,
+    "score": 18101
   },
   {
     "id": "2123416253272387641",
@@ -161,14 +161,14 @@
     "url": "https://x.com/HFI_Research/status/2123724120349143273",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 238,
-    "retweets": 20,
+    "likes": 324,
+    "retweets": 28,
     "replies": 4,
-    "engagement": 290,
+    "engagement": 392,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10290,
-    "score": 10290
+    "rawScore": 10392,
+    "score": 10392
   },
   {
     "id": "2123637776914743453",
@@ -180,14 +180,14 @@
     "url": "https://x.com/HFI_Research/status/2123637776914743453",
     "photoUrl": "https://pbs.twimg.com/media/HXitTbVaQAA2DeO.jpg",
     "hasPhoto": true,
-    "likes": 173,
-    "retweets": 11,
+    "likes": 186,
+    "retweets": 12,
     "replies": 2,
-    "engagement": 201,
+    "engagement": 216,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10501,
-    "score": 8926
+    "rawScore": 10516,
+    "score": 6835
   },
   {
     "id": "2123587988500459628",
@@ -218,14 +218,14 @@
     "url": "https://x.com/staunovo/status/2123736449631605236",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 3,
+    "likes": 7,
     "retweets": 0,
     "replies": 0,
-    "engagement": 3,
+    "engagement": 7,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38003,
-    "score": 38003
+    "rawScore": 38007,
+    "score": 38007
   },
   {
     "id": "2123736365258932397",
@@ -237,14 +237,14 @@
     "url": "https://x.com/staunovo/status/2123736365258932397",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1,
+    "likes": 7,
     "retweets": 0,
     "replies": 0,
-    "engagement": 1,
+    "engagement": 7,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30001,
-    "score": 30001
+    "rawScore": 30007,
+    "score": 30007
   },
   {
     "id": "2123727376487989348",
@@ -313,14 +313,14 @@
     "url": "https://x.com/Rory_Johnston/status/2123413333457989916",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 561,
+    "likes": 562,
     "retweets": 54,
     "replies": 33,
-    "engagement": 768,
+    "engagement": 769,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10768,
-    "score": 3230
+    "rawScore": 10769,
+    "score": 3231
   },
   {
     "id": "2123440373842182252",
@@ -342,6 +342,44 @@
     "score": 9000
   },
   {
+    "id": "2123754493040861355",
+    "text": "EXPLOSIONS HEARD IN STRAIT OF HORMUZ - SABREN NEWS",
+    "createdAt": "2026-11-20T12:25:03+00:00",
+    "tweetTime": 1795177503000,
+    "username": "OilHeadlineNews",
+    "displayName": "Energy Headline News",
+    "url": "https://x.com/OilHeadlineNews/status/2123754493040861355",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 12,
+    "retweets": 3,
+    "replies": 0,
+    "engagement": 18,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10018,
+    "score": 10018
+  },
+  {
+    "id": "2123754045785489588",
+    "text": "Iran’s Foreign Minister, Araghchi:\n\nThe siege must be broken. We will make every effort to export oil and break the siege.",
+    "createdAt": "2026-11-20T12:23:16+00:00",
+    "tweetTime": 1795177396000,
+    "username": "OilHeadlineNews",
+    "displayName": "Energy Headline News",
+    "url": "https://x.com/OilHeadlineNews/status/2123754045785489588",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 4,
+    "retweets": 0,
+    "replies": 2,
+    "engagement": 10,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10010,
+    "score": 10010
+  },
+  {
     "id": "2123633720498209054",
     "text": "SENATE PASSES LANDMARK BILL TO OVERHAUL US ENERGY PERMITTING",
     "createdAt": "2026-11-20T04:25:08+00:00",
@@ -358,7 +396,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10011,
-    "score": 8509
+    "score": 6507
   },
   {
     "id": "2123625467005595715",
@@ -377,7 +415,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10023,
-    "score": 8520
+    "score": 6515
   },
   {
     "id": "2123546683216691671",
@@ -399,25 +437,6 @@
     "score": 12614
   },
   {
-    "id": "2123508211948953710",
-    "text": ".@SecretaryWright: \"More gasoline is flowing out of the Strait of Hormuz, more diesel is flowing out, more jet fuel is flowing out, so the supply has indeed been growing. American refineries have continued to ramp up. This is the Trump Administration energy addition agenda.\" https://t.co/a5lKlcOBMT",
-    "createdAt": "2026-11-19T20:06:25+00:00",
-    "tweetTime": 1795118785000,
-    "username": "OilHeadlineNews",
-    "displayName": "Energy Headline News",
-    "url": "https://x.com/OilHeadlineNews/status/2123508211948953710",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 5,
-    "retweets": 2,
-    "replies": 4,
-    "engagement": 21,
-    "isRetweet": false,
-    "relevance": 30,
-    "rawScore": 30021,
-    "score": 13509
-  },
-  {
     "id": "2123716320684372009",
     "text": "Copper inventories: US stock concentration highlights potential shift towards China\nCopper inventories monitored by the three major futures exchanges rose for a third consecutive week, increasing by 5,234 tonnes to 1.093 million tonnes. The modest overall build, however, masks a continued geographical imbalance, with US warehouses holding the overwhelming majority of exchange-monitored stocks.\n\nLME inventories rose by 2,925 tonnes to 332,025, but this increase was entirely driven by an 8,550-tonne build at US warehouses to 249,200 tonnes. Excluding the US, LME inventories would have fallen by 5,625 tonnes, highlighting continued tightness elsewhere. Meanwhile, CME inventories recorded a second consecutive weekly decline, partly offsetting small increases in London and Shanghai.\n\nDespite the recent reductions, CME warehouses still account for an elevated 67% of combined exchange inventories. Including copper held in LME-approved US warehouses lifts the US share to approximately 90%, underscoring the substantial concentration of available exchange stocks in a single market.\n\nThe concentration reflects the tariff-driven stockpiling of copper in the US over the past two years, but recent developments suggest these flows may now - but only partly - be starting to reverse. An acute shortage of deliverable copper in China has triggered a historic squeeze in nearby Shanghai futures, while the Yangshan import premium has surged to a record USD 500 per tonne. According to recent reports, traders have begun booking shipments of copper from the US to China, initially involving relatively modest volumes of tens of thousands of tonnes.\n\nWith the COMEX premium over LME copper having largely disappeared amid reduced expectations of US import tariffs, the incentive to keep metal in the US has weakened. A part reversal in trade flows could help ease China's physical supply squeeze while reducing the unusually large US inventory overhang. However, the timing and scale will depend on whether Chinese premiums remain sufficiently elevated to cover shipping costs and compensate traders for the risk of renewed US tariff measures.",
     "createdAt": "2026-11-20T09:53:22+00:00",
@@ -427,14 +446,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2123716320684372009",
     "photoUrl": "https://pbs.twimg.com/media/HXj0hITWoAAlDYg.jpg",
     "hasPhoto": true,
-    "likes": 35,
-    "retweets": 9,
-    "replies": 1,
-    "engagement": 56,
+    "likes": 46,
+    "retweets": 10,
+    "replies": 2,
+    "engagement": 72,
     "isRetweet": false,
     "relevance": 8,
-    "rawScore": 8356,
-    "score": 8356
+    "rawScore": 8372,
+    "score": 8372
   },
   {
     "id": "2123712993955373243",
@@ -446,14 +465,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2123712993955373243",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 26,
+    "likes": 35,
     "retweets": 3,
-    "replies": 3,
-    "engagement": 41,
+    "replies": 5,
+    "engagement": 56,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20041,
-    "score": 20041
+    "rawScore": 20056,
+    "score": 20056
   },
   {
     "id": "2123682480746119427",
@@ -465,14 +484,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2123682480746119427",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 29,
-    "retweets": 9,
-    "replies": 5,
-    "engagement": 62,
+    "likes": 31,
+    "retweets": 10,
+    "replies": 6,
+    "engagement": 69,
     "isRetweet": false,
     "relevance": 48,
-    "rawScore": 48062,
-    "score": 40853
+    "rawScore": 48069,
+    "score": 40859
   },
   {
     "id": "2123549073756279243",
@@ -484,13 +503,13 @@
     "url": "https://x.com/TankerTrackers/status/2123549073756279243",
     "photoUrl": "https://pbs.twimg.com/media/HXhbXbTXIAAOQ-2.jpg",
     "hasPhoto": true,
-    "likes": 334,
-    "retweets": 26,
+    "likes": 342,
+    "retweets": 27,
     "replies": 10,
-    "engagement": 416,
+    "engagement": 426,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 58716,
-    "score": 26422
+    "rawScore": 58726,
+    "score": 26427
   }
 ]
