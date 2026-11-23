@@ -9,14 +9,14 @@
     "url": "https://x.com/JavierBlas/status/2124547467588915341",
     "photoUrl": "https://pbs.twimg.com/media/HXuF7jLWIAAoggB.png",
     "hasPhoto": true,
-    "likes": 199,
-    "retweets": 49,
-    "replies": 15,
-    "engagement": 342,
+    "likes": 216,
+    "retweets": 53,
+    "replies": 17,
+    "engagement": 373,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20642,
-    "score": 13417
+    "rawScore": 20673,
+    "score": 13437
   },
   {
     "id": "2124514778332668384",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JavierBlas/status/2124514778332668384",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 297,
-    "retweets": 70,
+    "likes": 301,
+    "retweets": 72,
     "replies": 36,
-    "engagement": 545,
+    "engagement": 553,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10545,
-    "score": 6854
+    "rawScore": 10553,
+    "score": 4749
   },
   {
     "id": "2124428145415651780",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2124428145415651780",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 180,
+    "likes": 184,
     "retweets": 38,
-    "replies": 15,
-    "engagement": 301,
+    "replies": 16,
+    "engagement": 308,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10301,
-    "score": 4635
+    "rawScore": 10308,
+    "score": 3092
   },
   {
     "id": "2124425986728964368",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2124425986728964368",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 527,
+    "likes": 532,
     "retweets": 63,
     "replies": 38,
-    "engagement": 767,
+    "engagement": 772,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 58767,
-    "score": 26445
+    "rawScore": 58772,
+    "score": 17632
   },
   {
     "id": "2123781800346447998",
@@ -123,14 +123,14 @@
     "url": "https://x.com/HFI_Research/status/2124051764756480186",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 786,
-    "retweets": 71,
+    "likes": 787,
+    "retweets": 72,
     "replies": 7,
-    "engagement": 949,
+    "engagement": 952,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18949,
-    "score": 5685
+    "rawScore": 18952,
+    "score": 5686
   },
   {
     "id": "2124052692578549940",
@@ -161,14 +161,14 @@
     "url": "https://x.com/staunovo/status/2124575658902949918",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 11,
+    "likes": 12,
     "retweets": 3,
     "replies": 1,
-    "engagement": 20,
+    "engagement": 21,
     "isRetweet": false,
     "relevance": 38,
-    "rawScore": 38020,
-    "score": 32317
+    "rawScore": 38021,
+    "score": 24714
   },
   {
     "id": "2124530629639319625",
@@ -180,14 +180,14 @@
     "url": "https://x.com/Rory_Johnston/status/2124530629639319625",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 212,
+    "likes": 215,
     "retweets": 49,
     "replies": 6,
-    "engagement": 328,
+    "engagement": 331,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20328,
-    "score": 13213
+    "rawScore": 20331,
+    "score": 13215
   },
   {
     "id": "2124513706633523679",
@@ -199,14 +199,14 @@
     "url": "https://x.com/Rory_Johnston/status/2124513706633523679",
     "photoUrl": "https://pbs.twimg.com/media/HXvJ9McXcAADlnP.jpg",
     "hasPhoto": true,
-    "likes": 66,
-    "retweets": 5,
+    "likes": 68,
+    "retweets": 6,
     "replies": 4,
-    "engagement": 88,
+    "engagement": 92,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10388,
-    "score": 6752
+    "rawScore": 10392,
+    "score": 4676
   },
   {
     "id": "2124181262436806927",
@@ -285,6 +285,25 @@
     "score": 12000
   },
   {
+    "id": "2124692889615946160",
+    "text": "California oil giants announce roaring comeback after years-long ‘drilling dry spell’",
+    "createdAt": "2026-11-23T02:33:54+00:00",
+    "tweetTime": 1795401234000,
+    "username": "OilHeadlineNews",
+    "displayName": "Energy Headline News",
+    "url": "https://x.com/OilHeadlineNews/status/2124692889615946160",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 4,
+    "retweets": 0,
+    "replies": 1,
+    "engagement": 7,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10007,
+    "score": 10007
+  },
+  {
     "id": "2124673966304575601",
     "text": "LIBYA'S NOC SAYS THE CLOSURE OF A VALVE ON THE SHARARA OIL PIPELINE BY AN \"UNLAWFUL GROUP\" WILL CAUSE A LOSS OF AROUND 350,000 BPD OF PRODUCTION - LIBYA'S NOC",
     "createdAt": "2026-11-23T01:18:42+00:00",
@@ -294,14 +313,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2124673966304575601",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 7,
+    "likes": 10,
     "retweets": 1,
     "replies": 0,
-    "engagement": 9,
+    "engagement": 12,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10009,
-    "score": 10009
+    "rawScore": 10012,
+    "score": 10012
   },
   {
     "id": "2124661490460614728",
@@ -313,14 +332,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2124661490460614728",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 24,
+    "likes": 28,
     "retweets": 1,
-    "replies": 3,
-    "engagement": 35,
+    "replies": 5,
+    "engagement": 45,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10035,
-    "score": 10035
+    "rawScore": 10045,
+    "score": 10045
   },
   {
     "id": "2124640828182381035",
@@ -332,33 +351,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2124640828182381035",
     "photoUrl": "https://pbs.twimg.com/media/HXw9kvdbcAASk3W.jpg",
     "hasPhoto": true,
-    "likes": 12,
-    "retweets": 2,
+    "likes": 15,
+    "retweets": 3,
     "replies": 4,
-    "engagement": 28,
+    "engagement": 33,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10328,
-    "score": 10328
-  },
-  {
-    "id": "2124547618827124846",
-    "text": "Incident reported involving tanker and military forces in the Gulf of Oman.\n\nReports of potential US Navy enforcement action of blockade on Iran unconfirmed \nhttps://t.co/iv6slI2dBz",
-    "createdAt": "2026-11-22T16:56:39+00:00",
-    "tweetTime": 1795366599000,
-    "username": "OilHeadlineNews",
-    "displayName": "Energy Headline News",
-    "url": "https://x.com/OilHeadlineNews/status/2124547618827124846",
-    "photoUrl": "https://pbs.twimg.com/media/HXvawpKXsAAd_wa.png",
-    "hasPhoto": true,
-    "likes": 28,
-    "retweets": 8,
-    "replies": 1,
-    "engagement": 47,
-    "isRetweet": false,
-    "relevance": 18,
-    "rawScore": 18347,
-    "score": 11926
+    "rawScore": 10333,
+    "score": 8783
   },
   {
     "id": "2124583475718287800",
@@ -370,14 +370,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2124583475718287800",
     "photoUrl": "https://pbs.twimg.com/media/HXwILtrWgAAkPQn.png",
     "hasPhoto": true,
-    "likes": 95,
-    "retweets": 12,
+    "likes": 102,
+    "retweets": 13,
     "replies": 6,
-    "engagement": 137,
+    "engagement": 146,
     "isRetweet": false,
     "relevance": 44,
-    "rawScore": 44437,
-    "score": 37771
+    "rawScore": 44446,
+    "score": 28890
   },
   {
     "id": "2124575602321641670",
@@ -396,7 +396,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10362,
-    "score": 8808
+    "score": 6735
   },
   {
     "id": "2123885764039545008",
@@ -484,13 +484,13 @@
     "url": "https://x.com/TankerTrackers/status/2124348179101405679",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1684,
+    "likes": 1691,
     "retweets": 264,
-    "replies": 70,
-    "engagement": 2422,
+    "replies": 71,
+    "engagement": 2432,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 20422,
-    "score": 6127
+    "rawScore": 20432,
+    "score": 6130
   }
 ]
