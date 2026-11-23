@@ -9,14 +9,14 @@
     "url": "https://x.com/JavierBlas/status/2124547467588915341",
     "photoUrl": "https://pbs.twimg.com/media/HXuF7jLWIAAoggB.png",
     "hasPhoto": true,
-    "likes": 234,
-    "retweets": 57,
+    "likes": 244,
+    "retweets": 60,
     "replies": 18,
-    "engagement": 402,
+    "engagement": 418,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20702,
-    "score": 13456
+    "rawScore": 20718,
+    "score": 9323
   },
   {
     "id": "2124514778332668384",
@@ -28,14 +28,14 @@
     "url": "https://x.com/JavierBlas/status/2124514778332668384",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 304,
-    "retweets": 72,
+    "likes": 313,
+    "retweets": 74,
     "replies": 36,
-    "engagement": 556,
+    "engagement": 569,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10556,
-    "score": 4750
+    "rawScore": 10569,
+    "score": 4756
   },
   {
     "id": "2124428145415651780",
@@ -47,14 +47,14 @@
     "url": "https://x.com/JavierBlas/status/2124428145415651780",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 186,
-    "retweets": 38,
-    "replies": 16,
-    "engagement": 310,
+    "likes": 194,
+    "retweets": 39,
+    "replies": 17,
+    "engagement": 323,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10310,
-    "score": 3093
+    "rawScore": 10323,
+    "score": 3097
   },
   {
     "id": "2124425986728964368",
@@ -66,14 +66,14 @@
     "url": "https://x.com/JavierBlas/status/2124425986728964368",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 535,
+    "likes": 539,
     "retweets": 63,
     "replies": 38,
-    "engagement": 775,
+    "engagement": 779,
     "isRetweet": false,
     "relevance": 58,
-    "rawScore": 58775,
-    "score": 17633
+    "rawScore": 58779,
+    "score": 17634
   },
   {
     "id": "2123781800346447998",
@@ -152,23 +152,61 @@
     "score": 5422
   },
   {
-    "id": "2124575658902949918",
-    "text": "US ports face cyber attack onslaught as hackers target vital trade routes\nAmerica’s biggest crude oil export hub reports thousands of attempted hacks each day as shipping companies battle breaches\n#oott  https://t.co/teK1YGEeaE",
-    "createdAt": "2026-11-22T18:48:04+00:00",
-    "tweetTime": 1795373284000,
+    "id": "2124739076448231566",
+    "text": "Drones attacked oil storage facilities in #Russia's Tatarstan region, damaging several, but there were no immediate reports of deaths or injuries, the Interfax news agency said on Monday, citing local authorities.\n#oott\nhttps://t.co/AMalscn8Iz",
+    "createdAt": "2026-11-23T05:37:26+00:00",
+    "tweetTime": 1795412246000,
     "username": "staunovo",
     "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2124575658902949918",
+    "url": "https://x.com/staunovo/status/2124739076448231566",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 12,
-    "retweets": 3,
-    "replies": 1,
-    "engagement": 21,
+    "likes": 1,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 1,
     "isRetweet": false,
-    "relevance": 38,
-    "rawScore": 38021,
-    "score": 24714
+    "relevance": 20,
+    "rawScore": 20001,
+    "score": 20001
+  },
+  {
+    "id": "2124738795895427420",
+    "text": "Vietnam's largest oil refinery, Nghi Son Refinery and Petrochemical LLC, known as NSRP, has secured enough crude oil from Kuwait and other sources for its operations until the end of January, a company executive said. #oott https://t.co/P2qi1p9qFr",
+    "createdAt": "2026-11-23T05:36:19+00:00",
+    "tweetTime": 1795412179000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2124738795895427420",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 0,
+    "isRetweet": false,
+    "relevance": 48,
+    "rawScore": 48000,
+    "score": 48000
+  },
+  {
+    "id": "2124736256550543569",
+    "text": "#Libya’s oil production dropped after a group disrupted a pipeline that carries crude from the country’s biggest field, the latest in a number of incidents in recent months that have curbed supply from the OPEC member.\n\nAn “outlaw group” on Sunday shut a valve on the pipeline that runs from the Sharara field to Zawiya on the coast, cutting oil output by 350,000 barrels a day, the state-run National Oil Corp. said in a statement. It adds to the closure of a separate pipeline connecting the Hamada field two weeks ago that’s reduced production by 15,000 barrels a day, the company said. #oott https://t.co/SKbfDkvEI0",
+    "createdAt": "2026-11-23T05:26:13+00:00",
+    "tweetTime": 1795411573000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2124736256550543569",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 7,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 7,
+    "isRetweet": false,
+    "relevance": 58,
+    "rawScore": 58007,
+    "score": 58007
   },
   {
     "id": "2124530629639319625",
@@ -180,14 +218,14 @@
     "url": "https://x.com/Rory_Johnston/status/2124530629639319625",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 217,
+    "likes": 219,
     "retweets": 50,
     "replies": 6,
-    "engagement": 335,
+    "engagement": 337,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20335,
-    "score": 9151
+    "rawScore": 20337,
+    "score": 9152
   },
   {
     "id": "2124513706633523679",
@@ -218,13 +256,13 @@
     "url": "https://x.com/Rory_Johnston/status/2124181262436806927",
     "photoUrl": "https://pbs.twimg.com/media/HXqbmOuXcAAiWME.jpg",
     "hasPhoto": true,
-    "likes": 68,
+    "likes": 69,
     "retweets": 5,
     "replies": 7,
-    "engagement": 99,
+    "engagement": 100,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10399,
+    "rawScore": 10400,
     "score": 3120
   },
   {
@@ -294,14 +332,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2124692889615946160",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 10,
+    "likes": 11,
     "retweets": 0,
     "replies": 1,
-    "engagement": 13,
+    "engagement": 14,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10013,
-    "score": 10013
+    "rawScore": 10014,
+    "score": 10014
   },
   {
     "id": "2124673966304575601",
@@ -320,7 +358,7 @@
     "isRetweet": false,
     "relevance": 10,
     "rawScore": 10012,
-    "score": 10012
+    "score": 8510
   },
   {
     "id": "2124661490460614728",
@@ -332,14 +370,14 @@
     "url": "https://x.com/OilHeadlineNews/status/2124661490460614728",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 31,
+    "likes": 33,
     "retweets": 1,
     "replies": 5,
-    "engagement": 48,
+    "engagement": 50,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10048,
-    "score": 8541
+    "rawScore": 10050,
+    "score": 8543
   },
   {
     "id": "2124640828182381035",
@@ -370,14 +408,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2124583475718287800",
     "photoUrl": "https://pbs.twimg.com/media/HXwILtrWgAAkPQn.png",
     "hasPhoto": true,
-    "likes": 108,
+    "likes": 111,
     "retweets": 16,
     "replies": 6,
-    "engagement": 158,
+    "engagement": 161,
     "isRetweet": false,
     "relevance": 44,
-    "rawScore": 44458,
-    "score": 28898
+    "rawScore": 44461,
+    "score": 28900
   },
   {
     "id": "2124575602321641670",
@@ -389,14 +427,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2124575602321641670",
     "photoUrl": "https://pbs.twimg.com/media/HXwCHlRXQAAf0k2.jpg",
     "hasPhoto": true,
-    "likes": 35,
+    "likes": 37,
     "retweets": 13,
     "replies": 1,
-    "engagement": 64,
+    "engagement": 66,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10364,
-    "score": 6737
+    "rawScore": 10366,
+    "score": 6738
   },
   {
     "id": "2123885764039545008",
@@ -408,14 +446,14 @@
     "url": "https://x.com/Ole_S_Hansen/status/2123885764039545008",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 635,
+    "likes": 636,
     "retweets": 71,
     "replies": 17,
-    "engagement": 828,
+    "engagement": 829,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30828,
-    "score": 9248
+    "rawScore": 30829,
+    "score": 9249
   },
   {
     "id": "2123716320684372009",
@@ -484,13 +522,13 @@
     "url": "https://x.com/TankerTrackers/status/2124348179101405679",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 1701,
+    "likes": 1705,
     "retweets": 265,
-    "replies": 71,
-    "engagement": 2444,
+    "replies": 76,
+    "engagement": 2463,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 20444,
-    "score": 6133
+    "rawScore": 20463,
+    "score": 6139
   }
 ]
