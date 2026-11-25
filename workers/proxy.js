@@ -1,174 +1,124 @@
-// ========== Cloudflare Worker — Market / News / Twitter Proxy ==========
-// 部署方式: npx wrangler deploy workers/proxy.js --name oil-proxy --compatibility-date 2024-04-03
-//
-export default {
-  async fetch(request) {
-    const url = new URL(request.url);
-    const jsonHeaders = {
-      'Content-Type': 'application/json',
-      'Access-Control-Allow-Origin': '*',
-      'Cache-Control': 'no-store, max-age=0',
-    };
+import { marketService } from './market-service.js';
+import { getEnergyCalendar } from './calendar-service.js';
+import { editorialService } from './editorial-service.js';
 
-    // 1. CORS Preflight
-    if (request.method === 'OPTIONS') {
-      return new Response(null, {
-        headers: { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': '*' },
-      });
-    }
+const PUBLIC_HEADERS = Object.freeze({
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
+  'Access-Control-Allow-Headers': 'Content-Type',
+  'Cache-Control': 'no-store, max-age=0',
+  'X-Content-Type-Options': 'nosniff',
+});
+const ALLOWED_HOSTS = new Set([
+  'query1.finance.yahoo.com', 'finance.yahoo.com', 'skill.capduck.com',
+  'news.google.com', 'gamma-api.polymarket.com',
+]);
 
-    // 2. Twitter Syndication API Proxy
-    const twitterHandle = url.searchParams.get('twitter');
-    if (twitterHandle) {
-      if (!/^[A-Za-z0-9_]{1,15}$/.test(twitterHandle)) {
-        return new Response('Invalid handle', { status: 400 });
+function json(payload, status = 200, head = false) {
+  return new Response(head ? null : JSON.stringify(payload), {
+    status, headers: { ...PUBLIC_HEADERS, 'Content-Type': 'application/json; charset=utf-8' },
+  });
+}
+
+export function createProxy({ fetchImpl = globalThis.fetch, service = marketService, calendar = getEnergyCalendar } = {}) {
+  return {
+    async fetch(request, env = {}, context = {}) {
+      const url = new URL(request.url);
+      if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers: PUBLIC_HEADERS });
+      const editorialResponse = await editorialService(request);
+      if (editorialResponse) return editorialResponse;
+      const marketResponse = await service(request, env, context);
+      if (marketResponse) return marketResponse;
+      const head = request.method === 'HEAD';
+      if (!['GET', 'HEAD'].includes(request.method)) return json({ error: 'method-not-allowed' }, 405, head);
+      if (url.pathname === '/api/calendar') {
+        try {
+          return json(await calendar({ fetchImpl, now: Date.now() / 1000 }), 200, head);
+        } catch { return json({ schemaVersion: 1, status: 'unavailable', error: 'calendar-unavailable' }, 503, head); }
       }
-      try {
-        const syndicationUrl = `https://syndication.twitter.com/srv/timeline-profile/screen-name/${twitterHandle}`;
-        const resp = await fetch(syndicationUrl, {
-          headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36' },
-        });
-        if (!resp.ok) return new Response('Twitter Syndication API non-200', { status: 502 });
+      if (url.pathname.startsWith('/api/')) return json({ error: 'not-found' }, 404, head);
 
-        const html = await resp.text();
-        const match = html.match(/<script id="__NEXT_DATA__" type="application\/json">([\s\S]*?)<\/script>/);
-        if (!match) return new Response('No NEXT_DATA found', { status: 502 });
-
-        const data = JSON.parse(match[1]);
-        const entries = data?.props?.pageProps?.timeline?.entries || [];
-
-        const posts = [];
-        for (const entry of entries) {
-          const tweet = entry?.content?.tweet;
-          if (!tweet) continue;
-          
-          posts.push({
-            id: tweet.id_str,
-            author: tweet.user?.name,
-            handle: tweet.user?.screen_name,
-            text: tweet.text || '',
-            createdAt: tweet.created_at,
-            url: `https://x.com/${tweet.user?.screen_name}/status/${tweet.id_str}`,
-            photos: (tweet.entities?.media || []).filter(m => m.type === 'photo').map(m => m.media_url_https),
-            videos: (tweet.entities?.media || []).filter(m => m.type === 'video' || m.type === 'animated_gif').map(m => m.media_url_https),
-            engagement: (tweet.favorite_count || 0) + (tweet.retweet_count || 0) + (tweet.reply_count || 0)
+      const twitterHandle = url.searchParams.get('twitter');
+      if (twitterHandle) {
+        if (!/^[A-Za-z0-9_]{1,15}$/.test(twitterHandle)) return json({ error: 'invalid-handle' }, 400, head);
+        try {
+          const response = await fetchImpl(`https://syndication.twitter.com/srv/timeline-profile/screen-name/${twitterHandle}`, {
+            redirect: 'manual', signal: AbortSignal.timeout(10000), headers: { 'User-Agent': 'Mozilla/5.0' },
           });
-        }
-
-        return new Response(JSON.stringify(posts), {
-          headers: {
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*',
-            'Cache-Control': 'no-store, max-age=0',
-          },
-        });
-      } catch (e) {
-        return new Response(JSON.stringify({ error: e.message }), { status: 500, headers: { 'Access-Control-Allow-Origin': '*' } });
-      }
-    }
-
-    // 3. TradingView Symbol Page Price Fallback
-    const tvSymbol = url.searchParams.get('tvsymbol');
-    if (tvSymbol) {
-      const tvTargets = {
-        brent: [
-          'https://www.tradingview.com/symbols/TVC-UKOIL/',
-          'https://www.tradingview.com/symbols/CAPITALCOM-OIL_BRENT/',
-          'https://www.tradingview.com/symbols/BLACKBULL-BRENT/',
-          'https://www.tradingview.com/symbols/PEPPERSTONE-SPOTBRENT/',
-        ],
-        wti: [
-          'https://www.tradingview.com/symbols/NYMEX-CL1!/',
-          'https://www.tradingview.com/symbols/TVC-USOIL/',
-        ],
-      };
-      const pageUrls = tvTargets[tvSymbol];
-      if (!pageUrls) return new Response('Invalid tvsymbol', { status: 400 });
-      try {
-        const candidates = [];
-        for (const pageUrl of pageUrls) {
-          const resp = await fetch(pageUrl, {
-            headers: { 'User-Agent': 'Mozilla/5.0 (compatible)' },
-          });
-          if (!resp.ok) continue;
-          const html = await resp.text();
-          const matches = html.matchAll(/<script type="application\/prs\.init-data\+json">([\s\S]*?)<\/script>/g);
-          for (const match of matches) {
-            const root = JSON.parse(match[1]);
-            for (const entry of Object.values(root || {})) {
-              const symbol = entry?.data?.symbol;
-              const price = symbol?.trade?.price ?? symbol?.daily_bar?.close;
-              if (price == null) continue;
-              candidates.push({
-                price: Number(price),
-                barTime: Number(symbol?.daily_bar?.time) || null,
-                updateTime: Number(symbol?.daily_bar?.update_time || symbol?.daily_bar?.data_update_time) || null,
-                symbol: symbol?.pro_symbol || symbol?.resolved_symbol || null,
-              });
-            }
+          if (!response.ok) return json({ error: 'twitter-upstream-unavailable' }, 502, head);
+          const html = await response.text();
+          const match = html.match(/<script id="__NEXT_DATA__" type="application\/json">([\s\S]*?)<\/script>/);
+          if (!match) return json({ error: 'twitter-data-unavailable' }, 502, head);
+          const entries = JSON.parse(match[1])?.props?.pageProps?.timeline?.entries || [];
+          const posts = [];
+          for (const entry of entries) {
+            const tweet = entry?.content?.tweet;
+            if (!tweet?.id_str || !tweet.user?.screen_name) continue;
+            const media = tweet.entities?.media || [];
+            posts.push({
+              id: tweet.id_str, author: tweet.user.name, handle: tweet.user.screen_name,
+              text: tweet.text || '', createdAt: tweet.created_at,
+              url: `https://x.com/${tweet.user.screen_name}/status/${tweet.id_str}`,
+              photos: media.filter(item => item.type === 'photo').map(item => item.media_url_https),
+              videos: media.filter(item => ['video', 'animated_gif'].includes(item.type)).map(item => item.media_url_https),
+              engagement: (tweet.favorite_count || 0) + (tweet.retweet_count || 0) + (tweet.reply_count || 0),
+            });
           }
-        }
-        if (!candidates.length) {
-          return new Response(JSON.stringify({ error: 'No TradingView symbol data found' }), { status: 502, headers: jsonHeaders });
-        }
-        const preferredPrice = candidates[0];
-        const freshest = [...candidates].sort((a, b) => {
-          const barDiff = (Number.isFinite(b.barTime) ? b.barTime : -Infinity) - (Number.isFinite(a.barTime) ? a.barTime : -Infinity);
-          if (barDiff !== 0) return barDiff;
-          return (Number.isFinite(b.updateTime) ? b.updateTime : -Infinity) - (Number.isFinite(a.updateTime) ? a.updateTime : -Infinity);
-        })[0];
-        return new Response(JSON.stringify({
-          kind: tvSymbol,
-          price: (tvSymbol === 'brent' ? preferredPrice : freshest).price,
-          barTime: freshest.barTime,
-          fetchedAt: Date.now() / 1000,
-          source: 'tradingview',
-          symbol: (tvSymbol === 'brent' ? preferredPrice : freshest).symbol,
-        }), { headers: jsonHeaders });
-      } catch (e) {
-        return new Response(JSON.stringify({ error: e.message }), { status: 500, headers: jsonHeaders });
+          return json(posts, 200, head);
+        } catch { return json({ error: 'twitter-upstream-unavailable' }, 502, head); }
       }
-    }
 
-    // 4. Generic upstream proxy for approved domains
-    const target = url.searchParams.get('url');
-    if (!target) return new Response('Missing ?url= or ?twitter= param', { status: 400 });
+      // Compatibility endpoint. Price and all metadata come from one exact scanner row.
+      const tvKind = url.searchParams.get('tvsymbol');
+      if (tvKind) {
+        const symbols = { brent: 'ICEEUR:BRN1!', wti: 'NYMEX:CL1!' };
+        if (!Object.hasOwn(symbols, tvKind)) return json({ error: 'invalid-tvsymbol' }, 400, head);
+        try {
+          const columns = ['close', 'change', 'change_abs', 'last_bar_update_time', 'update_mode'];
+          const response = await fetchImpl('https://scanner.tradingview.com/futures/scan', {
+            method: 'POST', redirect: 'manual', signal: AbortSignal.timeout(7000),
+            headers: { 'Content-Type': 'application/json', 'User-Agent': 'Mozilla/5.0' },
+            body: JSON.stringify({ symbols: { tickers: [symbols[tvKind]], query: { types: [] } }, columns }),
+          });
+          if (!response.ok) return json({ error: 'tradingview-upstream-unavailable' }, 502, head);
+          const payload = await response.json();
+          const row = payload?.data?.find(item => item.s === symbols[tvKind]);
+          if (!row || typeof row.d?.[0] !== 'number' || !Number.isFinite(row.d[0])) return json({ error: 'tradingview-data-unavailable' }, 502, head);
+          return json({
+            kind: tvKind, symbol: row.s, price: row.d[0], changePercent: row.d[1], change: row.d[2],
+            priceAt: null, providerUpdatedAt: row.d[3], timeBasis: 'provider-update',
+            updateMode: row.d[4], delaySeconds: /^delayed_streaming_(\d+)$/.exec(row.d[4] || '')?.[1] * 1 || null,
+            barTime: null, fetchedAt: Date.now() / 1000, source: 'tradingview',
+          }, 200, head);
+        } catch { return json({ error: 'tradingview-upstream-unavailable' }, 502, head); }
+      }
 
-    let parsedTarget;
-    try {
-      parsedTarget = new URL(target);
-    } catch { return new Response('Invalid URL', { status: 400 }); }
+      const target = url.searchParams.get('url');
+      if (!target) return json({ error: 'missing-target', endpoints: ['/api/market', '/api/curve', '/api/calendar', '/api/health'] }, 400, head);
+      let parsedTarget;
+      try { parsedTarget = new URL(target); }
+      catch { return json({ error: 'invalid-url' }, 400, head); }
+      if (parsedTarget.protocol !== 'https:' || parsedTarget.username || parsedTarget.password ||
+          (parsedTarget.port && parsedTarget.port !== '443') || !ALLOWED_HOSTS.has(parsedTarget.hostname)) {
+        return json({ error: 'target-not-allowed' }, 403, head);
+      }
+      try {
+        const headers = { 'User-Agent': 'Mozilla/5.0', Accept: 'application/json,text/plain,*/*' };
+        if (parsedTarget.hostname === 'gamma-api.polymarket.com') {
+          headers.Origin = 'https://polymarket.com';
+          headers.Referer = 'https://polymarket.com/';
+        }
+        const response = await fetchImpl(parsedTarget.href, {
+          headers, redirect: 'manual', signal: AbortSignal.timeout(12000),
+        });
+        if (response.status >= 300 && response.status < 400) return json({ error: 'upstream-redirect-rejected' }, 502, head);
+        return new Response(head ? null : response.body, {
+          status: response.status,
+          headers: { ...PUBLIC_HEADERS, 'Content-Type': response.headers.get('Content-Type') || 'text/plain; charset=utf-8' },
+        });
+      } catch { return json({ error: 'upstream-unavailable' }, 502, head); }
+    },
+  };
+}
 
-    const allowedHosts = [
-      'query1.finance.yahoo.com',
-      'finance.yahoo.com',
-      'skill.capduck.com',
-      'news.google.com',
-      'gamma-api.polymarket.com',
-    ];
-    if (!allowedHosts.includes(parsedTarget.hostname)) {
-      return new Response('Domain not allowed', { status: 403 });
-    }
-
-    const upstreamHeaders = {
-      'User-Agent': 'Mozilla/5.0 (compatible)',
-    };
-    if (parsedTarget.hostname === 'gamma-api.polymarket.com') {
-      upstreamHeaders.Accept = 'application/json,text/plain,*/*';
-      upstreamHeaders.Origin = 'https://polymarket.com';
-      upstreamHeaders.Referer = 'https://polymarket.com/';
-    }
-
-    const resp = await fetch(target, { headers: upstreamHeaders });
-    const passthroughHeaders = new Headers();
-    const contentType = resp.headers.get('content-type');
-    if (contentType) passthroughHeaders.set('Content-Type', contentType);
-    passthroughHeaders.set('Access-Control-Allow-Origin', '*');
-    passthroughHeaders.set('Cache-Control', 'no-store, max-age=0');
-
-    return new Response(await resp.text(), {
-      status: resp.status,
-      headers: passthroughHeaders,
-    });
-  },
-};
+export default createProxy();

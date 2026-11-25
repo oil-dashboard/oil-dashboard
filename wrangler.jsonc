@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "oil-proxy",
+  "main": "workers/proxy.js",
+  "compatibility_date": "2026-11-25",
+  "workers_dev": true,
+  "observability": { "enabled": true },
+  "vars": { "RELEASE_ID": "market-v1" }
+}

@@ -1,29 +1,99 @@
-name: Deploy to GitHub Pages
+name: Validate and deploy Oil Dashboard
 
 on:
+  pull_request:
+    branches: [main]
   push:
     branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: false
+  group: oil-dashboard-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  deploy:
+  validate:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      actions: read
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run check:worker
+      - run: npm run build
+      - name: Upload public site only
+        id: upload
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+          retention-days: 2
+      - name: Confirm the uploaded artifact is visible to the deployment API
+        if: github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RUN_ID: ${{ github.run_id }}
+          EXPECTED_ARTIFACT_ID: ${{ steps.upload.outputs.artifact_id }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          for attempt in 1 2 3 4 5 6; do
+            artifact_id="$(gh api "repos/$GH_REPO/actions/runs/$RUN_ID/artifacts" --jq ' .artifacts[] | select(.name == "github-pages" and .expired == false) | .id')"
+            if [[ "$artifact_id" == "$EXPECTED_ARTIFACT_ID" ]]; then
+              echo "Verified uploaded github-pages artifact $artifact_id"
+              exit 0
+            fi
+            echo "Artifact discovery pending ($attempt/6)"
+            sleep 5
+          done
+          echo '::error::Uploaded Pages artifact is not visible to the deployment API.'
+          exit 1
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      actions: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment_retry.outputs.page_url || steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
-          path: .
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          node-version: '22'
+      - name: Require the matching Worker before publishing the site
+        run: node scripts/verify-worker.mjs --attempts 12
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Deploy verified Pages artifact
+        id: deployment
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+      - name: Allow a transient artifact-discovery error to settle
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 5
+      - name: Retry Pages deployment once
+        id: deployment_retry
+        if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v5
+      - name: Verify deployed version and every public asset
+        env:
+          SITE_URL: ${{ steps.deployment_retry.outputs.page_url || steps.deployment.outputs.page_url }}
+        run: node scripts/verify-deployment.mjs --base-url "$SITE_URL" --expected-sha "$GITHUB_SHA" --attempts 6

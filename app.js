@@ -1,18 +1,7 @@
-// ========== Oil Dashboard v4 — 全面优化版 ==========
-// Sparkline · 价格闪动 · Feed过滤 · 键盘快捷键 · PWA · 数据源状态 · CF Worker优先
+// Oil Dashboard: editorial feeds. Market arithmetic lives in shared/market-core.js.
+// The Worker returns complete provider snapshots; this file never reconstructs price references.
 
 const REFRESH_MS = 5 * 60 * 1000;
-const CACHE_KEY = 'oil_v4_aligned';
-const TV_DAILY_REF_KEY = 'oil_tv_daily_ref_v1';
-const YAHOO_QUOTE_RANGE = '1d';
-const YAHOO_QUOTE_INTERVAL = '1m';
-const YAHOO_SETTLEMENT_RANGE = '1mo';
-const YAHOO_SETTLEMENT_INTERVAL = '1d';
-const YAHOO_BRENT_FRONT_MONTH_OFFSET = 2;
-const YAHOO_FUTURES_MONTH_CODES = ['F', 'G', 'H', 'J', 'K', 'M', 'N', 'Q', 'U', 'V', 'X', 'Z'];
-const PRICE_CHART_RANGE = '5d';
-const PRICE_CHART_INTERVAL = '5m';
-const TV_FALLBACK_LOOKAHEAD_SEC = 15 * 60;
 const OOTT_LIVE_CACHE_KEY = 'oil_oott_live_v1';
 const OOTT_LIVE_CACHE_TTL_MS = 10 * 60 * 1000;
 const OOTT_LIVE_LOOKBACK_MS = 72 * 60 * 60 * 1000;
@@ -20,11 +9,6 @@ const IRAN_CACHE_KEY = 'oil_iran_news_cache_v2';
 const FEED_EVENTS_CACHE_KEY = 'oil_feed_news_market_cache_v2';
 const FEED_POSTS_CACHE_KEY = 'oil_feed_news_geo_cache_v2';
 const POLYMARKET_CACHE_KEY = 'oil_polymarket_gamma_cache_v2';
-const GOOGLE_NEWS_RSS_BASE = 'https://news.google.com/rss/search';
-const GOOGLE_NEWS_RSS_PARAMS = 'hl=en-US&gl=US&ceid=US:en';
-const IRAN_NEWS_QUERY = 'Iran Strait of Hormuz sanctions tanker oil when:14d';
-const FEED_MARKET_QUERY = 'Brent OR WTI OR OPEC crude oil when:7d';
-const FEED_GEO_QUERY = 'refinery tanker sanctions oil market when:7d';
 const POLYMARKET_API_URL = 'https://gamma-api.polymarket.com/events/keyset?closed=false&limit=8&tag_slug=oil';
 const OOTT_FALLBACK_HANDLES = [
   'JuneGoh_Sparta', 'JavierBlas', 'JKempEnergy', 'HFI_Research', 'Rory_Johnston',
@@ -33,10 +17,19 @@ const OOTT_FALLBACK_HANDLES = [
 // 部署 workers/proxy.js 到 Cloudflare 后填入 URL，留空则用公共代理
 const CF_WORKER_URL = 'https://oil-proxy.xzregproxy.workers.dev';
 
-const state = { sources: null, feedItems: [], countdownId: null, priceSource: 'unknown', oottLoadPromise: null };
+const state = { sources: null, feedItems: [], countdownId: null, oottLoadPromise: null };
 
 // ========== Utilities ==========
-function escapeHtml(t) { return t ? t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') : ''; }
+function escapeHtml(value) {
+  return String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
+}
+
+function safeHttpUrl(value) {
+  try {
+    const url = new URL(String(value));
+    return ['https:', 'http:'].includes(url.protocol) ? url.href : '';
+  } catch { return ''; }
+}
 
 function formatSGT(date) {
   if (!date) return '';
@@ -117,19 +110,6 @@ function getSgtDateParts(dateLike = new Date()) {
   return getDatePartsInTimeZone(dateLike, 'Asia/Singapore');
 }
 
-function getYahooFuturesContractSymbol(root, monthOffset, dateLike = new Date(), suffix = '.NYM') {
-  const parts = getDatePartsInTimeZone(dateLike, 'America/New_York');
-  if (!parts || !root) return `${root || ''}=F`;
-  const monthIndex = parts.month - 1 + monthOffset;
-  const contractYear = parts.year + Math.floor(monthIndex / 12);
-  const normalizedMonthIndex = ((monthIndex % 12) + 12) % 12;
-  return `${root}${YAHOO_FUTURES_MONTH_CODES[normalizedMonthIndex]}${String(contractYear).slice(-2)}${suffix}`;
-}
-
-function getYahooBrentFrontMonthSymbol(dateLike = new Date()) {
-  return getYahooFuturesContractSymbol('BZ', YAHOO_BRENT_FRONT_MONTH_OFFSET, dateLike);
-}
-
 function getSGTDayKey(dateLike) {
   const date = dateLike instanceof Date ? dateLike : new Date(dateLike);
   if (Number.isNaN(date.getTime())) return '';
@@ -141,130 +121,6 @@ function getSGTDayKey(dateLike) {
     );
     return `${parts.year}-${parts.month}-${parts.day}`;
   } catch { return ''; }
-}
-
-function formatTradingDayLabel(barTime) {
-  if (!Number.isFinite(barTime)) return '前一交易日';
-  const date = new Date(barTime * 1000);
-  return `${date.getUTCMonth() + 1}/${date.getUTCDate()}`;
-}
-
-function formatMonthDayInTimeZone(tsSec, timeZone = 'UTC') {
-  if (!Number.isFinite(tsSec)) return '前一交易日';
-  try {
-    const parts = Object.fromEntries(
-      new Intl.DateTimeFormat('en-CA', {
-        timeZone,
-        month: '2-digit',
-        day: '2-digit',
-      }).formatToParts(new Date(tsSec * 1000)).filter(p => p.type !== 'literal').map(p => [p.type, p.value])
-    );
-    return `${Number(parts.month)}/${Number(parts.day)}`;
-  } catch {
-    return formatTradingDayLabel(tsSec);
-  }
-}
-
-function isWeekendInTimeZone(tsSec, timeZone = 'UTC') {
-  if (!Number.isFinite(tsSec)) return false;
-  try {
-    const weekday = new Intl.DateTimeFormat('en-US', {
-      timeZone,
-      weekday: 'short',
-    }).format(new Date(tsSec * 1000));
-    return weekday === 'Sat' || weekday === 'Sun';
-  } catch {
-    return false;
-  }
-}
-
-function getPreviousTradingDayLabelFromMeta(meta) {
-  const sessionStart = meta?.currentTradingPeriod?.regular?.start;
-  if (!Number.isFinite(sessionStart)) return null;
-  const exchangeTimeZone = meta?.exchangeTimezoneName || 'America/New_York';
-  let previousDayTs = sessionStart - 24 * 60 * 60;
-  while (isWeekendInTimeZone(previousDayTs, exchangeTimeZone)) {
-    previousDayTs -= 24 * 60 * 60;
-  }
-  return formatMonthDayInTimeZone(previousDayTs, exchangeTimeZone);
-}
-
-function flattenTradingPeriods(periods) {
-  if (!Array.isArray(periods)) return [];
-  return periods.flat(Infinity).filter(p => p && typeof p.start === 'number' && typeof p.end === 'number');
-}
-
-function getReferenceCloseInfo(raw) {
-  const prevClose = raw?.meta?.chartPreviousClose ?? raw?.meta?.previousClose ?? null;
-  const previousTradingDayLabel = getPreviousTradingDayLabelFromMeta(raw?.meta);
-  if (prevClose != null && previousTradingDayLabel) {
-    return {
-      prevClose,
-      referenceLabel: `对比 ${previousTradingDayLabel} 收盘`,
-    };
-  }
-  const periods = flattenTradingPeriods(raw?.meta?.tradingPeriods);
-  const prevPeriod = periods.length >= 2 ? periods[periods.length - 2] : null;
-  const referenceDay = prevPeriod?.end ? formatTradingDayLabel(prevPeriod.end - 1) : '';
-  return {
-    prevClose,
-    referenceLabel: referenceDay ? `对比 ${referenceDay} 收盘` : '对比上一交易日收盘',
-  };
-}
-
-function getSettlementCloseInfo(raw, meta = {}, fallbackRaw = null) {
-  const previousTradingDayLabel =
-    getPreviousTradingDayLabelFromMeta(meta) ||
-    getPreviousTradingDayLabelFromMeta(raw?.meta) ||
-    getPreviousTradingDayLabelFromMeta(fallbackRaw?.meta) ||
-    null;
-  const currentBarTime = meta?.currentTradingPeriod?.regular?.start
-    ?? raw?.meta?.currentTradingPeriod?.regular?.start
-    ?? meta?.regularMarketTime
-    ?? raw?.meta?.regularMarketTime
-    ?? Date.now() / 1000;
-  const inferred = inferPreviousCloseFromRaw(raw, currentBarTime)
-    || inferPreviousCloseFromRaw(fallbackRaw, currentBarTime);
-  if (inferred?.price != null) {
-    return {
-      prevClose: inferred.price,
-      referenceLabel: previousTradingDayLabel
-        ? `对比 ${previousTradingDayLabel} 收盘`
-        : `对比 ${formatTradingDayLabel(inferred.barTime)} 收盘`,
-    };
-  }
-  const prevCloseFromMeta = meta?.chartPreviousClose ?? meta?.previousClose ?? raw?.meta?.chartPreviousClose ?? raw?.meta?.previousClose ?? fallbackRaw?.meta?.chartPreviousClose ?? fallbackRaw?.meta?.previousClose ?? null;
-  if (prevCloseFromMeta != null && previousTradingDayLabel) {
-    return {
-      prevClose: prevCloseFromMeta,
-      referenceLabel: `对比 ${previousTradingDayLabel} 收盘`,
-    };
-  }
-  return getReferenceCloseInfo(fallbackRaw || raw);
-}
-
-function impactClass(n) { return n >= 8 ? 'impact-high' : n >= 5 ? 'impact-mid' : 'impact-low'; }
-
-function extractClosePairs(raw) {
-  const pairs = [];
-  const timestamps = raw?.timestamps || [];
-  const closes = raw?.closes || [];
-  for (let i = 0; i < timestamps.length; i++) {
-    if (closes[i] != null) pairs.push({ ts: timestamps[i], close: closes[i] });
-  }
-  return pairs;
-}
-
-function shouldUseTradingViewFallback(raw, nowSec = Date.now() / 1000) {
-  if (!raw) return true;
-  const pairs = extractClosePairs(raw);
-  if (!pairs.length) return true;
-  const latestTs = pairs[pairs.length - 1].ts;
-  const currentStart = raw.meta?.currentTradingPeriod?.regular?.start;
-  if (typeof currentStart === 'number' && nowSec >= currentStart + TV_FALLBACK_LOOKAHEAD_SEC) {
-    return latestTs < currentStart;
-  }
-  return false;
 }
 
 function getPolymarketConditionExpiryMs(label, now = new Date()) {
@@ -301,7 +157,7 @@ function normalizeOottPost(item, fallbackUsername = '') {
     text: item.text || '',
     createdAt: new Date(createdMs).toISOString(),
     username: item.username || item.handle || fallbackUsername,
-    url: item.url || '',
+    url: safeHttpUrl(item.url),
     photos: Array.isArray(item.photos) ? item.photos : [],
     videos: Array.isArray(item.videos) ? item.videos : [],
     engagement: item.engagement || '',
@@ -354,43 +210,39 @@ async function fetchJsonWithCache(target, cacheKey) {
   }
 }
 
-function buildGoogleNewsUrl(query) {
-  return `${GOOGLE_NEWS_RSS_BASE}?q=${encodeURIComponent(query)}&${GOOGLE_NEWS_RSS_PARAMS}`;
-}
-
-function stripHeadlineSource(title, source = '') {
-  if (!title) return '';
-  if (!source) return title.trim();
-  const suffix = ` - ${source}`;
-  return title.endsWith(suffix) ? title.slice(0, -suffix.length).trim() : title.trim();
-}
-
-function parseGoogleNewsRss(text) {
-  if (!text || typeof text !== 'string' || typeof DOMParser === 'undefined') return [];
-  try {
-    const doc = new DOMParser().parseFromString(text, 'application/xml');
-    return Array.from(doc.querySelectorAll('channel > item')).map(item => {
-      const source = item.querySelector('source')?.textContent?.trim() || '';
-      const title = stripHeadlineSource(item.querySelector('title')?.textContent || '', source);
-      const link = item.querySelector('link')?.textContent?.trim() || '';
-      const pubDate = item.querySelector('pubDate')?.textContent?.trim() || '';
-      return { title, link, source, pubDate };
-    }).filter(item => item.title && item.link);
-  } catch (error) {
-    console.warn('Parse Google News RSS fail:', error);
-    return [];
+function canonicalNewsUrl(value) {
+  const safe = safeHttpUrl(value);
+  if (!safe) return '';
+  const url = new URL(safe);
+  url.hash = '';
+  for (const key of [...url.searchParams.keys()]) {
+    if (/^(utm_|fbclid|gclid|ref$)/i.test(key)) url.searchParams.delete(key);
   }
+  return url.href;
 }
 
 function dedupeNewsItems(items) {
-  const deduped = new Map();
+  const groups = [];
   for (const item of items || []) {
-    const key = item.link || item.title;
-    if (!key || deduped.has(key)) continue;
-    deduped.set(key, item);
+    if (!item?.title || !safeHttpUrl(item.link)) continue;
+    const title = item.title.toLowerCase().normalize('NFKC').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+    const link = canonicalNewsUrl(item.link);
+    const published = parseDateMs(item.pubDate);
+    const existing = groups.find(group => (group.linkKey === link || group.titleKey === title) &&
+      (published == null || group.published == null || Math.abs(published - group.published) <= 86400000));
+    if (existing) {
+      if (item.source) existing.sources.add(item.source);
+      if ((published || 0) > (existing.published || 0)) {
+        existing.item = { ...item };
+        existing.published = published;
+      }
+    } else groups.push({ item: { ...item }, titleKey: title, linkKey: link, published, sources: new Set(item.source ? [item.source] : []) });
   }
-  return [...deduped.values()].sort((a, b) => (parseDateMs(b.pubDate) || 0) - (parseDateMs(a.pubDate) || 0));
+  return groups.sort((a, b) => (b.published || 0) - (a.published || 0))
+    .map(group => ({ ...group.item, relatedSources: [...group.sources] }));
 }
+
+function impactClass(value) { return value >= 8 ? 'impact-high' : value >= 5 ? 'impact-mid' : 'impact-low'; }
 
 function categorizeNewsHeadline(title = '') {
   const lower = title.toLowerCase();
@@ -425,9 +277,10 @@ function buildFeedEventFromNews(item) {
     impact: scoreNewsImpact(item.title),
     category: categorizeNewsHeadline(item.title),
     title: item.title,
-    body: item.source ? `${item.source} headline` : '',
+    body: (item.relatedSources || []).length > 1 ? `同题报道：${item.relatedSources.join(' · ')}` : '',
     time: formatSGT(new Date(item.pubDate)),
-    sources: item.source ? 1 : 0,
+    publishedAt: (parseDateMs(item.pubDate) || 0) / 1000,
+    sources: item.relatedSources?.length || (item.source ? 1 : 0),
     sentiment: item.source || '',
     link: item.link,
   };
@@ -485,71 +338,6 @@ function renderUnavailableState(label, extra = '') {
   return `<div class="loading-spinner"><span style="color:var(--text-dim)">${escapeHtml(label)} 暂时不可用</span>${
     hint ? `<div style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5">${escapeHtml(hint)}</div>` : ''
   }</div>`;
-}
-
-function inferPreviousCloseFromRaw(raw, currentBarTime) {
-  const pairs = extractClosePairs(raw);
-  if (!pairs.length) return null;
-  const previousPair = [...pairs].reverse().find(pair => pair.ts < currentBarTime);
-  if (!previousPair) return null;
-  const previousDate = new Date(previousPair.ts * 1000);
-  return {
-    price: previousPair.close,
-    barTime: Date.UTC(
-      previousDate.getUTCFullYear(),
-      previousDate.getUTCMonth(),
-      previousDate.getUTCDate()
-    ) / 1000,
-  };
-}
-
-function applyTradingViewDailyReference(symbol, data, quote, raw) {
-  if (!data || !quote || !Number.isFinite(Number(data.price)) || !Number.isFinite(quote.barTime)) return data;
-  const price = Number(data.price);
-  const state = readStorageJson(TV_DAILY_REF_KEY) || {};
-  const record = state[symbol] || {};
-  const currentBarTime = Number(quote.barTime);
-
-  if (!Number.isFinite(record.currentBarTime)) {
-    record.currentBarTime = currentBarTime;
-    record.currentBarLastPrice = price;
-    const seeded = inferPreviousCloseFromRaw(raw, currentBarTime);
-    if (seeded) {
-      record.prevBarClosePrice = seeded.price;
-      record.prevBarTime = seeded.barTime;
-    }
-  } else if (currentBarTime > record.currentBarTime) {
-    if (Number.isFinite(record.currentBarLastPrice)) {
-      record.prevBarClosePrice = record.currentBarLastPrice;
-      record.prevBarTime = record.currentBarTime;
-    }
-    record.currentBarTime = currentBarTime;
-    record.currentBarLastPrice = price;
-  } else {
-    record.currentBarLastPrice = price;
-    if (!Number.isFinite(record.prevBarClosePrice)) {
-      const seeded = inferPreviousCloseFromRaw(raw, currentBarTime);
-      if (seeded) {
-        record.prevBarClosePrice = seeded.price;
-        record.prevBarTime = seeded.barTime;
-      }
-    }
-  }
-
-  record.updatedAt = new Date().toISOString();
-  state[symbol] = record;
-  writeStorageJson(TV_DAILY_REF_KEY, state);
-
-  if (!Number.isFinite(record.prevBarClosePrice)) {
-    return { ...data, referenceLabel: '对比前一交易日收盘' };
-  }
-  const chg = price - record.prevBarClosePrice;
-  return {
-    ...data,
-    change: chg.toFixed(2),
-    pct: record.prevBarClosePrice ? ((chg / record.prevBarClosePrice) * 100).toFixed(1) : '0.0',
-    referenceLabel: `对比 ${formatTradingDayLabel(record.prevBarTime)} 收盘`,
-  };
 }
 
 function getLatestCreatedMs(posts) {
@@ -672,36 +460,6 @@ async function loadOottSnapshot() {
   }
 }
 
-async function fetchTradingViewQuote(kind) {
-  if (!CF_WORKER_URL) return null;
-  const data = await safeFetch(`${CF_WORKER_URL}?tvsymbol=${encodeURIComponent(kind)}`, 0);
-  if (!data || typeof data !== 'object' || data.price == null) return null;
-  return data;
-}
-
-async function fetchYahooQuote(symbol) {
-  const yahooUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=${YAHOO_QUOTE_RANGE}&interval=${YAHOO_QUOTE_INTERVAL}`;
-  const proxies = [];
-  if (CF_WORKER_URL) proxies.push(`${CF_WORKER_URL}?url=${encodeURIComponent(yahooUrl)}`);
-  proxies.push(
-    `https://api.allorigins.win/get?url=${encodeURIComponent(yahooUrl)}`,
-    `https://corsproxy.io/?${encodeURIComponent(yahooUrl)}`,
-    `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(yahooUrl)}`,
-  );
-  for (const proxyUrl of proxies) {
-    try {
-      const r = await fetch(proxyUrl, { signal: AbortSignal.timeout(8000), cache: 'no-store' });
-      if (!r.ok) continue;
-      let data; try { data = JSON.parse(await r.text()); } catch { continue; }
-      if (data.contents) { try { data = JSON.parse(data.contents); } catch { continue; } }
-      const result = data?.chart?.result?.[0];
-      if (!result?.meta?.regularMarketTime || result?.meta?.regularMarketPrice == null) continue;
-      return { timestamps: result.timestamp || [], closes: result.indicators?.quote?.[0]?.close || [], meta: result.meta || {} };
-    } catch { continue; }
-  }
-  return null;
-}
-
 // ========== Tab switching ==========
 document.querySelectorAll('.tab').forEach(tab => {
   tab.addEventListener('click', () => {
@@ -723,236 +481,19 @@ document.addEventListener('keydown', e => {
   }
 });
 
-// ========== Sparkline SVG ==========
-function renderSparkline(containerId, closes, up) {
-  const el = document.getElementById(containerId);
-  if (!el) return;
-  if (!closes || closes.length < 3) { el.innerHTML = ''; return; }
-  const w = 120, h = 28;
-  const min = Math.min(...closes), max = Math.max(...closes), range = max - min || 1;
-  const step = w / (closes.length - 1);
-  const pts = closes.map((v, i) =>
-    `${(i * step).toFixed(1)},${(h - ((v - min) / range) * (h - 4) - 2).toFixed(1)}`
-  ).join(' ');
-  const color = up ? '#4ade80' : '#ff6b6b';
-  el.innerHTML = `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" style="display:block">
-    <defs><linearGradient id="sg${containerId}" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="${color}" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="${color}" stop-opacity="0"/>
-    </linearGradient></defs>
-    <polygon points="0,${h} ${pts} ${w},${h}" fill="url(#sg${containerId})"/>
-    <polyline points="${pts}" fill="none" stroke="${color}" stroke-width="1.5" stroke-linejoin="round"/>
-  </svg>`;
-}
-
-function isPositiveChange(data) {
-  return Number.parseFloat(data?.change) >= 0;
-}
-
-// ========== Sources ==========
+// ========== Market snapshots ==========
 async function loadSources() {
-  const d = await safeFetch('sources.json', 0);
-  if (d && typeof d === 'object') state.sources = d;
-}
-
-// ========== Prices: 对齐 + Sparkline + 闪动 ==========
-async function fetchRawChartData(symbol) {
-  return fetchYahooChartData(symbol, PRICE_CHART_RANGE, PRICE_CHART_INTERVAL);
-}
-
-async function fetchYahooSettlementData(symbol) {
-  return fetchYahooChartData(symbol, YAHOO_SETTLEMENT_RANGE, YAHOO_SETTLEMENT_INTERVAL);
-}
-
-async function fetchYahooChartData(symbol, range, interval) {
-  const yahooUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=${range}&interval=${interval}`;
-  const proxies = [];
-  if (CF_WORKER_URL) proxies.push(`${CF_WORKER_URL}?url=${encodeURIComponent(yahooUrl)}`);
-  proxies.push(
-    `https://api.allorigins.win/get?url=${encodeURIComponent(yahooUrl)}`,
-    `https://corsproxy.io/?${encodeURIComponent(yahooUrl)}`,
-    `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(yahooUrl)}`,
-  );
-  for (const proxyUrl of proxies) {
-    try {
-      const r = await fetch(proxyUrl, { signal: AbortSignal.timeout(8000), cache: 'no-store' });
-      if (!r.ok) continue;
-      let data; try { data = JSON.parse(await r.text()); } catch { continue; }
-      if (data.contents) { try { data = JSON.parse(data.contents); } catch { continue; } }
-      const result = data?.chart?.result?.[0];
-      if (!result) continue;
-      const ts = result.timestamp || [], cl = result.indicators?.quote?.[0]?.close || [];
-      if (ts.length < 2) continue;
-      return { timestamps: ts, closes: cl, meta: result.meta || {} };
-    } catch { continue; }
-  }
-  return null;
-}
-
-function renderPrice(id, data) {
-  if (!data) return;
-  const priceEl = document.getElementById(id + 'Price');
-  const oldText = priceEl.textContent;
-  const newText = `$${data.price}`;
-  priceEl.textContent = newText;
-  // 价格闪动
-  if (oldText !== '—' && oldText !== newText) {
-    const box = document.getElementById(id + 'Box');
-    const cls = parseFloat(data.price) > parseFloat(oldText.replace('$','')) ? 'price-flash-up' : 'price-flash-down';
-    box.classList.remove('price-flash-up', 'price-flash-down');
-    void box.offsetWidth;
-    box.classList.add(cls);
-    setTimeout(() => box.classList.remove(cls), 1200);
-  }
-  const el = document.getElementById(id + 'Change');
-  const up = isPositiveChange(data);
-  el.textContent = `${up?'▲':'▼'} ${data.change} (${data.pct}%)`;
-  el.className = 'price-change ' + (up ? 'price-up' : 'price-down');
-  const timeEl = document.getElementById(id + 'Time');
-  if (data.dataTime) {
-    const prefix = data.cached ? `⏳ 缓存 ${data.dataTime}` : `📅 ${data.dataTime}`;
-    timeEl.textContent = data.referenceLabel ? `${prefix} · ${data.referenceLabel}` : prefix;
-    timeEl.style.color = data.cached ? 'var(--accent-gold)' : '';
-  }
-}
-
-function extractSinglePrice(raw) {
-  const ref = getSettlementCloseInfo(raw, raw?.meta || {}, raw);
-  const pairs = extractClosePairs(raw);
-  if (!pairs.length) return null;
-  const latest = pairs[pairs.length - 1];
-  const prev = ref.prevClose ?? (pairs.length >= 2 ? pairs[pairs.length - 2].close : latest.close);
-  const chg = latest.close - prev;
-  return { price: latest.close.toFixed(2), change: chg.toFixed(2),
-    pct: ((chg / prev) * 100).toFixed(1), dataTime: formatSGTPrecise(new Date(latest.ts * 1000)), dataTs: latest.ts,
-    referenceLabel: ref.referenceLabel, cached: false };
-}
-
-function buildYahooQuoteData(raw, quoteRaw, settlementRaw = null) {
-  if (!quoteRaw?.meta?.regularMarketTime || quoteRaw?.meta?.regularMarketPrice == null) return null;
-  const price = Number(quoteRaw.meta.regularMarketPrice);
-  const currentTs = Number(quoteRaw.meta.regularMarketTime);
-  const reference = getSettlementCloseInfo(settlementRaw || raw, quoteRaw.meta, raw);
-  const prev = reference.prevClose ?? quoteRaw.meta?.previousClose ?? quoteRaw.meta?.chartPreviousClose ?? price;
-  const chg = price - prev;
-  return {
-    price: price.toFixed(2),
-    change: chg.toFixed(2),
-    pct: prev ? ((chg / prev) * 100).toFixed(1) : '0.0',
-    dataTime: formatSGTPrecise(new Date(currentTs * 1000)),
-    dataTs: currentTs,
-    referenceLabel: reference.referenceLabel || '对比前一交易日收盘',
-    cached: false,
-  };
-}
-
-function buildQuoteFallbackData(raw, quote, settlementRaw = null) {
-  if (!quote || quote.price == null) return null;
-  const ref = getSettlementCloseInfo(settlementRaw || raw, quote?.meta || raw?.meta || {}, raw);
-  const prev = ref.prevClose ?? Number(quote.price);
-  const price = Number(quote.price);
-  const chg = price - prev;
-  return {
-    price: price.toFixed(2),
-    change: chg.toFixed(2),
-    pct: prev ? ((chg / prev) * 100).toFixed(1) : '0.0',
-    dataTime: formatSGTPrecise(new Date((quote.fetchedAt || Date.now() / 1000) * 1000)),
-    dataTs: quote.fetchedAt || Date.now() / 1000,
-    barTime: quote.barTime,
-    referenceLabel: ref.referenceLabel,
-    cached: false,
-  };
+  const data = await safeFetch('sources.json', 0);
+  if (data && typeof data === 'object') state.sources = data;
 }
 
 async function fetchPrices() {
-  const brentYahooSymbol = getYahooBrentFrontMonthSymbol();
-  const [brentRaw, wtiRaw, brentSettlementRaw, wtiSettlementRaw, brentQuoteRaw, wtiQuoteRaw, brentTv, wtiTv] = await Promise.all([
-    fetchRawChartData(brentYahooSymbol),
-    fetchRawChartData('CL=F'),
-    fetchYahooSettlementData(brentYahooSymbol),
-    fetchYahooSettlementData('CL=F'),
-    fetchYahooQuote(brentYahooSymbol),
-    fetchYahooQuote('CL=F'),
-    fetchTradingViewQuote('brent'),
-    fetchTradingViewQuote('wti'),
-  ]);
-  let brentData = null, wtiData = null, aligned = false;
-  let brentSparkline = null, wtiSparkline = null;
-
-  if (brentRaw && wtiRaw) {
-    const bMap = new Map(), wMap = new Map();
-    for (let i = 0; i < brentRaw.timestamps.length; i++)
-      if (brentRaw.closes[i] != null) bMap.set(brentRaw.timestamps[i], brentRaw.closes[i]);
-    for (let i = 0; i < wtiRaw.timestamps.length; i++)
-      if (wtiRaw.closes[i] != null) wMap.set(wtiRaw.timestamps[i], wtiRaw.closes[i]);
-
-    const commonTs = [...bMap.keys()].filter(ts => wMap.has(ts)).sort((a, b) => b - a);
-    if (commonTs.length >= 1) {
-      const lt = commonTs[0], bCur = bMap.get(lt), wCur = wMap.get(lt);
-      const dataTime = formatSGTPrecise(new Date(lt * 1000));
-      const bRef = getReferenceCloseInfo(brentRaw);
-      const wRef = getReferenceCloseInfo(wtiRaw);
-      const bPrev = bRef.prevClose ?? (commonTs.length >= 2 ? bMap.get(commonTs[1]) : bCur);
-      const wPrev = wRef.prevClose ?? (commonTs.length >= 2 ? wMap.get(commonTs[1]) : wCur);
-      const bChg = bCur - bPrev, wChg = wCur - wPrev;
-      brentData = { price: bCur.toFixed(2), change: bChg.toFixed(2),
-        pct: ((bChg/bPrev)*100).toFixed(1), dataTime, dataTs: lt, referenceLabel: bRef.referenceLabel, cached: false };
-      wtiData = { price: wCur.toFixed(2), change: wChg.toFixed(2),
-        pct: ((wChg/wPrev)*100).toFixed(1), dataTime, dataTs: lt, referenceLabel: wRef.referenceLabel, cached: false };
-      aligned = true;
-      state.priceSource = 'live';
-
-      // Sparkline: 最近 48 个共同时点
-      const sparkTs = commonTs.slice(0, 48).reverse();
-      brentSparkline = sparkTs.map(ts => bMap.get(ts));
-      wtiSparkline = sparkTs.map(ts => wMap.get(ts));
-
-      try { localStorage.setItem(CACHE_KEY, JSON.stringify({ brent: brentData, wti: wtiData, ts: Date.now() })); } catch {}
-    }
+  if (!globalThis.OilMarketUI) {
+    const el = document.getElementById('sourceStatus');
+    if (el) el.textContent = '行情模块未加载';
+    return { status: 'unavailable' };
   }
-
-  if (brentQuoteRaw) brentData = buildYahooQuoteData(brentRaw, brentQuoteRaw, brentSettlementRaw) || brentData;
-  else if (!brentData && brentRaw) brentData = extractSinglePrice(brentSettlementRaw || brentRaw) || extractSinglePrice(brentRaw);
-
-  if (wtiQuoteRaw) wtiData = buildYahooQuoteData(wtiRaw, wtiQuoteRaw, wtiSettlementRaw) || wtiData;
-  else if (!wtiData && wtiRaw) wtiData = extractSinglePrice(wtiSettlementRaw || wtiRaw) || extractSinglePrice(wtiRaw);
-
-  if (!brentData && brentTv) brentData = buildQuoteFallbackData(brentRaw, brentTv, brentSettlementRaw) || brentData;
-  if (!wtiData && wtiTv) wtiData = buildQuoteFallbackData(wtiRaw, wtiTv, wtiSettlementRaw) || wtiData;
-
-  if (!brentData || !wtiData) {
-    try {
-      const c = JSON.parse(localStorage.getItem(CACHE_KEY));
-      if (c && Date.now() - c.ts < 30 * 60 * 1000) {
-        if (!brentData && c.brent) brentData = { ...c.brent, cached: true };
-        if (!wtiData && c.wti) wtiData = { ...c.wti, cached: true };
-        state.priceSource = 'cached';
-      }
-    } catch {}
-  }
-
-  if (!brentData && !wtiData) state.priceSource = 'offline';
-  else if (brentQuoteRaw || wtiQuoteRaw || brentTv || wtiTv) state.priceSource = 'live';
-
-  renderSparkline('brentSpark', brentSparkline, isPositiveChange(brentData));
-  renderSparkline('wtiSpark', wtiSparkline, isPositiveChange(wtiData));
-  renderPrice('brent', brentData);
-  renderPrice('wti', wtiData);
-
-  if (brentData && wtiData)
-    document.getElementById('spreadValue').textContent = `$${(parseFloat(brentData.price) - parseFloat(wtiData.price)).toFixed(2)}`;
-
-  updateSourceStatus();
-}
-
-// ========== 数据源状态指示 ==========
-function updateSourceStatus() {
-  const el = document.getElementById('sourceStatus');
-  if (!el) return;
-  const m = { live: ['🟢 Live','source-live'], cached: ['🟡 缓存','source-cached'], offline: ['🔴 离线','source-offline'], unknown: ['⏳',''] };
-  const [text, cls] = m[state.priceSource] || m.unknown;
-  el.textContent = text;
-  el.className = 'source-status ' + cls;
+  return globalThis.OilMarketUI.refresh();
 }
 
 // ========== Countdown ==========
@@ -969,10 +510,32 @@ function startCountdown() {
   }, 1000);
 }
 
+function marketApiBase() {
+  return globalThis.OIL_API_BASE ?? (typeof location !== 'undefined' && ['localhost', '127.0.0.1'].includes(location.hostname) ? location.origin : CF_WORKER_URL);
+}
+
+async function fetchEditorialNews(topic, cacheKey) {
+  try {
+    const response = await fetch(`${marketApiBase()}/api/news?topic=${topic}`, { cache: 'no-store', signal: AbortSignal.timeout(12000) });
+    if (!response.ok) throw new Error('editorial-unavailable');
+    const payload = await response.json();
+    if (payload.schemaVersion !== 1 || payload.topic !== topic || !Array.isArray(payload.items)) throw new Error('editorial-invalid');
+    const items = payload.items.filter(item => item?.title && safeHttpUrl(item.link) && parseDateMs(item.pubDate));
+    if (!items.length) throw new Error('editorial-empty');
+    const result = { items, fetchedAt: payload.fetchedAt, cached: payload.cache === 'stale' };
+    writeStorageJson(cacheKey + '_rss_v1', result);
+    return result;
+  } catch {
+    const cached = readStorageJson(cacheKey + '_rss_v1');
+    if (cached && Number.isFinite(cached.fetchedAt) && Date.now() / 1000 - cached.fetchedAt < 6 * 3600 && cached.fetchedAt <= Date.now() / 1000 + 60 && Array.isArray(cached.items)) return { ...cached, cached: true };
+    return { items: [], cached: false };
+  }
+}
+
 // ========== Iran ==========
 async function fetchIranBriefing() {
-  const result = await fetchCapduckText(buildGoogleNewsUrl(IRAN_NEWS_QUERY), IRAN_CACHE_KEY);
-  const items = dedupeNewsItems(parseGoogleNewsRss(result.text)).slice(0, 6);
+  const result = await fetchEditorialNews('geo', IRAN_CACHE_KEY);
+  const items = dedupeNewsItems(result.items).slice(0, 6);
   const el = document.getElementById('iranContent');
   if (!items.length) {
     document.getElementById('tensionValue').textContent = '—';
@@ -985,9 +548,9 @@ async function fetchIranBriefing() {
   document.getElementById('tensionDesc').textContent = top.title.substring(0, 40);
 
   let html = `<div style="font-size:12px;color:${result.cached ? 'var(--accent-gold)' : 'var(--text-muted)'};margin-bottom:12px;padding:4px 8px">
-    🇮🇷 已刷新 ${formatSGT(new Date())} · 关键词 Iran / Hormuz / sanctions${result.cached ? ' · 使用上次成功缓存' : ''}</div>`;
+    🇮🇷 已刷新 ${formatSGT(new Date())} · Iran / Hormuz / 制裁 · 原始来源见各条新闻${result.cached ? ' · 使用上次成功缓存' : ''}</div>`;
   for (const item of items) {
-    html += `<a class="iran-section" href="${escapeHtml(item.link)}" target="_blank" style="display:block;text-decoration:none;color:inherit">
+    html += `<a class="iran-section" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer" style="display:block;text-decoration:none;color:inherit">
       <h3>${escapeHtml(item.title)}</h3>
       <div style="font-size:13px;color:var(--text-dim);line-height:1.7">${escapeHtml(item.source || 'Google News')} · ${escapeHtml(formatSGT(new Date(item.pubDate)))}</div></a>`;
   }
@@ -1057,18 +620,18 @@ function renderFeedItems(items) {
   for (let i = 0; i < items.length; i++) {
     const item = items[i], delay = Math.min(i * 0.05, 1);
     if (item.type === 'event') {
-      html += `<a class="feed-card" style="animation-delay:${delay}s" href="${escapeHtml(item.link || '#')}" target="_blank">
+      html += `<a class="feed-card" style="animation-delay:${delay}s" href="${escapeHtml(item.link || '#')}" target="_blank" rel="noopener noreferrer">
         <div class="card-header"><span class="card-type event">${escapeHtml(item.category)}</span><span class="card-time">${escapeHtml(item.time)}</span></div>
         <div class="card-title">${escapeHtml(item.title)}</div>
         ${item.body?`<div class="card-body">${escapeHtml(item.body)}</div>`:''}
         <div class="card-meta"><span class="impact ${impactClass(item.impact)}">Impact ${item.impact}</span>
           ${item.sources?`<span class="sources-count">📡 ${item.sources} sources</span>`:''}
-          ${item.sentiment?`<span style="color:var(--text-muted)">${item.sentiment}</span>`:''}</div></a>`;
+          ${item.sentiment?`<span style="color:var(--text-muted)">${escapeHtml(item.sentiment)}</span>`:''}</div></a>`;
     } else {
       const zh = item.zhBody ? `<div class="card-body" style="white-space:pre-wrap">${escapeHtml(item.zhBody)}</div>` : '';
       const orig = item.origBody ? `<div class="card-body" style="white-space:pre-wrap;font-size:11px;color:var(--text-muted);margin-top:6px;border-top:1px solid var(--border);padding-top:6px">${escapeHtml(item.origBody)}</div>` : '';
       const main = zh || `<div class="card-body" style="white-space:pre-wrap">${escapeHtml(item.origBody||'')}</div>`;
-      html += `<a class="feed-card" style="animation-delay:${delay}s" href="${escapeHtml(item.link)}" target="_blank">
+      html += `<a class="feed-card" style="animation-delay:${delay}s" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">
         <div class="card-header"><span class="card-type tweet">${escapeHtml(item.platform||'post')}</span><span class="card-time">${escapeHtml(item.time)}</span></div>
         <div class="card-title"><span style="color:var(--accent-blue)">@${escapeHtml(item.handle)}</span>
           <span style="color:var(--text-muted);font-size:12px;margin-left:6px">${escapeHtml(item.author)}</span>
@@ -1082,13 +645,13 @@ function renderFeedItems(items) {
 
 async function buildFeed() {
   const [marketResult, geoResult, oottSnapshot] = await Promise.all([
-    fetchCapduckText(buildGoogleNewsUrl(FEED_MARKET_QUERY), FEED_EVENTS_CACHE_KEY),
-    fetchCapduckText(buildGoogleNewsUrl(FEED_GEO_QUERY), FEED_POSTS_CACHE_KEY),
+    fetchEditorialNews('market', FEED_EVENTS_CACHE_KEY),
+    fetchEditorialNews('geo', FEED_POSTS_CACHE_KEY),
     loadOottSnapshot(),
   ]);
   const events = dedupeNewsItems([
-    ...parseGoogleNewsRss(marketResult.text),
-    ...parseGoogleNewsRss(geoResult.text),
+    ...(marketResult.items || []),
+    ...(geoResult.items || []),
   ]).slice(0, 10).map(buildFeedEventFromNews);
   const posts = [...(oottSnapshot?.posts || [])].slice(0, 6).map(post => ({
     type: 'post',
@@ -1115,11 +678,12 @@ async function buildFeed() {
     if (ei < events.length) merged.push(events[ei++]);
   }
   state.feedItems = merged;
+  globalThis.OilMarketUI?.setEvents?.(events);
   renderFeedItems(merged);
   if (el && merged.length) {
     const cacheNote = (marketResult.cached || geoResult.cached) ? ' · 使用上次成功缓存' : '';
     el.innerHTML = `<div style="font-size:12px;color:${(marketResult.cached || geoResult.cached) ? 'var(--accent-gold)' : 'var(--text-muted)'};margin-bottom:12px;padding:4px 8px">
-      📡 已刷新 ${formatSGT(new Date())} · 新闻来自 Google News，推文来自 OOTT 白名单${cacheNote}</div>` + el.innerHTML;
+      📡 已刷新 ${formatSGT(new Date())} · 新闻来自 Oilprice / Guardian，推文来自 OOTT 白名单${cacheNote}</div>` + el.innerHTML;
   }
 }
 
@@ -1144,7 +708,7 @@ async function fetchPolymarket() {
   let hiddenExpiredCount = 0;
   let html = '';
   for (const c of contracts) {
-    html += `<a class="poly-card" href="${escapeHtml(c.link)}" target="_blank" style="text-decoration:none;color:inherit;display:block">
+    html += `<a class="poly-card" href="${escapeHtml(c.link)}" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit;display:block">
       <div class="poly-question">${escapeHtml(c.question)}</div><div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:8px">`;
     for (const d of c.conditions) {
       const p = parseInt(d.prob), color = p>=50?'var(--up)':p>=20?'var(--accent-gold)':'var(--text-muted)';
@@ -1174,20 +738,23 @@ async function fetchOOTT() {
 
   if (!posts.length) {
     el.innerHTML = `<div class="loading-spinner"><span style="color:var(--text-dim)">暂无油市推文</span>
-      <a href="https://x.com/JavierBlas" target="_blank" style="color:var(--accent-blue);font-size:12px;margin-top:8px">查看 @JavierBlas →</a></div>`;
+      <a href="https://x.com/JavierBlas" target="_blank" rel="noopener noreferrer" style="color:var(--accent-blue);font-size:12px;margin-top:8px">查看 @JavierBlas →</a></div>`;
     return;
   }
   const sorted = [...posts].sort((a,b) => new Date(b.createdAt) - new Date(a.createdAt));
   const handles = new Set(sorted.map(t => t.username));
   const sourceLabel = usingLiveSupplement ? 'OOTT 自动同步 + 今日补拉' : 'OOTT 自动同步';
+  const latestPostAt = getLatestCreatedMs(sorted);
+  const lastEl = document.getElementById('dataLastSuccess');
+  if (lastEl && latestPostAt) lastEl.textContent = '资讯原文最新 ' + formatSGTPrecise(new Date(latestPostAt));
   let html = `<div style="font-size:12px;color:var(--text-muted);margin-bottom:12px;padding:4px 8px">
-    🛢️ ${sorted.length} 条 · ${handles.size} 个白名单信源 · ${sourceLabel}</div>`;
+    🛢️ ${sorted.length} 条 · ${handles.size} 个白名单信源 · ${sourceLabel} · 原文最新 ${escapeHtml(latestPostAt ? formatSGT(new Date(latestPostAt)) : '待确认')}</div>`;
   for (let i = 0; i < sorted.length; i++) {
     const t = sorted[i], delay = Math.min(i * 0.04, 0.8);
     const timeStr = t.createdAt ? formatSGT(new Date(t.createdAt)) : '';
     const media = (t.photos?.length || t.videos?.length) ? '<span style="color:var(--accent-cyan);font-size:11px;margin-left:6px">📷</span>' : '';
     const eng = t.engagement ? `<div class="card-meta"><span class="engagement">📊 ${t.engagement} 互动</span></div>` : '';
-    html += `<a class="feed-card" style="animation-delay:${delay}s" href="${escapeHtml(t.url || '#')}" target="_blank">
+    html += `<a class="feed-card" style="animation-delay:${delay}s" href="${escapeHtml(t.url || '#')}" target="_blank" rel="noopener noreferrer">
       <div class="card-header"><span class="card-type tweet">OOTT</span><span class="card-time">${escapeHtml(timeStr)}</span></div>
       <div class="card-title"><span style="color:var(--accent-blue)">@${escapeHtml(t.username || '')}</span>${media}</div>
       <div class="card-body" style="white-space:pre-wrap">${escapeHtml((t.text || '').substring(0, 500))}</div>
@@ -1201,13 +768,17 @@ async function fetchOOTT() {
 async function refresh() {
   const statusEl = document.getElementById('refreshStatus');
   if (statusEl) { statusEl.textContent = '刷新中...'; statusEl.style.opacity = '1'; }
-  document.getElementById('updateTime').textContent = formatSGTPrecise(new Date());
-  await Promise.allSettled([fetchPrices(), fetchIranBriefing(), buildFeed(), fetchPolymarket(), fetchOOTT()]);
-  if (statusEl) { statusEl.textContent = '✓'; setTimeout(() => { statusEl.style.opacity = '0'; }, 2000); }
+  document.getElementById('updateTime').textContent = '检查 ' + formatSGTPrecise(new Date());
+  const results = await Promise.allSettled([fetchPrices(), fetchIranBriefing(), buildFeed(), fetchPolymarket(), fetchOOTT(), globalThis.OilEnergy?.refresh()]);
+  const failed = results.some(result => result.status === 'rejected');
+  if (failed) console.error('Dashboard section update failed; other sections remain available.');
+  if (statusEl) { statusEl.textContent = failed ? '部分更新失败' : '✓'; if (!failed) setTimeout(() => { statusEl.style.opacity = '0'; }, 2000); }
   startCountdown();
 }
 
 (async () => {
+  globalThis.OilMarketUI?.init();
+  globalThis.OilEnergy?.init({ baseUrl: marketApiBase() });
   await loadSources();
   refresh(); // 不 await，让页面先响应
   setInterval(refresh, REFRESH_MS);
@@ -1219,31 +790,10 @@ async function refresh() {
 
 if (typeof globalThis !== 'undefined') {
   globalThis.__oilDashboardTestHooks = {
-    flattenTradingPeriods,
-    getReferenceCloseInfo,
-    getSettlementCloseInfo,
-    formatSGTCompact,
-    getDatePartsInTimeZone,
-    getSgtDateParts,
-    getYahooFuturesContractSymbol,
-    getYahooBrentFrontMonthSymbol,
-    normalizeOottPost,
-    mergeOottPosts,
-    needsLiveOottRefresh,
-    getSGTDayKey,
-    formatTradingDayLabel,
-    inferPreviousCloseFromRaw,
-    applyTradingViewDailyReference,
-    getPolymarketConditionExpiryMs,
-    filterActivePolymarketConditions,
-    buildYahooQuoteData,
-    getPreviousTradingDayLabelFromMeta,
-    formatMonthDayInTimeZone,
-    YAHOO_QUOTE_RANGE,
-    YAHOO_QUOTE_INTERVAL,
-    PRICE_CHART_RANGE,
-    PRICE_CHART_INTERVAL,
-    shouldUseTradingViewFallback,
-    buildCapduckCandidates,
+    formatSGTCompact, getDatePartsInTimeZone, getSgtDateParts,
+    normalizeOottPost, mergeOottPosts, needsLiveOottRefresh, getSGTDayKey,
+    getPolymarketConditionExpiryMs, filterActivePolymarketConditions,
+    buildCapduckCandidates, dedupeNewsItems, buildFeedEventFromNews,
+    safeHttpUrl, escapeHtml, fetchPrices, refresh, renderFeedItems,
   };
 }

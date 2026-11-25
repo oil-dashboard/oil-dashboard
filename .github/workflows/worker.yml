@@ -1,0 +1,46 @@
+name: Validate and deploy market Worker
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'workers/**'
+      - 'shared/market-core.js'
+      - 'shared/energy-calendar.js'
+      - 'wrangler.jsonc'
+      - 'scripts/worker-digest.mjs'
+      - 'scripts/deploy-worker.mjs'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/worker.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: oil-market-worker
+  cancel-in-progress: true
+
+jobs:
+  worker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run check:worker
+      - name: Deploy market Worker when credentials are configured
+        if: env.CLOUDFLARE_API_TOKEN != '' && env.CLOUDFLARE_ACCOUNT_ID != ''
+        run: npm run deploy:worker
+      - name: Document local deployment requirement
+        if: env.CLOUDFLARE_API_TOKEN == '' || env.CLOUDFLARE_ACCOUNT_ID == ''
+        run: echo '::notice::Worker bundle validated. Automatic deployment is disabled until both Cloudflare repository secrets are configured; use authenticated local Wrangler deployment.'

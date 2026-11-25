@@ -3,253 +3,89 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import vm from 'node:vm';
 
-const appSource = await fs.readFile(new URL('../app.js', import.meta.url), 'utf8');
-
-function makeElement() {
-  return {
-    textContent: '',
-    innerHTML: '',
-    className: '',
-    style: {},
-    dataset: {},
-    addEventListener() {},
-    classList: { add() {}, remove() {}, toggle() {} },
-  };
-}
-
-function loadAppContext() {
+const source = await fs.readFile(new URL('../app.js', import.meta.url), 'utf8');
+function loadApp(marketUI) {
   const elements = new Map();
-  const store = new Map();
   const sandbox = {
-    console,
-    URL,
-    Date,
-    Math,
-    JSON,
-    Intl,
+    console, URL, Date, Math, JSON, Intl,
     AbortSignal: { timeout() { return {}; } },
-    setTimeout() {},
-    clearTimeout() {},
-    setInterval() { return 1; },
-    clearInterval() {},
-    fetch: async () => ({ ok: true, status: 200, text: async () => '[]' }),
-    localStorage: {
-      getItem(key) { return store.has(key) ? store.get(key) : null; },
-      setItem(key, value) { store.set(key, String(value)); },
-    },
-    navigator: {},
-    window: {},
+    setTimeout() {}, clearTimeout() {}, setInterval() { return 1; }, clearInterval() {},
+    fetch() { return new Promise(() => {}); },
+    localStorage: { getItem() { return null; }, setItem() {} }, navigator: {}, window: {},
+    OilMarketUI: marketUI,
     document: {
-      querySelectorAll() { return []; },
+      querySelectorAll() { return []; }, addEventListener() {},
       getElementById(id) {
-        if (!elements.has(id)) elements.set(id, makeElement());
+        if (!elements.has(id)) elements.set(id, { textContent: '', innerHTML: '', style: {}, className: '' });
         return elements.get(id);
       },
-      addEventListener() {},
     },
   };
-
-  vm.runInNewContext(appSource, sandbox, { filename: 'app.js' });
-  return { hooks: sandbox.__oilDashboardTestHooks, store };
+  vm.runInNewContext(source, sandbox, { filename: 'app.js' });
+  return { hooks: sandbox.__oilDashboardTestHooks, elements };
 }
 
-function loadAppHooks() {
-  return loadAppContext().hooks;
-}
-
-test('reference close label uses previous session end in Singapore time', () => {
-  const hooks = loadAppHooks();
-  const info = hooks.getReferenceCloseInfo({
-    meta: {
-      chartPreviousClose: 94.79,
-      tradingPeriods: [
-        [{ start: 1776139200, end: 1776225540 }],
-        [{ start: 1776225600, end: 1776311940 }],
-      ],
-    },
-  });
-
-  assert.equal(info.prevClose, 94.79);
-  assert.equal(info.referenceLabel, '对比 4/15 收盘');
+test('production market refresh delegates to the validated snapshot renderer without overwriting its status', async () => {
+  let calls = 0;
+  const marketUI = { init() {}, async refresh() { calls++; return { status: 'delayed' }; } };
+  const { hooks, elements } = loadApp(marketUI);
+  elements.set('sourceStatus', { textContent: '延迟 10 分钟' });
+  const result = await hooks.fetchPrices();
+  assert.equal(calls, 1);
+  assert.equal(result.status, 'delayed');
+  assert.equal(elements.get('sourceStatus').textContent, '延迟 10 分钟');
 });
 
-test('reference close label falls back gracefully when trading periods are missing', () => {
-  const hooks = loadAppHooks();
-  const info = hooks.getReferenceCloseInfo({
-    meta: { previousClose: 72.31 },
-  });
-
-  assert.equal(info.prevClose, 72.31);
-  assert.equal(info.referenceLabel, '对比上一交易日收盘');
+test('missing market module is visibly unavailable rather than leaving a live label', async () => {
+  const { hooks, elements } = loadApp(undefined);
+  const result = await hooks.fetchPrices();
+  assert.equal(result.status, 'unavailable');
+  assert.equal(elements.get('sourceStatus').textContent, '行情模块未加载');
 });
 
-test('price chart fetch uses the stable Yahoo intraday range', () => {
-  const hooks = loadAppHooks();
-
-  assert.equal(hooks.YAHOO_QUOTE_RANGE, '1d');
-  assert.equal(hooks.YAHOO_QUOTE_INTERVAL, '1m');
-  assert.equal(hooks.PRICE_CHART_RANGE, '5d');
-  assert.equal(hooks.PRICE_CHART_INTERVAL, '5m');
+test('feed merges matching headlines across sources but preserves opposing reports and later-day events', () => {
+  const { hooks } = loadApp();
+  const rows = hooks.dedupeNewsItems([
+    { title: 'Oil exports rise', link: 'https://a.example/one?utm_source=feed', source: 'Reuters', pubDate: '2026-11-25T08:00:00Z' },
+    { title: 'Oil exports rise!', link: 'https://b.example/two', source: 'Bloomberg', pubDate: '2026-11-25T09:00:00Z' },
+    { title: 'Oil exports fall', link: 'https://c.example/three', source: 'AP', pubDate: '2026-11-25T09:00:00Z' },
+    { title: 'Oil exports rise', link: 'https://d.example/four', source: 'Reuters', pubDate: '2026-11-20T08:00:00Z' },
+  ]);
+  assert.equal(rows.length, 3);
+  const combined = rows.find(item => item.relatedSources.length === 2);
+  assert.equal(combined.title, 'Oil exports rise!');
+  assert.equal(hooks.buildFeedEventFromNews(combined).sources, 2);
 });
 
-test('brent yahoo symbol uses the front month contract instead of Yahoo BZ=F', () => {
-  const hooks = loadAppHooks();
-
-  assert.equal(hooks.getYahooBrentFrontMonthSymbol(new Date('2026-07-23T08:00:00Z')), 'BZU26.NYM');
-  assert.equal(hooks.getYahooBrentFrontMonthSymbol(new Date('2026-08-03T08:00:00Z')), 'BZV26.NYM');
-  assert.equal(hooks.getYahooBrentFrontMonthSymbol(new Date('2026-11-15T08:00:00Z')), 'BZF27.NYM');
+test('feed URLs reject script schemes and escape untrusted attribute text', () => {
+  const { hooks } = loadApp();
+  assert.equal(hooks.safeHttpUrl('javascript:alert(1)'), '');
+  assert.equal(hooks.normalizeOottPost({ createdAt: '2026-11-25T08:00:00Z', url: 'javascript:alert(1)' }).url, '');
+  assert.equal(hooks.escapeHtml('"<x>&\''), '&quot;&lt;x&gt;&amp;&#39;');
 });
 
-test('tradingview fallback turns on when yahoo has not entered the current session', () => {
-  const hooks = loadAppHooks();
-  const raw = {
-    timestamps: [1776459300, 1776459599],
-    closes: [91.19, 90.38],
-    meta: {
-      currentTradingPeriod: {
-        regular: { start: 1776657600 },
-      },
-    },
-  };
-
-  assert.equal(hooks.shouldUseTradingViewFallback(raw, 1776660000), true);
-  assert.equal(hooks.shouldUseTradingViewFallback(raw, 1776658000), false);
+test('polymarket date windows remain tied to Singapore dates', () => {
+  const { hooks } = loadApp();
+  const filtered = hooks.filterActivePolymarketConditions([
+    { label: '4月7日', prob: '89%' }, { label: '4月15日', prob: '83%' },
+    { label: '4月底', prob: '85%' }, { label: '↑$120', prob: '9%' },
+  ], new Date('2026-04-20T12:00:00+08:00'));
+  assert.deepEqual(Array.from(filtered, row => row.label), ['4月底', '↑$120']);
 });
 
-test('tradingview daily reference rolls when the daily bar timestamp advances', () => {
-  const { hooks } = loadAppContext();
-
-  const first = hooks.applyTradingViewDailyReference(
-    'brent',
-    { price: '92.00', change: '0.00', pct: '0.0', referenceLabel: '对比上一交易时段收盘' },
-    { price: 92.00, barTime: 1776643200, fetchedAt: 1776674400 },
-    { timestamps: [1776459599], closes: [90.38], meta: {} }
-  );
-  const second = hooks.applyTradingViewDailyReference(
-    'brent',
-    { price: '93.50', change: '0.00', pct: '0.0', referenceLabel: '对比上一交易时段收盘' },
-    { price: 93.50, barTime: 1776729600, fetchedAt: 1776762300 },
-    { timestamps: [1776729300], closes: [93.25], meta: {} }
-  );
-
-  assert.equal(first.referenceLabel, '对比 4/17 收盘');
-  assert.equal(second.referenceLabel, '对比 4/20 收盘');
-  assert.equal(second.change, '1.50');
-});
-
-test('polymarket view hides expired dated windows but keeps future and price buckets', () => {
-  const hooks = loadAppHooks();
-  const filtered = hooks.filterActivePolymarketConditions(
-    [
-      { label: '4月7日', prob: '89%' },
-      { label: '4月15日', prob: '83%' },
-      { label: '4月底', prob: '85%' },
-      { label: '↑$120', prob: '9%' },
-    ],
-    new Date('2026-04-20T12:00:00+08:00')
-  );
-
-  assert.deepEqual(filtered.map(item => item.label), ['4月底', '↑$120']);
-});
-
-test('yahoo quote data uses regular market price and previous close', () => {
-  const hooks = loadAppHooks();
-  const data = hooks.buildYahooQuoteData(
-    { timestamps: [1776660000], closes: [95.48], meta: {} },
-    {
-      meta: {
-        regularMarketPrice: 94.55,
-        regularMarketTime: 1776752803,
-        chartPreviousClose: 95.48,
-        currentTradingPeriod: { regular: { start: 1776744000 } },
-      },
-    }
-  );
-
-  assert.equal(data.price, '94.55');
-  assert.equal(data.change, '-0.93');
-  assert.equal(data.referenceLabel, '对比 4/20 收盘');
-});
-
-test('yahoo quote data can anchor on the prior daily settlement', () => {
-  const hooks = loadAppHooks();
-  const data = hooks.buildYahooQuoteData(
-    { timestamps: [1776990000], closes: [105.97], meta: {} },
-    {
-      meta: {
-        regularMarketPrice: 99.53,
-        regularMarketTime: 1777039308,
-        currentTradingPeriod: { regular: { start: 1777003200 } },
-        exchangeTimezoneName: 'America/New_York',
-        chartPreviousClose: 104.49,
-        previousClose: 99.35,
-      },
-    },
-    {
-      timestamps: [1776830400, 1776916800, 1777003200],
-      closes: [101.91, 105.07, 99.53],
-      meta: {
-        currentTradingPeriod: { regular: { start: 1777003200 } },
-        exchangeTimezoneName: 'America/New_York',
-      },
-    }
-  );
-
-  assert.equal(data.price, '99.53');
-  assert.equal(data.change, '-5.54');
-  assert.equal(data.referenceLabel, '对比 4/23 收盘');
-});
-
-test('yahoo previous trading day label follows exchange session boundary', () => {
-  const hooks = loadAppHooks();
-  const label = hooks.getPreviousTradingDayLabelFromMeta({
-    exchangeTimezoneName: 'America/New_York',
-    currentTradingPeriod: {
-      regular: { start: 1776744000 },
-    },
-  });
-
-  assert.equal(label, '4/20');
-});
-
-test('previous trading day label skips weekend dates', () => {
-  const hooks = loadAppHooks();
-  const label = hooks.getPreviousTradingDayLabelFromMeta({
-    exchangeTimezoneName: 'America/New_York',
-    currentTradingPeriod: {
-      regular: { start: 1777867200 },
-    },
-  });
-
-  assert.equal(label, '5/1');
-});
-
-test('settlement close info uses previous trading day label from meta even on Monday session', () => {
-  const hooks = loadAppHooks();
-  const info = hooks.getSettlementCloseInfo(
-    {
-      timestamps: [1777348800, 1777435200, 1777521600, 1777608000, 1777867200],
-      closes: [111.26, 118.03, 114.01, 108.17, 108.10],
-      meta: {
-        currentTradingPeriod: { regular: { start: 1777867200 } },
-        exchangeTimezoneName: 'America/New_York',
-      },
-    },
-    {
-      currentTradingPeriod: { regular: { start: 1777867200 } },
-      exchangeTimezoneName: 'America/New_York',
-    }
-  );
-
-  assert.equal(info.prevClose, 108.17);
-  assert.equal(info.referenceLabel, '对比 5/1 收盘');
-});
-
-test('capduck requests try worker proxy before direct upstream', () => {
-  const hooks = loadAppHooks();
-  const candidates = Array.from(hooks.buildCapduckCandidates('https://skill.capduck.com/iran/polymarket'));
-
-  assert.deepEqual(candidates, [
+test('upstream editorial requests retain the configured Worker proxy', () => {
+  const { hooks } = loadApp();
+  assert.deepEqual(Array.from(hooks.buildCapduckCandidates('https://skill.capduck.com/iran/polymarket')), [
     'https://oil-proxy.xzregproxy.workers.dev?url=https%3A%2F%2Fskill.capduck.com%2Firan%2Fpolymarket',
   ]);
+});
+
+test('news events render through the production feed with impact labels, original links and escaped text', () => {
+  const { hooks, elements } = loadApp();
+  hooks.renderFeedItems([hooks.buildFeedEventFromNews({ title: 'Oil exports rise & Iran sanctions tighten', link: 'https://publisher.example/news', source: 'Publisher', pubDate: '2026-11-25T08:00:00Z' })]);
+  const html = elements.get('feedList').innerHTML;
+  assert.match(html, /impact-high/);
+  assert.match(html, /Oil exports rise &amp; Iran sanctions tighten/);
+  assert.match(html, /https:\/\/publisher.example\/news/);
+  assert.match(html, /rel="noopener noreferrer"/);
 });

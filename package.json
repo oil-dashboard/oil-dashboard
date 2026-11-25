@@ -1,0 +1,22 @@
+{
+  "name": "oil-dashboard",
+  "version": "5.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "A source-aware oil market dashboard, built as a static site with a Cloudflare Worker data layer.",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "postinstall": "node scripts/build.mjs --vendor-only",
+    "test": "node --test tests/*.test.mjs",
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/dev-server.mjs",
+    "preview": "node scripts/dev-server.mjs --dist",
+    "check:worker": "wrangler deploy --dry-run --outdir .wrangler/bundle",
+    "deploy:worker": "node scripts/deploy-worker.mjs",
+    "verify:worker": "node scripts/verify-worker.mjs",
+    "verify:deployment": "node scripts/verify-deployment.mjs"
+  },
+  "dependencies": { "lightweight-charts": "5.3.0" },
+  "devDependencies": { "wrangler": "4.168.0" }
+}
