@@ -65,7 +65,7 @@ test('holiday calendars, early closes, and incomplete coverage remain explicit',
   assert.equal(M.getSessionState(ts('2026-12-01T10:00:00-05:00'), cfg).state, 'unknown');
 });
 
-test('same-price morning and afternoon replays preserve the correct quote reference', () => {
+test('Singapore morning and afternoon use the same completed prior daily close', () => {
   const f = fixture.morningAfternoon;
   const raw = { meta: { symbol: f.symbol, exchangeTimezoneName: 'America/New_York' },
     timestamps: f.dailyDates.map(ts), closes: f.dailyCloses };
@@ -73,28 +73,40 @@ test('same-price morning and afternoon replays preserve the correct quote refere
     quoteRaw: quote(f.symbol, ts(at), f.price, f.previousClose), dailyRaw: raw, now: ts(at) }));
   for (const s of snapshots) {
     assert.equal(s.tradingDate, '2026-11-25');
-    assert.equal(s.reference.price, 91.4);
-    assert.ok(Math.abs(s.change - 1.96) < 1e-9);
-    assert.ok(Math.abs(s.changePercent - 2.14442013) < 1e-7);
+    assert.ok(Math.abs(s.reference.price - 91.4) < 1e-5);
+    assert.equal(s.reference.type, 'previous-close');
+    assert.equal(s.reference.basis, 'daily-close');
+    assert.equal(s.reference.date, '2026-11-24');
+    assert.ok(Math.abs(s.change - 1.96) < 1e-5);
+    assert.ok(Math.abs(s.changePercent - 2.14442013) < 1e-5);
   }
-  assert.equal(snapshots[0].reference.date, null, 'do not call the forming overnight calendar bar a completed daily close');
-  assert.equal(snapshots[1].reference.date, '2026-11-24');
 });
 
-test('monthly chart range reference cannot override quote previousClose, including roll mismatch', () => {
+test('daily baseline advances at the exchange session boundary, not Singapore midnight', () => {
+  const dailyRaw = daily('BZ=F', [87, 88.78, 89.73]);
+  const before = ts('2026-11-25T06:59:00+08:00');
+  const after = ts('2026-11-25T07:00:00+08:00');
+  const priorSession = yahoo({ quoteRaw: quote('BZ=F', before), dailyRaw, now: before });
+  const nextSession = yahoo({ quoteRaw: quote('BZ=F', after), dailyRaw, now: after });
+  assert.equal(priorSession.tradingDate, '2026-11-24');
+  assert.equal(priorSession.reference.date, '2026-11-23');
+  assert.equal(nextSession.tradingDate, '2026-11-25');
+  assert.equal(nextSession.reference.date, '2026-11-24');
+});
+
+test('daily close controls change even when quote previousClose differs around a continuous roll', () => {
   const f = fixture.continuousRangeReference;
   const s = yahoo({ dailyRaw: daily(f.symbol, [87, f.previousDailyClose, f.price]) });
-  assert.equal(s.reference.price, 88.78);
-  assert.equal(s.reference.date, null, 'mismatched daily close does not fabricate a reference date');
-  assert.ok(Math.abs(s.change - 0.95) < 1e-9);
+  assert.equal(s.reference.price, f.previousDailyClose);
+  assert.equal(s.reference.date, '2026-11-24');
+  assert.ok(Math.abs(s.change - (f.price - f.previousDailyClose)) < 1e-9);
   assert.notEqual(s.reference.price, f.monthlyChartPreviousClose);
-  assert.notEqual(s.reference.price, f.previousDailyClose);
+  assert.notEqual(s.reference.price, f.quotePreviousClose);
 });
 
-test('daily history and chartPreviousClose alone cannot manufacture yesterday reference', () => {
+test('quote previousClose and monthly chartPreviousClose cannot replace missing daily history', () => {
   const q = quote();
-  delete q.meta.previousClose;
-  const s = yahoo({ quoteRaw: q });
+  const s = yahoo({ quoteRaw: q, dailyRaw: null });
   assert.equal(s.price, 89.73);
   assert.equal(s.reference, null);
   assert.equal(s.change, null);
@@ -108,30 +120,34 @@ test('holiday reference dates come from actual bars, not subtracting one calenda
     timestamp: [ts('2026-12-24T00:00:00-05:00')], indicators: { quote: [{ close: [88.78] }] },
   } });
   assert.equal(s.reference.date, '2026-12-24');
+  assert.equal(s.reference.type, 'previous-close');
+  assert.equal(s.reference.basis, 'daily-close');
 });
 
-test('other-source or other-contract data never supplies reference dates or history', () => {
+test('other-source or other-contract daily data never supplies a reference or history', () => {
   const s = yahoo({ dailyRaw: daily('BZF27.NYM'), historyRaw: daily('CL=F') });
-  assert.equal(s.reference.price, 88.78);
-  assert.equal(s.reference.date, null);
+  assert.equal(s.reference, null);
+  assert.equal(s.change, null);
+  assert.equal(s.changePercent, null);
   assert.deepEqual(s.series, []);
   assert.equal(yahoo({ quoteRaw: quote('CL=F') }).price, null);
   assert.equal(yahoo({ quoteRaw: { ...quote(), source: 'tradingview' } }).status, 'unavailable');
+  const unidentified = daily('BZ=F');
+  delete unidentified.meta.symbol;
+  assert.equal(yahoo({ dailyRaw: unidentified }).reference, null);
 });
 
-test('TV keeps source atomic change and percent while distinguishing provider update from trade time', () => {
+test('TV provider change is suppressed without a same-symbol completed daily close', () => {
   const s = M.normalizeTVSnapshot({ instrument: 'brent', symbol: 'ICEEUR:BRN1!', exchange: 'ICE', now, sessionConfig: london,
     raw: { symbol: 'ICEEUR:BRN1!', price: 89.73, changeAbs: 0.95, changePercent: 1.07,
-      last_bar_update_time: now - 5, update_mode: 'delayed_streaming_600', referenceType: 'provider-reference' } });
+      last_bar_update_time: now - 5, update_mode: 'delayed_streaming_600' } });
   assert.equal(s.priceAt, null);
   assert.equal(s.providerUpdatedAt, now - 5);
   assert.equal(s.timeBasis, 'provider-update');
   assert.equal(s.status, 'delayed');
-  assert.equal(s.reference.date, null);
-  assert.equal(s.reference.type, 'provider-reference');
-  assert.ok(Math.abs(s.reference.price - 88.78) < 1e-9);
-  assert.equal(s.change, 0.95);
-  assert.equal(s.changePercent, 1.07);
+  assert.equal(s.reference, null);
+  assert.equal(s.change, null);
+  assert.equal(s.changePercent, null);
   assert.equal(M.validateSnapshot(s).valid, true);
 });
 
@@ -176,6 +192,7 @@ test('cache validation rejects corrupted identity, source/reference mismatch, in
   assert.equal(M.validateSnapshot(s, { instrument: 'brent', symbol: 'BZ=F', source: 'yahoo' }).valid, true);
   assert.equal(M.validateSnapshot(s, { symbol: 'CL=F' }).valid, false);
   assert.equal(M.validateSnapshot({ ...s, reference: { ...s.reference, source: 'tradingview' } }).valid, false);
+  assert.equal(M.validateSnapshot({ ...s, reference: { ...s.reference, basis: undefined } }).valid, false);
   assert.equal(M.validateSnapshot({ ...s, reference: { ...s.reference, symbol: 'BZF27.NYM' } }).valid, false);
   assert.equal(M.validateSnapshot({ ...s, price: NaN }).valid, false);
   assert.equal(M.validateSnapshot({ ...s, changePercent: 1234 }).valid, false);
@@ -192,7 +209,7 @@ test('aligned spread requires same-source valid legs and comparable actual marke
   assert.equal(spread.status, 'fresh');
   assert.equal(M.alignSpread(b, { ...w, priceAt: now - 301 }, { now }).reason, 'time-mismatch');
   assert.equal(M.alignSpread(b, { ...w, currency: 'EUR' }, { now }).reason, 'currency-mismatch');
-  const otherSource = { ...w, source: 'tradingview', reference: { ...w.reference, source: 'tradingview' } };
+  const otherSource = { ...w, source: 'tradingview', reference: { price: 79, date: '2026-11-24', type: 'previous-close', basis: 'daily-close', source: 'tradingview', symbol: 'CL=F' }, change: 1, changePercent: 100 / 79 };
   assert.equal(M.alignSpread(b, otherSource, { now }).reason, 'source-mismatch');
   assert.equal(M.alignSpread(b, w, { now: now + 3600 }).reason, 'stale-leg');
 });

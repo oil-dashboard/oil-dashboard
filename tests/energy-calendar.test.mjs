@@ -27,6 +27,21 @@ test('verified API and monthly report dates preserve approximate and date-only m
   assert.equal(api.consensus, null);
 });
 
+test('date-only monthly reports state that the time is unpublished without a pending-confirmation label', () => {
+  const element = { innerHTML: '' };
+  const previousDocument = globalThis.document;
+  globalThis.document = { getElementById: id => id === 'energyCalendar' ? element : null };
+  try {
+    globalThis.OilEnergy.render({ events: [{ title: 'Monthly report', source: 'IEA', date: '2026-12-11', dateOnly: true }], checkedAt: null });
+    assert.match(element.innerHTML, /2026-12-11 · 时间未公布/);
+    assert.match(element.innerHTML, /核验时间暂不可用/);
+    assert.doesNotMatch(element.innerHTML, /待确认/);
+  } finally {
+    if (previousDocument === undefined) delete globalThis.document;
+    else globalThis.document = previousDocument;
+  }
+});
+
 test('official schedule parser changes only the relevant EIA week rather than assuming every holiday postpones release', () => {
   const schedule = parseEiaSchedule('Standard 10:30 a.m. on Wednesday<table><tr><th>November 6, 2026</th><td>November 12, 2026</td><td>Thursday</td><td>12:00 p.m.</td><td>Veterans Day</td></tr></table>', Date.parse('2026-11-25T00:00:00Z') / 1000);
   assert.deepEqual(schedule.exceptions[0], ['2026-11-06', '2026-11-12', 12, 0]);

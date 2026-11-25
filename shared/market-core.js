@@ -2,7 +2,7 @@
   'use strict';
 
   const STATUSES = ['fresh', 'delayed', 'stale', 'closed', 'unavailable'];
-  const REFERENCE_TYPES = ['previous-close', 'previous-settlement', 'provider-reference'];
+  const REFERENCE_TYPES = ['previous-close'];
   const SESSION_CONFIGS = {
     NYMEX_ENERGY: {
       timeZone: 'America/New_York', sessionStartHour: 18, sessionEndHour: 17,
@@ -115,19 +115,25 @@
     return [...pairs].sort((a, b) => a[0] - b[0]).map(([time, value]) => ({ time, value }));
   }
 
-  function referenceDateFromDaily(dailyRaw, value, snapshot, config) {
+  function previousDailyClose(dailyRaw, snapshot, config) {
     const daily = result(dailyRaw);
-    if (!sameIdentity(daily, snapshot.symbol, snapshot.source)) return null;
+    const dailySymbol = daily?.meta?.symbol || daily?.symbol;
+    if (!snapshot.symbol || !snapshot.tradingDate || snapshot.priceAt == null
+      || dailySymbol !== snapshot.symbol || (daily?.source && daily.source !== snapshot.source)) return null;
     const zone = config?.dailyBarTimeZone || daily?.meta?.exchangeTimezoneName;
-    const quoteDate = dateParts(snapshot.priceAt, zone)?.date;
-    if (!quoteDate) return null;
-    const rows = seriesFrom(daily, snapshot.symbol, snapshot.source, snapshot.priceAt);
-    // Yahoo's daily timestamp is a calendar label, not an 18:00 session start.
-    // The bar carrying the quote's calendar date can still be forming overnight.
-    const completed = rows.map(p => ({ ...p, date: dateParts(p.time, zone)?.date }))
-      .filter(p => p.date && p.date < quoteDate && (!snapshot.tradingDate || p.date < snapshot.tradingDate));
-    const last = completed[completed.length - 1];
-    return last && Math.abs(last.value - value) <= 0.011 ? last.date : null;
+    const times = daily?.timestamps || daily?.timestamp || [];
+    const closes = daily?.closes || daily?.indicators?.quote?.[0]?.close || [];
+    const completed = [];
+    for (let i = 0; i < times.length; i++) {
+      const time = seconds(times[i]), price = number(closes[i]);
+      const date = time == null ? null : dateParts(time, zone)?.date;
+      if (time != null && time <= snapshot.priceAt && price != null && price > 0 && date && date < snapshot.tradingDate) {
+        completed.push({ time, date, price });
+      }
+    }
+    completed.sort((a, b) => a.time - b.time);
+    const previous = completed[completed.length - 1];
+    return previous ? { price: previous.price, date: previous.date } : null;
   }
 
   function baseSnapshot(input, source, actualSymbol) {
@@ -147,9 +153,10 @@
     return getSessionState(now, config).state;
   }
 
-  function setReference(snapshot, price, date, type) {
-    if (price == null || !REFERENCE_TYPES.includes(type)) return;
-    snapshot.reference = { price, date: validDate(date) ? date : null, type, source: snapshot.source, symbol: snapshot.symbol };
+  function setReference(snapshot, price, date, type, basis) {
+    if (price == null || price <= 0 || snapshot.price == null || snapshot.price <= 0
+      || !REFERENCE_TYPES.includes(type) || basis !== 'daily-close') return;
+    snapshot.reference = { price, date: validDate(date) ? date : null, type, basis, source: snapshot.source, symbol: snapshot.symbol };
     snapshot.change = snapshot.price == null ? null : snapshot.price - price;
     snapshot.changePercent = snapshot.change != null && price > 0 ? snapshot.change / price * 100 : null;
   }
@@ -165,15 +172,8 @@
     snapshot.marketState = marketState(input.marketState || meta.marketState, snapshot.fetchedAt, input.sessionConfig);
     snapshot.delaySeconds = Math.max(0, number(input.delaySeconds) ?? ((number(meta.exchangeDataDelayedBy) || 0) * 60));
     snapshot.series = seriesFrom(input.historyRaw, snapshot.symbol, 'yahoo', snapshot.priceAt);
-    // Only the explicit quote's previousClose is eligible. A monthly chart's
-    // chartPreviousClose is the range's opening reference and is never yesterday.
-    const referencePrice = number(meta.previousClose);
-    if (referencePrice != null) {
-      const explicitDate = meta.previousCloseDate || quote.previousCloseDate;
-      const date = validDate(explicitDate) && (!snapshot.tradingDate || explicitDate < snapshot.tradingDate)
-        ? explicitDate : referenceDateFromDaily(input.dailyRaw, referencePrice, snapshot, input.sessionConfig);
-      setReference(snapshot, referencePrice, date, 'previous-close');
-    }
+    const previous = previousDailyClose(input.dailyRaw, snapshot, input.sessionConfig);
+    if (previous) setReference(snapshot, previous.price, previous.date, 'previous-close', 'daily-close');
     snapshot.status = classifyFreshness(snapshot, snapshot.fetchedAt, input.freshness);
     return snapshot;
   }
@@ -193,16 +193,7 @@
     snapshot.marketState = marketState(raw.marketState, snapshot.fetchedAt, input.sessionConfig);
     const delayMatch = String(raw.updateMode || raw.update_mode || '').match(/delayed[^\d]*(\d+)/);
     snapshot.delaySeconds = Math.max(0, number(raw.delaySeconds) ?? (delayMatch ? Number(delayMatch[1]) : 0));
-    const providerChange = number(raw.changeAbs ?? raw.change);
-    const providerPercent = number(raw.changePercent);
-    const previous = number(raw.previousClose) ?? (snapshot.price != null && providerChange != null ? snapshot.price - providerChange : null);
-    if (previous != null && (raw.referenceVerified === true || providerChange != null)) {
-      setReference(snapshot, previous, raw.referenceDate, raw.referenceType || 'provider-reference');
-      if (providerChange != null && Math.abs((snapshot.price - previous) - providerChange) <= 0.011) {
-        snapshot.change = providerChange;
-        if (providerPercent != null) snapshot.changePercent = providerPercent;
-      }
-    }
+    // Provider change fields are not a same-symbol completed daily bar.
     // A TV quote never borrows Yahoo's history or reference price.
     snapshot.series = Array.isArray(raw.series) ? raw.series.filter(p => seconds(p.time) != null && number(p.value) != null)
       .map(p => ({ time: seconds(p.time), value: number(p.value) })).filter(p => snapshot.priceAt == null || p.time <= snapshot.priceAt)
@@ -250,10 +241,12 @@
     if (snapshot.price == null && (snapshot.change !== null || snapshot.changePercent !== null)) errors.push('change-without-price');
     const ref = snapshot.reference;
     if (ref) {
-      if (typeof ref.price !== 'number' || !Number.isFinite(ref.price)) errors.push('invalid-reference-price');
+      if (typeof ref.price !== 'number' || !Number.isFinite(ref.price) || ref.price <= 0) errors.push('invalid-reference-price');
       if (ref.source !== snapshot.source || ref.symbol !== snapshot.symbol) errors.push('reference-identity-mismatch');
       if (!REFERENCE_TYPES.includes(ref.type)) errors.push('invalid-reference-type');
-      if (ref.date !== null && (!validDate(ref.date) || (snapshot.tradingDate && ref.date >= snapshot.tradingDate))) errors.push('invalid-reference-date');
+      if (ref.basis !== 'daily-close') errors.push('invalid-reference-basis');
+      if (!validDate(ref.date) || !snapshot.tradingDate || ref.date >= snapshot.tradingDate) errors.push('invalid-reference-date');
+      if (snapshot.price == null || snapshot.price <= 0 || snapshot.change == null || snapshot.changePercent == null) errors.push('missing-daily-change');
       if (snapshot.price != null && snapshot.change != null && Math.abs(snapshot.price - ref.price - snapshot.change) > 0.02) errors.push('change-reference-mismatch');
       if (snapshot.changePercent != null && (ref.price <= 0 || snapshot.change == null
         || Math.abs(snapshot.changePercent - snapshot.change / ref.price * 100) > 0.02)) errors.push('percent-reference-mismatch');

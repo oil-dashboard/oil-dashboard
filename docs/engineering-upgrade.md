@@ -4,9 +4,11 @@ Scope: quote/reference correctness, source provenance, trading-session history, 
 
 ## Correctness regressions
 
-- The same price and explicit quote.previousClose produce the same change before and after New York midnight. No SGT noon reset is used.
-- The observed monthly chartPreviousClose, prior daily close and continuous-contract roll may disagree with the current quote reference; none overrides the same quote's explicit base.
-- Quotes and references from different instruments or providers cannot be mixed. Unknown reference dates stay unknown.
+- Absolute and percentage change use the latest completed daily close for the exact same symbol and source, with an exchange-local bar date before the quote's session trading date. Weekends and holidays select the latest available earlier daily bar.
+- The previous daily close is selected by exchange trading date, not SGT calendar date, so a quote during Singapore morning and afternoon of the same exchange session uses the same baseline. The NYMEX continuous quotes use the New York session boundary.
+- If the same-symbol prior daily bar is missing or invalid, both change fields stay null and the UI states that the daily previous close is unavailable. It never falls back to quote.previousClose, chartPreviousClose, or another symbol/source, and does not show a pending-confirmation label.
+- Monthly chartPreviousClose and quote.previousClose can differ from the prior daily close, especially around a continuous-contract roll. They are informational context only and do not override the daily-close baseline; the UI never calls that baseline an official settlement.
+- The API retains the legacy `previous-close` reference type for the current frontend and marks the rule with `basis: daily-close`. New clients reject legacy cached references without that basis.
 - TradingView provider update time is separate from market price time; ten-minute delayed feeds remain delayed and cannot manufacture a synchronized spread.
 - UTC timestamps remain unshifted. Exchange trading-date templates and IANA time zones determine sessions; complete holiday coverage is never claimed without a calendar.
 - Full 1D futures-session history includes the Singapore morning rather than starting at New York midnight.
@@ -33,7 +35,7 @@ The upgrade is merged and live. GitHub Pages commit `7a6e895f6fb58ef08bfa31726a7
 ## Known product limits
 
 - Public feeds are delayed; this release does not promise exchange-authorized real-time prices.
-- Yahoo's provider previousClose is labeled source previous close, not official settlement. Continuous-roll reference dates can remain unconfirmed.
+- Public feed daily closes form the comparison baseline and are not represented as official exchange settlement prices. Continuous-contract rolls can make Yahoo's provider previousClose differ from the prior daily close for the same symbol; the provider field is not used as the baseline.
 - Curves represent nearest unexpired concrete contracts and can differ from a continuous instrument's already-rolled active month.
 - EIA schedule is dynamically verified with bounded coverage; API annual dates and monthly report dates have an explicit source-coverage end. Unverified future releases are omitted.
 - Calendar actual/consensus/previous are unavailable until reliable statistic providers are added, and show em dashes.

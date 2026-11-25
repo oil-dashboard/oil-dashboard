@@ -55,7 +55,7 @@ function harness(fetchImpl) {
 function response(data, status = 200) { return { ok: status >= 200 && status < 300, status, json: async () => clone(data) }; }
 function quote(instrument = 'brent', overrides = {}) {
   const price = instrument === 'brent' ? 91 : 85, symbol = instrument === 'brent' ? 'BZ=F' : 'CL=F';
-  return { instrument, symbol, contract: 'continuous-front', exchange: 'NYMEX', currency: 'USD', source: 'yahoo', price, priceAt: NOW - 20, fetchedAt: NOW, tradingDate: '2026-11-25', reference: { price: price - 1, date: '2026-11-24', type: 'previous-close', source: 'yahoo', symbol }, change: 1, changePercent: 100 / (price - 1), status: 'fresh', marketState: 'unknown', delaySeconds: 0, providerUpdatedAt: null, timeBasis: 'market-time', historySource: 'yahoo', historySymbol: symbol, series: [{ time: NOW - 320, value: price - .2 }, { time: NOW - 20, value: price }], ...overrides };
+  return { instrument, symbol, contract: 'continuous-front', exchange: 'NYMEX', currency: 'USD', source: 'yahoo', price, priceAt: NOW - 20, fetchedAt: NOW, tradingDate: '2026-11-25', reference: { price: price - 1, date: '2026-11-24', type: 'previous-close', basis: 'daily-close', source: 'yahoo', symbol }, change: 1, changePercent: 100 / (price - 1), status: 'fresh', marketState: 'unknown', delaySeconds: 0, providerUpdatedAt: null, timeBasis: 'market-time', historySource: 'yahoo', historySymbol: symbol, series: [{ time: NOW - 320, value: price - .2 }, { time: NOW - 20, value: price }], ...overrides };
 }
 function syncSpread(data) {
   const a = data.instruments.brent, b = data.instruments.wti;
@@ -86,7 +86,7 @@ test('instrument switches replace series and reference lines, including unavaila
   assert.equal(series.data.at(-1).value, 85);
   assert.equal(series.lines.size, 0);
   assert.equal(h.elements.get('wtiChange').textContent, '—');
-  assert.match(h.elements.get('wtiReference').textContent, /比较基准待确认/);
+  assert.match(h.elements.get('wtiReference').textContent, /日线前收暂不可用/);
   h.ui.selectInstrument('spread');
   assert.equal(series.data.at(-1).value, 6);
   assert.equal(h.elements.get('chartSymbol').textContent, 'Brent − WTI');
@@ -95,12 +95,13 @@ test('instrument switches replace series and reference lines, including unavaila
   assert.match(h.elements.get('chartDataRows').innerHTML, /6.00/);
 });
 
-test('unknown reference date retains verified provider change without inventing a date or chart line', () => {
+test('a daily-close reference without a valid prior trading date is rejected', () => {
   const h = harness(), data = payload(); data.instruments.brent.reference.date = null;
   h.ui.renderSnapshot(data);
-  assert.match(h.elements.get('brentChange').textContent, /\+1.00/);
-  assert.match(h.elements.get('brentReference').textContent, /日期待确认/);
-  assert.equal(h.charts[0].series.lines.size, 0);
+  assert.equal(h.elements.get('brentChange').textContent, '—');
+  assert.match(h.elements.get('brentReference').textContent, /日线前收暂不可用/);
+  assert.doesNotMatch(h.elements.get('brentReference').textContent, /待确认/);
+  assert.equal(h.charts.length, 0);
 });
 
 test('TradingView fallback displays source update and ten-minute delay while clearing old chart and spread', () => {
@@ -110,7 +111,7 @@ test('TradingView fallback displays source update and ten-minute delay while cle
   h.ui.renderSnapshot(data);
   assert.match(h.elements.get('brentTime').textContent, /源更新.*SGT · 成交时间未提供/);
   assert.match(h.elements.get('brentStatus').textContent, /延迟 10 分钟/);
-  assert.match(h.elements.get('brentReference').textContent, /来源比较基准.*日期待确认/);
+  assert.match(h.elements.get('brentReference').textContent, /日线前收暂不可用/);
   assert.equal(h.elements.get('spreadValue').textContent, '—');
   assert.equal(h.charts[0].series.data.length, 0);
   assert.equal(h.charts[0].series.lines.size, 0);

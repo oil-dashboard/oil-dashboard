@@ -4,7 +4,7 @@
 
   const RANGES = new Set(['1d', '5d', '1mo']);
   const INSTRUMENTS = new Set(['brent', 'wti', 'spread']);
-  const CACHE_PREFIX = 'oil_market_snapshot_v1:';
+  const CACHE_PREFIX = 'oil_market_snapshot_v2:';
   const CACHE_TTL_MS = 30 * 60 * 1000;
   const STATUS_LABELS = { fresh: '最新报价', delayed: '延迟报价', stale: '数据过期', closed: '休市', unavailable: '暂无报价' };
   const state = {
@@ -31,13 +31,13 @@
     return `${signed && value > 0 ? '+' : ''}${value.toFixed(2)}`;
   }
   function formatTime(timestamp, options = {}) {
-    if (!finite(timestamp) || timestamp <= 0) return '时间待确认';
+    if (!finite(timestamp) || timestamp <= 0) return '时间不可用';
     try {
       return new Intl.DateTimeFormat('zh-CN', {
         timeZone: 'Asia/Singapore', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false,
         ...options,
       }).format(new Date(timestamp * 1000)) + ' SGT';
-    } catch { return '时间待确认'; }
+    } catch { return '时间不可用'; }
   }
   function shortTime(timestamp) {
     if (!finite(timestamp) || timestamp <= 0) return '—';
@@ -59,17 +59,17 @@
       ? '源更新 ' + formatTime(snapshot.providerUpdatedAt) + ' · 成交时间未提供'
       : '行情更新 ' + formatTime(snapshot?.priceAt);
   }
-  function validReference(snapshot, requireDate = false) {
+  function validReference(snapshot) {
     const ref = snapshot?.reference;
-    return Boolean(ref && finite(ref.price) && ref.price > 0 && ref.symbol === snapshot.symbol && ref.source === snapshot.source &&
-      (!requireDate || /^\d{4}-\d{2}-\d{2}$/.test(ref.date || '')));
+    return Boolean(ref && ref.type === 'previous-close' && ref.basis === 'daily-close' && finite(ref.price) && ref.price > 0
+      && ref.symbol === snapshot.symbol && ref.source === snapshot.source
+      && /^\d{4}-\d{2}-\d{2}$/.test(ref.date || '') && snapshot.tradingDate && ref.date < snapshot.tradingDate);
   }
   function referenceText(snapshot) {
-    if (!validReference(snapshot)) return '比较基准待确认 · 涨跌幅暂不显示';
+    if (!validReference(snapshot)) return '日线前收暂不可用 · 涨跌幅暂不显示';
     const ref = snapshot.reference;
-    const kind = ref.type === 'previous-settlement' ? '前结算' : ref.type === 'provider-reference' ? '来源比较基准' : '来源前收';
     const date = /^\d{4}-\d{2}-\d{2}$/.test(ref.date || '') ? ref.date.slice(5).replace('-', '/') : null;
-    return `${date ? '较 ' + date + ' ' : ''}${kind} $${money(ref.price)}${date ? '' : ' · 日期待确认'}`;
+    return `较 ${date} 日线收盘 $${money(ref.price)}`;
   }
   function quoteStatus(snapshot) {
     if (!snapshot || !finite(snapshot.price)) return 'unavailable';
@@ -156,7 +156,7 @@
   }
   function sourceLabel(snapshot) {
     const source = snapshot?.source;
-    if (!source) return '来源待确认';
+    if (!source) return '来源不可用';
     const names = { yahoo: 'Yahoo Finance', 'yahoo-finance': 'Yahoo Finance', tradingview: 'TradingView' };
     return names[source] || source;
   }
@@ -164,7 +164,7 @@
     const status = quoteStatus(snapshot);
     const price = finite(snapshot?.price) ? snapshot.price : null;
     text(key + 'Price', price == null ? '—' : '$' + money(price));
-    text(key + 'Instrument', [snapshot?.symbol, snapshot?.contract === 'continuous-front' ? '连续近月' : snapshot?.contract, snapshot?.exchange].filter(Boolean).filter((v, i, a) => a.indexOf(v) === i).join(' · ') || '合约待确认');
+    text(key + 'Instrument', [snapshot?.symbol, snapshot?.contract === 'continuous-front' ? '连续近月' : snapshot?.contract, snapshot?.exchange].filter(Boolean).filter((v, i, a) => a.indexOf(v) === i).join(' · ') || '合约信息加载中');
     const hasChange = validReference(snapshot) && finite(snapshot?.change) && finite(snapshot?.changePercent);
     const changeEl = element(key + 'Change');
     if (changeEl) {
@@ -176,7 +176,7 @@
     if (statusEl) { statusEl.textContent = (cached ? '缓存 · ' : '') + statusLabel(snapshot, status); statusEl.className = 'quote-status status-' + (cached && status === 'fresh' ? 'delayed' : status); }
     text(key + 'Reference', referenceText(snapshot));
     text(key + 'Time', timeLabel(snapshot));
-    const detail = [sourceLabel(snapshot), snapshot?.currency ? `${snapshot.currency} / 桶` : '', snapshot?.tradingDate ? `交易日 ${snapshot.tradingDate}` : '交易日待确认'];
+    const detail = [sourceLabel(snapshot), snapshot?.currency ? `${snapshot.currency} / 桶` : '', snapshot?.tradingDate ? `交易日 ${snapshot.tradingDate}` : '交易日不可用'];
     text(key + 'Source', detail.filter(Boolean).join(' · '));
   }
   function alignedSpread(payload) {
@@ -213,8 +213,8 @@
     if (message) {
       message.dataset.status = status;
       let description = {
-        fresh: '涨跌以各行情源同合约的比较基准计算，报价时间与交易日见上方。',
-        delayed: '行情源提供延迟报价；源更新时间与实际成交时间分别标注，涨跌使用同源同合约基准。',
+        fresh: '涨跌以同一合约上一交易日的日线收盘价为基准；新加坡早晚使用同一交易日口径。',
+        delayed: '行情源提供延迟报价；源更新时间与实际成交时间分别标注，涨跌仍以同合约日线收盘价为基准。',
         stale: '部分行情已过期或缺失，比较前请核对来源与行情时间。',
         closed: '市场休市，显示最后可核对的报价与比较基准。',
         unavailable: '行情暂不可用，价格与涨跌幅将在恢复后显示。',
@@ -369,11 +369,11 @@
     state.chartIdentity = identity;
     if (state.referenceLine) state.series.removePriceLine(state.referenceLine);
     state.referenceLine = null;
-    if (validReference(data.snapshot, true)) {
-      state.referenceLine = state.series.createPriceLine({ price: data.snapshot.reference.price, color: '#8e9eaf', lineWidth: 1, lineStyle: 2, axisLabelVisible: true, title: data.snapshot.reference.type === 'previous-settlement' ? '前结算' : '前收' });
+    if (validReference(data.snapshot)) {
+      state.referenceLine = state.series.createPriceLine({ price: data.snapshot.reference.price, color: '#8e9eaf', lineWidth: 1, lineStyle: 2, axisLabelVisible: true, title: '日线前收' });
     }
     if (empty) empty.hidden = true;
-    const basis = validReference(data.snapshot, true) ? referenceText(data.snapshot) + ' · SGT' : '时间：SGT · 单位：美元 / 桶';
+    const basis = validReference(data.snapshot) ? referenceText(data.snapshot) + ' · SGT' : '时间：SGT · 单位：美元 / 桶';
     const eventCount = renderEventMarkers(data, identity);
     text('chartBasis', basis + (data.snapshot?.historyWarning === 'continuous-series-may-contain-roll-gap' ? ' · 连续合约换月可能产生跳空' : '') + (eventCount ? ' · 事件按发布时间标记' : ''));
   }
