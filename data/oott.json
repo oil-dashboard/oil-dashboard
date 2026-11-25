@@ -28,14 +28,14 @@
     "url": "https://x.com/JavierBlas/status/2125502427721875806",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 126,
-    "retweets": 18,
-    "replies": 7,
-    "engagement": 183,
+    "likes": 245,
+    "retweets": 29,
+    "replies": 19,
+    "engagement": 360,
     "isRetweet": false,
     "relevance": 20,
-    "rawScore": 20183,
-    "score": 20183
+    "rawScore": 20360,
+    "score": 20360
   },
   {
     "id": "2125324240077623432",
@@ -47,14 +47,52 @@
     "url": "https://x.com/JavierBlas/status/2125324240077623432",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 167,
-    "retweets": 27,
-    "replies": 11,
-    "engagement": 254,
+    "likes": 174,
+    "retweets": 28,
+    "replies": 13,
+    "engagement": 269,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28254,
-    "score": 12714
+    "rawScore": 28269,
+    "score": 12721
+  },
+  {
+    "id": "2125534671798685901",
+    "text": "Iran says ships hit mines in Hormuz, warns vessels to coordinate passage https://t.co/jr0yYhCmH4",
+    "createdAt": "2026-11-25T10:18:50+00:00",
+    "tweetTime": 1795601930000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2125534671798685901",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 0,
+    "retweets": 0,
+    "replies": 0,
+    "engagement": 0,
+    "isRetweet": false,
+    "relevance": 10,
+    "rawScore": 10000,
+    "score": 10000
+  },
+  {
+    "id": "2125520773464867212",
+    "text": "#India’s imports of Russian crude are set to decline this month to pre-war levels as a revival of Middle East exports provides buyers with an abundance of cheaper supplies #oott https://t.co/hvvY6gcZ2M",
+    "createdAt": "2026-11-25T09:23:37+00:00",
+    "tweetTime": 1795598617000,
+    "username": "staunovo",
+    "displayName": "Giovanni Staunovo🛢",
+    "url": "https://x.com/staunovo/status/2125520773464867212",
+    "photoUrl": null,
+    "hasPhoto": false,
+    "likes": 8,
+    "retweets": 1,
+    "replies": 0,
+    "engagement": 10,
+    "isRetweet": false,
+    "relevance": 20,
+    "rawScore": 20010,
+    "score": 20010
   },
   {
     "id": "2125503289454186908",
@@ -66,14 +104,14 @@
     "url": "https://x.com/staunovo/status/2125503289454186908",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 2,
+    "likes": 3,
     "retweets": 0,
     "replies": 0,
-    "engagement": 2,
+    "engagement": 3,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28002,
-    "score": 28002
+    "rawScore": 28003,
+    "score": 28003
   },
   {
     "id": "2125503207447089244",
@@ -114,25 +152,6 @@
     "score": 58008
   },
   {
-    "id": "2125492136233848839",
-    "text": "UK households are set for a sharp rise in energy costs in January as the Middle East war pushes up wholesale prices https://t.co/5BzIvLmJLW",
-    "createdAt": "2026-11-25T07:29:49+00:00",
-    "tweetTime": 1795591789000,
-    "username": "staunovo",
-    "displayName": "Giovanni Staunovo🛢",
-    "url": "https://x.com/staunovo/status/2125492136233848839",
-    "photoUrl": null,
-    "hasPhoto": false,
-    "likes": 4,
-    "retweets": 0,
-    "replies": 0,
-    "engagement": 4,
-    "isRetweet": false,
-    "relevance": 10,
-    "rawScore": 10004,
-    "score": 10004
-  },
-  {
     "id": "2125367769252200757",
     "text": "Anyone who believes that only one tanker crossed Hormuz yesterday is at this point being willfully ignorant.\n\nWe literally have more tankers being attacked daily than that.",
     "createdAt": "2026-11-24T23:15:38+00:00",
@@ -142,14 +161,14 @@
     "url": "https://x.com/Rory_Johnston/status/2125367769252200757",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 171,
+    "likes": 178,
     "retweets": 5,
     "replies": 13,
-    "engagement": 220,
+    "engagement": 227,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28220,
-    "score": 18343
+    "rawScore": 28227,
+    "score": 18348
   },
   {
     "id": "2125284941856420094",
@@ -180,14 +199,14 @@
     "url": "https://x.com/Rory_Johnston/status/2125282743143870624",
     "photoUrl": "https://pbs.twimg.com/media/HX6FXB4XUAARm4r.png",
     "hasPhoto": true,
-    "likes": 240,
+    "likes": 243,
     "retweets": 7,
     "replies": 6,
-    "engagement": 272,
+    "engagement": 275,
     "isRetweet": false,
     "relevance": 10,
-    "rawScore": 10572,
-    "score": 4757
+    "rawScore": 10575,
+    "score": 4759
   },
   {
     "id": "2125265110583361962",
@@ -199,14 +218,14 @@
     "url": "https://x.com/Rory_Johnston/status/2125265110583361962",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 444,
+    "likes": 451,
     "retweets": 36,
     "replies": 18,
-    "engagement": 570,
+    "engagement": 577,
     "isRetweet": false,
     "relevance": 30,
-    "rawScore": 30570,
-    "score": 13757
+    "rawScore": 30577,
+    "score": 9173
   },
   {
     "id": "2125242336741625967",
@@ -218,13 +237,13 @@
     "url": "https://x.com/Rory_Johnston/status/2125242336741625967",
     "photoUrl": "https://pbs.twimg.com/media/HX5goXqWIAAJeUG.png",
     "hasPhoto": true,
-    "likes": 245,
+    "likes": 247,
     "retweets": 7,
     "replies": 19,
-    "engagement": 316,
+    "engagement": 318,
     "isRetweet": false,
     "relevance": 28,
-    "rawScore": 28616,
+    "rawScore": 28618,
     "score": 8585
   },
   {
@@ -244,7 +263,7 @@
     "isRetweet": false,
     "relevance": 28,
     "rawScore": 28321,
-    "score": 24073
+    "score": 18409
   },
   {
     "id": "2125374289004404807",
@@ -256,13 +275,13 @@
     "url": "https://x.com/OilHeadlineNews/status/2125374289004404807",
     "photoUrl": null,
     "hasPhoto": false,
-    "likes": 18,
+    "likes": 19,
     "retweets": 1,
     "replies": 3,
-    "engagement": 29,
+    "engagement": 30,
     "isRetweet": false,
     "relevance": 18,
-    "rawScore": 18029,
-    "score": 11719
+    "rawScore": 18030,
+    "score": 11720
   }
 ]
