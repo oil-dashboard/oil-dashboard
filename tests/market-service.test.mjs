@@ -59,7 +59,7 @@ function mockYahoo({ failQuote = false, wrongSymbol = false } = {}) {
   };
 }
 
-test('market returns final same-symbol quotes, explicit quote bases and matched history', async () => {
+test('market returns final same-symbol quotes, prior daily closes and matched history', async () => {
   const handle = createMarketService({ fetchImpl: mockYahoo(), now: () => NOW });
   const result = await handle(new Request('https://worker.test/api/market?range=5d'));
   assert.equal(result.status, 200);
@@ -67,6 +67,9 @@ test('market returns final same-symbol quotes, explicit quote bases and matched 
   assert.equal(data.schemaVersion, 1);
   assert.equal(data.instruments.brent.symbol, 'BZ=F');
   assert.equal(data.instruments.brent.reference.price, 88.78);
+  assert.equal(data.instruments.brent.reference.date, '2026-11-24');
+  assert.equal(data.instruments.brent.reference.type, 'previous-close');
+  assert.equal(data.instruments.brent.reference.basis, 'daily-close');
   assert.equal(data.instruments.brent.historySymbol, 'BZ=F');
   assert.equal(data.instruments.brent.series.length, 2);
   assert.equal(data.instruments.wti.symbol, 'CL=F');
@@ -74,7 +77,7 @@ test('market returns final same-symbol quotes, explicit quote bases and matched 
   assert.equal(data.spread.series.length, 2);
   assert.deepEqual(data.spread.symbols, { brent: 'BZ=F', wti: 'CL=F' });
   assert.equal(data.spread.series[0].time, NOW - 320);
-  assert.equal(data.provenance.referencePolicy, 'same-source-same-symbol');
+  assert.equal(data.provenance.referencePolicy, 'previous-completed-daily-bar-exact-symbol');
   assert.equal(data.instruments.brent.historyWarning, 'continuous-series-may-contain-roll-gap');
 });
 
@@ -124,8 +127,9 @@ test('independent TradingView fallback carries its own basis and provider update
   assert.equal(brent.providerUpdatedAt, NOW - 25);
   assert.equal(brent.delaySeconds, 600);
   assert.equal(brent.status, 'delayed');
-  assert.equal(brent.reference.price, 89);
-  assert.equal(brent.reference.date, null);
+  assert.equal(brent.reference, null);
+  assert.equal(brent.change, null);
+  assert.equal(brent.changePercent, null);
   assert.deepEqual(brent.series, []);
   assert.equal(brent.historySource, null);
   assert.equal(data.spread.price, null);

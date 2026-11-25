@@ -138,12 +138,12 @@
     const items = Array.isArray(calendar?.events) ? calendar.events : [];
     const now = Date.now() / 1000;
     const rows = items.map(event => {
-      const time = event.dateOnly ? `${event.date} · 时刻待确认` : `${formatTime(event.at)} SGT${event.approximate ? ' 左右' : ''}`;
+      const time = event.dateOnly ? `${event.date} · 时间未公布` : `${formatTime(event.at)} SGT${event.approximate ? ' 左右' : ''}`;
       const status = event.dateOnly ? '日期已确认' : (event.at < now ? '到达计划时点' : '计划发布');
       const url = /^https:\/\//.test(event.sourceUrl || '') ? event.sourceUrl : '#';
       return `<tr><th scope="row"><a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(event.title)}</a><small>${esc(event.source)} · ${esc(status)}</small></th><td>${esc(time)}</td><td>—</td><td>—</td><td>—</td></tr>`;
     }).join('');
-    el.innerHTML = `<div class="calendar-table-wrap"><table class="calendar-table"><caption class="sr-only">官方能源发布日历；前值预期和实际无已核验数据时为空</caption><thead><tr><th scope="col">事件 / 原始来源</th><th scope="col">发布时间</th><th scope="col">前值</th><th scope="col">预期</th><th scope="col">实际</th></tr></thead><tbody>${rows || '<tr><td colspan="5">当前覆盖范围内暂无已确认日程</td></tr>'}</tbody></table></div><p class="calendar-note">${esc(calendar?.note || '')} 日程核验：${calendar?.checkedAt ? esc(formatTime(calendar.checkedAt)) + ' SGT' : '待确认'}${calendar?.status === 'cached-schedule' ? ' · 使用已核验日程存档' : ''}。</p>`;
+    el.innerHTML = `<div class="calendar-table-wrap"><table class="calendar-table"><caption class="sr-only">官方能源发布日历；前值预期和实际无可靠数据时为空</caption><thead><tr><th scope="col">事件 / 原始来源</th><th scope="col">发布时间</th><th scope="col">前值</th><th scope="col">预期</th><th scope="col">实际</th></tr></thead><tbody>${rows || '<tr><td colspan="5">当前覆盖范围内暂无发布日程</td></tr>'}</tbody></table></div><p class="calendar-note">${esc(calendar?.note || '')} 日程核验：${calendar?.checkedAt ? esc(formatTime(calendar.checkedAt)) + ' SGT' : '核验时间暂不可用'}${calendar?.status === 'cached-schedule' ? ' · 使用已核验日程存档' : ''}。</p>`;
   }
   async function loadMetadata() {
     if (state.metadataLoaded) return;

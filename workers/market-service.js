@@ -199,7 +199,7 @@ export function createMarketService({ fetchImpl = globalThis.fetch, now = () => 
         providerUpdatedAt: finite(row.last_bar_update_time), timeBasis: 'provider-update',
         change: finite(row.change_abs), changePercent: finite(row.change),
         updateMode: row.update_mode, delaySeconds: delaySeconds(row.update_mode),
-        sourceTimeType: 'bar-update', referenceType: 'provider-reference', referenceVerified: true,
+        sourceTimeType: 'bar-update',
         marketState: row.current_session === 'market' ? 'open' : undefined, series: [],
       },
     });
@@ -253,8 +253,8 @@ export function createMarketService({ fetchImpl = globalThis.fetch, now = () => 
       instruments, spread: marketSpread(instruments, fetchedAt),
       provenance: {
         primary: 'Yahoo Finance · NYMEX continuous futures',
-        fallback: 'TradingView · exact exchange continuous futures · provider-defined reference',
-        referencePolicy: 'same-source-same-symbol',
+        fallback: 'TradingView · exact exchange continuous futures · daily-close comparison unavailable without same-symbol daily bars',
+        referencePolicy: 'previous-completed-daily-bar-exact-symbol',
       },
     };
   }
