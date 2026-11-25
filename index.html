@@ -5,22 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Oil Dashboard — 油市情报看板</title>
 <meta name="description" content="实时油市情报看板 — Brent/WTI价格、OOTT热门推文、伊朗局势、Polymarket预测">
-<meta name="theme-color" content="#111827">
+<meta name="theme-color" content="#0b1018">
+<meta name="color-scheme" content="dark">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛢️</text></svg>">
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛢️</text></svg>">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#marketWorkspace">跳到行情</a>
   <header id="topBar">
     <div class="top-left">
-      <h1>🛢️ Oil Dashboard</h1>
+      <h1><span class="brand-mark" aria-hidden="true">O</span> Oil Dashboard</h1>
       <span class="sub">喆思｜油市冲浪</span>
     </div>
     <div class="top-right">
       <div class="status-row">
-        <span id="sourceStatus" class="source-status">⏳</span>
-        <span class="live-dot" id="liveDot"></span>
+        <span id="sourceStatus" class="source-status" role="status">行情加载中</span>
+        <span class="live-dot" id="liveDot" aria-hidden="true"></span>
         <span id="updateTime" class="update-time">Loading...</span>
         <span id="refreshStatus" class="refresh-status"></span>
         <span id="countdownTimer" class="countdown-timer">5:00</span>
@@ -28,34 +30,72 @@
     </div>
   </header>
 
-  <section id="situationBanner" class="situation-banner">
-    <div class="tension-box">
-      <div class="tension-label">🇮🇷 Tension</div>
-      <div class="tension-value" id="tensionValue">—</div>
-      <div class="tension-desc" id="tensionDesc">Loading...</div>
+  <section id="marketWorkspace" class="market-workspace" aria-labelledby="marketHeading" tabindex="-1">
+    <div class="section-heading market-heading">
+      <div><p class="eyebrow">ENERGY MARKETS</p><h2 id="marketHeading">原油行情</h2></div>
+      <div class="market-tools"><span id="marketLastSuccess" class="utility-text">等待报价</span><button id="marketRefresh" class="text-button" type="button" aria-label="刷新行情">刷新行情 ↻</button></div>
     </div>
-    <div class="price-boxes">
-      <div class="price-box" id="brentBox">
-        <div class="price-label">Brent</div>
-        <div class="price-value" id="brentPrice">—</div>
-        <div class="price-change" id="brentChange">—</div>
-        <div class="sparkline" id="brentSpark"></div>
-        <div class="price-timestamp" id="brentTime"></div>
-      </div>
-      <div class="price-box" id="wtiBox">
-        <div class="price-label">WTI</div>
-        <div class="price-value" id="wtiPrice">—</div>
-        <div class="price-change" id="wtiChange">—</div>
-        <div class="sparkline" id="wtiSpark"></div>
-        <div class="price-timestamp" id="wtiTime"></div>
-      </div>
-      <div class="price-box spread-box">
-        <div class="price-label">Spread</div>
-        <div class="price-value" id="spreadValue">—</div>
+    <div id="situationBanner" class="situation-banner" aria-label="原油价格与比较基准">
+      <div class="price-boxes">
+        <article class="price-box" id="brentBox" aria-labelledby="brentLabel">
+          <div class="price-card-heading"><h3 class="price-label" id="brentLabel">Brent <span>布伦特</span></h3><span id="brentStatus" class="quote-status">等待报价</span></div>
+          <p id="brentInstrument" class="instrument-label">合约待确认</p>
+          <div class="quote-line"><div class="price-value" id="brentPrice">—</div><div class="price-change" id="brentChange">—</div></div>
+          <div class="price-reference" id="brentReference">比较基准待确认</div>
+          <div class="price-timestamp" id="brentTime">行情时间待确认</div>
+          <div class="quote-detail" id="brentSource">来源待确认</div>
+          <div class="sparkline" id="brentSpark" hidden></div>
+        </article>
+        <article class="price-box" id="wtiBox" aria-labelledby="wtiLabel">
+          <div class="price-card-heading"><h3 class="price-label" id="wtiLabel">WTI <span>美国原油</span></h3><span id="wtiStatus" class="quote-status">等待报价</span></div>
+          <p id="wtiInstrument" class="instrument-label">合约待确认</p>
+          <div class="quote-line"><div class="price-value" id="wtiPrice">—</div><div class="price-change" id="wtiChange">—</div></div>
+          <div class="price-reference" id="wtiReference">比较基准待确认</div>
+          <div class="price-timestamp" id="wtiTime">行情时间待确认</div>
+          <div class="quote-detail" id="wtiSource">来源待确认</div>
+          <div class="sparkline" id="wtiSpark" hidden></div>
+        </article>
+        <article class="price-box spread-box" aria-labelledby="spreadLabel">
+          <div class="price-card-heading"><h3 class="price-label" id="spreadLabel">Brent − WTI</h3><span id="spreadStatus" class="quote-status">等待对齐</span></div>
+          <p class="instrument-label">同源 · 同时点价差</p>
+          <div class="price-value" id="spreadValue">—</div>
+          <p class="price-reference" id="spreadReference">等待两地行情</p>
+          <div class="price-timestamp" id="spreadTime">单位：美元 / 桶</div>
+          <div class="quote-detail" id="spreadSource"></div>
+        </article>
       </div>
     </div>
+    <div id="marketDataStatus" class="market-data-status" role="status" aria-live="polite">正在核对行情与比较基准…</div>
+
+    <div class="market-detail-grid">
+      <section class="price-chart-section" aria-labelledby="chartHeading">
+        <div class="chart-toolbar">
+          <div class="chart-title-group"><h3 id="chartHeading">价格走势</h3><div id="chartInstruments" class="segmented-control" role="group" aria-label="选择走势图">
+            <button type="button" data-chart-instrument="brent" aria-pressed="true">Brent</button><button type="button" data-chart-instrument="wti" aria-pressed="false">WTI</button><button type="button" data-chart-instrument="spread" aria-pressed="false">价差</button>
+          </div></div>
+          <div id="chartRanges" class="segmented-control" role="group" aria-label="选择图表时间范围"><button type="button" data-chart-range="1d" aria-pressed="true">1D</button><button type="button" data-chart-range="5d" aria-pressed="false">5D</button><button type="button" data-chart-range="1mo" aria-pressed="false">1M</button></div>
+        </div>
+        <div class="chart-readout"><span id="chartSymbol">—</span><span id="chartValue"></span><span id="chartTime"></span></div>
+        <div class="market-chart-wrap"><div id="marketChart" class="market-chart" role="img" aria-label="原油价格交互走势图" aria-describedby="chartDescription"></div><div id="chartEmpty" class="chart-empty">正在加载同合约走势…</div></div>
+        <p id="chartDescription" class="sr-only">正在加载同合约走势</p>
+        <div class="chart-caption"><span id="chartBasis">时间：SGT · 单位：美元 / 桶</span><a href="https://www.tradingview.com/" target="_blank" rel="noopener noreferrer">Charts by TradingView</a></div>
+        <details id="chartEvents" class="chart-data-details" hidden><summary id="chartEventsSummary">对应发布事件</summary><p class="utility-text">按发布时间对应其后最近行情点，不表示价格因果关系。</p><div id="chartEventList"></div></details>
+        <details id="chartDataDetails" class="chart-data-details" hidden><summary>查看走势数据</summary><div class="chart-data-table-wrap"><table class="chart-data-table"><caption class="sr-only">所选品种和范围的原始走势观测点</caption><thead><tr><th scope="col">时间（SGT）</th><th scope="col">美元 / 桶</th></tr></thead><tbody id="chartDataRows"></tbody></table></div></details>
+      </section>
+      <section class="curve-section" aria-labelledby="curveHeading">
+        <div class="section-subheading"><div><h3 id="curveHeading">期限结构</h3><p class="utility-text">最近未到期合约 · 美元 / 桶</p></div><div id="curveInstruments" class="segmented-control" role="group" aria-label="选择期限结构品种"><button type="button" data-curve-instrument="brent" aria-pressed="true">Brent</button><button type="button" data-curve-instrument="wti" aria-pressed="false">WTI</button></div></div>
+        <div id="curveSummary" class="curve-summary"><span>近远月价差待核对</span></div>
+        <div class="curve-table-wrap"><table class="curve-table"><caption class="sr-only">同源期货合约价格、到期日和源更新时间；源更新时间并非实际成交时间</caption><thead><tr><th scope="col">合约 / 到期</th><th scope="col">价格</th><th scope="col">源更新 / 延迟</th></tr></thead><tbody id="curveRows"><tr><td colspan="3" class="table-empty">等待合约报价</td></tr></tbody></table></div>
+        <p id="curveStatus" class="utility-text curve-status" role="status">仅展示可核对的合约数据</p>
+        <button id="curveRefresh" class="text-button curve-refresh" type="button">重试合约报价 ↻</button>
+      </section>
+    </div>
+    <section class="energy-calendar-section" aria-labelledby="calendarHeading"><div class="section-subheading"><h3 id="calendarHeading">油市日历</h3><span class="utility-text">新加坡时间 SGT</span></div><div id="energyCalendar" class="energy-calendar"><p class="utility-text">正在加载官方发布日程…</p></div></section>
+    <div class="data-provenance"><span id="dataVersion">数据版本待确认</span><span id="dataLastSuccess">资讯更新时间待确认</span><span id="deploymentInfo"></span></div>
   </section>
 
+  <section class="news-workspace" aria-label="油市新闻与情报">
+    <div class="news-context"><h2>市场情报</h2><div class="tension-box"><span class="tension-label">伊朗局势热度</span><span class="tension-value" id="tensionValue">—</span><span class="tension-desc" id="tensionDesc">加载中</span></div></div>
   <nav class="tabs">
     <button class="tab active" data-tab="feed" title="快捷键 1">📡 信息流</button>
     <button class="tab" data-tab="iran" title="快捷键 2">🇮🇷 伊朗</button>
@@ -95,12 +135,18 @@
     </div>
   </main>
 
+  </section>
+
   <footer>
     <a href="https://news.google.com/search?q=Iran+Strait+of+Hormuz+sanctions+tanker+oil&hl=en-US&gl=US&ceid=US:en" target="_blank">🇮🇷 Iran Monitor</a>
     <span>R 刷新 · 1-4 切Tab</span>
-    <span>Powered by Yahoo Finance · TradingView · Google News · Polymarket · OOTT</span>
+    <span>行情、资讯均标注来源与更新时间</span>
   </footer>
 
+  <script src="shared/market-core.js"></script>
+  <script src="vendor/lightweight-charts.standalone.production.js"></script>
+  <script src="market-ui.js"></script>
+  <script src="shared/energy-calendar.js"></script>
   <script src="app.js?v=20260723b"></script>
 </body>
 </html>

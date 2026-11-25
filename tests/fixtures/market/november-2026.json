@@ -1,0 +1,19 @@
+{
+  "provenance": "Reduced observations from Yahoo chart responses on 2026-11-25. Morning metadata is a constructed replay, not an archived morning response. Daily close is a provider close, not a verified exchange settlement.",
+  "morningAfternoon": {
+    "symbol": "BZF27.NYM",
+    "price": 93.36,
+    "previousClose": 91.4,
+    "dailyDates": ["2026-11-23T00:00:00-05:00", "2026-11-24T00:00:00-05:00", "2026-11-25T00:00:00-05:00"],
+    "dailyCloses": [89.37000274658203, 91.4000015258789, 93.36000061035156],
+    "morning": "2026-11-25T09:00:00+08:00",
+    "afternoon": "2026-11-25T14:00:00+08:00"
+  },
+  "continuousRangeReference": {
+    "symbol": "BZ=F",
+    "price": 89.73,
+    "quotePreviousClose": 88.78,
+    "monthlyChartPreviousClose": 115.81,
+    "previousDailyClose": 91.4
+  }
+}
