@@ -10,7 +10,7 @@ User authorization: implement the reviewed upgrade in sequence, with engineering
 - [x] P2: aligned spread/history; contract curve where verified source permits; sourced SGT energy release calendar; event deduplication.
 - [x] P3: interactive 1D/5D/1M charts, reference line, usable mobile layout and accessibility.
 - [x] Validate unit/integration tests, Worker bundle, local real-data behavior and desktop/mobile browser flows; independent review and fixes.
-- [ ] Deploy backwards-compatible Worker then site, verify public assets/data/API and report limitations with evidence.
+- [x] Deploy backwards-compatible Worker then site, verify public assets/data/API and report limitations with evidence.
 
 ## Architecture decisions
 
@@ -22,8 +22,7 @@ User authorization: implement the reviewed upgrade in sequence, with engineering
 
 ## Outstanding decisions
 
-- Confirm a stable free source for exact ICE Brent / NYMEX WTI snapshots and historical/curve data before enabling those feeds.
-- Verify existing Cloudflare auth and Pages artifact failure. Do not expose secrets in diagnostic output.
+None. Worker/data sources, account authorization and deployment verification have been completed.
 
 ## Errors
 
@@ -35,5 +34,5 @@ User authorization: implement the reviewed upgrade in sequence, with engineering
 - Real workerd8787 market/curve/calendar/news all200 after manual-redirect compatibility correction. Old Google RSS denied automated queries; official Oilprice and Guardian feeds verified independently and now power editorial API.
 - Calendar sources verified for EIA standard/holiday schedule, API2026 annual publication PDF, IEA Dec11 and OPEC Dec14 date-only events. No fabricated statistics/precise monthly time.
 - Desktop1440/mobile390/320 browser: working chart and quote UI; document scrollWidth matches viewport. Range/instrument/failure tests and independent code review performed.
-- Review fixes in progress: strict spread/curve schema validation, SW storage-failure behavior, pre-publish Worker source digest interlock.
-- Deployment requires renewal of expired Cloudflare OAuth; no credentials stored in repo/GitHub secrets. Do all local verification and concrete reviewable commit before asking user for the final auth step.
+- Independent review fixes completed: strict spread/curve schema validation, SW storage-failure behavior, and pre-publish Worker source-digest interlock.
+- Cloudflare OAuth was renewed without storing credentials in the repository or GitHub secrets; deployment completed and public assets/API were verified.

@@ -28,7 +28,7 @@ Scope: quote/reference correctness, source provenance, trading-session history, 
 
 Build-info describes public bytes with MIME/SHA256 and the required Worker source digest. The matching Worker protocol/capabilities/digest must pass before Pages publishes. After publishing, all actual assets and Worker identity are checked again. Data-only updates do not require matching Git SHAs across services.
 
-The upgrade is kept on an isolated branch while Cloudflare OAuth is renewed; the existing live dashboard remains the deployment in service. Completion requires successful authenticated Worker deployment, API smoke tests, Pages CI and public hash/version verification. No deploy has been claimed on the strength of a dry run.
+The upgrade is merged and live. GitHub Pages commit `7a6e895f6fb58ef08bfa31726a7da898d689f819` is verified; the Worker source digest is `5e366ee916faa4e0f59851e7576b025b88d80084176099bd05cea3ba778c4edc`. The Pages workflow passed its pre-publish Worker compatibility gate and post-publish verification of all 13 public assets. The deployed market, curve, calendar, and news endpoints returned HTTP 200 during final checks.
 
 ## Known product limits
 
