@@ -36,9 +36,9 @@
     try {
       const p = Object.fromEntries(new Intl.DateTimeFormat('en-CA', {
         timeZone, year: 'numeric', month: '2-digit', day: '2-digit',
-        hour: '2-digit', minute: '2-digit', hourCycle: 'h23',
+        hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23',
       }).formatToParts(new Date(ts * 1000)).filter(p => p.type !== 'literal').map(p => [p.type, p.value]));
-      return { date: `${p.year}-${p.month}-${p.day}`, minutes: Number(p.hour) * 60 + Number(p.minute) };
+      return { date: `${p.year}-${p.month}-${p.day}`, minutes: Number(p.hour) * 60 + Number(p.minute), second: Number(p.second) };
     } catch { return null; }
   }
 
@@ -119,16 +119,22 @@
     const daily = result(dailyRaw);
     const dailySymbol = daily?.meta?.symbol || daily?.symbol;
     if (!snapshot.symbol || !snapshot.tradingDate || snapshot.priceAt == null
-      || dailySymbol !== snapshot.symbol || (daily?.source && daily.source !== snapshot.source)) return null;
+      || dailySymbol !== snapshot.symbol || (daily?.source && daily.source !== snapshot.source)
+      || (daily?.meta?.dataGranularity && daily.meta.dataGranularity !== '1d')) return null;
     const zone = config?.dailyBarTimeZone || daily?.meta?.exchangeTimezoneName;
     const times = daily?.timestamps || daily?.timestamp || [];
     const closes = daily?.closes || daily?.indicators?.quote?.[0]?.close || [];
     const completed = [];
     for (let i = 0; i < times.length; i++) {
       const time = seconds(times[i]), price = number(closes[i]);
-      const date = time == null ? null : dateParts(time, zone)?.date;
-      if (time != null && time <= snapshot.priceAt && price != null && price > 0 && date && date < snapshot.tradingDate) {
-        completed.push({ time, date, price });
+      const label = time == null ? null : dateParts(time, zone);
+      // Yahoo labels historical daily candles at exchange-local midnight, but
+      // can append the live quote at regularMarketTime to the same 1d array.
+      // Its calendar date is still yesterday during the overnight session;
+      // accepting it would compare the current price with itself all morning.
+      if (time != null && time <= snapshot.priceAt && price != null && price > 0
+        && label?.minutes === 0 && label.second === 0 && label.date < snapshot.tradingDate) {
+        completed.push({ time, date: label.date, price });
       }
     }
     completed.sort((a, b) => a.time - b.time);
@@ -157,7 +163,9 @@
     if (price == null || price <= 0 || snapshot.price == null || snapshot.price <= 0
       || !REFERENCE_TYPES.includes(type) || basis !== 'daily-close') return;
     snapshot.reference = { price, date: validDate(date) ? date : null, type, basis, source: snapshot.source, symbol: snapshot.symbol };
-    snapshot.change = snapshot.price == null ? null : snapshot.price - price;
+    // Yahoo daily closes carry float32 residue; these contracts quote in cents.
+    const change = Number((snapshot.price - price).toFixed(2));
+    snapshot.change = change === 0 ? 0 : change;
     snapshot.changePercent = snapshot.change != null && price > 0 ? snapshot.change / price * 100 : null;
   }
 

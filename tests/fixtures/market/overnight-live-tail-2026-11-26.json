@@ -1,0 +1,84 @@
+{
+  "provenance": "Reduced actual Yahoo Finance chart responses captured during the 2026-11-26 Singapore morning incident. Historical daily labels use New York midnight; the final non-midnight timestamp is an appended live price observation, not a completed daily candle. Values are source observations, not official settlement prices.",
+  "capturedAt": "2026-11-26T02:07:47.242Z",
+  "observations": [
+    {
+      "symbol": "BZ=F",
+      "quoteRaw": {
+        "meta": {
+          "symbol": "BZ=F",
+          "exchangeTimezoneName": "America/New_York",
+          "regularMarketTime": 1795658244,
+          "regularMarketPrice": 90.72
+        }
+      },
+      "dailyRaw": {
+        "meta": {
+          "symbol": "BZ=F",
+          "exchangeTimezoneName": "America/New_York",
+          "dataGranularity": "1d",
+          "range": "1mo",
+          "regularMarketTime": 1795658244,
+          "regularMarketPrice": 90.72
+        },
+        "timestamp": [
+          1795410000,
+          1795496400,
+          1795582800,
+          1795658244
+        ],
+        "indicators": {
+          "quote": [
+            {
+              "close": [
+                89.37000274658203,
+                91.4000015258789,
+                94.61000061035156,
+                90.72000122070312
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "symbol": "CL=F",
+      "quoteRaw": {
+        "meta": {
+          "symbol": "CL=F",
+          "exchangeTimezoneName": "America/New_York",
+          "regularMarketTime": 1795658253,
+          "regularMarketPrice": 83.96
+        }
+      },
+      "dailyRaw": {
+        "meta": {
+          "symbol": "CL=F",
+          "exchangeTimezoneName": "America/New_York",
+          "dataGranularity": "1d",
+          "range": "1mo",
+          "regularMarketTime": 1795658253,
+          "regularMarketPrice": 83.96
+        },
+        "timestamp": [
+          1795410000,
+          1795496400,
+          1795582800,
+          1795658253
+        ],
+        "indicators": {
+          "quote": [
+            {
+              "close": [
+                80.16999816894531,
+                82.05000305175781,
+                83.68000030517578,
+                83.95999908447266
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

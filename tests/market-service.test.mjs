@@ -1,10 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
 import { createMarketService, marketServiceTestHooks } from '../workers/market-service.js';
 import { createProxy } from '../workers/proxy.js';
 
 const NOW = Date.parse('2026-11-25T15:00:00Z') / 1000;
 const { SCANNER_COLUMNS } = marketServiceTestHooks;
+const overnightFixture = JSON.parse(await fs.readFile(new URL('./fixtures/market/overnight-live-tail-2026-11-26.json', import.meta.url), 'utf8'));
 
 function response(payload, status = 200) {
   return new Response(JSON.stringify(payload), { status, headers: { 'Content-Type': 'application/json' } });
@@ -79,6 +81,33 @@ test('market returns final same-symbol quotes, prior daily closes and matched hi
   assert.equal(data.spread.series[0].time, NOW - 320);
   assert.equal(data.provenance.referencePolicy, 'previous-completed-daily-bar-exact-symbol');
   assert.equal(data.instruments.brent.historyWarning, 'continuous-series-may-contain-roll-gap');
+});
+
+test('the market endpoint excludes appended live ticks from prior daily closes in every chart range', async () => {
+  const clock = Date.parse(overnightFixture.capturedAt) / 1000;
+  const handle = createMarketService({ now: () => clock, fetchImpl: async url => {
+    const parsed = new URL(url), symbol = decodeURIComponent(parsed.pathname.split('/').at(-1));
+    const observation = overnightFixture.observations.find(row => row.symbol === symbol);
+    assert.ok(observation, 'market remains on the primary same-symbol source');
+    const daily = parsed.searchParams.get('interval') === '1d';
+    const raw = daily ? observation.dailyRaw : {
+      ...observation.quoteRaw,
+      timestamp: [observation.quoteRaw.meta.regularMarketTime],
+      indicators: { quote: [{ close: [observation.quoteRaw.meta.regularMarketPrice] }] },
+    };
+    return response({ chart: { result: [raw], error: null } });
+  } });
+  for (const range of ['1d', '5d', '1mo']) {
+    const result = await handle(new Request(`https://worker.test/api/market?range=${range}`));
+    assert.equal(result.status, 200);
+    const data = await result.json();
+    for (const instrument of ['brent', 'wti']) {
+      const snapshot = data.instruments[instrument];
+      assert.equal(snapshot.reference.date, '2026-11-25');
+      assert.ok(Math.abs(snapshot.reference.price - (instrument === 'brent' ? 94.61 : 83.68)) < 1e-5);
+      assert.notEqual(snapshot.change, 0);
+    }
+  }
 });
 
 test('1d history keeps the full exchange trading session including Singapore morning', async () => {

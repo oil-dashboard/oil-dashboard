@@ -5,6 +5,8 @@ Scope: quote/reference correctness, source provenance, trading-session history, 
 ## Correctness regressions
 
 - Absolute and percentage change use the latest completed daily close for the exact same symbol and source, with an exchange-local bar date before the quote's session trading date. Weekends and holidays select the latest available earlier daily bar.
+- Yahoo's daily chart may append a live quote at `regularMarketTime` after the exchange-midnight daily labels. Only midnight-labelled bars are eligible, so an overnight live value cannot become its own baseline; the implementation does not drop the final array element blindly.
+- Futures change is rounded to the cent tick before percentage calculation, so float32 provider residue cannot render a false zero move with an up/down arrow.
 - The previous daily close is selected by exchange trading date, not SGT calendar date, so a quote during Singapore morning and afternoon of the same exchange session uses the same baseline. The NYMEX continuous quotes use the New York session boundary.
 - If the same-symbol prior daily bar is missing or invalid, both change fields stay null and the UI states that the daily previous close is unavailable. It never falls back to quote.previousClose, chartPreviousClose, or another symbol/source, and does not show a pending-confirmation label.
 - Monthly chartPreviousClose and quote.previousClose can differ from the prior daily close, especially around a continuous-contract roll. They are informational context only and do not override the daily-close baseline; the UI never calls that baseline an official settlement.

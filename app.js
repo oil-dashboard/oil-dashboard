@@ -487,13 +487,13 @@ async function loadSources() {
   if (data && typeof data === 'object') state.sources = data;
 }
 
-async function fetchPrices() {
+async function fetchPrices(options = {}) {
   if (!globalThis.OilMarketUI) {
     const el = document.getElementById('sourceStatus');
     if (el) el.textContent = '行情模块未加载';
     return { status: 'unavailable' };
   }
-  return globalThis.OilMarketUI.refresh();
+  return globalThis.OilMarketUI.refresh(options);
 }
 
 // ========== Countdown ==========
@@ -502,6 +502,8 @@ function startCountdown() {
   let remaining = REFRESH_MS;
   const el = document.getElementById('countdownTimer');
   if (!el) return;
+  el.title = '资讯每 5 分钟刷新；行情每分钟检查，切回页面时自动补刷新';
+  el.setAttribute?.('aria-label', '资讯刷新倒计时；行情每分钟检查');
   state.countdownId = setInterval(() => {
     remaining -= 1000;
     if (remaining <= 0) remaining = REFRESH_MS;
@@ -765,11 +767,11 @@ async function fetchOOTT() {
 
 
 // ========== Main ==========
-async function refresh() {
+async function refresh(options = {}) {
   const statusEl = document.getElementById('refreshStatus');
   if (statusEl) { statusEl.textContent = '刷新中...'; statusEl.style.opacity = '1'; }
   document.getElementById('updateTime').textContent = '检查 ' + formatSGTPrecise(new Date());
-  const results = await Promise.allSettled([fetchPrices(), fetchIranBriefing(), buildFeed(), fetchPolymarket(), fetchOOTT(), globalThis.OilEnergy?.refresh()]);
+  const results = await Promise.allSettled([fetchPrices({ ifDue: Boolean(options.scheduled) }), fetchIranBriefing(), buildFeed(), fetchPolymarket(), fetchOOTT(), globalThis.OilEnergy?.refresh()]);
   const failed = results.some(result => result.status === 'rejected');
   if (failed) console.error('Dashboard section update failed; other sections remain available.');
   if (statusEl) { statusEl.textContent = failed ? '部分更新失败' : '✓'; if (!failed) setTimeout(() => { statusEl.style.opacity = '0'; }, 2000); }
@@ -781,7 +783,7 @@ async function refresh() {
   globalThis.OilEnergy?.init({ baseUrl: marketApiBase() });
   await loadSources();
   refresh(); // 不 await，让页面先响应
-  setInterval(refresh, REFRESH_MS);
+  setInterval(() => refresh({ scheduled: true }), REFRESH_MS);
   // PWA
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js').catch(e => console.warn('SW register failed:', e));

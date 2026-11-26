@@ -5,6 +5,7 @@ import '../shared/market-core.js';
 
 const M = globalThis.OilMarket;
 const fixture = JSON.parse(await fs.readFile(new URL('./fixtures/market/november-2026.json', import.meta.url), 'utf8'));
+const overnightFixture = JSON.parse(await fs.readFile(new URL('./fixtures/market/overnight-live-tail-2026-11-26.json', import.meta.url), 'utf8'));
 const ny = M.SESSION_CONFIGS.NYMEX_ENERGY;
 const london = M.SESSION_CONFIGS.ICE_BRENT;
 const ts = value => Date.parse(value) / 1000;
@@ -92,6 +93,66 @@ test('daily baseline advances at the exchange session boundary, not Singapore mi
   assert.equal(priorSession.reference.date, '2026-11-23');
   assert.equal(nextSession.tradingDate, '2026-11-25');
   assert.equal(nextSession.reference.date, '2026-11-24');
+});
+
+test('actual overnight Yahoo live tails cannot become the previous daily close', () => {
+  for (const observation of overnightFixture.observations) {
+    const instrument = observation.symbol === 'BZ=F' ? 'brent' : 'wti';
+    const snapshot = yahoo({ ...observation, instrument, now: observation.quoteRaw.meta.regularMarketTime });
+    const completedClose = observation.dailyRaw.indicators.quote[0].close.at(-2);
+    assert.equal(snapshot.tradingDate, '2026-11-26');
+    assert.equal(snapshot.reference.date, '2026-11-25');
+    assert.equal(snapshot.reference.price, completedClose, 'choose the midnight daily candle, not the appended live tick');
+    assert.equal(snapshot.change, Number((snapshot.price - completedClose).toFixed(2)));
+    assert.notEqual(snapshot.change, 0);
+    assert.equal(M.validateSnapshot(snapshot).valid, true);
+  }
+});
+
+test('daily baseline stays fixed as a live tail moves across New York midnight', () => {
+  for (const observation of overnightFixture.observations) {
+    const expected = observation.dailyRaw.indicators.quote[0].close.at(-2);
+    for (const at of ['2026-11-26T09:00:00+08:00', '2026-11-26T14:00:00+08:00']) {
+      const priceAt = ts(at), dailyRaw = structuredClone(observation.dailyRaw);
+      dailyRaw.timestamp[dailyRaw.timestamp.length - 1] = priceAt;
+      const snapshot = yahoo({ symbol: observation.symbol, dailyRaw,
+        quoteRaw: quote(observation.symbol, priceAt, observation.quoteRaw.meta.regularMarketPrice), now: priceAt });
+      assert.equal(snapshot.reference.price, expected);
+      assert.equal(snapshot.reference.date, '2026-11-25');
+    }
+  }
+});
+
+test('Yahoo daily selection keeps the last real candle and rejects non-daily or live-only data', () => {
+  const observation = overnightFixture.observations[0];
+  const dailyRaw = structuredClone(observation.dailyRaw);
+  dailyRaw.timestamp.pop(); dailyRaw.indicators.quote[0].close.pop();
+  const snapshot = yahoo({ ...observation, dailyRaw, now: observation.quoteRaw.meta.regularMarketTime });
+  assert.equal(snapshot.reference.price, 94.61000061035156, 'do not blindly drop the last row');
+  assert.equal(yahoo({ ...observation, dailyRaw: { ...dailyRaw, meta: { ...dailyRaw.meta, dataGranularity: '1m' } } }).reference, null);
+  for (const at of ['2026-11-25T20:00:00-05:00', '2026-11-25T00:00:01-05:00']) {
+    const raw = { meta: dailyRaw.meta, timestamp: [ts(at)], indicators: { quote: [{ close: [90.67] }] } };
+    assert.equal(yahoo({ ...observation, dailyRaw: raw, now: observation.quoteRaw.meta.regularMarketTime }).reference, null);
+  }
+});
+
+test('midnight daily labels use the exchange timezone through DST and weekend gaps', () => {
+  const priceAt = ts('2026-11-02T09:00:00+08:00');
+  const dailyRaw = { meta: { symbol: 'BZ=F', dataGranularity: '1d', exchangeTimezoneName: 'America/New_York' },
+    timestamp: [ts('2026-10-29T00:00:00-04:00'), ts('2026-10-30T00:00:00-04:00'), priceAt],
+    indicators: { quote: [{ close: [88, 89, 90.67] }] } };
+  const snapshot = yahoo({ quoteRaw: quote('BZ=F', priceAt, 90.67), dailyRaw, now: priceAt });
+  assert.equal(snapshot.tradingDate, '2026-11-02');
+  assert.equal(snapshot.reference.date, '2026-10-30');
+  assert.equal(snapshot.reference.price, 89);
+});
+
+test('Yahoo float32 daily-close residue rounds to a true neutral zero at the contract tick size', () => {
+  const snapshot = yahoo({ quoteRaw: quote('BZ=F', now, 91.4), dailyRaw: daily('BZ=F', [89.37, 91.4000015258789, 92]) });
+  assert.equal(snapshot.change, 0);
+  assert.equal(snapshot.changePercent, 0);
+  assert.equal(Object.is(snapshot.change, -0), false);
+  assert.equal(M.validateSnapshot(snapshot).valid, true);
 });
 
 test('daily close controls change even when quote previousClose differs around a continuous roll', () => {

@@ -4,12 +4,13 @@
 
   const RANGES = new Set(['1d', '5d', '1mo']);
   const INSTRUMENTS = new Set(['brent', 'wti', 'spread']);
-  const CACHE_PREFIX = 'oil_market_snapshot_v2:';
+  const CACHE_PREFIX = 'oil_market_snapshot_v3:';
   const CACHE_TTL_MS = 30 * 60 * 1000;
+  const QUOTE_REFRESH_MS = 60 * 1000;
   const STATUS_LABELS = { fresh: '最新报价', delayed: '延迟报价', stale: '数据过期', closed: '休市', unavailable: '暂无报价' };
   const state = {
     initialized: false, range: '1d', instrument: 'brent', curveInstrument: 'brent',
-    snapshot: null, cached: false, lastSuccessAt: null, promise: null, pendingRange: null,
+    snapshot: null, cached: false, lastSuccessAt: null, lastRequestAt: null, promise: null, pendingRange: null,
     requestId: 0, controller: null, curveRequestId: 0, curveController: null,
     chart: null, series: null, referenceLine: null, chartIdentity: null, resizeObserver: null,
     ageTimer: null, handlers: [], curveSnapshot: null, events: [], markers: null, markerIdentity: null,
@@ -28,7 +29,8 @@
   function escapeHtml(value) { return String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
   function money(value, signed = false) {
     if (!finite(value)) return '—';
-    return `${signed && value > 0 ? '+' : ''}${value.toFixed(2)}`;
+    const rounded = Number(value.toFixed(2)) || 0;
+    return `${signed && rounded > 0 ? '+' : ''}${rounded.toFixed(2)}`;
   }
   function formatTime(timestamp, options = {}) {
     if (!finite(timestamp) || timestamp <= 0) return '时间不可用';
@@ -166,10 +168,12 @@
     text(key + 'Price', price == null ? '—' : '$' + money(price));
     text(key + 'Instrument', [snapshot?.symbol, snapshot?.contract === 'continuous-front' ? '连续近月' : snapshot?.contract, snapshot?.exchange].filter(Boolean).filter((v, i, a) => a.indexOf(v) === i).join(' · ') || '合约信息加载中');
     const hasChange = validReference(snapshot) && finite(snapshot?.change) && finite(snapshot?.changePercent);
+    const displayedChange = hasChange ? Number(snapshot.change.toFixed(2)) || 0 : null;
+    const displayedPercent = displayedChange === 0 ? 0 : snapshot?.changePercent;
     const changeEl = element(key + 'Change');
     if (changeEl) {
-      changeEl.textContent = hasChange ? `${snapshot.change > 0 ? '▲' : snapshot.change < 0 ? '▼' : '＝'} ${money(snapshot.change, true)} (${money(snapshot.changePercent, true)}%)` : '—';
-      changeEl.className = 'price-change ' + (hasChange && snapshot.change > 0 ? 'price-up' : hasChange && snapshot.change < 0 ? 'price-down' : 'price-neutral');
+      changeEl.textContent = hasChange ? `${displayedChange > 0 ? '▲' : displayedChange < 0 ? '▼' : '＝'} ${money(displayedChange, true)} (${money(displayedPercent, true)}%)` : '—';
+      changeEl.className = 'price-change ' + (hasChange && displayedChange > 0 ? 'price-up' : hasChange && displayedChange < 0 ? 'price-down' : 'price-neutral');
     }
     const statusEl = element(key + 'Status');
     const cached = state.cached || snapshot?.cached;
@@ -401,6 +405,10 @@
     init();
     const range = RANGES.has(options.range) ? options.range : state.range;
     if (state.promise && state.pendingRange === range && !options.force) return state.promise;
+    if (options.ifDue && !options.force && (root.document?.visibilityState === 'hidden'
+      || (range === state.range && state.lastRequestAt != null && Date.now() - state.lastRequestAt < QUOTE_REFRESH_MS))) {
+      return Promise.resolve({ status: overallStatus(state.snapshot), snapshot: state.snapshot, cached: state.cached });
+    }
     state.range = range;
     updatePressed();
     renderChart();
@@ -409,6 +417,7 @@
     state.controller = controller;
     const requestId = ++state.requestId;
     state.pendingRange = range;
+    state.lastRequestAt = Date.now();
     const button = element('marketRefresh');
     if (button) { button.disabled = true; button.setAttribute('aria-busy', 'true'); }
     state.promise = (async () => {
@@ -564,10 +573,14 @@
     });
     bind(element('marketRefresh'), 'click', () => refresh({ force: true }));
     bind(element('curveRefresh'), 'click', () => loadCurve());
+    bind(root.document, 'visibilitychange', () => {
+      if (root.document.visibilityState !== 'hidden') return refresh({ ifDue: true });
+    });
     state.ageTimer = root.setInterval(() => {
       if (state.snapshot) renderSnapshot(state.snapshot, { cached: state.cached });
       if (state.curveSnapshot) renderCurve(state.curveSnapshot);
-    }, 60 * 1000);
+      if (root.document?.visibilityState !== 'hidden') return refresh({ ifDue: true });
+    }, QUOTE_REFRESH_MS);
     updatePressed();
   }
   function destroy() {
@@ -581,6 +594,7 @@
     state.chart = state.series = state.referenceLine = state.resizeObserver = null;
     state.chartIdentity = null;
     state.initialized = false;
+    state.lastRequestAt = null;
     state.requestId += 1; state.curveRequestId += 1;
     state.promise = state.pendingRange = null;
   }
