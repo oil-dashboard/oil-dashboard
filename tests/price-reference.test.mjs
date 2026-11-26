@@ -36,6 +36,15 @@ test('production market refresh delegates to the validated snapshot renderer wit
   assert.equal(elements.get('sourceStatus').textContent, '延迟 10 分钟');
 });
 
+test('scheduled news updates use due-aware market checks without changing explicit refresh behavior', async () => {
+  const requests = [];
+  const { hooks } = loadApp({ init() {}, async refresh(options) { requests.push(options); return { status: 'delayed' }; } });
+  await hooks.fetchPrices({ ifDue: true });
+  await hooks.fetchPrices();
+  assert.equal(requests[0].ifDue, true);
+  assert.equal(Object.keys(requests[1]).length, 0);
+});
+
 test('missing market module is visibly unavailable rather than leaving a live label', async () => {
   const { hooks, elements } = loadApp(undefined);
   const result = await hooks.fetchPrices();

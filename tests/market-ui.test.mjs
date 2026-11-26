@@ -27,10 +27,14 @@ function harness(fetchImpl) {
   const controls = {};
   for (const [attribute, key, values] of [['data-chart-range', 'chartRange', ['1d', '5d', '1mo']], ['data-chart-instrument', 'chartInstrument', ['brent', 'wti', 'spread']], ['data-curve-instrument', 'curveInstrument', ['brent', 'wti']]]) controls[`[${attribute}]`] = values.map(value => new Element('', { [key]: value }));
   const intervals = new Map(), storage = new Map(), charts = [], observers = [], requests = [], markerPlugins = [];
+  const document = new Element('document');
+  document.visibilityState = 'visible';
+  document.getElementById = id => elements.get(id);
+  document.querySelectorAll = selector => controls[selector] || [];
   let timerId = 0;
   const context = vm.createContext({
     Date: ClockDate, Intl, Map, Set, URL, AbortController, console, OIL_API_BASE: 'https://market.test',
-    document: { getElementById: id => elements.get(id), querySelectorAll: selector => controls[selector] || [] },
+    document,
     localStorage: { getItem: key => storage.get(key) ?? null, setItem: (key, value) => storage.set(key, value) },
     setTimeout, clearTimeout, setInterval: fn => { const id = ++timerId; intervals.set(id, fn); return id; }, clearInterval: id => intervals.delete(id),
     fetch: async (url, options) => { requests.push(String(url)); return fetchImpl ? fetchImpl(String(url), options) : response(String(url).includes('/api/curve') ? curve() : payload()); },
@@ -50,7 +54,11 @@ function harness(fetchImpl) {
     },
   });
   vm.runInContext(CORE, context); vm.runInContext(UI, context);
-  return { context, ui: context.OilMarketUI, hooks: context.__oilMarketUITestHooks, elements, controls, storage, charts, observers, requests, markerPlugins, intervals, advance(seconds) { clock += seconds * 1000; }, tick() { for (const fn of intervals.values()) fn(); } };
+  return { context, ui: context.OilMarketUI, hooks: context.__oilMarketUITestHooks, elements, controls, storage, charts, observers, requests, markerPlugins, intervals, document,
+    advance(seconds) { clock += seconds * 1000; },
+    tick() { return Promise.all([...intervals.values()].map(fn => fn())); },
+    visibility(value) { document.visibilityState = value; return Promise.all([...(document.listeners.get('visibilitychange') || [])].map(fn => fn())); },
+  };
 }
 function response(data, status = 200) { return { ok: status >= 200 && status < 300, status, json: async () => clone(data) }; }
 function quote(instrument = 'brent', overrides = {}) {
@@ -102,6 +110,37 @@ test('a daily-close reference without a valid prior trading date is rejected', (
   assert.match(h.elements.get('brentReference').textContent, /日线前收暂不可用/);
   assert.doesNotMatch(h.elements.get('brentReference').textContent, /待确认/);
   assert.equal(h.charts.length, 0);
+});
+
+test('zero and floating point residue display a neutral change without signed zero or arrows', () => {
+  const h = harness();
+  for (const change of [0, -0, 0.0000024, -0.0000024]) {
+    const data = payload(), snapshot = data.instruments.brent;
+    snapshot.price = snapshot.reference.price + change;
+    snapshot.change = change;
+    snapshot.changePercent = change / snapshot.reference.price * 100;
+    h.ui.renderSnapshot(syncSpread(data));
+    assert.equal(h.elements.get('brentChange').textContent, '＝ 0.00 (0.00%)');
+    assert.equal(h.elements.get('brentChange').className, 'price-change price-neutral');
+  }
+  for (const change of [0.12, -0.12]) {
+    const data = payload(), snapshot = data.instruments.brent;
+    snapshot.price = snapshot.reference.price + change;
+    snapshot.change = change;
+    snapshot.changePercent = change / snapshot.reference.price * 100;
+    h.ui.renderSnapshot(syncSpread(data));
+    assert.equal(h.elements.get('brentChange').textContent, change > 0 ? '▲ +0.12 (+0.13%)' : '▼ -0.12 (-0.13%)');
+    assert.equal(h.elements.get('brentChange').className, 'price-change ' + (change > 0 ? 'price-up' : 'price-down'));
+  }
+});
+
+test('old daily-baseline cache is ignored after the corrected quote cache generation changes', () => {
+  const h = harness();
+  h.storage.set('oil_market_snapshot_v2:1d', JSON.stringify({ storedAt: NOW * 1000, payload: payload() }));
+  assert.equal(h.hooks.readCache(), null);
+  h.hooks.writeCache(payload());
+  assert.equal(h.hooks.CACHE_PREFIX, 'oil_market_snapshot_v3:');
+  assert.equal(h.hooks.readCache().payload.instruments.brent.price, 91);
 });
 
 test('TradingView fallback displays source update and ten-minute delay while clearing old chart and spread', () => {
@@ -248,11 +287,65 @@ test('curve switches clear old rows immediately, ignore obsolete responses and s
   h.ui.destroy();
 });
 
+test('visible minute polling fetches and renders a changed quote without waiting for the news refresh', async () => {
+  let count = 0;
+  const h = harness(url => {
+    if (url.includes('/api/curve')) return response(curve());
+    count++;
+    const data = payload(), snapshot = data.instruments.brent;
+    if (count > 1) {
+      snapshot.price = 91.25; snapshot.change = 1.25; snapshot.changePercent = 1.25 / 90 * 100;
+      snapshot.series.at(-1).value = snapshot.price;
+    }
+    return response(syncSpread(data));
+  });
+  await h.ui.refresh();
+  assert.equal(h.elements.get('brentPrice').textContent, '$91.00');
+  h.advance(59); await h.tick();
+  assert.equal(count, 1);
+  h.advance(1); await h.tick();
+  assert.equal(count, 2);
+  assert.equal(h.elements.get('brentPrice').textContent, '$91.25');
+  assert.match(h.elements.get('brentChange').textContent, /\+1.25/);
+  await h.ui.refresh({ ifDue: true });
+  assert.equal(count, 2, 'scheduled news refresh must not duplicate the minute poll');
+  h.ui.destroy();
+});
+
+test('hidden tabs skip network polling and refresh once on return while in-flight requests stay deduplicated', async () => {
+  let count = 0, resolveNext;
+  const h = harness(url => {
+    if (url.includes('/api/curve')) return response(curve());
+    count++;
+    if (count > 1) return new Promise(resolve => { resolveNext = resolve; });
+    return response(payload());
+  });
+  await h.ui.refresh();
+  await h.visibility('hidden');
+  h.advance(180); await h.tick();
+  await h.ui.refresh({ ifDue: true });
+  assert.equal(count, 1, 'background periodic work must not request quotes');
+  const returning = h.visibility('visible');
+  assert.equal(count, 2);
+  const repeatedVisibility = h.visibility('visible');
+  const duplicateTick = h.tick();
+  const duplicateNews = h.ui.refresh({ ifDue: true });
+  assert.equal(count, 2, 'visibility, minute poll and news must share the pending request');
+  resolveNext(response(payload()));
+  await Promise.all([returning, repeatedVisibility, duplicateTick, duplicateNews]);
+  await h.visibility('hidden');
+  h.advance(30); await h.visibility('visible');
+  assert.equal(count, 2, 'short tab switches do not request an already checked quote');
+  h.ui.destroy();
+  h.advance(60); await h.visibility('visible'); await h.tick();
+  assert.equal(count, 2, 'destroy must remove both polling and visibility listeners');
+});
+
 test('age refresh reclassifies observations and destroy releases chart, observers, timers and handlers', () => {
   const h = harness(); h.ui.init(); h.ui.init(); h.ui.renderSnapshot(payload());
   assert.equal(h.intervals.size, 1);
   assert.equal(h.elements.get('marketRefresh').listeners.get('click').size, 1);
-  h.advance(4000); h.tick();
+  h.document.visibilityState = 'hidden'; h.advance(4000); h.tick();
   assert.match(h.elements.get('brentStatus').textContent, /数据过期/);
   assert.equal(h.elements.get('spreadValue').textContent, '—');
   assert.equal(h.charts[0].series.lines.size, 1);
@@ -261,6 +354,7 @@ test('age refresh reclassifies observations and destroy releases chart, observer
   assert.equal(h.observers[0].disconnected, true);
   assert.equal(h.intervals.size, 0);
   assert.equal(h.elements.get('marketRefresh').listeners.get('click').size, 0);
+  assert.equal(h.document.listeners.get('visibilitychange').size, 0);
 });
 
 test('spread provenance, timestamps and arithmetic are rejected before render or cache', () => {
