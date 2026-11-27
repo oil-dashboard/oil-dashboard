@@ -222,8 +222,13 @@ export function createMarketService({ fetchImpl = globalThis.fetch, now = () => 
       snapshot.name = config.name;
       snapshot.description = quote.meta.shortName || quote.meta.longName || config.name;
       if (range === '1d') {
-        snapshot.series = snapshot.tradingDate ? snapshot.series.filter(point =>
-          globalThis.OilMarket.getTradingDate(point.time, globalThis.OilMarket.SESSION_CONFIGS.NYMEX_ENERGY) === snapshot.tradingDate) : [];
+        const session = globalThis.OilMarket.SESSION_CONFIGS.NYMEX_ENERGY;
+        const availableDates = [...new Set(snapshot.series.map(point =>
+          globalThis.OilMarket.getTradingDate(point.time, session)))].filter(date =>
+          date && snapshot.tradingDate && date <= snapshot.tradingDate).sort();
+        snapshot.historyTradingDate = availableDates.at(-1) || null;
+        snapshot.series = snapshot.historyTradingDate ? snapshot.series.filter(point =>
+          globalThis.OilMarket.getTradingDate(point.time, session) === snapshot.historyTradingDate) : [];
       }
       snapshot.historyStatus = history ? 'available' : 'unavailable';
       snapshot.historySource = 'yahoo';

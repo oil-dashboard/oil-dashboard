@@ -158,6 +158,14 @@ test('TradingView fallback displays source update and ten-minute delay while cle
   assert.notEqual(h.elements.get('liveDot').style.backgroundColor, 'var(--up)');
 });
 
+test('1d chart identifies the latest session with history during a market holiday', () => {
+  const h = harness(), data = payload();
+  data.instruments.brent.historyTradingDate = '2026-11-26';
+  h.ui.renderSnapshot(data);
+  assert.match(h.elements.get('chartBasis').textContent, /图表交易日 11\/26 · 较 11\/24 日线收盘/);
+  assert.equal(h.elements.get('chartEmpty').hidden, true);
+});
+
 test('cache validates final snapshots, range, provenance and source-time freshness', async () => {
   const h = harness(async () => { throw new Error('offline'); });
   const key = h.hooks.CACHE_PREFIX + '1d';
