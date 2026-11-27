@@ -41,6 +41,9 @@
       }).format(new Date(timestamp * 1000)) + ' SGT';
     } catch { return '时间不可用'; }
   }
+  function formatDateLabel(value) {
+    return /^\d{4}-\d{2}-\d{2}$/.test(value || '') ? value.slice(5).replace('-', '/') : null;
+  }
   function shortTime(timestamp) {
     if (!finite(timestamp) || timestamp <= 0) return '—';
     return new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Singapore', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date(timestamp * 1000));
@@ -377,7 +380,9 @@
       state.referenceLine = state.series.createPriceLine({ price: data.snapshot.reference.price, color: '#8e9eaf', lineWidth: 1, lineStyle: 2, axisLabelVisible: true, title: '日线前收' });
     }
     if (empty) empty.hidden = true;
-    const basis = validReference(data.snapshot) ? referenceText(data.snapshot) + ' · SGT' : '时间：SGT · 单位：美元 / 桶';
+    const historyDate = formatDateLabel(data.snapshot?.historyTradingDate);
+    const historyBasis = historyDate ? `图表交易日 ${historyDate} · ` : '';
+    const basis = historyBasis + (validReference(data.snapshot) ? referenceText(data.snapshot) + ' · SGT' : '时间：SGT · 单位：美元 / 桶');
     const eventCount = renderEventMarkers(data, identity);
     text('chartBasis', basis + (data.snapshot?.historyWarning === 'continuous-series-may-contain-roll-gap' ? ' · 连续合约换月可能产生跳空' : '') + (eventCount ? ' · 事件按发布时间标记' : ''));
   }

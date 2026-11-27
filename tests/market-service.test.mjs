@@ -132,6 +132,37 @@ test('1d history keeps the full exchange trading session including Singapore mor
   assert.deepEqual(data.instruments.brent.series.map(point => point.time), [asiaMorning, nyAfterMidnight, NOW - 20]);
 });
 
+test('1d history shows the latest available trading session when the quote trade date has no bars', async () => {
+  const fetchedAt = Date.parse('2026-11-27T02:00:00Z') / 1000;
+  const quoteAt = Date.parse('2026-11-27T01:50:00Z') / 1000;
+  const priorSession = Date.parse('2026-11-26T03:00:00Z') / 1000;
+  const lastAvailable = Date.parse('2026-11-26T04:45:00Z') / 1000;
+  const handle = createMarketService({ now: () => fetchedAt, fetchImpl: async url => {
+    const parsed = new URL(url), symbol = decodeURIComponent(parsed.pathname.split('/').at(-1));
+    const interval = parsed.searchParams.get('interval');
+    const payload = chart(symbol, parsed.searchParams.get('range'), interval, quoteAt);
+    const row = payload.chart.result[0];
+    if (interval === '1m') row.meta.regularMarketPrice = symbol === 'BZ=F' ? 90.72 : 83.96;
+    if (interval === '1d') {
+      row.meta.dataGranularity = '1d';
+      row.timestamp = [Date.parse('2026-11-25T05:00:00Z') / 1000, quoteAt];
+      row.indicators.quote[0].close = [symbol === 'BZ=F' ? 94.61 : 83.68, row.meta.regularMarketPrice];
+    }
+    if (interval === '5m') {
+      row.timestamp = [priorSession, lastAvailable];
+      row.indicators.quote[0].close = [90.86, symbol === 'BZ=F' ? 91.17 : 84.42];
+    }
+    return response(payload);
+  } });
+  const data = await (await handle(new Request('https://worker.test/api/market?range=1d'))).json();
+  for (const instrument of ['brent', 'wti']) {
+    const snapshot = data.instruments[instrument];
+    assert.equal(snapshot.tradingDate, '2026-11-27');
+    assert.equal(snapshot.historyTradingDate, '2026-11-26');
+    assert.deepEqual(snapshot.series.map(point => point.time), [priorSession, lastAvailable]);
+  }
+});
+
 test('upstream redirects are rejected in workerd-compatible manual mode', async () => {
   let calls = 0;
   const handle = createMarketService({ now: () => NOW, fetchImpl: async (url, options) => {
